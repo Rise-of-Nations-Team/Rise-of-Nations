@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		SEO_Senussi_Order = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = SEO_senussi_order
+			modifier = {
+				conscription_factor = 0.2
+                weekly_manpower = 100 
+				army_core_attack_factor = 0.7
+				army_core_defence_factor = 0.8
+				resistance_growth_on_our_occupied_states = 1		
+                enemy_justify_war_goal_time = 2
+				surrender_limit = 3
+				civilian_intel_to_others = -0.25
+				army_intel_to_others = -0.75
+				foreign_subversive_activites = -0.5
+			}
+		}
+	}
+}

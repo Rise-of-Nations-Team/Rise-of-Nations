@@ -1250,7 +1250,7 @@ focus_tree = {
 		completion_reward = {
 			add_named_threat = {
 				threat = 5
-				name = GER_WW1_Weltpolitik
+				name = GER_Weltpolitik
 			}
 		}
 	}
@@ -3510,7 +3510,7 @@ focus_tree = {
 		completion_reward = {
 			add_named_threat = {
 				threat = 5
-				name = GER_WW1_northern_expansion
+				name = GER_northern_expansion
 			}
 		}
 	}
@@ -3535,7 +3535,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_named_threat = {
-				name = GER_WW1_western_expansion
+				name = GER_western_expansion
 				threat = 5
 			}
 		}

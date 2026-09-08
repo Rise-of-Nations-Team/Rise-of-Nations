@@ -10589,11 +10589,6 @@ characters={
 			}
 
 			visible = {
-				owner = {
-					mio:GER_porsche_organization = {
-						is_mio_trait_completed = GER_mio_trait_involve_porsche_in_special_projects
-					}
-				}
 				date < 1951.1.1
 			}
 		}
@@ -10614,11 +10609,6 @@ characters={
 			}
 
 			visible = {
-				owner = {
-					mio:GER_henschel_organization = {
-						is_mio_trait_completed = GER_mio_trait_involve_henschel_in_special_projects
-					}
-				}
 				date > 1910.1.1
 				date < 1974.1.1
 			}

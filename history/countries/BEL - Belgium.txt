@@ -41,6 +41,7 @@ recruit_character = BEL_cyriaque_gillain
 recruit_character = BEL_emile_dossin_de_Saint-Georges
 recruit_character = BEL_Albert_i
 recruit_character = BEL_Ridder_de_Selliers_de_Moranville
+recruit_character = BEL_paul_de_smet_de_naeyer
 recruit_character = BEL_charles_de_broqueville
 recruit_character = BEL_Baron_Mathieu
 recruit_character = BEL_nicolas_florine
@@ -93,28 +94,6 @@ set_popularities = {
 	communism = 4
 	fascism = 5
 	neutrality = 1
-}
-
-# create_country_leader = {
-# 	name = "Leopold II"
-# 	picture = "gfx/leaders/BEL/DNC/BEL_Leopold_II.dds"
-	
-# 	ideology = despotism
-# }
-
-# create_country_leader = {
-# 	name = "Leopold II"
-# 	picture = "gfx/leaders/BEL/DNC/BEL_Leopold_II.dds"
-	
-# 	ideology = constitutional_monarchism
-# }
-
-create_country_leader = {
-	name = "Joseph Jacquemotte"
-	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
-	picture = "COM_BEL_JACQUEMOTTE.dds"
-	
-	ideology = anarchist_communism
 }
 
 # Congo Resources

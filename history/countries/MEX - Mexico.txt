@@ -4,19 +4,33 @@ oob = "MEX_1900"
 
 add_ideas = {
 	export_focus
-	#tax_average
-	#tariffs_average
 	civilian_economy
-	#press_free
-	#private_control
-	#fdi_allowed
-	#security_liberty_first
-	#foreign_volunteers
-	#train_medium
-	#officer_train_low
-	#education_budget5
-	#health_budget5
-	#foreign_neutral
+	MEX_idea_porfiriato
+	MEX_idea_haciendas
+}
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	WW1_tech_engineers = 1
+	basic_train = 1
+	horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
 }
 
 set_country_flag = monroe_doctrine

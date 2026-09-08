@@ -5,11 +5,8 @@ set_research_slots = 2
 
 add_ideas = {
 	war_economy
-	foreign_warmonger
 	closed_economy
 	service_by_requirement
-	age_18
-	age_50
 	BOX_disorganized_rebellion
 	BOX_xenophobic_zeal
 }

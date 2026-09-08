@@ -2164,7 +2164,35 @@ political_actions = {
 		icon = generic_civil_support
 
 		available = {
-			fascism < 0.2
+			if = {
+				limit = {
+					has_dlc = "Graveyard of Empires"
+					original_tag = RAJ
+					has_idea = ENG_dominion_fascist_propaganda
+					
+				}
+			}
+			else = {
+				fascism < 0.2
+			}
+			IF = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			IF = {
+				limit = {
+					has_aat = yes 
+					original_tag = NOR 
+				}
+				NOT = {
+					has_idea = NOR_anti_communist_sentiment_ns
+				}
+			}
+
 			if = {
 				limit = {
 					original_tag = RAJ

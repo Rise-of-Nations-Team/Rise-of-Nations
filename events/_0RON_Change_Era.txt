@@ -1,0 +1,3455 @@
+add_namespace = change_era
+
+#######Universal Event############
+country_event = {
+	id = change_era.1
+	title = change_era.1.t
+	desc = change_era.1.d
+	picture = "[GFX_RON_Welcome_Event_By_Date]"
+	is_triggered_only = yes
+	option = {
+		name = change_era.1.a
+
+		ai_chance = {
+			base = 1000
+		}
+
+		custom_effect_tooltip = RON_loading_next_era_tt
+
+		if = {
+			limit = {
+				threat > 0.24
+				threat < 0.50
+			}
+			add_named_threat = {
+				threat = -25
+				name = "Era Change"
+			}
+		}
+
+		if = {
+			limit = {
+				threat > 0.49
+				threat < 0.75
+			}
+			add_named_threat = {
+				threat = -50
+				name = "Era Change"
+			}
+		}
+
+		if = {
+			limit = {
+				threat > 0.74
+				threat < 0.99
+			}
+			add_named_threat = {
+				threat = -75
+				name = "Era Change"
+			}
+		}
+
+		if = {
+			limit = {
+				threat > 0.99
+			}
+			add_named_threat = {
+				threat = -100
+				name = "Era Change"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = change_era.2
+	title = change_era.2.t
+	desc = change_era.2.d
+	picture = "[GFX_RON_Welcome_Event_By_Date]"
+	is_triggered_only = yes	
+	#hidden = yes
+	option = {
+		name = change_era.2.a
+		custom_effect_tooltip = RON_loading_next_era_tt
+	}
+}
+
+#Bonus Research Slot
+country_event = {
+	id = change_era.3
+	title = change_era.3.t
+	desc = change_era.3.d
+	picture = GFX_report_event_RON_Science
+	is_triggered_only = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		custom_effect_tooltip = RON_bonus_research_slot_report_tt
+
+		hidden_effect = {
+			RON_Bonus_Research_Slots = yes
+		}
+	}
+}
+
+country_event = {
+	id = change_era.4
+	title = change_era.4.t
+	desc = change_era.4.d
+	picture = GFX_report_event_RON_Economic_Crisis
+	is_triggered_only = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		custom_effect_tooltip = RON_must_demobilize_tt
+	}
+}
+
+country_event = {
+	id = change_era.5
+	title = change_era.5.t
+	desc = change_era.5.d
+	picture = GFX_report_event_RON_Economic_Crisis
+	is_triggered_only = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		custom_effect_tooltip = RON_must_demobilize_tt
+
+		RON_handle_post_ww2_demob = yes
+	}
+}
+
+#WW1 leaders
+country_event = {
+	id = change_era.6
+	title = change_era.6.t
+	desc = change_era.6.d
+	picture = GFX_report_event_RON_Economic_Crisis
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		hidden_effect = {
+			#Argentina#
+			if = {
+			limit = {
+				tag = ARG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						ARG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1904.4.10"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						neutrality = 80
+						democratic = 20
+					}
+				}				
+				
+				promote_character = ARG_hipolito_yrigoyen
+				retire_character = ARG_bartolome_mitre
+				set_party_name = { ideology = democratic  long_name = ARG_union_civica_radical_long name = ARG_union_civica_radical }
+
+				
+				promote_character = ARG_juan_bautista_justo
+				set_party_name = { ideology = communism  long_name = ARG_partido_socialista_long name = ARG_partido_socialista }
+
+				promote_character = ARG_jose_felix_uriburu
+				set_party_name = { ideology = fascism  long_name = ARG_alianza_libertadora_nacionalista_long name = ARG_alianza_libertadora_nacionalista }
+
+				promote_character = ARG_jose_figueroa_alcorta
+				retire_character = ARG_julio_argentino_roca
+				set_party_name = { ideology = neutrality  long_name = ARG_partido_autonomista_nacional_long name = ARG_partido_autonomista_nacional }
+			}
+			### Straya
+			if = {
+			limit = {
+				tag = AST
+			}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1907.1.12"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+				
+					set_popularities = {
+						democratic = 97
+						neutrality = 2
+						communism = 1
+					}
+				}				
+				retire_ideology_leader = democratic
+				AST_alfred_deakin = {
+					promote_character = {
+						Ideology = conservatism
+					}
+				}
+			}
+			#Chile#
+			if = {
+			limit = {
+				tag = CHL
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						CHL = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1906.6.25"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 32
+						neutrality = 62
+						communism = 1
+					}
+				}	
+				
+				promote_character = CHL_ramon_barros_luco
+				retire_character = CHL_federico_errazuriz_echaurren
+				set_party_name = { ideology = democratic  long_name = CHL_partido_liberal_long name = CHL_partido_liberal }
+
+				
+				promote_character = CHL_malaquias_concha_ortiz
+				set_party_name = { ideology = communism  long_name = CHL_partido_democrata_long name = CHL_partido_democrata }
+
+				
+				promote_character = CHL_jorge_montt
+				set_party_name = { ideology = fascism  long_name = CHL_junta_long name = CHL_junta }
+
+				promote_character = CHL_pedro_montt_montt
+				set_party_name = { ideology = neutrality  long_name = CHL_alianza_liberal_long name = CHL_alianza_liberal }
+			}
+			#Egypt#
+			if = {
+			limit = {
+				tag = EGY
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						EGY = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1910.1.1"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 20
+						islamism = 20
+						fascism = 5
+						communism = 5
+						neutrality = 50
+					}
+				}
+				add_ideas = abbas_ii			
+				
+				promote_character = EGY_adly_yakan_pasha
+				set_party_name = { ideology = democratic  long_name = EGY_liberal_constitutionalist_party_long name = EGY_liberal_constitutionalist_party }
+
+				
+				promote_character = EGY_salama_moussa
+				set_party_name = { ideology = communism  long_name = EGY_socialist_party_long name = EGY_socialist_party }
+
+				
+				promote_character = EGY_mohammad_farid
+				retire_character = EGY_mustafa_kamil_pasha
+				set_party_name = { ideology = fascism  long_name = EGY_watani_long name = EGY_watani }
+
+				
+				promote_character = EGY_mustafa_said_pasha
+				retire_character = EGY_mustafa_fahmi_pasha
+				set_party_name = { ideology = neutrality  long_name = EGY_prime_minister name = EGY_prime_minister }
+
+				
+				promote_character = EGY_mohamed_tawfik_naseem_pasha
+				set_party_name = { ideology = islamism  long_name = EGY_ittihad_party_long name = EGY_ittihad_party }
+			}
+			if = {
+			limit = {
+				tag = FRA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						FRA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1907.1.12"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+
+					set_popularities = {
+						democratic = 78
+						communism = 22
+					}
+				}
+				retire_character = FRA_Emile_loubet
+				
+				FRA_armand_fallieres = {
+					promote_character = {
+						Ideology = conservatism
+					}
+				}
+			}
+			#Guatemala#
+			if = {
+			limit = {
+				tag = GUA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						GUA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1904.11.4"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 20
+						neutrality = 80
+					}
+				}
+				promote_character = GUA_jose_leon_castillo
+				set_party_name = { ideology = democratic  long_name = GUA_partido_liberal_long name = GUA_partido_liberal }
+
+				promote_character = GUA_manuel_lisandro_barillas
+				set_party_name = { ideology = fascism  long_name = GUA_partido_liberal_long name = GUA_partido_liberal }		
+
+				promote_character = GUA_manuel_estrada_cabrera
+				set_party_name = { ideology = neutrality  long_name = GUA_partido_liberal_long name = GUA_partido_liberal }	
+			}
+			if = {
+			limit = {
+				tag = GER
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						GER = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1915.2.19"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						fascism = 40
+						democratic = 30
+						communism = 20
+						neutrality = 10
+					}
+				}
+				
+				GER_general_council = {
+					promote_character = {
+						Ideology = big_tent
+					}
+				}
+				set_party_name = { ideology = democratic  long_name = GER_neutrality_party_1919_long name = GER_neutrality_party_1919 }
+
+				country_event = { id = ww2_germany.32 days = 92 }
+
+				
+				GER_ernst_thalmann = {
+					promote_character = {
+						Ideology = marxism
+					}
+				}
+				set_party_name = { ideology = communism  long_name = GER_communism_party_1919_long name = GER_communism_party_1919 }
+
+				GER_wolfgang_kapp = {
+					promote_character = {
+						Ideology = ultranationalism
+					}
+				}
+				set_party_name = { ideology = fascism  long_name = GER_fascism_party_1919_long name = GER_fascism_party_1919 }
+
+				
+				GER_wilhelm_iii = {
+					promote_character = {
+						Ideology = despotism
+					}
+				}
+				set_party_name = { ideology = neutrality  long_name = GER_neutrality_party_1919_long name = GER_neutrality_party_1919 }
+			}	
+			#Monaco#
+			if = {
+			limit = {
+				tag = MCO
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						MCO = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1907.1.12"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					#To reflect the 1911 riot
+					set_popularities = {
+						democratic = 60
+						fascism = 0
+						communism = 0
+						neutrality = 40
+					}
+				}
+				
+				promote_character = MCO_albert_i
+				set_party_name = { ideology = neutrality  long_name = MCO_house_of_grimaldi_long name = MCO_house_of_grimaldi }
+				set_party_name = { ideology = fascism  long_name = MCO_house_of_grimaldi_long name = MCO_house_of_grimaldi }
+
+				
+				promote_character = MCO_suffren_reymond
+				set_party_name = { ideology = democratic  long_name = MCO_monaco_comittee name = MCO_monaco_comittee }
+
+				
+				promote_character = MCO_benjamin_tucker
+				set_party_name = { ideology = communism  long_name = MCO_anarcho_socialists name = MCO_anarcho_socialists }
+
+				
+			}				
+			#Paraguay#
+			if = {
+			limit = {
+				tag = PAR
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						PAR = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1906.11.25"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 30
+						neutrality = 70
+					}
+				}	
+				
+				promote_character = PAR_bernardino_caballero
+				retire_character = PAR_emilio_aceval
+				set_party_name = { ideology = democratic  long_name = PAR_colorado_long name = PAR_colorado_long }
+
+				
+				promote_character = PAR_rufino_recalrde_milesi
+				set_party_name = { ideology = communism  long_name = PAR_partido_obrero_long name = PAR_partido_obrero }
+
+				promote_character = PAR_albino_jara
+				set_party_name = { ideology = fascism  long_name = PAR_junta_militar_long name = PAR_junta_militar }
+
+				
+				promote_character = PAR_emiliano_gonzalez_navero
+				retire_character = PAR_juan_bautista_gaona
+				set_party_name = { ideology = neutrality  long_name = PAR_liberal_long name = PAR_liberal }	
+			}
+			#Uruguay#
+			if = {
+			limit = {
+				tag = URG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						URG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1907.3.1"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 70
+						communism = 10
+						fascism = 20
+					}
+				}	
+				
+				promote_character = URG_claudio_williman
+				retire_character = URG_juan_lindolfo_cuestas
+
+				promote_character = URG_luis_alberto_de_herrera_fascism
+				retire_character = URG_aparicio_saravia
+
+				
+				promote_character = URG_joaquin_secco_illa
+				retire_character = URG_pablo_de_maria
+
+				set_party_name = { ideology = neutrality  long_name = URG_neutrality_party_1910_long name = URG_neutrality_party_1910 }
+			}
+			#Vatican#
+			if = {
+			limit = {
+				tag = PAP
+			}
+				
+				promote_character = PAP_pius_x
+				retire_character = PAP_leo_xiii
+			}
+		}	
+	}
+}
+
+#INT leaders
+country_event = {
+	id = change_era.7
+	title = change_era.7.t
+	desc = change_era.7.d
+	picture = GFX_report_event_RON_Economic_Crisis
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		hidden_effect = {
+			#Argentina#
+			if = {
+			limit = {
+				tag = ARG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						ARG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1916.4.2"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 66
+						communism = 9
+						neutrality = 25
+					}
+				}
+				
+				promote_character = ARG_hipolito_yrigoyen
+				retire_character = ARG_bartolome_mitre
+				set_party_name = { ideology = democratic  long_name = ARG_union_civica_radical_long name = ARG_union_civica_radical }
+
+				
+				promote_character = ARG_juan_bautista_justo
+				set_party_name = { ideology = communism  long_name = ARG_partido_socialista_long name = ARG_partido_socialista }
+
+				
+				promote_character = ARG_jose_felix_uriburu
+				retire_character = ARG_bartolome_mitre
+				set_party_name = { ideology = fascism  long_name = ARG_alianza_libertadora_nacionalista_long name = ARG_alianza_libertadora_nacionalista }
+
+				
+				promote_character = ARG_norberto_pinero
+				retire_character = ARG_jose_figueroa_alcorta
+				set_party_name = { ideology = neutrality  long_name = ARG_partido_autonomista_nacional_long name = ARG_partido_autonomista_nacional }
+			}
+			### Straya
+			if = {
+			limit = {
+				tag = AST
+			}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1919.1.1"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 97
+						neutrality = 2
+						communism = 1
+					}		
+				}				
+				retire_ideology_leader = democratic
+				
+				AST_billy_hughes = {
+					promote_character = {
+						Ideology = liberalism
+					}
+				}
+			}
+			if = {
+			limit = {
+				tag = CHL
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						CHL = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1915.6.25"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 49
+						neutrality = 50
+						communism = 1
+					}
+				}	
+				
+				promote_character = CHL_juan_luis_sanfuentes_andonaegui
+				retire_character = CHL_ramon_barros_luco
+				set_party_name = { ideology = democratic  long_name = CHL_coalicion name = CHL_coalicion }
+
+				
+				promote_character = CHL_malaquias_concha_ortiz
+				set_party_name = { ideology = communism  long_name = CHL_partido_democrata_long name = CHL_partido_democrata }
+
+				
+				promote_character = CHL_carlos_ibanez_del_campo
+				retire_character = CHL_jorge_montt
+				set_party_name = { ideology = fascism  long_name = CHL_regimen_long name = CHL_regimen }
+
+				
+				promote_character = CHL_arturo_alessandri_WW1
+				retire_character = CHL_pedro_montt_montt
+				set_party_name = { ideology = neutrality  long_name = CHL_union_liberal_long name = CHL_union_liberal }
+			}
+			if = {
+			limit = {
+				tag = EGY
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						EGY = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1910.1.1"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 20
+						islamism = 20
+						fascism = 5
+						communism = 5
+						neutrality = 50
+					}
+				}
+				remove_ideas = abbas_ii
+				add_ideas = fuad_i
+			}
+			if = {
+			limit = {
+				tag = FRA
+			}
+				retire_character = FRA_armand_fallieres
+				
+				FRA_Raymond_Poincare = {
+					promote_character = {
+						Ideology = conservatism
+					}
+				}
+				retire_character = FRA_philippe_dorleans
+				
+				FRA_Charles_Maurras = {
+					promote_character = {
+						Ideology = despotism
+					}
+				}
+			}
+			#Germany#
+			#GER = {
+
+			#}	
+			#Guatemala#
+			if = {
+			limit = {
+				tag = GUA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						GUA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1916.1.17"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 78
+						neutrality = 22
+					}
+				}
+				
+				promote_character = GUA_carlos_herrera_y_luna
+				retire_character = GUA_jose_leon_castillo
+				set_party_name = { ideology = democratic  long_name = GUA_partido_unionista_long name = GUA_partido_unionista }
+
+				
+				promote_character = GUA_antonio_obando_Sanchez
+				set_party_name = { ideology = communism  long_name = GUA_partido_comunista_long name = GUA_partido_comunista }	
+
+				
+				promote_character = GUA_jose_reyes_roda
+				retire_character = GUA_manuel_lisandro_barillas
+				set_party_name = { ideology = fascism  long_name = GUA_junta_militar name = GUA_junta_militar }	
+			}
+			#Monaco#
+			if = {
+			limit = {
+				tag = MCO
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						MCO = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1917.1.2"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 10
+						fascism = 0
+						communism = 0
+						neutrality = 90
+					}
+				}
+				
+				promote_character = MCO_albert_i
+				set_party_name = { ideology = neutrality  long_name = MCO_house_of_grimaldi_long name = MCO_house_of_grimaldi }
+				set_party_name = { ideology = fascism  long_name = MCO_house_of_grimaldi_long name = MCO_house_of_grimaldi }
+
+				
+				promote_character = MCO_suffren_reymond
+				set_party_name = { ideology = democratic  long_name = MCO_monaco_comittee name = MCO_monaco_comittee }
+
+				promote_character = MCO_benjamin_tucker
+				set_party_name = { ideology = communism  long_name = MCO_anarcho_socialists name = MCO_anarcho_socialists }
+
+				
+			}
+			if = {
+			limit = {
+				tag = PAR
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						PAR = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1916.11.25"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 80
+						neutrality = 20
+					}
+				}	
+				
+				promote_character = PAR_jose_pedro_montero
+				retire_character = PAR_bernardino_caballero
+				set_party_name = { ideology = democratic  long_name = PAR_liberal_long name = PAR_liberal }
+
+				
+				promote_character = PAR_rufino_recalrde_milesi
+				set_party_name = { ideology = communism  long_name = PAR_partido_obrero_long name = PAR_partido_obrero }
+
+				
+				promote_character = PAR_adolfo_chirife
+				retire_character = PAR_albino_jara
+				set_party_name = { ideology = fascism  long_name = PAR_junta_militar_long name = PAR_junta_militar }
+
+				
+				promote_character = PAR_juan_manuel_frutos
+				retire_character = PAR_emiliano_gonzalez_navero
+				set_party_name = { ideology = neutrality  long_name = PAR_colorado_long name = PAR_colorado_long }	
+			}	
+			if = {
+			limit = {
+				tag = ROM
+			}
+				retire_character = ROM_Carol_I
+				retire_character = ROM_petre_carp
+				promote_character = ROM_Ferdinand_I
+				promote_character = ROM_ion_i_c_bratianu
+			}		
+			#Uruguay#
+			if = {
+			limit = {
+				tag = URG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						URG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1915.3.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 49
+						communism = 1
+						fascism = 47
+						neutrality = 3
+					}
+				}	
+				
+				promote_character = URG_consejo_nacional_de_administracion
+				retire_character = URG_claudio_williman
+				set_party_name = { ideology = democratic  long_name = URG_democratic_party_1919_long name = URG_democratic_party_1919 }
+
+				
+				promote_character = URG_luis_alberto_de_herrera_fascism
+
+				
+				promote_character = URG_eugenio_gomez
+				retire_character = URG_emilio_frugoni_socialist
+				set_party_name = { ideology = communism  long_name = URG_communism_party_1919_long name = URG_communism_party_1919 }
+			}
+			#Vatican#
+			if = {
+			limit = {
+				tag = PAP
+			}
+				
+				promote_character = PAP_benedict_xv
+				retire_character = PAP_pius_x
+			}
+		}	
+	}
+}
+
+#WW2 leaders
+country_event = {
+	id = change_era.8
+	title = change_era.8.t
+	desc = change_era.8.d
+	picture = GFX_report_event_RON_Economic_Crisis
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		hidden_effect = {
+			#Argentina#
+			if = {
+			limit = {
+				tag = ARG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						ARG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1931.11.8"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 36
+						communism = 3
+						neutrality = 61
+					}
+				}
+				
+				promote_character = ARG_lisandro_de_la_torre
+				retire_character = ARG_hipolito_yrigoyen
+				set_party_name = { ideology = democratic  long_name = ARG_alianza_civil_long name = ARG_alianza_civil }
+
+				
+				promote_character = ARG_orestes_tomas_ghioldi
+				retire_character = ARG_juan_bautista_justo
+				set_party_name = { ideology = communism  long_name = ARG_partido_comunista_long name = ARG_partido_comunista }
+
+				
+				promote_character = ARG_manuel_carles
+				retire_character = ARG_jose_felix_uriburu
+				set_party_name = { ideology = fascism  long_name = ARG_liga_patriotica_argentina_long name = ARG_liga_patriotica_argentina }
+
+				
+				set_portraits = {
+					character = ARG_agustin_pedro_justo
+					army = { large ="gfx/leaders/ARG/Portrait_Argentina_Agustin_Pedro_Justo.dds" }
+				} 
+				add_country_leader_role = {
+					character = ARG_agustin_pedro_justo
+					promote_leader = yes
+					country_leader = {
+						ideology=authoritarian_democracy
+						traits = {
+							economic_reformer
+						}
+						expire="2060.1.1.1"
+					}
+				}
+				retire_character = ARG_norberto_pinero
+				set_party_name = { ideology = neutrality  long_name = ARG_concordancia name = ARG_concordancia }
+			}
+			### Straya
+			if = {
+			limit = {
+				tag = AST
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1933.1.1"
+						election_frequency = 36
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 98
+						communism = 2
+					}		
+				}				
+				retire_ideology_leader = democratic
+				
+				AST_john_curtin = {
+					promote_character = {
+						Ideology = socialism
+					}
+				}
+			}
+			if = {
+			limit = {
+				tag = CHL
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						CHL = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1932.6.25"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 27
+						neutrality = 55
+						communism = 18
+					}
+				}	
+				
+				promote_character = CHL_pedro_aguirre_cerda
+				retire_character = CHL_juan_luis_sanfuentes_andonaegui
+				set_party_name = { ideology = democratic  long_name = CHL_frente_popular_long name = CHL_frente_popular }
+
+				
+				promote_character = CHL_carlos_contreras_labarca
+				retire_character = CHL_malaquias_concha_ortiz
+				set_party_name = { ideology = communism  long_name = CHL_partido_comunista_long name = CHL_partido_comunista }
+
+				
+				promote_character = CHL_jorge_gonzalez_von_marees
+				retire_character = CHL_carlos_ibanez_del_campo
+				set_party_name = { ideology = fascism  long_name = CHL_MNS_long name = CHL_MNS }
+
+				
+				promote_character = CHL_arturo_alessandri_WW2
+				retire_character = CHL_arturo_alessandri_WW1
+				set_party_name = { ideology = neutrality  long_name = CHL_partido_liberal_long name = CHL_partido_liberal }
+			}
+			#Egypt#
+			if = {
+			limit = {
+				tag = EGY
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						EGY = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1930.5.7"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 25
+						communism = 0
+						fascism = 3
+						neutrality = 72
+					}
+				}			
+				
+				promote_character = EGY_mohamed_mahmoud_pasha
+				retire_character = EGY_adly_yakan_pasha
+
+				set_party_name = { ideology = communism  long_name = EGY_communist_party_long name = EGY_communist_party }
+
+				
+				promote_character = EGY_muhammad_hafiz_ramadan
+				retire_character = EGY_mohammad_farid
+				set_party_name = { ideology = fascism  long_name = EGY_watani_long name = EGY_watani }
+
+				
+				promote_character = EGY_ismail_sidqi_pasha
+				retire_character = EGY_hussein_rushdi_pasha
+				set_party_name = { ideology = neutrality  long_name = EGY_wafd_long name = EGY_wafd }
+
+				
+				promote_character = EGY_hassan_al_banna
+				retire_character = EGY_mohamed_tawfik_naseem_pasha
+				set_party_name = { ideology = islamism  long_name = EGY_muslim_brotherhood_long name = EGY_muslim_brotherhood }
+
+				446 = {
+					remove_province_modifier = {
+						static_modifiers = { DNCCairo }
+						province = {
+							id = 7011
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Cairo }
+						province = {
+							id = 7011
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { DNCGiza }
+						province = {
+							id = 3996
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Giza }
+						province = {
+							id = 3996
+						}
+					}
+				}
+				447 = {
+					remove_province_modifier = {
+						static_modifiers = { DNCAlexandria }
+						province = {
+							id = 4076
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Alexandria }
+						province = {
+							id = 4076
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { DNCElAlamein }
+						province = {
+							id = 1071
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2ElAlamein }
+						province = {
+							id = 1071
+						}
+					}
+				}
+				456 = {
+					remove_province_modifier = {
+						static_modifiers = { DNCAswan }
+						province = {
+							id = 11999
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Aswan }
+						province = {
+							id = 11999
+						}
+					}
+				}
+				995 = {
+					remove_province_modifier = {
+						static_modifiers = { DNCSuez }
+						province = {
+							id = 4073
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Suez }
+						province = {
+							id = 4073
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { DNCPortSaid }
+						province = {
+							id = 12049
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2PortSaid }
+						province = {
+							id = 12049
+						}
+					}
+				}
+			}
+			if = {
+			limit = {
+				tag = ENG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						ENG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1933.1.1"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 97
+						fascism = 2
+						communism = 1
+					}
+				}
+				remove_country_leader_role = {
+					character = ENG_george_v
+					ideology = constitutional_monarchism
+				}
+				
+				ENG_ramsay_macdonald = {
+					promote_character = {
+						Ideology = socialism
+					}
+				}
+				retire_ideology_leader = fascism
+				
+				ENG_oswald_mosley = {
+					promote_character = {
+						Ideology = british_fascism #fascism
+					}
+				}
+				retire_ideology_leader = communism
+				retire_character = ENG_henry_hyndman
+				
+				ENG_harry_pollitt = {
+					promote_character = {
+						Ideology = leninism #communism
+					}
+				}
+			}
+			if = {
+			limit = {
+				tag = FRA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						FRA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1932.5.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 69
+						fascism = 1
+						communism = 30
+					}
+				}
+				retire_character = FRA_Raymond_Poincare
+				remove_country_leader_role = { #remove communism
+					character = FRA_leon_blum
+					ideology = marxism
+				}
+				add_country_leader_role = { #add democracy
+					Character = FRA_leon_blum
+					Promote_leader = yes
+					Country_leader = {
+						ideology = socialism
+						expire = "1950.3.30"
+					}
+				}
+				FRA = {
+					set_country_leader_portrait = {
+						ideology = democratic
+						portrait = "gfx/leaders/FRA/Portrait_France_Leon_Blum.dds"
+					}
+				}
+
+				
+				FRA_Maurice_Thorez = {
+					promote_character = {
+						Ideology = stalinism
+					}
+				}
+
+				remove_country_leader_role = {
+					character = FRA_maurice_pujo
+					ideology = french_fascism
+				}
+				
+				FRA_philippe_petain = {
+					remove_unit_leader_role = yes
+				}
+				add_country_leader_role = { #add fascism
+					Character = FRA_philippe_petain
+					Promote_leader = yes
+					Country_leader = {
+						desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+						ideology = french_fascism
+						expire = "1951.7.23"
+					}
+				}
+				FRA = {
+					set_country_leader_portrait = {
+						ideology = fascism
+						portrait = "gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+					}
+				}
+
+				retire_character = FRA_Charles_Maurras
+				
+				FRA_Henri_d_Orleans = {
+					promote_character = {
+						Ideology = despotism
+					}
+				}
+			}
+			#Germany#
+			if = {
+			limit = {
+				tag = GER
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						GER = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1929.1.30"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						fascism = 55
+						democratic = 25
+						communism = 15
+						neutrality = 5
+					}
+				}
+				retire_character = GER_general_council #democracy
+				retire_character = GER_wolfgang_kapp #fascism
+				
+				GER_paul_von_hindenburg = {
+					promote_character = {
+						Ideology = democratic_independent
+					}
+				}
+				
+				GER_adolf_hitler = {
+					promote_character = {
+						Ideology = nazism
+					}
+				}
+				
+			}
+			#Guatemala#
+			if = {
+			limit = {
+				tag = GUA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						GUA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1931.2.8"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 20
+						neutrality = 80
+					}
+				}
+				
+				promote_character = GUA_juan_jose_arevalo
+				retire_character = GUA_carlos_herrera_y_luna
+				set_party_name = { ideology = democratic  long_name = GUA_partido_unionista_long name = GUA_partido_unionista }
+
+				
+				promote_character = GUA_carlos_castillo_armas
+				retire_character = GUA_jose_reyes_roda
+				set_party_name = { ideology = fascism  long_name = GUA_movimiento_liberacion_long name = GUA_movimiento_liberacion }		
+
+				
+				promote_character = GUA_jorge_ubico
+				retire_character = GUA_manuel_estrada_cabrera	
+				set_party_name = { ideology = neutrality  long_name = GUA_partido_liberal_progresista_long name = GUA_partido_liberal_progresista }
+			}
+			#Monaco#
+			if = {
+			limit = {
+				tag = MCO
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						MCO = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1932.5.15"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 70
+						fascism = 0
+						communism = 0
+						neutrality = 30
+					}
+				}
+
+				add_ideas = louis_ii
+
+				retire_character = MCO_louis_II_young
+				retire_character = MCO_albert_i
+				
+				promote_character = MCO_louis_II
+				set_party_name = { ideology = neutrality  long_name = MCO_house_of_grimaldi_long name = MCO_house_of_grimaldi }
+				set_party_name = { ideology = fascism  long_name = MCO_house_of_grimaldi_long name = MCO_house_of_grimaldi }
+
+				
+				promote_character = MCO_maurice_boulloux_lafont
+				set_party_name = { ideology = democratic  long_name = MCO_minister_of_state name = MCO_minister_of_state }
+
+				
+				promote_character = MCO_benjamin_tucker
+				set_party_name = { ideology = communism  long_name = MCO_anarcho_socialists name = MCO_anarcho_socialists }
+			}
+			if = {
+			limit = {
+				tag = PAR
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						PAR = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1932.8.15"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 35
+						communism = 35
+						fascism = 10
+						neutrality = 20
+					}
+				}	
+				
+				promote_character = PAR_eusebio_ayala
+				retire_character = PAR_jose_pedro_montero
+				set_party_name = { ideology = democratic  long_name = PAR_liberal_long name = PAR_liberal }
+
+				
+				promote_character = PAR_rafael_franco
+				retire_character = PAR_obdulio_barthe
+				set_party_name = { ideology = communism  long_name = PAR_partido_nacional_revolucionario_long name = PAR_partido_nacional_revolucionario }
+
+				
+				promote_character = PAR_higinio_morinigo
+				retire_character = PAR_adolfo_chirife
+				set_party_name = { ideology = fascism  long_name = PAR_junta_militar_long name = PAR_junta_militar }
+
+				
+				promote_character = PAR_jose_felix_estigarribia
+				retire_character = PAR_arsenio_lopez_decoud
+				set_party_name = { ideology = neutrality  long_name = PAR_liberal_long name = PAR_liberal }	
+			}
+			if = {
+			limit = {
+				tag = ROM
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						ROM = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1933.7.26"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 35
+						communism = 0
+						fascism = 35
+						neutrality = 30
+					}
+				}
+
+				retire_character = ROM_Ferdinand_I
+				retire_character = ROM_ion_i_c_bratianu
+				retire_character = ROM_constantin_dobrogenau_gherea
+				retire_character = ROM_nicolae_iorga
+
+				retire_character = ROM_alexandru_averescu
+				retire_character = ROM_ernest_brosteanu
+				retire_character = ROM_grigore_crainiceanu
+				retire_character = ROM_henri_cihoski
+				retire_character = ROM_constantin_prezan
+				retire_character = ROM_artur_vaitoianu
+				retire_character = ROM_constantin_coanda
+				retire_character = ROM_constantin_cristescu
+				retire_character = ROM_constantin_dumitrescu
+				retire_character = ROM_gheorghe_cantacuzino_granicerul
+				retire_character = ROM_gheorghe_valeanu
+				retire_character = ROM_ioan_culcer
+				retire_character = ROM_iacob_zadik
+				retire_character = ROM_constantin_balescu
+				retire_character = ROM_constantin_niculescu_rizea
+				retire_character = ROM_vasile_scodrea
+
+				promote_character = ROM_gheorghe_tatarescu
+				promote_character = ROM_gheorghe_gheorghiu_dej
+				promote_character = ROM_corneliu_zelea_codreanu
+				promote_character = ROM_Carol_II
+
+				promote_character = ROM_barbu_paraianu
+				promote_character = ROM_nicolae_ciuperca
+				promote_character = ROM_corneliu_teodorini
+				promote_character = ROM_corneliu_dragalina
+				promote_character = ROM_corneliu_dragalina
+				promote_character = ROM_dumitru_coroama
+				promote_character = ROM_edgar_radulescu
+				promote_character = ROM_gheorghe_manoliu
+				promote_character = ROM_leonard_mociulschi
+				promote_character = ROM_gheorghe_avramescu
+				promote_character = ROM_ioan_mihail_racovita
+				promote_character = ROM_ion_antonescu
+				promote_character = ROM_petre_dumitrescu
+				promote_character = ROM_ioan_p_georgescu
+				promote_character = ROM_petre_barbuneanu
+				promote_character = ROM_horia_macelariu
+				promote_character = ROM_eugeniu_rosca
+			}
+			#Suriname#
+			if = {
+			limit = {
+				tag = SUR
+			}
+				309 = {
+					remove_province_modifier = {
+						static_modifiers = { DNCParamaribo }
+						province = {
+							id = 10906
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Paramaribo }
+						province = {
+							id = 10906
+						}
+					}
+				}
+			}						
+			#Uruguay#
+			if = {
+			limit = {
+				tag = URG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						URG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1929.4.4"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 49
+						communism = 1
+						neutrality = 47
+						fascism = 3
+					}
+				}	
+				
+				promote_character = URG_gabriel_terra
+				retire_character = URG_joaquin_secco_illa
+				set_party_name = { ideology = neutrality  long_name = URG_neutrality_party_1933_long name = URG_neutrality_party_1933 }
+
+				
+				promote_character = URG_consejo_nacional_de_administracion
+				set_party_name = { ideology = democratic  long_name = URG_democratic_party_1919_long name = URG_democratic_party_1919 }
+
+				
+				promote_character = URG_adolfo_agorio
+				retire_character = URG_luis_alberto_de_herrera_fascism
+				set_party_name = { ideology = fascism  long_name = URG_fascism_party_1933_long name = URG_fascism_party_1933 }
+
+				
+				promote_character = URG_eugenio_gomez
+				set_party_name = { ideology = communism  long_name = URG_communism_party_1919_long name = URG_communism_party_1919 }
+				
+				### VPs ###
+				300 = {
+					remove_province_modifier = {
+						static_modifiers = { DNCMontevideo }
+						province = {
+							id = 10362
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Montevideo }
+						province = {
+							id = 10362
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { DNCMelo }
+						province = {
+							id = 1641
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Melo }
+						province = {
+							id = 1641
+						}
+					}
+				}
+				1127 = {
+					remove_province_modifier = {
+						static_modifiers = { DNCSalto }
+						province = {
+							id = 12468
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Salto }
+						province = {
+							id = 12468
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { DNCRivera }
+						province = {
+							id = 1626
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2Rivera }
+						province = {
+							id = 1626
+						}
+					}			
+				}
+			}
+			#Vanuatu#
+			if = {
+			limit = {
+				tag = VAN
+			}
+				1101 = {
+					remove_province_modifier = {
+						static_modifiers = { DNCPortVila }
+						province = {
+							id = 1237
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { WW2PortVila }
+						province = {
+							id = 1237
+						}
+					}
+				}
+			}
+			#Vatican#
+			if = {
+			limit = {
+				tag = PAP
+			}
+				
+				promote_character = PAP_pius_xi
+				retire_character = PAP_benedict_xv
+			}
+		}	
+	}
+}
+
+#Cold War leaders
+country_event = {
+	id = change_era.9
+	title = change_era.9.t
+	desc = change_era.9.d
+	picture = GFX_report_event_RON_Economic_Crisis
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		hidden_effect = {
+			#Argentina#
+			if = {
+			limit = {
+				tag = ARG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						ARG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1946.2.24"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 41
+						neutrality = 56
+						communism = 3
+					}
+				}
+				promote_character = ARG_jose_p_tamborini
+				retire_character = ARG_marcelo_t_de_alvear
+				set_party_name = { ideology = democratic  long_name = ARG_union_democratica_long name = ARG_union_democratica }
+
+				
+				promote_character = ARG_rodolfo_jose_ghioldi
+				retire_character = ARG_orestes_tomas_ghioldi
+				set_party_name = { ideology = communism  long_name = ARG_partido_comunista_long name = ARG_partido_comunista }
+
+				
+				promote_character = ARG_juan_domingo_peron
+				retire_character = ARG_manuel_carles
+				set_party_name = { ideology = fascism  long_name = ARG_partido_peronista_long name = ARG_partido_peronista }
+
+				
+				promote_character = ARG_pedro_eugenio_aramburu
+				retire_character = ARG_agustin_pedro_justo
+				set_party_name = { ideology = neutrality  long_name = ARG_junta_consultiva_nacional_long name = ARG_junta_consultiva_nacional }
+			}
+			### Straya
+			if = {
+			limit = {
+				tag = AST
+			}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1949.1.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 100
+					}	
+				}				
+				retire_ideology_leader = democratic
+				add_country_leader_role = {
+					character = AST_ben_chifley
+					country_leader = {
+						ideology = socialism
+						expire = "1951.6.13"
+					}
+				}
+				promote_character = AST_ben_chifley
+			}
+			if = {
+			limit = {
+				tag = CHL
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						CHL = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1946.6.25"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 20
+						neutrality = 27
+						communism = 6
+						fascism = 47
+					}
+				}	
+				
+				promote_character = CHL_gabriel_gonzalez_videla
+				retire_character = CHL_pedro_aguirre_cerda
+				set_party_name = { ideology = democratic  long_name = CHL_frente_popular_long name = CHL_frente_popular }
+
+				
+				promote_character = CHL_salvador_allende
+				retire_character = CHL_carlos_contreras_labarca
+				set_party_name = { ideology = communism  long_name = CHL_frente_nacional_long name = CHL_frente_nacional }
+
+				
+				promote_character = CHL_carlos_ibanez_del_campo_old
+				retire_character = CHL_carlos_ibanez_del_campo
+				set_party_name = { ideology = fascism  long_name = CHL_agrario_laborista_long name = CHL_agrario_laborista }
+
+				
+				promote_character = CHL_jorge_alessandri
+				retire_character = CHL_arturo_alessandri_WW2
+				set_party_name = { ideology = neutrality  long_name = CHL_alessandri_long name = CHL_alessandri }
+			}
+			#Egypt#
+			if = {
+			limit = {
+				tag = EGY
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						EGY = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1945.1.3"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 9
+						communism = 1
+						fascism = 30
+						neutrality = 60
+					}
+				}			
+				
+				promote_character = EGY_mohamed_mahmoud_pasha
+				retire_character = EGY_adly_yakan_pasha
+
+				
+				promote_character = EGY_henri_curiel
+				retire_character = EGY_salama_moussa
+				set_party_name = { ideology = communism  long_name = EGY_democratic_national_liberation_long name = EGY_democratic_national_liberation }
+
+				
+				promote_character = EGY_gamel_abdel_nasser
+				retire_character = EGY_muhammad_hafiz_ramadan
+				set_party_name = { ideology = fascism  long_name = EGY_free_officers_long name = EGY_free_officers }
+
+				
+				promote_character = EGY_ahmad_mahir_pasha
+				retire_character = EGY_mustafa_el_nahhas_pasha
+				set_party_name = { ideology = neutrality  long_name = EGY_saadist_party_long name = EGY_saadist_party }
+
+				
+				promote_character = EGY_hassan_al_hudaybi
+				retire_character = EGY_hassan_al_banna
+
+				remove_ideas = fuad_i
+				add_ideas = farouk_i
+
+				446 = {
+					remove_province_modifier = {
+						static_modifiers = { WW2Cairo }
+						province = {
+							id = 7011
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWCairo }
+						province = {
+							id = 7011
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { WW2Giza }
+						province = {
+							id = 3996
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWGiza }
+						province = {
+							id = 3996
+						}
+					}
+				}
+				447 = {
+					remove_province_modifier = {
+						static_modifiers = { WW2Alexandria }
+						province = {
+							id = 4076
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWAlexandria }
+						province = {
+							id = 4076
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { WW2ElAlamein }
+						province = {
+							id = 1071
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWElAlamein }
+						province = {
+							id = 1071
+						}
+					}
+				}
+				456 = {
+					remove_province_modifier = {
+						static_modifiers = { WW2Aswan }
+						province = {
+							id = 11999
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWAswan }
+						province = {
+							id = 11999
+						}
+					}
+				}
+				995 = {
+					remove_province_modifier = {
+						static_modifiers = { WW2Suez }
+						province = {
+							id = 4073
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWSuez }
+						province = {
+							id = 4073
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { WW2PortSaid }
+						province = {
+							id = 12049
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWPortSaid }
+						province = {
+							id = 12049
+						}
+					}
+				}
+			}
+			if = {
+			limit = {
+				tag = FRA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						FRA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1949.1.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 75
+						communism = 25
+					}
+				}
+				retire_character = FRA_maurice_pujo
+
+				retire_character = FRA_leon_blum
+				
+				FRA_vincent_auriol = {
+					promote_character = {
+						Ideology = democratic_socialism
+					}
+				}
+				retire_character = FRA_Henri_d_Orleans
+				
+				FRA_henri_vi = {
+					promote_character = {
+						Ideology = despotism
+					}
+				}
+				retire_character = FRA_philippe_petain
+				
+				FRA_pierre_poujade = {
+					promote_character = {
+						Ideology = rw_nationalism
+					}
+				}
+				FRA = {
+					set_country_leader_portrait = {
+						ideology = communism
+						portrait = "gfx/leaders/FRA/CW/Portrait_FRA_Maurice_Thorez.dds"
+					}
+				}
+			}	
+			#Germany#
+			if = {
+			limit = {
+				tag = GER
+			}
+				# IF GERMANY WINS WW2
+				if = {
+					limit = {
+						has_government = fascism
+						NOT = {
+							has_global_flag = deadhitler
+						}
+						has_global_flag = RON_Axis_Victory
+					}
+					set_portraits = {
+   						character = GER_adolf_hitler
+					    civilian = { large ="gfx/leaders/GER/NV/Adolf_Hitler.dds" }
+					}
+					add_trait = {
+    					ideology = nazism
+    					trait = GER_hitler_T1
+					}
+					add_trait = {
+    					ideology = nazism
+    					trait = GER_hitler_T2
+					}
+					add_trait = {
+    					ideology = nazism
+    					trait = GER_hitler_T3
+					}
+					add_trait = {
+    					ideology = nazism
+    					trait = GER_hitler_T4
+					}
+					add_trait = {
+    					ideology = nazism
+    					trait = GER_hitler_T5
+					}
+
+					retire_ideology_leader = democratic  
+					set_portraits = {
+   						character = GER_albert_speer
+					    civilian = { large ="gfx/leaders/GER/NV/Albert_Speer.dds" }
+					}
+					GER_albert_speer = {
+						promote_character = {
+							Ideology = democratic_nationalism
+						}
+					}
+
+					retire_ideology_leader = neutrality 
+					
+					set_portraits = {
+   						character = GER_hermann_goering
+					    civilian = { large ="gfx/leaders/GER/NV/Hermann_Goering.dds" }
+					}
+					GER_hermann_goering = {
+						promote_character = {
+							Ideology = nationalism
+						}
+					}
+					retire_ideology_leader = communism  
+					
+					GER_otto_strasser_win = {
+						promote_character = {
+							Ideology = lw_strasserism
+						}
+					}
+				}
+				##END OF GERMAN WIN
+			}
+			#Guatemala#
+			if = {
+			limit = {
+				tag = GUA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						GUA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1944.12.19"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 40
+						communism = 50
+						neutrality = 10
+					}
+				}
+				
+				promote_character = GUA_jacobo_arbenz
+				retire_character = GUA_antonio_obando_Sanchez
+				set_party_name = { ideology = communism  long_name = GUA_partido_accion_revolucionaria_long name = GUA_partido_accion_revolucionaria }
+
+				
+				promote_character = GUA_miguel_ydigoras_fuentes
+				retire_character = GUA_jorge_ubico	
+				set_party_name = { ideology = neutrality  long_name = GUA_PRDN_long name = GUA_PRDN }	
+			}
+			#Monaco#
+			if = {
+			limit = {
+				tag = MCO
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						MCO = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1946.1.12"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 100
+					}
+				}
+
+				add_ideas = rainier_iii
+				remove_ideas = louis_ii
+
+				promote_character = MCO_rainier_III
+				retire_character = MCO_louis_II
+
+				
+				promote_character = MCO_jacques_rueff
+				retire_character = MCO_emile_roblot
+			}
+			if = {
+			limit = {
+				tag = PAR
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						PAR = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1948.8.15"
+						election_frequency = 60 #Increased to 5 years on 1939
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 20
+						neutrality = 40
+						fascism = 30
+						communism = 10
+					}
+				}	
+				promote_character = PAR_juan_natalicio_gonzalez
+				retire_character = PAR_eusebio_ayala
+				set_party_name = { ideology = democratic  long_name = PAR_liberal_long name = PAR_liberal }
+
+				
+				promote_character = PAR_rafael_franco
+				retire_character = PAR_obdulio_barthe
+				set_party_name = { ideology = communism  long_name = PAR_concentracion_febrerista_long name = PAR_concentracion_febrerista }
+
+				
+				promote_character = PAR_alfredo_stroessner
+				retire_character = PAR_higinio_morinigo
+				set_party_name = { ideology = fascism  long_name = PAR_colorado_long name = PAR_colorado }
+
+				
+				promote_character = PAR_federico_chavez
+				retire_character = PAR_jose_felix_estigarribia
+				set_party_name = { ideology = neutrality  long_name = PAR_junta_militar_long name = PAR_junta_militar }
+			}
+			#Suriname#
+			if = {
+			limit = {
+				tag = SUR
+			}
+				309 = {
+					remove_province_modifier = {
+						static_modifiers = { WW2Paramaribo }
+						province = {
+							id = 10906
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWParamaribo }
+						province = {
+							id = 10906
+						}
+					}
+				}
+			}								
+			#Uruguay#
+			if = {
+			limit = {
+				tag = URG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						URG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1946.4.4"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 53
+						communism = 5
+						neutrality = 42
+					}
+				}	
+				
+				promote_character = URG_luis_batlle_berres
+				retire_character = URG_emilio_frugoni_democratic
+				set_party_name = { ideology = democratic  long_name = URG_democratic_party_1949_long name = URG_democratic_party_1949 }
+
+				
+				promote_character = URG_luis_alberto_de_herrera_neutrality
+				retire_character = URG_gabriel_terra
+				set_party_name = { ideology = neutrality  long_name = URG_neutrality_party_1949_long name = URG_neutrality_party_1949 }
+
+				
+				promote_character = URG_adolfo_agorio
+				set_party_name = { ideology = fascism  long_name = URG_fascism_party_1933_long name = URG_fascism_party_1933 }
+
+				
+				promote_character = URG_eugenio_gomez
+				set_party_name = { ideology = communism  long_name = URG_communism_party_1919_long name = URG_communism_party_1919 }
+			
+				### VPs ###
+				300 = {
+					remove_province_modifier = {
+						static_modifiers = { WW2Montevideo }
+						province = {
+							id = 10362
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWMontevideo }
+						province = {
+							id = 10362
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { WW2Melo }
+						province = {
+							id = 1641
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWMelo }
+						province = {
+							id = 1641
+						}
+					}
+				}
+				1127 = {
+					remove_province_modifier = {
+						static_modifiers = { WW2Salto }
+						province = {
+							id = 12468
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWSalto }
+						province = {
+							id = 12468
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { WW2Rivera }
+						province = {
+							id = 1626
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWRivera }
+						province = {
+							id = 1626
+						}
+					}			
+				}
+			}
+			#Vanuatu#
+			if = {
+			limit = {
+				tag = VAN
+			}
+				1101 = {
+					remove_province_modifier = {
+						static_modifiers = { WW2PortVila }
+						province = {
+							id = 1237
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { CWPortVila }
+						province = {
+							id = 1237
+						}
+					}
+				}
+			}
+			#Vatican#
+			if = {
+			limit = {
+				tag = PAP
+			}
+				
+				promote_character = PAP_pius_xii
+				retire_character = PAP_pius_xi
+			}
+		}	
+	}
+}
+
+#Late Cold War leaders
+country_event = {
+	id = change_era.10
+	title = change_era.10.t
+	desc = change_era.10.d
+	picture = GFX_report_event_RON_Economic_Crisis
+	is_triggered_only = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		hidden_effect = {
+			#Argentina#
+			if = {
+			limit = {
+				tag = ARG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						ARG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1977.10.30"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						neutrality = 54
+						democratic = 25
+						fascism = 20
+						communism = 1
+					}
+				}	
+				promote_character = ARG_raul_alfonsin
+				retire_character = ARG_ricardo_balbin
+				set_party_name = { ideology = democratic  long_name = ARG_union_civica_nacional_long name = ARG_union_civica_nacional }
+
+				promote_character = ARG_fanny_jacovkis
+				retire_character = ARG_oscar_alende
+				set_party_name = { ideology = communism  long_name = ARG_partido_comunista_long name = ARG_partido_comunista }
+
+				
+				promote_character = ARG_isabel_peron
+				retire_character = ARG_juan_domingo_peron
+				set_party_name = { ideology = fascism  long_name = ARG_partido_justicialista_long name = ARG_partido_justicialista }
+
+				
+				promote_character = ARG_jorge_rafael_videla
+				retire_character = ARG_juan_carlos_ongania
+				set_party_name = { ideology = neutrality  long_name = ARG_junta_militar_long name = ARG_junta_militar }
+			}
+			### Straya
+			if = {
+			limit = {
+				tag = AST
+			}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1974.1.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 100
+					}
+				}				
+				retire_ideology_leader = democratic
+				
+				AST_john_gorton = {
+					promote_character = {
+						Ideology = conservatism
+					}
+				}
+			}
+			if = {
+			limit = {
+				tag = CHL
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						CHL = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1977.9.4"
+						election_frequency = 72
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 15
+						neutrality = 10
+						communism = 5
+						fascism = 70
+					}
+				}	
+				
+				promote_character = CHL_bernardo_leighton
+				retire_character = CHL_eduardo_frei_montalva
+				set_party_name = { ideology = democratic  long_name = CHL_democrata_cristiano_long name = CHL_democrata_cristiano }
+
+				
+				promote_character = CHL_luis_corvalan
+				retire_character = CHL_salvador_allende
+				set_party_name = { ideology = communism  long_name = CHL_partido_comunista_long name = CHL_partido_comunista }
+
+				
+				promote_character = CHL_augusto_pinochet
+				retire_character = CHL_augusto_pinochet_young
+				set_party_name = { ideology = fascism  long_name = CHL_junta_pinochet_long name = CHL_junta_pinochet }
+
+				
+				promote_character = CHL_francisco_javier_errazuriz
+				retire_character = CHL_jorge_alessandri
+				set_party_name = { ideology = neutrality  long_name = CHL_liberal_socialista_long name = CHL_liberal_socialista }
+			}
+			#Egypt#
+			if = {
+			limit = {
+				tag = EGY
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						EGY = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1976.9.16"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 25
+						communism = 0
+						fascism = 50
+						neutrality = 0
+						islamism = 25
+					}
+				}			
+				
+				promote_character = EGY_fouad_serageddin
+				retire_character = EGY_mohamed_mahmoud_pasha
+				set_party_name = { ideology = democratic  long_name = EGY_new_wafd_long name = EGY_new_wafd }
+
+				
+				promote_character = EGY_mahmoud_amin_el_lem
+				retire_character = EGY_henri_curiel
+				set_party_name = { ideology = communism  long_name = EGY_communist_party_long name = EGY_communist_party }
+
+				
+				promote_character = EGY_anwar_sadat
+				retire_character = EGY_gamel_abdel_nasser
+				set_party_name = { ideology = fascism  long_name = EGY_national_democratic_party_long name = EGY_national_democratic_party }
+
+				
+				promote_character = EGY_ahmad_mahir_pasha
+				retire_character = EGY_mustafa_el_nahhas_pasha
+				set_party_name = { ideology = neutrality  long_name = EGY_saadist_party_long name = EGY_saadist_party }
+
+				
+				promote_character = EGY_mohammed_abdul_salam_farag
+				retire_character = EGY_hassan_al_hudaybi
+				set_party_name = { ideology = islamism  long_name = EGY_tanzim_long name = EGY_tanzim }
+				
+				
+				promote_character = EGY_faud_ii
+				retire_character = EGY_ahmad_mahir_pasha
+
+				remove_ideas = farouk_i
+			}
+			if = {
+			limit = {
+				tag = FRA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						FRA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1970.1.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 100
+					}
+				}
+				retire_character = FRA_vincent_auriol
+				
+				FRA_Valery_Giscard_dEstaing = {
+					promote_character = {
+						Ideology = conservatism
+					}
+				}
+				retire_character = FRA_Maurice_Thorez
+				
+				FRA_georges_marchais = {
+					promote_character = {
+						Ideology = marxism
+					}
+				}
+				retire_character = FRA_henri_vi
+				
+				FRA_alphonse_ii = {
+					promote_character = {
+						Ideology = despotism
+					}
+				}
+				retire_character = FRA_pierre_poujade
+				
+				FRA_jeanmarie_le_pen = {
+					promote_character = {
+						Ideology = rw_nationalism
+					}
+				}
+			}
+			#Germany#
+			#GER = {
+
+			#}	
+			#Guatemala#
+			if = {
+			limit = {
+				tag = GUA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						GUA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1978.1.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 25
+						fascism = 75
+					}
+				}
+				promote_character = GUA_vinicio_cerezo
+				retire_character = GUA_juan_jose_arevalo
+				set_party_name = { ideology = democratic long_name = GUA_democracia_cristiana_long name = GUA_democracia_cristiana }
+				
+				
+				promote_character = GUA_jacobo_arbenz
+				retire_character = GUA_antonio_obando_Sanchez
+				set_party_name = { ideology = communism  long_name = GUA_partido_accion_revolucionaria_long name = GUA_partido_accion_revolucionaria }
+
+				
+				promote_character = GUA_fernando_romeo_garcia
+				retire_character = GUA_julio_cesar_mendez
+				set_party_name = { ideology = fascism long_name = GUA_partido_institucional_democratico_long name = GUA_partido_institucional_democratico }
+
+				
+				promote_character = GUA_miguel_ydigoras_fuentes
+				retire_character = GUA_jorge_ubico	
+				set_party_name = { ideology = neutrality  long_name = GUA_PRDN_long name = GUA_PRDN }	
+			}
+			#Monaco#
+			if = {
+			limit = {
+				tag = MCO
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						MCO = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1946.1.12"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 100
+					}
+				}
+
+				add_ideas = rainier_iii
+				remove_ideas = louis_ii
+
+				
+				promote_character = MCO_rainier_III
+				retire_character = MCO_louis_II
+
+				
+				promote_character = MCO_jacques_rueff
+				retire_character = MCO_emile_roblot
+			}
+			if = {
+			limit = {
+				tag = PAR
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						PAR = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1978.8.15"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						fascism = 45
+						neutrality = 5
+						communism = 20
+						democratic = 30
+					}
+				}	
+				
+				promote_character = PAR_domingo_laino
+				retire_character = PAR_gustavo_gonzalez
+				set_party_name = { ideology = democratic  long_name = PAR_liberal_radical_long name = PAR_liberal_radical }
+
+				
+				promote_character = PAR_carlos_caballero_gatti
+				retire_character = PAR_rafael_franco
+				set_party_name = { ideology = communism  long_name = PAR_febrerista_long name = PAR_febrerista }
+
+				
+				promote_character = PAR_alfredo_stroessner
+				retire_character = PAR_higinio_morinigo
+				set_party_name = { ideology = fascism  long_name = PAR_colorado_long name = PAR_colorado }
+
+				
+				promote_character = PAR_carlos_levi_rufinelli
+				retire_character = PAR_ernesto_gavilan
+				set_party_name = { ideology = neutrality  long_name = PAR_movimiento_renovacion_long name = PAR_movimiento_renovacion }
+			}								
+			#Uruguay#
+			if = {
+			limit = {
+				tag = URG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						URG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1978.1.1"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 100
+					}
+				}	
+				
+				promote_character = URG_julio_maria_sanguinetti
+				retire_character = URG_jorge_pacheco_areco
+				set_party_name = { ideology = democratic  long_name = URG_neutrality_party_1960_long name = URG_neutrality_party_1960 }
+
+				
+				promote_character = URG_rodney_arismendi
+				set_party_name = { ideology = communism  long_name = URG_communism_party_1919_long name = URG_communism_party_1919 }
+
+				
+				promote_character = URG_aparicio_mendez
+				retire_character = URG_juan_maria_bordaberry
+				set_party_name = { ideology = neutrality  long_name = URG_neutrality_party_1960_long name = URG_neutrality_party_1960 }
+
+				
+				promote_character = URG_nestor_boletini
+				retire_character = URG_adolfo_agorio
+				set_party_name = { ideology = fascism  long_name = URG_fascism_party_1970_long name = URG_fascism_party_1970 }
+			}
+			#Vatican#
+			if = {
+			limit = {
+				tag = PAP
+			}
+				
+				promote_character = PAP_john_paul_ii
+				retire_character = PAP_paul_vi
+			}
+		}	
+	}
+}
+
+#MD leaders
+country_event = {
+	id = change_era.11
+	title = change_era.11.t
+	desc = change_era.11.d
+	picture = GFX_report_event_RON_Economic_Crisis
+	is_triggered_only = yes
+
+	option = {
+		name = "OK"
+
+		ai_chance = {
+			base = 1000
+		}
+
+		hidden_effect = {
+			#Argentina#
+			if = {
+			limit = {
+				tag = ARG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						ARG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1999.10.24"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 48
+						fascism = 38
+						neutrality = 13
+						communism = 1
+					}
+				}	
+				
+				promote_character = ARG_fernando_de_la_rua
+				retire_character = ARG_eduardo_angeloz
+				set_party_name = { ideology = democratic  long_name = ARG_union_civica_nacional_long name = ARG_union_civica_nacional }
+
+				
+				promote_character = ARG_patricia_walsh
+				retire_character = ARG_nestor_vicente
+				set_party_name = { ideology = communism  long_name = ARG_izquierda_unida_long name = ARG_izquierda_unida }
+
+				
+				promote_character = ARG_carlos_menem
+				retire_character = ARG_isabel_peron
+				set_party_name = { ideology = fascism  long_name = ARG_partido_justicialista_long name = ARG_partido_justicialista }
+
+				
+				promote_character = ARG_alvaro_alsogaray
+				retire_character = ARG_jorge_rafael_videla
+				set_party_name = { ideology = neutrality  long_name = ARG_alianza_de_centro_long name = ARG_alianza_de_centro }
+			}
+			### Straya
+			if = {
+			limit = {
+				tag = AST
+			}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1996.1.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 100
+					}
+				}				
+				retire_ideology_leader = democratic
+				
+				AST_john_howard = {
+					promote_character = {
+						Ideology = conservatism
+					}
+				}
+			}
+			if = {
+			limit = {
+				tag = CHL
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						CHL = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "2000.3.11"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 48
+						communism = 4
+						fascism = 1
+						neutrality = 47
+					}
+				}	
+				
+				promote_character = CHL_eduardo_frei_ruiz_tagle
+				retire_character = CHL_patricio_aylwin_azocar
+				set_party_name = { ideology = democratic  long_name = CHL_concertacion_long name = CHL_concertacion }
+
+				
+				promote_character = CHL_gladys_marin
+				retire_character = CHL_pedro_vuskovic
+				set_party_name = { ideology = communism  long_name = CHL_partido_comunista_long name = CHL_partido_comunista }
+
+				
+				promote_character = CHL_pablo_rodriguez_grez
+				retire_character = CHL_augusto_pinochet_old
+				set_party_name = { ideology = fascism  long_name = CHL_fnpl_long name = CHL_fnpl }
+
+				
+				promote_character = CHL_joaquin_lavin_infante
+				retire_character = CHL_francisco_javier_errazuriz
+				set_party_name = { ideology = neutrality  long_name = CHL_coalicion_pinera_long name = CHL_coalicion_pinera }
+			}
+			#Egypt#
+			if = {
+			limit = {
+				tag = EGY
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						EGY = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1987.9.16"
+						election_frequency = 72
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 10
+						communism = 0
+						fascism = 85
+						neutrality = 0
+						islamism = 5
+					}
+				}			
+				
+				promote_character = EGY_ayman_nour
+				retire_character = EGY_fouad_serageddin
+				set_party_name = { ideology = democratic  long_name = EGY_tomorrow_party_long name = EGY_tomorrow_party }
+
+				
+				promote_character = EGY_hosni_mubarak
+				retire_character = EGY_anwar_sadat
+
+				
+				promote_character = EGY_khairat_el_shater
+				retire_character = EGY_mohammed_abdul_salam_farag
+				set_party_name = { ideology = islamism  long_name = EGY_freedom_justice_long name = EGY_freedom_justice }
+				
+				
+				promote_character = EGY_faud_ii
+				retire_character = EGY_ahmad_mahir_pasha
+
+				remove_ideas = farouk_i
+
+				### VPs ###
+
+				446 = {
+					remove_province_modifier = {
+						static_modifiers = { CWCairo }
+						province = {
+							id = 7011
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDCairo }
+						province = {
+							id = 7011
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { CWGiza }
+						province = {
+							id = 3996
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDGiza }
+						province = {
+							id = 3996
+						}
+					}
+				}
+				447 = {
+					remove_province_modifier = {
+						static_modifiers = { CWAlexandria }
+						province = {
+							id = 4076
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDAlexandria }
+						province = {
+							id = 4076
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { CWElAlamein }
+						province = {
+							id = 1071
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDElAlamein }
+						province = {
+							id = 1071
+						}
+					}
+				}
+				456 = {
+					remove_province_modifier = {
+						static_modifiers = { CWAswan }
+						province = {
+							id = 11999
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDAswan }
+						province = {
+							id = 11999
+						}
+					}
+				}
+				995 = {
+					remove_province_modifier = {
+						static_modifiers = { CWSuez }
+						province = {
+							id = 4073
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDSuez }
+						province = {
+							id = 4073
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { CWPortSaid }
+						province = {
+							id = 12049
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDPortSaid }
+						province = {
+							id = 12049
+						}
+					}
+				}
+			}
+			if = {
+			limit = {
+				tag = FRA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						FRA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "2000.1.1"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 89
+						fascism = 7
+						communism = 4
+					}
+				}
+				retire_character = FRA_Valery_Giscard_dEstaing
+				
+				FRA_jacques_chirac = {
+					promote_character = {
+						Ideology = gaullism
+					}
+				}
+				retire_character = FRA_georges_marchais
+				
+				FRA_marie_george_buffet = {
+					promote_character = {
+						Ideology = leninism
+					}
+				}
+				retire_character = FRA_alphonse_ii
+				
+				FRA_louis_xx = {
+					promote_character = {
+						Ideology = despotism
+					}
+				}
+				retire_character = FRA_jeanmarie_le_pen
+				
+				FRA_alain_soral = {
+					promote_character = {
+						Ideology = neo_nazism
+					}
+				}
+			}
+			#Germany#
+			#GER = {
+
+			#}	
+			#Guatemala#
+			if = {
+			limit = {
+				tag = GUA
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						GUA = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "2000.1.16"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						fascism = 48
+						neutrality = 30
+						communism = 12
+						democratic = 10
+					}
+				}
+				
+				promote_character = GUA_alvaro_arzu
+				retire_character = GUA_vinicio_cerezo
+				set_party_name = { ideology = democratic long_name = GUA_partido_unionista_long name = GUA_partido_unionista }
+
+				
+				promote_character = GUA_rodrigo_asturias_amado
+				retire_character = GUA_ricardo_rosales
+				set_party_name = { ideology = communism  long_name = GUA_union_revolucionaria_long name = GUA_union_revolucionaria }	
+
+				
+				promote_character = GUA_alfonso_portillo
+				retire_character = GUA_mario_sandoval_alarcon
+				set_party_name = { ideology = fascism long_name = GUA_frente_Republicano_long name = GUA_frente_Republicano }
+
+				
+				promote_character = GUA_oscar_berger
+				retire_character = GUA_jorge_serrano_elias
+				set_party_name = { ideology = neutrality long_name = GUA_gran_alianza_long name = GUA_gran_alianza }
+			}
+			#Monaco#
+			if = {
+			limit = {
+				tag = MCO
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						MCO = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1998.1.1"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 90
+						fascism = 10
+					}
+				}
+
+				add_ideas = albert_ii
+				remove_ideas = rainier_iii
+
+				
+				promote_character = MCO_albert_II
+				retire_character = MCO_rainier_III
+
+				
+				promote_character = MCO_patrick_leclercq
+				retire_character = MCO_jean_ausseil
+
+				set_party_name = { ideology = communism  long_name = MCO_trade_union_long name = MCO_trade_union }
+				set_party_name = { ideology = fascism  long_name = MCO_rally_for_monegasque_family_long name = MCO_rally_for_monegasque_family }
+			}		
+			if = {
+			limit = {
+				tag = PAR
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						PAR = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1998.8.15"
+						election_frequency = 60
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 26
+						communism = 21
+						fascism = 13
+						neutrality = 40
+					}
+				}	
+				
+				promote_character = PAR_julio_cesar_franco
+				retire_character = PAR_domingo_laino
+				set_party_name = { ideology = democratic  long_name = PAR_liberal_radical_long name = PAR_liberal_radical }
+
+				
+				promote_character = PAR_nils_candia_gini
+				retire_character = PAR_fernando_vera_sanchez
+				set_party_name = { ideology = communism  long_name = PAR_febrerista_long name = PAR_febrerista }
+
+				
+				promote_character = PAR_lino_oviedo
+				retire_character = PAR_alfredo_stroessner
+				set_party_name = { ideology = fascism  long_name = PAR_UNACE_long name = PAR_UNACE }
+
+				
+				promote_character = PAR_luis_angel_gonzalez_macchi
+				retire_character = PAR_andres_rodriguez_pedotti
+				set_party_name = { ideology = neutrality  long_name = PAR_colorado_long name = PAR_colorado }
+			}
+			#Suriname#
+			if = {
+			limit = {
+				tag = SUR
+			}
+				309 = {
+					remove_province_modifier = {
+						static_modifiers = { CWParamaribo }
+						province = {
+							id = 10906
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDParamaribo }
+						province = {
+							id = 10906
+						}
+					}
+				}
+			}								
+			#Uruguay#
+			if = {
+			limit = {
+				tag = URG
+			}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						is_ai = yes
+						URG = {
+							is_subject = no
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1999.4.4"
+						election_frequency = 48
+						elections_allowed = yes
+					}
+					set_popularities = {
+						democratic = 54
+						neutrality = 46
+					}
+				}	
+				
+				promote_character = URG_jorge_batlle
+				retire_character = URG_julio_maria_sanguinetti
+				set_party_name = { ideology = democratic  long_name = URG_neutrality_party_1960_long name = URG_neutrality_party_1960 }
+				
+				
+				promote_character = URG_marina_arismendi
+				retire_character = URG_jaime_perez
+				set_party_name = { ideology = communism  long_name = URG_communism_party_1919_long name = URG_communism_party_1919 }
+
+				
+				promote_character = URG_pablo_millor
+				retire_character = URG_nestor_boletini
+				set_party_name = { ideology = fascism  long_name = URG_fascism_party_1990_long name = URG_fascism_party_1990 }
+
+				
+				promote_character = URG_tabare_vazquez
+				retire_character = URG_luis_alberto_lacalle
+				set_party_name = { ideology = neutrality  long_name = URG_neutrality_party_frente_amplio_long name = URG_neutrality_party_frente_amplio }
+			
+				### VPs ###
+
+				300 = {
+					remove_province_modifier = {
+						static_modifiers = { CWMontevideo }
+						province = {
+							id = 10362
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDMontevideo }
+						province = {
+							id = 10362
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { CWMelo }
+						province = {
+							id = 1641
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDMelo }
+						province = {
+							id = 1641
+						}
+					}
+				}
+				1127 = {
+					remove_province_modifier = {
+						static_modifiers = { CWSalto }
+						province = {
+							id = 12468
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDSalto }
+						province = {
+							id = 12468
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { CWRivera }
+						province = {
+							id = 1626
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDRivera }
+						province = {
+							id = 1626
+						}
+					}			
+				}
+			}
+			#Vanuatu#
+			if = {
+			limit = {
+				tag = VAN
+			}
+				1101 = {
+					remove_province_modifier = {
+						static_modifiers = { CWPortVila }
+						province = {
+							id = 1237
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { MDPortVila }
+						province = {
+							id = 1237
+						}
+					}
+				}
+			}
+			#Vatican#
+			if = {
+			limit = {
+				tag = PAP
+			}
+				
+				promote_character = PAP_benedict_xvi
+				retire_character = PAP_john_paul_ii
+			}
+		}	
+	}
+}
