@@ -1,0 +1,102 @@
+ita_council_inlay_window = {
+
+	window_name = ita_council_ui_window
+
+	internal = yes
+	visible = {
+		has_dynamic_modifier = { modifier = ITA_h_the_council_dm }
+	}
+
+	scripted_images = {
+		ita_council_seat_1_portrait = {
+			GFX_ITA_council_seat_1 = {
+				check_variable = { ITA_h_seat_1 = 1 }
+			}
+			GFX_ITA_council_seat_2 = {
+				check_variable = { ITA_h_seat_1 = 2 }
+			}
+			GFX_ITA_council_seat_3 = {
+				check_variable = { ITA_h_seat_1 = 3 }
+			}
+			GFX_ITA_council_seat_4 = {
+				check_variable = { ITA_h_seat_1 = 4 }
+			}
+			GFX_ITA_council_seat_5 = {
+				check_variable = { ITA_h_seat_1 = 5 }
+			}
+			GFX_ITA_council_seat_6 = {
+				check_variable = { ITA_h_seat_1 = 6 }
+			}
+			GFX_ITA_council_seat_7 = {
+				check_variable = { ITA_h_seat_1 = 7 }
+			}
+			GFX_blank_leader_portrait = yes
+		}
+		ita_council_seat_2_portrait = {
+			GFX_ITA_council_seat_1 = {
+				check_variable = { ITA_h_seat_2 = 1 }
+			}
+			GFX_ITA_council_seat_2 = {
+				check_variable = { ITA_h_seat_2 = 2 }
+			}
+			GFX_ITA_council_seat_3 = {
+				check_variable = { ITA_h_seat_2 = 3 }
+			}
+			GFX_ITA_council_seat_4 = {
+				check_variable = { ITA_h_seat_2 = 4 }
+			}
+			GFX_ITA_council_seat_5 = {
+				check_variable = { ITA_h_seat_2 = 5 }
+			}
+			GFX_ITA_council_seat_6 = {
+				check_variable = { ITA_h_seat_2 = 6 }
+			}
+			GFX_ITA_council_seat_7 = {
+				check_variable = { ITA_h_seat_2 = 7 }
+			}
+			GFX_blank_leader_portrait = yes
+		}
+		ita_council_seat_3_portrait = {
+			GFX_ITA_council_seat_1 = {
+				check_variable = { ITA_h_seat_3 = 1 }
+			}
+			GFX_ITA_council_seat_2 = {
+				check_variable = { ITA_h_seat_3 = 2 }
+			}
+			GFX_ITA_council_seat_3 = {
+				check_variable = { ITA_h_seat_3 = 3 }
+			}
+			GFX_ITA_council_seat_4 = {
+				check_variable = { ITA_h_seat_3 = 4 }
+			}
+			GFX_ITA_council_seat_5 = {
+				check_variable = { ITA_h_seat_3 = 5 }
+			}
+			GFX_ITA_council_seat_6 = {
+				check_variable = { ITA_h_seat_3 = 6 }
+			}
+			GFX_ITA_council_seat_7 = {
+				check_variable = { ITA_h_seat_3 = 7 }
+			}
+			GFX_blank_leader_portrait = yes
+		}
+		ita_council_seat_1_frame = {
+			GFX_ascended_advisors_frame = {
+				check_variable = { ITA_h_seat_1 = 0 compare = not_equals }
+			}
+			GFX_ascended_advisors_unappointed_frame = yes
+		}
+		ita_council_seat_2_frame = {
+			GFX_ascended_advisors_frame = {
+				check_variable = { ITA_h_seat_2 = 0 compare = not_equals }
+			}
+			GFX_ascended_advisors_unappointed_frame = yes
+		}
+		ita_council_seat_3_frame = {
+			GFX_ascended_advisors_frame = {
+				check_variable = { ITA_h_seat_3 = 0 compare = not_equals }
+			}
+			GFX_ascended_advisors_unappointed_frame = yes
+		}
+	}
+}

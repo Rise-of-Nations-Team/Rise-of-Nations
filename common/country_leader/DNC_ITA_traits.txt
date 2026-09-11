@@ -1,0 +1,165 @@
+leader_traits = {
+
+	ITA_minister_of_agriculture_industry = {
+		random = no
+		sprite = 13
+		MONTHLY_POPULATION = 0.20
+		production_speed_industrial_complex_factor = 0.05
+		consumer_goods_factor = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ITA_the_presidency = {
+		random = no
+		sprite = 2
+		political_power_factor = 0.10
+		stability_factor = 0.03
+	}
+
+	ITA_the_presidency_conciliator = {
+		random = no
+		sprite = 2
+		political_power_factor = 0.10
+		stability_factor = 0.06
+		democratic_drift = 0.02
+	}
+
+	ITA_the_presidency_prefects = {
+		random = no
+		sprite = 2
+		political_power_factor = 0.10
+		stability_factor = 0.01
+		war_support_factor = 0.05
+		neutrality_drift = 0.02
+	}
+
+	ITA_the_presidency_prerogative = {
+		random = no
+		sprite = 3
+		political_power_factor = 0.25
+		stability_factor = 0.03
+		party_popularity_stability_factor = 0.10
+	}
+
+	ITA_the_presidency_prerogative_conciliator = {
+		random = no
+		sprite = 3
+		political_power_factor = 0.25
+		stability_factor = 0.06
+		party_popularity_stability_factor = 0.10
+		democratic_drift = 0.02
+	}
+
+	ITA_the_presidency_prerogative_prefects = {
+		random = no
+		sprite = 3
+		political_power_factor = 0.25
+		stability_factor = 0.01
+		party_popularity_stability_factor = 0.10
+		war_support_factor = 0.05
+		neutrality_drift = 0.02
+	}
+
+	ITA_l_loyalty_of_the_army = {
+		random = no
+		sprite = 5
+		war_support_factor = 0.05
+		stability_factor = 0.05
+	}
+
+	ITA_l_supreme_command = {
+		random = no
+		sprite = 5
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		army_morale_factor = 0.05
+		resistance_growth = -0.02
+	}
+
+	ITA_l_the_arbiter = {
+		random = no
+		sprite = 5
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		army_morale_factor = 0.10
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		non_core_manpower = 0.01
+		resistance_growth = -0.05
+		subjects_autonomy_gain = -0.10
+	}
+
+	ITA_h_the_confidence_of_the_crown = {
+		random = no
+		sprite = 12
+		special_project_speed_factor = 0.05
+		production_factory_max_efficiency_factor = 0.10
+		max_command_power_mult = 0.25
+		production_speed_buildings_factor = 0.05
+	}
+
+	ITA_h_nitti_president = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_infrastructure_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+	}
+
+	ITA_h_stringher_president = {
+		random = no
+		sprite = 14
+		political_power_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		stability_factor = 0.02
+	}
+
+	ITA_h_luzzatti_president = {
+		random = no
+		sprite = 14
+		political_power_factor = 0.05
+		local_resources_factor = 0.05
+	}
+
+	ITA_h_giolitti_president_files = {
+		random = no
+		sprite = 6
+		political_power_factor = 0.05
+		foreign_subversive_activites = -0.30
+		non_core_manpower = 0.02
+	}
+
+	ITA_h_giolitti_president_guards = {
+		random = no
+		sprite = 6
+		political_power_factor = 0.05
+		resistance_damage_to_garrison = -0.25
+		non_core_manpower = 0.02
+	}
+
+	ITA_h_orlando_president = {
+		random = no
+		sprite = 9
+		political_power_factor = 0.05
+		war_support_factor = 0.05
+		neutrality_drift = 0.10
+	}
+
+	ITA_h_sacchi_president = {
+		random = no
+		sprite = 10
+		political_power_factor = 0.05
+		opinion_gain_monthly_same_ideology_factor = 1.0
+	}
+
+	ITA_h_salandra_president = {
+		random = no
+		sprite = 4
+		political_power_factor = 0.05
+		political_advisor_cost_factor = -0.15
+	}
+}

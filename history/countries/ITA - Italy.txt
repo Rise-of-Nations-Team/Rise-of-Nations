@@ -1,4 +1,3 @@
-enable_propaganda_campaigns = yes  
 capital = 2
 
 set_cosmetic_tag = ITA_KINGDOM
@@ -59,6 +58,144 @@ if = {
 
 1900.1.1 = {
 	oob = "ITA_1900"
+	set_technology = {
+		early_infantry_weapons_1890 = 1
+		tech_support = 1
+		field_hospital_1900 = 1
+		horses = 1
+		light_field_gun1 = 1
+		logistics_company_1900 = 1
+		tech_mountaineers = 1
+		ww1_motorised_infantry = 1
+	}
+	add_ideas = { ITA_h_the_open_frontier }
+	set_variable = { ITA_h_crown_blunders = 0 }
+	set_variable = { ITA_h_council_months = 0 }
+	set_variable = { ITA_h_council_days_short = 140 }
+	set_variable = { ITA_h_council_days_long = 280 }
+	set_variable = { ITA_h_war_office_anger = 0 }
+	set_variable = { ITA_h_consulta_anger = 0 }
+	set_variable = { ITA_h_colonial_consumer_goods_factor = 0 }
+	set_variable = { ITA_h_colonial_production_speed_arms_factory_factor = 0 }
+	set_variable = { ITA_h_colonial_industrial_capacity_factory = 0 }
+	set_variable = { ITA_h_colonial_subjects_autonomy_gain = 0 }
+	set_variable = { ITA_l_plate_pressure = 0 }
+	recruit_character = ITA_anna_kuliscioff
+	recruit_character = ITA_nullo_baldini
+	recruit_character = ITA_giuseppe_ottolenghi
+	recruit_character = ITA_vincenzo_garioni
+	recruit_character = ITA_emilio_de_giorgis
+	set_variable = { ITA_arm_org = 0 }
+	set_variable = { ITA_arm_morale = 0 }
+	set_variable = { ITA_arm_speed = 0 }
+	set_variable = { ITA_arm_planning = 0 }
+	set_variable = { ITA_arm_initiative = 0 }
+	set_variable = { ITA_arm_infantry_attack = 0 }
+	set_variable = { ITA_arm_infantry_defence = 0 }
+	set_variable = { ITA_arm_artillery_attack = 0 }
+	set_variable = { ITA_arm_cavalry = 0 }
+	set_variable = { ITA_arm_core_defence = 0 }
+	set_variable = { ITA_arm_dig_in = 0 }
+	set_variable = { ITA_arm_reinforce = 0 }
+	set_variable = { ITA_arm_supply = 0 }
+	set_variable = { ITA_arm_experience = 0 }
+	set_variable = { ITA_arm_command = 0 }
+	set_variable = { ITA_arm_special_forces = 0 }
+	set_variable = { ITA_arm_mobilization = 0 }
+	set_variable = { ITA_air_range = 0 }
+	set_variable = { ITA_air_accidents = 0 }
+	set_variable = { ITA_air_efficiency = 0 }
+	set_variable = { ITA_air_experience = 0 }
+	set_variable = { ITA_air_aces = 0 }
+	set_variable = { ITA_air_weather = 0 }
+	set_variable = { ITA_air_night = 0 }
+	set_variable = { ITA_air_aiming = 0 }
+	set_variable = { ITA_n_morale = 0 }
+	set_variable = { ITA_n_range = 0 }
+	set_variable = { ITA_n_experience = 0 }
+	set_variable = { ITA_n_speed = 0 }
+	set_variable = { ITA_n_coordination = 0 }
+	set_variable = { ITA_n_retreat = 0 }
+	set_variable = { ITA_n_detection = 0 }
+	set_variable = { ITA_n_hunting = 0 }
+	set_variable = { ITA_e_rendita = 0.1 }
+	set_variable = { ITA_e_monthly_rendita_start = 0.03 }
+	set_variable = { ITA_e_monthly_rendita_increase = ITA_e_monthly_rendita_start }
+	set_variable = { ITA_e_conversion_crash = 0.75 }
+	set_variable = { ITA_e_expected_consumer_goods_penalty = 0.1 }
+	set_variable = { ITA_e_factory_output_penalty = 0.2 }
+	set_variable = { ITA_e_dockyard_output_penalty = 0.2 }
+	set_variable = { ITA_e_arrears_counter = 0 }
+	set_variable = { ITA_e_intel_to_others = 0 }
+	set_variable = { ITA_e_industrial_capacity_factory = 0 }
+	set_variable = { ITA_e_industrial_capacity_dockyard = 0 }
+	set_variable = { ITA_e_local_resources_factor = 0 }
+	set_variable = { ITA_e_resource_trade_cost_bonus_per_factory = 0 }
+	set_variable = { ITA_e_production_speed_arms_factory_factor = 0 }
+	set_variable = { ITA_e_production_speed_dockyard_factor = 0 }
+	set_variable = { ITA_e_production_speed_buildings_factor = 0 }
+	set_variable = { ITA_e_production_lack_of_resource_penalty_factor = 0 }
+	set_variable = { ITA_e_conversion_cost_civ_to_mil_factor = 0 }
+	set_variable = { ITA_e_research_speed_factor = 0 }
+	set_variable = { ITA_e_production_factory_max_efficiency_factor = 0 }
+	set_variable = { ITA_e_production_factory_efficiency_gain_factor = 0 }
+	set_variable = { ITA_e_production_factory_start_efficiency_factor = 0 }
+	set_variable = { ITA_e_line_change_production_efficiency_factor = 0 }
+	add_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
+	set_variable = { ITA_h_seat_1 = 0 }
+	set_variable = { ITA_h_seat_2 = 0 }
+	set_variable = { ITA_h_seat_3 = 0 }
+	set_variable = { ITA_h_rising_minister = 0 }
+	set_variable = { ITA_h_departing = 0 }
+	set_variable = { ITA_h_promoting = 0 }
+	set_variable = { ITA_h_treasury_prevailed = 0 }
+	set_variable = { ITA_h_new_industries_focus_minister = 0 }
+	set_variable = { ITA_h_council_days_to_start_focus = 75 }
+	set_variable = { ITA_h_council_random_days = 45 }
+	set_variable = { ITA_l_max_states_for_dockyards = 4 }
+	set_variable = { ITA_l_states_getting_dockyards = 0 }
+	set_variable = { ITA_l_valona_civs = 0 }
+	set_variable = { ITA_l_valona_shipments = 0 }
+	set_variable = { ITA_u_army_artillery_attack = 0 }
+	set_variable = { ITA_u_army_artillery_defence = 0 }
+	set_variable = { ITA_u_army_mobilization = 0 }
+	set_variable = { ITA_u_credit = 0 }
+	set_variable = { ITA_piazza = 35 }
+	set_variable = { ITA_piazza_floor = 5 }
+	set_variable = { ITA_piazza_lock = 0 }
+	set_variable = { ITA_piazza_high_months = 0 }
+	set_variable = { ITA_c_pp = 0 }
+	set_variable = { ITA_c_stab = 0 }
+	set_variable = { ITA_p_bayonet_drift = 0 }
+	set_variable = { ITA_p_bayonet_pp = 0 }
+	set_variable = { ITA_p_bayonet_stab = 0 }
+	set_variable = { ITA_p_pp = 0 }
+	set_variable = { ITA_p_prod = 0 }
+	set_variable = { ITA_p_stab = 0 }
+	set_variable = { ITA_p_ws = 0 }
+	set_variable = { ITA_majority = 58 }
+	set_variable = { ITA_majority_bought = 0 }
+	set_variable = { ITA_crown = 50 }
+	set_variable = { ITA_vienna_trust = 40 }
+	set_variable = { ITA_c_crown_pp = 0 }
+	set_variable = { ITA_c_crown_stab = 0 }
+	set_variable = { ITA_prefects = 25 }
+	set_variable = { ITA_machine_now = 25 }
+	set_variable = { ITA_pledges = 0 }
+	set_variable = { ITA_pledge_clock = 0 }
+	set_variable = { ITA_dnc_months = 0 }
+	set_variable = { ITA_camera_low_months = 0 }
+	set_variable = { ITA_ch_messina_clock = 0 }
+	set_variable = { ITA_libya_months = 0 }
+	set_variable = { ITA_v_curia_steps = 0 }
+	set_variable = { ITA_e_remittance_cost = 45 }
+	set_variable = { ITA_election_result = 0 }
+	set_variable = { ITA_circular_clock = 18 }
+	set_variable = { ITA_bayonets = 0 }
+	set_variable = { ITA_p_boards_cost = 35 }
+	set_variable = { ITA_c_dissolve_cost = 75 }
+	set_variable = { ITA_p_troops_cost = 25 }
+	set_variable = { ITA_pr_questore_cost = 20 }
 
 	set_research_slots = 4
 	set_stability = 0.6
@@ -79,6 +216,8 @@ if = {
 			limited_conscription
 			italian_shit_military
 			ww1_Scramble_for_Africa
+			ITA_the_non_expedit
+			ITA_t_a_great_power_on_paper
 		}
 	}
 
@@ -161,7 +300,35 @@ if = {
 	recruit_character = ITA_giulio_douhet
 	recruit_character = ITA_maurizio_moris
  	recruit_character = ITA_leone_viale
- 	recruit_character = ITA_giulio_douhet	
+	recruit_character = ITA_giuseppe_zanardelli
+	recruit_character = ITA_giuseppe_saracco
+	recruit_character = ITA_ettore_sacchi
+	recruit_character = ITA_filippo_turati
+	recruit_character = ITA_leonida_bissolati
+	recruit_character = ITA_rinaldo_rigola
+	recruit_character = ITA_arturo_labriola
+	recruit_character = ITA_errico_malatesta
+	recruit_character = ITA_napoleone_colajanni
+	recruit_character = ITA_filippo_meda
+	recruit_character = ITA_bonaldo_stringher
+	recruit_character = ITA_giulio_prinetti
+	recruit_character = ITA_emilio_visconti_venosta
+	recruit_character = ITA_antonino_di_san_giuliano
+	recruit_character = ITA_luigi_federzoni
+	recruit_character = ITA_gabriele_dannunzio
+	recruit_character = ITA_cesare_battisti
+	recruit_character = ITA_alceste_de_ambris
+	recruit_character = ITA_ferdinando_martini
+	recruit_character = ITA_ernesto_teodoro_moneta
+	recruit_character = ITA_salvatore_barzilai
+	recruit_character = ITA_luigi_albertini
+	recruit_character = ITA_tancredi_saletta
+	recruit_character = ITA_ettore_pedotti
+	recruit_character = ITA_carlo_mirabello
+	recruit_character = ITA_giovanni_bettolo
+
+	promote_character = ITA_luigi_pelloux
+	ITA_luigi_pelloux = { add_country_leader_trait = ITA_the_presidency }
 }
 
 1905.1.1 = {
@@ -183,6 +350,7 @@ if = {
 	}	
 
 	promote_character = ITA_giovanni_giolitti	
+	ITA_giovanni_giolitti = { add_country_leader_trait = ITA_the_presidency }
 }
 
 ### WW1 Start Date
@@ -343,7 +511,7 @@ if = {
 
 	swap_ideas = {
     	remove_idea = ITA_victor_emmanuel_ww1
-    	add_idea = victor_emmanuel
+    	add_idea = ITA_victor_emmanuel_iii_int
 	}	
 
 	set_portraits = {
@@ -1058,7 +1226,7 @@ if = {
 	}
 
 	remove_ideas = {
-    	remove_idea = victor_emmanuel
+		ITA_victor_emmanuel_iii_int
 	}	
 
 	oob = "ITA_1949"
