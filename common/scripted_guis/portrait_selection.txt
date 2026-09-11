@@ -40,7 +40,17 @@ scripted_gui = {
 						}
 						subtract_from_temp_variable = { show = show_portrait_gui_pilsudski }
 						set_variable = { show_portrait_gui_pilsudski = show }
-					}					
+					}	
+					else_if = {
+						limit = {
+							has_country_leader = {
+								character = RUS_nikolai_ii
+								ruling_only = yes
+							}
+						}
+						subtract_from_temp_variable = { show = show_portrait_gui_nikolai_ii }
+						set_variable = { show_portrait_gui_nikolai_ii = show }
+					}									
 				}
 			}
 		}
@@ -58,7 +68,11 @@ scripted_gui = {
 					has_country_leader = {
 						character = POL_jozef_pilsudski
 						ruling_only = yes
-					}					
+					}	
+					has_country_leader = {
+						character = RUS_nikolai_ii
+						ruling_only = yes
+					}									
 				}
 			}
 		}
@@ -482,5 +496,116 @@ scripted_gui = {
 				date < 1930.1.1
 			}					
 		}			
-	}		
+	}	
+	
+	nikolai_ii_portrait_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "nikolai_ii_portrait_gui_container"
+
+		visible = {
+            is_ai = no
+			check_variable = { show_portrait_gui_nikolai_ii > 0.0 }
+		}
+
+		effects = {
+			nikolai_ii_portrait_gui_1_click = {
+				set_portraits = {
+					character = RUS_nikolai_ii
+					civilian = {
+						large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II.dds"
+					}
+				}
+			}
+			nikolai_ii_portrait_gui_2_click = {
+				set_portraits = {
+					character = RUS_nikolai_ii
+					civilian = {
+						large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II_Falconer.dds"
+					}
+
+				}
+			}
+			nikolai_ii_portrait_gui_3_click = {
+				set_portraits = {
+					character = RUS_nikolai_ii
+					civilian = {
+						large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II_Saint.dds"
+					}
+
+				}
+			}	
+			nikolai_ii_portrait_gui_4_click = {
+				set_portraits = {
+					character = RUS_nikolai_ii
+					civilian = {
+						large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II_tgwr_1.dds"
+					}
+
+				}
+			}
+			nikolai_ii_portrait_gui_5_click = {
+				set_portraits = {
+					character = RUS_nikolai_ii
+					civilian = {
+						large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II_tgwr_2.dds"
+					}
+
+				}
+			}	
+			nikolai_ii_portrait_gui_6_click = {
+				set_portraits = {
+					character = RUS_nikolai_ii
+					civilian = {
+						large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II_tgwr_3.dds"
+					}
+
+				}
+			}	
+			nikolai_ii_portrait_gui_7_click = {
+				set_portraits = {
+					character = RUS_nikolai_ii
+					civilian = {
+						large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II_tgwr_4.dds"
+					}
+
+				}
+			}	
+			nikolai_ii_portrait_gui_8_click = {
+				set_portraits = {
+					character = RUS_nikolai_ii
+					civilian = {
+						large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II_tgwr_5.dds"
+					}
+
+				}
+			}												
+		}
+		triggers = {
+			nikolai_ii_portrait_gui_1_visible = {
+				date < 1919.1.1
+			}
+			nikolai_ii_portrait_gui_2_visible = {
+				date < 1919.1.1
+			}
+			nikolai_ii_portrait_gui_3_visible = {
+				date < 1919.1.1
+			}
+			nikolai_ii_portrait_gui_4_visible = {
+				date < 1919.1.1
+			}
+			nikolai_ii_portrait_gui_5_visible = {
+				date < 1919.1.1
+			}
+			nikolai_ii_portrait_gui_6_visible = {
+				date < 1919.1.1
+			}
+			nikolai_ii_portrait_gui_7_visible = {
+				date < 1919.1.1
+			}	
+			nikolai_ii_portrait_gui_8_visible = {
+				date < 1919.1.1
+			}					
+		}			
+	}	
 }

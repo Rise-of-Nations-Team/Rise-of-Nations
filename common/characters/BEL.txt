@@ -1,103 +1,103 @@
 characters = {
-BEL_nicolas_florine = {
-	name = BEL_nicolas_florine
-	portraits = {
-		army = {
-			large = GFX_portrait_BEL_nicolas_florine
+	BEL_nicolas_florine = {
+		name = BEL_nicolas_florine
+		portraits = {
+			army = {
+				large = GFX_portrait_BEL_nicolas_florine
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_helicopter_expert }
+			skills = {
+				specialization_air = 2
+			}
+			visible = {
+				# 
+				date < 1960.1.1
+				date > 1920.1.1
+			}
 		}
 	}
-	scientist = {
-		traits = { scientist_trait_helicopter_expert }
-		skills = {
-			specialization_air = 2
-		}
-		visible = {
-			# 
-			date < 1960.1.1
-			date > 1920.1.1
-		}
-	}
-}
 
-BEL_karel_bossart = {
-	name = BEL_karel_bossart
-	portraits = {
-		army = {
-			large = GFX_portrait_BEL_karel_bossart
+	BEL_karel_bossart = {
+		name = BEL_karel_bossart
+		portraits = {
+			army = {
+				large = GFX_portrait_BEL_karel_bossart
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist }
+			skills = {
+				specialization_air = 2
+			}
+			visible = {
+				# 
+				date < 1980.1.1
+				date > 1930.1.1
+			}
 		}
 	}
-	scientist = {
-		traits = { scientist_trait_rocketry_specialist }
-		skills = {
-			specialization_air = 2
-		}
-		visible = {
-			# 
-			date < 1980.1.1
-			date > 1930.1.1
-		}
-	}
-}
 
-BEL_georges_lemaitre = {
-	name = BEL_georges_lemaitre
-	portraits = {
-		army = {
-			large = GFX_portrait_BEL_georges_lemaitre
+	BEL_georges_lemaitre = {
+		name = BEL_georges_lemaitre
+		portraits = {
+			army = {
+				large = GFX_portrait_BEL_georges_lemaitre
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist }
+			skills = {
+				specialization_nuclear = 2
+			}
+			visible = {
+				# 
+				date < 1966.1.1
+				date > 1920.1.1
+			}
 		}
 	}
-	scientist = {
-		traits = { scientist_trait_nuclear_specialist }
-		skills = {
-			specialization_nuclear = 2
-		}
-		visible = {
-			# 
-			date < 1966.1.1
-			date > 1920.1.1
-		}
-	}
-}
 
-BEL_alfred_renard = {
-	name = BEL_alfred_renard
-	portraits = {
-		army = {
-			large = GFX_portrait_BEL_alfred_renard
+	BEL_alfred_renard = {
+		name = BEL_alfred_renard
+		portraits = {
+			army = {
+				large = GFX_portrait_BEL_alfred_renard
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist }
+			skills = {
+				specialization_air = 2
+			}
+			visible = {
+				# 
+				date < 1960.1.1
+				date > 1920.1.1
+			}
 		}
 	}
-	scientist = {
-		traits = { scientist_trait_aircraft_specialist }
-		skills = {
-			specialization_air = 2
-		}
-		visible = {
-			# 
-			date < 1960.1.1
-			date > 1920.1.1
-		}
-	}
-}
 
-BEL_auguste_piccard = {
-	name = BEL_auguste_piccard
-	portraits = {
-		army = {
-			large = GFX_portrait_BEL_auguste_piccard
+	BEL_auguste_piccard = {
+		name = BEL_auguste_piccard
+		portraits = {
+			army = {
+				large = GFX_portrait_BEL_auguste_piccard
+			}
 		}
-	}
-	scientist = {
-		traits = { scientist_trait_submarine_specialist }
-		skills = {
-			specialization_naval = 2
+		scientist = {
+			traits = { scientist_trait_submarine_specialist }
+			skills = {
+				specialization_naval = 2
+			}
+			visible = {
+				# 
+				date < 1960.1.1
+				date > 1930.1.1
+			}
 		}
-		visible = {
-			# 
-			date < 1960.1.1
-			date > 1930.1.1
-		}
-	}
-}	
+	}	
 	BEL_Leopold_ii = {
 		name = BEL_Leopold_ii
 		portraits = {
@@ -217,8 +217,24 @@ BEL_auguste_piccard = {
 				date < 1919.1.1
 				has_country_flag = catholic_block_win
 			}
-			traits = { silent_workhorse catholic_block}
+			traits = { silent_workhorse catholic_block }
 
+		}
+	}
+	BEL_paul_de_smet_de_naeyer ={
+		name = "Paul Joseph de Smet de Naeyer"
+		portraits= {
+			civilian = {
+				large = "gfx/leaders/BEL/DNC/BEL_Paul_Joseph_de_Smet_de_Naeyer.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1914.1.1"
+			traits = {
+				BEL_kings_personal_friend catholic_block 
+			}
+			legacy_id = -1
 		}
 	}
 	BEL_charles_de_broqueville = {

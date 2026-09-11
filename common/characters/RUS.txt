@@ -15,18 +15,17 @@ characters = {
         name = RUS_nikolai_ii
         portraits={
 			civilian={
-				large="gfx/leaders/RUS/DNC/Nicholas_II.dds"
+				large="gfx/leaders/RUS/DNC/RUS_Nicholas_II.dds"
 				small = "gfx/interface/ideas/RUS/idea_RUS_Nicholas_II.dds"
 			}
 			army = {
-				large = "gfx/leaders/RUS/DNC/Nicholas_II.dds"
-				#small = "gfx/interface/ideas/RUS/idea_RUS_nicholas_II_advisor.png"
+				large = "gfx/leaders/RUS/DNC/RUS_Nicholas_II_army.dds"
 			}
 		}
 		
 		country_leader={
 			desc="POLITICS_NICHOLAS_II_DESC"
-			ideology = despotism
+			ideology = monarchism
             traits={ inexperienced_imperialist unpopular_leader }
 			expire="1938.1.1"
 			id=-1
@@ -148,18 +147,12 @@ characters = {
 		name="Alexis II"
 		portraits={
 			civilian={
-				large="gfx/leaders/RUS/Portrait_Russia_Alexis_II.dds"
+				large="gfx/leaders/RUS/INT/Portrait_Russia_Alexis_II_INT.dds"
 			}
 			army={
-				large="gfx/leaders/RUS/Portrait_Russia_Alexis_II.dds"
+				large="gfx/leaders/RUS/INT/Portrait_Russia_Alexis_II_INT.dds"
 			}			
 		}
-		country_leader={
-			ideology = despotism
-            traits={ inexperienced_imperialist }
-			expire="1936.1.1"
-			id=-1
-		} 
 	}		
 
     RUS_alexander_kerensky={
@@ -357,7 +350,7 @@ characters = {
 				is_country_leader = no
 			}
 			
-			visible  = {
+			visible = {
 				is_country_leader = no	
 				date < 1950.1.1
 			}
@@ -568,7 +561,7 @@ characters = {
 			available = {
 				OR = {
 					has_government  = communism 					
-					has_country_leader  = {
+					has_country_leader = {
 						character = RUS_alexander_kerensky
 					}				
 				}		
@@ -680,12 +673,6 @@ characters = {
 				has_government = neutrality #provisional, later decided on Flag and Decision
 			}
 		}
-		country_leader={
-			ideology = despotism
-            traits = { traditional_monarch }
-			expire = "1943.11.9"
-			id=-1
-		} 
 	}
 
 	RUS_kirill_vladimirovich_romanov={
@@ -698,13 +685,6 @@ characters = {
 				large = "gfx/leaders/RUS/DNC/Portrait_Russia_Kirill_Vladimirovich_Romanov.dds"
 			}
 		}
-		
-		country_leader={
-			ideology = despotism
-            traits={ inexperienced_imperialist }
-			expire="1938.10.12"
-			id=-1
-		} 
 		
 		navy_leader={
 			traits={ trait_royal navy_media_personality trait_royal hidden_sympathies }
@@ -728,14 +708,6 @@ characters = {
 				large = "gfx/leaders/RUS/Portrait_RUS_Boris_Vladimirovich_Romanov.dds"
 			}
 		}
-		
-		country_leader={
-			ideology = despotism
-            traits = { inexperienced_imperialist }
-			expire = "1943.11.9"
-			id=-1
-		} 
-		
 	}
 	
 	RUS_alexander_mikhailovich_romanov={ #NOT TO BE CONFUSED WITH NICHOLAS II BROTHER, MICHAEL ALEXANDROVICH ROMANOV
@@ -744,13 +716,6 @@ characters = {
 			civilian = {
 				large = "gfx/leaders/RUS/WW1/RUS_Grand_Duke_Alexander_Romanov.dds"
 			}
-		}
-		
-		country_leader={
-			ideology = despotism
-            traits = { }
-			expire = "1933.2.26"
-			id=-1
 		}
 		
 		navy_leader={
@@ -762,7 +727,6 @@ characters = {
 			coordination_skill=2
 			legacy_id=92219
 			visible = {
-				has_character = RUS_nikolai_ii
 				has_government = neutrality
 			}
 		}
@@ -776,14 +740,6 @@ characters = {
 				large = "gfx/leaders/RUS/Vladimir_Kirillovich.dds"
 			}
 		}
-		
-		country_leader={
-			ideology = despotism
-            traits = { inexperienced_imperialist }
-			expire = "1992.4.21"
-			id=-1
-		} 
-		
 	}
 	
 	RUS_maria_nikolaevna={
@@ -792,15 +748,7 @@ characters = {
 			civilian = {
 				large = "gfx/leaders/RUS/Portrait_RUS_Grand_Duchess_Maria_Nikolaevna_Romanov.dds"
 			}
-		}
-		
-		country_leader={
-			ideology = despotism
-            traits = { devoted_monarch }
-			expire = "1962.4.21"
-			id=-1
-		} 
-		
+		}		
 	}
 	
 	RUS_anastasia_nikolaevna={
@@ -810,14 +758,6 @@ characters = {
 				large = "gfx/leaders/RUS/INT/Grand_Duchess_Anastasia_Romanov.dds"
 			}
 		}
-		
-		country_leader={
-			ideology = despotism
-            traits = { devoted_monarch }
-			expire = "1982.4.21"
-			id=-1
-		} 
-		
 	}
 	
 	RUS_andrei_alexandrovich = {
@@ -827,14 +767,6 @@ characters = {
 				large = "gfx/leaders/RUS/Portrait_RUS_Prince_Andrei_Alexandrovich_of_Russia.dds"
 			}
 		}
-		
-		country_leader={
-			ideology = despotism
-            traits = { inexperienced_monarch }
-			expire = "1978.7.31"
-			id=-1
-		} 
-		
 	}
 	
 	RUS_provisional_government={

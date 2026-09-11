@@ -887,6 +887,17 @@ leader_traits = {
 
     ######
 
+
+	### BELGIUM ###
+
+	BEL_kings_personal_friend = {
+		random = no
+		political_power_gain = -0.03
+		stability_factor = -0.02
+		compliance_growth = 0.05
+		neutrality_acceptance = 70
+	}
+
     ### BRAZIL ###
 
 	vfb_trait_dompedro_1 = {

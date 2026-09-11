@@ -8,7 +8,58 @@ set_stability = 0.5
 set_war_support = 0.8
 set_convoys = 50
 
-### WW1 Start Date
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	RON_Support_Innovations = 1	
+	marines = 1
+	tech_mountaineers = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	WW1_tech_engineers = 1
+	WW1_tech_military_police = 1
+	basic_train = 1
+	horses = 1
+	ww1_motorised_infantry = 1
+	RON_Trained_Horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_torpedo = 1
+			mtg_ww1_destroyer1 = 1
+			early_ship_hull_dreadnought = 1
+			early_ship_hull_submarine_ww1 = 1
+			mtg_transport = 1
+		}
+	else = {
+		set_technology = {
+			ww1_battleship0 = 1
+			ww1_heavy_cruiser0 = 1
+			ww1_destroyer0 = 1
+			ww1_submarine0 = 1
+			ww1_moduleMTG_mines = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_military_balloons = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1900.1.1"
@@ -37,26 +88,7 @@ if = {
 }
 
 add_ideas = {
-	#laws
 	low_economic_mobilisation
-	foreign_warmonger
-	press_state
-	security_police_state
-	tax_high
-	education_budget3
-	limited_exports
-	tariffs_high
-	fdi_banned
-	train_low
-	officer_train_low
-	army_budget4
-	airforce_budget4
-	navy_budget3
-	police_budget4
-	industry_budget4
-	engineering_budget4
-	infrastructure_budget4
-	foreign_legion
 	limited_conscription
 }
 
@@ -148,7 +180,6 @@ recruit_character = RUS_pavel_mischenko
 	add_ideas = RUS_non_industrialized_nation
 	if = {
 		limit = {
-			has_start_date > 1899.01.01
 			has_start_date < 1919.01.01
 		}
 		give_guarantee = SER

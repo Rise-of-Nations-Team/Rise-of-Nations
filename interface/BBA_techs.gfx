@@ -1,0 +1,1449 @@
+spriteTypes = {
+#  _____  _____  ______   __          ____          _______ 
+# |  __ \|  __ \|  ____|  \ \        / /\ \        / /_   _|
+# | |__) | |__) | |__      \ \  /\  / /  \ \  /\  / /  | |  
+# |  ___/|  _  /|  __|      \ \/  \/ /    \ \/  \/ /   | |  
+# | |    | | \ \| |____      \  /\  /      \  /\  /   _| |_ 
+# |_|    |_|  \_\______|      \/  \/        \/  \/   |_____|
+	SpriteType = {
+		name = "GFX_TC_zeppelin_airframe_0"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/generic_zeppelin.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_RON_Fighter_1490_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Glider_1490_small.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_RON_Fighter_1890_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Glider_1890_small.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_engine_medium"
+		texturefile = "gfx/interface/technologies/engine.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_bba_fuselage_medium"
+		texturefile = "gfx/interface/technologies/fuselage.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_airframe_medium"
+		texturefile = "gfx/interface/technologies/airframe.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_RON_Fighter_1903_medium"
+		texturefile = "gfx/interface/technologies/airframe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_experimental_aircraft_medium"
+		texturefile = "gfx/interface/technologies/fuselage.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_improved_aircraft_engine_medium"
+		texturefile = "gfx/interface/technologies/fighter_engine.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_wright_flyer_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Fighter_1908.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1912_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_ww1_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_wwi_airfields_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/RON_Tarmac.dds"
+	}
+
+# __          ____          _______ 
+# \ \        / /\ \        / /_   _|
+#  \ \  /\  / /  \ \  /\  / /  | |  
+#   \ \/  \/ /    \ \/  \/ /   | |  
+#    \  /\  /      \  /\  /   _| |_ 
+#     \/  \/        \/  \/   |_____|
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1914_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_ww1_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1916_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_ww1_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_naval_aviation_medium"
+		texturefile = "gfx/interface/equipmentdesigner/planes/modules/airplane_flying_boat_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_metal_construction_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_1.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_engine_1918_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_3.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1920_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_ww1_fighter3.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1924_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_ww1_fighter4.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_engine_1926_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_4.dds"	
+	}
+
+# _______ _____            _   _  _____ _____   ____  _____ _______ _____ 
+#|__   __|  __ \     /\   | \ | |/ ____|  __ \ / __ \|  __ \__   __/ ____|
+#   | |  | |__) |   /  \  |  \| | (___ | |__) | |  | | |__) | | | | (___  
+#   | |  |  _  /   / /\ \ | . ` |\___ \|  ___/| |  | |  _  /  | |  \___ \ 
+#   | |  | | \ \  / ____ \| |\  |____) | |    | |__| | | \ \  | |  ____) |
+#   |_|  |_|  \_\/_/    \_\_| \_|_____/|_|     \____/|_|  \_\ |_| |_____/
+
+	SpriteType = {
+		name = "GFX_bba_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/transport_plane.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_transport_plane_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/transport_plane_1942.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_transport_plane_3_medium"
+		texturefile = "gfx/interface/technologies/aircraft/transport_plane_1961.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_transport_plane_4_medium"
+		texturefile = "gfx/interface/technologies/aircraft/transport_plane_1984.dds"
+	}
+
+#   _____ __  __          _      _                 _____ _____  ______ _____            __  __ ______  _____ 
+#  / ____|  \/  |   /\   | |    | |          /\   |_   _|  __ \|  ____|  __ \     /\   |  \/  |  ____|/ ____|
+# | (___ | \  / |  /  \  | |    | |         /  \    | | | |__) | |__  | |__) |   /  \  | \  / | |__  | (___  
+#  \___ \| |\/| | / /\ \ | |    | |        / /\ \   | | |  _  /|  __| |  _  /   / /\ \ | |\/| |  __|  \___ \ 
+#  ____) | |  | |/ ____ \| |____| |____   / ____ \ _| |_| | \ \| |    | | \ \  / ____ \| |  | | |____ ____) |
+# |_____/|_|  |_/_/    \_\______|______| /_/    \_\_____|_|  \_\_|    |_|  \_\/_/    \_\_|  |_|______|_____/ 
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1928_medium"
+		texturefile = "gfx/interface/technologies/1933_Boeing P-26 Peashooter.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1933_medium"
+		texturefile = "gfx/interface/technologies/1933_Dewoitine D.376.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1936_medium"
+		texturefile = "gfx/interface/technologies/fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1940_medium"
+		texturefile = "gfx/interface/technologies/fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1943_medium"
+		texturefile = "gfx/interface/technologies/fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1945_medium"
+		texturefile = "gfx/interface/technologies/jet_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1950_medium"
+		texturefile = "gfx/interface/technologies/jet_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1955_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1955.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1960_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1960.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1965_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1965.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1970_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1970.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1975_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1975.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1980_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1980.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1985_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1985.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1990_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1990.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_1995_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_1995.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2000_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_2000.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2005_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_2006.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2010_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_FIGHTER_2016.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2015_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_2016.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2020_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_2020.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2025_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_FIGHTER_2020.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2030_medium"
+		texturefile = "gfx/interface/technologies/aircraft/BRA_FIGHTER_2030.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2035_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_FIGHTER_2030.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2040_medium"
+		texturefile = "gfx/interface/technologies/aircraft/SOV_FIGHTER_2030.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2045_medium"
+		texturefile = "gfx/interface/technologies/aircraft/PRC_FIGHTER_2030.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2050_medium"
+		texturefile = "gfx/interface/technologies/aircraft/GER_FIGHTER_2030.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2055_medium"
+		texturefile = "gfx/interface/technologies/aircraft/AST_FIGHTER_2030.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_small_aircraft_frame_2060_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_FIGHTER_2030.dds"
+	}
+
+#  __  __ ______ _____ _____ _    _ __  __            _____ _____  ______ _____            __  __ ______  _____ 
+# |  \/  |  ____|  __ \_   _| |  | |  \/  |     /\   |_   _|  __ \|  ____|  __ \     /\   |  \/  |  ____|/ ____|
+# | \  / | |__  | |  | || | | |  | | \  / |    /  \    | | | |__) | |__  | |__) |   /  \  | \  / | |__  | (___  
+# | |\/| |  __| | |  | || | | |  | | |\/| |   / /\ \   | | |  _  /|  __| |  _  /   / /\ \ | |\/| |  __|  \___ \ 
+# | |  | | |____| |__| || |_| |__| | |  | |  / ____ \ _| |_| | \ \| |    | | \ \  / ____ \| |  | | |____ ____) |
+# |_|  |_|______|_____/_____|\____/|_|  |_| /_/    \_\_____|_|  \_\_|    |_|  \_\/_/    \_\_|  |_|______|_____/ 
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1928_medium"
+		texturefile = "gfx/interface/technologies/early_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1933_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1936_medium"
+		texturefile = "gfx/interface/technologies/heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1940_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1943_medium"
+		texturefile = "gfx/interface/technologies/tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1945_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1945.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1950_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1950.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1955_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1955.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1960_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1955.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1965_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1965.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1970_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1970.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1975_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1975.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1980_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1980.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1985_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1985.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1990_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1990.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_1995_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_1990.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2000_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2005_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2010_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2015_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2020_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2025_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2030_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2035_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2040_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2045_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2050_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2055_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_medium_aircraft_frame_2060_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_TACTICAL_2004.dds"
+	}
+
+#  _               _____   _____ ______            _____ _____  ______ _____            __  __ ______  _____ 
+# | |        /\   |  __ \ / ____|  ____|     /\   |_   _|  __ \|  ____|  __ \     /\   |  \/  |  ____|/ ____|
+# | |       /  \  | |__) | |  __| |__       /  \    | | | |__) | |__  | |__) |   /  \  | \  / | |__  | (___  
+# | |      / /\ \ |  _  /| | |_ |  __|     / /\ \   | | |  _  /|  __| |  _  /   / /\ \ | |\/| |  __|  \___ \ 
+# | |____ / ____ \| | \ \| |__| | |____   / ____ \ _| |_| | \ \| |    | | \ \  / ____ \| |  | | |____ ____) |
+# |______/_/    \_\_|  \_\\_____|______| /_/    \_\_____|_|  \_\_|    |_|  \_\/_/    \_\_|  |_|______|_____/ 
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1916_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_ww1_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1920_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_ww1_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1928_medium"
+		texturefile = "gfx/interface/technologies/aircraft/ENG_ww1_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1933_medium"
+		texturefile = "gfx/interface/technologies/1933_Martin B-10.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1936_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1940_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1943_medium"
+		texturefile = "gfx/interface/technologies/strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1945_medium"
+		texturefile = "gfx/interface/technologies/jet_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1950_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_1950.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1960_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_1960.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1970_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_1970.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1980_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_1975.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_1990_medium"
+		texturefile = "gfx/interface/technologies/aircraft/SOV_STRATEGIC_1995.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_2000_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_1995.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_2010_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_2000.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_2020_medium"
+		texturefile = "gfx/interface/technologies/aircraft/PRC_STRATEGIC_2020.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_2030_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_2020.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_2040_medium"
+		texturefile = "gfx/interface/technologies/aircraft/PRC_STRATEGIC_2030.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_2050_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_2030.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_large_aircraft_frame_2060_medium"
+		texturefile = "gfx/interface/technologies/aircraft/USA_STRATEGIC_2030.dds"
+	}
+
+#  ______ _   _  _____ _____ _   _ ______  _____ 
+# |  ____| \ | |/ ____|_   _| \ | |  ____|/ ____|
+# | |__  |  \| | |  __  | | |  \| | |__  | (___  
+# |  __| | . ` | | |_ | | | | . ` |  __|  \___ \ 
+# | |____| |\  | |__| |_| |_| |\  | |____ ____) |
+# |______|_| \_|\_____|_____|_| \_|______|_____/ 
+
+	SpriteType = {
+		name = "GFX_bba_engine_1928_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_5.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_engine_1933_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_6.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_engine_1936_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_7.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_engine_1940_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_8.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_engine_1943_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_8.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1950_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_1.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1955_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_2.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1960_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_3.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1965_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_4.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1970_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_5.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1975_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_6.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1980_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_7.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1985_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_8.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1990_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_8.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_1995_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_10.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2000_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_11.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2005_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_12.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2010_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_12.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2015_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_12.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2020_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_12.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2025_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_12.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2030_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_12.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2035_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_12.dds"	
+	}
+	SpriteType = {
+		name = "GFX_bba_jet_engine_2040_medium"
+		texturefile = "gfx/interface/technologies/NSB_modules/nsb_engine_tech_12.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_bba_fusion_engine_2040_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/RON_modules/tank_module_fusion_engine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_fusion_engine_2045_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/RON_modules/tank_module_fusion_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_fusion_engine_2050_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/RON_modules/tank_module_fusion_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_fusion_engine_2055_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/RON_modules/tank_module_fusion_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_fusion_engine_2060_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/RON_modules/tank_module_fusion_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_scramjet_engine_2030_medium"
+		textureFile = "gfx/interface/technologies/jet_engines.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_scramjet_engine_2035_medium"
+		textureFile = "gfx/interface/technologies/jet_engines.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_scramjet_engine_2040_medium"
+		textureFile = "gfx/interface/technologies/jet_engines.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_scramjet_engine_2045_medium"
+		textureFile = "gfx/interface/technologies/jet_engines.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_scramjet_engine_2050_medium"
+		textureFile = "gfx/interface/technologies/jet_engines.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_scramjet_engine_2055_medium"
+		textureFile = "gfx/interface/technologies/jet_engines.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_scramjet_engine_2060_medium"
+		textureFile = "gfx/interface/technologies/jet_engines.dds"
+	}
+
+# __          ________          _____   ____  _   _  _____ 
+# \ \        / /  ____|   /\   |  __ \ / __ \| \ | |/ ____|
+#  \ \  /\  / /| |__     /  \  | |__) | |  | |  \| | (___  
+#   \ \/  \/ / |  __|   / /\ \ |  ___/| |  | | . ` |\___ \ 
+#    \  /\  /  | |____ / ____ \| |    | |__| | |\  |____) |
+#     \/  \/   |______/_/    \_\_|     \____/|_| \_|_____/ 
+                                                          
+	SpriteType = {
+		name = "GFX_bba_wwi_weapons_development_medium"
+		textureFile = "gfx/interface/technologies/DNC_Tech_Expansion/Observation_Balloon_1910.dds"
+	}    
+
+	SpriteType = {
+		name = "GFX_bba_mg_deflectors_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_mg_1.dds"
+	}    
+
+	SpriteType = {
+		name = "GFX_bba_mg_sync_gears_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_mg_1.dds"
+	}    
+
+	SpriteType = {
+		name = "GFX_bba_mg_twin_guns_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_mg_1.dds"
+	}    
+
+	SpriteType = {
+		name = "GFX_bba_mg_wing_mountings_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_mg_2.dds"
+	}  
+
+	SpriteType = {
+		name = "GFX_bba_mg_heavy_mg_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_mg_2.dds"
+	}   
+
+	SpriteType = {
+		name = "GFX_bba_nav_aerial_torpedo_medium"
+		textureFile = "gfx/interface/technologies/basic_torpedo.dds"
+	}   
+
+	SpriteType = {
+		name = "GFX_bba_nav_1916_bomb_locks_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_bombs.dds"
+	}    
+
+	SpriteType = {
+		name = "GFX_bba_nav_1926_bomb_locks_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_bombs.dds"
+	}                
+
+ 	SpriteType = {
+		name = "GFX_bba_nav_aerial_torpedo_1930_medium"
+		textureFile = "gfx/interface/technologies/basic_torpedo.dds"
+	}   
+
+ 	SpriteType = {
+		name = "GFX_bba_nav_dive_brakes_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_dive_brakes_icon.dds"
+	}    
+
+ 	SpriteType = {
+		name = "GFX_bba_nav_aerial_torpedo_1940_medium"
+		textureFile = "gfx/interface/technologies/electric_torpedo.dds"
+	} 
+
+	SpriteType = {
+		name = "GFX_bba_nav_1941_bomb_locks_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_bombs.dds"
+	} 
+
+	SpriteType = {
+		name = "GFX_bba_nav_1944_bomb_locks_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_bombs.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_nav_aerial_torpedo_1945_medium"
+		textureFile = "gfx/interface/technologies/homing_torpedo.dds"
+	}   
+
+ 	SpriteType = {
+		name = "GFX_bba_nav_aerial_torpedo_1950_medium"
+		textureFile = "gfx/interface/technologies/homing_torpedo.dds"
+	}  
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_1955_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_1965_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}                                 
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_1975_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}                             
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_1985_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}                     
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_1995_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}                     
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_2005_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}   
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_2015_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}                     
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_2025_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}                     
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_2035_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}                     
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_2045_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}                     
+
+ 	SpriteType = {
+		name = "GFX_bba_hardpoints_2055_medium"
+		textureFile = "gfx/interface/technologies/space/Air_To_Air_Missile_small.dds"
+	}   
+
+ 	SpriteType = {
+		name = "GFX_bba_autocannons_1916_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_cannon_1.dds"
+	}   
+
+ 	SpriteType = {
+		name = "GFX_bba_autocannons_1940_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_cannon_2.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_at_gun_1941_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_1_icon.dds"
+	}  
+
+ 	SpriteType = {
+		name = "GFX_bba_autocannons_1943_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_cannon_2.dds"
+	}  
+
+ 	SpriteType = {
+		name = "GFX_bba_at_gun_1944_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_1_icon.dds"
+	}      
+
+ 	SpriteType = {
+		name = "GFX_bba_autocannons_1945_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_cannon_2.dds"
+	}    
+
+ 	SpriteType = {
+		name = "GFX_bba_autocannons_1955_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_cannon_2.dds"
+	}                    
+
+ 	SpriteType = {
+		name = "GFX_bba_autocannons_1965_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_cannon_2.dds"
+	}               
+
+ 	SpriteType = {
+		name = "GFX_bba_autocannons_1980_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aa_cannon_2.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_at_gun_1955_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_1_icon.dds"
+	}   
+
+ 	SpriteType = {
+		name = "GFX_bba_at_gun_1965_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_1_icon.dds"
+	}   
+
+ 	SpriteType = {
+		name = "GFX_bba_at_gun_1980_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_1_icon.dds"
+	}   
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1915_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1926_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	}  
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1940_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_chaff_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1945_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1955_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1965_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1975_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1985_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_1995_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_2005_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_2015_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_2025_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_2035_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_2045_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_tac_bombing_2055_medium"
+		textureFile = "gfx/interface/technologies/ground_support_integration.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_1915_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_parasite_fighters_1920_medium"
+		textureFile = "gfx/interface/technologies/massed_bomber_formations.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_powered_turrets_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cannon_turret_2_icon.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_1936_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_1940_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_1945_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_parasite_fighters_1950_medium"
+		textureFile = "gfx/interface/technologies/massed_bomber_formations.dds"
+	} 
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_1955_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_1960_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_1980_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_2000_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_2020_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_2040_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_strat_bombing_2060_medium"
+		textureFile = "gfx/interface/technologies/strategic_destruction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_range_extra_fuel_tanks_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_extra_fueltank_icon.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_range_self_sealing_fuel_tanks_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_self_sealing_fueltank_icon.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_range_drop_tanks_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_range_improvements.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_range_aa_refueling_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_range_improvements.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_1926_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_2.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_1936_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_3.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_non_strategic_materials_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_1943_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_4.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_1950_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_5.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_1960_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_6.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_1970_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_7.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_stealth_1980_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_8.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_stealth_2000_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_9.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_stealth_2020_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_10.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_stealth_2040_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_11.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_stealth_2060_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_12.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_1955_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_1965_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_1975_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_1985_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_1995_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_2005_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_2015_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_2025_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_2035_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_2045_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_armor_ecm_2055_medium"
+		textureFile = "gfx/interface/technologies/electronics/future_radar.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_wings_swept_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_wings_variable_sweep_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+	}
+
+ 	SpriteType = {
+		name = "GFX_bba_wings_flying_wing_medium"
+		textureFile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+	}
+
+
+#  _    _ ______ _      _____ _____ ____  _____ _______ ______ _____   _____ 
+# | |  | |  ____| |    |_   _/ ____/ __ \|  __ \__   __|  ____|  __ \ / ____|
+# | |__| | |__  | |      | || |   | |  | | |__) | | |  | |__  | |__) | (___  
+# |  __  |  __| | |      | || |   | |  | |  ___/  | |  |  __| |  _  / \___ \ 
+# | |  | | |____| |____ _| || |___| |__| | |      | |  | |____| | \ \ ____) |
+# |_|  |_|______|______|_____\_____\____/|_|      |_|  |______|_|  \_\_____/ 
+	
+	SpriteType = {
+		name = "GFX_bba_early_helicopter_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Helicopter_Blueprint.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_1_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_1950.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_2_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_1960.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_3_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_1970.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_4_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_1980.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_5_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_1990.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_6_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_2000.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_7_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_2010.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_8_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_2020.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_cargo_helicopter_9_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Transport_Helicopter_2030.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_bba_attack_helicopter_1_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Attack_Helicopter_1960.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_attack_helicopter_2_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Attack_Helicopter_1970.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_attack_helicopter_3_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Attack_Helicopter_1980.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_attack_helicopter_4_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Attack_Helicopter_1990.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_attack_helicopter_5_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Attack_Helicopter_2000.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_attack_helicopter_6_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Attack_Helicopter_2010.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_attack_helicopter_7_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Attack_Helicopter_2020.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_attack_helicopter_8_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Attack_Helicopter_2030.dds"
+	}
+
+
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_1_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_1950.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_2_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_1960.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_3_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_1970.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_4_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_1980.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_5_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_1990.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_6_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_2000.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_7_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_2010.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_8_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_2020.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_scout_helicopter_9_medium"
+		texturefile = "gfx/interface/technologies/helicopters/Scout_Helicopter_2030.dds"
+	}
+
+
+
+
+
+                  
+
+
+
+
+                  
+
+
+#  ____________ _____  _____  ______ _      _____ _   _   _______ ______ _____ _    _  _____ 
+# |___  /  ____|  __ \|  __ \|  ____| |    |_   _| \ | | |__   __|  ____/ ____| |  | |/ ____|
+#    / /| |__  | |__) | |__) | |__  | |      | | |  \| |    | |  | |__ | |    | |__| | (___  
+#   / / |  __| |  ___/|  ___/|  __| | |      | | | . ` |    | |  |  __|| |    |  __  |\___ \ 
+#  / /__| |____| |    | |    | |____| |____ _| |_| |\  |    | |  | |___| |____| |  | |____) |
+# /_____|______|_|    |_|    |______|______|_____|_| \_|    |_|  |______\_____|_|  |_|_____/ 	
+
+	SpriteType = {
+		name = "GFX_bba_military_balloons_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Observation_Balloon_1890.dds"
+	}
+	SpriteType = {
+		name = "GFX_mega_zeppelin_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+	SpriteType = {
+		name = "GFX_bba_RON_zeppelin_1901_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+    
+	SpriteType = {
+		name = "GFX_bba_RON_airship_infrastructure_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/RON_Tarmac.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_RON_airship_armor_medium"
+		textureFile = "gfx/interface/technologies/NSB_modules/nsb_armor_tech_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_bba_RON_zeppelin_1908_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_RON_military_zeppelins_medium"
+		textureFile = "gfx/interface/technologies/DNC_Tech_Expansion/Observation_Balloon_1910.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_RON_zeppelin_1913_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_RON_zeppelin_1920_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bba_RON_zeppelin_1928_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_zeppelin_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+	SpriteType = {
+		name = "GFX_zeppelin_airframe_1_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+	SpriteType = {
+		name = "GFX_zeppelin_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+	SpriteType = {
+		name = "GFX_zeppelin_airframe_3_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+	SpriteType = {
+		name = "GFX_zeppelin_airframe_4_medium"
+		texturefile = "gfx/interface/technologies/DNC_Tech_Expansion/Zepellin.dds"
+	}
+}

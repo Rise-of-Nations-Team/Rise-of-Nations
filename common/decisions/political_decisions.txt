@@ -2233,23 +2233,6 @@ political_actions = {
 					has_idea = NOR_anti_communist_sentiment_ns
 				}
 			}
-			IF = {
-				limit = {
-					has_dlc = "Trial of Allegiance"
-					original_tag = CHL
-				}
-				custom_trigger_tooltip = {
-					tooltip = CHL_can_not_have_anarchy_tt
-					NOT = {
-						OR = {
-							has_idea = idea_CHL_near_anarchic_society
-							has_idea = idea_CHL_near_anarchic_society_2
-							has_idea = idea_CHL_near_anarchic_society_3
-							has_idea = idea_CHL_near_anarchic_society_4
-						}
-					}
-				}
-			}
 
 			if = {
 				limit = {

@@ -6374,8 +6374,8 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_AUS_GFX_FOCUS_conservatism_socialism"
-		texturefile = "gfx/interface/goals/imported/hag/AUS_GFX_FOCUS_conservatism_socialism.dds"
+		name = "GFX_focus_AUS_GFX_FOCUS_democratic_socialism"
+		texturefile = "gfx/interface/goals/imported/hag/AUS_GFX_FOCUS_democratic_socialism.dds"
 	}
 
 	SpriteType = {

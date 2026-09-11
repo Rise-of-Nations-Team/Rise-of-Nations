@@ -936,10 +936,6 @@ FAI_navy_upgrade_cv_plane_strategy_0 = {
 	allowed = {
 		always = yes
 	}
-	enable = {
-		has_tech = basic_small_airframe
-		NOT = { has_tech = improved_small_airframe }
-	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
@@ -962,10 +958,6 @@ FAI_navy_upgrade_cv_plane_strategy_0 = {
 FAI_navy_upgrade_cv_plane_strategy_1 = {
 	allowed = {
 		always = yes
-	}
-	enable = {
-		has_tech = improved_small_airframe
-		NOT = { has_tech = advanced_small_airframe }
 	}
 	abort_when_not_enabled = yes
 
@@ -991,8 +983,8 @@ FAI_navy_upgrade_cv_plane_strategy_2 = {
 		always = yes
 	}
 	enable = {
-		has_tech = advanced_small_airframe
-		NOT = { has_tech = modern_small_airframe }
+		has_tech = fighter2
+		NOT = { has_tech = cv_fighter1 }
 	}
 	abort_when_not_enabled = yes
 
@@ -1017,10 +1009,6 @@ FAI_navy_upgrade_cv_plane_strategy_3 = {
 	allowed = {
 		always = yes
 	}
-	enable = {
-		has_tech = modern_small_airframe
-	}
-	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = production_upgrade_desire_offset
