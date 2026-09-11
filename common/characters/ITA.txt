@@ -674,7 +674,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_enrico_corradini
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -5870,7 +5869,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_giuseppe_saracco
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -5902,7 +5900,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_alessandro_fortis
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -5930,7 +5927,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_ettore_sacchi
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -5959,7 +5955,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_filippo_turati
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -5991,7 +5986,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_leonida_bissolati
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6020,7 +6014,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_rinaldo_rigola
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6050,7 +6043,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_arturo_labriola
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6095,7 +6087,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_napoleone_colajanni
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6127,7 +6118,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_ernesto_nathan
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6155,7 +6145,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_filippo_meda
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6189,7 +6178,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_ottorino_gentiloni
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6220,7 +6208,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_giuseppe_toniolo
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6248,7 +6235,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_romolo_murri
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6276,7 +6262,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_ernesto_pacelli
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6335,7 +6320,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_giulio_prinetti
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6363,7 +6347,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_emilio_visconti_venosta
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6391,7 +6374,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_antonino_di_san_giuliano
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6419,7 +6401,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_luigi_federzoni
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6448,7 +6429,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_gabriele_dannunzio
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6476,7 +6456,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_cesare_battisti
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6505,7 +6484,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_alceste_de_ambris
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6533,7 +6511,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_ferdinando_martini
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6561,7 +6538,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_ernesto_teodoro_moneta
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6590,7 +6566,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_salvatore_barzilai
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -6619,7 +6594,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_luigi_albertini
-			cost = 100
 			allowed = {
 				original_tag = ITA
 			}
