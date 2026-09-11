@@ -81,7 +81,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 10
 		}
@@ -439,7 +438,6 @@ focus_tree = {
 		bypass = {
 			NOT = { country_exists = MNT }
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 9
 			modifier = {
@@ -479,7 +477,6 @@ focus_tree = {
 				NOT = { country_exists = GER }
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 9
 			modifier = {
@@ -514,7 +511,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_g_conversion
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 10
 		}
@@ -565,7 +561,6 @@ focus_tree = {
 				has_country_flag = ITA_g_tripartite
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 8
 			modifier = {
@@ -598,7 +593,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_ch_b_parma
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 9
 			modifier = {
@@ -646,7 +640,6 @@ focus_tree = {
 				NOT = { country_exists = AUH }
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 9
 			modifier = {
@@ -709,7 +702,6 @@ focus_tree = {
 				check_variable = { var = ITA_majority value = 60 compare = greater_than_or_equals }
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 4
 			modifier = {
@@ -775,7 +767,6 @@ focus_tree = {
 				has_war_with = OTT
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 9
 			modifier = {
@@ -824,7 +815,6 @@ focus_tree = {
 				has_completed_focus = ITADNC_w_the_banco_di_roma_instead
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = OTT
 		ai_will_do = {
 			factor = 8
@@ -852,7 +842,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_ch_elections_of_nineteen_nine
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 10
 		}
@@ -895,7 +884,6 @@ focus_tree = {
 		mutually_exclusive = { focus = ITADNC_v_the_pew_and_the_ballot }
 		icon = GFX_focus_ITA_king_vittorio
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		available = {
 			is_subject = no
@@ -1029,7 +1017,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_t_genoa
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1064,7 +1051,6 @@ focus_tree = {
 		mutually_exclusive = { focus = ITADNC_s_the_guards_of_public_safety }
 		icon = GFX_goal_generic_position_armies
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1103,7 +1089,6 @@ focus_tree = {
 		mutually_exclusive = { focus = ITADNC_s_the_army_at_call }
 		icon = GFX_goal_generic_small_arms
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1212,7 +1197,6 @@ focus_tree = {
 		mutually_exclusive = { focus = ITADNC_s_the_lodge_is_silenced }
 		icon = GFX_focus_generic_catholic_dominion
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1243,7 +1227,6 @@ focus_tree = {
 		mutually_exclusive = { focus = ITADNC_s_the_altar_and_the_throne }
 		icon = GFX_goal_generic_plotting
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1335,7 +1318,6 @@ focus_tree = {
 		prerequisite = { focus = ITADNC_s_the_altar_and_the_throne focus = ITADNC_s_the_lodge_is_silenced }
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1377,7 +1359,6 @@ focus_tree = {
 				has_war_with = FRA
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = FRA
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available = {
@@ -1433,7 +1414,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = FRA
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available = {
@@ -1490,7 +1470,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_NAVY_XP }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1527,7 +1506,6 @@ focus_tree = {
 		prerequisite = { focus = ITADNC_s_the_south_governed }
 		icon = GFX_goal_generic_military_deal
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1573,7 +1551,6 @@ focus_tree = {
 				has_country_flag = ITA_s_in_the_alliance
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_NAVY_XP }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1614,7 +1591,6 @@ focus_tree = {
 		prerequisite = { focus = ITADNC_s_the_note_on_tunis }
 		icon = GFX_focus_ITA_a_colonial_empire
 		cost = 5
-		cancel_if_invalid = yes
 		will_lead_to_war_with = ETH
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY_CHARACTER }
 		available = {
@@ -1662,7 +1638,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = FRA
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		available = {
@@ -1713,7 +1688,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1765,7 +1739,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1838,7 +1811,6 @@ focus_tree = {
 				has_civil_war = yes
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = AUH
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		available = {
@@ -1924,7 +1896,6 @@ focus_tree = {
 		mutually_exclusive = { focus = ITADNC_s_the_ministry_of_the_sword }
 		icon = GFX_focus_generic_monarchy_2
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -1975,7 +1946,6 @@ focus_tree = {
 		mutually_exclusive = { focus = ITADNC_s_the_statuto_kept }
 		icon = GFX_focus_generic_military_mission
 		cost = 5
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		available = {
 			has_country_flag = ITA_dnc_path_sonnino
@@ -2022,7 +1992,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2372,7 +2341,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_r_army_kept
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = AUH
 		ai_will_do = {
 			factor = 4
@@ -2406,7 +2374,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_t_strike_1904
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -2734,7 +2701,6 @@ focus_tree = {
 			has_country_flag = ITA_r_king_gone
 			NOT = { has_country_flag = ITA_dnc_end_aosta }
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -2764,7 +2730,6 @@ focus_tree = {
 			has_country_flag = ITA_r_syndicalists_radical
 			NOT = { has_country_flag = ITA_republic }
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -2795,7 +2760,6 @@ focus_tree = {
 			has_country_flag = ITA_r_syndicalists_radical
 			NOT = { has_country_flag = ITA_republic }
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = AUH
 		ai_will_do = {
 			factor = 5
@@ -2831,7 +2795,6 @@ focus_tree = {
 			NOT = { has_civil_war = yes }
 			NOT = { has_country_flag = ITA_dnc_end_aosta }
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = AUH
 		ai_will_do = {
 			factor = 5
@@ -2862,7 +2825,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2898,7 +2860,6 @@ focus_tree = {
 		bypass = {
 			NOT = { country_exists = AUH }
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -2943,7 +2904,6 @@ focus_tree = {
 		bypass = {
 			NOT = { country_exists = AUH }
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -2987,7 +2947,6 @@ focus_tree = {
 				has_country_flag = ITA_z_expelled
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3034,7 +2993,6 @@ focus_tree = {
 				has_country_flag = ITA_z_cetinje_refused
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3077,7 +3035,6 @@ focus_tree = {
 				has_country_flag = ITA_z_medua_line
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3117,7 +3074,6 @@ focus_tree = {
 		available = {
 			has_country_flag = ITA_dnc_path_nazionale
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3147,7 +3103,6 @@ focus_tree = {
 		available = {
 			has_country_flag = ITA_dnc_path_nazionale
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3179,7 +3134,6 @@ focus_tree = {
 		bypass = {
 			NOT = { country_exists = USA }
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3225,7 +3179,6 @@ focus_tree = {
 				AUH = { has_country_flag = AUH_bp_alliance_renewed }
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3281,7 +3234,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 8
 			modifier = {
@@ -3327,7 +3279,6 @@ focus_tree = {
 				has_country_flag = ITA_z_belgrade_convention
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = AUH
 		ai_will_do = {
 			factor = 5
@@ -3367,7 +3318,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_z_treaty_torn
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3414,7 +3364,6 @@ focus_tree = {
 				has_country_flag = ITA_w_porte_reinforced
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = OTT
 		ai_will_do = {
 			factor = 5
@@ -3463,7 +3412,6 @@ focus_tree = {
 		available = {
 			has_country_flag = ITA_dnc_path_nazionale
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 8
 			modifier = { factor = 2 has_country_flag = ITA_arm_the_frontier_surveyed }
@@ -3505,7 +3453,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = AUH
 		ai_will_do = {
 			factor = 6
@@ -3554,7 +3501,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 6
 			modifier = { factor = 2 has_country_flag = ITA_z_tyrol_crisis }
@@ -3599,7 +3545,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = AUH
 		will_lead_to_war_with = GER
 		ai_will_do = {
@@ -3636,7 +3581,6 @@ focus_tree = {
 				NOT = { has_wargoal_against = AUH }
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 4
 			modifier = { factor = 3 has_country_flag = ITA_z_antivari_base }
@@ -3675,7 +3619,6 @@ focus_tree = {
 				NOT = { has_wargoal_against = AUH }
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 4
 			modifier = { factor = 2 has_country_flag = ITA_z_belgrade_convention }
@@ -3730,7 +3673,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 8
 			modifier = { factor = 2 AUH = { surrender_progress > 0.3 } }
@@ -3779,7 +3721,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 6
 			modifier = { factor = 2 surrender_progress > 0.45 }
@@ -3817,7 +3758,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 10
 			modifier = { factor = 2 check_variable = { var = ITA_crown value = 55 compare = greater_than_or_equals } }
@@ -3859,7 +3799,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 10
 			modifier = { factor = 2 has_country_flag = ITA_z_veneto_lost }
@@ -3893,7 +3832,6 @@ focus_tree = {
 				NOT = { country_exists = OTT }
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = OTT
 		ai_will_do = {
 			factor = 6
@@ -3930,7 +3868,6 @@ focus_tree = {
 				NOT = { country_exists = MNT }
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 6
 			modifier = { factor = 2 has_country_flag = ITA_z_antivari_base }
@@ -3966,7 +3903,6 @@ focus_tree = {
 				has_country_flag = ITA_z_montenegro_ours
 			}
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 8
 			modifier = { factor = 2 check_variable = { var = ITA_crown value = 50 compare = greater_than_or_equals } }
@@ -3993,7 +3929,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -4178,7 +4113,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_ch_elections_of_the_strike
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 4
 			modifier = {
@@ -4212,7 +4146,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_ch_b_fermo_proposito
 		}
-		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -4500,7 +4433,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_ch_elections_of_nineteen_nine
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		ai_will_do = {
 			factor = 5
@@ -4575,7 +4507,6 @@ focus_tree = {
 				country_exists = PAP
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY }
 		ai_will_do = {
 			factor = 10
@@ -4624,7 +4555,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		ai_will_do = {
 			factor = 5
@@ -4672,7 +4602,6 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		ai_will_do = {
 			factor = 5
@@ -4714,7 +4643,6 @@ focus_tree = {
 				NOT = { has_country_flag = ITA_k_conciliated }
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		ai_will_do = {
 			factor = 5
@@ -4749,7 +4677,6 @@ focus_tree = {
 			has_country_flag = ITA_dnc_path_concordat
 			has_country_flag = ITA_k_murri_seated
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 		ai_will_do = {
 			factor = 4
@@ -8209,7 +8136,6 @@ focus_tree = {
 			owns_state = 993
 			owns_state = 736
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = AUH
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_RESEARCH }
 		available = {
@@ -8756,7 +8682,6 @@ focus_tree = {
 		bypass = {
 			NOT = { country_exists = ETH }
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = ETH
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_INDUSTRY }
 		available = {
@@ -8856,7 +8781,6 @@ focus_tree = {
 				owns_state = 663
 			}
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INTERNATIONAL_TRADE }
 		available = {
 			OTT = { exists = yes }
@@ -8945,7 +8869,6 @@ focus_tree = {
 				has_war_with = OTT
 			}
 		}
-		cancel_if_invalid = yes
 		will_lead_to_war_with = OTT
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_RESEARCH }
 		available = {
@@ -9264,7 +9187,6 @@ focus_tree = {
 		bypass = {
 			has_country_flag = ITA_w_libya_ceded_without_war
 		}
-		cancel_if_invalid = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_INDUSTRY }
 		available = {
 			has_war_with = OTT
