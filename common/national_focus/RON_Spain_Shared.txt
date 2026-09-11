@@ -1,4 +1,3 @@
-#!gfx:interface/RON_goals.gfx
 shared_focus = {
     id = SPA_for_king_and_country
 	icon = GFX_focus_spa_no_compromise_on_carlist_ideals
