@@ -1,0 +1,449 @@
+ITA_dnc_historical_plan = {
+	name = "Italy historical plan"
+	desc = "The road the ministry takes when the era is left to run as it did"
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = yes
+			has_country_flag = ITA_cw_ai_historical
+			has_game_rule = { rule = ITA_dnc_ai_behavior option = ITA_HISTORICAL }
+		}
+	}
+
+	ai_national_focuses = {
+		ITADNC_arm_the_army_after_adwa
+		ITADNC_arm_the_alpine_frontier
+		ITADNC_arm_the_war_hypotheses
+		ITADNC_arm_the_war_school_at_turin
+		ITADNC_arm_the_heavy_field_artillery
+		ITADNC_arm_the_range_at_nettuno
+		ITADNC_arm_the_army_corps_commands
+		ITADNC_arm_the_africa_command
+		ITADNC_arm_the_alpini
+		ITADNC_arm_the_machine_gun_sections
+		ITADNC_arm_the_military_railways
+		ITADNC_arm_the_works_at_sampierdarena
+		ITADNC_arm_the_defence_of_the_kingdom
+		ITADNC_arm_the_field_wireless
+		ITADNC_arm_the_motor_service
+		ITADNC_arm_the_workshops_of_reconstruction
+		ITADNC_air_the_specialist_brigade
+		ITADNC_air_the_aerostatic_companies
+		ITADNC_n_the_naval_estimates
+		ITADNC_air_the_field_at_centocelle
+		ITADNC_air_the_dirigible_of_schio
+		ITADNC_air_the_yard_at_vigna_di_valle
+		ITADNC_air_the_school_of_the_eye
+		ITADNC_arm_the_eyes_of_the_army
+		ITADNC_air_the_memoranda_of_douhet
+		ITADNC_air_the_directorate
+		ITADNC_air_the_orders_of_the_ministry
+		ITADNC_air_the_engine_that_is_ours
+		ITADNC_air_the_circuit_at_brescia
+		ITADNC_air_the_wireless_aloft
+		ITADNC_air_the_airship_goes_to_sea
+		ITADNC_n_the_ideal_battleship
+		ITADNC_n_the_yards_of_the_kingdom
+		ITADNC_n_the_dante_alighieri
+		ITADNC_n_the_naval_flying_service
+		ITADNC_n_the_fleet_of_battle
+		ITADNC_n_the_naval_staff
+		ITADNC_n_the_landing_companies
+		ITADNC_n_the_adriatic_is_ours
+		ITADNC_n_the_war_on_trade
+		ITADNC_n_the_cruiser_squadron
+		ITADNC_n_the_flotilla_at_night
+		ITADNC_n_the_submarine_flotilla
+		ITADNC_n_the_armoured_raiders
+		ITADNC_n_the_flotilla_unleashed
+		ITADNC_n_the_middle_sea
+		ITADNC_n_the_bases_beyond_the_strait
+		ITADNC_air_the_seaplane_station
+		ITADNC_e_the_pareggio
+		ITADNC_e_the_lira_at_par
+		ITADNC_e_the_sgravi
+		ITADNC_e_the_workmens_houses
+		ITADNC_e_the_industrial_triangle
+		ITADNC_e_the_boards_of_conciliation
+		ITADNC_e_the_land_reclaimed
+		ITADNC_e_the_cities_that_swell
+		ITADNC_e_the_duty_on_bread_repealed
+		ITADNC_e_the_ilva_at_piombino
+		ITADNC_e_the_kingdom_solvent
+		ITADNC_e_the_arsenals_enlarged
+		ITADNC_e_the_commercial_treaties
+		ITADNC_e_the_orders_of_the_state
+		ITADNC_e_the_kingdom_at_war_pays
+		ITADNC_e_the_railways_of_the_state
+		ITADNC_e_the_coal_contract
+		ITADNC_e_the_rolling_stock_orders
+		ITADNC_e_the_line_to_the_north
+		ITADNC_e_the_line_to_the_south
+		ITADNC_e_the_polytechnic
+		ITADNC_e_the_simplon_is_opened
+		ITADNC_h_the_works_on_the_frontier
+		ITADNC_h_the_army_is_paid
+		ITADNC_h_the_state_stands_aside
+		ITADNC_h_the_colonial_office
+		ITADNC_h_the_ascari_are_enrolled
+		ITADNC_h_the_corps_for_china
+		ITADNC_h_the_reserve_is_prepared
+		ITADNC_h_the_grain_and_the_coal
+		ITADNC_h_the_understanding_with_vienna
+		ITADNC_h_the_integration_of_the_littoral
+		ITADNC_h_the_office_of_reserved_affairs
+		ITADNC_h_the_men_in_the_cafes
+		ITADNC_h_the_oath_before_the_king
+		ITADNC_h_the_new_arms
+		ITADNC_h_the_companies_of_discipline
+		ITADNC_h_the_yards_of_trieste
+		ITADNC_h_the_bargain_at_racconigi
+		ITADNC_h_the_treaty_of_commerce_with_petersburg
+		ITADNC_h_the_convention_of_the_straits
+		ITADNC_h_the_porte_in_our_debt
+		ITADNC_h_the_pact_against_anarchy
+		ITADNC_h_the_hand_of_menelik
+		ITADNC_h_the_concession_at_tientsin
+		ITADNC_h_the_bay_of_san_mun
+		ITADNC_h_the_treaty_with_peking
+		ITADNC_h_the_colonial_administrations
+		ITADNC_h_the_reckoning_with_the_refuge
+		ITADNC_h_the_convention_of_the_gotthard
+		ITADNC_h_the_consulates_abroad
+		ITADNC_air_the_defence_of_the_kingdom
+		ITADNC_air_the_sheds_on_the_far_shore
+		ITADNC_air_the_night_and_the_beam
+		ITADNC_h_the_kingdom_and_the_dragon
+		ITADNC_h_the_kingdom_is_no_refuge
+		ITADNC_h_the_wealth_of_the_east
+		ITADNC_h_the_million_who_left
+		ITADNC_h_the_stations_of_the_benadir
+		ITADNC_h_the_sphere_of_the_tripartite
+		ITADNC_h_the_royal_prerogative
+		ITADNC_h_luzzatti_at_the_treasury
+		ITADNC_h_the_conversion_of_the_rendita
+		ITADNC_h_the_plenipotentiary_of_the_treasury
+		ITADNC_h_the_commercial_treaties
+		ITADNC_h_nitti_at_the_ministry
+		ITADNC_h_the_special_law_for_naples
+		ITADNC_h_orlando_at_public_instruction
+		ITADNC_h_the_law_on_the_schools
+		ITADNC_h_the_agency_and_the_press
+		ITADNC_h_the_school_makes_italians
+		ITADNC_h_salandra_and_the_right
+		ITADNC_h_stringher_at_the_bank
+		ITADNC_h_the_credit_for_industry
+		ITADNC_h_giolitti_at_the_interior
+		ITADNC_h_the_political_police
+		ITADNC_h_the_files_are_joined
+		ITADNC_h_the_interior_commands
+		ITADNC_h_the_work_of_the_majority
+		ITADNC_h_the_prefects_deliver
+		ITADNC_h_the_majority_that_governs
+		ITADNC_h_the_ministry_stands
+	}
+
+	focus_factors = {
+		ITADNC_o_break_the_chamber = 0
+		ITADNC_u_the_army_will_not_fire = 0
+	}
+}
+
+ITA_dnc_alternate_plan_a = {
+	name = "Italy alternate plan, the Crown and the Statuto"
+	desc = "The road the Crown takes when the Chamber is sent home and the Statuto stands alone"
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		is_historical_focus_on = no
+		OR = {
+			has_country_flag = ITA_cw_ai_crown
+			has_game_rule = { rule = ITA_dnc_ai_behavior option = ITA_CROWN }
+			AND = {
+				has_game_rule = { rule = ITA_dnc_ai_behavior option = DEFAULT }
+				has_completed_focus = ITADNC_o_break_the_chamber
+				NOT = { has_completed_focus = ITADNC_o_recall_the_chamber }
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		ITADNC_o_break_the_chamber
+		ITADNC_o_rally_the_kingdom
+		ITADNC_o_the_kingdom_at_work
+		ITADNC_o_the_leagues_dissolved
+		ITADNC_o_secure_the_new_order
+		ITADNC_o_the_statuto_alone
+		ITADNC_o_vienna_confirms_the_crown
+		ITADNC_o_rebuild_the_kingdom
+		ITADNC_o_a_greater_and_better_italy
+		ITADNC_o_the_army_of_the_king
+		ITADNC_o_the_bulwark_of_latinity
+		ITADNC_o_the_true_enemy_is_the_west
+		ITADNC_o_rebuild_the_battle_fleet
+		ITADNC_o_a_place_in_the_sun
+		ITADNC_o_see_to_the_alpine_front
+		ITADNC_o_safeguard_the_adriatic_shore
+		ITADNC_o_the_shore_at_antivari
+		ITADNC_o_the_day_the_coal_stops
+		ITADNC_o_the_latin_league
+		ITADNC_o_break_the_mediterranean_condominium
+		ITADNC_o_the_conspiracy_at_belgrade
+		ITADNC_o_the_corniche
+		ITADNC_o_reinstate_the_lost_provinces
+		ITADNC_o_rekindle_the_iberian_union
+		ITADNC_o_the_night_of_the_konak
+		ITADNC_o_the_pride_of_the_new_italy
+		ITADNC_o_the_trentino_for_a_guarantee
+		ITADNC_o_the_latin_understanding
+		ITADNC_o_the_military_convention
+		ITADNC_o_the_hour_of_vienna
+		ITADNC_o_the_last_shore
+	}
+}
+
+ITA_dnc_alternate_plan_a2 = {
+	name = "Italy alternate plan, the Crown and the Chamber recalled"
+	desc = "The road the Crown takes when the Chamber is sent home and then recalled"
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		is_historical_focus_on = no
+		OR = {
+			has_country_flag = ITA_cw_ai_constitutional
+			has_game_rule = { rule = ITA_dnc_ai_behavior option = ITA_CONSTITUTIONAL }
+		}
+	}
+
+	ai_national_focuses = {
+		ITADNC_o_break_the_chamber
+		ITADNC_o_rally_the_kingdom
+		ITADNC_o_the_kingdom_at_work
+		ITADNC_o_the_leagues_dissolved
+		ITADNC_o_secure_the_new_order
+		ITADNC_o_recall_the_chamber
+		ITADNC_o_rebuild_the_kingdom
+		ITADNC_o_the_king_reigns_and_does_not_govern
+	}
+}
+
+ITA_dnc_alternate_plan_b = {
+	name = "Italy alternate plan, the Comando"
+	desc = "The road the country takes when the army will not fire and the Supreme Command governs"
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		is_historical_focus_on = no
+		OR = {
+			has_country_flag = ITA_cw_ai_comando
+			has_game_rule = { rule = ITA_dnc_ai_behavior option = ITA_COMANDO }
+			AND = {
+				has_game_rule = { rule = ITA_dnc_ai_behavior option = DEFAULT }
+				has_completed_focus = ITADNC_u_the_army_will_not_fire
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		ITADNC_u_the_army_will_not_fire
+		ITADNC_u_rally_the_country
+		ITADNC_u_the_men_of_the_siege
+		ITADNC_u_the_country_put_back_to_work
+		ITADNC_u_what_italy_will_be
+		ITADNC_u_royalist_sentiment
+		ITADNC_u_return_to_the_statuto
+		ITADNC_u_the_supreme_command_governs
+		ITADNC_u_the_free_hand
+		ITADNC_u_la_grande_politica
+		ITADNC_u_the_mediterranean_system
+		ITADNC_u_the_understanding_with_london
+		ITADNC_u_the_alliance_renewed
+		ITADNC_u_align_the_south_slavs
+		ITADNC_u_see_to_the_adriatic
+		ITADNC_u_tributes_for_guarantees
+		ITADNC_u_carve_up_the_congo
+		ITADNC_u_expand_the_eastern_holdings
+		ITADNC_u_the_anglo_italian_defence_pact
+		ITADNC_u_valona_for_guarantees
+		ITADNC_u_reject_the_triple_alliance
+		ITADNC_u_establish_a_customs_union
+		ITADNC_u_the_industrial_investments
+		ITADNC_u_the_mediterranean_cooperation_sphere
+		ITADNC_u_liberate_oppressed_peoples
+		ITADNC_u_the_arms_for_peking
+		ITADNC_u_the_arsenal_for_the_allies
+		ITADNC_u_the_frontier_works
+		ITADNC_u_the_trade_agreements
+		ITADNC_u_the_latin_sisters
+		ITADNC_u_the_note_of_denunciation
+		ITADNC_u_the_school_of_turin
+		ITADNC_u_extend_the_system_eastward
+		ITADNC_u_petition_for_the_old_claims
+		ITADNC_u_the_anglo_italian_cooperation_program
+		ITADNC_u_the_concession_at_tientsin_ww
+		ITADNC_u_the_joint_squadron
+		ITADNC_u_the_sea_that_closes
+		ITADNC_u_demand_the_return_of_nice
+		ITADNC_u_support_the_albanians
+		ITADNC_u_the_garibaldian_legion
+		ITADNC_u_the_hour_of_the_isonzo
+		ITADNC_u_the_integrated_economies
+		ITADNC_u_the_joint_research_with_peking
+		ITADNC_u_the_pact_with_peking
+		ITADNC_u_the_territorial_militia
+		ITADNC_u_a_free_hand_in_tunis_ww
+		ITADNC_u_everything_for_the_army
+		ITADNC_u_sway_the_balkans
+		ITADNC_u_the_capitulations
+		ITADNC_u_the_glory_of_the_royal_army
+		ITADNC_u_the_mediterranean_confederation
+		ITADNC_u_the_naval_doctrine_of_the_middle_sea
+		ITADNC_u_the_note_to_christiania
+		ITADNC_u_the_pacific_stations
+		ITADNC_u_the_passes_of_the_alps
+		ITADNC_u_the_piedmontese_gunners
+		ITADNC_u_the_public_works_of_the_recovery
+		ITADNC_u_the_shore_alone
+		ITADNC_u_the_springtime_of_nations
+		ITADNC_u_the_stations_of_the_red_sea_ww
+		ITADNC_u_the_subversives_expelled
+		ITADNC_u_the_volunteers_for_china
+		ITADNC_u_the_volunteers_of_the_adriatic
+		ITADNC_u_the_western_settlement
+		ITADNC_u_unify_the_horn
+	}
+}
+
+ITA_dnc_alternate_plan_b2 = {
+	name = "Italy alternate plan, the oath"
+	desc = "The road the country takes when the army will not fire and the King swears the oath to the Statuto"
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		is_historical_focus_on = no
+		OR = {
+			has_country_flag = ITA_cw_ai_oath
+			has_game_rule = { rule = ITA_dnc_ai_behavior option = ITA_OATH }
+		}
+	}
+
+	ai_national_focuses = {
+		ITADNC_u_the_army_will_not_fire
+		ITADNC_u_rally_the_country
+		ITADNC_u_the_men_of_the_siege
+		ITADNC_u_what_italy_will_be
+		ITADNC_u_royalist_sentiment
+		ITADNC_u_the_oath_to_the_statuto
+		ITADNC_u_the_country_is_consulted
+		ITADNC_u_no_bands_in_the_streets
+		ITADNC_u_the_liberal_leaning
+		ITADNC_u_the_free_hand
+		ITADNC_u_la_grande_politica
+		ITADNC_u_the_mediterranean_system
+		ITADNC_u_the_understanding_with_london
+		ITADNC_u_the_alliance_renewed
+		ITADNC_u_align_the_south_slavs
+		ITADNC_u_see_to_the_adriatic
+		ITADNC_u_tributes_for_guarantees
+		ITADNC_u_carve_up_the_congo
+		ITADNC_u_expand_the_eastern_holdings
+		ITADNC_u_the_anglo_italian_defence_pact
+		ITADNC_u_valona_for_guarantees
+		ITADNC_u_reject_the_triple_alliance
+		ITADNC_u_establish_a_customs_union
+		ITADNC_u_the_industrial_investments
+		ITADNC_u_the_mediterranean_cooperation_sphere
+		ITADNC_u_liberate_oppressed_peoples
+		ITADNC_u_the_arms_for_peking
+		ITADNC_u_the_arsenal_for_the_allies
+		ITADNC_u_the_frontier_works
+		ITADNC_u_the_trade_agreements
+		ITADNC_u_the_latin_sisters
+		ITADNC_u_the_note_of_denunciation
+		ITADNC_u_extend_the_system_eastward
+		ITADNC_u_petition_for_the_old_claims
+		ITADNC_u_the_anglo_italian_cooperation_program
+		ITADNC_u_the_concession_at_tientsin_ww
+		ITADNC_u_the_joint_squadron
+		ITADNC_u_demand_the_return_of_nice
+		ITADNC_u_support_the_albanians
+		ITADNC_u_the_country_put_back_to_work
+		ITADNC_u_the_hour_of_the_isonzo
+		ITADNC_u_the_integrated_economies
+		ITADNC_u_the_joint_research_with_peking
+		ITADNC_u_the_pact_with_peking
+		ITADNC_u_a_free_hand_in_tunis_ww
+		ITADNC_u_sway_the_balkans
+		ITADNC_u_the_capitulations
+		ITADNC_u_the_mediterranean_confederation
+		ITADNC_u_the_naval_doctrine_of_the_middle_sea
+		ITADNC_u_the_note_to_christiania
+		ITADNC_u_the_pacific_stations
+		ITADNC_u_the_passes_of_the_alps
+		ITADNC_u_the_public_works_of_the_recovery
+		ITADNC_u_the_shore_alone
+		ITADNC_u_the_springtime_of_nations
+		ITADNC_u_the_stations_of_the_red_sea_ww
+		ITADNC_u_the_volunteers_for_china
+		ITADNC_u_the_volunteers_of_the_adriatic
+		ITADNC_u_the_western_settlement
+		ITADNC_u_unify_the_horn
+	}
+}
+
+ITA_dnc_alternate_plan_b3 = {
+	name = "Italy alternate plan, the republic"
+	desc = "The road the country takes when the army will not fire and the leagues govern"
+
+	allowed = {
+		original_tag = ITA
+	}
+	enable = {
+		is_historical_focus_on = no
+		OR = {
+			has_country_flag = ITA_cw_ai_republic
+			has_game_rule = { rule = ITA_dnc_ai_behavior option = ITA_REPUBLIC }
+		}
+	}
+
+	ai_national_focuses = {
+		ITADNC_u_the_army_will_not_fire
+		ITADNC_u_rally_the_country
+		ITADNC_u_the_men_of_the_siege
+		ITADNC_u_what_italy_will_be
+		ITADNC_u_call_the_general_strike
+		ITADNC_u_the_country_is_ours
+		ITADNC_u_the_minimum_programme
+		ITADNC_u_la_grande_politica
+		ITADNC_u_the_understanding_with_london
+		ITADNC_u_carve_up_the_congo
+		ITADNC_u_expand_the_eastern_holdings
+		ITADNC_u_the_anglo_italian_defence_pact
+		ITADNC_u_the_industrial_investments
+		ITADNC_u_the_arms_for_peking
+		ITADNC_u_petition_for_the_old_claims
+		ITADNC_u_the_anglo_italian_cooperation_program
+		ITADNC_u_the_concession_at_tientsin_ww
+		ITADNC_u_the_country_put_back_to_work
+		ITADNC_u_the_joint_research_with_peking
+		ITADNC_u_the_pact_with_peking
+		ITADNC_u_a_free_hand_in_tunis_ww
+		ITADNC_u_the_naval_doctrine_of_the_middle_sea
+		ITADNC_u_the_pacific_stations
+		ITADNC_u_the_public_works_of_the_recovery
+		ITADNC_u_the_stations_of_the_red_sea_ww
+		ITADNC_u_the_volunteers_for_china
+		ITADNC_u_unify_the_horn
+	}
+}

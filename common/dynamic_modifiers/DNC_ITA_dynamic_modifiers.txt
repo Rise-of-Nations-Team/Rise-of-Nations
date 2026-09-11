@@ -51,3 +51,314 @@ ITA_c_the_crown = {
 	political_power_factor = ITA_c_crown_pp
 	stability_factor = ITA_c_crown_stab
 }
+
+ITA_arm_the_hypothesis_is_drawn = {
+	icon = GFX_idea_generic_army_war_college
+	enable = { always = yes }
+	army_artillery_attack_factor = 0.10
+	army_breakthrough_factor = 0.10
+	planning_speed = 0.15
+}
+
+ITA_arm_the_manoeuvre_is_rehearsed = {
+	icon = GFX_idea_generic_reserve_divisions
+	enable = { always = yes }
+	army_artillery_attack_factor = 0.05
+	army_breakthrough_factor = 0.05
+	planning_speed = 0.10
+	max_planning_factor = 0.10
+}
+
+ITA_arm_the_ground_is_walked = {
+	icon = GFX_idea_generic_intel_bonus
+	enable = { always = yes }
+	local_supplies = -0.10
+	local_manpower = -0.10
+}
+
+ITA_arm_the_column_is_ready = {
+	icon = GFX_idea_generic_manpower_bonus
+	enable = { always = yes }
+	local_supplies = 0.10
+	production_speed_infrastructure_factor = 0.15
+}
+
+ITA_arm_the_plan_is_filed = {
+	icon = GFX_idea_generic_fortify_the_borders
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	planning_speed = 0.10
+	max_planning_factor = 0.10
+}
+
+ITA_n_the_auxiliary_squadron = {
+	icon = GFX_idea_generic_coastal_navy
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	navy_max_range_factor = 0.10
+	naval_hit_chance = 0.05
+	screening_efficiency = 0.05
+}
+
+ITA_e_the_white_coal = {
+	icon = GFX_idea_generic_exploit_mines
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	local_resources_factor = 0.10
+	production_speed_buildings_factor = 0.05
+}
+
+ITA_o_the_league_is_kept = {
+	icon = GFX_idea_generic_flexible_foreign_policy
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	trade_opinion_factor = 0.10
+	opinion_gain_monthly_factor = 0.15
+}
+
+ITA_u_the_port_is_idle = {
+	icon = GFX_idea_generic_goods_red_bonus
+	enable = { always = yes }
+	local_resources_factor = -0.15
+	production_speed_buildings_factor = -0.10
+}
+ITA_arm_the_new_army = {
+	icon = GFX_idea_generic_army_war_college
+	enable = { always = yes }
+	remove_trigger = { always = no }
+
+	army_org_factor = ITA_arm_org
+	army_morale_factor = ITA_arm_morale
+	army_speed_factor = ITA_arm_speed
+	planning_speed = ITA_arm_planning
+	initiative_factor = ITA_arm_initiative
+	army_infantry_attack_factor = ITA_arm_infantry_attack
+	army_infantry_defence_factor = ITA_arm_infantry_defence
+	army_artillery_attack_factor = ITA_arm_artillery_attack
+	cavalry_attack_factor = ITA_arm_cavalry
+	army_core_defence_factor = ITA_arm_core_defence
+	max_dig_in_factor = ITA_arm_dig_in
+	land_reinforce_rate = ITA_arm_reinforce
+	supply_consumption_factor = ITA_arm_supply
+	experience_gain_army_factor = ITA_arm_experience
+	command_power_gain_mult = ITA_arm_command
+	special_forces_cap = ITA_arm_special_forces
+	mobilization_speed = ITA_arm_mobilization
+}
+ITA_e_the_consolidated_five_per_cent = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_economy_bad
+	custom_modifier_tooltip = ITA_e_rendita_tt
+	consumer_goods_factor = ITA_e_rendita
+	civilian_intel_to_others = ITA_e_intel_to_others
+	army_intel_to_others = ITA_e_intel_to_others
+	navy_intel_to_others = ITA_e_intel_to_others
+	airforce_intel_to_others = ITA_e_intel_to_others
+	production_speed_arms_factory_factor = ITA_e_production_speed_arms_factory_factor
+	production_speed_dockyard_factor = ITA_e_production_speed_dockyard_factor
+	production_speed_buildings_factor = ITA_e_production_speed_buildings_factor
+	industrial_capacity_factory = ITA_e_industrial_capacity_factory
+	industrial_capacity_dockyard = ITA_e_industrial_capacity_dockyard
+	local_resources_factor = ITA_e_local_resources_factor
+	resource_trade_cost_bonus_per_factory = ITA_e_resource_trade_cost_bonus_per_factory
+	production_lack_of_resource_penalty_factor = ITA_e_production_lack_of_resource_penalty_factor
+	conversion_cost_civ_to_mil_factor = ITA_e_conversion_cost_civ_to_mil_factor
+	research_speed_factor = ITA_e_research_speed_factor
+	production_factory_max_efficiency_factor = ITA_e_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = ITA_e_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor = ITA_e_production_factory_start_efficiency_factor
+	line_change_production_efficiency_factor = ITA_e_line_change_production_efficiency_factor
+	consumer_goods_expected_value = ITA_e_expected_consumer_goods_penalty
+}
+
+ITA_e_the_war_treasury = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			has_dynamic_modifier = { modifier = ITA_e_the_credit_restored }
+			has_dynamic_modifier = { modifier = ITA_e_the_kingdom_solvent_mod }
+		}
+	}
+	icon = GFX_idea_generic_economic_crisis
+	custom_modifier_tooltip = ITA_e_rendita_tt
+	consumer_goods_factor = ITA_e_rendita
+	production_speed_arms_factory_factor = ITA_e_production_speed_arms_factory_factor
+	production_speed_dockyard_factor = ITA_e_production_speed_dockyard_factor
+	production_speed_buildings_factor = ITA_e_production_speed_buildings_factor
+	industrial_capacity_factory = ITA_e_industrial_capacity_factory
+	industrial_capacity_dockyard = ITA_e_industrial_capacity_dockyard
+	local_resources_factor = ITA_e_local_resources_factor
+	resource_trade_cost_bonus_per_factory = ITA_e_resource_trade_cost_bonus_per_factory
+	production_lack_of_resource_penalty_factor = ITA_e_production_lack_of_resource_penalty_factor
+	conversion_cost_civ_to_mil_factor = ITA_e_conversion_cost_civ_to_mil_factor
+	research_speed_factor = ITA_e_research_speed_factor
+	production_factory_max_efficiency_factor = ITA_e_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = ITA_e_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor = ITA_e_production_factory_start_efficiency_factor
+	line_change_production_efficiency_factor = ITA_e_line_change_production_efficiency_factor
+	consumer_goods_expected_value = ITA_e_expected_consumer_goods_penalty
+}
+
+ITA_e_the_credit_restored = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_mild_economic_recovery
+	custom_modifier_tooltip = ITA_e_rendita_tt
+	consumer_goods_factor = ITA_e_rendita
+	production_speed_arms_factory_factor = ITA_e_production_speed_arms_factory_factor
+	production_speed_dockyard_factor = ITA_e_production_speed_dockyard_factor
+	production_speed_buildings_factor = ITA_e_production_speed_buildings_factor
+	industrial_capacity_factory = ITA_e_industrial_capacity_factory
+	industrial_capacity_dockyard = ITA_e_industrial_capacity_dockyard
+	local_resources_factor = ITA_e_local_resources_factor
+	resource_trade_cost_bonus_per_factory = ITA_e_resource_trade_cost_bonus_per_factory
+	production_lack_of_resource_penalty_factor = ITA_e_production_lack_of_resource_penalty_factor
+	conversion_cost_civ_to_mil_factor = ITA_e_conversion_cost_civ_to_mil_factor
+	research_speed_factor = ITA_e_research_speed_factor
+	production_factory_max_efficiency_factor = ITA_e_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = ITA_e_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor = ITA_e_production_factory_start_efficiency_factor
+	line_change_production_efficiency_factor = ITA_e_line_change_production_efficiency_factor
+	consumer_goods_expected_value = ITA_e_expected_consumer_goods_penalty
+}
+
+ITA_e_the_kingdom_solvent_mod = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_economy_miracle
+	custom_modifier_tooltip = ITA_e_rendita_tt
+	consumer_goods_factor = ITA_e_rendita
+	production_speed_arms_factory_factor = ITA_e_production_speed_arms_factory_factor
+	production_speed_dockyard_factor = ITA_e_production_speed_dockyard_factor
+	production_speed_buildings_factor = ITA_e_production_speed_buildings_factor
+	industrial_capacity_factory = ITA_e_industrial_capacity_factory
+	industrial_capacity_dockyard = ITA_e_industrial_capacity_dockyard
+	local_resources_factor = ITA_e_local_resources_factor
+	resource_trade_cost_bonus_per_factory = ITA_e_resource_trade_cost_bonus_per_factory
+	production_lack_of_resource_penalty_factor = ITA_e_production_lack_of_resource_penalty_factor
+	conversion_cost_civ_to_mil_factor = ITA_e_conversion_cost_civ_to_mil_factor
+	research_speed_factor = ITA_e_research_speed_factor
+	production_factory_max_efficiency_factor = ITA_e_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = ITA_e_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor = ITA_e_production_factory_start_efficiency_factor
+	line_change_production_efficiency_factor = ITA_e_line_change_production_efficiency_factor
+	consumer_goods_expected_value = ITA_e_expected_consumer_goods_penalty
+}
+ITA_h_the_army_of_the_king = {
+	icon = GFX_idea_generic_morale_bonus
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	mobilization_speed = ITA_h_army_mobilization
+	army_morale_factor = ITA_h_army_morale
+	unit_leader_as_advisor_cp_cost_factor = ITA_h_army_advisor_cp
+}
+
+ITA_h_the_colonial_office_modifier = {
+	icon = GFX_idea_generic_flexible_foreign_policy
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	consumer_goods_factor = ITA_h_colonial_consumer_goods_factor
+	production_speed_arms_factory_factor = ITA_h_colonial_production_speed_arms_factory_factor
+	industrial_capacity_factory = ITA_h_colonial_industrial_capacity_factory
+	subjects_autonomy_gain = ITA_h_colonial_subjects_autonomy_gain
+}
+ITA_h_stations_modifier = {
+	icon = GFX_idea_generic_navy_bonus
+	enable = { always = yes }
+	local_resources_factor = 0.10
+	local_supplies = 0.20
+	production_speed_dockyard_factor = 0.10
+}
+ITA_h_the_council_dm = {
+	icon = GFX_idea_generic_constitutional_guarantees
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_government = democratic }
+	}
+
+	custom_modifier_tooltip = ITA_h_the_council_dm_tt
+}
+ITA_u_the_direction = {
+	icon = GFX_idea_generic_political_support
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	political_power_factor = ITA_u_direction_pp
+	stability_factor = ITA_u_direction_stab
+	democratic_drift = ITA_u_direction_drift
+	party_popularity_stability_factor = ITA_u_direction_party
+}
+
+ITA_u_the_leagues_in_arms = {
+	icon = GFX_idea_generic_manpower_bonus
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	army_morale_factor = ITA_u_leagues_morale
+	army_org_factor = ITA_u_leagues_org
+	conscription_factor = ITA_u_leagues_conscription
+	experience_gain_army_factor = ITA_u_leagues_xp
+	training_time_factor = ITA_u_leagues_training
+}
+
+ITA_u_the_works_in_common = {
+	icon = GFX_idea_generic_production_bonus
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	production_factory_max_efficiency_factor = ITA_u_works_efficiency
+	production_speed_buildings_factor = ITA_u_works_build
+	industrial_capacity_factory = ITA_u_works_capacity
+	local_resources_factor = ITA_u_works_resources
+}
+
+ITA_u_the_vigilance_office = {
+	icon = GFX_idea_generic_secret_police
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_country_flag = ITA_dnc_path_reformist }
+	}
+	drift_defence_factor = 0.25
+	foreign_subversive_activites = -0.30
+	stability_factor = 0.05
+}
+ITA_u_the_royal_army = {
+	icon = GFX_idea_generic_army_war_college
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	army_artillery_attack_factor = ITA_u_army_artillery_attack
+	army_artillery_defence_factor = ITA_u_army_artillery_defence
+	mobilization_speed = ITA_u_army_mobilization
+}
+ITA_u_the_coaling_station = {
+	icon = GFX_idea_generic_coastal_navy
+	enable = { always = yes }
+	local_supplies = 0.20
+	local_supplies_for_controller = 0.15
+	local_resources_factor = 0.10
+}
+
+ITA_air_the_service_of_the_air = {
+	icon = GFX_idea_generic_air_bonus
+	enable = { always = yes }
+	remove_trigger = { always = no }
+
+	air_range_factor = ITA_air_range
+	air_accidents_factor = ITA_air_accidents
+	air_mission_efficiency = ITA_air_efficiency
+	experience_gain_air_factor = ITA_air_experience
+	air_ace_generation_chance_factor = ITA_air_aces
+	air_weather_penalty = ITA_air_weather
+	air_night_penalty = ITA_air_night
+	air_bombing_targetting = ITA_air_aiming
+}
+
+ITA_n_the_fleet_of_the_kingdom = {
+	icon = GFX_idea_generic_navy_bonus
+	enable = { always = yes }
+	remove_trigger = { always = no }
+
+	naval_morale_factor = ITA_n_morale
+	navy_max_range_factor = ITA_n_range
+	experience_gain_navy_factor = ITA_n_experience
+	naval_speed_factor = ITA_n_speed
+	naval_coordination = ITA_n_coordination
+	naval_retreat_speed = ITA_n_retreat
+	naval_detection = ITA_n_detection
+	navy_submarine_detection_factor = ITA_n_hunting
+}
