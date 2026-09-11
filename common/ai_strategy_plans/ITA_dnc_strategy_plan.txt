@@ -7,7 +7,13 @@ ITA_dnc_historical_plan = {
 	}
 	enable = {
 		OR = {
-			is_historical_focus_on = yes
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = ITA_dnc_ai_behavior
+					option = DEFAULT
+				}
+			}
 			has_country_flag = ITA_cw_ai_historical
 			has_game_rule = { rule = ITA_dnc_ai_behavior option = ITA_HISTORICAL }
 		}
