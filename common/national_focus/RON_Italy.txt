@@ -4168,7 +4168,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		prerequisite = { focus = ITADNC_v_the_law_of_guarantees_reread }
-		icon = GFX_goal_generic_foreign_diplomacy
+		icon = GFX_goal_foreign_diplomacy
 		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNATIONAL_TRADE }
 		available = {
