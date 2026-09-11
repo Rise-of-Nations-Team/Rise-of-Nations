@@ -1,4 +1,3 @@
-#!gfx:interface/RON_goals.gfx
 ### DNC
 joint_focus = {
 	id = SPRVR_imperio_espanol

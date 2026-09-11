@@ -26,6 +26,43 @@ ideas = {
 
 		}
 
+		CHL_prussian_army = {
+
+			picture = GER_idea_OHL
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { always = yes }
+		
+			removal_cost = -1
+		
+			modifier = {
+				army_org_factor = 0.1
+			} 
+		}
+
+		CHL_la_hacienda = {
+
+			picture = MEX_haciendas
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { always = yes }
+		
+			removal_cost = -1
+		
+			modifier = {
+				political_power_factor = -0.15
+				research_speed_factor = -0.12
+                stability_factor = -0.12
+                consumer_goods_factor = -0.15
+                conscription_factor = -0.2
+                industrial_capacity_factory = 0.06
+			} 
+		}		
+
 		idea_CHL_near_anarchic_society = {
 			
 			allowed = {

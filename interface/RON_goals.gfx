@@ -850,6 +850,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/imported/kr/SPA_Navy.png"
 	}
 
+	SpriteType = {
+		name = "GFX_goal_generic_financial_markets"
+		texturefile = "gfx/interface/goals/imported/kr/generic_financial_markets.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_foreign_diplomacy"
+		texturefile = "gfx/interface/goals/imported/kr/foreign_diplomacy.png"
+	}
+
 	###############################
 	### KAISERREDUX FOCUS ICONS ###
 	###############################

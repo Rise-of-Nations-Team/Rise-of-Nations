@@ -15,7 +15,7 @@ characters = {
         name = RUS_nikolai_ii
         portraits={
 			civilian={
-				large="gfx/leaders/RUS/DNC/Nicholas_II.dds"
+				large="gfx/leaders/RUS/DNC/RUS_Nicholas_II.dds"
 				small = "gfx/interface/ideas/RUS/idea_RUS_Nicholas_II.dds"
 			}
 			army = {

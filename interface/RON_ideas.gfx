@@ -258,6 +258,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ita/idea_ITA_victor_emmanuel_ww2.dds"
 	}
 
+	# JAP - JAPAN #
+
+	spriteType = {
+		name = "GFX_idea_JAP_bushido_code"
+		texturefile = "gfx/interface/ideas/jap/JAP_idea_bushido_code.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_JAP_idea_meiji_restoration"
+		texturefile = "gfx/interface/ideas/jap/JAP_idea_meiji_restoration.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_JAP_developed_rail_network"
+		texturefile = "gfx/interface/ideas/jap/JAP_idea_developed_rail_network.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_JAP_wooden_constructions"
+		texturefile = "gfx/interface/ideas/jap/JAP_idea_wooden_constructions.dds"
+	}
+
+
 	# KOR - KOREA #
 
 	spriteType = {
@@ -280,27 +303,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/kor/kor_eight_provinces.dds"
 	}
 
-	# JAP - JAPAN #
+	# MEX - MEXICO #
 
 	spriteType = {
-		name = "GFX_idea_JAP_bushido_code"
-		texturefile = "gfx/interface/ideas/jap/JAP_idea_bushido_code.dds"
-	}
+		name = "GFX_idea_unpopular_dictatorship_porfirio"
+		texturefile = "gfx/interface/ideas/mex/unpopular_dictatorship_porfirio.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_unpopular_dictatorship_victoriano"
+		texturefile = "gfx/interface/ideas/mex/unpopular_dictatorship_victoriano.dds"
+	}	
 	
 	spriteType = {
-		name = "GFX_idea_JAP_idea_meiji_restoration"
-		texturefile = "gfx/interface/ideas/jap/JAP_idea_meiji_restoration.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_JAP_developed_rail_network"
-		texturefile = "gfx/interface/ideas/jap/JAP_idea_developed_rail_network.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_JAP_wooden_constructions"
-		texturefile = "gfx/interface/ideas/jap/JAP_idea_wooden_constructions.dds"
-	}
+		name = "GFX_idea_MEX_haciendas"
+		texturefile = "gfx/interface/ideas/mex/MEX_haciendas.dds"
+	}	
 
 	# OTT - OTTOMANS #
 
@@ -409,6 +427,13 @@ spriteTypes = {
 		name = "GFX_idea_RUS_narodost_3"
 		texturefile = "gfx/interface/ideas/rus/RUS_narodost_3.dds"
 	}
+
+	# SEO - SENUSSI ORDER #
+
+	spriteType = {
+		name = "GFX_idea_SEO_senussi_order"
+		texturefile = "gfx/interface/ideas/seo/senussi_order.dds"
+	}	
 
 	# SER - SERBIA #
 

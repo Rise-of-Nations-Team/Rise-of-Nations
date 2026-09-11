@@ -1,0 +1,106 @@
+ITA_dnc_the_war_on_trade = {
+
+	allowed = { original_tag = ITA }
+	enable = {
+		has_completed_focus = ITADNC_n_the_war_on_trade
+	}
+	abort = {
+		has_completed_focus = ITADNC_n_the_fleet_of_battle
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 300
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -50
+	}
+}
+
+ITA_dnc_the_flotilla_unleashed = {
+
+	allowed = { original_tag = ITA }
+	enable = {
+		has_completed_focus = ITADNC_n_the_flotilla_unleashed
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 200
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 50
+	}
+}
+
+ITA_dnc_the_fleet_of_battle = {
+
+	allowed = { original_tag = ITA }
+	enable = {
+		has_completed_focus = ITADNC_n_the_fleet_of_battle
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 200
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -50
+	}
+}
+
+ITA_dnc_the_middle_sea = {
+
+	allowed = { original_tag = ITA }
+	enable = {
+		has_completed_focus = ITADNC_n_the_middle_sea
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 100
+	}
+}
+
+ITA_cw_the_neighbours_hold_their_hand = {
+	allowed = {
+		OR = {
+			original_tag = AUH
+			original_tag = GER
+			original_tag = FRA
+		}
+	}
+	enable = {
+		has_global_flag = ITA_cw_has_started
+		NOT = { has_global_flag = ITA_cw_civil_war_end }
+		NOT = { has_war_with = ITA }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = declare_war
+		id = ITA
+		value = -300
+	}
+}

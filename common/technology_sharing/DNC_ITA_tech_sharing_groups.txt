@@ -1,0 +1,127 @@
+technology_sharing_group = {
+
+	id = ita_adriatic_research
+	name = ita_adriatic_research
+	desc = ita_adriatic_research_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+	available = {
+		is_in_faction_with = ITA
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_ENG_naval_group
+	name = ITA_ENG_naval_group
+	desc = ITA_ENG_naval_group_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+	available = {
+		OR = {
+			original_tag = ITA
+			original_tag = ENG
+		}
+		NOT = { has_war_with = ENG }
+		NOT = { has_war_with = ITA }
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_QIN_group
+	name = ITA_QIN_group
+	desc = ITA_QIN_group_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.10
+
+	available = {
+		OR = {
+			original_tag = ITA
+			original_tag = QIN
+		}
+		NOT = { has_war_with = QIN }
+		NOT = { has_war_with = ITA }
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_AUH_industrial_group
+	name = ITA_AUH_industrial_group
+	desc = ITA_AUH_industrial_group_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+	available = {
+		OR = {
+			original_tag = ITA
+			original_tag = AUH
+		}
+		NOT = { has_war_with = AUH }
+		NOT = { has_war_with = ITA }
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_RUS_naval_group
+	name = ITA_RUS_naval_group
+	desc = ITA_RUS_naval_group_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.10
+
+	available = {
+		OR = {
+			original_tag = ITA
+			original_tag = RUS
+		}
+		NOT = { has_war_with = RUS }
+		NOT = { has_war_with = ITA }
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_ENG_naval_tech_sharing
+	name = ITA_ENG_naval_tech_sharing
+	desc = ITA_ENG_naval_tech_sharing_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.10
+
+	available = {
+		OR = {
+			original_tag = ITA
+			original_tag = ENG
+		}
+		NOT = { has_war_with = ENG }
+		NOT = { has_war_with = ITA }
+	}
+}
+
+technology_sharing_group = {
+
+	id = ITA_FRA_industrial_group
+	name = ITA_FRA_industrial_group
+	desc = ITA_FRA_industrial_group_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.15
+
+	available = {
+		OR = {
+			original_tag = ITA
+			original_tag = FRA
+		}
+		NOT = { has_war_with = FRA }
+		NOT = { has_war_with = ITA }
+	}
+}

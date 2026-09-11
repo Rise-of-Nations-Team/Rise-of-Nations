@@ -2,19 +2,52 @@ capital = 279
 oob = "CHL_1900"
 add_ideas = {
 	export_focus
-	tax_low
-	tariffs_average
 	civilian_economy
-	press_regulated
-	key_industries
-	fdi_allowed
-	security_minor_restrictions
-	foreign_volunteers
-	train_none
-	officer_train_none
-	education_budget2
-	health_budget2
-	foreign_isolationism
+	CHL_prussian_army
+	CHL_la_hacienda
+}
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	WW1_tech_engineers = 1
+	basic_train = 1
+	horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_torpedo = 1
+			mtg_ww1_destroyer1 = 1
+			early_ship_hull_dreadnought = 1
+			mtg_transport = 1
+		}
+	else = {
+		set_technology = {
+			ww1_battleship0 = 1
+			ww1_light_cruiser0 = 1
+			ww1_destroyer0 = 1
+			ww1_submarine0 = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
 }
 
 set_country_flag = monroe_doctrine
