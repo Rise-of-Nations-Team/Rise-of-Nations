@@ -5025,13 +5025,1335 @@ ideas = {
 		}
 	}
 
+	industrial_concern = {
+		ITA_ind_edison = {
+			picture = generic_electronics_concern_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				electronics = 0.10
+			}
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+			traits = { electronics_concern }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_ind_marelli = {
+			picture = generic_electronics_concern_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_marelli
+					has_completed_focus = ITADNC_e_the_current_instead_of_coal
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_marelli
+					has_completed_focus = ITADNC_e_the_current_instead_of_coal
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				electronics = 0.08
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			traits = { electronics_concern }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_pirelli = {
+			picture = generic_industrial_concern_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				motorized_equipment = 0.08
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					reliability = 0.05
+				}
+			}
+			traits = { refining_concern }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_petrolifera = {
+			picture = generic_refining_concern_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_petrolifera
+					has_completed_focus = ITADNC_e_the_sulcis_pits
+					has_completed_focus = ITADNC_e_the_kingdom_supplies_itself
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_petrolifera
+					has_completed_focus = ITADNC_e_the_sulcis_pits
+					has_completed_focus = ITADNC_e_the_kingdom_supplies_itself
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				excavation_tech = 0.05
+				logistics_tech = 0.05
+			}
+			modifier = {
+				fuel_gain_factor = 0.05
+			}
+			traits = { refinery_concern }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_dinamite_nobel = {
+			picture = generic_production_bonus
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				engineers_tech = 0.08
+			}
+			modifier = {
+				army_artillery_attack_factor = 0.03
+			}
+			traits = { refining_concern }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_ilva = {
+			picture = generic_industrial_concern_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_ilva
+					has_completed_focus = ITADNC_e_the_ilva_at_piombino
+					has_completed_focus = ITADNC_e_the_steel_consortium
+					has_completed_focus = ITADNC_h_the_special_law_for_naples
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_ilva
+					has_completed_focus = ITADNC_e_the_ilva_at_piombino
+					has_completed_focus = ITADNC_e_the_steel_consortium
+					has_completed_focus = ITADNC_h_the_special_law_for_naples
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				industry = 0.08
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05
+				}
+			}
+			traits = { industrial_concern }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_ind_falck = {
+			picture = generic_improved_industries
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_falck
+					has_completed_focus = ITADNC_e_the_industrial_triangle
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_falck
+					has_completed_focus = ITADNC_e_the_industrial_triangle
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				construction_tech = 0.08
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+			traits = { industrial_concern }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_elba = {
+			picture = generic_exploit_mines
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				excavation_tech = 0.10
+			}
+			modifier = {
+				local_resources_factor = 0.05
+			}
+			traits = { mining_company }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_monteponi = {
+			picture = generic_industrial_concern_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				excavation_tech = 0.08
+			}
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+			traits = { mining_company }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_bacu_abis = {
+			picture = generic_energy_concern
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_bacu_abis
+					has_completed_focus = ITADNC_e_the_sulcis_pits
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_bacu_abis
+					has_completed_focus = ITADNC_e_the_sulcis_pits
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				excavation_tech = 0.05
+			}
+			modifier = {
+				local_resources_coal_factor = 0.10
+			}
+			traits = { mining_company }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_bianchi = {
+			picture = generic_motorized_equipment_manufacturer_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_bianchi
+					has_completed_focus = ITADNC_arm_the_bersaglieri_cyclists
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_bianchi
+					has_completed_focus = ITADNC_arm_the_bersaglieri_cyclists
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				support_tech = 0.05
+				motorized_equipment = 0.05
+			}
+			modifier = {
+				army_speed_factor = 0.02
+			}
+			traits = { motorized_equipment_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_itala = {
+			picture = generic_motorized_equipment_manufacturer_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_itala
+					has_completed_focus = ITADNC_arm_the_motor_service
+					has_completed_focus = ITADNC_e_the_industrial_triangle
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_itala
+					has_completed_focus = ITADNC_arm_the_motor_service
+					has_completed_focus = ITADNC_e_the_industrial_triangle
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			modifier = {
+				army_fuel_consumption_factor = -0.03
+			}
+			traits = { engine_manufacturing_concern }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_officine_meccaniche = {
+			picture = generic_train_tracks
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				train_tech = 0.08
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.03
+			}
+			equipment_bonus = {
+				train_equipment = {
+					armor_value = 0.05
+					instant = yes
+				}
+			}
+			traits = { railway_company }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_ferrovie_dello_stato = {
+			picture = generic_railroads
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_ferrovie_dello_stato
+					has_completed_focus = ITADNC_e_the_railways_of_the_state
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_ferrovie_dello_stato
+					has_completed_focus = ITADNC_e_the_railways_of_the_state
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				train_tech = 0.10
+				logistics_tech = 0.05
+			}
+			modifier = {
+				mobilization_speed = 0.05
+			}
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			traits = { transport_company }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_ind_navigazione_generale = {
+			picture = generic_convoys
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				tp_tech = 0.08
+			}
+			modifier = {
+				convoy_retreat_speed = 0.15
+			}
+			traits = { trade_concern }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_lloyd_sabaudo = {
+			picture = generic_immigration
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_lloyd_sabaudo
+					has_completed_focus = ITADNC_e_the_commercial_treaties
+					has_completed_focus = ITADNC_h_the_consulates_abroad
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_lloyd_sabaudo
+					has_completed_focus = ITADNC_e_the_commercial_treaties
+					has_completed_focus = ITADNC_h_the_consulates_abroad
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				tp_tech = 0.05
+			}
+			modifier = {
+				trade_opinion_factor = 0.05
+			}
+			equipment_bonus = {
+				convoy = {
+					reliability = 0.05
+				}
+			}
+			traits = { trade_concern }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_banca_commerciale = {
+			picture = generic_foreign_capital
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			modifier = {
+				production_speed_industrial_complex_factor = 0.03
+				political_power_factor = -0.03
+			}
+			traits = { industrial_investment_bank }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_credito_italiano = {
+			picture = generic_economic_increase
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_credito_italiano
+					has_completed_focus = ITADNC_e_the_kingdom_solvent
+					has_completed_focus = ITADNC_h_the_credit_for_industry
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_credito_italiano
+					has_completed_focus = ITADNC_e_the_kingdom_solvent
+					has_completed_focus = ITADNC_h_the_credit_for_industry
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+			traits = { industrial_investment_bank }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_banco_di_napoli = {
+			picture = generic_economic_recovery
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_ind_company_banco_di_napoli
+					has_completed_focus = ITADNC_h_the_special_law_for_naples
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_ind_company_banco_di_napoli
+					has_completed_focus = ITADNC_h_the_special_law_for_naples
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			modifier = {
+				stability_factor = 0.03
+				consumer_goods_factor = -0.02
+			}
+			traits = { central_bank }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_ind_royal_arms_factories = {
+			picture = generic_nationalization
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.03
+				}
+			}
+			traits = { industrial_concern }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	materiel_manufacturer = {
+		designer = yes
+		ITA_arm_terni_steel = {
+			picture = generic_artillery_manufacturer_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_arm_the_army_after_adwa
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				artillery = 0.08
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.03
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					hard_attack = 0.05
+				}
+			}
+			traits = { artillery_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_arm_terni_steel_improved = {
+			name = ITA_arm_terni_steel
+			picture = generic_artillery_manufacturer_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_arm_the_army_after_adwa
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				artillery = 0.08
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.03
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					hard_attack = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { artillery_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_arm_fiat_of_turin = {
+			picture = generic_motorized_equipment_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_arm_the_truppe_celeri
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			modifier = {
+				army_fuel_consumption_factor = -0.03
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					reliability = 0.05
+				}
+			}
+			traits = { motorized_equipment_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_arm_fiat_of_turin_improved = {
+			name = ITA_arm_fiat_of_turin
+			picture = generic_motorized_equipment_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_arm_the_truppe_celeri
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			modifier = {
+				army_fuel_consumption_factor = -0.03
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { motorized_equipment_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_arm_ansaldo_of_sampierdarena = {
+			picture = generic_artillery_manufacturer_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_arm_the_heavy_field_artillery
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				artillery = 0.10
+			}
+			modifier = {
+				army_artillery_attack_factor = 0.03
+			}
+			equipment_bonus = {
+				heavy_artillery_equipment = {
+					soft_attack = 0.05
+				}
+			}
+			traits = { artillery_manufacturer }
+			ai_will_do = { factor = 3 }
+		}
+		ITA_arm_ansaldo_of_sampierdarena_improved = {
+			name = ITA_arm_ansaldo_of_sampierdarena
+			picture = generic_artillery_manufacturer_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_arm_the_heavy_field_artillery
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				artillery = 0.10
+			}
+			modifier = {
+				army_artillery_attack_factor = 0.03
+			}
+			equipment_bonus = {
+				heavy_artillery_equipment = {
+					soft_attack = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { artillery_manufacturer }
+			ai_will_do = { factor = 3 }
+		}
+		ITA_arm_armstrong_of_pozzuoli = {
+			picture = generic_artillery_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_arm_the_range_at_nettuno
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				artillery = 0.05
+				mortar_tech = 0.05
+			}
+			modifier = {
+				army_artillery_defence_factor = 0.03
+			}
+			equipment_bonus = {
+				heavy_artillery_equipment = {
+					ap_attack = 0.05
+				}
+			}
+			traits = { artillery_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_arm_armstrong_of_pozzuoli_improved = {
+			name = ITA_arm_armstrong_of_pozzuoli
+			picture = generic_artillery_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_arm_the_range_at_nettuno
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				artillery = 0.05
+				mortar_tech = 0.05
+			}
+			modifier = {
+				army_artillery_defence_factor = 0.03
+			}
+			equipment_bonus = {
+				heavy_artillery_equipment = {
+					ap_attack = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { artillery_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_arm_glisenti_of_brescia = {
+			picture = generic_infantry_equipment_manufacturer_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_arm_the_machine_gun_sections
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				infantry_weapons = 0.08
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.05
+				}
+			}
+			traits = { automatic_weapons_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_arm_glisenti_of_brescia_improved = {
+			name = ITA_arm_glisenti_of_brescia
+			picture = generic_infantry_equipment_manufacturer_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_arm_the_machine_gun_sections
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				infantry_weapons = 0.08
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { automatic_weapons_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_arm_savigliano_works = {
+			picture = generic_infantry_equipment_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_arm_the_works_at_sampierdarena
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				engineers_tech = 0.08
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+			}
+			equipment_bonus = {
+				support_equipment = {
+					reliability = 0.05
+				}
+			}
+			traits = { support_equipment_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_arm_savigliano_works_improved = {
+			name = ITA_arm_savigliano_works
+			picture = generic_infantry_equipment_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_arm_the_works_at_sampierdarena
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				engineers_tech = 0.08
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+			}
+			equipment_bonus = {
+				support_equipment = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { support_equipment_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_arm_beretta_of_gardone = {
+			picture = generic_infantry_equipment_manufacturer_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_arm_the_works_at_sampierdarena
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.03
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.05
+				}
+			}
+			traits = { infantry_equipment_manufacturer }
+			ai_will_do = { factor = 3 }
+		}
+		ITA_arm_beretta_of_gardone_improved = {
+			name = ITA_arm_beretta_of_gardone
+			picture = generic_infantry_equipment_manufacturer_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_arm_the_works_at_sampierdarena
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.03
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { infantry_equipment_manufacturer }
+			ai_will_do = { factor = 3 }
+		}
+		ITA_arm_breda_of_milan = {
+			picture = generic_train_tracks
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_arm_the_military_railways
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				train_tech = 0.10
+			}
+			modifier = {
+				supply_consumption_factor = -0.03
+			}
+			equipment_bonus = {
+				train_equipment = {
+					armor_value = 0.05
+					instant = yes
+				}
+			}
+			traits = { train_equipment_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_arm_breda_of_milan_improved = {
+			name = ITA_arm_breda_of_milan
+			picture = generic_train_tracks
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_arm_the_military_railways
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				train_tech = 0.10
+			}
+			modifier = {
+				supply_consumption_factor = -0.03
+			}
+			equipment_bonus = {
+				train_equipment = {
+					armor_value = 0.05
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			traits = { train_equipment_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_arm_officine_galileo = {
+			picture = generic_radar
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_arm_company_officine_galileo
+					has_completed_focus = ITADNC_arm_the_eyes_of_the_army
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_arm_company_officine_galileo
+					has_completed_focus = ITADNC_arm_the_eyes_of_the_army
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				signal_company_tech = 0.08
+				support_tech = 0.05
+			}
+			modifier = {
+				army_artillery_attack_factor = 0.02
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.03
+				}
+			}
+			traits = { support_equipment_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
 	naval_manufacturer = {
 		designer = yes
+		ITA_n_castellammare = {
+			picture = generic_naval_manufacturer_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_n_the_yards_of_the_kingdom
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				bb_tech = 0.10
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.03
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					armor_value = 0.03
+				}
+			}
+			traits = { battlefleet_designer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_n_castellammare_improved = {
+			name = ITA_n_castellammare
+			picture = generic_naval_manufacturer_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_n_the_yards_of_the_kingdom
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				bb_tech = 0.10
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.03
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					armor_value = 0.03
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { battlefleet_designer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_n_arsenale_di_venezia = {
+			picture = generic_coastal_navy
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_n_the_naval_flying_service
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				dd_tech = 0.08
+				ss_tech = 0.05
+			}
+			modifier = {
+				repair_speed_factor = 0.10
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					reliability = 0.05
+				}
+			}
+			traits = { coastal_defence_naval_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_n_arsenale_di_venezia_improved = {
+			name = ITA_n_arsenale_di_venezia
+			picture = generic_coastal_navy
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_n_the_naval_flying_service
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				dd_tech = 0.08
+				ss_tech = 0.05
+			}
+			modifier = {
+				repair_speed_factor = 0.10
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { coastal_defence_naval_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_n_arsenale_della_spezia = {
+			picture = generic_naval_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_n_the_dante_alighieri
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				bb_tech = 0.05
+				ship_modules_tech = 0.05
+			}
+			modifier = {
+				refit_speed = 0.15
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_speed = 0.03
+				}
+			}
+			traits = { mediterranean_naval_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_n_arsenale_della_spezia_improved = {
+			name = ITA_n_arsenale_della_spezia
+			picture = generic_naval_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_n_the_dante_alighieri
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				bb_tech = 0.05
+				ship_modules_tech = 0.05
+			}
+			modifier = {
+				refit_speed = 0.15
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_speed = 0.03
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { mediterranean_naval_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_n_orlando_di_livorno = {
+			picture = generic_sea_focused_navy
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_n_the_fleet_of_battle
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				ca_tech = 0.10
+			}
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					armor_value = 0.05
+				}
+			}
+			traits = { naval_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_n_orlando_di_livorno_improved = {
+			name = ITA_n_orlando_di_livorno
+			picture = generic_sea_focused_navy
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_n_the_fleet_of_battle
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				ca_tech = 0.10
+			}
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					armor_value = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { naval_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_n_ansaldo = {
+			picture = generic_navy_cruiser_warfare
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				NOT = {
+					has_completed_focus = ITADNC_n_the_cruiser_squadron
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				ca_tech = 0.08
+				cl_tech = 0.05
+			}
+			modifier = {
+				trade_opinion_factor = 0.05
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					naval_speed = 0.05
+				}
+			}
+			traits = { raiding_fleet_naval_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_n_ansaldo_improved = {
+			name = ITA_n_ansaldo
+			picture = generic_navy_cruiser_warfare
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_n_the_cruiser_squadron
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				ca_tech = 0.08
+				cl_tech = 0.05
+			}
+			modifier = {
+				trade_opinion_factor = 0.05
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					naval_speed = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { raiding_fleet_naval_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_n_fiat_san_giorgio = {
+			picture = generic_navy_submarines
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_n_company_fiat_san_giorgio
+					has_completed_focus = ITADNC_n_the_flotilla_at_night
+				}
+				NOT = {
+					has_completed_focus = ITADNC_n_the_submarine_flotilla
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_n_company_fiat_san_giorgio
+					has_completed_focus = ITADNC_n_the_flotilla_at_night
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				ss_tech = 0.10
+			}
+			modifier = {
+				naval_torpedo_hit_chance_factor = 0.03
+			}
+			equipment_bonus = {
+				ship_hull_submarine = {
+					reliability = 0.05
+				}
+			}
+			traits = { submarine_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_n_fiat_san_giorgio_improved = {
+			name = ITA_n_fiat_san_giorgio
+			picture = generic_navy_submarines
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_n_the_submarine_flotilla
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				ss_tech = 0.10
+			}
+			modifier = {
+				naval_torpedo_hit_chance_factor = 0.03
+			}
+			equipment_bonus = {
+				ship_hull_submarine = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { submarine_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
 		ITA_h_the_triestine_yards = {
 			picture = generic_naval_manufacturer_1
 			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_h_company_triestine_yards
+					has_completed_focus = ITADNC_h_the_yards_of_trieste
+				}
+			}
 			available = {
-				has_completed_focus = ITADNC_h_the_yards_of_trieste
+				OR = {
+					has_country_flag = ITA_h_company_triestine_yards
+					has_completed_focus = ITADNC_h_the_yards_of_trieste
+				}
 			}
 			cost = 150
 			removal_cost = 10
@@ -5049,6 +6371,216 @@ ideas = {
 			}
 			traits = { naval_manufacturer }
 			ai_will_do = { factor = 3 }
+		}
+	}
+
+	aircraft_manufacturer = {
+		designer = yes
+		ITA_air_brigata_specialisti = {
+			picture = generic_air_manufacturer_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_air_company_brigata_specialisti
+					has_completed_focus = ITADNC_air_the_specialist_brigade
+				}
+				NOT = {
+					has_completed_focus = ITADNC_air_the_yard_at_vigna_di_valle
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_air_company_brigata_specialisti
+					has_completed_focus = ITADNC_air_the_specialist_brigade
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				air_equipment = 0.08
+				heavy_air = 0.05
+			}
+			modifier = {
+				air_accidents_factor = -0.05
+			}
+			equipment_bonus = {
+				zeppelin_airframe = {
+					reliability = 0.05
+				}
+			}
+			traits = { aircraft_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_air_brigata_specialisti_improved = {
+			name = ITA_air_brigata_specialisti
+			picture = generic_air_manufacturer_1
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				has_completed_focus = ITADNC_air_the_yard_at_vigna_di_valle
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				air_equipment = 0.08
+				heavy_air = 0.05
+			}
+			modifier = {
+				air_accidents_factor = -0.05
+			}
+			equipment_bonus = {
+				zeppelin_airframe = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			traits = { aircraft_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_air_forlanini = {
+			picture = generic_air_manufacturer_2
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_air_company_forlanini
+					has_completed_focus = ITADNC_air_the_school_of_the_airship
+					has_completed_focus = ITADNC_air_the_airship_goes_to_sea
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_air_company_forlanini
+					has_completed_focus = ITADNC_air_the_school_of_the_airship
+					has_completed_focus = ITADNC_air_the_airship_goes_to_sea
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				heavy_air = 0.08
+				cat_strategic_bomber = 0.05
+			}
+			modifier = {
+				air_range_factor = 0.05
+			}
+			equipment_bonus = {
+				zeppelin_airframe = {
+					maximum_speed = 0.05
+				}
+			}
+			traits = { heavy_aircraft_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_air_caproni = {
+			picture = generic_air_manufacturer_3
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_air_company_caproni
+					has_completed_focus = ITADNC_air_the_circuit_at_brescia
+					has_completed_focus = ITADNC_air_the_orders_of_the_ministry
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_air_company_caproni
+					has_completed_focus = ITADNC_air_the_circuit_at_brescia
+					has_completed_focus = ITADNC_air_the_orders_of_the_ministry
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				light_air = 0.08
+				air_equipment = 0.05
+			}
+			modifier = {
+				production_speed_air_base_factor = 0.05
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					reliability = 0.05
+				}
+			}
+			traits = { light_aircraft_manufacturer }
+			ai_will_do = { factor = 2 }
+		}
+		ITA_air_spa = {
+			picture = generic_air_research
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_air_company_spa
+					has_completed_focus = ITADNC_air_the_field_at_centocelle
+					has_completed_focus = ITADNC_air_the_engine_that_is_ours
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_air_company_spa
+					has_completed_focus = ITADNC_air_the_field_at_centocelle
+					has_completed_focus = ITADNC_air_the_engine_that_is_ours
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				light_air = 0.05
+				air_equipment = 0.05
+			}
+			modifier = {
+				air_agility_factor = 0.03
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					maximum_speed = 0.05
+				}
+			}
+			traits = { experimental_light_aircraft_manufacturer }
+			ai_will_do = { factor = 1 }
+		}
+		ITA_air_isotta_fraschini = {
+			picture = generic_air_bonus
+			allowed = { original_tag = ITA }
+			visible = {
+				has_start_date > 1899.12.31
+				has_start_date < 1910.1.1
+				OR = {
+					has_country_flag = ITA_air_company_isotta_fraschini
+					has_completed_focus = ITADNC_air_the_engine_that_is_ours
+				}
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_air_company_isotta_fraschini
+					has_completed_focus = ITADNC_air_the_engine_that_is_ours
+				}
+			}
+			cost = 150
+			removal_cost = 10
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			modifier = {
+				air_range_factor = 0.03
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_range = 0.05
+				}
+			}
+			traits = { fuel_efficient_aircraft_manufacturer }
+			ai_will_do = { factor = 1 }
 		}
 	}
 }

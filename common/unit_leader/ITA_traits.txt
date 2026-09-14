@@ -1,12 +1,9 @@
 leader_traits = {
-	##################################
-	# ITA Traits
-	##################################
 	Order_of_Military_Medal = {
 		type = { land navy }
 		trait_type = personality_trait
 		gain_xp = {
-			always = yes # not gainable
+			always = yes
 		}
 
 		allowed = {
@@ -29,7 +26,7 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = yes # not gainable
+			always = yes
 		}
 
 		allowed = {
@@ -53,7 +50,7 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = yes # not gainable
+			always = yes
 		}
 
 		allowed = {
@@ -73,10 +70,10 @@ leader_traits = {
 		}
 	}
 	Order_of_the_Crown_of_Italy = {
-		type = { land navy }
+		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 
 		allowed = {
@@ -84,6 +81,8 @@ leader_traits = {
 				tag = ITA
 			}
 		}
+
+		cost = 1000
 
 		modifier = {
 			army_attack_factor = 0.15
@@ -120,7 +119,7 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = yes # not gainable
+			always = yes
 		}
 
 		allowed = {
@@ -143,7 +142,7 @@ leader_traits = {
 		type = { land navy }
 		trait_type = personality_trait
 		gain_xp = {
-			always = yes # not gainable
+			always = yes
 		}
 
 		allowed = {
@@ -166,7 +165,7 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 
 		allowed = {
@@ -174,6 +173,8 @@ leader_traits = {
 				tag = ITA
 			}
 		}
+
+		cost = 1000
 
 		modifier = {
 			out_of_supply_factor = -0.2
@@ -187,7 +188,7 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 
 		allowed = {
@@ -195,6 +196,8 @@ leader_traits = {
 				tag = ITA
 			}
 		}
+
+		cost = 1000
 
 		modifier = {
 			supply_consumption_factor = -0.2
@@ -233,4 +236,3 @@ leader_traits = {
 		}
 	}
 }
-### EOF ###

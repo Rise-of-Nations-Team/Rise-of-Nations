@@ -103,11 +103,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			custom_effect_tooltip = ITA_arm_available_chief_of_army_tt
-			show_ideas_tooltip = ITA_tancredi_saletta
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			add_doctrine_cost_reduction = {
 				name = arm_the_army_after_adwa
 				cost_reduction = 0.25
@@ -125,6 +120,24 @@ focus_tree = {
 				var = ITA_arm_initiative
 				value = 0.05
 				tooltip = ITA_arm_initiative_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_arm_terni_steel
+				}
+				swap_ideas = {
+					remove_idea = ITA_arm_terni_steel
+					add_idea = ITA_arm_terni_steel_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_arm_terni_steel
+						add_idea = ITA_arm_terni_steel_improved
+					}
+				}
 			}
 		}
 	}
@@ -177,6 +190,7 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_arm_speed_tt
 			}
+			show_ideas_tooltip = ITA_giuseppe_perrucchetti
 		}
 	}
 	focus = {
@@ -275,6 +289,24 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_arm_dig_in_tt
 			}
+			if = {
+				limit = { has_character = ITA_ettore_pedotti }
+				custom_effect_tooltip = ITA_arm_pedotti_commands_the_alpini_tt
+				hidden_effect = {
+					add_advisor_role = {
+						character = ITA_ettore_pedotti
+						advisor = {
+							slot = high_command
+							cost = 100
+							idea_token = ITA_arm_pedotti_at_the_alpini
+							ledger = army
+							allowed = { original_tag = ITA }
+							traits = { army_commando_1 }
+						}
+						activate = no
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -335,6 +367,37 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			if = {
+				limit = {
+					has_character = ITA_roberto_brusati
+					NOT = {
+						any_army_leader = { is_character = ITA_roberto_brusati }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_roberto_brusati
+						traits = { regio_esercito_trait old_guard career_officer skilled_staffer trait_mountaineer }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_roberto_brusati }
+						include_invisible = yes
+						add_skill_level = 1
+						add_attack = 1
+						add_defense = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_arm_brusati_takes_the_first_corps_tt
 		}
 	}
 	focus = {
@@ -385,6 +448,24 @@ focus_tree = {
 				cost_reduction = 0.25
 				uses = 2
 				category = land_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_arm_glisenti_of_brescia
+				}
+				swap_ideas = {
+					remove_idea = ITA_arm_glisenti_of_brescia
+					add_idea = ITA_arm_glisenti_of_brescia_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_arm_glisenti_of_brescia
+						add_idea = ITA_arm_glisenti_of_brescia_improved
+					}
+				}
 			}
 		}
 	}
@@ -442,6 +523,18 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_arm_morale_tt
 			}
+			if = {
+				limit = {
+					has_character = ITA_emanuele_filiberto
+					ITA_emanuele_filiberto = { is_field_marshal = no }
+				}
+				custom_effect_tooltip = ITA_arm_aosta_named_for_an_army_tt
+				hidden_effect = {
+					ITA_emanuele_filiberto = {
+						promote_leader = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -494,6 +587,9 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_arm_org_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_arm_company_officine_galileo
+			custom_effect_tooltip = ITA_arm_company_officine_galileo_tt
 		}
 	}
 	focus = {
@@ -645,6 +741,24 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_arm_initiative_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_arm_ansaldo_of_sampierdarena
+				}
+				swap_ideas = {
+					remove_idea = ITA_arm_ansaldo_of_sampierdarena
+					add_idea = ITA_arm_ansaldo_of_sampierdarena_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_arm_ansaldo_of_sampierdarena
+						add_idea = ITA_arm_ansaldo_of_sampierdarena_improved
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -695,6 +809,24 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_arm_breda_of_milan
+				}
+				swap_ideas = {
+					remove_idea = ITA_arm_breda_of_milan
+					add_idea = ITA_arm_breda_of_milan_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_arm_breda_of_milan
+						add_idea = ITA_arm_breda_of_milan_improved
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -744,6 +876,16 @@ focus_tree = {
 				var = ITA_arm_speed
 				value = 0.05
 				tooltip = ITA_arm_speed_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_itala
+					}
+				}
+				set_country_flag = ITA_ind_company_itala
+				custom_effect_tooltip = ITA_ind_company_itala_tt
 			}
 		}
 	}
@@ -849,6 +991,9 @@ focus_tree = {
 				uses = 1
 				category = support_tech
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_ind_company_bianchi
+			custom_effect_tooltip = ITA_ind_company_bianchi_tt
 		}
 	}
 	focus = {
@@ -896,6 +1041,25 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_arm_armstrong_of_pozzuoli
+				}
+				swap_ideas = {
+					remove_idea = ITA_arm_armstrong_of_pozzuoli
+					add_idea = ITA_arm_armstrong_of_pozzuoli_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_arm_armstrong_of_pozzuoli
+						add_idea = ITA_arm_armstrong_of_pozzuoli_improved
+					}
+				}
+			}
+			show_ideas_tooltip = ITA_francesco_siacci
 		}
 	}
 	focus = {
@@ -1045,6 +1209,54 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_arm_dig_in_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_arm_fiat_of_turin
+				}
+				swap_ideas = {
+					remove_idea = ITA_arm_fiat_of_turin
+					add_idea = ITA_arm_fiat_of_turin_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_arm_fiat_of_turin
+						add_idea = ITA_arm_fiat_of_turin_improved
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = ITA_prince_vittorio_emmanuele_of_savoy
+					NOT = {
+						any_army_leader = { is_character = ITA_prince_vittorio_emmanuele_of_savoy }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_prince_vittorio_emmanuele_of_savoy
+						traits = { regio_esercito_trait cavalry_officer cavalry_leader politically_connected media_personality }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_prince_vittorio_emmanuele_of_savoy }
+						include_invisible = yes
+						add_skill_level = 1
+						add_attack = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_arm_turin_rides_ahead_tt
 		}
 	}
 	focus = {
@@ -1096,6 +1308,19 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_arm_artillery_attack_tt
 			}
+			show_ideas_tooltip = ITA_carlo_caneva
+			if = {
+				limit = { has_character = ITA_alberto_pollio }
+				custom_effect_tooltip = ITA_arm_pollio_takes_the_staff_tt
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_alberto_pollio }
+						include_invisible = yes
+						add_skill_level = 1
+						add_planning = 1
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1127,6 +1352,24 @@ focus_tree = {
 
 			custom_effect_tooltip = ITA_arm_available_chief_of_army_tt
 			show_ideas_tooltip = ITA_ettore_pedotti
+			if = {
+				limit = { has_character = ITA_alberto_pollio }
+				custom_effect_tooltip = ITA_arm_pollio_the_historian_tt
+				hidden_effect = {
+					add_advisor_role = {
+						character = ITA_alberto_pollio
+						advisor = {
+							slot = theorist
+							cost = 100
+							idea_token = ITA_arm_pollio_the_historian
+							ledger = army
+							allowed = { original_tag = ITA }
+							traits = { scholar_general }
+						}
+						activate = no
+					}
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_to_variable = {
@@ -1198,6 +1441,41 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = logistics_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_arm_savigliano_works
+				}
+				swap_ideas = {
+					remove_idea = ITA_arm_savigliano_works
+					add_idea = ITA_arm_savigliano_works_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_arm_savigliano_works
+						add_idea = ITA_arm_savigliano_works_improved
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ITA_arm_beretta_of_gardone
+				}
+				swap_ideas = {
+					remove_idea = ITA_arm_beretta_of_gardone
+					add_idea = ITA_arm_beretta_of_gardone_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_arm_beretta_of_gardone
+						add_idea = ITA_arm_beretta_of_gardone_improved
+					}
+				}
 			}
 		}
 	}
@@ -1318,6 +1596,9 @@ focus_tree = {
 					modifier = ITA_air_the_service_of_the_air
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_air_company_brigata_specialisti
+			custom_effect_tooltip = ITA_air_company_brigata_specialisti_tt
 		}
 	}
 	focus = {
@@ -1583,6 +1864,7 @@ focus_tree = {
 				value = -0.05
 				tooltip = ITA_air_accidents_tt
 			}
+			show_ideas_tooltip = ITA_almerico_da_schio
 		}
 	}
 	focus = {
@@ -1635,6 +1917,18 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_air_efficiency_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_air_company_spa
+					}
+				}
+				set_country_flag = ITA_air_company_spa
+				custom_effect_tooltip = ITA_air_company_spa_tt
+			}
+			set_country_flag = ITA_air_company_isotta_fraschini
+			custom_effect_tooltip = ITA_air_company_isotta_fraschini_tt
 		}
 	}
 	focus = {
@@ -1690,6 +1984,16 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = ITA_air_the_circuit_at_brescia_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_air_company_caproni
+					}
+				}
+				set_country_flag = ITA_air_company_caproni
+				custom_effect_tooltip = ITA_air_company_caproni_tt
+			}
 		}
 	}
 	focus = {
@@ -1740,6 +2044,34 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_air_range_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_air_company_spa
+					}
+				}
+				set_country_flag = ITA_air_company_spa
+				custom_effect_tooltip = ITA_air_company_spa_tt
+			}
+			if = {
+				limit = { has_character = ITA_ottavio_ricaldoni }
+				custom_effect_tooltip = ITA_air_ricaldoni_takes_the_section_tt
+				hidden_effect = {
+					add_advisor_role = {
+						character = ITA_ottavio_ricaldoni
+						advisor = {
+							slot = air_chief
+							cost = 100
+							idea_token = ITA_air_ricaldoni_the_aviation_section
+							ledger = air
+							allowed = { original_tag = ITA }
+							traits = { air_air_combat_training_1 }
+						}
+						activate = no
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1783,6 +2115,24 @@ focus_tree = {
 				var = ITA_air_efficiency
 				value = 0.05
 				tooltip = ITA_air_efficiency_tt
+			}
+			if = {
+				limit = { has_character = ITA_giulio_douhet }
+				custom_effect_tooltip = ITA_air_douhet_takes_the_aviators_tt
+				hidden_effect = {
+					add_advisor_role = {
+						character = ITA_giulio_douhet
+						advisor = {
+							slot = air_chief
+							cost = 100
+							idea_token = ITA_air_douhet_the_aviators_battalion
+							ledger = air
+							allowed = { original_tag = ITA }
+							traits = { air_strategic_bombing_1 }
+						}
+						activate = no
+					}
+				}
 			}
 		}
 	}
@@ -1882,6 +2232,16 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_air_experience_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_air_company_caproni
+					}
+				}
+				set_country_flag = ITA_air_company_caproni
+				custom_effect_tooltip = ITA_air_company_caproni_tt
+			}
 		}
 	}
 	focus = {
@@ -1946,6 +2306,16 @@ focus_tree = {
 				var = ITA_air_range
 				value = 0.05
 				tooltip = ITA_air_range_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_air_company_forlanini
+					}
+				}
+				set_country_flag = ITA_air_company_forlanini
+				custom_effect_tooltip = ITA_air_company_forlanini_tt
 			}
 		}
 	}
@@ -2272,6 +2642,16 @@ focus_tree = {
 				value = -0.05
 				tooltip = ITA_air_accidents_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_air_company_forlanini
+					}
+				}
+				set_country_flag = ITA_air_company_forlanini
+				custom_effect_tooltip = ITA_air_company_forlanini_tt
+			}
 		}
 	}
 	focus = {
@@ -2322,6 +2702,24 @@ focus_tree = {
 				var = ITA_air_range
 				value = 0.05
 				tooltip = ITA_air_range_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_air_brigata_specialisti
+				}
+				swap_ideas = {
+					remove_idea = ITA_air_brigata_specialisti
+					add_idea = ITA_air_brigata_specialisti_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_air_brigata_specialisti
+						add_idea = ITA_air_brigata_specialisti_improved
+					}
+				}
 			}
 		}
 	}
@@ -2377,6 +2775,24 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_n_morale_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_n_arsenale_della_spezia
+				}
+				swap_ideas = {
+					remove_idea = ITA_n_arsenale_della_spezia
+					add_idea = ITA_n_arsenale_della_spezia_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_n_arsenale_della_spezia
+						add_idea = ITA_n_arsenale_della_spezia_improved
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -2416,7 +2832,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			set_country_flag = ITA_n_school_high_seas
 			clr_country_flag = ITA_n_school_narrow
 			custom_effect_tooltip = ITA_n_the_fleet_of_battle_tt
@@ -2432,6 +2847,62 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_n_retreat_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_n_orlando_di_livorno
+				}
+				swap_ideas = {
+					remove_idea = ITA_n_orlando_di_livorno
+					add_idea = ITA_n_orlando_di_livorno_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_n_orlando_di_livorno
+						add_idea = ITA_n_orlando_di_livorno_improved
+					}
+				}
+			}
+			if = {
+				limit = { has_character = ITA_giovanni_bettolo }
+				hidden_effect = {
+					remove_advisor_role = {
+						character = ITA_giovanni_bettolo
+						slot = navy_chief
+					}
+					add_advisor_role = {
+						character = ITA_giovanni_bettolo
+						advisor = {
+							slot = navy_chief
+							cost = 100
+							idea_token = ITA_n_bettolo_chief_of_the_naval_staff
+							ledger = navy
+							allowed = { original_tag = ITA }
+							traits = { navy_chief_reform_2 }
+						}
+						activate = no
+					}
+					every_unit_leader = {
+						limit = { is_character = ITA_giovanni_bettolo }
+						include_invisible = yes
+						add_skill_level = 1
+					}
+				}
+			}
+			if = {
+				limit = { has_character = ITA_francesco_grenet }
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_francesco_grenet }
+						include_invisible = yes
+						add_skill_level = 1
+						add_coordination = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_n_tt_bettolo_heads_the_staff
 		}
 	}
 	focus = {
@@ -2530,6 +3001,24 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_n_range_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_n_arsenale_di_venezia
+				}
+				swap_ideas = {
+					remove_idea = ITA_n_arsenale_di_venezia
+					add_idea = ITA_n_arsenale_di_venezia_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_n_arsenale_di_venezia
+						add_idea = ITA_n_arsenale_di_venezia_improved
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -2586,6 +3075,24 @@ focus_tree = {
 				var = ITA_n_coordination
 				value = 0.05
 				tooltip = ITA_n_coordination_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_n_castellammare
+				}
+				swap_ideas = {
+					remove_idea = ITA_n_castellammare
+					add_idea = ITA_n_castellammare_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_n_castellammare
+						add_idea = ITA_n_castellammare_improved
+					}
+				}
 			}
 		}
 	}
@@ -2746,6 +3253,9 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_e_the_schools_answer_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_ind_company_marelli
+			custom_effect_tooltip = ITA_ind_company_marelli_tt
 		}
 	}
 	focus = {
@@ -2955,6 +3465,16 @@ focus_tree = {
 				uses = 1
 				category = synth_resources
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_petrolifera
+					}
+				}
+				set_country_flag = ITA_ind_company_petrolifera
+				custom_effect_tooltip = ITA_ind_company_petrolifera_tt
+			}
 		}
 	}
 	focus = {
@@ -3111,6 +3631,16 @@ focus_tree = {
 				tooltip = ITA_e_rendita_risen_tt
 			}
 			ITA_e_add_rendita_penalty = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_ilva
+					}
+				}
+				set_country_flag = ITA_ind_company_ilva
+				custom_effect_tooltip = ITA_ind_company_ilva_tt
+			}
 		}
 	}
 	focus = {
@@ -3165,6 +3695,18 @@ focus_tree = {
 				tooltip = ITA_e_rendita_risen_tt
 			}
 			ITA_e_add_rendita_penalty = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_petrolifera
+					}
+				}
+				set_country_flag = ITA_ind_company_petrolifera
+				custom_effect_tooltip = ITA_ind_company_petrolifera_tt
+			}
+			set_country_flag = ITA_ind_company_bacu_abis
+			custom_effect_tooltip = ITA_ind_company_bacu_abis_tt
 		}
 	}
 	focus = {
@@ -3324,6 +3866,23 @@ focus_tree = {
 				var = ITA_e_industrial_capacity_dockyard
 				value = 0.05
 				tooltip = ITA_e_the_slips_grow_tt
+			}
+			if = {
+				limit = { has_character = ITA_paolo_spingardi }
+				custom_effect_tooltip = ITA_e_tt_spingardi_at_the_war_office
+				hidden_effect = {
+					add_advisor_role = {
+						character = ITA_paolo_spingardi
+						advisor = {
+							slot = political_advisor
+							cost = 100
+							idea_token = ITA_e_spingardi_at_the_war_office
+							allowed = { original_tag = ITA }
+							traits = { veteran_minister }
+						}
+						activate = no
+					}
+				}
 			}
 		}
 	}
@@ -3630,6 +4189,24 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_n_range_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_n_ansaldo
+				}
+				swap_ideas = {
+					remove_idea = ITA_n_ansaldo
+					add_idea = ITA_n_ansaldo_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_n_ansaldo
+						add_idea = ITA_n_ansaldo_improved
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -3727,6 +4304,9 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_n_speed_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_n_company_fiat_san_giorgio
+			custom_effect_tooltip = ITA_n_company_fiat_san_giorgio_tt
 		}
 	}
 	focus = {
@@ -3778,6 +4358,24 @@ focus_tree = {
 				var = ITA_n_morale
 				value = 0.05
 				tooltip = ITA_n_morale_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = ITA_n_fiat_san_giorgio
+				}
+				swap_ideas = {
+					remove_idea = ITA_n_fiat_san_giorgio
+					add_idea = ITA_n_fiat_san_giorgio_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ITA_n_fiat_san_giorgio
+						add_idea = ITA_n_fiat_san_giorgio_improved
+					}
+				}
 			}
 		}
 	}
@@ -3966,6 +4564,24 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_n_morale_tt
 			}
+			if = {
+				limit = { has_character = ITA_paolo_thaon_di_revel }
+				custom_effect_tooltip = ITA_n_tt_revel_holds_the_narrow_sea
+				hidden_effect = {
+					add_advisor_role = {
+						character = ITA_paolo_thaon_di_revel
+						advisor = {
+							slot = navy_chief
+							cost = 100
+							idea_token = ITA_n_thaon_di_revel_chief_of_the_naval_staff
+							ledger = navy
+							allowed = { original_tag = ITA }
+							traits = { navy_chief_maneuver_2 }
+						}
+						activate = no
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -4102,6 +4718,7 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			show_ideas_tooltip = ITA_francesco_cocco_ortu
 		}
 	}
 	focus = {
@@ -4245,6 +4862,16 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_lloyd_sabaudo
+					}
+				}
+				set_country_flag = ITA_ind_company_lloyd_sabaudo
+				custom_effect_tooltip = ITA_ind_company_lloyd_sabaudo_tt
+			}
 		}
 	}
 	focus = {
@@ -4371,6 +4998,16 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_e_the_ore_stays_home_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_ilva
+					}
+				}
+				set_country_flag = ITA_ind_company_ilva
+				custom_effect_tooltip = ITA_ind_company_ilva_tt
+			}
 		}
 	}
 	focus = {
@@ -4456,6 +5093,18 @@ focus_tree = {
 						add_idea = ITA_e_a_power_that_makes_things
 					}
 				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_ind_company_falck
+			custom_effect_tooltip = ITA_ind_company_falck_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_itala
+					}
+				}
+				set_country_flag = ITA_ind_company_itala
+				custom_effect_tooltip = ITA_ind_company_itala_tt
 			}
 		}
 	}
@@ -4566,6 +5215,16 @@ focus_tree = {
 			hidden_effect = {
 				remove_dynamic_modifier = { modifier = ITA_e_the_credit_restored }
 				add_dynamic_modifier = { modifier = ITA_e_the_kingdom_solvent_mod }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_credito_italiano
+					}
+				}
+				set_country_flag = ITA_ind_company_credito_italiano
+				custom_effect_tooltip = ITA_ind_company_credito_italiano_tt
 			}
 		}
 	}
@@ -4776,6 +5435,27 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_e_the_lines_run_better_tt
 			}
+			if = {
+				limit = { has_character = ITA_francesco_tedesco }
+				custom_effect_tooltip = ITA_e_tt_tedesco_at_the_treasury
+				hidden_effect = {
+					remove_advisor_role = {
+						character = ITA_francesco_tedesco
+						slot = political_advisor
+					}
+					add_advisor_role = {
+						character = ITA_francesco_tedesco
+						advisor = {
+							slot = political_advisor
+							cost = 100
+							idea_token = ITA_e_tedesco_at_the_treasury
+							allowed = { original_tag = ITA }
+							traits = { liberal_grandee }
+						}
+						activate = no
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -4937,6 +5617,9 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_e_the_ground_gives_more_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_ind_company_ferrovie_dello_stato
+			custom_effect_tooltip = ITA_ind_company_ferrovie_dello_stato_tt
 		}
 	}
 	focus = {
@@ -5316,7 +5999,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ITA_h_the_army_estimates_pass_tt
-			show_ideas_tooltip = ITA_tancredi_saletta
 			show_ideas_tooltip = ITA_ettore_pedotti
 			show_ideas_tooltip = ITA_carlo_porro
 			show_ideas_tooltip = ITA_alberto_pollio
@@ -5886,7 +6568,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ITA_h_salandra_is_called_tt
-			show_ideas_tooltip = ITA_antonio_salandra
 			custom_effect_tooltip = ITA_h_the_extreme_is_shut_out_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -5985,7 +6666,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ITA_h_sacchi_is_offered_tt
-			show_ideas_tooltip = ITA_ettore_sacchi
 			custom_effect_tooltip = ITA_h_salandra_stands_down_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6140,7 +6820,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = { ITA_h_the_triestine_yards }
+			set_country_flag = ITA_h_company_triestine_yards
+			custom_effect_tooltip = ITA_h_company_triestine_yards_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -6421,6 +7102,16 @@ focus_tree = {
 			unlock_decision_category_tooltip = ITA_h_emigrant_trade_cat
 			hidden_effect = {
 				set_country_flag = ITA_v_the_missions
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_lloyd_sabaudo
+					}
+				}
+				set_country_flag = ITA_ind_company_lloyd_sabaudo
+				custom_effect_tooltip = ITA_ind_company_lloyd_sabaudo_tt
 			}
 		}
 	}
@@ -7428,6 +8119,7 @@ focus_tree = {
 			add_state_claim = 728
 			add_state_claim = 613
 			custom_effect_tooltip = ITA_h_tt_the_capital_answers
+			show_ideas_tooltip = ITA_giuseppe_salvago_raggi
 		}
 	}
 	focus = {
@@ -7868,6 +8560,18 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = ITA_a_the_south_bought
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_ilva
+					}
+				}
+				set_country_flag = ITA_ind_company_ilva
+				custom_effect_tooltip = ITA_ind_company_ilva_tt
+			}
+			set_country_flag = ITA_ind_company_banco_di_napoli
+			custom_effect_tooltip = ITA_ind_company_banco_di_napoli_tt
 		}
 	}
 	focus = {
@@ -8517,6 +9221,16 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ITA_h_the_credit_for_industry_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_ind_company_credito_italiano
+					}
+				}
+				set_country_flag = ITA_ind_company_credito_italiano
+				custom_effect_tooltip = ITA_ind_company_credito_italiano_tt
+			}
 		}
 	}
 	focus = {
@@ -9147,7 +9861,7 @@ focus_tree = {
 				name = the_guards_of_public_safety
 				bonus = 1
 				uses = 1
-				technology = military_police
+				technology = WW1_tech_military_police
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -13541,6 +14255,7 @@ focus_tree = {
 				uses = 1
 				category = electronics
 			}
+			show_ideas_tooltip = ITA_guglielmo_marconi
 		}
 	}
 	focus = {
@@ -16046,7 +16761,7 @@ focus_tree = {
 				ruling_party = communism
 				elections_allowed = no
 			}
-			promote_character = ITA_arturo_labriola
+			promote_character = { character = ITA_arturo_labriola ideology = syndicalism }
 			custom_effect_tooltip = ITA_u_the_syndicate_governs_tt
 			hidden_effect = {
 				set_cosmetic_tag = ITA_SIND
@@ -16418,14 +17133,21 @@ focus_tree = {
 					elections_allowed = no
 				}
 				set_cosmetic_tag = ITA_COMANDO
-				ITA_tancredi_saletta = {
-					add_country_leader_role = {
-						country_leader = {
-							ideology = militarism
-							expire = "1930.1.1.1"
+				if = {
+					limit = { has_character = ITA_tancredi_saletta }
+					ITA_tancredi_saletta = {
+						add_country_leader_role = {
+							country_leader = {
+								ideology = militarism
+								expire = "1930.1.1.1"
+							}
+							promote_leader = yes
 						}
-						promote_leader = yes
 					}
+				}
+				else_if = {
+					limit = { has_character = ITA_alberto_pollio }
+					promote_character = { character = ITA_alberto_pollio ideology = militarism }
 				}
 			}
 			hidden_effect = {
@@ -16565,9 +17287,6 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = ITA_u_crown_tt_an_advisor_is_available
-			show_ideas_tooltip = ITA_antonio_salandra
 
 			hidden_effect = {
 				if = {
@@ -22434,6 +23153,34 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
+			if = {
+				limit = { has_character = ITA_giuseppe_salvago_raggi }
+				custom_effect_tooltip = ITA_w_tt_salvago_raggi_governs_eritrea
+				hidden_effect = {
+					remove_advisor_role = {
+						character = ITA_giuseppe_salvago_raggi
+						slot = political_advisor
+					}
+					add_advisor_role = {
+						character = ITA_giuseppe_salvago_raggi
+						advisor = {
+							slot = political_advisor
+							cost = 100
+							idea_token = ITA_w_salvago_raggi_governor_of_eritrea
+							allowed = { original_tag = ITA }
+							traits = { AST_governor_general }
+						}
+						activate = no
+					}
+					if = {
+						limit = { has_character = ITA_ferdinando_martini }
+						remove_advisor_role = {
+							character = ITA_ferdinando_martini
+							slot = political_advisor
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -22828,6 +23575,43 @@ focus_tree = {
 					country_event = { id = ita_dnc.1588 days = 8 }
 				}
 			}
+			if = {
+				limit = {
+					has_character = ITA_carlo_caneva
+					ITA_carlo_caneva = { is_field_marshal = no }
+				}
+				hidden_effect = {
+					ITA_carlo_caneva = {
+						promote_leader = yes
+					}
+				}
+			}
+			if = {
+				limit = { has_character = ITA_umberto_cagni }
+				hidden_effect = {
+					add_advisor_role = {
+						character = ITA_umberto_cagni
+						advisor = {
+							slot = high_command
+							cost = 100
+							idea_token = ITA_w_cagni_the_landing_party
+							ledger = navy
+							allowed = { original_tag = ITA }
+							traits = { navy_amphibious_assault_1 }
+						}
+						activate = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_character = ITA_carlo_caneva
+						has_character = ITA_umberto_cagni
+					}
+				}
+				custom_effect_tooltip = ITA_w_tt_libya_takes_its_commanders
+			}
 			custom_effect_tooltip = ITA_w_tt_the_capital_answers
 		}
 	}
@@ -22996,6 +23780,37 @@ focus_tree = {
 			}
 			custom_effect_tooltip = ITA_w_tt_islands_claimed
 			add_named_threat = { threat = 3 name = ITA_w_threat_islands }
+			if = {
+				limit = {
+					has_character = ITA_giovanni_ameglio
+					NOT = {
+						any_army_leader = { is_character = ITA_giovanni_ameglio }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_giovanni_ameglio
+						traits = { regio_esercito_trait career_officer ascari_officer hill_fighter naval_invader }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 2
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_giovanni_ameglio }
+						include_invisible = yes
+						add_skill_level = 1
+						add_attack = 1
+						add_unit_leader_trait = naval_invader
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_w_tt_ameglio_lands_on_rhodes
 		}
 	}
 	focus = {
@@ -23062,6 +23877,207 @@ focus_tree = {
 				add_political_power = -10
 				custom_effect_tooltip = ITA_w_tt_nothing_to_hand_back
 			}
+			custom_effect_tooltip = ITA_w_tt_the_libyan_promotions
+			if = {
+				limit = {
+					has_character = ITA_armando_diaz
+					NOT = {
+						any_army_leader = { is_character = ITA_armando_diaz }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_armando_diaz
+						traits = { regio_esercito_trait career_officer artillery_officer }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_armando_diaz }
+						include_invisible = yes
+						add_skill_level = 1
+						add_attack = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = ITA_gaetano_ettore_giardino
+					NOT = {
+						any_army_leader = { is_character = ITA_gaetano_ettore_giardino }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_gaetano_ettore_giardino
+						traits = { regio_esercito_trait career_officer skilled_staffer }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 3
+						logistics_skill = 2
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_gaetano_ettore_giardino }
+						include_invisible = yes
+						add_skill_level = 1
+						add_planning = 1
+						add_defense = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = ITA_luigi_capello
+					NOT = {
+						any_army_leader = { is_character = ITA_luigi_capello }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_luigi_capello
+						traits = { regio_esercito_trait career_officer infantry_officer politically_connected }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_luigi_capello }
+						include_invisible = yes
+						add_skill_level = 1
+						add_attack = 1
+						add_planning = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = ITA_guglielmo_pecori_giraldi
+					NOT = {
+						any_army_leader = { is_character = ITA_guglielmo_pecori_giraldi }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_guglielmo_pecori_giraldi
+						traits = { regio_esercito_trait old_guard ascari_officer desert_fox }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_guglielmo_pecori_giraldi }
+						include_invisible = yes
+						add_skill_level = 1
+						remove_unit_leader_trait = hill_fighter
+						add_unit_leader_trait = desert_fox
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = ITA_ottavio_ragni
+					NOT = {
+						any_army_leader = { is_character = ITA_ottavio_ragni }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_ottavio_ragni
+						traits = { regio_esercito_trait old_guard infantry_officer desert_fox }
+						skill = 3
+						attack_skill = 3
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_ottavio_ragni }
+						include_invisible = yes
+						add_skill_level = 1
+						add_defense = 1
+						add_unit_leader_trait = desert_fox
+						add_attack = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = ITA_ottavio_briccola
+					NOT = {
+						any_army_leader = { is_character = ITA_ottavio_briccola }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_ottavio_briccola
+						traits = { regio_esercito_trait career_officer harsh_leader desert_fox }
+						skill = 3
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 3
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_ottavio_briccola }
+						include_invisible = yes
+						add_skill_level = 1
+						add_attack = 1
+						add_unit_leader_trait = desert_fox
+						add_logistics = 1
+					}
+				}
+			}
+			hidden_effect = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							is_character = ITA_umberto_cagni
+							is_character = ITA_paolo_thaon_di_revel
+						}
+					}
+					include_invisible = yes
+					add_skill_level = 1
+					add_attack = 1
+				}
+				every_unit_leader = {
+					limit = { is_character = ITA_prince_luigi_amedeo }
+					include_invisible = yes
+					add_skill_level = 1
+					add_unit_leader_trait = destroyer_leader
+				}
+			}
 			custom_effect_tooltip = ITA_w_tt_the_porte_answers
 		}
 	}
@@ -23107,6 +24123,38 @@ focus_tree = {
 				category = infantry_weapons
 			}
 			country_event = { id = ita_dnc.507 days = 20 }
+			if = {
+				limit = {
+					has_character = ITA_tommaso_salsa
+					NOT = {
+						any_army_leader = { is_character = ITA_tommaso_salsa }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_tommaso_salsa
+						traits = { regio_esercito_trait trait_mountaineer infantry_officer desert_fox }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_tommaso_salsa }
+						include_invisible = yes
+						add_skill_level = 1
+						add_attack = 1
+						add_unit_leader_trait = desert_fox
+						add_defense = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_w_tt_salsa_holds_the_interior
 		}
 	}
 	focus = {
@@ -23179,6 +24227,56 @@ focus_tree = {
 				add_state_core = 663
 			}
 			custom_effect_tooltip = ITA_w_tt_fourth_shore_cored
+			if = {
+				limit = {
+					has_character = ITA_vincenzo_garioni
+					NOT = {
+						any_army_leader = { is_character = ITA_vincenzo_garioni }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_vincenzo_garioni
+						traits = { regio_esercito_trait career_officer infantry_officer organizer }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 3
+						logistics_skill = 2
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_vincenzo_garioni }
+						include_invisible = yes
+						add_skill_level = 1
+						add_defense = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_w_tt_the_fourth_shore_is_governed
+			if = {
+				limit = { has_character = ITA_pietro_bertolini }
+				hidden_effect = {
+					remove_advisor_role = {
+						character = ITA_pietro_bertolini
+						slot = political_advisor
+					}
+					add_advisor_role = {
+						character = ITA_pietro_bertolini
+						advisor = {
+							slot = political_advisor
+							cost = 100
+							idea_token = ITA_w_bertolini_at_the_colonies
+							allowed = { original_tag = ITA }
+							traits = { colonial_lawyer }
+						}
+						activate = no
+					}
+				}
+			}
 		}
 	}
 	focus = {
