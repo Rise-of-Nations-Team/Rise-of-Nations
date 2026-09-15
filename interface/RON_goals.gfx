@@ -1314,6 +1314,16 @@ spriteTypes = {
 		name = "GFX_goal_COR_crossburn"
 		texturefile = "gfx/interface/goals/imported/kx/COR_crossburn.dds"
 	}	
+
+	SpriteType = {
+		name = "GFX_goal_COR_knights_of_the_red"
+		texturefile = "gfx/interface/goals/imported/kx/COR_Knights_of_the_Red.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_goal_COR_america_preserved"
+		texturefile = "gfx/interface/goals/imported/kx/COR_America_Preserved.dds"
+	}		
 	
 	SpriteType = {
 		name = "GFX_goal_COR_this_well_defend"
@@ -1403,6 +1413,31 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_USA_city_on_a_hill"
 		texturefile = "gfx/interface/goals/imported/kx/USA_city_on_a_hill.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_USA_democracy_savior"
+		texturefile = "gfx/interface/goals/imported/kx/USA_democracy_savior.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_USA_jeffersonian_agrarianism"
+		texturefile = "gfx/interface/goals/imported/kx/USA_jeffersonian_agrarianism.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_USA_lion_and_eagle"
+		texturefile = "gfx/interface/goals/imported/kx/USA_lion_and_eagle.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_USA_Square_deal"
+		texturefile = "gfx/interface/goals/imported/kx/USA_Square_deal.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_USA_panama_control"
+		texturefile = "gfx/interface/goals/imported/kx/USA_panama_control.dds"
 	}	
 
 	##############################

@@ -2378,7 +2378,7 @@ focus_tree = {
 	#Focus for Create The Panama Canal Commission
 	focus = {
 		id = USADNC_create_the_panama_canal_commission
-		icon = GFX_focus_mex_redeem_aztlan
+		icon = GFX_USA_panama_control
 		x = 20
 		y = 6
 		cost = 10
@@ -2498,7 +2498,7 @@ focus_tree = {
 	#Focus for The Roosevelt administration
 	focus = {
 		id = USADNC_the_roosevelt_administration
-		icon = GFX_focus_spa_the_spanish_miracle
+		icon = GFX_USA_Square_deal
 		x = 24
 		y = 12
 		cost = 7
@@ -3358,7 +3358,7 @@ focus_tree = {
 	#Focus for A alternative victory in the elections
 	focus = {
 		id = USADNC_a_alternative_victory_in_the_elections
-		icon = GFX_focus_usa_recruit_the_free_corps
+		icon = GFX_USA_democracy_savior
 		x = 56
 		y = 1
 		cost = 7
@@ -3452,7 +3452,7 @@ focus_tree = {
 	#Focus for Fill up the senate with klan members
 	focus = {
 		id = USADNC_fill_up_the_senate_with_klan_members
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_COR_knights_of_the_red
 		x = 46
 		y = 8
 		cost = 13
@@ -3815,7 +3815,7 @@ focus_tree = {
 	#Focus for Add the British monarch to the dollar bill
 	focus = {
 		id = USADNC_add_the_british_monarch_to_the_dollar_bill
-		icon = GFX_focus_generic_monarchy_2
+		icon = GFX_USA_lion_and_eagle
 		x = 50
 		y = 9
 		cost = 10
@@ -3836,7 +3836,7 @@ focus_tree = {
 	#Focus for A subject under the king
 	focus = {
 		id = USADNC_a_subject_under_the_king
-		icon = GFX_align_to_britain
+		icon = GFX_focus_generic_monarchy_2
 		x = 50
 		y = 10
 		cost = 15
@@ -4533,7 +4533,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_jeffersons_vision
-		icon = GFX_focus_generic_agrarianism 
+		icon = GFX_USA_jeffersonian_agrarianism 
 		x = 80
 		y = 1
 		cost = 10
@@ -5522,7 +5522,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_american_politics
-		icon = GFX_goal_USA_coa_navy
+		icon = GFX_goal_COR_america_preserved
 		x = 90
 		y = 10
 		cost = 5
