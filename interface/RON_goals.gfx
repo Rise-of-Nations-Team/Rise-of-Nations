@@ -1282,6 +1282,21 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_goal_SPA_Army"
+		texturefile = "gfx/interface/goals/imported/kr/SPA_Army.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SPA_Airforce"
+		texturefile = "gfx/interface/goals/imported/kr/SPA_Airforce.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SPA_Navy"
+		texturefile = "gfx/interface/goals/imported/kr/SPA_Navy.png"
+	}
+
+	SpriteType = {
 		name = "GFX_goal_generic_financial_markets"
 		texturefile = "gfx/interface/goals/imported/kr/generic_financial_markets.png"
 	}
@@ -1672,6 +1687,31 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_USA_over_there"
 		texturefile = "gfx/interface/goals/imported/r56/usa/r56_goal_USA_over_there.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_restrict_press"
+		texturefile = "gfx/interface/goals/imported/r56/generic/r56_goal_generic_restrict_press.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_COG_Jungle_Railroad"
+		texturefile = "gfx/interface/goals/imported/r56/cog/r56_goal_COG_Jungle_Railroad.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_spr_recruitment_drive"
+		texturefile = "gfx/interface/goals/imported/r56/spr/r56_goal_spr_recruitment_drive.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_spr_take_back_gibraltar"
+		texturefile = "gfx/interface/goals/imported/r56/spr/r56_goal_spr_take_back_gibraltar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_Goal_USA_arsenal_of_democracy"
+		texturefile = "gfx/interface/goals/imported/r56/usa/Goal_USA_arsenal_of_democracy.dds"
 	}
 
 	#######################################

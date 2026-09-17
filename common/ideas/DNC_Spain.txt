@@ -369,6 +369,24 @@ ideas = {
 			}
 		}
 
+		SPR_DNC_state_controlled_media_ns = {
+
+			picture = JAP_press_association_idea
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = -0.01
+				communism_drift = -0.01
+				stability_factor = -0.025
+				political_power_factor = 0.05
+			}
+		}
+
 		SPR_lessons_from_the_past_idea = {
 			picture = new_army
 			removal_cost = -1

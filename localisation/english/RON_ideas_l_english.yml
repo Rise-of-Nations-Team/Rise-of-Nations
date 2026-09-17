@@ -357,6 +357,8 @@
  SPR_social_unrest_idea_desc: ""
  SPR_social_unrest_idea1: "Social Unrest"
  SPR_social_unrest_idea1_desc: ""
+ SPR_DNC_state_controlled_media_ns: "State-Controlled Media"
+ SPR_DNC_state_controlled_media_ns_desc: ""
  SPR_farm_aid_idea: "Farming Subsidies"
  SPR_farm_aid_idea_desc: ""
  SPR_ley_de_jurisdicciones_idea: "Ley de Jurisdicciones"

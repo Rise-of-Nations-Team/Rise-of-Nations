@@ -2,7 +2,7 @@
 joint_focus = {
 	id = SPRVR_imperio_espanol
 	icon = GFX_focus_spa_supremacy_of_the_communion
-	x = 21
+	x = 19
 	y = 0
 	offset = {
 		x = -12
@@ -132,7 +132,7 @@ joint_focus = {
 joint_focus = {
 	id = SPRVR_rebuild_the_armada
 	icon = GFX_focus_generic_navy_battleship2
-	x = -4
+	x = -3
 	y = 1
 	relative_position_id = SPRVR_imperio_espanol
 
@@ -316,7 +316,7 @@ joint_focus = {
 joint_focus = {
 	id = SPRVR_imperial_army
 	icon = GFX_goal_VEN_army
-	x = 4
+	x = 3
 	y = 1
 	relative_position_id = SPRVR_imperio_espanol
 
@@ -512,7 +512,7 @@ joint_focus = {
 joint_focus = {
 	id = SPRVR_una_unida
 	icon = GFX_goal_SPR_cross_of_burgundy_inf
-	x = -2
+	x = -1
 	y = 1
 	relative_position_id = SPRVR_an_empire_reborn
 
@@ -610,7 +610,7 @@ joint_focus = {
 joint_focus = {
 	id = SPRVR_federal_empire
 	icon = GFX_focus_BRA_north_and_south_america
-	x = 2
+	x = 1
 	y = 1
 	relative_position_id = SPRVR_an_empire_reborn
 
