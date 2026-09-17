@@ -326,8 +326,8 @@ characters={
 		}		
 	}		
 	
-	FIN_friedrich_kaarle={
-		name=FIN_friedrich_kaarle
+	FIN_fredrik_kaarle_i={
+		name=FIN_fredrik_kaarle_i
 		portraits={
 			civilian={
 				large="gfx/leaders/FIN/WW1/Portrait_Finland_Friedrich_Karl_I.dds"

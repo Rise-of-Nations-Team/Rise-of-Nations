@@ -3,24 +3,8 @@ capital = 608 # Peking
 oob = "QIN_1900"
 
 add_ideas = {
-	#Laws
 	export_focus
-	#tax_average
-	#tariffs_high
 	low_economic_mobilisation
-	#press_censored
-	#major_industries
-	#fdi_regulated
-	#security_minor_restrictions
-	#foreign_legion
-	#train_low
-	#age_18
-	#age_35
-	#officer_train_none
-	#education_budget3
-	#foreign_neutral
-
-	#National Spirits
 	QIN_agrarian_society
 	QIN_outdated_army
 	QIN_foreign_concessions
@@ -28,6 +12,29 @@ add_ideas = {
 	QIN_minority_revolts
 	QIN_low_legitimacy
 	QIN_legacy_sino_japanese_war
+}
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	basic_train = 1
+	horses = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_torpedo = 1
+			mtg_ww1_destroyer1 = 1
+			mtg_transport = 1
+		}
+	else = {
+		set_technology = {
+			ww1_destroyer0 = 1
+			transport = 1
+		}
+	}
 }
 
 set_war_support = 0.5

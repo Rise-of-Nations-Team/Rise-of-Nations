@@ -1,0 +1,107 @@
+ideas = {
+	country = {
+
+		SCW_SPR_great_offensive = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_communist_army
+
+			modifier = {
+				army_attack_factor = 0.10
+				army_org_factor = 0.05
+				attrition = 0.10
+			}
+		}
+
+		SCW_SPA_great_offensive = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+
+			modifier = {
+				army_attack_factor = 0.10
+				army_org_factor = 0.05
+				attrition = 0.10
+			}
+		}
+
+		SPR_temporar_unity = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		SPA_opposition_repression_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_purge
+
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = -0.10
+			}
+		}
+
+		MONARCHIST_focus_on_Nationalists = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				planning_speed = 0.10
+			}
+		}
+
+		MONARCHIST_focus_on_commmies = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_communist_army
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				planning_speed = 0.10
+			}
+		}
+
+		MONARCHIST_focus_on_republicans = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				planning_speed = 0.10
+			}
+		}
+
+		MONARCHIST_focus_on_anarchists = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_army_war_college
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				planning_speed = 0.10
+			}
+		}
+	}
+}

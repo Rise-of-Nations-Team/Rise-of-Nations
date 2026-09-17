@@ -30,14 +30,14 @@ bookmarks = {
 			ideology = neutrality
 			version = base_game
 			ideas = {
-				multi_ethnic
-				AUH_ww1_House_Habsburg_Lorraine
+				AUH_backward_navy_industry
+				AUH_inexperenced_colonial_administrators
 				AUH_unequal_union
 			}
 			focuses = {
-				AUHDNC_the_german_question
-				AUHDNC_lesser_german_solution
-				AUHDNC_greater_german_solution
+				AUHDNC_the_dual_monarchy
+				AUHDNC_r_the_iron_ring_reforged
+				AUHDNC_m_the_sword_settles_it
 			}
 		}
 
@@ -59,9 +59,9 @@ bookmarks = {
 			ideology = neutrality
 			version = base_game
 			ideas = {
-				russia_sucks
-				russo_jap_defeat
-				RUS_ww1_orthodox_church
+				RUS_non_industrialized_nation
+				RUS_fear_of_revolution
+				RUS_long_live_the_tsar
 			}
 			focuses = {
 				RUS_new_foreign_policy
@@ -91,9 +91,9 @@ bookmarks = {
 			ideology = democratic
 			version = base_game
 			ideas = {
-				FRA_ww1_Revanchism
-				FRA_disjointed_government
-				ww1_Scramble_for_Africa
+				FRA_Dreyfus_Divide
+				FRA_Catholic_Controlled_Press
+				FRA_Colonial_Holdings
 			}
 			focuses = {
 			}
@@ -104,8 +104,8 @@ bookmarks = {
 			ideology = democratic
 			version = base_game
 			ideas = {
-				usa_american_constitution
-				usa_bill_of_rights
+				USA_american_imperialism
+				USA_the_gold_standard
 				USA_the_two_party_system
 			}
 			focuses = {
@@ -141,12 +141,8 @@ bookmarks = {
 			ideology = neutrality
 			version = base_game
 			ideas = {
-				COL_bolivars_legacy
-				COL_a_nation_divided 
 			}
 			focuses = {
-				COL_support_panama
-				COL_1900_crash_them 
 			}
 		}
 
@@ -178,9 +174,6 @@ bookmarks = {
 				rus_economic_help
 			}
 			focuses = {
-				SER_down_with_the_obrenovic
-				SER_support_the_obrenovic
-				SER_first_serbian_republic
 			}
 		}
 

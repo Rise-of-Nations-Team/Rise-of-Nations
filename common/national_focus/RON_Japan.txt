@@ -1,4 +1,3 @@
-#!gfx:interface/RON_goals.gfx
 focus_tree = {
 	id = Japan_DNC
 	
@@ -150,7 +149,7 @@ focus_tree = {
 
 		cost = 10
 		prerequisite = { focus = JAP_intervention_in_china }
-		mutually_exclusive = { focus = JAP_full_intervention focus = JAP_limited_intervention }
+		mutually_exclusive = { focus = JAP_full_intervention }
 
 		available = {
 			has_war_with = BOX

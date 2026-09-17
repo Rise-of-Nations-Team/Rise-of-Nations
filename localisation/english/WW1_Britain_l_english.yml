@@ -2,12 +2,24 @@
 # Ideas
  ENG_british_officers_independent_egypt: "British Officers"
  ENG_british_officers_independent_egypt_desc: "Despite throwing off the shackled of British dictatorship, the British Army officers in our army have remained and continue to bolster our military presence. There is no reason for them to leave, and they are instrumental in organising the defence of our nation. They also hold invaluable experience fighting the Turk. And all they ask for is a decent soldier's pay? There's little reason not to keep them around."
+ ENG_idea_naval_arms_race_desc: "More dreadnoughts! Bigger guns!"
 
 # Focuses
-
+ ENG_room_40: "Room 40"
+ ENG_room_40_tt: "§YCryptanalysis section «Room 40» will help to intercept enemy secret messages.§!\n\n"
+ ENG_room_40_desc: "Harnessing the power of intelligence and secrecy, Room 40 serves as the nerve center of our cryptographic endeavors. Our commitment to excellence in code-breaking will yield invaluable intelligence, fortifying our national security."
+ ENG_control_under_egypt: "Entrench Control of Egypt"
+ ENG_control_under_egypt_desc: "Egypt is vital to our middle eastern and mediterranean strategy."
 # Decisions
 
 # Events
+ ww1_england.9.t: "Intelligence intercepted Zimmermann Telegram"
+ ww1_england.9.d: "We intercepted this telegram in Mexico with the help of one of our Agent.\n\nFrom [GER.GetLeader] to [MEX.GetLeader]:\n\n'We intend to begin unrestricted submarine warfare. We shall endeavor in spite of this to keep [USA.GetName] neutral. In the event of this not succeeding, we make Mexico a proposal of alliance on the following basis: make war together, make peace together, generous financial support and an understanding on our part that Mexico is to reconquer the lost territory in Texas, New Mexico, and Arizona."
+ ww1_england.9.a: "Send it to America."
+ ww1_england.9.b: "Ignore it."
+ ww1_england.10.t: "Intelligence intercepted Zimmermann Telegram"
+ ww1_england.10.d: "Zimmermann Telegram to their Mexican legation has been intercepted. This proves to the American public and politicians alike that Germany, is intentionally resuming a Ruthless Submarine campaign against merchant shipping and are trying to encourage Mexico to declare war on [USA.GetName]."
+ ww1_england.10.a: "Now we have a cause for war!"
  ww1_england.82.t: "Britain faces Revolt in Egypt!"
  ww1_england.82.d: "Partially due to their mismanagement there, and partially due to nostalgia for our own regime, the British are facing an Egyptian Revolution! While we aren't currently capable of directly intervening, it is still disrupting the British- which is always favourable for us!"
  ww1_england.82.a: "That'll show those big-headed infidels!"

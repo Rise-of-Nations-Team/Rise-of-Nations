@@ -1,5 +1,91 @@
 add_namespace = ww1_england
 
+# ZIMMERMAN TELEGRAM
+############################
+country_event = {
+	id = ww1_england.9
+	title = ww1_england.9.t
+	desc = ww1_england.9.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = ww1_england.9.a
+		trigger = {
+			NOT = { has_war_with = USA }
+		}
+		USA = {
+			country_event = {
+				id = ww1_england.10
+				days = 2
+			}
+		}
+		set_global_flag = zimmermann_telegram_intercepted
+		ai_chance = {
+			factor = 100
+			modifier = {
+				OR = {
+					USA = {
+						has_war_with = ENG
+					}
+					ENG = {
+						NOT = {
+							has_war_with = GER
+						}
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = ww1_england.9.b		#ignore telegram
+		ai_chance = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = DEMOCRATIC_HISTORICAL
+					}
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = ENG_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_war_with = GER
+				}		
+				factor = 0
+			}
+		}
+	}
+}
+
+# ZIMMERMAN TELEGRAM - USA RECIVES TELEGRAM
+############################
+country_event = {
+	id = ww1_england.10
+	title = ww1_england.10.t
+	desc = ww1_england.10.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = ww1_england.10.a
+		set_global_flag = zimmermann_telegram_received
+		add_war_support = 0.15
+		add_opinion_modifier = {
+			target = GER
+			modifier = zimmermann_telegram_opinion
+		}
+		news_event = ww1_england.11
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
 #Turkey is notified of the Egyptian Revolution
 country_event = {
 	id = ww1_england.82

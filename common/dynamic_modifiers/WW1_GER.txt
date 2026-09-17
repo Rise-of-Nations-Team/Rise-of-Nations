@@ -1,0 +1,45 @@
+GER_ohl_command = {
+	enable = { always = yes }
+	remove_trigger = {
+		has_global_flag = versailles_treaty
+	}
+	icon = GFX_idea_GER_idea_OHL
+	supply_consumption_factor =  ohl_army_supply
+	production_speed_arms_factory_factor = ohl_mil_construction_speed
+	political_power_gain = ohl_political_power_gain
+	war_support_factor = ohl_war_support
+	mobilization_speed = ohl_mob_speed
+	planning_speed = ohl_planning_speed
+	max_planning_factor = ohl_max_planning
+	army_speed_factor = ohl_army_speed
+	army_core_defence_factor  = ohl_core_defence
+	power_balance_daily = 0.001
+}
+
+GER_konige_im_luftrevier = {
+	enable = { always = yes }
+	remove_trigger = {
+		has_global_flag = great_war_ends
+	}
+	icon = GFX_idea_air_support_focus
+	air_attack_factor = GER_luftrevier_air_attack
+	air_defence_factor = GER_luftrevier_air_defense
+	air_agility_factor = GER_luftrevier_air_agility
+	air_range_factor = GER_luftrevier_air_range
+	ground_attack_factor = GER_luftrevier_ground_attack
+	air_bombing_targetting = GER_luftrevier_air_bombing_targetting
+	air_doctrine_cost_factor = GER_luftrevier_air_doctrine_cost
+	air_weather_penalty = GER_luftrevier_air_weather_penalty
+	air_night_penalty = GER_luftrevier_air_night_penalty
+	#air_detection = GER_luftrevier_air_detection
+	air_mission_efficiency = GER_luftrevier_air_mission_efficiency
+	air_superiority_efficiency = GER_luftrevier_air_superiority_efficiency
+	air_intercept_efficiency = GER_luftrevier_air_intercept_efficiency
+	air_cas_efficiency = GER_luftrevier_air_cas_efficiency
+	air_strategic_bomber_bombing_factor = GER_luftrevier_air_strategic_bomber_bombing_factor
+	experience_gain_air = GER_luftrevier_experience_gain_air
+	experience_gain_air_factor = GER_luftrevier_experience_gain_air_factor
+	air_ace_generation_chance_factor = GER_luftrevier_air_ace_generation_chance
+	air_accidents_factor = GER_luftrevier_air_accidents_factor
+	country_resource_rubber = 10
+}

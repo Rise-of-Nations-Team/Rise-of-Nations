@@ -1,0 +1,31 @@
+opinion_modifiers = {
+
+	GER_backstab = { value = -50 }
+
+	GER_second_bjork_agreement_rejected = { value = -40 }
+
+	GER_support_austrian_claims = { value = -50 }
+
+	GER_scandinavian_focus = { value = 25 }
+
+	GER_military_mission_in_turkey = { value = 35 }
+
+	GER_befriend_bulgaria = { value = 35 }
+
+	GER_secure_allied_monarchies = { value = 25 }
+
+	GER_protector_of_europe = { value = 25 }
+
+	GER_befriend_sweden = { value = 25 }
+
+	german_protection_of_suez_canal = { value = 10 }
+
+	GER_american_campaign = { value = -10 }
+
+	zimmermann_telegram_opinion = { value = -75 }
+
+	aland_crisis = { value = -5 }
+
+	transfer_aland = { value = 5 }
+
+}

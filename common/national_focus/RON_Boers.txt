@@ -1,5 +1,4 @@
-﻿#!gfx:interface/RON_goals.gfx
-focus_tree = {
+﻿focus_tree = {
 	id = Boers_DNC
 	
 	country = {

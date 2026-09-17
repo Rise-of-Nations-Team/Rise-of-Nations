@@ -1,0 +1,274 @@
+# Congress seats stay inside their chamber and drive the congress icons
+USA_recalc_congress_icon_frames = {
+	clamp_variable = { var = senators_support min = 0 max = senators_total }
+	clamp_variable = { var = representatives_support min = 0 max = representatives_total }
+	set_temp_variable = { senators_temp = senators_support }
+	divide_temp_variable = { senators_temp = senators_total }
+	multiply_temp_variable = { senators_temp = 21 }
+	if = {
+		limit = { check_variable = { senators_temp > 0 } }
+		clamp_temp_variable = { var = senators_temp min = 1 max = 21 }
+	}
+	else = {
+		set_temp_variable = { senators_temp = 1 }
+	}
+	set_variable = { current_senate_icon_frame = senators_temp }
+	set_temp_variable = { house_temp = representatives_support }
+	divide_temp_variable = { house_temp = representatives_total }
+	multiply_temp_variable = { house_temp = 21 }
+	if = {
+		limit = { check_variable = { house_temp > 0 } }
+		clamp_temp_variable = { var = house_temp min = 1 max = 21 }
+	}
+	else = {
+		set_temp_variable = { house_temp = 1 }
+	}
+	set_variable = { current_house_icon_frame = house_temp }
+}
+
+# Swap both chambers over to the incoming party
+USA_flip_congress_support = {
+	set_variable = { var = USA_congress_flip_buffer value = senators_total }
+	subtract_from_variable = { var = USA_congress_flip_buffer value = senators_support }
+	set_variable = { var = senators_support value = USA_congress_flip_buffer }
+	set_variable = { var = USA_congress_flip_buffer value = representatives_total }
+	subtract_from_variable = { var = USA_congress_flip_buffer value = representatives_support }
+	set_variable = { var = representatives_support value = USA_congress_flip_buffer }
+	clear_variable = USA_congress_flip_buffer
+	USA_recalc_congress_icon_frames = yes
+}
+
+usa_flip_support_gop = {
+	USA_flip_congress_support = yes
+}
+
+usa_flip_support_dem = {
+	USA_flip_congress_support = yes
+}
+
+USA_congress_small_support = {
+	add_to_variable = { senators_support = 2 }
+	add_to_variable = { representatives_support = 10 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_congress_small_opposition = {
+	subtract_from_variable = { senators_support = 2 }
+	subtract_from_variable = { representatives_support = 10 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_congress_medium_support = {
+	add_to_variable = { senators_support = 5 }
+	add_to_variable = { representatives_support = 25 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_congress_large_support = {
+	add_to_variable = { senators_support = 10 }
+	add_to_variable = { representatives_support = 50 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_senate_large_opposition = {
+	subtract_from_variable = { senators_support = 10 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_house_large_support = {
+	add_to_variable = { representatives_support = 50 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+# Open a house vote with the Republicans in favour
+setup_gop_vote = {
+	set_country_flag = vote_in_progress
+	set_variable = { var = votes_required_house value = representatives_total }
+	divide_variable = { votes_required_house = 2 }
+	set_variable = { var = HOUSE_party2_seatsfor value = HOUSE_party2_seats }
+	set_variable = { HOUSE_party3_seatsfor = 0 }
+	set_variable = { republican_against_vote = 0 }
+	set_variable = { var = democratic_against_vote value = HOUSE_party3_seats }
+	set_variable = { var = usa_total_vote value = HOUSE_party2_seatsfor }
+	set_variable = { var = usa_total_vote_against value = democratic_against_vote }
+}
+
+# Fire the election of the current term
+USA_campaign_timeout_effect = {
+	if = {
+		limit = { date < 1904.1.1 }
+		country_event = RON_American_Elections.1
+	}
+	else_if = {
+		limit = { date < 1908.1.1 }
+		country_event = RON_American_Elections.2
+	}
+	else_if = {
+		limit = { date < 1912.1.1 }
+		country_event = RON_American_Elections.3
+	}
+	else_if = {
+		limit = { date < 1916.1.1 }
+		country_event = RON_American_Elections.4
+	}
+	else_if = {
+		limit = { date < 1920.1.1 }
+		country_event = RON_American_Elections.5
+	}
+	else_if = {
+		limit = { date < 1924.1.1 }
+		country_event = RON_American_Elections.6
+	}
+	else_if = {
+		limit = { date < 1928.1.1 }
+		country_event = RON_American_Elections.7
+	}
+	else_if = {
+		limit = { date < 1932.1.1 }
+		country_event = RON_American_Elections.8
+	}
+	else_if = {
+		limit = { date < 1936.1.1 }
+		country_event = RON_American_Elections.9
+	}
+	else_if = {
+		limit = { date < 1940.1.1 }
+		country_event = RON_American_Elections.10
+	}
+	else_if = {
+		limit = { date < 1944.1.1 }
+		country_event = RON_American_Elections.11
+	}
+	else_if = {
+		limit = { date < 1948.1.1 }
+		country_event = RON_American_Elections.12
+	}
+	else_if = {
+		limit = { date < 1952.1.1 }
+		country_event = RON_American_Elections.13
+	}
+	else_if = {
+		limit = { date < 1956.1.1 }
+		country_event = RON_American_Elections.14
+	}
+	else_if = {
+		limit = { date < 1960.1.1 }
+		country_event = RON_American_Elections.15
+	}
+	else_if = {
+		limit = { date < 1964.1.1 }
+		country_event = RON_American_Elections.16
+	}
+	else_if = {
+		limit = { date < 1968.1.1 }
+		country_event = RON_American_Elections.17
+	}
+	else_if = {
+		limit = { date < 1972.1.1 }
+		country_event = RON_American_Elections.19
+	}
+	else_if = {
+		limit = { date < 1976.1.1 }
+		country_event = RON_American_Elections.20
+	}
+	else_if = {
+		limit = { date < 1980.1.1 }
+		country_event = RON_American_Elections.21
+	}
+	else_if = {
+		limit = { date < 1984.1.1 }
+		country_event = RON_American_Elections.22
+	}
+	else_if = {
+		limit = { date < 1988.1.1 }
+		country_event = RON_American_Elections.23
+	}
+	else_if = {
+		limit = { date < 1992.1.1 }
+		country_event = RON_American_Elections.24
+	}
+	else_if = {
+		limit = { date < 1996.1.1 }
+		country_event = RON_American_Elections.25
+	}
+	else_if = {
+		limit = { date < 2000.1.1 }
+		country_event = RON_American_Elections.26
+	}
+	else_if = {
+		limit = { date < 2004.1.1 }
+		country_event = RON_American_Elections.27
+	}
+	else_if = {
+		limit = { date < 2008.1.1 }
+		country_event = RON_American_Elections.28
+	}
+	else_if = {
+		limit = { date < 2012.1.1 }
+		country_event = RON_American_Elections.29
+	}
+	else_if = {
+		limit = { date < 2016.1.1 }
+		country_event = RON_American_Elections.30
+	}
+	else_if = {
+		limit = { date < 2020.1.1 }
+		country_event = RON_American_Elections.31
+	}
+	else_if = {
+		limit = { date < 2024.1.1 }
+		country_event = RON_American_Elections.32
+	}
+	else = {
+		country_event = RON_American_Elections.33
+	}
+}
+
+USA_medium_neutrality_loss = {
+	subtract_from_variable = { USA_neutrality_support = 10 }
+	clamp_variable = { var = USA_neutrality_support min = 0 max = 100 }
+}
+
+USA_medium_ENT_gain = {
+	add_to_variable = { USA_ENT_support = 10 }
+	clamp_variable = { var = USA_ENT_support min = 0 max = 100 }
+}
+
+USA_huge_ENT_gain = {
+	add_to_variable = { USA_ENT_support = 20 }
+	clamp_variable = { var = USA_ENT_support min = 0 max = 100 }
+}
+
+USA_medium_CP_gain = {
+	add_to_variable = { USA_CP_support = 10 }
+	clamp_variable = { var = USA_CP_support min = 0 max = 100 }
+}
+
+USA_huge_CP_gain = {
+	add_to_variable = { USA_CP_support = 20 }
+	clamp_variable = { var = USA_CP_support min = 0 max = 100 }
+}
+
+# State scope: shift one house seat to the Republicans
+USA_gop_up = {
+	add_to_variable = { USA_state_gop_support = 5 }
+	clamp_variable = { var = USA_state_gop_support min = 0 max = 100 }
+	owner = {
+		add_to_variable = { HOUSE_party2_seats = 1 }
+		subtract_from_variable = { HOUSE_party3_seats = 1 }
+		clamp_variable = { var = HOUSE_party2_seats min = 0 max = representatives_total }
+		clamp_variable = { var = HOUSE_party3_seats min = 0 max = representatives_total }
+	}
+}
+
+# Looser immigration adds manpower
+immigration_policy_get_better = {
+	add_manpower = 20000
+}
+
+USA_rearmament_budget_level_up = {
+	add_war_support = 0.02
+	army_experience = 5
+	navy_experience = 5
+	air_experience = 5
+}

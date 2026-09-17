@@ -1,0 +1,6 @@
+opinion_modifiers = {
+
+	yankee_imperialists = {
+		value = -50
+	}
+}

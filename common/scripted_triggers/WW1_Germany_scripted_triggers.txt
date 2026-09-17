@@ -1,0 +1,282 @@
+is_greater_germany = {
+	tag = AUS
+	NOT = { country_exists = GER }
+	OR = {
+		has_cosmetic_tag = AUS_HRE
+		# has_cosmetic_tag = GER_HRE
+		has_cosmetic_tag = GER_confederation
+	}
+}
+
+is_GER_a_monarchy = {
+	custom_trigger_tooltip = {
+		tooltip = is_GER_a_monarchy_tt
+		OR = {
+			has_country_leader_ideology = monarchism
+			has_country_leader_ideology = semi_constitutional_monarchy
+			has_idea = GER_wilhelm_ii
+			has_idea = GER_wilhelm_ii_postwar
+			has_idea = GER_wilhelm_iii
+		}
+	}
+}
+is_hollweg_chancellor = {
+	custom_trigger_tooltip = {
+		tooltip = is_hollweg_chancellor_tt
+		GER_theobald_von_bethmann_hollweg = {
+			OR = {
+				is_political_advisor = yes #Bethmann Hollweg is chancellor
+				is_country_leader = yes
+			}			
+		}
+	}
+}
+
+has_OHL = {
+	has_dynamic_modifier = {
+		modifier = GER_ohl_command
+	}
+}
+
+has_u_boat_campaign = {    
+	custom_trigger_tooltip = {
+		tooltip = has_u_boat_campaign_tt
+		OR = {
+			has_idea = GER_unrestricted_submarine_warfare_idea
+			has_idea = GER_unrestricted_submarine_warfare_idea2
+			has_idea = GER_unrestricted_submarine_warfare_idea3
+			has_idea = GER_unrestricted_submarine_warfare_idea4
+		}
+	}
+}
+
+has_unrestricted_submarine_warfare = {    
+	custom_trigger_tooltip = {
+		tooltip = has_unrestricted_submarine_warfare_tt
+		OR = {
+			has_idea = GER_unrestricted_submarine_warfare_idea3
+			has_idea = GER_unrestricted_submarine_warfare_idea4
+		}
+	}
+}
+
+GER_schlieffen_plan_is_ongoing  = {
+	OR = {	
+		has_idea = GER_idea_schlieffen_plan
+		has_idea = GER_idea_schlieffen_plan2
+		has_idea = GER_idea_schlieffen_moltke_plan
+		has_idea = GER_idea_schlieffen_moltke_plan_historical
+		has_idea = GER_idea_schlieffen_moltke_plan2
+		has_idea = race_to_the_sea
+	}
+}
+
+has_GER_idea_rising_unions = {
+	custom_trigger_tooltip = {
+		tooltip = has_GER_idea_rising_unions_tt
+		OR = {
+			has_idea = GER_idea_rising_unions
+			has_idea = GER_idea_rising_unions2
+			has_idea = GER_idea_rising_unions3
+		}
+	}
+}
+
+
+# has_GER_idea_rapid_urbanisation = {
+# 	custom_trigger_tooltip = {
+# 		tooltip = has_GER_idea_rapid_urbanisation_tt
+# 		OR = {
+# 			has_idea = GER_rapid_urbanisation
+# 			has_idea = GER_rapid_urbanisation_2
+# 			has_idea = GER_rapid_urbanisation_3
+# 		}
+# 	}
+# }
+
+GER_buiding_civ_in_FROM_checker = {
+	custom_trigger_tooltip = {
+		tooltip = tt_build_one_civ_trigger
+		check_variable = { 
+			var = industrial_complex_level
+			value = civilian_total_after_goal
+			compare = greater_than_or_equals
+		}
+	}
+}
+
+GER_is_MAF_state = {
+	OR = {
+		# 1918 Plans of the German Colonial League, approved by Solf
+		is_core_of = GAB
+		is_core_of = RCG
+		is_core_of = COG
+		is_core_of = ZAM
+		is_core_of = MLW
+		is_core_of = UGA
+		is_core_of = KEN
+		is_core_of = RWA
+		is_core_of = GHA
+		is_core_of = IVO
+		is_core_of = TZN
+		is_core_of = ANG
+		is_core_of = NMB
+		is_core_of = CMR
+		is_core_of = MAD
+		is_core_of = NGA
+		is_core_of = TOG
+		is_core_of = DAH
+		is_core_of = CAR
+		is_core_of = ZAN
+		is_core_of = GNA
+		is_core_of = GNB
+		is_core_of = SEN
+		is_core_of = GAM
+		is_core_of = SIE
+		
+		state = 268 # Djibouti
+		state = 1036 # Gobad
+
+		# North Mozambique
+		state = 972 # Tete
+		state = 971 # Quelimane
+		state = 973 # Nyassa
+
+		region = 184 # Cameroon region, because CMR cores aren't consistent
+	}
+}
+
+GER_is_MAF_core = {
+	OR = {
+		# German Colonies
+		is_core_of = TOG
+		is_core_of = TZN
+		is_core_of = NMB
+
+		# Belgian Congo
+		is_core_of = COG
+
+		# Portuguese Colonies
+		is_core_of = ANG
+
+		# North Mozambique
+		state = 972 # Tete
+		state = 971 # Quelimane
+		state = 973 # Nyassa
+
+		# Cameroon
+		state = 539
+		state = 769
+		state = 813
+		state = 814
+		state = 1143
+		state = 815
+		state = 1144
+	}
+}
+
+GER_is_OST_state = {
+	OR = {
+		# China / Concessions
+		state = 326 # Hong Kong
+		state = 524 # Taiwan
+		state = 526 # Okinawa
+		state = 591 # Hainan
+		state = 592 # Guangzhou
+		state = 613 # Shanghai
+		state = 728 # Guangzhouwan
+		state = 729 # Macau
+		state = 744 # Kwantung
+		state = 745 # Tsingtao
+		state = 746 # Weihaiwei
+
+		# Indochina
+		is_core_of = VIN # Vietnam
+		is_core_of = CAM # Cambodia
+		is_core_of = LAO # Laos
+		is_core_of = SIA # Siam
+
+		is_core_of = MAL # Malaysia
+		is_core_of = SAR # Sarawak
+		is_core_of = BRN # Brunei
+		is_core_of = INS # Indonesia
+		is_core_of = PHI # Philippines
+		is_core_of = PNG # Papua New Guinea
+		is_core_of = HAW # Hawaii
+
+		# Pacific and Indian Ocean
+		region = 71 # East Indian Ocean
+		region = 78 # Philippine Sea
+		region = 83 # Solomon Sea
+		region = 84 # Bismarck Sea
+		region = 94 # Mariana Region
+		region = 95 # West Emperor Chain
+		region = 97 # South West Pacific
+		region = 99 # Far Eastern Indian Ocean
+		region = 101 # Bay of Bengal
+		region = 105 # Hawaii Ridge
+		region = 172 # South Central Pacific
+		region = 178 # West Polynesia
+		region = 179 # French Polynesia
+		region = 180 # Micronesian Gap
+	}
+}
+
+GER_is_OST_core = {
+	OR = {
+		# Malaysia
+		state = 932 # Straits Settlements / Singapore
+		state = 336 # Malaya
+		state = 937 # Johor
+		
+		state = 745 # Tsingtao
+		state = 896 # North Borneo
+
+		state = 647 # Palau
+
+		is_core_of = VIN # Vietnam
+		is_core_of = CAM # Cambodia
+		is_core_of = LAO # Laos
+		is_core_of = BRN # Brunei
+		is_core_of = PNG # Papua New Guinea
+	}
+}
+
+is_french_congo_state = {
+	AND = {
+		OR = {
+			region = 183 # Central Africa
+			region = 184 # Cameroon
+			region = 227 # Congo
+		}
+		NOT = {
+			state = 969 # Chad
+			state = 1059 # Batha
+			state = 774 # Wadai
+		}
+	}
+}
+
+naval_dominance_north_sea = {
+	has_naval_control = 173
+	has_naval_control = 16
+}
+
+naval_dominance_enemy_north_sea = {
+	has_enemy_naval_control = 173
+	has_enemy_naval_control = 16
+}
+
+GER_enemy_blockade_north_sea = {
+	OR = {
+		has_enemy_naval_control = 173
+		has_enemy_naval_control = 16
+	}
+}
+
+blockade_germany_north_sea = {
+	OR = {
+		has_naval_control = 173
+		has_naval_control = 16
+	}
+}

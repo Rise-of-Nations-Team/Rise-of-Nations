@@ -5,20 +5,20 @@ set_stability = 0.7
 set_war_support = 0.6
 add_ideas = {
 	export_focus
-	tax_average
-	tariffs_average
+	#tax_average
+	#tariffs_average
 	civilian_economy
-	press_free
-	key_industries
-	fdi_regulated
-	foreign_volunteers
-	train_low
-	age_18
-	age_35
-	security_minor_restrictions
-	officer_train_low
-	education_budget3
-	foreign_neutral
+	#press_free
+	#key_industries
+	#fdi_regulated
+	#foreign_volunteers
+	#train_low
+	#age_18
+	#age_35
+	#security_minor_restrictions
+	#officer_train_low
+	#education_budget3
+	#foreign_neutral
 }
 create_dynamic_country = {
 	original_tag = HUN
@@ -378,7 +378,7 @@ set_popularities = {
 		communism = 5
 	}
 	create_country_leader = {
-		name = "JÃ¡nos Ãÿder"
+		name = "JÃ¡nos Ãder"
 		picture = "gfx/leaders/HUN/MD/Hungary_Janos_Ader.dds"
 		
 		ideology = christian_democracy
@@ -387,8 +387,8 @@ set_popularities = {
 
 2020.1.1 = {
 	create_country_leader = {
-		name = "JÃ¡nos Ãÿder"
-		picture = "gfx/leaders/HUN/MD/HUN_JÃ¡nos_Ãÿder_Conservatism.dds"
+		name = "JÃ¡nos Ãder"
+		picture = "gfx/leaders/HUN/MD/Hungary_Janos_Ader.dds"
 		
 		ideology = conservatism
 	}

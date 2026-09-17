@@ -1,0 +1,11 @@
+GER_colonial_protectorates_modifier = {
+	valid_relation_trigger = {
+		ROOT = {
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
+		}
+	}
+	compliance_gain = 0.25
+}

@@ -14,8 +14,14 @@ bookmarks = {
 			ideology = neutrality
 			version = base_game
 			ideas = {
+				GER_idea_norddeutscher_bund_legacy
+				GER_idea_OHL
+				GER_idea_naval_arms_race
 			}
 			focuses = {
+				GER_WW1_turn_to_asia
+				GER_WW1_war_with_france_ww1
+				GER_WW1_backstab
 			}
 		}
 

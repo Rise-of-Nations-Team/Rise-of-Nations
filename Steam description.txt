@@ -1,167 +1,16 @@
-[img]https://i.imgur.com/5dFhbEG.png[/img]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3496572210][img]https://i.imgur.com/5dFhbEG.png[/img][/url]
+Rise of Nations is a mod with the objective of creating an unforgettable century of gameplay (1900-2030). Currently having development up until 1949 we aim to be a mod about long runs and letting the player choose the way they want to shape the world such as perhaps starting in 1900 in the Dawn of a New Century, the 1910's with the Balkan Powder Keg, 1919 when the smoke settles, 1933 with the Rise of Evil, 1936 with the start of the world in turmoil, 1939 the point of no Return, and 1949 with the start of a new war between two spheres of Influence!
 
-[img]https://i.imgur.com/NVBHkZ6.png[/img]
+It continues the legacy of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1829382334]Totaler Krieg 2030[/url]
 
-Rise of Nations is a mod with the objective of creating an unforgettable century of gameplay. (1900-2060) It is a remake of Totaler Krieg 2030.
+[h1]We would be pleased if you join our team and help Rise of Nations out. Jut note that you need modding experience to join it. If you don't have it, making bug reports will help. Join our Discord here: https://discord.gg/wW3nmgP4Vd[/h1]
 
-[h1] MOD IS COMPATIBLE WITH 1.10.* [/h1]
-
-[img]https://i.imgur.com/oq5fenf.png[/img]
-
-Dev Team:
-
-TK2030
-DexertCz
-MrJawlineBH
-Almec
-Jeff Jefferson
-Rechinokov
-Ryman
-KingRed2007YT
-Stuffi3000
-Antmrt
-Braineac2000
-Meridiem-Ossetia
-Mikegent
-Harry (AKA Dr.SuiuS)
-Nugget
-Noremac2000
-Manul (AKA Evgeny Korovin)
-Mstae67
-PoorBananaMan27 (AKA GamingBananna563)
-FacundoSim
-bertocho
-Senor_randomkhmerguy
-Vinctories
-Bob1234567890
-egzs
-Sự Báo Thù
-Itadakii
-
-Special Thanks To:
-
-Abbus
-Antonito
-areku
-Bart
-Camcompco
-cameron
-CirclePete
-concrete
-Connor
-CrankyRack
-Dackydc
-DevinPurcell
-DuKe
-FilU1916
-FluffyFishCreations
-FoxDie24
-Ghost
-Ghosting1GP
-groovy
-Herman_Lindqvist
-JaK
-JonathanH
-Kingspel
-Le Kiwi Suisse
-Limmony
-LordBuisness1945 (AKA Frosty)
-Lyylikki
-machotacoman
-ManhNP006
-Max200012
-Metooxas
-MikeTheGibus
-Molvanîa
-Mord
-Mr. Confused
-Nadine Franklin
-Net2025
-Nuttachai
-oBaMaCaRe
-_Orion_
-scipion34
-Sercan
-shithead_2421
-Skinkolf
-Steventice98
-Rangel
-ThePolindus
-Thought_West
-Torque
-Trun'
-Varsalia Osvourn
-vikkar
-VladimirLemon
-Walk
-Wanwangrr
-Włatca Krulestfa
-Yeet0654/Yeet6054
-Yiğit
-YoanMeister
-
-[img]https://i.imgur.com/XqHJT72.png[/img]
-
-Special Thanks to MisterJay and Ted52 and the entire HOI4 modding community, without your great work and generosity, this mod wouldn't have been possible.
-
-(Every mod credited has been asked and has confirmed they give permission.)
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2820767946]Après Nous Le Déluge[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=865747132]A Swedish Tiger[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1368202826]Allied Construction Projects[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1431777218]American Rework[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1960954295]Ashes of the Past[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1144394862]Beautiful States[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1548756814]Better Asian Focus Trees[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1322409552]Better Nukes[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=858460802]Bitter Peace - New World Order[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=830975088]BlackIce[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1384292518]British Overhaul[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=2378229497]Chant of the Forgotten[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=1229084232]Colored Events[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=1701275566]CommunistGer[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1437909463]Deutschland Erwache 2[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=1186201730]DoomsdayZom[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1532883122]Endsieg[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=741805475]Expert AI[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1574557023]France Rework[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=843048390]France Total Rework[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1125715353]German Focus Rework[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1380558447]German UMC[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1842518195]Historical Immersion Event Pack[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1818823699]Italici Imperatores[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=953002637]Italy Overhaul[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1521695605]Kaiserreich[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2604467506]LVN: La Vittoria è Nostra![/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1425386497]League of Nations[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1859866584]Limit AI Division Spam[/url]
-[url=https://discord.gg/5UQaTYE]Lux Gemaniae[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=946730201]Mila Rodino Bulgaria[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=719416488]Millennium Dawn: Modern Day Mod[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=1365924161]Partistan Mod[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1352503602]Release Foreign Territory[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=918709019]Revised Argentina[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=1285457891]Rise of Russia[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=2092066524]Russia Reworked[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2826603870]Second Sengoku[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=833228235]Soviet Focus Rework[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1406597668]Soviet Union Expanded Focus Tree[/url]
-[url=https://steamcommunity.com/workshop/filedetails/?id=2117676813][GUS] Soviet's Puppets[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=822745033]The Belgian Lion Roars Again[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1946557392]The Great War Redux[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1629497054]The Man in the High Castle[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1576974797]The Sickman of the Middle East[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=738404861]The War of the Worlds[/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=835475743]ToraToraTora[/url]
-
-We are also thankfull for youtube channel [url=https://www.youtube.com/channel/UCSCTl_YRo_oHFI27qwV0y0w]Dr. Ludwig[/url] for their partnership and future work on soundtrack for Germany.
-
-[img]https://i.imgur.com/WEEfbw1.png[/img]
-
-Rise of Nations is a mod lovingly made by the Hoi4 Community, for the Hoi4 Community. It will allow you to play 160 years of world history.
+[h2]PLEASE NOTE THAT AT THE MOMENT, THE DATES AFTER 1949, ARE NOT FULLY FUNCTIONAL OR EMPTY, PLAY AT YOUR OWN RISK[/h2]
+[h2]THIS MOD IS ENGLISH ONLY AND IT WILL BE IN ENGLISH ONLY FOR ETERNITY[/h2]
+[h2]MOD IS COMPATIBLE WITH 1.19.2[/h2]
 
 [img]https://i.imgur.com/6OXWwEl.png[/img]
-- WW1 Start Dates: 1910
-- WW2 Start Dates: 1933 & 1936
+- 23 Start Dates ranging from 1900-2020
 - Massive Technology Tree 1900-2060
 - Massive Generic Focus Tree (1910-2060)
 - Reworked Law System with much more immersion.
@@ -179,7 +28,61 @@ Rise of Nations is a mod lovingly made by the Hoi4 Community, for the Hoi4 Commu
 - Decolonization Decisions and Events
 - Coup Events
 
-[url=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M7N2RCCYGMSDL&source=url]
-[img]https://i.imgur.com/DR7KrNk.png[/img][/url]
+[img]https://i.imgur.com/oq5fenf.png[/img]
+Dev Team:
+TK2030
+DexertCz
+stuffi3000
+Antmrt
+TheInkyHarry (AKA Dr.SuiuS)
+Mikegent
+Viktoria (AKA prussiadev)
+nikolafun
+Xaelor
+Itadakii
+Braineac2000
+Nugget
+Noremac2023
+Bob1579
+PoorBananaMan27 (AKA GamingBananna563)
+egzs
+FacundoSim
+Mstae67
+Abyssal Lord
+Sturm
+Ari
+Diam
+ZwergenPiste
+skLatvia
+idk_pineapple
+Luftwaffle17
+Włatca Krulestfa
+Kaiser Wilhelm II (AKA Harambovski)
+Manulight
+Mieserere mei, Deus (AKA Balkanist)
+Sự Báo Thù
+Mord
+MikeTheGibus
+Sqd
+JonathanH
+lele48
+Lehmspielt
+Lucasdrury1
+Alrendaxe
+The Devil King Lucifer (AKA Napolon | Bonaparte)
+Alkotol (AKA Angelos V)
+Stürmax
+vel
+tofecaduc (AKA concrete)
+Kaarl IX
+Zilyox
+LunaticT1
+!Hunter!
+icup
+Marax
+Rei Ayanami
+
+For the full credits see: [url=https://rise-of-nations-team.github.io/web/RON_credits.html]Full Credits[/url]
+
+[url=https://www.youtube.com/channel/UCgWkliJFfrhy4yHePtkmrzw][img]https://i.imgur.com/Pa96Jfn.png[/img][/url]
 [url=https://discord.gg/wW3nmgP4Vd][img]https://i.imgur.com/g7mnaUQ.png[/img][/url]
-[url=https://www.reddit.com/r/RiseOfNationMod/][img]https://i.imgur.com/opnNAoH.png[/img][/url]

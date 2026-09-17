@@ -1,0 +1,34 @@
+ideas = {
+
+    country = {
+		FRA_firepower2bis = {
+			name = FRA_firepower
+			picture = generic_artillery_regiments
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				NOT = {
+					has_idea = idea_army_restrictions
+					has_idea = FRA_land_army_restrictions
+				}
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				artillery = {
+					build_cost_ic = -0.08
+					breakthrough = 0.08
+					instant = yes
+				}
+			}
+		}
+	}
+
+}

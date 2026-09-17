@@ -10,19 +10,18 @@ Meridiem-Ossetia
 Mikegent
 Harry/Dr.SuiuS
 Pozitox
+YouMustBelieve
 Xaelor
 Viktoria Luise von Hohenzollern (MeAcuerdo)
+icup
+Zijoziks
+Abyssal
 Nugget
 nikolafun
 Noremac2000
-Manul/Evgeny Korovin
-MikeTheGibus
 Mstae67
 PoorBananaMan27/GamingBananna563
 FacundoSim
-bertocho
-Senor_randomkhmerguy
-Vinctories
 Bob1234567890
 egzs
 Sự Báo Thù
@@ -30,6 +29,7 @@ Itadakii
 Włatca Krulestfa
 Vernox
 Zomboss11
+
 ## OUTSIDE CONTRIBUTIONS
 Abbus
 Antonito
@@ -39,6 +39,7 @@ Arvidus
 Artyom
 axoper
 Bart
+bertocho
 cameron
 Camcompco
 Certifiedloserr
@@ -81,8 +82,10 @@ Lyylikki
 m_belonosov
 machotacoman
 ManhNP006
+Manul/Evgeny Korovin
 Max200012
 Metooxas
+MikeTheGibus
 Mocharinne
 Molvanîa
 Mord
@@ -97,6 +100,7 @@ _Orion_
 Rasmulk
 Persyk
 scipion34
+Senor_randomkhmerguy
 Sercan
 shithead_2421
 Silent_enforcer
@@ -111,6 +115,7 @@ Trun'
 Uhmut
 Varsalia Osvourn
 vikkar
+Vinctories
 VladimirLemon
 Walk
 Wanwangrr
@@ -120,13 +125,11 @@ Yiğit
 YoanMeister
 
 ## INTEGRATED MODS
-- Better Mechanics: AI Divisions - https://steamcommunity.com/sharedfiles/filedetails/?id=2996504479
 - Better Mechanics: Custom Rules - https://steamcommunity.com/sharedfiles/filedetails/?id=3277805669
-- Better Mechanics: Frontline AI - https://steamcommunity.com/sharedfiles/filedetails/?id=2984937408
 - Better Mechanics: Optimization - https://steamcommunity.com/sharedfiles/filedetails/?id=3009437701
 - Honor and Glory - https://steamcommunity.com/sharedfiles/filedetails/?id=2850813386
 - Kaiserredux - https://steamcommunity.com/workshop/filedetails/?id=2076426030
 - Kaiserreich - https://steamcommunity.com/sharedfiles/filedetails/?id=1521695605
 - The Great War Redux - https://steamcommunity.com/sharedfiles/filedetails/?id=3365515312
 - The Great War RolePlay - https://steamcommunity.com/sharedfiles/filedetails/?id=3226668008
-- The Road to 56' - https://steamcommunity.com/sharedfiles/filedetails/?id=820260968
+- The Road to 56 - https://steamcommunity.com/sharedfiles/filedetails/?id=820260968

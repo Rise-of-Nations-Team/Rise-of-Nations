@@ -1,0 +1,44 @@
+ideas={
+	country = {
+		MEX_idea_porfiriato = {
+			picture = unpopular_dictatorship_porfirio
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_country_leader = {
+					character = MEX_porfirio_diaz
+				}
+			}
+			removal_cost = -1
+			available = {
+				has_country_leader = {
+					character = MEX_porfirio_diaz
+				}
+			}
+			modifier = {
+				stability_factor = -0.25
+				army_chief_cost_factor = -0.25
+				high_command_cost_factor = -0.25
+				consumer_goods_factor = -0.15
+				production_speed_industrial_complex_factor = 0.25
+				agency_upgrade_time = -0.25
+				intel_network_gain_factor = 0.1
+			}
+		}
+		MEX_idea_haciendas = {
+			picture = MEX_haciendas
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.3
+				political_power_gain = 0.1
+				war_support_factor = -0.3
+				conscription_factor = -0.1
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.2
+			}
+		}		
+	}
+}

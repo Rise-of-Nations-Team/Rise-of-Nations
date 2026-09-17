@@ -1,0 +1,142 @@
+# Shares of the partition of North America handed to the other powers,
+# see DNC_Spain.13
+
+RON_partition_usa_with_spain = {
+	if = {
+		limit = { country_exists = SPR }
+		hidden_effect = {
+			277 = { add_core_of = VRS }
+			474 = { add_core_of = VRS }
+			475 = { add_core_of = VRS }
+			476 = { add_core_of = VRS }
+			477 = { add_core_of = VRS }
+			478 = { add_core_of = VRS }
+			479 = { add_core_of = VRS }
+			480 = { add_core_of = VRS }
+			481 = { add_core_of = VRS }
+			482 = { add_core_of = VRS }
+			483 = { add_core_of = VRS }
+			484 = { add_core_of = VRS }
+			485 = { add_core_of = VRS }
+			375 = { add_core_of = VRS }
+			376 = { add_core_of = VRS }
+			377 = { add_core_of = VRS }
+			378 = { add_core_of = VRS }
+			379 = { add_core_of = VRS }
+			380 = { add_core_of = VRS }
+			313 = { add_core_of = VRS }
+			314 = { add_core_of = VRS }
+			312 = { add_core_of = VRS }
+			317 = { add_core_of = VRS }
+			316 = { add_core_of = VRS }
+			311 = { add_core_of = VRS }
+			382 = { add_core_of = VRS }
+			850 = { add_core_of = VRS }
+			851 = { add_core_of = VRS }
+			852 = { add_core_of = VRS }
+			853 = { add_core_of = VRS }
+			854 = { add_core_of = VRS }
+			855 = { add_core_of = VRS }
+			1064 = { add_core_of = VRS }
+			every_state = { limit = { is_core_of = MEX } add_core_of = VRS }
+			every_state = { limit = { is_core_of = GUA } add_core_of = VRS }
+			every_state = { limit = { is_core_of = ELS } add_core_of = VRS }
+			every_state = { limit = { is_core_of = HON } add_core_of = VRS }
+			every_state = { limit = { is_core_of = NIC } add_core_of = VRS }
+			every_state = { limit = { is_core_of = COS } add_core_of = VRS }
+		}
+		every_state = { limit = { is_core_of = VRS is_core_of = USA } SPR = { transfer_state = PREV } }
+		every_state = { limit = { is_core_of = CUB is_owned_by = USA } SPR = { transfer_state = PREV } }
+		every_state = { limit = { is_core_of = PHI is_owned_by = USA } SPR = { transfer_state = PREV } }
+		if = { limit = { CUB = { is_subject_of = USA } } SPR = { puppet = CUB } }
+		if = { limit = { PHI = { is_subject_of = USA } } SPR = { puppet = PHI } }
+	}
+}
+
+RON_partition_usa_with_england = {
+	if = {
+		limit = { country_exists = ENG }
+		hidden_effect = {
+			357 = { add_core_of = THI }
+			358 = { add_core_of = THI }
+			359 = { add_core_of = THI }
+			360 = { add_core_of = THI }
+			361 = { add_core_of = THI }
+			362 = { add_core_of = THI }
+			363 = { add_core_of = THI }
+			364 = { add_core_of = THI }
+			365 = { add_core_of = THI }
+			1135 = { add_core_of = THI }
+			836 = { add_core_of = THI }
+			837 = { add_core_of = THI }
+			838 = { add_core_of = THI }
+			839 = { add_core_of = THI }
+			840 = { add_core_of = THI }
+			841 = { add_core_of = THI }
+			843 = { add_core_of = THI }
+			844 = { add_core_of = THI }
+			366 = { add_core_of = THI }
+			370 = { add_core_of = THI }
+			367 = { add_core_of = THI }
+			368 = { add_core_of = THI }
+			369 = { add_core_of = THI }
+			395 = { add_core_of = THI }
+			396 = { add_core_of = THI }
+			261 = { add_core_of = THI }
+			393 = { add_core_of = THI }
+			394 = { add_core_of = THI }
+			856 = { add_core_of = THI }
+			857 = { add_core_of = THI }
+			385 = { add_core_of = CAN }
+			386 = { add_core_of = CAN }
+			387 = { add_core_of = CAN }
+		}
+		every_state = { limit = { is_core_of = THI is_core_of = USA } ENG = { transfer_state = PREV } }
+		ENG = { transfer_state = 385 }
+		ENG = { transfer_state = 386 }
+		ENG = { transfer_state = 387 }
+	}
+}
+
+RON_partition_usa_with_france = {
+	if = {
+		limit = { country_exists = FRA }
+		hidden_effect = {
+			371 = { add_core_of = FRL }
+			372 = { add_core_of = FRL }
+			373 = { add_core_of = FRL }
+			374 = { add_core_of = FRL }
+			381 = { add_core_of = FRL }
+			383 = { add_core_of = FRL }
+			384 = { add_core_of = FRL }
+			388 = { add_core_of = FRL }
+			389 = { add_core_of = FRL }
+			390 = { add_core_of = FRL }
+			391 = { add_core_of = FRL }
+			392 = { add_core_of = FRL }
+			846 = { add_core_of = FRL }
+			847 = { add_core_of = FRL }
+			848 = { add_core_of = FRL }
+			849 = { add_core_of = FRL }
+			858 = { add_core_of = FRL }
+			859 = { add_core_of = FRL }
+			1065 = { add_core_of = FRL }
+			845 = { add_core_of = FRL }
+		}
+		every_state = { limit = { is_core_of = FRL is_core_of = USA } FRA = { transfer_state = PREV } }
+	}
+}
+
+RON_partition_usa_with_russia = {
+	hidden_effect = {
+		463 = { add_core_of = RUA }
+	}
+	if = {
+		limit = { country_exists = RUS }
+		every_state = { limit = { is_core_of = RUA is_core_of = USA } RUS = { transfer_state = PREV } }
+	}
+	else_if = {
+		limit = { country_exists = SOV }
+		every_state = { limit = { is_core_of = RUA is_core_of = USA } SOV = { transfer_state = PREV } }
+	}
+}

@@ -17,72 +17,72 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_literacy"
 		texturefile = "gfx/interface/ideas/generic/idea_literacy.dds"
-	}		
+	}
 
 	spriteType = {
 		name = "GFX_idea_generic_bad_military"
 		texturefile = "gfx/interface/ideas/generic/bad_military.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_crowd"
 		texturefile = "gfx/interface/ideas/generic/generic_crowd.dds"
-	}			
+	}
 
 	spriteType = {
 		name = "GFX_idea_generic_unindustrialized_society"
 		texturefile = "gfx/interface/ideas/generic/generic_unindustrialized_society.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_generic_outdated_agrarian"
 		texturefile = "gfx/interface/ideas/generic/outdated_agrarian.dds"
-	}		
+	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_economy_bad"
 		texturefile = "gfx/interface/ideas/generic/economy_bad.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_economy_good"
 		texturefile = "gfx/interface/ideas/generic/economy_good.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_economy_blooming"
 		texturefile = "gfx/interface/ideas/generic/economy_blooming.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_economy_miracle"
 		texturefile = "gfx/interface/ideas/generic/economy_miracle.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_generic_crowd"
 		texturefile = "gfx/interface/ideas/generic/generic_crowd.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_generic_military_junta"
 		texturefile = "gfx/interface/ideas/generic/military_junta.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_generic_society_agrarian"
 		texturefile = "gfx/interface/ideas/generic/society_agrarian.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_society_basic_industry"
 		texturefile = "gfx/interface/ideas/generic/society_basic_industry.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_society_heavy_industry"
 		texturefile = "gfx/interface/ideas/generic/society_heavy_industry.dds"
-	}		
+	}
 
 	#####################################
 	### RISE OF NATIONS COUNTRY ICONS ###
@@ -115,12 +115,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ENG_boer_offensive"
 		texturefile = "gfx/interface/ideas/eng/ENG_idea_boer_offensive.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_ENG_pax_britannica"
 		texturefile = "gfx/interface/ideas/eng/ENG_idea_pax_britannica.dds"
-	}		
+	}
 
 	spriteType = {
 		name = "GFX_idea_ENG_splendid_isolation"
@@ -135,23 +135,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ENG_overextended_empire"
 		texturefile = "gfx/interface/ideas/eng/ENG_idea_overextended_empire.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_ENG_victorian_era"
 		texturefile = "gfx/interface/ideas/eng/ENG_idea_victorian_era.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_ENG_queen_victoria"
 		texturefile = "gfx/interface/ideas/eng/ENG_idea_victoria.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_ENG_edward_vii"
 		texturefile = "gfx/interface/ideas/eng/ENG_idea_edward_vii.dds"
-	}		
-	
+	}
+
+	spriteType = {
+		name = "GFX_idea_ENG_naval_arms_race"
+		texturefile = "gfx/interface/ideas/eng/ENG_naval_arms_race.dds"
+	}
+
 	# FRA - FRANCE #
 
 	spriteType = {
@@ -196,48 +201,61 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ger/GER_Well_Connected_Railways.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_GER_naval_arms_race"
+		texturefile = "gfx/interface/ideas/ger/GER_naval_arms_race.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_idea_advisors"
+		texturefile = "gfx/interface/ideas/ger/GER_idea_advisors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_idea_central_powers"
+		texturefile = "gfx/interface/ideas/ger/GER_idea_central_powers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_idea_gross_kaiserreich"
+		texturefile = "gfx/interface/ideas/ger/GER_idea_gross_kaiserreich.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_idea_OHL"
+		texturefile = "gfx/interface/ideas/ger/GER_idea_OHL.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_idea_prussian_militarism"
+		texturefile = "gfx/interface/ideas/ger/GER_idea_prussian_militarism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_idea_wilhelm_iii_ww1"
+		texturefile = "gfx/interface/ideas/ger/GER_idea_wilhelm_iii_ww1.dds"
+	}
+
 	# ITA - ITALY #
 
 	spriteType = {
 		name = "GFX_idea_ITA_house_of_savoy"
 		texturefile = "gfx/interface/ideas/ita/idea_ITA_house_of_savoy.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_ITA_umberto"
 		texturefile = "gfx/interface/ideas/ita/idea_ITA_umberto.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_ITA_victor_emmanuel_ww1"
 		texturefile = "gfx/interface/ideas/ita/idea_ITA_victor_emmanuel_ww1.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_ITA_victor_emmanuel_ww2"
 		texturefile = "gfx/interface/ideas/ita/idea_ITA_victor_emmanuel_ww2.dds"
-	}		
-
-	# KOR - KOREA #
-
-	spriteType = {
-		name = "GFX_idea_kor_great_game"
-		texturefile = "gfx/interface/ideas/kor/kor_great_game.dds"
-	}	
-
-	spriteType = {
-		name = "GFX_idea_kor_gwangmu_reform"
-		texturefile = "gfx/interface/ideas/kor/kor_gwangmu_reform.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_idea_kor_independence_club"
-		texturefile = "gfx/interface/ideas/kor/kor_independence_club.dds"
-	}	
-
-	spriteType = {
-		name = "GFX_idea_kor_eight_provinces"
-		texturefile = "gfx/interface/ideas/kor/kor_eight_provinces.dds"
 	}
 
 	# JAP - JAPAN #
@@ -255,11 +273,51 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_JAP_developed_rail_network"
 		texturefile = "gfx/interface/ideas/jap/JAP_idea_developed_rail_network.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_JAP_wooden_constructions"
 		texturefile = "gfx/interface/ideas/jap/JAP_idea_wooden_constructions.dds"
+	}
+
+
+	# KOR - KOREA #
+
+	spriteType = {
+		name = "GFX_idea_kor_great_game"
+		texturefile = "gfx/interface/ideas/kor/kor_great_game.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kor_gwangmu_reform"
+		texturefile = "gfx/interface/ideas/kor/kor_gwangmu_reform.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kor_independence_club"
+		texturefile = "gfx/interface/ideas/kor/kor_independence_club.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kor_eight_provinces"
+		texturefile = "gfx/interface/ideas/kor/kor_eight_provinces.dds"
+	}
+
+	# MEX - MEXICO #
+
+	spriteType = {
+		name = "GFX_idea_unpopular_dictatorship_porfirio"
+		texturefile = "gfx/interface/ideas/mex/unpopular_dictatorship_porfirio.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_unpopular_dictatorship_victoriano"
+		texturefile = "gfx/interface/ideas/mex/unpopular_dictatorship_victoriano.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_MEX_haciendas"
+		texturefile = "gfx/interface/ideas/mex/MEX_haciendas.dds"
 	}	
 
 	# OTT - OTTOMANS #
@@ -331,24 +389,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_POR_casa_braganca"
 		texturefile = "gfx/interface/ideas/por/POR_idea_casa_braganca.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_POR_unstable_monarchy"
 		texturefile = "gfx/interface/ideas/por/POR_idea_unstable_monarchy.dds"
-	}		
+	}
 
 	spriteType = {
 		name = "GFX_idea_POR_poor_economy"
 		texturefile = "gfx/interface/ideas/por/POR_idea_poor_economy.dds"
-	}	
+	}
 
 	# RUS - RUSSIAN EMPIRE #
 
 	spriteType = {
 		name = "GFX_idea_RUS_french_dependency"
 		texturefile = "gfx/interface/ideas/rus/idea_RUS_french_dependency.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_RUS_fear_of_revolution"
@@ -368,19 +426,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_RUS_narodost_3"
 		texturefile = "gfx/interface/ideas/rus/RUS_narodost_3.dds"
-	}		
+	}
+
+	# SEO - SENUSSI ORDER #
+
+	spriteType = {
+		name = "GFX_idea_SEO_senussi_order"
+		texturefile = "gfx/interface/ideas/seo/senussi_order.dds"
+	}	
 
 	# SER - SERBIA #
 
 	spriteType = {
 		name = "GFX_idea_SER_legacy_of_serbo_bulgarian_war"
 		texturefile = "gfx/interface/ideas/ser/SER_idea_legacy_of_serbo_bulgarian_war.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_SER_unpopular_monarchy"
 		texturefile = "gfx/interface/ideas/ser/SER_idea_unpopular_monarchy.dds"
-	}	
+	}
 
 	# SPR - SPAIN #
 
@@ -392,7 +457,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SPR_regency_maria_christina"
 		texturefile = "gfx/interface/ideas/spr/SPR_regency_maria_christina.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_alfonso_xiii_1900"
@@ -419,57 +484,57 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_USA_pax_americana"
 		textureFile = "gfx/interface/ideas/usa/USA_pax_americana.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_fully_industrialized_society"
 		textureFile = "gfx/interface/ideas/usa/USA_idea_fully_industrialized_society.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_jim_crow_laws"
 		textureFile = "gfx/interface/ideas/usa/idea_usa_jim_crow.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_jim_crow_laws_worse"
 		textureFile = "gfx/interface/ideas/usa/idea_usa_jim_crow_bloody.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_scars_of_1865"
 		textureFile = "gfx/interface/ideas/usa/USA_idea_scars_of_1865.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_the_two_party_system"
 		textureFile = "gfx/interface/ideas/usa/USA_idea_the_two_party_system.dds"
-	}		
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_the_gold_standard"
 		textureFile = "gfx/interface/ideas/usa/USA_idea_the_gold_standard.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_gilded_age"
 		textureFile = "gfx/interface/ideas/usa/idea_usa_gilded_age.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_1900_election"
 		textureFile = "gfx/interface/ideas/usa/USA_idea_1900_us_election.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_american_imperialism"
 		textureFile = "gfx/interface/ideas/usa/USA_idea_american_imperialism.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_USA_corporate_primacy"
 		textureFile = "gfx/interface/ideas/usa/idea_usa_corporate_primacy.dds"
-	}	
+	}
 
 	# VEN - VENEZUELA #
 

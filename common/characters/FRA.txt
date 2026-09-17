@@ -3406,14 +3406,20 @@ characters={
 				date > 1918.1.1
 				date < 1949.1.1
 				NOT = {
-					has_country_leader = FRA_eugene_deloncle
+					has_country_leader = {
+						character = FRA_eugene_deloncle
+						ruling_only = yes
+					}
 				}
 			}
 			available = {
 				date > 1918.1.1
 				date < 1949.1.1
 				NOT = {
-					has_country_leader = FRA_eugene_deloncle
+					has_country_leader = {
+						character = FRA_eugene_deloncle
+						ruling_only = yes
+					}
 				}				
 			}
 			traits = { prince_of_terror }
@@ -3993,8 +3999,10 @@ characters={
 				date > 1928.1.1
 				date < 1949.1.1
 				NOT = {
-					has_country_leader = FRA_vincent_auriol
-					ruling_only = yes
+					has_country_leader = {
+						character = FRA_vincent_auriol
+						ruling_only = yes
+					}
 				}
 			}
 			available = {
@@ -4002,8 +4010,10 @@ characters={
 				date < 1949.1.1
 				has_completed_focus = FRA_support_blum
 				NOT = {
-					has_country_leader = FRA_vincent_auriol
-					ruling_only = yes
+					has_country_leader = {
+						character = FRA_vincent_auriol
+						ruling_only = yes
+					}
 				}				
 			}
 			traits = { silent_workhorse }

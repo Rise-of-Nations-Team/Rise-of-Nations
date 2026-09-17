@@ -1507,6 +1507,11 @@ GER_communism = {
 	color_ui = rgb { 175 20 60 }
 }
 
+GER_socialism = {
+	color = rgb { 77 27 13 }
+	color_ui = rgb { 77 27 13 }
+}
+
 GER_peoples_republic = {
 	color = rgb { 175 20 60 }
 	color_ui = rgb { 175 20 60 }
@@ -1520,6 +1525,49 @@ GER_german_socialist_union = {
 GER_greater_proletarian_german_state = {
 	color = rgb { 90 0 0 }
 	color_ui = rgb { 90 0 0 }
+}
+
+GER_kaiserreich_flag = {
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GER_kaiserreich_color = {
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GER_kaiserreich_1848 = {
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GER_kapp = {
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+GER_ruhr_revolt = {
+	color = rgb { 140 9 21 }
+	color_ui = rgb { 140 9 21 }
+}
+
+GER_HRE = {
+  color = rgb { 172 142 50 }
+	color_ui = rgb { 190 163 81 }
+}
+GER_HRY = {
+	color = rgb { 194 105 146 }
+	color_ui = rgb { 194 105 146 }
+}
+
+GER_confederation = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
+
+GER_suddeutscher_bund = {
+	color = rgb { 139 169 181 }
+	color_ui = rgb { 139 169 181 }
 }
 
 BEL_flanders = {

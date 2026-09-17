@@ -1,0 +1,59 @@
+RON_universal_setup = yes
+  
+capital = 608
+oob = "ANH_1919"
+
+add_ideas = {
+	#PRC_government_corruption
+	CHI_ineffective_bureaucracy_warlord
+}
+
+set_convoys = 5
+set_country_flag = chinese_warlord
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 20
+	neutrality = 80
+}
+1900.1.1 = {
+  recruit_character = ANH_liu_kunyi
+  promote_character = ANH_liu_kunyi
+  recruit_character = ANH_duan_qirui
+}
+
+1919.1.1 = {
+	if = {
+		limit = {
+			has_start_date > 1918.12.31
+			has_start_date < 1933.01.01
+		}
+		declare_war_on = {
+			target = MON
+			type = annex_everything
+		}
+	}
+	add_ideas = boxer_protocols
+	add_ideas = boxer_protocols_visible
+	country_lock_all_division_template = yes
+	set_cosmetic_tag = ANH_CLIQUE
+}
+
+1933.1.1 = {
+	set_air_oob = "ANH_1936_air_bba"
+	country_lock_all_division_template = no
+	remove_ideas = boxer_protocols
+	remove_ideas = boxer_protocols_visible
+}
+
+1936.1.1 = {
+	set_air_oob = "ANH_1936_air_bba"
+	set_technology = {
+		infantry_weapons = 1
+	}
+}

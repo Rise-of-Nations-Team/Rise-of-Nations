@@ -1,9 +1,0 @@
-rubber_secure = {
-	any_allied_country = {
-		rubber > 100
-	}
-}
-
-dont_need_any_more_rubber = {
-	rubber > 150
-}

@@ -1,0 +1,18 @@
+defined_text = {
+	name = OHL_command_name
+	text = {
+		trigger = {
+			has_country_flag = OHL_command_political_dictatorship
+		}
+		localization_key = GER_OHL_political_dictatorship
+	}	
+	text = {	
+		trigger = {
+			has_country_flag = OHL_command_dictatorship
+		}
+		localization_key = GER_OHL_dictatoship
+	}
+	text = {
+		localization_key = GER_OHL_normal_name
+	}
+}

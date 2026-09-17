@@ -1,0 +1,4 @@
+indian_integration_decision_cat = {
+	icon = generic_political_actions
+	priority = 100
+}

@@ -1,0 +1,162 @@
+GER_decision_puppet_kingdoms = {
+	icon = generic_monarchism
+	allowed = {
+		tag = GER
+	}
+	priority = 83
+}
+GER_decision_joint_staff = {
+	icon = army_reform
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		NOT = {
+			has_country_flag = great_war_loser
+		}
+	}
+	priority = 90
+}
+GER_decision_military_advisers = {
+	icon = military_operation
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		NOT = {
+			has_country_flag = great_war_loser
+		}
+	}
+	priority = 80
+}
+GER_decision_federal_army = {
+	icon = generic_political_action
+	allowed = {
+		tag = GER
+	}
+	priority = 75
+}
+GER_decision_abwehr_operations = {
+	icon = border_conflicts
+	allowed = {
+		tag = GER
+	}
+	priority = 70
+}
+GER_decison_colonial_exploitation = {
+	icon = generic_monarchism
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		NOT = {
+			has_country_flag = great_war_loser
+		}
+	}
+	priority = 60
+}
+GER_decision_central_powers_conference = {
+	icon = generic_monarchism
+	picture = GFX_decision_cat_picture_SWI_federal_council
+	priority = 85
+	visible = {
+		NOT = {
+			has_country_flag = great_war_loser
+		}
+	}
+}
+GER_agadir_crisis = {
+	scripted_gui = diplomatic_crisis_decision_tab
+	icon = eng_move_to_secure_the_dominions
+	picture = GFX_decision_cat_picture_gateway_to_europe
+	allowed = {
+		tag = GER
+	}
+	visible = { has_global_flag = agadir_crisis }
+	priority = 500
+}
+GER_afghan_expeditions = { 
+    icon = eng_move_to_secure_the_dominions
+	allowed = {
+	}
+	visible = {
+		NOT = {
+			has_country_flag = great_war_loser
+		}
+	}
+	priority = 75
+}
+GER_decision_paying_reparations = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_generic_mefo_bills
+	priority = 85
+}
+GER_interwar_reichspakt_category = {
+	icon = generic_monarchism
+	allowed = {
+	}
+	visible = {
+		has_country_flag = great_war_winner
+		is_faction_leader = yes
+	}
+	priority = 100
+}
+GER_prussian_blue_category = {
+	icon = spr_the_seeds_of_revolution
+	allowed = {
+	}
+	visible = {
+		has_global_flag = prussian_blue
+	}
+	priority = 100
+}
+GER_fortifications = {
+	icon = decision_generic_fort
+	picture = GFX_decision_cat_picture_fra_fortifications
+	allowed = {
+		original_tag = GER
+	}
+
+	priority = 101
+
+	visible = {
+		has_war_with = FRA
+		NOT = { has_global_flag = interbellum }
+	}
+}
+GER_hre_cat = {
+	icon = generic_monarchism
+	picture = GFX_decision_cat_generic_hre
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		has_global_flag = holy_roman_empire
+		has_cosmetic_tag = GER_HRE
+	}
+	priority = 100
+}
+GER_german_east_asia_cat = {
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	picture = GFX_decision_cat_picture_generic_shipbuilding
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		has_country_flag = great_war_winner
+	}
+	priority = 83
+}
+
+GER_military_constructions = {
+	icon = GFX_decision_category_generic_arms_trade
+	allowed = { 
+		original_tag = GER
+	}
+	visible = {
+		NOT = {
+			has_global_flag = interbellum
+		}
+	}
+	priority = 998
+}

@@ -1,0 +1,1079 @@
+prussian_influence_effect = {
+	if = {
+		limit = {
+			tag = GER
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_1
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_1
+					add_idea = GER_idea_prussian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_2
+					add_idea = GER_idea_prussian_influence_3
+				}
+				if = {
+					limit = {
+						NOT = { is_in_faction_with = PREV }
+					}
+					PREV = {
+						if = {
+							limit = {
+								is_in_faction = no
+							}
+							create_faction = GER_norddeutscher_bund
+						}
+						add_to_faction = PREV
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_idea = GER_idea_bavarian_influence_1
+						has_idea = GER_idea_russian_influence_1
+						has_idea = GER_idea_french_influence_1
+						has_idea = GER_idea_british_influence_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = GER_idea_russian_influence_1
+					}
+					RUS = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = GER_idea_french_influence_1
+					}
+					FRA = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = GER_idea_british_influence_1
+					}
+					ENG = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				hidden_effect = {
+					remove_ideas = GER_idea_bavarian_influence_1
+					remove_ideas = GER_idea_russian_influence_1
+					remove_ideas = GER_idea_french_influence_1
+					remove_ideas = GER_idea_british_influence_1
+				}
+				add_ideas = GER_idea_prussian_influence_1
+				every_other_country = {
+					limit = {
+						has_subject = PREV
+					}
+					end_puppet = PREV
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						NOT = {
+							is_in_faction_with = PREV
+						}
+					}
+					leave_faction = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_2
+					add_idea = GER_idea_bavarian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_2
+					add_idea = GER_idea_russian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_2
+					add_idea = GER_idea_french_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_2
+					add_idea = GER_idea_british_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_3
+					add_idea = GER_idea_bavarian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_3
+					add_idea = GER_idea_russian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_3
+					add_idea = GER_idea_french_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_3
+					add_idea = GER_idea_british_influence_2
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			tag = BAY
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_1
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_1
+					add_idea = GER_idea_bavarian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_2
+					add_idea = GER_idea_bavarian_influence_3
+				}
+				if = {
+					limit = {
+						NOT = { is_in_faction_with = PREV }
+					}
+					PREV = {
+						if = {
+							limit = {
+								is_in_faction = no
+							}
+							create_faction = BAY_germany_communism
+						}
+						add_to_faction = PREV
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_idea = GER_idea_prussian_influence_1
+						has_idea = GER_idea_russian_influence_1
+						has_idea = GER_idea_french_influence_1
+						has_idea = GER_idea_british_influence_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = GER_idea_russian_influence_1
+					}
+					RUS = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = GER_idea_french_influence_1
+					}
+					FRA = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = GER_idea_british_influence_1
+					}
+					ENG = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				hidden_effect = {
+					remove_ideas = GER_idea_prussian_influence_1
+					remove_ideas = GER_idea_russian_influence_1
+					remove_ideas = GER_idea_french_influence_1
+					remove_ideas = GER_idea_british_influence_1
+				}
+				add_ideas = GER_idea_bavarian_influence_1
+				every_other_country = {
+					limit = {
+						has_subject = PREV
+					}
+					end_puppet = PREV
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						NOT = {
+							is_in_faction_with = PREV
+						}
+					}
+					leave_faction = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_2
+					add_idea = GER_idea_prussian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_2
+					add_idea = GER_idea_russian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_2
+					add_idea = GER_idea_french_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_2
+					add_idea = GER_idea_british_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_3
+					add_idea = GER_idea_prussian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_3
+					add_idea = GER_idea_russian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_3
+					add_idea = GER_idea_french_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_3
+					add_idea = GER_idea_british_influence_2
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			tag = RUS
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_1
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_1
+					add_idea = GER_idea_russian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_2
+					add_idea = GER_idea_russian_influence_3
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_in_faction_with = PREV
+							is_subject_of = PREV
+						}
+					}
+					PREV = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = yes
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = yes
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = yes
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_idea = GER_idea_prussian_influence_1
+						has_idea = GER_idea_bavarian_influence_1
+						has_idea = GER_idea_french_influence_1
+						has_idea = GER_idea_british_influence_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = GER_idea_french_influence_1
+					}
+					FRA = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = GER_idea_british_influence_1
+					}
+					ENG = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				hidden_effect = {
+					remove_ideas = GER_idea_prussian_influence_1
+					remove_ideas = GER_idea_bavarian_influence_1
+					remove_ideas = GER_idea_french_influence_1
+					remove_ideas = GER_idea_british_influence_1
+				}
+				add_ideas = GER_idea_russian_influence_1
+				every_other_country = {
+					limit = {
+						has_subject = PREV
+					}
+					end_puppet = PREV
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						NOT = {
+							is_in_faction_with = PREV
+						}
+					}
+					leave_faction = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_2
+					add_idea = GER_idea_prussian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_2
+					add_idea = GER_idea_bavarian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_2
+					add_idea = GER_idea_french_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_2
+					add_idea = GER_idea_british_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_3
+					add_idea = GER_idea_prussian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_3
+					add_idea = GER_idea_bavarian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_3
+					add_idea = GER_idea_french_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_3
+					add_idea = GER_idea_british_influence_2
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			tag = FRA
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_idea = GER_idea_french_influence_1
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_1
+					add_idea = GER_idea_french_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_2
+					add_idea = GER_idea_french_influence_3
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_in_faction_with = PREV
+							is_subject_of = PREV
+						}
+					}
+					PREV = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = yes
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = yes
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = yes
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_idea = GER_idea_prussian_influence_1
+						has_idea = GER_idea_bavarian_influence_1
+						has_idea = GER_idea_russian_influence_1
+						has_idea = GER_idea_british_influence_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = GER_idea_russian_influence_1
+					}
+					RUS = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = GER_idea_british_influence_1
+					}
+					ENG = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				hidden_effect = {
+					remove_ideas = GER_idea_prussian_influence_1
+					remove_ideas = GER_idea_bavarian_influence_1
+					remove_ideas = GER_idea_russian_influence_1
+					remove_ideas = GER_idea_british_influence_1
+				}
+				add_ideas = GER_idea_french_influence_1
+				every_other_country = {
+					limit = {
+						has_subject = PREV
+					}
+					end_puppet = PREV
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						NOT = {
+							is_in_faction_with = PREV
+						}
+					}
+					leave_faction = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_2
+					add_idea = GER_idea_prussian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_2
+					add_idea = GER_idea_bavarian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_2
+					add_idea = GER_idea_russian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_2
+					add_idea = GER_idea_british_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_3
+					add_idea = GER_idea_prussian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_3
+					add_idea = GER_idea_bavarian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_3
+					add_idea = GER_idea_russian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_3
+					add_idea = GER_idea_british_influence_2
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			tag = ENG
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_idea = GER_idea_british_influence_1
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_1
+					add_idea = GER_idea_british_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_british_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_british_influence_2
+					add_idea = GER_idea_british_influence_3
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_in_faction_with = PREV
+							is_subject_of = PREV
+						}
+					}
+					PREV = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = yes
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = yes
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = yes
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_idea = GER_idea_prussian_influence_1
+						has_idea = GER_idea_bavarian_influence_1
+						has_idea = GER_idea_russian_influence_1
+						has_idea = GER_idea_french_influence_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = GER_idea_russian_influence_1
+					}
+					RUS = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_idea = GER_idea_french_influence_1
+					}
+					FRA = {
+						diplomatic_relation = {
+							country = PREV
+							relation = guarantee
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+				hidden_effect = {
+					remove_ideas = GER_idea_prussian_influence_1
+					remove_ideas = GER_idea_bavarian_influence_1
+					remove_ideas = GER_idea_russian_influence_1
+					remove_ideas = GER_idea_french_influence_1
+				}
+				add_ideas = GER_idea_british_influence_1
+				every_other_country = {
+					limit = {
+						has_subject = PREV
+					}
+					end_puppet = PREV
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						NOT = {
+							is_in_faction_with = PREV
+						}
+					}
+					leave_faction = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_2
+					add_idea = GER_idea_prussian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_2
+					add_idea = GER_idea_bavarian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_2
+					add_idea = GER_idea_russian_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_2
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_2
+					add_idea = GER_idea_french_influence_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_prussian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_prussian_influence_3
+					add_idea = GER_idea_prussian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_bavarian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_bavarian_influence_3
+					add_idea = GER_idea_bavarian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_russian_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_russian_influence_3
+					add_idea = GER_idea_russian_influence_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_idea_french_influence_3
+				}
+				swap_ideas = {
+					remove_idea = GER_idea_french_influence_3
+					add_idea = GER_idea_french_influence_2
+				}
+			}
+		}
+	}
+}
+
+GER_improve_quantitative_war_planning = {
+	if = {
+		limit = {
+			has_idea = quantitative_war_planning4
+		}
+		add_political_power = 120
+	}
+	if = {
+		limit = {
+			has_idea = quantitative_war_planning3
+		}
+		swap_ideas = {
+			add_idea = quantitative_war_planning4
+			remove_idea = quantitative_war_planning3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = quantitative_war_planning2
+		}
+		swap_ideas = {
+			add_idea = quantitative_war_planning3
+			remove_idea = quantitative_war_planning2
+		}
+	}
+	if = {
+		limit = {
+			has_idea = quantitative_war_planning
+		}
+		swap_ideas = {
+			add_idea = quantitative_war_planning2
+			remove_idea = quantitative_war_planning
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = quantitative_war_planning
+				has_idea = quantitative_war_planning2
+				has_idea = quantitative_war_planning3
+				has_idea = quantitative_war_planning4
+			}
+		}
+		add_ideas = quantitative_war_planning
+	}
+}
+
+GER_improve_firepower_doctrine = {
+	if = {
+		limit = {
+			has_idea = FRA_firepower
+		}
+		swap_ideas = {
+			add_idea = FRA_firepower2bis
+			remove_idea = FRA_firepower
+		}
+		else_if = {
+			limit = {
+				NOT = { has_idea = FRA_firepower2bis }
+			}        
+			add_ideas = FRA_firepower
+		}
+	}
+}

@@ -1,4 +1,21 @@
 ﻿l_english:
+ idea_armistice: "Armistice" #TODO Replace with below
+ idea_armistice_desc_generic: "[ROOT.GetNameDefCap] has signed an armistice and cannot resume war." #TODO Replace with below
+ #idea_armistice: "[Root.GetIdeaArmisticeName]"
+ #idea_frankfurt_armistice: "Armistice of Frankfurt"
+ #idea_compiegne_armistice: "Armistice of Compiègne"
+ #idea_rus_ger_armistice: "Russo-German Armistice"
+ #idea_armistice_romania: "Treaty of Bucharest"
+ #idea_armistice_mudros: "Armistice of Mudros"
+ #idea_armistice_generic: "Armistice"
+ #idea_armistice_desc: "[Root.GetIdeaArmisticeDesc]"
+ #idea_armistice_desc_ww1: "After the Great War, armistice countries cannot resume bloody wars."
+ #idea_armistice_desc_generic: "[ROOT.GetNameDefCap] has signed an armistice and cannot resume war."
+ idea_victors_of_wwi: "Victors of the Great War"
+ idea_victors_of_wwi_desc: "Having emerged victorious from the Great War, the army has developed a dangerously complacent attitude which causes strategic developments to come slowly and with some reluctance."
+ idea_great_depression: "Great Depression"
+ idea_naval_arms_race: "Naval Arms Race"
+ idea_naval_arms_race_desc: "More dreadnoughts! Bigger guns!"
 ##Unified RON IDEAS##
  RI_commies_rise: "Communism on the Rise"
  RI_commie_army: "Communist Sympathisers in the Military"

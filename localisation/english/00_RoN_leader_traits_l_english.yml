@@ -536,6 +536,13 @@
  ula_trait: "Ukrainian Liberation Army"
  ula_trait_desc: "This commander is a member of the Ukrainian Liberation Army."
 
+ #BELGIUM
+ BEL_kings_personal_friend: "King's Personal Friend"
+ 
+ #HAWAII
+
+  pro_westernization: "Pro-Westernization"
+
  #INDONESIA
 
  third_world_hero: "Third World Hero"
@@ -546,6 +553,27 @@
  nationalist_engineer: "Nationalist Engineer"
  leading_neurologist: "Leading Neurologist"
  wealthy_rubber_farmer: "Wealthy Rubber Farmer"
+
+ #OTTOMAN EMPIRE
+
+ OTT_abdul_hamid_ii_caliph: "Hilâfet Makamı"
+ OTT_pragmatist_sultan: "Pragamtist Sultan"
+
+ #PORTUGAL
+
+ playboy_monarch: "Playboy Monarch"
+
+ #SPAIN
+
+ carlist_old_guard: "Carlist Old Guard"
+
+ #SOUTH AFRICAN REPUBLIC
+
+ sre_oom_paul: "Oom Paul"
+
+ #SWEDEN
+
+  SWE_conservatist: "Conservatist"
 
  #UNITED STATES
 
@@ -562,20 +590,4 @@
  focus_on_public_service: "Public Service First"
  usa_expansionist_policies: "Expansionist Policies"
 
- #SPAIN
 
- carlist_old_guard: "Carlist Old Guard"
-
- #OTTOMAN EMPIRE
-
- OTT_pragmatist_sultan: "Pragamtist Sultan"
-
- #HAWAII
-
-  pro_westernization: "Pro-Westernization"
-
- #SOUTH AFRICAN REPUBLIC
- sre_oom_paul: "Oom Paul"
-
- #SWEDEN
-  SWE_conservatist: "Conservatist"

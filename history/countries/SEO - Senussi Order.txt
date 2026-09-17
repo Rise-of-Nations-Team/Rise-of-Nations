@@ -3,7 +3,24 @@ capital = 277
 
 oob = "SEN_1914"
 
+set_research_slots = 1
+set_stability = 0.3
+set_war_support = 0.6
+
 set_convoys = 45
+
+give_military_access = OTT
+
+add_ideas = {
+    limited_exports
+    extensive_conscription
+	SEO_Senussi_Order
+}
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	horses = 1
+}
 
 set_politics = {
 	ruling_party = islamism

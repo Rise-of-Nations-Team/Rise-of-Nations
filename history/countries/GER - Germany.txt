@@ -5,26 +5,9 @@ capital = 1105
 oob = "GER_1900"
 
 set_fuel_ratio = 0.8
-
-if = {
-	limit = {
-		has_start_date < 1919.01.01
-	}
-	add_ideas = {
-		military_tradition2
-		GER_ww1_North_German_Confederation
-		ww1_Scramble_for_Africa
-		DNC_naval_arms_race
-		#GER_bloated_naval_budget1
-		#GER_failed_kultur_kampf
-		#WW1_general_staff
-		#GER_german_colonies
-		#GER_colony_cost1
-		GER_Prussian_Dominance
-		GER_Well_Connected_Railways
-		GER_Small_Empire
-	}
-}
+set_research_slots = 4
+set_stability = 0.6
+set_war_support = 0.6
 
 if = {
 	limit = {
@@ -34,26 +17,77 @@ if = {
 }
 
 add_ideas = {
-	foreign_warmonger
-	partial_economic_mobilisation
-	limited_exports
-	limited_conscription
-	press_state
-	tax_high
-	education_budget5
-	health_budget5
-	age_18
-	age_35
-	train_high
-	officer_train_elite
-	tariffs_high
-	army_budget4
-	airforce_budget3
-	navy_budget5
-	police_budget5
-	industry_budget4
-	engineering_budget4
-	infrastructure_budget4
+	ww1_Scramble_for_Africa
+	DNC_naval_arms_race
+	GER_bloated_naval_budget1
+	GER_failed_kultur_kampf
+	GER_german_colonies
+	GER_colony_cost1
+	GER_Prussian_Dominance
+	GER_Well_Connected_Railways
+	GER_Small_Empire
+}
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	early_infantry_weapons_1900 = 1
+	RON_Support_Innovations = 1	
+	marines = 1
+	jungletroops = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	WW1_tech_engineers = 1
+	sniper_1900 = 1
+	basic_train = 1
+	steam_train_1 = 1
+	armored_train_0 = 1
+	rail_infrastructure_0 = 1
+	horses = 1
+	ww1_motorised_infantry = 1
+	RON_Trained_Horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+	RON_Early_Machine_Tools = 1
+	RON_Early_Production = 1
+	RON_Early_Construction = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_torpedo = 1
+			mtg_ww1_destroyer1 = 1
+			early_ship_hull_dreadnought = 1
+			early_ship_hull_submarine_ww1 = 1
+			mtg_transport = 1
+		}
+	else = {
+		set_technology = {
+			ww1_battleship0 = 1
+			ww1_battleship1 = 1
+			ww1_heavy_cruiser0 = 1
+			ww1_light_cruiser0 = 1
+			ww1_destroyer0 = 1
+			ww1_destroyer1 = 1
+			ww1_submarine0 = 1
+			ww1_moduleMTG_mines = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_military_balloons = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
 }
 
 set_politics = {
@@ -68,27 +102,14 @@ set_popularities = {
 	communism = 9
 	neutrality = 64
 }
+
 recruit_character = GER_wilhelm_ii
+recruit_character = GER_wilhelm_iii 
+recruit_character = GER_wilhelm_ernst
 
 recruit_character = GER_august_bebel #democratic 
-GER_august_bebel = {
-	promote_character = {
-		Ideology = socialism
-	}
-}
 recruit_character = GER_karl_liebknecht #communism
-GER_karl_liebknecht = {
-	promote_character = {
-		Ideology = marxism
-	}
-}
-
 recruit_character = GER_erich_ludendorff #fascism
-GER_erich_ludendorff = {
-	promote_character = {
-		Ideology = ultranationalism
-	}
-}
 
 1900.1.1 = {
 	#set_naval_oob = "GER_1900_naval"
@@ -96,7 +117,6 @@ GER_erich_ludendorff = {
 	recruit_character = GER_general_council #democratic
 	recruit_character = GER_ernst_thalmann
 	recruit_character = GER_wolfgang_kapp #fascism
-	recruit_character = GER_wilhelm_iii 
 	recruit_character = GER_paul_von_hindenburg #democracy
 	recruit_character = GER_adolf_hitler #fascism
 	recruit_character = GER_otto_strasser_win #strasserism
@@ -109,8 +129,28 @@ GER_erich_ludendorff = {
 	recruit_character = GER_hjalmar_schacht
 	recruit_character = GER_konstantin_von_neurath
 	recruit_character = GER_alfred_hugenberg
+	recruit_character = GER_arthur_zimmermann
+	recruit_character = GER_friedrich_von_moltke
+	recruit_character = GER_richard_von_kuhlmann
+	recruit_character = GER_karl_von_luxburg
+	recruit_character = GER_paul_wolff_metternich
+	recruit_character = GER_clemens_von_delbruck
+	recruit_character = GER_franz_von_reichenau
+	recruit_character = GER_gottlieb_von_jagow
+	recruit_character = GER_karl_helfferich
+	recruit_character = GER_max_wallraf
+	recruit_character = GER_friedrich_von_moltke
+	recruit_character = GER_johann_von_dallwitz
+	recruit_character = GER_friedrich_wilhelm_von_loebell
+	recruit_character = GER_wilhelm_arnold_drews
+	recruit_character = GER_tilo_von_wilmowsky	
+	recruit_character = GER_rudolf_havenstein
+	recruit_character = GER_hermann_kuhn
+	recruit_character = GER_hermann_muller
+	recruit_character = GER_josias_von_heeringen
 
 	#Generals
+	recruit_character = GER_friedrich_wilhelm
 	recruit_character = GER_franz_ritter_von_epp	
 	recruit_character = GER_moritz_von_bissing
 	recruit_character = GER_hans_von_seeckt
@@ -137,12 +177,21 @@ GER_erich_ludendorff = {
 	recruit_character = GER_fritz_von_below	
 	recruit_character = GER_alfred_von_schlieffen
 	recruit_character = GER_walther_von_luttwitz
-	recruit_character = GER_erich_von_gündell
+	recruit_character = GER_erich_von_gundell
 	recruit_character = GER_philipp_von_wurttemberg		
 	recruit_character = GER_colmar_von_der_goltz
 	recruit_character = GER_friedrich_von_bernhardi
 	recruit_character = GER_bruno_von_mudra
-	recruit_character = GER_alfred_von_kühne
+	recruit_character = GER_alfred_von_kuhne
+	recruit_character = GER_walter_von_eberhardt
+	recruit_character = GER_georg_von_der_marwitz	
+	recruit_character = GER_karl_ludwig_delsa	
+	recruit_character = GER_kurt_von_dem_borne
+	recruit_character = GER_maximilian_von_prittwitz
+	recruit_character = GER_max_von_gallwitz
+	recruit_character = GER_arnold_lequis	
+	recruit_character = GER_carl_eduard_von_sachsen_coburg_und_gotha
+
 
 	#Admirals
 	recruit_character = GER_maximilian_von_spee
@@ -155,6 +204,9 @@ GER_erich_ludendorff = {
 	recruit_character = GER_reinhard_scheer
 	recruit_character = GER_friedrich_von_baudissin	
 	recruit_character = GER_albert_wilhelm_heinrich
+	recruit_character = GER_guido_von_usedom
+	recruit_character = GER_eduard_von_capelle
+	recruit_character = GER_peter_strasser			
 
 	#Scientists
 	recruit_character = GER_ferdinand_porsche
@@ -237,16 +289,6 @@ GER_erich_ludendorff = {
 
 		}
 	}
-
-	set_portraits = {
-		character = GER_august_von_mackensen
-		civilian = {
-			large = "gfx/leaders/GER/WW1/FM-August_von_Mackensen.dds"
-		}
-		army = {
-			large = "gfx/leaders/GER/WW1/FM-August_von_Mackensen.dds"
-		}		
-	} 		
 }
 
 1905.1.1 = {
@@ -262,13 +304,16 @@ GER_erich_ludendorff = {
 	}
 	if = {
 		limit = {
-			has_start_date < 1914.01.01
-
+			has_start_date < 1910.01.01
 		}
 		add_ideas = {
 			GER_dreadnought_race
 		}
 	}
+
+	#Throne Candidates
+	recruit_character = GER_eitel_friedrich
+	recruit_character = GER_adalbert_von_preussen
 
 	#Advisors
 	recruit_character = GER_theodor_heuss
@@ -340,6 +385,24 @@ GER_erich_ludendorff = {
 		ww1_electronic_mechanical_engineering = 1
 	}
 
+	#Throne Candidates
+	recruit_character = GER_august_wilhelm_von_preussen
+	recruit_character = GER_oskar_von_preussen
+	recruit_character = GER_joachim_von_preussen
+	recruit_character = GER_victoria_louise
+
+	if = {
+		limit = {
+			has_start_date < 1919.01.01
+		}
+		add_ideas = {
+			GER_idea_norddeutscher_bund_legacy
+			GER_idea_OHL
+			limited_conscription
+			GER_idea_naval_arms_race
+			GER_strategiestreit
+		}
+	}
 }
 
 1914.1.1 = {
@@ -348,26 +411,6 @@ GER_erich_ludendorff = {
 			has_start_date > 1913.01.01
 			has_start_date < 1919.01.01
 		}
-		unlock_national_focus = GER1_the_central_powers
-		unlock_national_focus = GER1_disreguard_the_reichstag
-		unlock_national_focus = GER1_reinforce_the_monarchy
-		unlock_national_focus = GER1_invite_italy_to_the_alliance
-		unlock_national_focus = GER1_leverage_royal_ties
-		unlock_national_focus = GER1_alliance_wargaming
-		unlock_national_focus = GER1_heed_the_warnings
-		unlock_national_focus = GER1_prepare_for_the_next_war
-		unlock_national_focus = GER1_an_industrial_war
-		unlock_national_focus = GER1_at_sea
-		unlock_national_focus = GER1_on_land
-		unlock_national_focus = GER1_under_the_sea
-		unlock_national_focus = GER1_above_the_sea
-		unlock_national_focus = GER1_the_science_of_war
-		unlock_national_focus = GER1_the_old_battlefield
-		unlock_national_focus = GER1_the_grand_battlefield
-		unlock_national_focus = GER1_extend_the_militaryindustrial_complex
-		unlock_national_focus = GER1_steel_rain
-		unlock_national_focus = GER1_the_homefront
-		unlock_national_focus = GER1_fortification_studies
 	}
 
 	#Advisors

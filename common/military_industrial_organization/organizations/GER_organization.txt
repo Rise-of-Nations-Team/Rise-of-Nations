@@ -1,0 +1,839 @@
+#####################
+#    ____  __  ____________ ______ __    _________    ___________  __
+#   / __ \/ / / / ___/ ___//  _/ //_/   /  _/ ___/   / ____/   \ \/ /
+#  / /_/ / / / /\__ \\__ \ / // ,<      / / \__ \   / / __/ /| |\  / 
+# / _, _/ /_/ /___/ /__/ // // /| |   _/ / ___/ /  / /_/ / ___ |/ /  
+#/_/ |_|\____//____/____/___/_/ |_|  /___//____/   \____/_/  |_/_/   
+#
+##################### 
+
+# _______       _   _ _  __ _____ 
+#|__   __|/\   | \ | | |/ // ____|
+#   | |  /  \  |  \| | ' /| (___  
+#   | | / /\ \ | . ` |  <  \___ \ 
+#   | |/ ____ \| |\  | . \ ____) |
+#   |_/_/    \_\_| \_|_|\_\_____/ 	
+
+GER_henschel_organization = {
+	include = generic_train_organization
+	name = henschel_and_sohn
+	icon = GFX_idea_henschel
+	
+	allowed = {	
+		OR = {
+			original_tag = GER
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+GER_ehrhardt_automobil_ag_organization = {
+	name = ehrhardt_automobil_ag
+	include = generic_armored_car_organization
+	icon = GFX_idea_ehrhardt_automobil_ag
+	allowed = {	
+		OR = {
+			original_tag = GER
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	available = {
+		
+	}
+}	
+
+GER_dmg_berlin_marienfelde_organization = {
+	name = dmg_berlin_marienfelde
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_daimler_motoren_gesellschaft
+	allowed = {	
+		OR = {
+			original_tag = GER
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					has_completed_focus = GER_heeringens_plan
+				}
+				has_completed_focus = GER_breaktrough_trenches
+			}
+			else = {
+				has_completed_focus = GER_dispersed_innovation_effort
+			}
+		}		
+	}
+
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+}
+# _____ _    _ _____ _____   _____ 
+#/ ____| |  | |_   _|  __ \ / ____|
+#| (___ | |__| | | | | |__) | (___  
+#\___ \|  __  | | | |  ___/ \___ \ 
+#____) | |  | |_| |_| |     ____) |
+#|_____/|_|  |_|_____|_|    |_____/ 
+								  
+								  
+GER_blohm_und_voss_organization = {
+	name = blohm_und_voss
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_blohm_und_voss
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = HAM
+			original_tag = TUR
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = GER
+						original_tag = HAM
+					}
+				}
+				NOT = {
+					has_war_with = GER
+				}
+			}
+			else = {
+				1165 = {
+					is_owned_or_subject_FROM_trigger = yes
+				}				
+			}
+		}		
+	}
+	visible = {
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+				}
+				has_completed_focus = TUR_welcome_foreign_naval_companies
+			}
+		}
+	}
+	on_design_team_assigned_to_tech = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_priority_in_purchases
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+	on_design_team_assigned_to_variant = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_priority_in_purchases
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+	on_industrial_manufacturer_assigned = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_priority_in_purchases
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+}
+
+GER_kaiserliche_werft_organization = {
+	name = kaiserliche_werft
+	include = generic_black_sea_fleet_organization
+	icon = GFX_idea_kaiserliche_werft
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = TUR
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		if = {
+			limit = {
+				FROM = {
+					NOT = {
+						original_tag = GER
+					}
+				}
+				FROM = {
+					NOT = {
+						has_war_with = GER
+					}
+				}	
+			}		
+		}
+		else_if = {
+			limit = {
+				has_mio_flag = reichsmarinewerft_wilhelmshaven
+			}
+			59 = {
+				is_owned_or_subject_FROM_trigger = yes
+			}
+		}	
+		else = {
+			OR = {
+				59 = {
+					is_owned_or_subject_FROM_trigger = yes
+				}
+				58 = {
+					is_owned_or_subject_FROM_trigger = yes
+				}
+				404 = {
+					is_owned_or_subject_FROM_trigger = yes
+				}
+			}
+		}	
+	}
+	visible = {
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+				}
+				has_completed_focus = TUR_welcome_foreign_naval_companies
+			}
+		}
+	}
+	on_design_team_assigned_to_tech = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_priority_in_purchases
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+	on_design_team_assigned_to_variant = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_priority_in_purchases
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+	on_industrial_manufacturer_assigned = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_priority_in_purchases
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+}
+
+GER_vulcan_werke_ag_organization = {
+	name = vulcan_werke_ag
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_vulcan_werke_ag
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = HAM
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		OR = {
+			62 = {
+				is_owned_or_subject_FROM_trigger = yes
+			}
+			1165 = {
+				is_owned_or_subject_FROM_trigger = yes
+			}
+		}
+		
+	}
+}
+
+GER_krupp_germaniawerft_organization = {
+	name = krupp_germaniawerft
+	include = generic_raider_ship_organization
+	icon = GFX_idea_krupp_germaniawerft
+	allowed = {	
+		OR = {
+			original_tag = GER
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		58 = {
+			is_owned_or_subject_FROM_trigger = yes
+		}
+	}
+}
+
+GER_ag_weser_organization = {
+	name = ag_weser
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_ag_weser
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = BRE
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		1163 = {
+			is_owned_or_subject_FROM_trigger = yes
+		}
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+GER_fokker_organization = {
+	name = fokker
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_fokker
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = HOL
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = GER
+						is_greater_germany = yes
+					}
+				}
+				NOT = {
+					has_war_with = GER
+				}
+			}
+			if = {
+				limit = {
+					original_tag = HOL
+				}
+				has_completed_focus = HOL_contracts_with_companies
+			}
+		}
+	}
+	add_trait = {
+		token = GER_mio_trait_maintenance_first_design
+		name = GER_mio_trait_maintenance_first_design
+
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		special_trait_background = yes
+		
+		position = { x=-2 y=1 }
+		relative_position_id = generic_mio_trait_expanded_production_facilities
+
+		all_parents = { generic_mio_trait_expanded_production_facilities }
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+}
+
+GER_luftschiffbau_zeppelin_organization = {
+	name = luftschiffbau_zeppelin
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_luftschiffbau_zeppelin
+	allowed = {	
+		OR = {
+			original_tag = GER
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}	
+}
+
+GER_albatros_flugzeugwerke_gmbh_organization = {
+	name = albatros_flugzeugwerke_gmbh
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_albatros
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = BUL
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = GER
+						is_greater_germany = yes
+					}
+				}
+				NOT = {
+					has_war_with = GER
+				}
+			}
+			if = {
+				limit = {
+					original_tag = BUL
+				}
+				is_ally_with = GER
+			}
+		}
+	}
+}
+
+GER_allgemeine_elektricitats_gesellschaft_organization = {
+	name = allgemeine_elektricitats_gesellschaft
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_allgemeine_elektricitats_gesellschaft
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = TUR
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = GER
+					}
+				}
+				NOT = {
+					has_war_with = GER
+				}
+			}
+		}		
+	}
+	visible = {
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+				}
+				has_completed_focus = TUR_hire_foreign_aircraft_designers
+			}
+		}
+	}
+	on_design_team_assigned_to_tech = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_a_deal_with_foreign_aircraft_designers
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+	on_design_team_assigned_to_variant = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_a_deal_with_foreign_aircraft_designers
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+	on_industrial_manufacturer_assigned = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_a_deal_with_foreign_aircraft_designers
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+}
+GER_hansa_brandenburg_organization = {
+	name = hansa_brandenburg
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_hansa_brandenburg
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = AUS
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = GER
+					}
+				}
+				NOT = {
+					has_war_with = GER
+				}
+			}
+		}		
+	}
+}
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+GER_mauser_organization = {
+	name = mauser
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_mauser
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = WUR
+			is_greater_germany = yes
+			is_china_or_warlord = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = GER
+						original_tag = WUR
+					}
+				}
+				NOT = { has_war_with = GER }
+				if = {
+					limit = {
+						is_china_or_warlord = yes
+					}
+					any_country = {
+						is_china_or_warlord = yes
+						OR = {
+							has_completed_focus = CHI_mauser_contract
+							has_completed_focus = ANC_focus_align_with_germany
+						}
+					}
+				}
+			}
+			else = {
+				50 = {
+					is_owned_or_subject_FROM_trigger = yes
+				}
+			}	
+		}			
+	}
+}
+
+GER_theodor_bergmann_organization = {
+	name = theodor_bergmann
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_bergmann
+	allowed = {	
+		OR = {
+			original_tag = GER
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+GER_deutsche_waffen_organization = {
+	name = deutsche_waffen
+	include = generic_support_equipment_organization
+	icon = GFX_idea_dwm
+	available = {
+		
+	}
+	allowed = {	
+		OR = {
+			original_tag = GER
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+GER_krupp_organization = {
+	name = krupp
+	include = generic_artillery_organization
+	icon = GFX_idea_krupp
+	allowed = {	
+		OR = {
+			original_tag = GER
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	equipment_type = {
+		field_gun_equipment
+		anti_tank_equipment
+		anti_air_equipment
+		mio_cat_eq_howitzers
+		mio_cat_eq_railway_guns
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					original_tag = ROM
+				}
+				has_idea = ROM_german_industrial_aid
+			}	
+		}			
+	}
+	visible = {
+		FROM = {
+			if = {
+				limit = {
+					original_tag = ROM
+				}
+				has_idea = ROM_german_industrial_aid
+			}
+		}
+	}
+}
+
+GER_rheinmetall_organization = {
+	name = rheinmetall
+	include = generic_artillery_organization
+	icon = GFX_idea_rheinmetall
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = TUR
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = GER
+					}
+				}
+				NOT = { has_war_with = GER }
+			}		
+		}			
+	}
+
+	visible = {
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+				}
+				has_completed_focus = TUR_invite_foreign_designers			
+			}
+		}
+	}
+	
+	on_design_team_assigned_to_tech = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_import_dependency
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+	on_design_team_assigned_to_variant = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_import_dependency
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+	on_industrial_manufacturer_assigned = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_import_dependency
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+}
+
+GER_daimler_motoren_gesellschaft_organization = {
+	name = daimler_motoren_gesellschaft
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_daimler_motoren_gesellschaft
+	allowed = {	
+		OR = {
+			original_tag = GER
+			original_tag = TUR
+			is_greater_germany = yes
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						original_tag = GER
+					}
+				}
+				NOT = {
+					has_war_with = GER
+				}
+			}
+		}		
+	}
+
+	visible = {
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+				}
+				has_completed_focus = TUR_invite_foreign_designers
+			}
+		}
+	}
+
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	on_design_team_assigned_to_tech = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_import_dependency
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+
+	on_design_team_assigned_to_variant = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_import_dependency
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+
+	on_industrial_manufacturer_assigned = { 
+		FROM = {
+			if = {
+				limit = {
+					original_tag = TUR
+					NOT = {
+						has_completed_focus = TUR_import_dependency
+					}
+				}
+				TUR_add_debt_0295 = yes
+			}
+		}
+	}
+}

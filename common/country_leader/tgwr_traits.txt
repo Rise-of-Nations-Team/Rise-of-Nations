@@ -2479,6 +2479,29 @@ leader_traits = {
 			factor = 500
 		}
 	}
+	cult_of_offensive_expert = {
+		sprite = 14
+		industrial_warfare_mastery_gain_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	deep_defence_expert = {
+		sprite = 14
+		defense_in_depth_mastery_gain_factor = 0.1
+		land_doctrine_cost_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hurricane_bombardment_expert = {
+		sprite = 14
+		hurricane_bombardment_mastery_gain_factor = 0.1
+		land_doctrine_cost_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	liberal_economist = {
 		sprite = 10
 		random = no
@@ -3203,16 +3226,16 @@ leader_traits = {
 		random = no
 		political_power_factor = 0.05
 		stability_factor = -0.10
-		#ai_strategy = {
-		#	type = alliance
-		#	id = ANC
-		#	value = 100
-		#}
-		#ai_strategy = {
-		#	type = befriend
-		#	id = ANC
-		#	value = 100
-		#}
+		ai_strategy = {
+			type = alliance
+			id = ANH
+			value = 100
+		}
+		ai_strategy = {
+			type = befriend
+			id = ANH
+			value = 100
+		}
 	}
 	ironfist_warlord = { # 
 		random = no
@@ -3344,19 +3367,19 @@ leader_traits = {
 		#	id = ZHC
 		#	value = 50
 		#}
-		#ai_strategy = {
-		#	type = antagonize
-		#	id = ANC
-		#	value = 100
-		#}
+		ai_strategy = {
+			type = antagonize
+			id = ANH
+			value = 100
+		}
 	}
 	anhui_allegiance = {
 		random = no
-		#ai_strategy = {
-		#	type = befriend
-		#	id = ANC
-		#	value = 50
-		#}
+		ai_strategy = {
+			type = befriend
+			id = ANH
+			value = 50
+		}
 		#ai_strategy = {
 		#	type = antagonize
 		#	id = ZHC
@@ -3404,11 +3427,11 @@ leader_traits = {
 		#	id = ZHC
 		#	value = 100
 		#}
-		#ai_strategy = {
-		#	type = antagonize
-		#	id = ANC
-		#	value = 100
-		#}
+		ai_strategy = {
+			type = antagonize
+			id = ANH
+			value = 100
+		}
 	}
 	communist_chinese_allegiance = {
 		random = no
@@ -3463,11 +3486,11 @@ leader_traits = {
         stability_factor = 0.10
 		war_support_factor = 0.10
 		ai_focus_aggressive_factor = 0.25
-		#ai_strategy = {
-		#	type = antagonize
-		#	id = ANC
-		#	value = 100
-		#}
+		ai_strategy = {
+			type = antagonize
+			id = ANH
+			value = 100
+		}
 		#ai_strategy = {
 		#	type = antagonize
 		#	id = ZHE
