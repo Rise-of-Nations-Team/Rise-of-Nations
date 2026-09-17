@@ -271,20 +271,6 @@
  RULE_POLITICAL_POWER_GAIN_4_IDEA: "Political Power Gain §LIV§!"
  RULE_POLITICAL_POWER_GAIN_5_IDEA: "Political Power Gain §LV§!"
 
- RULE_SPACE_MARINES: "Space Marines"
- RULE_SPACE_MARINES_ALLOWED_DESC: "AI will be able to make space marines."
- RULE_SPACE_MARINES_BLOCKED_DESC: "AI won't be able to make space marines."
-
- DAI_RULE_DYNAMIC_CONSTRUCTION_PROFILE: "Construction"
- DAI_RULE_OPTION_BALANCED: "Balanced"
- DAI_RULE_OPTION_CONSERVATIVE: "Conservative"
- DAI_RULE_OPTION_AGGRESSIVE: "Aggressive"
- DAI_RULE_OPTION_DEBUG: "Aggressive + Debug"
- DAI_RULE_DYNAMIC_CONSTRUCTION_BALANCED_DESC: "AI construction uses the default dynamic 10.9 economy model."
- DAI_RULE_DYNAMIC_CONSTRUCTION_CONSERVATIVE_DESC: "AI construction leans more toward civilian rebuilding and delays support construction unless it has spare civilian capacity."
- DAI_RULE_DYNAMIC_CONSTRUCTION_AGGRESSIVE_DESC: "AI construction militarizes earlier, accepts support construction sooner, and reacts harder to wartime pressure."
- DAI_RULE_DYNAMIC_CONSTRUCTION_DEBUG_DESC: "Uses the aggressive construction profile and writes monthly construction evaluation details to the log."
-
  RULE_GROUP_DNC_AI_BEHAVIOR: "§YDNC 1900-1910§! AI Behavior"
 
  ITA_DNC_AI_BEHAVIOR: "Italian AI, the end of the century"

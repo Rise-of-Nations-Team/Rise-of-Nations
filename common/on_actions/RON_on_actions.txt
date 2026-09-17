@@ -2,14 +2,6 @@ on_actions = {
 
 	on_startup = {
 
-		#Construction AI
-		effect = {
-			every_country = {
-				limit = { is_ai = yes }
-				DAI_dynamic_construction_monthly_update = yes
-			}
-		}
-
 		#Game Rule Related
 		effect = {
 			every_possible_country = {
@@ -634,16 +626,6 @@ on_actions = {
 					}
 					add_ideas = RULE_POLITICAL_POWER_GAIN_5_IDEA
 				}
-
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = rule_space_marines
-							option = ALLOWED
-						}
-					}
-					set_global_flag = SpaceMarines
-				}
 			}
 		}
 
@@ -708,192 +690,6 @@ on_actions = {
 				}
 			}
 		}
-	}
-
-	on_monthly = {
-
-		# Construction AI
-		effect = {
-			every_country = {
-				limit = { is_ai = yes }
-				DAI_dynamic_construction_monthly_update = yes
-			}
-		}
-
-		# Monthly Air Tracking (#14)
-		effect = {
-			if = {
-				limit = { is_ai = yes }
-				FAI_monthly_air_update = yes
-			}
-		}
-
-	}
-
-	on_weekly = {
-
-		# Weekly Air Tracking
-		effect = {
-			if = {
-				limit = { is_ai = yes }
-				FAI_weekly_air_update = yes
-			}
-		}
-
-	}
-
-	on_daily = {
-
-		# Operational Pause Timer (daily tick)
-		effect = {
-			if = {
-				limit = { is_ai = yes }
-				FAI_operational_pause_update = yes
-			}
-		}
-	}
-
-	on_new_term_election = {
-		effect = {
-			
-			if = {
-				limit = { 
-					tag = USA 
-					NOT = {
-						has_active_mission = USA_campaign_runs_new
-						has_active_mission = USA_campaign_runs
-					}
-				}
-				USA_handle_election = yes
-			}
-			else_if = {
-				limit = {
-					tag = FRA
-					date < 1945.1.1
-				}
-				RON_handle_French_Elections = yes
-			}
-			else = {
-				country_event = { id = election.1 }
-			}
-		}
-	}
-
-	on_declare_war = {
-
-		# War Declaration Defensive Hold (#15)
-		effect = {
-			# ROOT = aggressor, FROM = victim
-			ROOT = {
-				set_country_flag = { flag = FAI_recent_wardec value = 1 days = 90 }
-			}
-			FROM = {
-				set_country_flag = { flag = FAI_recent_wardec value = 1 days = 90 }
-				# If attacker is 25%+ stronger, victim holds defensively for 60 days
-				if = {
-					limit = {
-						PREV = {
-							strength_ratio = { tag = PREV ratio > 1.25 }
-						}
-					}
-					set_country_flag = { flag = FAI_hold_against_@PREV value = 1 days = 60 }
-				}
-			}
-		}
-
-		effect = {
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							tag = ENG
-							FROM = { tag = OTT }
-						}
-						AND = {
-							tag = OTT
-							FROM = { tag = ENG }
-						}
-					}
-					ENG = { has_completed_focus = ENGDNC_european_crusade_against_islam }
-				}
-				hidden_effect = {
-					ENG = { 
-						activate_mission = DNC_Jerusalem_Conquest
-					}
-				}
-			}
-		}
-	}
-
-	on_capitulation = {
-		effect = {
-			if = {
-				limit = {
-					TAG = KAZ
-					KAZ = {
-						has_cosmetic_tag = ALASH
-					}
-					date < 1930.1.1
-				}
-				KAZ = {
-					drop_cosmetic_tag = yes
-				}
-			}
-
-			if = {
-				limit = {
-					ROOT = {
-						tag = SPA
-					}
-					FROM = {
-						tag = SPR
-						has_country_flag = SPRDNC_carlist_war
-					}
-				}
-				SPR = {
-					news_event = dnc_carlism.2
-					set_country_flag = SPR_carlist_war_over
-					clr_country_flag = SPRDNC_carlist_war
-				}
-			}
-		}
-	}
-
-	on_unit_leader_created = {
-		effect = {
-			character = {
-				set_character_flag = recruited_unit_leader
-				set_variable_to_random = {
-					var = years_of_service
-					min = 30
-					max = 35
-					integer = yes
-				}
-			}
-		}
-	}
-
-	on_army_leader_promoted = {
-		effect = {
-			character = {
-				add_to_variable = { years_of_service = 5 }
-			}
-		}
-	}
-
-	on_naval_invasion = {
-	 	effect = {
-		 	if = {
-				limit = {
-					NOT = { has_state_flag = recent_naval_invasion_flag }
-				}
-				set_state_flag = {
-					flag = recent_naval_invasion_flag
-					days = 180
-					value = 1
-				}
-			}
-	 	}
 	}
 
 	on_monthly_XXB = {
@@ -1213,6 +1009,113 @@ on_actions = {
 				var = foreign_suspicion_level
 				min = 0
 				max = 100
+			}
+		}
+	}
+
+	on_new_term_election = {
+		effect = {
+			
+			if = {
+				limit = { 
+					tag = USA 
+					NOT = {
+						has_active_mission = USA_campaign_runs_new
+						has_active_mission = USA_campaign_runs
+					}
+				}
+				USA_handle_election = yes
+			}
+			else_if = {
+				limit = {
+					tag = FRA
+					date < 1945.1.1
+				}
+				RON_handle_French_Elections = yes
+			}
+			else = {
+				country_event = { id = election.1 }
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							tag = ENG
+							FROM = { tag = OTT }
+						}
+						AND = {
+							tag = OTT
+							FROM = { tag = ENG }
+						}
+					}
+					ENG = { has_completed_focus = ENGDNC_european_crusade_against_islam }
+				}
+				hidden_effect = {
+					ENG = { 
+						activate_mission = DNC_Jerusalem_Conquest
+					}
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					TAG = KAZ
+					KAZ = {
+						has_cosmetic_tag = ALASH
+					}
+					date < 1930.1.1
+				}
+				KAZ = {
+					drop_cosmetic_tag = yes
+				}
+			}
+
+			if = {
+				limit = {
+					ROOT = {
+						tag = SPA
+					}
+					FROM = {
+						tag = SPR
+						has_country_flag = SPRDNC_carlist_war
+					}
+				}
+				SPR = {
+					news_event = dnc_carlism.2
+					set_country_flag = SPR_carlist_war_over
+					clr_country_flag = SPRDNC_carlist_war
+				}
+			}
+		}
+	}
+
+	on_unit_leader_created = {
+		effect = {
+			character = {
+				set_character_flag = recruited_unit_leader
+				set_variable_to_random = {
+					var = years_of_service
+					min = 30
+					max = 35
+					integer = yes
+				}
+			}
+		}
+	}
+
+	on_army_leader_promoted = {
+		effect = {
+			character = {
+				add_to_variable = { years_of_service = 5 }
 			}
 		}
 	}

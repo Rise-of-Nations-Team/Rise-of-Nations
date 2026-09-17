@@ -1,7 +1,0 @@
-scripted_gui = {
-	TA_post_it_note = {
-		window_name = "TA_shield"
-        #context_type = selected_country_context
-		parent_window_token = top_bar
-	}
-}
