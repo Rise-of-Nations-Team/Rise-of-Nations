@@ -1,0 +1,4 @@
+USA_SA_panama_canal = {
+	icon = generic_industry
+	priority = 200
+}

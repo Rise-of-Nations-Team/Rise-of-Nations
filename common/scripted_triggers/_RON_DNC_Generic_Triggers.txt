@@ -1,0 +1,194 @@
+RON_is_European_Country = {
+	OR = {
+		tag = RUS
+		tag = UKR
+		tag = FRA
+		tag = SPR
+		tag = SWE
+		tag = NOR
+		tag = GER
+		tag = FIN
+		tag = POL
+		tag = ITA
+		tag = ENG
+		tag = ROM
+		tag = BLR
+		tag = KAZ
+		tag = GRE
+		tag = BUL
+		tag = ICE
+		tag = HUN
+		tag = POR
+		tag = AUS
+		tag = CZR
+		tag = SER
+		tag = IRE
+		tag = LIT
+		tag = LAT
+		tag = CRO
+		tag = BOS
+		tag = SLO
+		tag = EST
+		tag = DEN
+		tag = SWI
+		tag = HOL
+		tag = MOL
+		tag = BEL
+		tag = ARM
+		tag = ALB
+		tag = MAC
+		tag = TUR
+		tag = SLV
+		tag = MNT
+		tag = KOS
+		tag = AZR
+		tag = CYP
+		tag = LUX
+		tag = GEO
+		tag = ADR
+		tag = MLT
+		tag = LIE
+		tag = SMR
+		tag = MCO
+		tag = PAP
+		tag = DDR
+		tag = AUH
+		tag = KNS
+		tag = CZE
+		tag = YUG
+		tag = SOV
+		any_owned_state = {
+			is_on_continent = europe
+			is_capital = yes
+		}
+	}
+}
+
+RON_is_Middle_Eastern_Country = {
+	OR = {
+		tag = OTT
+		tag = TUR
+		tag = SAU
+		tag = JBS
+		tag = OMA
+		tag = YEM
+		tag = QAT
+		tag = BHR
+		tag = UAE
+		tag = KUW
+		tag = JOR
+		tag = PAL
+		tag = IRQ
+		tag = PER
+		tag = EGY
+		tag = ISR
+		any_owned_state = {
+			is_on_continent = middle_east
+			is_capital = yes
+		}
+	}
+}
+
+RON_sunni_country = {
+	OR = {
+		tag = INS
+		tag = PAK
+		tag = BAN
+		tag = NGA
+		tag = EGY
+		tag = UAR
+		tag = TUR
+		tag = OTT
+		tag = ALG
+		tag = SUD
+		tag = MOR
+		tag = AFG
+		tag = SAU
+		tag = YEM
+		tag = UZB
+		tag = NGR
+		tag = MLI
+		tag = SYR
+		tag = MAL
+		tag = SEN
+		tag = KAZ
+		tag = VOL
+		tag = TUN
+		tag = SOM
+		tag = GNA
+		tag = JOR
+		tag = CHA
+		tag = TAJ
+		tag = LBA
+		tag = SIE
+		tag = TMS
+		tag = KYR
+		tag = UAE
+		tag = MRT
+		tag = OMA
+		tag = KUW
+		tag = ALB
+		tag = QAT
+		tag = DJI
+		tag = WES
+		tag = MLD
+		tag = BRN
+		tag = COM
+	}
+}
+
+RON_shia_country = {
+	OR = {
+		tag = PER
+		tag = AZR
+		tag = IRQ
+		tag = BHR
+		tag = LEB
+	}
+}
+
+RON_DNC_GER_aligned = {
+	AND = {
+		any_owned_state = {
+			is_owned_by = ROOT
+			is_capital = yes
+			is_on_continent = europe
+		}
+		NOT = {
+			has_government = democratic
+		}
+	}
+}
+
+RON_DNC_ENG_aligned = {
+	AND = {
+		any_owned_state = {
+			is_owned_by = ROOT
+			is_capital = yes
+			OR = {
+				is_on_continent = south_america
+				is_on_continent = africa
+				is_on_continent = middle_east
+				is_on_continent = australia
+			}
+		}
+		OR = {
+			has_government = democratic
+			has_government = neutrality
+		}
+	}
+}
+
+RON_DNC_FRA_aligned = {
+	AND = {
+		any_owned_state = {
+			is_owned_by = ROOT
+			is_capital = yes
+			is_on_continent = asia
+		}
+		OR = {
+			has_government = democratic
+			has_government = neutrality
+		}
+	}
+}

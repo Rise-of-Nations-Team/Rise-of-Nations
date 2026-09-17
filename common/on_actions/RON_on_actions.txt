@@ -692,6 +692,40 @@ on_actions = {
 		}
 	}
 
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					TAG = KAZ
+					KAZ = {
+						has_cosmetic_tag = ALASH
+					}
+					date < 1930.1.1
+				}
+				KAZ = {
+					drop_cosmetic_tag = yes
+				}
+			}
+
+			if = {
+				limit = {
+					ROOT = {
+						tag = SPA
+					}
+					FROM = {
+						tag = SPR
+						has_country_flag = SPRDNC_carlist_war
+					}
+				}
+				SPR = {
+					news_event = dnc_carlism.2
+					set_country_flag = SPR_carlist_war_over
+					clr_country_flag = SPRDNC_carlist_war
+				}
+			}
+		}
+	}
+
 	on_monthly_XXB = {
 		effect = {
 			if = {

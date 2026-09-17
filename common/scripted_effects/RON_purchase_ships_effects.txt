@@ -1,0 +1,909 @@
+# FROM builds the ships, ROOT receives them. Supports USA, ENG, GER and SOV.
+ETH_get_ships_from_country = {
+	IF = {
+		limit = {
+			 FROM = {
+			 	tag = ENG
+			 }
+		}
+		IF = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			ENG = {
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "S Class"
+					creator = ENG
+					name = "S Class I"
+				}
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "S Class"
+					creator = ENG
+					name = "S Class II"
+				}
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "S Class"
+					creator = ENG
+					name = "S Class III"
+				}
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "S Class"
+					creator = ENG
+					name = "S Class IV"
+				}
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "S Class"
+					creator = ENG
+					name = "S Class V"
+				}
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "S Class"
+					creator = ENG
+					name = "S Class VI"
+				}
+
+
+				#Transfer British Destroyers
+				transfer_ship={
+				  prefer_name = "S Class I"
+				  type = destroyer
+				  target = ROOT
+				  exclude_refitting = no
+				}
+				transfer_ship={
+				  prefer_name = "S Class II"
+				  type = destroyer
+				  target = ROOT
+				  exclude_refitting = no
+				}
+				transfer_ship={
+				  prefer_name = "S Class III"
+				  type = destroyer
+				  target = ROOT
+				  exclude_refitting = no
+				}
+				transfer_ship={
+				  prefer_name = "S Class IV"
+				  type = destroyer
+				  target = ROOT
+				  exclude_refitting = no
+				}
+				transfer_ship={
+				  prefer_name = "S Class V"
+				  type = destroyer
+				  target = ROOT
+				  exclude_refitting = no
+				}
+				transfer_ship={
+				  prefer_name = "S Class VI"
+				  type = destroyer
+				  target = ROOT
+				  exclude_refitting = no
+				}
+			}
+		}
+		ELSE = {
+			ROOT = {
+				create_ship = {
+					type = destroyer_1
+					creator = "ENG"
+				}
+			}
+		}
+		ENG = { set_country_flag = sold_ships_to_us@ROOT }
+	}
+	ELSE_IF = {
+		limit = {
+			 FROM = {
+			 	tag = SOV
+			 }
+		}
+		SOV = {
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "Marat Class"
+				creator = SOV
+				name = "Marat Class BB I"
+			}
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "Marat Class"
+				creator = SOV
+				name = "Marat Class BB II"
+			}
+			transfer_ship={
+			  prefer_name = "Marat Class BB I"
+			  type = battleship
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			transfer_ship={
+			  prefer_name = "Marat Class BB II"
+			  type = battleship
+			  target = ROOT
+			  exclude_refitting = no
+			}
+		}
+		SOV = { set_country_flag = sold_ships_to_us@ROOT }
+
+	}
+	ELSE_IF = {
+		limit = {
+			 FROM = {
+			 	tag = GER
+			 }
+		}
+		GER = {
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-1"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-1"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-2"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-2"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-3"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-3"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-4"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-4"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-5"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-5"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-6"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-6"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-7"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-7"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-8"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-8"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-9"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-9"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Type IIA U-10"
+			}
+			transfer_ship={
+			  prefer_name = "Type IIA U-10"
+			  type = submarine
+			  target = ROOT
+			  exclude_refitting = no
+			}
+		}
+		GER = { set_country_flag = sold_ships_to_us@ROOT }
+	}
+	ELSE_IF = {
+		limit = {
+			 FROM = {
+			 	tag = USA
+			 }
+		}
+		USA = {
+			create_ship = {
+				type = ship_hull_light_1
+				equipment_variant = "Clemson Class"
+				creator = USA
+				name = "Clemson Class I"
+			}
+			create_ship = {
+				type = ship_hull_light_1
+				equipment_variant = "Clemson Class"
+				creator = USA
+				name = "Clemson Class II"
+			}
+			create_ship = {
+				type = ship_hull_light_1
+				equipment_variant = "Clemson Class"
+				creator = USA
+				name = "Clemson Class III"
+			}
+			create_ship = {
+				type = ship_hull_light_1
+				equipment_variant = "Clemson Class"
+				creator = USA
+				name = "Clemson Class IV"
+			}
+			create_ship = {
+				type = ship_hull_light_1
+				equipment_variant = "Clemson Class"
+				creator = USA
+				name = "Clemson Class V"
+			}
+			create_ship = {
+				type = ship_hull_light_1
+				equipment_variant = "Clemson Class"
+				creator = USA
+				name = "Clemson Class VI"
+			}
+
+			#Transfer US Destroyers
+			transfer_ship={
+			  prefer_name = "Clemson Class I"
+			  type = destroyer
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			transfer_ship={
+			  prefer_name = "Clemson Class II"
+			  type = destroyer
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			transfer_ship={
+			  prefer_name = "Clemson Class III"
+			  type = destroyer
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			transfer_ship={
+			  prefer_name = "Clemson Class IV"
+			  type = destroyer
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			transfer_ship={
+			  prefer_name = "Clemson Class V"
+			  type = destroyer
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			transfer_ship={
+			  prefer_name = "Clemson Class VI"
+			  type = destroyer
+			  target = ROOT
+			  exclude_refitting = no
+			}
+			USA = { set_country_flag = sold_ships_to_us@ROOT }
+		}
+	}
+}
+
+SMB_get_dreadnoughts_from_country = {
+	IF = {
+		limit = {
+			 FROM = {
+			 	tag = USA
+			 }
+		}
+		IF = {
+			limit = {
+				has_dlc =  "Man the Guns"
+			}
+			create_equipment_variant = {
+				name = "New York Class"					# represents Wyoming (Arkansas) and New York classes
+				type = ship_hull_heavy_1
+				name_group = USA_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = empty
+					mid_1_custom_slot = ship_airplane_launcher_1
+					mid_2_custom_slot = ship_secondaries_1
+					rear_1_custom_slot = ship_heavy_battery_1
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "New York Class"
+				creator = USA
+				name = "New York Class I"
+			}
+
+			create_equipment_variant = {
+				name = "Pensacola Class"			# Pensacola and Northampton classes
+				type = ship_hull_cruiser_1
+				name_group = USA_CA_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_medium_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = cruiser_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_cruiser_1
+					mid_1_custom_slot = ship_medium_battery_1
+					mid_2_custom_slot = empty
+					rear_1_custom_slot = ship_airplane_launcher_1
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = ship_hull_cruiser_1
+				equipment_variant = "Pensacola Class"
+				creator = USA
+				name = "Pensacola Class I"
+			}
+		}
+		ELSE = {
+			create_equipment_variant = {
+				name = "Portland Class"
+				type = heavy_cruiser_1
+				upgrades = {
+					ship_reliability_upgrade = 2
+					ship_engine_upgrade = 2
+					ship_armor_upgrade = 2
+					ship_gun_upgrade = 2
+				}
+			}
+			create_ship = {
+				type = heavy_cruiser_1
+				equipment_variant = "Portland Class"
+				creator = USA
+				name = "Portland Class I"
+			}
+			create_ship = {
+				type = heavy_cruiser_1
+				equipment_variant = "Portland Class"
+				creator = USA
+				name = "Portland Class II"
+			}
+		}
+		USA = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
+			add_timed_idea = {
+				idea = SMB_dreadnought_payments
+				days = 365
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = SMB_dreadnought_debt_usa
+				days = 365
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			 FROM = {
+			 	tag = ENG
+			 }
+		}
+		IF = {
+			limit = {
+				has_dlc =  "Man the Guns"
+			}
+			create_equipment_variant = {
+				name = "Renown Class"
+				type = ship_hull_heavy_1
+				name_group = ENG_BC_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = dp_ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_bc_1
+					front_1_custom_slot = ship_anti_air_1
+					mid_1_custom_slot = ship_airplane_launcher_1
+					mid_2_custom_slot = ship_secondaries_1
+					rear_1_custom_slot = empty
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "Renown Class"
+				creator = ENG
+				name = "Renown Class I"
+			}
+			create_equipment_variant = {
+				name = "Nelson Class"
+				type = ship_hull_heavy_1
+				name_group = ENG_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_bb_2
+					front_1_custom_slot = ship_heavy_battery_2
+					mid_1_custom_slot = dp_ship_secondaries_1
+					mid_2_custom_slot = empty
+					rear_1_custom_slot = empty
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "Nelson Class"
+				creator = ENG
+				name = "Nelson Class I"
+			}
+		}
+		ELSE = {
+			create_equipment_variant = {
+				name = "Nelson Class"
+				type = battleship_1
+				parent_version = 0
+				upgrades = {
+					ship_reliability_upgrade = 3
+					ship_engine_upgrade = 2
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+			create_ship = {
+				type = battleship_1
+				equipment_variant = "Nelson Class"
+				creator = ENG
+				name = "Nelson Class I"
+			}
+			create_ship = {
+				type = battleship_1
+				equipment_variant = "Nelson Class"
+				creator = ENG
+				name = "Nelson Class II"
+			}
+		}
+		ENG = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
+			add_timed_idea = {
+				idea = SMB_dreadnought_payments
+				days = 365
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = SMB_dreadnought_debt_eng
+				days = 365
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			 FROM = {
+			 	tag = FRA
+			 }
+		}
+		IF = {
+			limit = {
+				has_dlc =  "Man the Guns"
+			}
+			create_equipment_variant = {
+				name = "Courbet Class"
+				type = ship_hull_heavy_1
+				name_group = FRA_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = ship_heavy_battery_1
+					mid_1_custom_slot = ship_secondaries_1
+					mid_2_custom_slot = ship_secondaries_1
+					rear_1_custom_slot = empty
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "Courbet Class"
+				creator = FRA
+				name = "Courbet Class I"
+			}
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "Courbet Class"
+				creator = FRA
+				name = "Courbet Class II"
+			}
+		}
+		ELSE = {
+			create_equipment_variant = {
+				name = "Bretagne Class"
+				type = battleship_1
+				upgrades = {
+					ship_reliability_upgrade = 1
+					ship_armor_upgrade = 1
+					ship_gun_upgrade = 1
+				}
+			}
+			create_ship = {
+				type = battleship_1
+				equipment_variant = "Bretagne Class"
+				creator = FRA
+				name = "Bretagne Class I"
+			}
+			create_ship = {
+				type = battleship_1
+				equipment_variant = "Bretagne Class"
+				creator = FRA
+				name = "Bretagne Class II"
+			}
+		}
+		FRA = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
+			add_timed_idea = {
+				idea = SMB_dreadnought_payments
+				days = 365
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = SMB_dreadnought_debt_fra
+				days = 365
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			 FROM = {
+			 	tag = ITA
+			 }
+		}
+		IF = {
+			limit = {
+				has_dlc =  "Man the Guns"
+			}
+			create_equipment_variant = {
+				name = "Giussano Class"
+				type = ship_hull_cruiser_1
+				name_group = ITA_CL_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_medium_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = cruiser_ship_engine_2
+					fixed_ship_armor_slot = empty
+					mid_1_custom_slot = ship_torpedo_1
+					mid_2_custom_slot = ship_airplane_launcher_1
+					rear_1_custom_slot = ship_light_medium_battery_2
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = ship_hull_cruiser_1
+				equipment_variant = "Giussano Class"
+				creator = ITA
+				name = "Giussano Class I"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_1
+				equipment_variant = "Giussano Class"
+				creator = ITA
+				name = "Giussano Class II"
+			}
+		}
+		ELSE = {
+			create_equipment_variant = {
+				name = "Giussano Class"
+				type = light_cruiser_1
+				upgrades = {
+					ship_reliability_upgrade = 1
+					ship_engine_upgrade = 1
+					ship_gun_upgrade = 1
+					ship_anti_air_upgrade = 1
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = light_cruiser_1
+				equipment_variant = "Giussano Class"
+				creator = ITA
+				name = "Giussano Class I"
+			}
+			create_ship = {
+				type = light_cruiser_1
+				equipment_variant = "Giussano Class"
+				creator = ITA
+				name = "Giussano Class II"
+			}
+		}
+		ITA = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
+			add_timed_idea = {
+				idea = SMB_dreadnought_payments
+				days = 365
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = SMB_dreadnought_debt_ita
+				days = 365
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			 FROM = {
+			 	tag = JAP
+			 }
+		}
+		IF = {
+			limit = {
+				has_dlc =  "Man the Guns"
+			}
+			create_equipment_variant = {
+				name = "Fuso/Ise Class"
+				type = ship_hull_heavy_1
+				name_group = JAP_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = empty
+					mid_1_custom_slot = dp_ship_secondaries_1
+					mid_2_custom_slot = ship_airplane_launcher_1
+					rear_1_custom_slot = ship_heavy_battery_1
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "Fuso/Ise Class"
+				creator = JAP
+				name = "Fuso/Ise Class I"
+			}
+			create_ship = {
+				type = ship_hull_heavy_1
+				equipment_variant = "Fuso/Ise Class"
+				creator = JAP
+				name = "Fuso/Ise Class II"
+			}
+		}
+		ELSE = {
+			create_equipment_variant = {
+				name = "Ise Class"
+				type = battleship_1
+				parent_version = 0
+				upgrades = {
+					ship_reliability_upgrade = 2
+					ship_engine_upgrade = 3
+					ship_armor_upgrade = 1
+					ship_gun_upgrade = 1
+				}
+				obsolete = yes
+			}
+			create_ship = {
+				type = battleship_1
+				equipment_variant = "Ise Class"
+				creator = JAP
+				name = "Ise Class I"
+			}
+			create_ship = {
+				type = battleship_1
+				equipment_variant = "Ise Class"
+				creator = JAP
+				name = "Ise Class II"
+			}
+		}
+		JAP = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
+			add_timed_idea = {
+				idea = SMB_dreadnought_payments
+				days = 365
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = SMB_dreadnought_debt_jap
+				days = 365
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			 FROM = {
+			 	tag = GER
+			 }
+		}
+		IF = {
+			limit = {
+				has_dlc =  "Man the Guns"
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_tech = panzerschiffe }
+					}
+					set_technology = {
+						panzerschiffe = 1
+						popup = no
+					}
+				}
+			}
+			GER = {
+				create_equipment_variant = {
+					name = "Deutschland Class"
+					type = ship_hull_cruiser_panzerschiff
+					name_group = GER_CA_HISTORICAL
+					parent_version = 0
+					modules = {
+				       	fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						rear_1_custom_slot = ship_torpedo_1
+						mid_1_custom_slot = ship_airplane_launcher_1
+				   	}
+				   	obsolete = yes
+				}
+			}
+
+			create_equipment_variant = {
+				name = "Deutschland Class"
+				type = ship_hull_cruiser_panzerschiff
+				name_group = GER_CA_HISTORICAL
+				parent_version = 0
+				modules = {
+			       	fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_battery_slot = ship_heavy_battery_2
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_cruiser_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_engine_slot = cruiser_ship_engine_2
+					rear_1_custom_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_airplane_launcher_1
+			   	}
+			   	obsolete = yes
+			}
+			create_ship = {
+				type = ship_hull_cruiser_panzerschiff
+				equipment_variant = "Deutschland Class"
+				creator = GER
+				name = "Deutschland Class I"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_panzerschiff
+				equipment_variant = "Deutschland Class"
+				creator = GER
+				name = "Deutschland Class II"
+			}
+		}
+		ELSE = {
+			create_equipment_variant = {
+				name = "Deutschland Class"
+				type = heavy_cruiser_1
+				parent_version = 0
+				upgrades = {
+					ship_reliability_upgrade = 1
+					ship_engine_upgrade = 1
+					ship_armor_upgrade = 1
+					ship_gun_upgrade = 2
+				}
+			}
+			create_ship = {
+				type = heavy_cruiser_1
+				equipment_variant = "Deutschland Class"
+				creator = GER
+				name = "Deutschland Class I"
+			}
+			create_ship = {
+				type = heavy_cruiser_1
+				equipment_variant = "Deutschland Class"
+				creator = GER
+				name = "Deutschland Class II"
+			}
+		}
+		GER = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
+			add_timed_idea = {
+				idea = SMB_dreadnought_payments
+				days = 365
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = SMB_dreadnought_debt_ger
+				days = 365
+			}
+		}
+	}
+}

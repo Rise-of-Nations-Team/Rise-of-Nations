@@ -1,0 +1,49 @@
+FRA_DNC_napoleonist_path = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	priority = {
+		base = 30
+	}
+
+	visible_when_empty = no
+
+	visible = {
+		date < 1910.01.01
+	}
+}
+
+FRA_syndicalists = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	priority = {
+		base = 30
+	}
+
+	visible_when_empty = no
+
+	visible = {
+		date < 1910.01.01
+	}
+}
+
+parliament_gui_decision_category = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	priority = {
+		base = 100
+	}
+
+	visible_when_empty = no
+}

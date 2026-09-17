@@ -265,10 +265,6 @@ JAP_destroyers = {
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
 				rear_1_custom_slot = ship_depth_charge
-				rear_2_custom_slot = {
-					module = dp_light_battery
-					module > ship_light_battery_1
-				}
 			}
 		}
 
@@ -751,7 +747,7 @@ JAP_naval_light_cruiser = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries
 				fixed_ship_armor_slot > ship_armor_cruiser_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_torpedo
@@ -763,7 +759,7 @@ JAP_naval_light_cruiser = {
 
 		allowed_modules = {
 			ship_anti_air
-			dp_ship_secondaries
+			ship_secondaries
 			ship_torpedo
 			ship_depth_charge
 			ship_fire_control_system
@@ -791,7 +787,7 @@ JAP_naval_light_cruiser = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
@@ -803,7 +799,7 @@ JAP_naval_light_cruiser = {
 
 		allowed_modules = {
 			ship_anti_air
-			dp_ship_secondaries
+			ship_secondaries
 			ship_torpedo
 			ship_depth_charge
 			ship_fire_control_system
@@ -865,7 +861,7 @@ JAP_naval_light_AA_cruiser = {
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = cruiser_ship_engine
 				fixed_ship_armor_slot = ship_armor_cruiser_1
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
 				mid_2_custom_slot = dp_light_battery
@@ -1521,14 +1517,13 @@ JAP_naval_capital_battleship = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system
 				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot > heavy_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries
 				fixed_ship_armor_slot = ship_heavy_armor
 				front_1_custom_slot = ship_anti_air
 				mid_1_custom_slot = ship_anti_air
-				mid_2_custom_slot = dp_ship_secondaries
-				mid_3_custom_slot = dp_ship_secondaries
+				mid_2_custom_slot = ship_secondaries
+				mid_3_custom_slot = ship_secondaries
 				rear_1_custom_slot = ship_heavy_battery_3
-				rear_2_custom_slot = ship_anti_air
 			}
 		}
 
@@ -1726,7 +1721,7 @@ JAP_naval_carrier = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = heavy_ship_engine_1
-				fixed_ship_secondaries_slot = dp_ship_secondaries
+				fixed_ship_secondaries_slot = ship_secondaries
 				mid_1_custom_slot = ship_deck_space
 			}
 		}
@@ -1996,7 +1991,6 @@ JAP_naval_carrier_light = {
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_1
 				fixed_ship_secondaries_slot = ship_secondaries
-				front_1_custom_slot = ship_anti_air
 			}
 		}
 

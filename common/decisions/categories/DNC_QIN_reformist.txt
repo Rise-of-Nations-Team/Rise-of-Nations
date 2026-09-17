@@ -1,0 +1,8 @@
+QIN_reformist_decision_category = {
+	allowed = {
+		original_tag = QIN
+	}
+	visible = {
+		has_completed_focus = DNC_QIN_remember_hundred_days_reform
+	}
+}

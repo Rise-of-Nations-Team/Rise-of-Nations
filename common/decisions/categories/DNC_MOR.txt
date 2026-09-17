@@ -1,0 +1,36 @@
+MOR_gather_foreign_support = {
+	icon = generic_political_actions
+	priority = 200
+	allowed = {
+		original_tag = MOR
+	}
+}
+
+MOR_pacification_campaign = {
+	icon = border_conflicts
+	priority = 150
+	allowed = {
+		OR = {
+			original_tag = MOR
+			original_tag = SPR
+			original_tag = FRA
+			original_tag = GER
+		}
+	}
+}
+
+MOR_foreign_influence = {
+	icon = generic_political_actions
+	priority = 100
+	allowed = {
+		original_tag = MOR
+	}
+}
+
+MOR_cultural_clash_cat = {
+	icon = generic_political_actions
+	priority = 50
+	allowed = {
+		original_tag = MOR
+	}
+}

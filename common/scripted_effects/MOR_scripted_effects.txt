@@ -1,0 +1,69 @@
+MOR_reduce_nation_debt = {
+	IF = {
+		limit = { has_idea = MOR_debt1 }
+		remove_ideas = MOR_debt1
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt2 }
+		swap_ideas = {
+			remove_idea = MOR_debt2
+			add_idea = MOR_debt1
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt3 }
+		swap_ideas = {
+			remove_idea = MOR_debt3
+			add_idea = MOR_debt2
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt4 }
+		swap_ideas = {
+			remove_idea = MOR_debt4
+			add_idea = MOR_debt3
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt5 }
+		swap_ideas = {
+			remove_idea = MOR_debt5
+			add_idea = MOR_debt4
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt6 }
+		swap_ideas = {
+			remove_idea = MOR_debt6
+			add_idea = MOR_debt5
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt7 }
+		swap_ideas = {
+			remove_idea = MOR_debt7
+			add_idea = MOR_debt6
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt8 }
+		swap_ideas = {
+			remove_idea = MOR_debt8
+			add_idea = MOR_debt7
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt9 }
+		swap_ideas = {
+			remove_idea = MOR_debt9
+			add_idea = MOR_debt8
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = MOR_debt10 }
+		swap_ideas = {
+			remove_idea = MOR_debt10
+			add_idea = MOR_debt9
+		}
+	}
+}

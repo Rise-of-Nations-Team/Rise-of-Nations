@@ -775,6 +775,9 @@ more_naval_focused_nation = {
 
 
 default_area_priority = {
+	enable = {
+		always = yes
+	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
@@ -1355,6 +1358,20 @@ put_garrisons_on_high_prio = {
 }
 
 default_spyplanes_production = {
+	enable = {
+		has_tech = scout_plane
+		is_major = yes
+		#OR = {
+		#	has_equipment = {
+		#		scout_plane_equipment > 50
+		#	}
+		#	has_deployed_air_force_size = {
+		#		size > 50
+		#		type = scout_plane
+		#	}
+		#}
+	}
+
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
@@ -1683,7 +1700,7 @@ default_recruit_air_scientist = {
 default_produce_some_trucks_for_buffer = {
 	enable = {
 		num_of_military_factories > 12
-		has_tech = motorised_infantry
+		has_tech = RON_Motorized
 		has_equipment = { motorized_equipment < 3000 }
 	}
 	abort_when_not_enabled = yes

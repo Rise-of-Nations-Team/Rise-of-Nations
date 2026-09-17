@@ -2,18 +2,6 @@
 
 #Country Events
 
-ron_warsdiplo.1.t: "Rebels Disperse"
-ron_warsdiplo.1.d: "Rebellion, uprising, or insurrection is a refusal of obedience or order. It refers to the open resistance against the orders of an established authority. A rebellion originates from a sentiment of indignation and disapproval of a situation and then manifests itself by the refusal to submit or to obey the authority responsible for this situation. Rebellion can be individual or collective, peaceful (civil disobedience, civil resistance, and nonviolent resistance) or violent (terrorism, sabotage and guerrilla warfare.) In political terms, rebellion and revolt are often distinguished by their different aims. If rebellion generally seeks to evade and/or gain concessions from an oppressive power, a revolt seeks to overthrow and destroy that power, as well as its accompanying laws. The goal of rebellion is resistance while a revolt seeks a revolution. As power shifts relative to the external adversary, or power shifts within a mixed coalition, or positions harden or soften on either side, an insurrection may seesaw between the two forms."
-ron_warsdiplo.1.a: "Victory"
-
-ron_warsdiplo.2.t: "Massive Civil Unrest"
-ron_warsdiplo.2.d: "Rebellion, uprising, or insurrection is a refusal of obedience or order. It refers to the open resistance against the orders of an established authority. A rebellion originates from a sentiment of indignation and disapproval of a situation and then manifests itself by the refusal to submit or to obey the authority responsible for this situation. Rebellion can be individual or collective, peaceful (civil disobedience, civil resistance, and nonviolent resistance) or violent (terrorism, sabotage and guerrilla warfare.) In political terms, rebellion and revolt are often distinguished by their different aims. If rebellion generally seeks to evade and/or gain concessions from an oppressive power, a revolt seeks to overthrow and destroy that power, as well as its accompanying laws. The goal of rebellion is resistance while a revolt seeks a revolution. As power shifts relative to the external adversary, or power shifts within a mixed coalition, or positions harden or soften on either side, an insurrection may seesaw between the two forms."
-ron_warsdiplo.2.a: "Let Them Riot"
-
-ron_warsdiplo.3.t: "Civil War!"
-ron_warsdiplo.3.d: "Rebellion, uprising, or insurrection is a refusal of obedience or order. It refers to the open resistance against the orders of an established authority. A rebellion originates from a sentiment of indignation and disapproval of a situation and then manifests itself by the refusal to submit or to obey the authority responsible for this situation. Rebellion can be individual or collective, peaceful (civil disobedience, civil resistance, and nonviolent resistance) or violent (terrorism, sabotage and guerrilla warfare.) In political terms, rebellion and revolt are often distinguished by their different aims. If rebellion generally seeks to evade and/or gain concessions from an oppressive power, a revolt seeks to overthrow and destroy that power, as well as its accompanying laws. The goal of rebellion is resistance while a revolt seeks a revolution. As power shifts relative to the external adversary, or power shifts within a mixed coalition, or positions harden or soften on either side, an insurrection may seesaw between the two forms."
-ron_warsdiplo.3.a: "War It Is"
-
 ## Generic Reactions
 ron_early_wars.x.a: "Prepare For War"
 ron_early_wars.x.b: "Now Is Not The Time"
@@ -3452,3 +3440,6 @@ ron_early_wars_news.422.d: "During World War II, the Lapland War (Finnish: Lapin
 
 ron_ww2wars.1.t:"Saudian-Yemeni War"
 ron_ww2wars.1.d:"King Ibn Saud ordered the Crown Prince of Saudi Arabia 'to re-occupy townships in the highlands of Tehama which the Imam of the Yemen has seized'. A communique states that "Ibn Saud has tried all diplomatic means of seeking an agreement, but the last just ruler in Yemen, the Imam has persisted in a policy of oppressing the inhabitants and 'eradicating' all who have not surrendered."
+ron_warsdiplo.1.a: "Very well."
+ron_warsdiplo.2.a: "Very well."
+ron_warsdiplo.3.a: "Very well."

@@ -1,4 +1,5 @@
 ﻿add_namespace = decisions
+add_namespace = generic_purchase_ships_events
 
 # Recruit general for civil war event
 country_event = {

@@ -4,19 +4,6 @@
 
 add_namespace = ron_early_wars
 
-
-
-#    _____  ______ ____  ______ _      _      _____ ____  _   _  _____ 
-#   |  __ \|  ____|  _ \|  ____| |    | |    |_   _/ __ \| \ | |/ ____|
-#   | |__) | |__  | |_) | |__  | |    | |      | || |  | |  \| | (___  
-#   |  _  /|  __| |  _ <|  __| | |    | |      | || |  | |     |\___ \ 
-#   | | \ \| |____| |_) | |____| |____| |____ _| || |__| | |\  |____) |
-#   |_|  \_\______|____/|______|______|______|_____\____/|_| \_|_____/ 
-#                                                                      
-#                                                                      
-
-
-
 # War of the Golden Stool - This will be the template for rebelions and such, cause they don't have tags yet
 country_event = {
 	id = ron_early_wars.1

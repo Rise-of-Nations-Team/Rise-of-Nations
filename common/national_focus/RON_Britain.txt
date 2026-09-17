@@ -4710,9 +4710,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = ENGDNC_boxer_rebellion_comes_to_an_end }
 		mutually_exclusive = {
-			focus = ENGDNC_stay_neutral
-		}
-		mutually_exclusive = {
 			focus = ENGDNC_european_affairs
 		}
 		ai_will_do = {
