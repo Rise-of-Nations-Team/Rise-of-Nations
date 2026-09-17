@@ -422,7 +422,7 @@ news_event = { # End of civil war, carlist victory
 	option = {
 		name = dnc_carlism.2.a
 		delete_unit_template_and_units = {
-			template = "Milicia Carlista"
+			division_template = "Milicia Carlista"
 		}
 	}
 }
@@ -543,7 +543,10 @@ news_event = { # Death of Carlos VII
 
 	trigger = {
 		tag = SPR
-		has_country_leader = SPR_Carlos_VII
+		has_country_leader = {
+			character = SPR_Carlos_VII
+			ruling_only = yes
+		}
 		date > 1909.7.17
 	}
 
@@ -563,7 +566,7 @@ news_event = { # Death of Carlos VII
 			else = {
 				add_country_leader_trait = SPR_carlist_pretender
 			}
-			set_country_leader_name = {
+			set_character_name = {
 				character = SPR_Jaime_III
 				name = "Jaime III"
 			}

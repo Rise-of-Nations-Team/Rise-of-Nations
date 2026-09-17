@@ -1811,7 +1811,7 @@ focus_tree = {
 		completion_reward ={ 
 			563 = { 
 				add_building_construction = { 
-					type = trench 
+					type = bunker 
 					level = 3 
 					province = 10683 
 					instant_build = yes
@@ -1939,13 +1939,13 @@ focus_tree = {
 		completion_reward = { 
 			716 = {
 				add_building_construction = {
-					type = trench
+					type = bunker
 					level = 3
 					province = 1150
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = trench
+					type = bunker
 					level = 2
 					province = 6851
 					instant_build = yes
@@ -1986,19 +1986,19 @@ focus_tree = {
 		completion_reward = { 
 			716 = {
 				add_building_construction = {
-					type = trench
+					type = bunker
 					level = 2
 					province = 11771
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = trench
+					type = bunker
 					level = 2
 					province = 9885
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = trench
+					type = bunker
 					level = 2
 					province = 3849
 					instant_build = yes
@@ -4123,7 +4123,7 @@ focus_tree = {
 		completion_reward ={ 
 			408 = {
 				add_building_construction = {
-					type = trench
+					type = bunker
 					level = 2
 					province = 957
 					instant_build = yes
@@ -4286,7 +4286,7 @@ focus_tree = {
 		completion_reward ={
 				942 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 2
 					province = 7454
 					instant_build = yes
@@ -4294,7 +4294,7 @@ focus_tree = {
 				}
 				942 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 2
 					province = 6991
 					instant_build = yes
@@ -4302,7 +4302,7 @@ focus_tree = {
 				}	
 				942 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 2
 					province = 4583
 					instant_build = yes
@@ -4327,7 +4327,7 @@ focus_tree = {
 		completion_reward ={ 
 				584 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 3
 					province = 5003
 					instant_build = yes
@@ -4335,7 +4335,7 @@ focus_tree = {
 				}
 				584 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 3
 					province = 4549
 					instant_build = yes
@@ -4343,7 +4343,7 @@ focus_tree = {
 				}	
 				584 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 3
 					province = 756
 					instant_build = yes
@@ -4351,7 +4351,7 @@ focus_tree = {
 				}		
 				405 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 3
 					province = 12239
 					instant_build = yes
@@ -4359,7 +4359,7 @@ focus_tree = {
 				}
 				742 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 3
 					province = 12218
 					instant_build = yes
@@ -4367,7 +4367,7 @@ focus_tree = {
 				}	
 				742 = {
 					add_building_construction = {
-					type = trench
+					type = bunker
 					level = 3
 					province = 7224
 					instant_build = yes
@@ -4512,7 +4512,7 @@ focus_tree = {
 		completion_reward ={ 
 			10 = {
 					add_building_construction = { 
-						type = trench 
+						type = bunker 
 						province = 3544 
 						level = 2 
 						instant_build = yes 
@@ -4542,13 +4542,13 @@ focus_tree = {
 
 		completion_reward ={
 			12 = {
-				add_building_construction = { type = trench province = 10383 level = 4 instant_build = yes }
-				add_building_construction = { type = trench province = 7482 level = 4 instant_build = yes }
-				add_building_construction = { type = trench province = 7482 level = 4 instant_build = yes }
-				add_building_construction = { type = trench province = 9340 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 10383 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 7482 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 7482 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 9340 level = 4 instant_build = yes }
 			}
 			1153 = {
-				add_building_construction = { type = trench province = 310 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 310 level = 4 instant_build = yes }
 			}
 		}
 	}
@@ -4569,17 +4569,17 @@ focus_tree = {
 
 		completion_reward ={
 			90 = {
-				add_building_construction = { type = trench province = 3458 level = 4 instant_build = yes }
-				add_building_construction = { type = trench province = 11430 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3458 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 11430 level = 3 instant_build = yes }
 			}
 			93 = {
-				add_building_construction = { type = trench province = 6557 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 6557 level = 4 instant_build = yes }
 			}
 			925 = {
-				add_building_construction = { type = trench province = 3407 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 3407 level = 4 instant_build = yes }
 			}
 			199 = {
-				add_building_construction = { type = trench province = 3457 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3457 level = 3 instant_build = yes }
 			}
 
 		}
@@ -4602,8 +4602,8 @@ focus_tree = {
 
 		completion_reward ={
 			137 = { 
-				add_building_construction = { type = trench province = 3686 level = 4 instant_build = yes }
-				add_building_construction = { type = trench province = 6704 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 3686 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 6704 level = 4 instant_build = yes }
 			}
 
 		}

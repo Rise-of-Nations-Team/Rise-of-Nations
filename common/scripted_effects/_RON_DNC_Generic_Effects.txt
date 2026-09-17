@@ -1,0 +1,1081 @@
+#Greater Hungary
+RON_Formable_Country18_effects = {
+	add_stability = 0.2
+
+	sound_effect = complete_focus
+	set_country_flag = unform_available
+	43 = { add_core_of = ROOT }
+	154 = { add_core_of = ROOT }
+	155 = { add_core_of = ROOT }
+	76 = { add_core_of = ROOT }
+	82 = { add_core_of = ROOT }
+	83 = { add_core_of = ROOT }
+	84 = { add_core_of = ROOT }
+	70 = { add_core_of = ROOT }
+	71 = { add_core_of = ROOT }
+	764 = { add_core_of = ROOT }
+	73 = { add_core_of = ROOT }
+	664 = { add_core_of = ROOT }
+	45 = { add_core_of = ROOT }
+	109 = { add_core_of = ROOT }
+	103 = { add_core_of = ROOT }
+	868 = { add_core_of = ROOT }
+	937 = { add_core_of = ROOT }
+	939 = { add_core_of = ROOT }
+}
+
+#Greater Croatia
+RON_Formable_Country60_effects = {
+	add_stability = 0.2
+
+	sound_effect = complete_focus
+	set_country_flag = unform_available
+	103 = { add_core_of = ROOT }
+	104 = { add_core_of = ROOT }
+	109 = { add_core_of = ROOT }
+	868 = { add_core_of = ROOT }
+	45 = { add_core_of = ROOT }
+	1048 = { add_core_of = ROOT }
+	104 = { add_core_of = ROOT }
+	1046 = { add_core_of = ROOT }
+	1047 = { add_core_of = ROOT }
+	163 = { add_core_of = ROOT }
+	736 = { add_core_of = ROOT }
+	102 = { add_claim_by = ROOT }
+}
+
+#British Imperial Federation
+RON_Formable_Country71_effects = {
+	add_stability = 0.2
+	sound_effect = complete_focus
+	set_country_flag = unform_available
+	every_state = { limit = { is_core_of = IRE } add_core_of = ROOT }
+	every_state = { limit = { is_core_of = CAN } add_core_of = ROOT }
+	every_state = { limit = { is_core_of = AST } add_core_of = ROOT }
+	every_state = { limit = { is_core_of = NZL } add_core_of = ROOT }
+}
+
+RON_partition_AUH_Historically = {
+CZE = {
+
+			every_state = {
+				limit = {
+					is_core_of = CZE
+					is_controlled_by = ROOT
+				}
+				CZE = { transfer_state = PREV }
+			}
+		}
+		HUN = {
+
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					is_controlled_by = ROOT
+				}
+				HUN = { transfer_state = PREV }
+			}
+
+		}
+		YUG = {
+			annex_country = { target = SER transfer_troops = yes }
+
+			every_state = {
+				limit = { is_core_of = YUG is_controlled_by = ROOT }
+				YUG = { transfer_state = PREV }
+			}
+
+			change_tag_from = SER
+		}
+
+		ALB = {
+
+			every_state = {
+				limit = { is_core_of = ALB is_controlled_by = ROOT }
+				ALB = { transfer_state = PREV }
+			}
+
+		}
+		POL = {
+
+			every_state = {
+				limit = { is_core_of = GAL is_controlled_by = ROOT }
+				POL = { transfer_state = PREV }
+			}
+
+		}
+		ROM = {
+
+			every_state = {
+				limit = { is_core_of = TRA is_controlled_by = ROOT }
+				ROM = { transfer_state = PREV }
+			}
+
+		}
+
+		if = {
+			limit = {
+				AUH = { owns_state = 88 }
+			}
+			POL = {
+				transfer_state = 88
+			}
+		}
+		if = {
+			limit = {
+				AUH = { owns_state = 996 }
+			}
+			POL = {
+				transfer_state = 996
+			}
+		}
+		if = {
+			limit = {
+				AUH = { owns_state = 863 }
+			}
+			POL = {
+				transfer_state = 863
+			}
+		}
+		if = {
+			limit = {
+				NOT = { country_exists = WUK }
+			}
+			WUK = {
+				transfer_state = 91
+				transfer_state = 89
+				add_state_core = 91
+				add_state_core = 89
+			}
+		}
+		AUS = {
+
+			every_state = {
+				limit = { is_core_of = AUS is_controlled_by = ROOT }
+				AUS = { transfer_state = PREV }
+			}
+
+			annex_country = { target = AUH transfer_troops = no }
+
+			give_military_access = ROOT
+			change_tag_from = AUH
+		}
+
+		ITA = {
+			transfer_state = 39
+			transfer_state = 867
+			transfer_state = 736
+			transfer_state = 866
+			transfer_state = 163
+			transfer_state = 1066
+		}
+
+		BNT = {
+			transfer_state = 82
+			transfer_state = 764
+			add_state_core = 82
+			add_state_core = 764
+		}
+
+		CZE = {
+			every_state = {
+				limit = { is_core_of = CZR is_controlled_by = ROOT }
+				CZE = { transfer_state = PREV }
+			}
+
+		}
+		YUG = {
+			every_state = {
+				limit = { is_core_of = SLV is_controlled_by = ROOT }
+				YUG = { transfer_state = PREV }
+			}
+
+		}
+
+		puppet = AUS
+}
+
+RON_partition_AUH_Ahistorically = {
+				 	ALB = {
+
+		 		every_state = {
+		 			limit = { is_core_of = ALB is_owned_by = ROOT }
+		 			ALB = { transfer_state = PREV }
+		 		}
+
+		 	}
+
+		 	MNT = {
+
+		 		every_state = {
+		 			limit = { is_core_of = MNT is_owned_by = ROOT }
+		 			MNT = { transfer_state = PREV }
+		 		}
+
+		 	}
+
+		 	SER = {
+
+		 		every_state = {
+		 			limit = { is_core_of = SER is_owned_by = ROOT }
+		 			SER = { transfer_state = PREV }
+		 		}
+
+		 	}
+
+			GAL = {
+		 		every_state = {
+		 			limit = { is_core_of = GAL is_owned_by = ROOT }
+		 			GAL = { transfer_state = PREV }
+		 		}
+
+		 	}
+
+		 	ROM = {
+
+		 		every_state = {
+		 			limit = { is_core_of = ROM is_owned_by = ROOT }
+		 			ROM = { transfer_state = PREV }
+		 		}
+
+		 		#set_politics = {
+		 		#	ruling_party = democratic
+		 		#}
+		 		#add_popularity = { ideology = democratic popularity = 0.30 }
+		 	}
+		 	release = AUH
+		 	AUS = {
+
+		 		annex_country = { target = AUH transfer_troops = no }
+
+		 		every_state = {
+		 			limit = { is_owned_by = AUH }
+		 			AUS = { transfer_state = PREV }
+		 		}
+
+
+		 	}
+
+		 		HUN = {
+		 			every_state = {
+		 				limit = {
+		 					is_core_of = SLO
+		 				}
+		 				HUN = {
+		 					transfer_state = PREV
+		 				}
+						add_core_of = HUN
+		 			}
+		 			every_state = {
+		 				limit = {
+		 					is_core_of = TRA
+		 				}
+		 				HUN = {
+		 					transfer_state = PREV
+		 				}
+						add_core_of = HUN
+		 			}
+		 			every_state = {
+		 				limit = {
+		 					is_core_of = HUN
+		 				}
+		 				HUN = {
+		 					transfer_state = PREV
+		 				}
+		 			}
+		 			#Give Cores on Greater Hungary
+		 			RON_Formable_Country18_effects = yes
+		 			transfer_state = 868
+		 			transfer_state = 45
+		 			transfer_state = 764
+					every_state = {
+		 				limit = {
+		 					is_owned_by = HUN
+		 				}
+		 				add_core_of = HUN
+		 			}
+		 		}
+		 		CRO = {
+		 			every_state = {
+		 				limit = {
+		 					is_core_of = CRO
+		 				}
+		 				CRO = {
+		 					transfer_state = PREV
+		 				}
+		 			}
+		 			every_state = {
+		 				limit = {
+		 					is_core_of = BOS
+		 				}
+		 				CRO = {
+		 					transfer_state = PREV
+		 				}
+						add_core_of = CRO
+		 			}
+		 			transfer_state = 1104
+		 			transfer_state = 163
+		 			#Give Cores on Greater Croatia
+		 			RON_Formable_Country60_effects = yes
+					every_state = {
+		 				limit = {
+		 					is_owned_by = CRO
+		 				}
+		 				add_core_of = CRO
+		 			}
+		 		}
+
+				AUS = {
+					every_state = {
+						limit = { is_core_of = CZR is_owned_by = ROOT }
+						AUS = { transfer_state = PREV }
+					}
+				}
+
+		 		AUS = {
+		 			transfer_state = 736
+		 			transfer_state = 1066
+		 		}
+
+		 	puppet = AUS
+		 	puppet = HUN
+		 	puppet = CRO
+		 	puppet = GAL
+			hidden_effect = {
+				set_autonomy = { target = AUS autonomous_state = autonomy_dominion freedom_level = 0.1 }
+				set_autonomy = { target = HUN autonomous_state = autonomy_dominion freedom_level = 0.1 }
+				set_autonomy = { target = CRO autonomous_state = autonomy_dominion freedom_level = 0.1 }
+				set_autonomy = { target = GAL autonomous_state = autonomy_dominion freedom_level = 0.1 }
+			}
+}
+
+RON_Handle_Tenth_Crusade_Victory = {
+	every_country = {
+		limit = { is_in_faction_with = ENG }
+		white_peace = OTT
+	}
+	every_country = {
+		limit = { is_in_faction_with = OTT }
+		white_peace = ENG
+	}
+	ROOT = {
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = JOR
+					is_core_of = PAL
+					is_core_of = IRQ
+					is_core_of = QAT
+					is_core_of = BHR
+					is_core_of = OMA
+					is_core_of = YEM
+				}
+				OR = {
+					OTT = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = OTT
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = OTT
+						controls_state = PREV
+					}
+				}
+			}
+			ROOT = {
+				transfer_state = PREV
+			}
+		}
+	}
+	SAU = {
+		annex_country = { target = JBS transfer_troops = no }
+		annex_country = { target = HJZ transfer_troops = no }
+		every_state = {
+			limit = {
+				is_core_of = SAU
+				OR = {
+					OTT = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = OTT
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = OTT
+						controls_state = PREV
+					}
+				}
+			}
+			SAU = {
+				transfer_state = PREV
+			}
+		}
+	}
+	FRA = {
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = SYR
+					is_core_of = LEB
+				}
+				OR = {
+					OTT = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = OTT
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = OTT
+						controls_state = PREV
+					}
+				}
+			}
+			FRA = {
+				transfer_state = PREV
+			}
+		}
+	}
+	GRE = {
+		every_state = {
+			limit = {
+				is_core_of = GRE
+				OR = {
+					OTT = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = OTT
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = OTT
+						controls_state = PREV
+					}
+				}
+			}
+			GRE = {
+				transfer_state = PREV
+			}
+		}
+	}
+	BUL = {
+		every_state = {
+			limit = {
+				is_core_of = BUL
+				OR = {
+					OTT = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = OTT
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = OTT
+						controls_state = PREV
+					}
+				}
+			}
+			BUL = {
+				transfer_state = PREV
+			}
+		}
+	}
+	ALB = {
+		every_state = {
+			limit = {
+				is_core_of = ALB
+				OR = {
+					OTT = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = OTT
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = OTT
+						controls_state = PREV
+					}
+				}
+			}
+			ALB = {
+				transfer_state = PREV
+			}
+		}
+	}
+	SER = {
+		every_state = {
+			limit = {
+				is_core_of = YUG
+				OR = {
+					OTT = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = OTT
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = OTT
+						controls_state = PREV
+					}
+				}
+			}
+			SER = {
+				transfer_state = PREV
+			}
+		}
+	}
+	ITA = {
+		every_state = {
+			limit = {
+				is_core_of = LBA
+				OR = {
+					OTT = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = OTT
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = OTT
+						controls_state = PREV
+					}
+				}
+			}
+			ITA = {
+				transfer_state = PREV
+			}
+		}
+	}
+	release_puppet = IRQ
+	release_puppet = SAU
+	release_puppet = YEM
+	release_puppet = OMA
+	hidden_effect = {
+		set_autonomy = { target = IRQ autonomous_state = autonomy_dominion freedom_level = 0.1 }
+		set_autonomy = { target = SAU autonomous_state = autonomy_dominion freedom_level = 0.1 }
+		set_autonomy = { target = YEM autonomous_state = autonomy_dominion freedom_level = 0.1 }
+		set_autonomy = { target = OMA autonomous_state = autonomy_dominion freedom_level = 0.1 }
+	}
+	every_other_country = {
+		limit = { is_in_faction_with = ENG }
+		leave_faction = yes
+	}
+	ENG = { dismantle_faction = yes }
+	every_other_country = {
+		limit = { is_in_faction_with = OTT }
+		leave_faction = yes
+	}
+	OTT = { dismantle_faction = yes }
+}
+
+RON_Handle_Tenth_Crusade_Loss = {
+	every_country = {
+		limit = { is_in_faction_with = ENG }
+		white_peace = OTT
+	}
+	every_country = {
+		limit = { is_in_faction_with = OTT }
+		white_peace = ENG
+	}
+	ROOT = {
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = ARM
+					is_core_of = AZR
+					is_core_of = GEO
+					is_core_of = EGY
+					is_core_of = GRE
+					is_core_of = ALB
+					is_core_of = BUL
+					is_core_of = SER
+					is_core_of = MNT
+					is_core_of = ROM
+					is_core_of = OMA
+					is_core_of = YEM
+					is_core_of = KUW
+					is_core_of = OTT
+					is_core_of = CYP
+				}
+				OR = {
+					ENG = {
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_subject_of = ENG
+						controls_state = PREV
+					}
+					any_other_country = {
+						is_in_faction_with = ENG
+						controls_state = PREV
+					}
+				}
+			}
+			ROOT = {
+				transfer_state = PREV
+			}
+		}
+	}
+	every_other_country = {
+		limit = { is_in_faction_with = ENG }
+		leave_faction = yes
+	}
+	ENG = { dismantle_faction = yes }
+	every_other_country = {
+		limit = { is_in_faction_with = OTT }
+		leave_faction = yes
+	}
+	OTT = { dismantle_faction = yes }
+}
+
+RON_negotiations_austria_expansion_remove_guarantees = {
+	if = {
+		limit = {
+			tag = USA
+		}
+		USA = {
+			diplomatic_relation = {
+				country = COL
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = PAN
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = VEN
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = ECU
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = PRU
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = BOL
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = URG
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = PAR
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = BRA
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = ARG
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = CHL
+				relation = guarantee
+				active = no
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			tag = ENG
+		}
+		ENG = {
+		diplomatic_relation = {
+			country = CAN
+			relation = guarantee
+			active = no
+		}
+		diplomatic_relation = {
+			country = USA
+			relation = guarantee
+			active = no
+		}
+		diplomatic_relation = {
+			country = MEX
+			relation = guarantee
+			active = no
+		}
+		diplomatic_relation = {
+			country = HAI
+			relation = guarantee
+			active = no
+		}
+		diplomatic_relation = {
+			country = DOM
+			relation = guarantee
+			active = no
+		}
+		diplomatic_relation = {
+			country = CUB
+			relation = guarantee
+			active = no
+		}
+
+		}
+	}
+
+	if = {
+		limit = {
+			tag = JAP
+		}
+		JAP = {
+			diplomatic_relation = {
+				country = PHI
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = USA
+				relation = guarantee
+				active = no
+			}
+		}
+	}
+
+}
+
+RON_negotiations_austria_expansion_add_guarantees = {
+	if = {
+		limit = {
+			tag = USA
+		}
+		USA = {
+		give_guarantee = COL
+		give_guarantee = PAN
+		give_guarantee = VEN
+		give_guarantee = ECU
+		give_guarantee = PRU
+		give_guarantee = BOL
+		give_guarantee = URG
+		give_guarantee = PAR
+		give_guarantee = BRA
+		give_guarantee = ARG
+		give_guarantee = CHL
+		}
+	}
+
+	if = {
+		limit = {
+			tag = ENG
+		}
+		ENG = {
+			give_guarantee = CAN
+			give_guarantee = USA
+			give_guarantee = MEX
+			give_guarantee = HAI
+			give_guarantee = DOM
+			give_guarantee = CUB
+		}
+	}
+
+	if = {
+		limit = {
+			tag = JAP
+		}
+		JAP = {
+		give_guarantee = PHI
+		give_guarantee = USA
+		}
+	}
+
+}
+
+RON_negotiations_austria_expansion_add_claims = {
+	if = {
+		limit = {
+			tag = USA
+		}
+		USA = {
+			every_state = { limit = { is_core_of = CUB } add_claim_by = ROOT }
+			every_state = { limit = { is_core_of = DOM } add_claim_by = ROOT }
+			every_state = { limit = { is_core_of = HAI } add_claim_by = ROOT }
+
+			#Mexico
+			482 = { add_claim_by = ROOT }
+			483 = { add_claim_by = ROOT }
+			484 = { add_claim_by = ROOT }
+
+			#Canada
+			471 = { add_claim_by = ROOT }
+			473 = { add_claim_by = ROOT }
+
+					create_wargoal = {
+				expire = 100
+				target = CUB
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = DOM
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = HAI
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = CAN
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = MEX
+				type = annex_everything
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			tag = ENG
+		}
+		ENG = {
+
+			every_state = { limit = { is_core_of = CUB } add_claim_by = ROOT }
+			every_state = { limit = { is_core_of = DOM } add_claim_by = ROOT }
+			every_state = { limit = { is_core_of = HAI } add_claim_by = ROOT }
+
+			hidden_effect = {
+				357 = { add_core_of = THI }
+				358 = { add_core_of = THI }
+				359 = { add_core_of = THI }
+				360 = { add_core_of = THI }
+				361 = { add_core_of = THI }
+				362 = { add_core_of = THI }
+				363 = { add_core_of = THI }
+				364 = { add_core_of = THI }
+				365 = { add_core_of = THI }
+				1135 = { add_core_of = THI }
+				836 = { add_core_of = THI }
+				837 = { add_core_of = THI }
+				838 = { add_core_of = THI }
+				839 = { add_core_of = THI }
+				840 = { add_core_of = THI }
+				841 = { add_core_of = THI }
+				843 = { add_core_of = THI }
+				844 = { add_core_of = THI }
+				366 = { add_core_of = THI }
+				370 = { add_core_of = THI }
+				367 = { add_core_of = THI }
+				368 = { add_core_of = THI }
+				369 = { add_core_of = THI }
+				395 = { add_core_of = THI }
+				396 = { add_core_of = THI }
+				261 = { add_core_of = THI }
+				393 = { add_core_of = THI }
+				394 = { add_core_of = THI }
+				856 = { add_core_of = THI }
+				857 = { add_core_of = THI }
+				357 = { add_claim_by = ENG }
+				358 = { add_claim_by = ENG }
+				359 = { add_claim_by = ENG }
+				360 = { add_claim_by = ENG }
+				361 = { add_claim_by = ENG }
+				362 = { add_claim_by = ENG }
+				363 = { add_claim_by = ENG }
+				364 = { add_claim_by = ENG }
+				365 = { add_claim_by = ENG }
+				1135 = { add_claim_by = ENG }
+				836 = { add_claim_by = ENG }
+				837 = { add_claim_by = ENG }
+				838 = { add_claim_by = ENG }
+				839 = { add_claim_by = ENG }
+				840 = { add_claim_by = ENG }
+				841 = { add_claim_by = ENG }
+				843 = { add_claim_by = ENG }
+				844 = { add_claim_by = ENG }
+				366 = { add_claim_by = ENG }
+				370 = { add_claim_by = ENG }
+				367 = { add_claim_by = ENG }
+				368 = { add_claim_by = ENG }
+				369 = { add_claim_by = ENG }
+				395 = { add_claim_by = ENG }
+				396 = { add_claim_by = ENG }
+				261 = { add_claim_by = ENG }
+				393 = { add_claim_by = ENG }
+				394 = { add_claim_by = ENG }
+				856 = { add_claim_by = ENG }
+				857 = { add_claim_by = ENG }
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = CUB
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = DOM
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = HAI
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = USA
+				type = annex_everything
+			}
+
+		}
+	}
+
+	if = {
+		limit = {
+			tag = JAP
+		}
+		JAP = {
+			every_state = { limit = { is_core_of = INS } add_claim_by = ROOT }
+			every_state = { limit = { is_core_of = MAL } add_claim_by = ROOT }
+			every_state = { limit = { is_core_of = VIN } add_claim_by = ROOT }
+			every_state = { limit = { is_core_of = LAO } add_claim_by = ROOT }
+			every_state = { limit = { is_core_of = CAM } add_claim_by = ROOT }
+
+					create_wargoal = {
+				expire = 100
+				target = MAL
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = INS
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = ENG
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = FRA
+				type = annex_everything
+			}
+
+					create_wargoal = {
+				expire = 100
+				target = HOL
+				type = annex_everything
+			}
+		}
+	}
+
+}
+
+RON_increase_education_spending = {
+	if = {
+		limit = {
+			has_idea = education_budget1
+		}
+		add_ideas = education_budget2
+	}
+	else_if = {
+		limit = {
+			has_idea = education_budget2
+		}
+		add_ideas = education_budget3
+	}
+	else_if = {
+		limit = {
+			has_idea = education_budget3
+		}
+		add_ideas = education_budget4
+	}
+	else_if = {
+		limit = {
+			has_idea = education_budget4
+		}
+		add_ideas = education_budget5
+	}
+	else_if = {
+		limit = {
+			has_idea = education_budget5
+		}
+		add_ideas = education_budget6
+	}
+	else_if = {
+		limit = {
+			has_idea = education_budget6
+		}
+		add_ideas = education_budget7
+	}
+}
+
+RON_increase_nuclear_spending = {
+	if = {
+		limit = {
+			has_idea = nuclear_budget1
+		}
+		add_ideas = nuclear_budget2
+	}
+	else_if = {
+		limit = {
+			has_idea = nuclear_budget2
+		}
+		add_ideas = nuclear_budget3
+	}
+	else_if = {
+		limit = {
+			has_idea = nuclear_budget3
+		}
+		add_ideas = nuclear_budget4
+	}
+	else_if = {
+		limit = {
+			has_idea = nuclear_budget4
+		}
+		add_ideas = nuclear_budget5
+	}
+	else_if = {
+		limit = {
+			has_idea = nuclear_budget5
+		}
+		add_ideas = nuclear_budget6
+	}
+	else_if = {
+		limit = {
+			has_idea = nuclear_budget6
+		}
+		add_ideas = nuclear_budget7
+	}
+}

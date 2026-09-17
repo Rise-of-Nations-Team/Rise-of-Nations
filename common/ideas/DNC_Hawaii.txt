@@ -105,13 +105,9 @@ ideas = {
 			picture = WNG_B_ovra
 			removal_cost = -1 
 			modifier = {
-				conservative_drift = -0.10
-				trotskyism_drift = -0.10
-				maoism_drift = -0.10
+				democratic_drift = -0.10
+				communism_drift = -0.10
 				islamism_drift = -0.10
-				radical_shiaism_drift = -0.10
-				Salafism_drift = -0.10
-				Christian_Democratic_drift = -0.10
 			}
 		}
 	}

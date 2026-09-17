@@ -691,7 +691,6 @@ on_actions = {
 				}
 				JAP = { JAP_intervene_in_china_remove = yes }
 			}
-
 			if = {
 				limit = {
 					original_tag = POL

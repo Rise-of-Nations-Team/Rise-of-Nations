@@ -91,7 +91,7 @@ scripted_gui = {
 			}
 			start_game4_click = {
 				clr_country_flag = show_credits
-				RON_start_game_button_rc = yes
+				set_global_flag = game_started
 			}
 		}
 	}
@@ -118,7 +118,7 @@ scripted_gui = {
 			}
 			start_game3_click = {
 				clr_country_flag = show_intro
-				RON_start_game_button_rc = yes
+				set_global_flag = game_started
 			}
 		}
 	}
@@ -144,7 +144,7 @@ scripted_gui = {
 			}
 			start_game_click = {
 				clr_country_flag = show_recent_changes
-				RON_start_game_button_rc = yes
+				set_global_flag = game_started
 			}
 		}
 	}
@@ -351,7 +351,7 @@ scripted_gui = {
 			start_game2_click = {
 				clr_country_flag = show_settings
 				clr_country_flag = show_gamemode_dropdown
-				RON_start_game_button_rc = yes
+				set_global_flag = game_started
 			}
 		}
 		triggers = {

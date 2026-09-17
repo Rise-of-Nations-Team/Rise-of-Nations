@@ -2,19 +2,19 @@ capital = 289
 oob = "SIA_1900"
 add_ideas = {
 	export_focus
-	tax_low
-	tariffs_average
+	#tax_low
+	#tariffs_average
 	civilian_economy
-	press_regulated
-	key_industries
-	fdi_allowed
-	foreign_volunteers
-	train_none
-	officer_train_none
-	security_minor_restrictions
-	education_budget2
-	health_budget2
-	foreign_isolationism
+	#press_regulated
+	#key_industries
+	#fdi_allowed
+	#foreign_volunteers
+	#train_none
+	#officer_train_none
+	#security_minor_restrictions
+	#education_budget2
+	#health_budget2
+	#foreign_isolationism
 }
 
 set_convoys = 15
@@ -337,7 +337,9 @@ recruit_character = SIA_manphya_khanphialong
 	add_country_leader_role = {
 		promote_character = yes
 	    character = SIA_plaek_phibunsongkhram
-	    ideology = militarism		
+	    country_leader = {
+	    	ideology = militarism
+	    }
 	}
 
 	set_portraits = {
@@ -397,7 +399,9 @@ recruit_character = SIA_manphya_khanphialong
 	add_country_leader_role = {
 		promote_character = yes
 	    character = SIA_sarit_thanarat
-	    ideology = militarism		
+	    country_leader = {
+	    	ideology = militarism
+	    }
 	}	
 }
 
@@ -417,7 +421,9 @@ recruit_character = SIA_manphya_khanphialong
 	add_country_leader_role = {
 		promote_leader = yes
 	    character = SIA_thanom_kittikachorn
-	    ideology = militarism		
+	    country_leader = {
+	    	ideology = militarism
+	    }
 	}	
 
 	retire_character = SIA_pridi_banomyong
@@ -446,7 +452,9 @@ recruit_character = SIA_manphya_khanphialong
 	add_country_leader_role = {
 		promote_character = yes
 	    character = SIA_kriangsak_chomanan
-	    ideology = militarism		
+	    country_leader = {
+	    	ideology = militarism
+	    }
 	}	
 
 	retire_character = SIA_seni_pramoj

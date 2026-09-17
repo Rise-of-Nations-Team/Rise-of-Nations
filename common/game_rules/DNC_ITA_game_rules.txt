@@ -1,6 +1,6 @@
 ITA_dnc_ai_behavior = {
 	name = "ITA_DNC_AI_BEHAVIOR"
-	group = "RULE_GROUP_AI_BEHAVIOR"
+	group = "RULE_GROUP_DNC_AI_BEHAVIOR"
 	default = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"

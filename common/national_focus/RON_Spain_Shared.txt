@@ -61,8 +61,6 @@ joint_focus = {
  		}
  		SPF = {
  			remove_civil_war_target = SPB
- 		}
- 		SPF = {
  			white_peace = SPB
  		}
  		create_faction = SPA_MONARCHIST_FACTION
