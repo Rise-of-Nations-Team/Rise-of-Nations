@@ -162,4 +162,22 @@ leader_traits = {
 		political_power_factor = 0.05
 		political_advisor_cost_factor = -0.15
 	}
+
+	ITA_capital_ship_theory_genius = {
+		random = no
+		sprite = 14
+		naval_doctrine_cost_factor = -0.15
+		capital_ships_track_mastery_gain_factor = 0.15
+		experience_gain_navy = 0.01
+		equipment_bonus = {
+			capital_ship = {
+				instant = yes
+				naval_speed = 0.10
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

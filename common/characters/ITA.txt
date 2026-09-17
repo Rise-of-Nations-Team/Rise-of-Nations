@@ -45,7 +45,7 @@ characters = {
 					has_country_flag = ITA_start_1910
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { AST_academic_proponent aviation_hero }
 			research_bonus = { heavy_air = 0.05 }
 			ai_will_do = { factor = 1 }
@@ -67,7 +67,7 @@ characters = {
 					has_country_flag = ITA_start_1910
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { air_chief_all_weather_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -153,7 +153,7 @@ characters = {
 					has_country_flag = ITA_start_1910
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { naval_aviation_pioneer famous_aviator }
 			research_bonus = { air_equipment = 0.05 }
 			ai_will_do = { factor = 1 }
@@ -282,6 +282,7 @@ characters = {
 				NOT = { has_government = fascism }
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
+			cost = 150
 			traits = { insignificant_layman }
 			ai_will_do = { factor = 1 }
 		}
@@ -351,6 +352,7 @@ characters = {
 				NOT = { is_country_leader = yes }
 				NOT = { has_government = communism }
 			}
+			cost = 150
 			traits = { AFG_reactionary_pm JAP_military_prime_minister }
 			ai_will_do = { factor = 1 }
 		}
@@ -508,6 +510,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { MEN_nationalist_education_enthusiast conservative_grandee }
 			ai_will_do = { factor = 2 }
 		}
@@ -542,6 +545,7 @@ characters = {
 				has_government = democratic
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
+			cost = 150
 			traits = { HUN_moderate_lawyer SWE_minister_of_justice }
 			ai_will_do = { factor = 1 }
 		}
@@ -581,6 +585,7 @@ characters = {
 				has_government = democratic
 				NOT = { has_country_leader_ideology = conservatism }
 			}
+			cost = 150
 			traits = { ITA_minister_of_agriculture_industry NZL_hydro_electricity_professor }
 			ai_will_do = { factor = 1 }
 		}
@@ -623,6 +628,7 @@ characters = {
 					}
 				}
 			}
+			cost = 150
 			traits = { socdem_reformist BRA_academic_writer }
 			ai_will_do = { factor = 1 }
 		}
@@ -663,7 +669,7 @@ characters = {
 				has_government = democratic
 				NOT = { has_country_leader_ideology = anarchism }
 			}
-			cost = 75
+			cost = 150
 			traits = { civil_administration silent_lawyer }
 			ai_will_do = { factor = 1 }
 		}
@@ -710,6 +716,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { harsh_propagandist JAP_socialist_revolutionary }
 			ai_will_do = { factor = 1 }
 		}
@@ -759,6 +766,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { SWI_militaristic_nationalist eng_imperialist_author }
 			ai_will_do = { factor = 1 }
 		}
@@ -797,6 +805,7 @@ characters = {
 				has_country_flag = ITA_cw_lazzari_freed
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { popular_figurehead federative_socialist }
 			ai_will_do = { factor = 1 }
 		}
@@ -845,8 +854,8 @@ characters = {
 					has_country_flag = ITA_start_1910
 				}
 			}
-			cost = 150
-			traits = { army_chief_reform_2 }
+			cost = 200
+			traits = { army_chief_reform_3 }
 			ai_will_do = { factor = 1 }
 		}
 		field_marshal = {
@@ -921,7 +930,7 @@ characters = {
 			visible = {
 				NOT = { has_global_flag = DNC_RON_ERA_gflg }
 			}
-			cost = 150
+			cost = 200
 			traits = { army_chief_offensive_3 }
 			ai_will_do = { factor = 1 }
 		}
@@ -996,7 +1005,7 @@ characters = {
 					has_completed_focus = ITADNC_arm_the_military_railways
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { army_entrenchment_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1026,7 +1035,7 @@ characters = {
 			visible = {
 				NOT = { has_global_flag = DNC_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_chief_organizational_2 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1063,7 +1072,7 @@ characters = {
 			visible = {
 				NOT = { has_global_flag = DNC_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_chief_offensive_2 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1147,7 +1156,7 @@ characters = {
 			visible = {
 				NOT = { has_global_flag = DNC_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_chief_maneuver_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1204,7 +1213,7 @@ characters = {
 					has_completed_focus = ITADNC_w_the_ascari_battalions
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { army_infantry_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1234,7 +1243,7 @@ characters = {
 			visible = {
 				NOT = { has_global_flag = DNC_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 200
 			traits = { army_regrouping_3 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1274,7 +1283,7 @@ characters = {
 			available = {
 				NOT = { has_idea_with_trait = army_regrouping_3 }
 			}
-			cost = 100
+			cost = 200
 			traits = { army_artillery_3 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1404,7 +1413,7 @@ characters = {
 				}
 				NOT = { has_government = communism }
 			}
-			cost = 100
+			cost = 150
 			traits = { navy_screen_1 popular_figurehead }
 			ai_will_do = { factor = 1 }
 		}
@@ -1524,6 +1533,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { quartermaster_general }
 			ai_will_do = { factor = 1 }
 		}
@@ -1546,7 +1556,7 @@ characters = {
 					has_country_flag = ITA_start_1914
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { navy_fleet_logistics_2 general_staffer }
 			ai_will_do = { factor = 1 }
 		}
@@ -1594,6 +1604,7 @@ characters = {
 				NOT = { is_country_leader = yes }
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
+			cost = 150
 			traits = { diplomatic_minister landowner }
 			ai_will_do = { factor = 1 }
 		}
@@ -1631,6 +1642,7 @@ characters = {
 				NOT = { has_global_flag = INT_RON_ERA_gflg }
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
+			cost = 150
 			traits = { SWE_education_for_all lawyer }
 			ai_will_do = { factor = 1 }
 		}
@@ -1665,6 +1677,7 @@ characters = {
 				NOT = { has_global_flag = INT_RON_ERA_gflg }
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
+			cost = 150
 			traits = { CZE_minister_of_finance laissez_faire_capitalist }
 			ai_will_do = { factor = 1 }
 		}
@@ -1692,7 +1705,7 @@ characters = {
 				NOT = { has_government = fascism }
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_chief_drill_2 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1720,7 +1733,7 @@ characters = {
 				NOT = { has_government = fascism }
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_chief_entrenchment_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1756,7 +1769,7 @@ characters = {
 				}
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { fortification_engineer general_staffer }
 			research_bonus = { engineers_tech = 0.07 }
 			ai_will_do = { factor = 1 }
@@ -1796,7 +1809,7 @@ characters = {
 				NOT = { has_global_flag = INT_RON_ERA_gflg }
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_logistics_2 quartermaster_general }
 			ai_will_do = { factor = 1 }
 		}
@@ -1822,7 +1835,7 @@ characters = {
 			available = {
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { air_strategic_bombing_2 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1843,7 +1856,7 @@ characters = {
 					has_country_flag = ITA_start_1910
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { victory_through_airpower military_modernizer }
 			research_bonus = { air_doctrine = 0.07 }
 			ai_will_do = { factor = 1 }
@@ -1859,7 +1872,7 @@ characters = {
 			available = {
 				has_country_flag = ITA_start_1914
 			}
-			cost = 100
+			cost = 150
 			traits = { air_strategic_bombing_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1906,7 +1919,7 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { close_air_support_proponent SAU_engineer }
 			research_bonus = { air_equipment = 0.05 }
 			ai_will_do = { factor = 1 }
@@ -1928,7 +1941,7 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { air_chief_reform_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -1956,7 +1969,7 @@ characters = {
 				NOT = { has_global_flag = INT_RON_ERA_gflg }
 				NOT = { has_global_flag = CLD_RON_ERA_gflg }
 			}
-			cost = 100
+			cost = 150
 			traits = { navy_capital_ship_2 }
 			ai_will_do = { factor = 1 }
 		}
@@ -2110,7 +2123,7 @@ characters = {
 			traits = {
 				army_chief_morale_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -2152,7 +2165,7 @@ characters = {
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2183,7 +2196,7 @@ characters = {
 			traits = {
 				army_chief_defensive_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -2222,7 +2235,7 @@ characters = {
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -2295,7 +2308,7 @@ characters = {
 			traits = {
 				army_chief_organizational_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -2361,7 +2374,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = army_chief
 			idea_token = alberto_pariani
 			allowed = {
@@ -2569,7 +2582,7 @@ characters = {
 			traits = {
 				army_cavalry_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -2608,7 +2621,7 @@ characters = {
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 2.000
 			}
@@ -3074,7 +3087,7 @@ characters = {
 			traits = {
 				navy_chief_decisive_battle_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3110,7 +3123,7 @@ characters = {
 			traits = {
 				navy_anti_submarine_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3136,7 +3149,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = high_command
 			idea_token = luigi_rizzo
 			ledger = navy
@@ -3245,7 +3258,7 @@ characters = {
 			traits = {
 				navy_capital_ship_1
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3272,7 +3285,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = angelo_iachino
 			ledger = navy
@@ -3436,6 +3449,7 @@ characters = {
 				has_government = fascism
 			}
 
+			cost = 200
 			traits = {
 				navy_chief_commerce_raiding_3
 			}
@@ -3487,7 +3501,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = renato_sandalli
 			ledger = air
@@ -3507,7 +3521,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ITA_romeo_bernotti
 			ledger = navy
@@ -3549,7 +3563,7 @@ characters = {
 			traits = {
 				navy_chief_commerce_raiding_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3580,7 +3594,7 @@ characters = {
 			traits = {
 				navy_chief_naval_aviation_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3622,7 +3636,7 @@ characters = {
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3657,7 +3671,7 @@ characters = {
 			traits = {
 				air_chief_safety_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3681,7 +3695,7 @@ characters = {
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3705,7 +3719,7 @@ characters = {
 			traits = {
 				air_chief_ground_support_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3733,7 +3747,7 @@ characters = {
 			traits = {
 				air_tactical_bombing_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3761,7 +3775,7 @@ characters = {
 			traits = {
 				air_air_combat_training_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3789,7 +3803,7 @@ characters = {
 			traits = {
 				air_bomber_interception_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3817,7 +3831,7 @@ characters = {
 			traits = {
 				navy_naval_air_defense_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3849,7 +3863,7 @@ characters = {
 			traits = {
 				army_logistics_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -3875,7 +3889,7 @@ characters = {
 					has_country_leader_with_trait = mussolini_minister_of_foreign_affairs
 				}
 			}
-			cost = 75
+			cost = 150
 			traits = {
 				hierarch_minister_of_foreign_affairs
 			}
@@ -3917,7 +3931,7 @@ characters = {
 				}
 			}
 
-			cost = 75
+			cost = 150
 			traits = {
 				hierarch_minister_of_justice
 			}
@@ -3955,7 +3969,7 @@ characters = {
 					has_country_leader_with_trait = mussolini_minister_of_education
 				}
 			}
-			cost = 75
+			cost = 150
 			traits = {
 				hierarch_minister_of_education
 			}
@@ -3995,7 +4009,7 @@ characters = {
 				}
 				has_government = fascism
 			}
-			cost = 75
+			cost = 150
 			traits = {
 				hierarch_minister_of_corporations
 			}
@@ -4039,7 +4053,7 @@ characters = {
 			traits = {
 				army_regrouping_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -4055,6 +4069,7 @@ characters = {
 				has_intelligence_agency = yes
 				has_government = fascism
 			}
+			cost = 150
 			traits = {
 				head_of_intelligence
 			}
@@ -4096,6 +4111,7 @@ characters = {
 			}
 			available = {
 			}
+			cost = 150
 			traits = {
 				prince_of_terror
 			}
@@ -4127,6 +4143,7 @@ characters = {
 			available = {
 				has_government = fascism
 			}
+			cost = 150
 			traits = {
 				war_industrialist
 			}
@@ -4158,6 +4175,7 @@ characters = {
 			available = {
 				has_government = fascism
 			}
+			cost = 150
 			traits = {
 				armaments_organizer
 			}
@@ -4193,6 +4211,7 @@ characters = {
 					has_government = neutrality
 				}
 			}
+			cost = 150
 			traits = {
 				captain_of_industry
 			}
@@ -4226,6 +4245,7 @@ characters = {
 				has_government = fascism
 
 			}
+			cost = 150
 			traits = {
 				financial_expert
 			}
@@ -4258,6 +4278,7 @@ characters = {
 			}
 			available = {
 			}
+			cost = 150
 			traits = {
 				staunch_loyalist
 			}
@@ -4297,6 +4318,7 @@ characters = {
 					has_government = fascism
 				}
 			}
+			cost = 150
 			traits = {
 				editor
 			}
@@ -4329,6 +4351,7 @@ characters = {
 			available = {
 				has_government = fascism
 			}
+			cost = 150
 			traits = {
 				ideological_crusader
 			}
@@ -4362,6 +4385,7 @@ characters = {
 			available = {
 				has_government = fascism
 			}
+			cost = 150
 			traits = {
 				backroom_backstabber
 			}
@@ -4400,6 +4424,7 @@ characters = {
 					}
 				}
 			}
+			cost = 150
 			traits = {
 				fascist_demagogue
 			}
@@ -4464,7 +4489,7 @@ characters = {
 			traits = {
 				army_chief_organizational_3
 			}
-			cost = 100
+			cost = 200
 			ai_will_do = {
 				base = 1.000
 			}
@@ -4545,6 +4570,7 @@ characters = {
 			allowed = {
 				original_tag = ITA
 			}
+			cost = 150
 			traits = {
 				staunch_monarchist
 			}
@@ -4576,6 +4602,7 @@ characters = {
 			}
 			available = {
 			}
+			cost = 150
 			traits = {
 				economic_reformer
 			}
@@ -4621,6 +4648,7 @@ characters = {
 					}
 				}
 			}
+			cost = 150
 			traits = {
 				voice_of_restraint
 			}
@@ -4655,6 +4683,7 @@ characters = {
 					}
 				}
 			}
+			cost = 150
 			traits = {
 				minister_of_posts_and_telegraphs
 			}
@@ -4689,6 +4718,7 @@ characters = {
 					}
 				}
 			}
+			cost = 150
 			traits = {
 				liberal_professor
 			}
@@ -4716,6 +4746,7 @@ characters = {
 			allowed = {
 				original_tag = ITA
 			}
+			cost = 150
 			traits = {
 				CZE_diplomatic_workhorse
 			}
@@ -4743,6 +4774,7 @@ characters = {
 			available = {
 				always = no
 			}
+			cost = 150
 			traits = {
 				anti_fascist_chaplain
 			}
@@ -4874,7 +4906,7 @@ characters = {
 					}
 				}
 			}
-			cost = 50
+			cost = 150
 			traits = {
 				army_regrouping_2
 			}
@@ -4917,6 +4949,7 @@ characters = {
 					has_autonomy_state = autonomy_supervised_state
 				}
 			}
+			cost = 150
 			traits = {
 				communist_revolutionary
 			}
@@ -4958,6 +4991,7 @@ characters = {
 				}
 			}
 
+			cost = 150
 			traits = {
 				gallo
 			}
@@ -5015,6 +5049,7 @@ characters = {
 				}
 			}
 
+			cost = 150
 			traits = {
 				marxist_fundamentalist
 			}
@@ -5063,6 +5098,7 @@ characters = {
 				}
 			}
 
+			cost = 150
 			traits = {
 				marxist_philosopher
 			}
@@ -5097,6 +5133,7 @@ characters = {
 					}
 				}
 			}
+			cost = 150
 			traits = {
 				economist
 			}
@@ -5128,6 +5165,7 @@ characters = {
 					}
 				}
 			}
+			cost = 150
 			traits = {
 				minister_of_peasants
 			}
@@ -5154,6 +5192,7 @@ characters = {
 			}
 			available = {
 			}
+			cost = 150
 			traits = {
 				partisans_organizer
 			}
@@ -5180,6 +5219,7 @@ characters = {
 			}
 			available = {
 			}
+			cost = 150
 			traits = {
 				revolutionary_poet
 			}
@@ -5306,6 +5346,7 @@ characters = {
 			allowed = {
 				original_tag = ITA
 			}
+			cost = 150
 			traits = {
 				liberal_economist
 			}
@@ -5727,8 +5768,8 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
-			traits = { naval_architect battlefleet_designer }
+			cost = 200
+			traits = { ITA_capital_ship_theory_genius battlefleet_designer }
 			research_bonus = { bb_tech = 0.10 }
 			ai_will_do = { factor = 1 }
 		}
@@ -5753,7 +5794,7 @@ characters = {
 			available = {
 				has_completed_focus = ITADNC_n_the_dante_alighieri
 			}
-			cost = 100
+			cost = 150
 			traits = { talented_engineer mediterranean_naval_manufacturer }
 			research_bonus = { naval_equipment = 0.08 }
 			ai_will_do = { factor = 1 }
@@ -5797,7 +5838,7 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { submarine_manufacturer submarine_proponent }
 			research_bonus = { ss_tech = 0.10 }
 			ai_will_do = { factor = 1 }
@@ -5848,6 +5889,7 @@ characters = {
 				NOT = { is_country_leader = yes }
 				NOT = { has_country_flag = ITA_c_election_1909 }
 			}
+			cost = 150
 			traits = { moderate_reformist MAN_speaker_of_the_senate }
 			ai_will_do = { factor = 2 }
 		}
@@ -5872,6 +5914,7 @@ characters = {
 				NOT = { is_country_leader = yes }
 				NOT = { has_country_flag = ITA_c_election_1909 }
 			}
+			cost = 150
 			traits = { political_reformer_1 charismatic_speaker }
 			ai_will_do = { factor = 1 }
 		}
@@ -5892,6 +5935,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { SWI_radical_democrat AUS_meticulous_lawyer }
 			ai_will_do = { factor = 2 }
 		}
@@ -5922,6 +5966,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { social_reformer socialist_journalist }
 			ai_will_do = { factor = 1 }
 		}
@@ -5955,6 +6000,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { pragmatic_socialist resolute_social_democrat }
 			ai_will_do = { factor = 1 }
 		}
@@ -5985,6 +6031,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { veteran_trade_unionist GER_pragmatic_trade_unionist }
 			ai_will_do = { factor = 1 }
 		}
@@ -6009,6 +6056,7 @@ characters = {
 				has_completed_focus = ITADNC_u_the_syndicate_governs
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { left_trade_unionist revolutionary_syndicalist }
 			ai_will_do = { factor = 1 }
 		}
@@ -6042,6 +6090,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { anarchist_author international_anarchist }
 			ai_will_do = { factor = 1 }
 		}
@@ -6079,6 +6128,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { constitutional_philosopher TUR_positivist }
 			ai_will_do = { factor = 1 }
 		}
@@ -6102,6 +6152,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { XSM_popular_governor leftist_freemason }
 			ai_will_do = { factor = 1 }
 		}
@@ -6126,6 +6177,7 @@ characters = {
 				has_country_flag = ITA_dnc_path_concordat
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { catholic_block INS_committed_christian }
 			ai_will_do = { factor = 1 }
 		}
@@ -6156,6 +6208,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { silver_tongue TAOG_catholic_representative }
 			ai_will_do = { factor = 1 }
 		}
@@ -6189,6 +6242,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { welfare_architect HUN_christian_academic }
 			ai_will_do = { factor = 1 }
 		}
@@ -6219,7 +6273,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { champion_of_equality rebellious_educator }
 			ai_will_do = { factor = 1 }
 		}
@@ -6244,6 +6298,7 @@ characters = {
 				has_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { banking_mogul JUNO_stock_market_financier }
 			ai_will_do = { factor = 2 }
 		}
@@ -6276,6 +6331,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { PRC_head_of_state_bank economy_reformer }
 			ai_will_do = { factor = 1 }
 		}
@@ -6307,6 +6363,7 @@ characters = {
 				NOT = { is_country_leader = yes }
 				NOT = { has_country_flag = ITA_c_election_1909 }
 			}
+			cost = 150
 			traits = { skillful_diplomat flexible_industrialist }
 			ai_will_do = { factor = 1 }
 		}
@@ -6348,6 +6405,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { ambitious_diplomat MAN_foreign_minister }
 			ai_will_do = { factor = 2 }
 		}
@@ -6380,7 +6438,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { nationalist_journalist }
 			ai_will_do = { factor = 1 }
 		}
@@ -6401,6 +6459,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { propaganda_expert nationalist_poet_arab }
 			ai_will_do = { factor = 2 }
 		}
@@ -6443,6 +6502,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { irredentist_academic }
 			ai_will_do = { factor = 1 }
 		}
@@ -6473,6 +6533,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { NOR_radical_trade_unionist ARG_anarchosyndicalist }
 			ai_will_do = { factor = 1 }
 		}
@@ -6493,6 +6554,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { colonial_governor TAOG_liberal_colonial_leader }
 			ai_will_do = { factor = 2 }
 		}
@@ -6523,7 +6585,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { disarmament_proponent ARG_nobel_peace_prize_winner }
 			ai_will_do = { factor = 1 }
 		}
@@ -6544,6 +6606,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { federative_republican liberal_journalist }
 			ai_will_do = { factor = 2 }
 		}
@@ -6574,6 +6637,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { monarchist_media_mogul }
 			ai_will_do = { factor = 1 }
 		}
@@ -6616,7 +6680,7 @@ characters = {
 			available = {
 				NOT = { has_completed_focus = ITADNC_arm_the_war_hypotheses }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_chief_entrenchment_2 }
 			ai_will_do = { factor = 2 }
 		}
@@ -6659,7 +6723,7 @@ characters = {
 				}
 				NOT = { has_country_flag = ITA_start_1910 }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_chief_reform_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -6674,7 +6738,7 @@ characters = {
 			available = {
 				has_country_flag = ITA_start_1910
 			}
-			cost = 100
+			cost = 150
 			traits = { army_commando_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -6705,7 +6769,7 @@ characters = {
 			idea_token = ITA_carlo_mirabello
 			ledger = navy
 			allowed = { original_tag = ITA }
-			cost = 100
+			cost = 150
 			traits = { navy_chief_decisive_battle_2 }
 			ai_will_do = { factor = 2 }
 		}
@@ -6739,7 +6803,7 @@ characters = {
 			idea_token = ITA_giovanni_bettolo
 			ledger = navy
 			allowed = { original_tag = ITA }
-			cost = 100
+			cost = 150
 			traits = { navy_chief_maneuver_1 }
 			ai_will_do = { factor = 2 }
 		}
@@ -6773,6 +6837,7 @@ characters = {
 				has_completed_focus = ITADNC_u_the_women_of_the_leagues
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { ARG_socialist_feminist ICE_progressive_doctor }
 			ai_will_do = { factor = 1 }
 		}
@@ -6797,7 +6862,7 @@ characters = {
 				has_completed_focus = ITADNC_u_the_collective_tenancies
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { leader_of_the_agrarian_union proponent_of_peasents }
 			ai_will_do = { factor = 1 }
 		}
@@ -6823,7 +6888,7 @@ characters = {
 				has_completed_focus = ITADNC_arm_the_great_manoeuvres
 				NOT = { has_country_flag = ITA_c_election_1904 }
 			}
-			cost = 100
+			cost = 150
 			traits = { army_chief_drill_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -6919,7 +6984,7 @@ characters = {
 			idea_token = ITA_coriolano_ponza_di_san_martino
 			ledger = army
 			allowed = { original_tag = ITA }
-			cost = 100
+			cost = 150
 			traits = { army_chief_planning_2 }
 			ai_will_do = { factor = 2 }
 		}
@@ -7012,7 +7077,7 @@ characters = {
 					has_completed_focus = ITADNC_arm_the_alpine_frontier
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { army_cavalry_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -7053,7 +7118,7 @@ characters = {
 					has_country_flag = ITA_start_1914
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { army_artillery_2 connected_citizen }
 			ai_will_do = { factor = 1 }
 		}
@@ -7132,7 +7197,7 @@ characters = {
 			idea_token = ITA_enrico_costantino_morin
 			ledger = navy
 			allowed = { original_tag = ITA }
-			cost = 100
+			cost = 150
 			traits = { navy_chief_reform_1 }
 			ai_will_do = { factor = 2 }
 		}
@@ -7248,7 +7313,7 @@ characters = {
 					has_completed_focus = ITADNC_n_the_cruiser_squadron
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { navy_chief_old_guard }
 			ai_will_do = { factor = 1 }
 		}
@@ -7296,6 +7361,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { JUNO_minister_of_foreign_affairs agrarian_old_guard }
 			ai_will_do = { factor = 1 }
 		}
@@ -7328,6 +7394,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { CZE_minister_of_defense SAU_engineer }
 			ai_will_do = { factor = 1 }
 		}
@@ -7348,7 +7415,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { finance_graduate }
 			ai_will_do = { factor = 2 }
 		}
@@ -7381,7 +7448,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { AST_tax_reformer }
 			ai_will_do = { factor = 1 }
 		}
@@ -7412,7 +7479,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { RAJ_GOE_financial_strategist }
 			ai_will_do = { factor = 1 }
 		}
@@ -7445,6 +7512,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { ecomonist_publicist PRC_professor }
 			ai_will_do = { factor = 1 }
 		}
@@ -7465,6 +7533,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { CZE_minister_of_public_works }
 			ai_will_do = { factor = 2 }
 		}
@@ -7495,7 +7564,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { BRA_minister_of_transport }
 			ai_will_do = { factor = 1 }
 		}
@@ -7528,6 +7597,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { CZE_minister_of_railways railroad_enthusiast }
 			ai_will_do = { factor = 1 }
 		}
@@ -7559,7 +7629,7 @@ characters = {
 				NOT = { is_country_leader = yes }
 				NOT = { has_country_flag = ITA_c_election_1909 }
 			}
-			cost = 75
+			cost = 150
 			traits = { judicial_reformer }
 			ai_will_do = { factor = 1 }
 		}
@@ -7592,6 +7662,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { SIA_ananda_industry_2 NZL_minister_of_public_works }
 			ai_will_do = { factor = 1 }
 		}
@@ -7612,6 +7683,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { gallant_doctor education_reformer }
 			ai_will_do = { factor = 2 }
 		}
@@ -7642,7 +7714,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { RAJ_GOE_patron_of_education corrupted_bureaucrat }
 			ai_will_do = { factor = 1 }
 		}
@@ -7675,6 +7747,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { TAOG_minister_of_education NOR_minister_of_agriculture }
 			ai_will_do = { factor = 1 }
 		}
@@ -7707,6 +7780,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { radical_veteran HUN_veteran_president }
 			ai_will_do = { factor = 1 }
 		}
@@ -7753,6 +7827,7 @@ characters = {
 				has_completed_focus = ITADNC_h_sacchi_and_the_extreme
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { PRC_agricultural_reformist SLO_agrarianist_leader }
 			ai_will_do = { factor = 1 }
 		}
@@ -7783,6 +7858,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { PHI_socialist_lawyer JAP_marxist_writer }
 			ai_will_do = { factor = 1 }
 		}
@@ -7803,6 +7879,7 @@ characters = {
 			available = {
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { JAP_socialist_politician socialist_giant }
 			ai_will_do = { factor = 2 }
 		}
@@ -7833,7 +7910,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
-			cost = 75
+			cost = 150
 			traits = { democratic_journalist socialist_writer }
 			ai_will_do = { factor = 1 }
 		}
@@ -7864,6 +7941,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { industrious_banker }
 			ai_will_do = { factor = 1 }
 		}
@@ -7894,6 +7972,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { JUNO_christian_democrat decentralist_liberal }
 			ai_will_do = { factor = 1 }
 		}
@@ -7912,7 +7991,7 @@ characters = {
 			idea_token = ITA_domenico_bonamico
 			ledger = navy
 			allowed = { original_tag = ITA }
-			cost = 100
+			cost = 150
 			traits = { eng_navalist_journalist editor }
 			research_bonus = { naval_doctrine = 0.07 }
 			ai_will_do = { factor = 2 }
@@ -7932,7 +8011,7 @@ characters = {
 			idea_token = ITA_enrico_barone
 			ledger = army
 			allowed = { original_tag = ITA }
-			cost = 100
+			cost = 150
 			traits = { military_theorist economist }
 			research_bonus = { land_doctrine = 0.07 }
 			ai_will_do = { factor = 2 }
@@ -7968,6 +8047,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { BRA_renowned_ambassador }
 			ai_will_do = { factor = 1 }
 		}
@@ -8012,13 +8092,19 @@ characters = {
 			ledger = navy
 			allowed = { original_tag = ITA }
 			visible = {
-				has_completed_focus = ITADNC_o_marconi_recalled
+				OR = {
+					has_completed_focus = ITADNC_o_marconi_recalled
+					has_completed_focus = ITADNC_u_the_station_at_coltano
+				}
 			}
 			available = {
-				has_completed_focus = ITADNC_o_marconi_recalled
+				OR = {
+					has_completed_focus = ITADNC_o_marconi_recalled
+					has_completed_focus = ITADNC_u_the_station_at_coltano
+				}
 			}
-			cost = 100
-			traits = { tgwr_inventive_genius electronics_developer }
+			cost = 200
+			traits = { naval_theorist tgwr_inventive_genius }
 			research_bonus = { electronics = 0.10 }
 			ai_will_do = { factor = 1 }
 		}
@@ -8051,6 +8137,7 @@ characters = {
 				}
 				NOT = { is_country_leader = yes }
 			}
+			cost = 150
 			traits = { progressive_lawyer GER_minister_of_agriculture }
 			ai_will_do = { factor = 1 }
 		}
@@ -8085,7 +8172,7 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { navy_fleet_logistics_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -8128,7 +8215,7 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { navy_screen_2 }
 			ai_will_do = { factor = 1 }
 		}
@@ -8167,7 +8254,7 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { PRC_professor BRA_academic_writer }
 			research_bonus = { naval_doctrine = 0.05 }
 			ai_will_do = { factor = 1 }
@@ -8199,7 +8286,7 @@ characters = {
 					has_country_flag = ITA_start_1910
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { heavy_aircraft_manufacturer industrious_innovator }
 			research_bonus = { heavy_air = 0.07 }
 			ai_will_do = { factor = 1 }
@@ -8215,7 +8302,7 @@ characters = {
 			available = {
 				has_country_flag = ITA_start_1910
 			}
-			cost = 100
+			cost = 150
 			traits = { air_air_combat_training_1 }
 			ai_will_do = { factor = 1 }
 		}
@@ -8246,7 +8333,7 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { eng_eccentric_inventor gentle_scholar }
 			research_bonus = { heavy_air = 0.05 }
 			ai_will_do = { factor = 1 }
@@ -8278,7 +8365,7 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { accomplished_professor well_renowned_military_theorist }
 			research_bonus = { artillery = 0.07 }
 			ai_will_do = { factor = 1 }
@@ -8310,9 +8397,131 @@ characters = {
 					has_country_flag = ITA_start_1905
 				}
 			}
-			cost = 100
+			cost = 150
 			traits = { CHI_national_defence_theorist BRA_controversial_academic }
 			research_bonus = { cat_mountaineers_doctrine = 0.07 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	ITA_abiel_bethel_revelli = {
+		name = ITA_abiel_bethel_revelli
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Generic_land_6.dds"
+				small = GFX_idea_generic_army_europe_1
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ITA_abiel_bethel_revelli
+			ledger = army
+			allowed = { original_tag = ITA }
+			visible = {
+				has_completed_focus = ITADNC_arm_the_machine_gun_sections
+			}
+			available = {
+				has_completed_focus = ITADNC_arm_the_machine_gun_sections
+			}
+			cost = 150
+			traits = { military_theorist HUN_innovative_weapons_designer }
+			research_bonus = { infantry_weapons = 0.07 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	ITA_federico_caprilli = {
+		name = ITA_federico_caprilli
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Generic_land_7.dds"
+				small = GFX_idea_generic_army_europe_2
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ITA_federico_caprilli
+			ledger = army
+			allowed = { original_tag = ITA }
+			visible = {
+				OR = {
+					has_completed_focus = ITADNC_arm_the_truppe_celeri
+					has_country_flag = ITA_start_1905
+				}
+			}
+			available = {
+				OR = {
+					has_completed_focus = ITADNC_arm_the_truppe_celeri
+					has_country_flag = ITA_start_1905
+				}
+			}
+			cost = 150
+			traits = { military_theorist accomplished_professor }
+			research_bonus = { land_doctrine = 0.05 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	ITA_enrico_rocchi = {
+		name = ITA_enrico_rocchi
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+				small = GFX_idea_generic_army_europe_3
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ITA_enrico_rocchi
+			ledger = army
+			allowed = { original_tag = ITA }
+			visible = {
+				OR = {
+					has_completed_focus = ITADNC_arm_the_barriers_of_the_cadore
+					has_country_flag = ITA_start_1905
+				}
+			}
+			available = {
+				OR = {
+					has_completed_focus = ITADNC_arm_the_barriers_of_the_cadore
+					has_country_flag = ITA_start_1905
+				}
+			}
+			cost = 150
+			traits = { military_theorist fortification_engineer }
+			research_bonus = { support_tech = 0.05 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	ITA_alessandro_artom = {
+		name = ITA_alessandro_artom
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Generic_1.dds"
+				small = GFX_idea_generic_navy_europe_2
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ITA_alessandro_artom
+			ledger = navy
+			allowed = { original_tag = ITA }
+			visible = {
+				OR = {
+					has_completed_focus = ITADNC_n_the_naval_staff
+					has_country_flag = ITA_start_1905
+				}
+			}
+			available = {
+				OR = {
+					has_completed_focus = ITADNC_n_the_naval_staff
+					has_country_flag = ITA_start_1905
+				}
+			}
+			cost = 150
+			traits = { naval_theorist talented_engineer }
+			research_bonus = { electronics = 0.05 }
 			ai_will_do = { factor = 1 }
 		}
 	}

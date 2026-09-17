@@ -393,6 +393,10 @@ if = {
 	recruit_character = ITA_giuseppe_perrucchetti
 	recruit_character = ITA_ottavio_ragni
 	recruit_character = ITA_ottavio_briccola
+	recruit_character = ITA_abiel_bethel_revelli
+	recruit_character = ITA_federico_caprilli
+	recruit_character = ITA_enrico_rocchi
+	recruit_character = ITA_alessandro_artom
 
 	promote_character = { character = ITA_umberto_i ideology = monarchism }
 	promote_character = { character = ITA_luigi_pelloux ideology = democratic_militarism }
@@ -509,6 +513,7 @@ if = {
 	retire_character = ITA_antonio_starabba_di_rudini
 	retire_character = ITA_giuseppe_palumbo
 	retire_character = ITA_francesco_siacci
+	retire_character = ITA_federico_caprilli
 	set_country_flag = ITA_start_1910
 }
 
@@ -680,6 +685,8 @@ if = {
 	retire_character = ITA_enrico_ferri
 	retire_character = ITA_domenico_bonamico
 	retire_character = ITA_francesco_cocco_ortu
+	retire_character = ITA_alessandro_artom
+	retire_character = ITA_abiel_bethel_revelli
 }
 
 1933.1.1 = {
@@ -1149,6 +1156,7 @@ if = {
 	retire_character = ITA_giuseppe_ettore_vigano
 	retire_character = ITA_nunzio_nasi
 	retire_character = ITA_claudio_treves
+	retire_character = ITA_enrico_rocchi
 }
 
 1939.1.1 = {

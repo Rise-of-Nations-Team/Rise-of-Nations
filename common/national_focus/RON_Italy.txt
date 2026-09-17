@@ -239,6 +239,7 @@ focus_tree = {
 				}
 			}
 			army_experience = 10
+			show_ideas_tooltip = ITA_enrico_rocchi
 		}
 	}
 	focus = {
@@ -423,7 +424,7 @@ focus_tree = {
 						character = ITA_ettore_pedotti
 						advisor = {
 							slot = high_command
-							cost = 100
+							cost = 150
 							idea_token = ITA_arm_pedotti_at_the_alpini
 							ledger = army
 							traits = { army_commando_1 }
@@ -592,6 +593,7 @@ focus_tree = {
 					}
 				}
 			}
+			show_ideas_tooltip = ITA_abiel_bethel_revelli
 		}
 	}
 	focus = {
@@ -1417,6 +1419,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = ITA_arm_turin_rides_ahead_tt
+			show_ideas_tooltip = ITA_federico_caprilli
 		}
 	}
 	focus = {
@@ -1520,7 +1523,7 @@ focus_tree = {
 						character = ITA_alberto_pollio
 						advisor = {
 							slot = theorist
-							cost = 100
+							cost = 150
 							idea_token = ITA_arm_pollio_the_historian
 							ledger = army
 							traits = { scholar_general }
@@ -2221,7 +2224,7 @@ focus_tree = {
 						character = ITA_ottavio_ricaldoni
 						advisor = {
 							slot = air_chief
-							cost = 100
+							cost = 150
 							idea_token = ITA_air_ricaldoni_the_aviation_section
 							ledger = air
 							traits = { air_air_combat_training_1 }
@@ -2282,7 +2285,7 @@ focus_tree = {
 						character = ITA_giulio_douhet
 						advisor = {
 							slot = air_chief
-							cost = 100
+							cost = 150
 							idea_token = ITA_air_douhet_the_aviators_battalion
 							ledger = air
 							traits = { air_strategic_bombing_1 }
@@ -3039,7 +3042,7 @@ focus_tree = {
 						character = ITA_giovanni_bettolo
 						advisor = {
 							slot = navy_chief
-							cost = 100
+							cost = 150
 							idea_token = ITA_n_bettolo_chief_of_the_naval_staff
 							ledger = navy
 							traits = { navy_chief_reform_2 }
@@ -3113,6 +3116,7 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_n_experience_tt
 			}
+			show_ideas_tooltip = ITA_vittorio_cuniberti
 		}
 	}
 	focus = {
@@ -4069,7 +4073,7 @@ focus_tree = {
 						character = ITA_paolo_spingardi
 						advisor = {
 							slot = political_advisor
-							cost = 100
+							cost = 150
 							idea_token = ITA_e_spingardi_at_the_war_office
 							traits = { veteran_minister }
 						}
@@ -4713,6 +4717,7 @@ focus_tree = {
 				value = 0.05
 				tooltip = ITA_n_morale_tt
 			}
+			show_ideas_tooltip = ITA_alessandro_artom
 		}
 	}
 	focus = {
@@ -4783,7 +4788,7 @@ focus_tree = {
 						character = ITA_paolo_thaon_di_revel
 						advisor = {
 							slot = navy_chief
-							cost = 100
+							cost = 150
 							idea_token = ITA_n_thaon_di_revel_chief_of_the_naval_staff
 							ledger = navy
 							traits = { navy_chief_maneuver_2 }
@@ -5791,7 +5796,7 @@ focus_tree = {
 						character = ITA_francesco_tedesco
 						advisor = {
 							slot = political_advisor
-							cost = 100
+							cost = 150
 							idea_token = ITA_e_tedesco_at_the_treasury
 							traits = { liberal_grandee }
 						}
@@ -18534,6 +18539,7 @@ focus_tree = {
 
 			add_ideas = { ITA_u_the_station_at_coltano }
 			navy_experience = 25
+			show_ideas_tooltip = ITA_guglielmo_marconi
 		}
 	}
 	focus = {
@@ -24163,7 +24169,7 @@ focus_tree = {
 						character = ITA_giuseppe_salvago_raggi
 						advisor = {
 							slot = political_advisor
-							cost = 100
+							cost = 150
 							idea_token = ITA_w_salvago_raggi_governor_of_eritrea
 							traits = { AST_governor_general }
 						}
@@ -24623,7 +24629,7 @@ focus_tree = {
 						character = ITA_umberto_cagni
 						advisor = {
 							slot = high_command
-							cost = 100
+							cost = 150
 							idea_token = ITA_w_cagni_the_landing_party
 							ledger = navy
 							traits = { navy_amphibious_assault_1 }
@@ -25297,7 +25303,7 @@ focus_tree = {
 						character = ITA_pietro_bertolini
 						advisor = {
 							slot = political_advisor
-							cost = 100
+							cost = 150
 							idea_token = ITA_w_bertolini_at_the_colonies
 							traits = { colonial_lawyer }
 						}
