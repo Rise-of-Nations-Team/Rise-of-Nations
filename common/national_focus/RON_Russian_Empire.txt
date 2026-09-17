@@ -25,10 +25,10 @@ focus_tree = {
 
 		
 	focus = {
-		id = RUS_new_industry0
+		id = RUS_DNC_the_russian_economy
 		icon = GFX_goal_RUS_economy
 		x = 10
-		y = 1
+		y = 0
 
 		cost = 1
 
@@ -36,19 +36,20 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-		add_political_power	= 50
+		completion_reward = {
+			add_political_power	= 50
 		}
 	}
 
 	focus = {
-		id = RUS_new_literacy
-		icon = GFX_focus_research
-		x =2
-		y = 2
+		id = RUS_DNC_a_new_literacy_program
+		icon = GFX_goal_research_silver
+		x = -8
+		y = 1
+		relative_position_id = RUS_DNC_the_russian_economy
 
 		prerequisite = {
-			focus = RUS_new_industry0
+			focus = RUS_DNC_the_russian_economy
 		}
 
 		cost = 10
@@ -57,135 +58,47 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-			add_political_power = 50
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_high_iliteracy_3_ns
+				add_idea = RUS_high_iliteracy_2_ns
+			}
 		}
 	}
 
 	focus = {
-		id = RUS_new_industry01
-		icon = GFX_goal_RUS_continue_industrialization
-		x = 10
-		y = 2
+		id = RUS_DNC_seek_church_education
+		icon = GFX_focus_GRE_an_orthodox_state
+		x = -1
+		y = 1
+		relative_position_id = RUS_DNC_a_new_literacy_program
 
 		prerequisite = {
-			focus = RUS_new_industry0
+			focus = RUS_DNC_a_new_literacy_program
 		}
 
 		cost = 5
 
 		available = {
-		
+			NOT = {
+				has_government = communism
+			}
 		}
 
-		completion_reward = { 
-		219 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
-				}
-		}
-	}
-
-	focus = {
-		id = RUS_new_tsway
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 17
-		y = 2
-
-		cost = 10
-
-		prerequisite = {
-			focus = RUS_new_industry0
-		}
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-			unlock_decision_category_tooltip = RUS_trans_siberian_railway_cat
-
+		completion_reward = {
+			add_ideas = RUS_DNC_eastern_orthodox_schools_ns
 		}
 	}
 
 	focus = {
-		id = RUS_new_orth
-		icon = GFX_focus_focus_fra_national_resistance_council
+		id = RUS_DNC_build_rural_schools
+		icon = GFX_focus_PRC_rural_region_development
 		x = 1
-		y = 3
-
-		cost = 10
-
-		prerequisite = {
-			focus = RUS_new_literacy
-		}
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-				random_owned_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
-									}
-		}
-	}
-
-	focus = {
-		id = RUS_new_skool
-		icon = army_officers
-		x = 3
-		y = 3
-
-		cost = 10
+		y = 1
+		relative_position_id = RUS_DNC_a_new_literacy_program
 
 		prerequisite = {
-			focus = RUS_new_literacy
-		}
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-				add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = RUS_new_excity
-		icon = GFX_focus_RUS_fra_imp
-		x = 9
-		y = 3
-
-		cost = 10
-
-		prerequisite = {
-			focus = RUS_new_industry01
-		}
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-			add_tech_bonus = {
-			bonus = 1
-			uses = 1
-			category = electronics
-								}
-		}
-	}
-
-	focus = {
-		id = RUS_new_imptool
-		icon = GFX_focus_RUS_imp_tools
-		x = 11
-		y = 3
-
-		prerequisite = {
-			focus = RUS_new_industry01
+			focus = RUS_DNC_a_new_literacy_program
 		}
 
 		cost = 10
@@ -194,27 +107,25 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-			add_tech_bonus = {
-			bonus = 1
-			uses = 2
-			category = industry
-								}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_high_iliteracy_2_ns
+				add_idea = RUS_high_iliteracy_ns
+			}
 		}
 	}
 
 	focus = {
-		id = RUS_new_civway
-		icon = GFX_goal_generic_construct_civ_factory 
-		x = 16
-		y = 3
+		id = RUS_DNC_improve_access_to_high_education
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 1
+		y = 1
+		relative_position_id = RUS_DNC_seek_church_education
 
 		prerequisite = {
-			focus = RUS_new_tsway
+			focus = RUS_DNC_seek_church_education
+			focus = RUS_DNC_build_rural_schools
 		}
-
-		mutually_exclusive = { focus = RUS_new_milway }
-
 
 		cost = 10
 
@@ -222,258 +133,465 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-		565 = {
-			add_building_construction = {
-			type = industrial_complex
-			level = 2
-			instant_build = yes
-										}
+		completion_reward = {
+			remove_ideas = RUS_high_iliteracy_ns
+		}
+	}
+
+
+	focus = {
+		id = RUS_DNC_free_university_tuitions
+		icon = GFX_focus_research2
+		x = 0
+		y = 1
+		relative_position_id = RUS_DNC_improve_access_to_high_education
+
+		prerequisite = {
+			focus = RUS_DNC_improve_access_to_high_education
 		}
 
+		cost = 10
+
+		available = {
+		
+		}
+
+		completion_reward = {
+			add_ideas = RUS_edu
 		}
 	}
 
 	focus = {
-		id = RUS_new_milway
+		id = RUS_DNC_expand_the_trans_siberian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 7
+		y = 1
+		relative_position_id = RUS_DNC_the_russian_economy
+
+		prerequisite = {
+			focus = RUS_DNC_the_russian_economy
+		}
+
+		cost = 4
+
+		available = {
+		
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = RUS_DNC_trans_siberian_project_cat
+		}
+	}
+
+	focus = {
+		id = RUS_DNC_civilian_transports
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1
+		relative_position_id = RUS_DNC_expand_the_trans_siberian_railway
+
+		prerequisite = {
+			focus = RUS_DNC_expand_the_trans_siberian_railway
+		}
+
+		mutually_exclusive = {
+			focus = RUS_DNC_military_transports
+		}
+
+		cost = 10
+
+		available = {
+			OR = {
+				controls_state = 575
+				controls_state = 576
+				controls_state = 577
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						state = 575
+						state = 576
+						state = 577
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				ETH_upgrade_state_category = yes
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_DNC_military_transports
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 18
-		y = 3
+		x = 1
+		y = 1
+		relative_position_id = RUS_DNC_expand_the_trans_siberian_railway
 
 		prerequisite = {
-			focus = RUS_new_tsway
+			focus = RUS_DNC_expand_the_trans_siberian_railway
 		}
 
-		mutually_exclusive = { focus = RUS_new_civway }
-
+		mutually_exclusive = {
+			focus = RUS_DNC_civilian_transports
+		}
 
 		cost = 10
 
 		available = {
-		
+			OR = {
+				controls_state = 575
+				controls_state = 576
+				controls_state = 577
+			}
 		}
 
-		completion_reward = { 
-
-			565 = {
-			add_building_construction = {
-			type = arms_factory
-			level = 2
-			instant_build = yes
-										}
-			}			
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						state = 575
+						state = 576
+						state = 577
+					}
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				ETH_upgrade_state_category = yes
+			}
 		}
 	}
 
 
 	focus = {
-		id = RUS_new_onetrack
-		icon = GFX_goal_generic_construct_infrastructure 
-		x = 16
-		y = 4
+		id = RUS_DNC_single_track_design
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = RUS_DNC_civilian_transports
 
-		mutually_exclusive = { focus = RUS_new_twotrack }
+		mutually_exclusive = {
+			focus = RUS_DNC_double_track_design
+		}
+
+		prerequisite = {
+			focus = RUS_DNC_civilian_transports
+			focus = RUS_DNC_military_transports
+		}
 
 		cost = 5
 
-		prerequisite = {
-			focus = RUS_new_civway
-			focus = RUS_new_milway
-		}
-
-
 		available = {
-		
+			OR = {
+				controls_state = 565
+				controls_state = 562
+				controls_state = 574
+				controls_state = 516
+			}
 		}
 
-		completion_reward = { 
-			565 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}				
+		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 565
+				}
+				565 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
 					}
-
-			562 ={
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}    
-				}	
-
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 562
+				}
+				562 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 574
+				}
 				574 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}    
-				}	   
-
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 516
+				}
 				516 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}    
-				}	      
-
-		}
-	}
-
-
-	focus = {
-		id = RUS_new_twotrack
-		icon = GFX_goal_generic_construct_infrastructure 
-		x = 18
-		y = 4
-
-		mutually_exclusive = { focus = RUS_new_onetrack }
-
-		cost = 10
-
-		prerequisite = {
-			focus = RUS_new_milway
-			focus = RUS_new_civway
-		}
-
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-			565 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 4
-			instant_build = yes
-										}	
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
-			562 ={
-			add_building_construction = {
-			type = infrastructure
-			level = 4
-			instant_build = yes
-										}
-			}						   					
 		}
 	}
 
 	focus = {
-		id = RUS_new_finway
-		icon = GFX_GER_focus_develop_colonies
-		x = 17
-		y = 5
-
-		cost = 20
-
-		prerequisite = {
-			focus = RUS_new_onetrack
-			focus = RUS_new_twotrack
-		}
-
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-						657 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-
-						409 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-						563 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-						565 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-						40 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-						560 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-						561 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-						567 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-						568 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-			}
-						578 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}
-						}	
-						569 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}	
-				}						   
-			add_stability = 0.05
-		}
-		
-	}
-
-	focus = {
-		id = RUS_new_tcway
+		id = RUS_DNC_double_track_design
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 22
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = RUS_DNC_military_transports
 
-		cost = 10
+		mutually_exclusive = {
+			focus = RUS_DNC_single_track_design
+		}
 
 		prerequisite = {
-			focus = RUS_new_industry0
+			focus = RUS_DNC_military_transports
+			focus = RUS_DNC_civilian_transports
+		}
+
+		cost = 5
+
+		available = {
+			OR = {
+				controls_state = 565
+				controls_state = 562
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 565
+				}
+				565 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 562
+				}
+				562 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_DNC_finish_the_trans_siberian_railway
+		icon = GFX_goal_hag_RUS_trans_siberian_railway
+		x = 1
+		y = 1
+		relative_position_id = RUS_DNC_single_track_design
+
+		cost = 14.4
+
+		prerequisite = {
+			focus = RUS_DNC_single_track_design
+			focus = RUS_DNC_double_track_design
+		}
+
+		available = {
+			OR = {
+				controls_state = 657
+				controls_state = 409
+				controls_state = 563
+				controls_state = 565
+				controls_state = 40
+				controls_state = 560
+				controls_state = 561
+				controls_state = 567
+				controls_state = 568
+				controls_state = 578
+				controls_state = 569
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 657
+				}
+				657 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 409
+				}
+				409 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 563
+				}
+				563 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 565
+				}
+				565 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 40
+				}
+				40 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 560
+				}
+				560 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 561
+				}
+				561 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 567
+				}
+				567 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 568
+				}
+				568 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 578
+				}
+				578 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 569
+				}
+				569 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+	}
+
+	focus = {
+		id = RUS_DNC_expand_the_trans_caucasus_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 11
+		y = 1
+		relative_position_id = RUS_DNC_the_russian_economy
+
+		cost = 4
+
+		prerequisite = {
+			focus = RUS_DNC_the_russian_economy
 		}
 
 		available = {
@@ -481,184 +599,320 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = RUS_trans_caucasian_railway_cat
-			
-		}	  
+			unlock_decision_category_tooltip = RUS_DNC_trans_caucasian_project_cat
+		}	
 	}
 
 	focus = {
-		id = RUS_new_tcway2
-		icon = GFX_goal_generic_construct_infrastructure 
-		x = 22
-		y = 3
+		id = RUS_DNC_a_bridge_between_the_two_seas
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = RUS_DNC_expand_the_trans_caucasus_railway
 
 		cost = 10
 
 		prerequisite = {
-			focus = RUS_new_tcway
+			focus = RUS_DNC_expand_the_trans_caucasus_railway
 		}
 
 		available = {
-		
-		}
-
-		completion_reward = { 
-					233 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}
-					}
-					231 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}
-					}
-					232 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-										}
-					}
-
-		}
-	}
-
-	focus = {
-		id = RUS_new_tcwayBase
-		icon = GFX_focus_TUR_misak_i_milli 
-		x = 21
-		y = 4
-
-		cost = 10
-
-		prerequisite = {
-			focus = RUS_new_tcway2
-		}
-
-		mutually_exclusive = { focus = RUS_new_tcwayFriend }
-
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-		add_opinion_modifier = {
-		target = TUR
-		modifier = large_decrease	
-								}
-		}
-	}
-
-
-	focus = {
-		id = RUS_new_tcwayFriend
-		icon = GFX_focus_generic_befriend_turkey
-		x = 23
-		y = 4
-
-		cost = 10
-
-		prerequisite = {
-			focus = RUS_new_tcway2
-		}
-
-		mutually_exclusive = { focus = RUS_new_tcwayBase}
-
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-		add_opinion_modifier = { target = TUR modifier = huge_increase }
-		}
-	}
-
-
-	focus = {
-		id = RUS_new_finway2
-		icon = GFX_GER_focus_develop_colonies
-		x = 22
-		y = 5
-
-		cost = 20
-
-		prerequisite = {
-			focus = RUS_new_tcwayBase 
-			focus = RUS_new_tcwayFriend
-		}
-
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-						942 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}
-					}
-						230 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}
-					}
-						229 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-										}
-					}
-					add_stability = 0.05
-
-		}
-	}
-
-
-	focus = {
-		id = RUS_new_hous
-		icon = GFX_goal_RUS_the_housing_crisis
-		x = 10
-		y = 4
-
-		prerequisite = {focus = RUS_new_excity}
-		prerequisite = {focus = RUS_new_imptool}
-
-		cost = 10
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-		custom_effect_tooltip = fight_hos
+			OR = {
+				controls_state = 233
+				controls_state = 231
+				controls_state = 232
 			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 233
+				}
+				233 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 231
+				}
+				231 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 232
+				}
+				232 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_DNC_a_strategic_railway
+		icon = GFX_focus_TUR_misak_i_milli
+		x = -1
+		y = 1
+		relative_position_id = RUS_DNC_a_bridge_between_the_two_seas
+
+		cost = 5
+
+		prerequisite = {
+			focus = RUS_DNC_a_bridge_between_the_two_seas
+		}
+
+		mutually_exclusive = { focus = RUS_DNC_a_show_of_friendship }
+
+		available = {
+		
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 1001
+				}
+				1001 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_opinion_modifier = {
+				target = TUR
+				modifier = large_decrease
+			}
+		}
+	}
+
+
+	focus = {
+		id = RUS_DNC_a_show_of_friendship
+		icon = GFX_focus_generic_befriend_turkey
+		x = 1
+		y = 1
+		relative_position_id = RUS_DNC_a_bridge_between_the_two_seas
+
+		cost = 5
+
+		prerequisite = {
+			focus = RUS_DNC_a_bridge_between_the_two_seas
+		}
+
+		mutually_exclusive = { focus = RUS_DNC_a_strategic_railway }
+
+		available = {
+		
+		}
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = TUR
+				modifier = huge_increase
+			}
+		}
+	}
+
+
+	focus = {
+		id = RUS_DNC_finish_the_trans_caucasus_railway
+		icon = GFX_goal_GER_develop_colonies
+		x = 1
+		y = 1
+		relative_position_id = RUS_DNC_a_strategic_railway
+
+		cost = 14.4
+
+		prerequisite = {
+			focus = RUS_DNC_a_strategic_railway
+			focus = RUS_DNC_a_show_of_friendship
+		}
+
+		available = {
+			OR = {
+				controls_state = 1146
+				controls_state = 230
+				controls_state = 229
+				controls_state = 1092
+				controls_state = 1002
+				controls_state = 1091
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 1146
+				}
+				1146 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 230
+				}
+				230 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 229
+				}
+				229 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 1092
+				}
+				1092 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 1002
+				}
+				1002 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 1091
+				}
+				1091 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_DNC_continue_industrializing
+		icon = GFX_goal_RUS_continue_industrialization
+		x = 0
+		y = 1
+		relative_position_id = RUS_DNC_the_russian_economy
+
+		prerequisite = {
+			focus = RUS_DNC_the_russian_economy
+		}
+
+		cost = 5
+
+		available = {
+		
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					219
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_DNC_address_the_housing_crisis
+		icon = GFX_goal_RUS_the_housing_crisis
+		x = 0
+		y = 1
+		relative_position_id = RUS_DNC_continue_industrializing
+
+		prerequisite = {
+			focus = RUS_DNC_continue_industrializing
+		}
+
+		cost = 10
+
+		available = {
+		
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_DNC_crowded_cities_ns
+				add_idea = RUS_DNC_crowded_cities_2_ns
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = RUS_DNC_build_low_cost_housing
+		}
 	}
 
 
 	focus = {
 		id = RUS_new_indep
 		icon = GFX_focus_generic_industry_3
-		x = 13
-		y = 5
+		x = 3
+		y = 1
+		relative_position_id = RUS_DNC_address_the_housing_crisis
 
 		prerequisite = {
-			focus = RUS_new_hous
+			focus = RUS_DNC_address_the_housing_crisis
 		}
 
-	mutually_exclusive = { focus = RUS_new_dep }
+		mutually_exclusive = { focus = RUS_new_dep }
 
 		cost = 1
 
@@ -666,8 +920,8 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-			remove_ideas = RUS_french_dependancy 
+		completion_reward = {
+			remove_ideas = RUS_french_dependancy
 			add_stability = 0.05
 		}
 	}
@@ -676,8 +930,9 @@ focus_tree = {
 	focus = {
 		id = RUS_new_incpro
 		icon = GFX_goal_generic_construction2
-		x = 15
-		y = 6
+		x = 2
+		y = 1
+		relative_position_id = RUS_new_indep
 
 		prerequisite = {
 			focus = RUS_new_indep
@@ -690,7 +945,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			add_resource = {
 				type = steel
 				amount = 25
@@ -707,8 +962,9 @@ focus_tree = {
 	focus = {
 		id = RUS_new_teachwork
 		icon = GFX_goal_generic_construct_civilian
-		x = 11
-		y = 6
+		x = -2
+		y = 1
+		relative_position_id = RUS_new_indep
 
 		prerequisite = {
 			focus = RUS_new_indep
@@ -721,7 +977,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			add_stability = 0.10
 		}
 	}
@@ -729,8 +985,9 @@ focus_tree = {
 	focus = {
 		id = RUS_new_inccond
 		icon = GFX_goal_tripartite_pact
-		x = 13
-		y = 6
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_indep
 
 		prerequisite = {
 			focus = RUS_new_indep
@@ -743,7 +1000,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = RUS_smartworkers
 		}
 	}
@@ -751,12 +1008,13 @@ focus_tree = {
 	focus = {
 		id = RUS_new_milind
 		icon = GFX_GER_focus_increase_mil_budget
-		x = 13
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_inccond
 
-		prerequisite = {focus = RUS_new_indep}
-		prerequisite = {focus = RUS_new_incpro}
-		prerequisite = {focus = RUS_new_teachwork}
+		prerequisite = { focus = RUS_new_inccond }
+		prerequisite = { focus = RUS_new_incpro }
+		prerequisite = { focus = RUS_new_teachwork }
 
 
 		cost = 10
@@ -765,7 +1023,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 					206 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = arms_factory level = 2 instant_build = yes }	
@@ -776,8 +1034,9 @@ focus_tree = {
 	focus = {
 		id = RUS_new_limex
 		icon = GFX_goal_naval_spending_bill
-		x = 13
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_milind
 
 		prerequisite = {
 			focus = RUS_new_milind
@@ -790,7 +1049,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = limited_exports
 		}
 	}
@@ -798,11 +1057,12 @@ focus_tree = {
 	focus = {
 		id = RUS_new_dep
 		icon = GFX_goal_RUS_depend_on_the_french
-		x = 7
-		y = 5
+		x = -3
+		y = 1
+		relative_position_id = RUS_DNC_address_the_housing_crisis
 
 		prerequisite = {
-			focus = RUS_new_hous
+			focus = RUS_DNC_address_the_housing_crisis
 		}
 
 		mutually_exclusive = { focus = RUS_new_indep }
@@ -813,20 +1073,21 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			add_stability = -0.05
-					swap_ideas = { 
-			remove_idea = RUS_french_dependancy
-			add_idea = RUS_french_dependancy1
-						}
+			swap_ideas = {
+				remove_idea = RUS_french_dependancy
+				add_idea = RUS_french_dependancy1
+			}
 		}
 	}
 
 	focus = {
 		id = RUS_new_coopwest
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 9
-		y = 6
+		x = 2
+		y = 1
+		relative_position_id = RUS_new_dep
 
 		prerequisite = {
 			focus = RUS_new_dep
@@ -839,23 +1100,24 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-		add_opinion_modifier = {
-		target = FRA
-		modifier = large_increase	
-								}
-		add_opinion_modifier = {
-		target = ENG
-		modifier = large_increase	
-								}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = large_increase
+			}
 		}
 	}
 
 	focus = {
 		id = RUS_new_buytools
 		icon = GFX_goal_RUS_machine_tools
-		x = 7
-		y = 6
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_dep
 
 		prerequisite = {
 			focus = RUS_new_dep
@@ -868,19 +1130,34 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-				195 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					195
 				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = RUS_new_westtech
 		icon = GFX_goal_FRA_technologies
-		x = 5
-		y = 6
+		x = -2
+		y = 1
+		relative_position_id = RUS_new_dep
 
 		prerequisite = {
 			focus = RUS_new_dep
@@ -893,24 +1170,26 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			add_tech_bonus = {
-			bonus = 1
-			uses = 2
-			category = industry
-								}
+				name = industrial_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			}
 		}
 	}
 
-		focus = {
+	focus = {
 		id = RUS_new_beginrel
 		icon = GFX_GER_focus_north_coalmines
-		x = 7
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_buytools
 
-		prerequisite = {focus = RUS_new_buytools}
-		prerequisite = {focus = RUS_new_coopwest}
-		prerequisite = {focus = RUS_new_westtech}
+		prerequisite = { focus = RUS_new_buytools }
+		prerequisite = { focus = RUS_new_coopwest }
+		prerequisite = { focus = RUS_new_westtech }
 
 		cost = 10
 
@@ -918,23 +1197,52 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-								206 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					202
 				}
-					202 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
 				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					206
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
-			focus = {
+	focus = {
 		id = RUS_new_moreex
 		icon = GFX_goal_european_investment
-		x = 7
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_beginrel
 
 		prerequisite = {
 			focus = RUS_new_beginrel
@@ -947,19 +1255,20 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-				swap_ideas = { 
-			remove_idea = RUS_french_dependancy1
-			add_idea = RUS_french_dependancy2
-						}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_french_dependancy1
+				add_idea = RUS_french_dependancy2
+			}
 		}
 	}
 
-			focus = {
+	focus = {
 		id = RUS_new_noagri
 		icon = agriculture6
-		x = 10
-		y = 9
+		x = 3
+		y = 1
+		relative_position_id = RUS_new_moreex
 
 		prerequisite = {
 			focus = RUS_new_moreex
@@ -973,7 +1282,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = RUS_indu
 		}
 	}
@@ -982,7 +1291,7 @@ focus_tree = {
 		id = RUS_new_massind
 		icon = GFX_goal_generic_construction
 		x = 13
-		y = 10
+		y = 8
 
 		prerequisite = {
 			focus = RUS_new_noagri
@@ -995,7 +1304,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 						217 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
@@ -1011,7 +1320,7 @@ focus_tree = {
 		id = RUS_new_focwes
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 15
-		y = 11
+		y = 9
 
 		prerequisite = {
 			focus = RUS_new_massind
@@ -1024,7 +1333,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 						242= {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
@@ -1040,7 +1349,7 @@ focus_tree = {
 		id = RUS_new_focsib
 		icon = GFX_goal_generic_wolf_pack
 		x = 11
-		y = 11
+		y = 9
 
 		prerequisite = {
 			focus = RUS_new_massind
@@ -1053,7 +1362,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 						575 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
@@ -1069,7 +1378,7 @@ focus_tree = {
 		id = RUS_new_induru
 		icon = GFX_goal_generic_soviet_construction
 		x = 13
-		y = 12
+		y = 10
 
 		prerequisite = {focus = RUS_new_focsib}
 		prerequisite = {focus = RUS_new_focwes}
@@ -1081,8 +1390,8 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
-			swap_ideas = { 
+		completion_reward = {
+			swap_ideas = {
 			remove_idea = RUS_indu
 			add_idea = RUS_indu1
 						}
@@ -1093,7 +1402,7 @@ focus_tree = {
 		id = RUS_new_drilloil
 		icon = GFX_GER_focus_synthetic_rubber
 		x = 7
-		y = 10
+		y = 8
 
 		prerequisite = {
 			focus = RUS_new_noagri
@@ -1106,7 +1415,7 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			231 = {
 				add_resource = {
 				type = oil
@@ -1120,7 +1429,7 @@ focus_tree = {
 		id = RUS_new_oilciv
 		icon = GFX_goal_generic_oil_refinery
 		x = 9
-		y = 11
+		y = 9
 
 		prerequisite = {
 			focus = RUS_new_drilloil
@@ -1134,11 +1443,11 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 									195 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
-										} 
+										}
 									206 ={
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
@@ -1151,7 +1460,7 @@ focus_tree = {
 		id = RUS_new_oilmil
 		icon = GFX_focus_generic_tank_production
 		x = 5
-		y = 11
+		y = 9
 
 		prerequisite = {
 			focus = RUS_new_drilloil
@@ -1165,11 +1474,11 @@ focus_tree = {
 		
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			195 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
-			} 
+			}
 			206 ={
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = arms_factory level = 2 instant_build = yes }	
@@ -1181,7 +1490,7 @@ focus_tree = {
 		id = RUS_new_lead
 		icon = GFX_GER_focus_new_research_techniques
 		x = 7
-		y = 12
+		y = 10
 
 		prerequisite = {
 			focus = RUS_new_oilciv
@@ -1195,70 +1504,27 @@ focus_tree = {
 			
 		}
 
-		completion_reward = { 
+		completion_reward = {
 			add_research_slot = 1
 			add_stability = 0.05
 		}
 	}
 
 	focus = {
-		id = RUS_new_fight
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 2
-		y = 4
-
-		prerequisite = {
-			focus = RUS_new_orth
-			focus = RUS_new_skool
-		}
-
-		cost = 10
-
-		available = {
-		
-		}
-
-		completion_reward = { 
-			custom_effect_tooltip = fight_lit
-		}
-	}
-
-
-	focus = {
-		id = RUS_new_universal
-		icon = GFX_focus_research2
-		x = 2
-		y = 5
-
-		prerequisite = {
-			focus = RUS_new_fight
-		}
-
-		cost = 20
-
-		available = {
-			NOT = {has_idea = RUS_high_iliteracy3 }
-			NOT = {has_idea = RUS_high_iliteracy2 } 
-		}
-
-		completion_reward = { 
-			add_ideas = RUS_edu
-		}
-	}
-    focus = {
 		id = RUS_new_strong
 		icon = GFX_RUS_focus_first_russian_election
 		x = 10
-		y = 13
+		y = 11
 
 		cost = 10
 
 		available = {
-			NOT = {has_idea = RUS_high_iliteracy2 } 			
-			NOT = {has_idea = RUS_high_iliteracy3 } 
-			NOT = {has_idea = RUS_crowd } 
-			NOT = {has_idea = RUS_crowd2 } 
-			NOT = {has_idea = RUS_crowd3 } 
+			NOT = {has_idea = RUS_high_iliteracy_ns }
+			NOT = {has_idea = RUS_high_iliteracy_2_ns }
+			NOT = {has_idea = RUS_high_iliteracy_3_ns }
+			NOT = {has_idea = RUS_DNC_crowded_cities_ns }
+			NOT = {has_idea = RUS_DNC_crowded_cities_2_ns }
+			NOT = {has_idea = RUS_DNC_crowded_cities_3_ns }
 			NOT = {has_idea = RUS_fear_of_revolution }
 			NOT = {has_idea = RUS_fear_of_revolution2 }
 			NOT = {has_idea = RUS_fear_of_revolution3 }
@@ -1267,7 +1533,7 @@ focus_tree = {
 		prerequisite = {focus = RUS_new_lead}
 		prerequisite = {focus = RUS_new_induru}
 
-		completion_reward = { add_country_leader_trait =  autocratic_imperialist 
+		completion_reward = { add_country_leader_trait =  autocratic_imperialist
 			remove_country_leader_trait = inexperienced_imperialist
 			remove_country_leader_trait = unpopular_leader
 		}
@@ -1278,7 +1544,7 @@ focus_tree = {
 	#############################
 
 
-    focus = {
+	focus = {
 		id = RUS_new_policy
 		icon = GFX_goal_generic_government_deals
 		x = 29
@@ -1290,9 +1556,9 @@ focus_tree = {
 		}
 
 		completion_reward = { add_political_power = 50 }
-    }
+	}
 	focus = {
-    	id = RUS_new_calm1
+		id = RUS_new_calm1
 		icon = GFX_goal_trade_union_deal
 		x = 28
 		y = 2
@@ -1306,10 +1572,10 @@ focus_tree = {
 			focus = RUS_new_policy
 		}
 
-		completion_reward = { add_stability = 0.05 } 
+		completion_reward = { add_stability = 0.05 }
 	}
 	focus = {
-    	id = RUS_new_livstand
+		id = RUS_new_livstand
 		icon = GFX_goal_RUS_living_standards
 		x = 30
 		y = 2
@@ -1326,7 +1592,7 @@ focus_tree = {
 		completion_reward = { add_stability = 0.05 }
 	}	
 
-    focus = {
+	focus = {
 		id = RUS_new_prop
 		icon = GFX_goal_propaganda
 		x = 29
@@ -1341,8 +1607,8 @@ focus_tree = {
 				prerequisite = {focus = RUS_new_livstand}
 
 		completion_reward ={custom_effect_tooltip = prop }
-    }	
-    focus = {
+	}	
+	focus = {
 		id = RUS_new_faith
 		icon = GFX_focus_hun_elect_a_king
 		x = 29
@@ -1355,9 +1621,9 @@ focus_tree = {
 								
 		completion_reward ={ remove_country_leader_trait = unpopular_leader
 							add_political_power = 50 }
-    }
+	}
 	
-    focus = {
+	focus = {
 		id = RUS_new_develop_rural
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 31
@@ -1368,7 +1634,7 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_faith}
 
-		completion_reward ={ 
+		completion_reward ={
 			if = {
 				limit = {
 					owns_state = 246 #Rzhev
@@ -1408,9 +1674,9 @@ focus_tree = {
 					}
 				}
 			}
-			add_timed_idea = { 
-				idea = RUS_rural_developments_rus 
-				days = 365 
+			add_timed_idea = {
+				idea = RUS_rural_developments_rus
+				days = 365
 			}
 		}
 	}
@@ -1426,7 +1692,7 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_develop_rural}
 
-		completion_reward ={ 
+		completion_reward ={
 			if = {
 				limit = {
 					owns_state = 230 #Armenia
@@ -1466,11 +1732,11 @@ focus_tree = {
 					}
 				}
 			}
-			add_timed_idea = { 
-				idea = RUS_rural_developments_cau 
-				days = 365 
+			add_timed_idea = {
+				idea = RUS_rural_developments_cau
+				days = 365
 			}
-	    }
+		}
 	}
 
 	focus = {
@@ -1484,7 +1750,7 @@ focus_tree = {
 
 		prerequisite = { focus = RUS_new_develop_rural }
 
-		completion_reward ={ 
+		completion_reward ={
 			if = {
 				limit = {
 					owns_state = 572 #Chelyabinsk
@@ -1524,15 +1790,15 @@ focus_tree = {
 					}
 				}
 			}
-			add_timed_idea = { 
-				idea = RUS_rural_developments_sib 
-				days = 365 
+			add_timed_idea = {
+				idea = RUS_rural_developments_sib
+				days = 365
 			}
-	    }
+		}
 	}
 	focus = {
 		id = RUS_new_develop_rail
-		icon = GFX_GER_focus_develop_colonies
+		icon = GFX_goal_GER_develop_colonies
 		x = 31
 		y = 7
 		cost = 10
@@ -1542,11 +1808,11 @@ focus_tree = {
 		prerequisite = { focus = RUS_new_develop_rural_cau }
 		prerequisite = { focus = RUS_new_develop_rural_sib }
 
-		completion_reward ={ 
-			remove_ideas = RUS_ww1_mixed_railways 
-			add_timed_idea = { 
-				idea = RUS_rail_developments 
-				days = 365 
+		completion_reward ={
+			remove_ideas = RUS_ww1_mixed_railways
+			add_timed_idea = {
+				idea = RUS_rail_developments
+				days = 365
 			}
 			add_equipment_to_stockpile = {
 				type = train_equipment
@@ -1556,7 +1822,7 @@ focus_tree = {
 		}
 	}
 
-    focus = {
+	focus = {
 		id = RUS_new_aisia
 		icon = GFX_goal_RUS_asian_influance
 		x = 27
@@ -1570,8 +1836,8 @@ focus_tree = {
 		prerequisite = {focus = RUS_new_faith}
 
 		completion_reward ={add_war_support = 0.05}
-    }	
-    focus = {
+	}	
+	focus = {
 		id = RUS_new_prep_infa
 		icon = GFX_goal_generic_railroad
 		x = 26
@@ -1601,7 +1867,7 @@ focus_tree = {
 				}
 		}
 	}
-    focus = {
+	focus = {
 		id = RUS_new_prep_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 28
@@ -1612,7 +1878,7 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_aisia}
 
-		completion_reward ={ 
+		completion_reward ={
 			467 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1622,9 +1888,9 @@ focus_tree = {
 				}
 			}
 		}
-    }
-    focus = {
-    	id = RUS_new_boost_army
+	}
+	focus = {
+		id = RUS_new_boost_army
 		icon = GFX_focus_hol_liberation
 		x = 27
 		y = 7
@@ -1635,12 +1901,12 @@ focus_tree = {
 		prerequisite = {focus = RUS_new_prep_infa}
 		prerequisite = {focus = RUS_new_prep_navy}
 
-		completion_reward ={ 
-	        add_ideas = RUS_army_moral
+		completion_reward ={
+			add_ideas = RUS_army_moral
 		}
-    }
-    focus = {
-    	id = RUS_new_negojap
+	}
+	focus = {
+		id = RUS_new_negojap
 		icon = GFX_focus_usa_focus_on_asia
 		x = 29
 		y = 8
@@ -1653,19 +1919,19 @@ focus_tree = {
 		prerequisite = {focus = RUS_new_boost_army}
 		prerequisite = {focus = RUS_new_develop_rail}
 
-        bypass = {has_country_flag = rus_quick_chi}
+		bypass = {has_country_flag = rus_quick_chi}
 
 
 
 		completion_reward ={ RUS = { country_event = { id = DNC_Russia.5 } } }
-    }
+	}
 
 
 	##############################
 	#BEGIN MACNHURIA PUPPET BRANCH
 	##############################
 
-    focus = {
+	focus = {
 		id = RUS_new_victory_chi
 		icon = GFX_goal_RUS_asian_influance
 		x = 29
@@ -1689,12 +1955,12 @@ focus_tree = {
 			328 = { is_controlled_by_ROOT_or_subject = yes }
 		}
 		
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = { idea = RUS_china_rep  days = 1825 }
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_best_army
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 28
@@ -1709,7 +1975,7 @@ focus_tree = {
 
 		allow_branch = {  }
 		
-		completion_reward ={ 
+		completion_reward ={
 			761 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1719,9 +1985,9 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_develop
 		icon = GFX_goal_generic_construct_civilian
 		x = 30
@@ -1738,23 +2004,23 @@ focus_tree = {
 		
 		completion_reward ={
 			717 = {
-				add_building_construction = { 
-						type = industrial_complex 
-						level = 2 
-						instant_build = yes 
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
 				}	
 			}	
 			714 = {
-				add_building_construction = { 
-					type = industrial_complex 
-					level = 2 
-					instant_build = yes 
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}	
 			}			
 		}
-    }			 
+	}			
 
-    focus = {
+	focus = {
 		id = RUS_new_man_question
 		icon = GFX_focus_generic_treaty
 		x = 29
@@ -1771,9 +2037,9 @@ focus_tree = {
 		allow_branch = {  }
 		
 		completion_reward ={ RUS = { country_event = { id = DNC_Russia.10 } } }
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_man_fac
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 27
@@ -1788,12 +2054,12 @@ focus_tree = {
 
 		allow_branch = {  }
 		
-		completion_reward ={ 
+		completion_reward ={
 			328 = { add_building_construction = { type = arms_factory  level = 2 instant_build = yes } }
 			1026 = { add_building_construction = { type = arms_factory  level = 2 instant_build = yes } }
 		}
 	}
-    focus = {
+	focus = {
 		id = RUS_new_man_fort
 		icon = GFX_goal_generic_construct_military
 		x = 29
@@ -1808,21 +2074,21 @@ focus_tree = {
 
 		allow_branch = {  }
 		
-		completion_reward ={ 
-			563 = { 
-				add_building_construction = { 
-					type = bunker 
-					level = 3 
-					province = 10683 
+		completion_reward ={
+			563 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10683
 					instant_build = yes
-				} 
+				}
 			}
 		}
-     }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_man_rail
-		icon = GFX_GER_focus_develop_colonies
+		icon = GFX_goal_GER_develop_colonies
 		x = 31
 		y = 13
 		cost = 10
@@ -1841,19 +2107,19 @@ focus_tree = {
 		
 		completion_reward ={
 			MAN = {
-				every_owned_state = { 
-					add_building_construction = { 
-						type = infrastructure 
-						level = 3 
+				every_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
 						instant_build = yes
 					}
 				}
 			}
 			add_political_power = -5
 		}		
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_man_brothers
 		icon = GFX_goal_generic_alliance
 		x = 29
@@ -1870,13 +2136,13 @@ focus_tree = {
 
 		allow_branch = {  }
 		
-		completion_reward ={  
+		completion_reward ={
 			MAN = {
 					add_ideas = MEN_royal_guard
 					add_ideas = MEN_logistics		
 			}
 		}
-    }
+	}
 
 
 
@@ -1906,11 +2172,11 @@ focus_tree = {
 
 		prerequisite = { }
 
-		completion_reward = { 
-			add_stability = 0.05 
+		completion_reward = {
+			add_stability = 0.05
 			add_war_support = 0.05
 		}
-    }
+	}
 
 
 	focus = {
@@ -1936,7 +2202,7 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_japwar}
 
-		completion_reward = { 
+		completion_reward = {
 			716 = {
 				add_building_construction = {
 					type = bunker
@@ -1958,7 +2224,7 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_new_def_muk
@@ -1983,7 +2249,7 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_japwar}
 
-		completion_reward = { 
+		completion_reward = {
 			716 = {
 				add_building_construction = {
 					type = bunker
@@ -2005,7 +2271,7 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_send_navy
@@ -2028,13 +2294,13 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_japwar}
 
-		completion_reward = { 
-			add_timed_idea = { 
-				idea = RUS_fast_navy 
-				days = 365 
+		completion_reward = {
+			add_timed_idea = {
+				idea = RUS_fast_navy
+				days = 365
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_win_japwar
 		icon = GFX_goal_generic_demand_territory
@@ -2065,7 +2331,7 @@ focus_tree = {
 			add_political_power = 100
 			add_stability = 0.05
 		}
-    }	
+	}	
 
 	#WINNING MILITARIZATION SUBBRANCH
 
@@ -2086,7 +2352,7 @@ focus_tree = {
 			add_war_support = 0.1
 			add_stability = -0.02
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_win_lesson
 		icon = GFX_goal_generic_army_doctrines
@@ -2111,7 +2377,7 @@ focus_tree = {
 				category = naval_doctrine
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_build_east
 		icon = GFX_goal_generic_construct_mil_factory
@@ -2201,7 +2467,7 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_schools_east
 		icon = GFX_focus_generic_military_academy
@@ -2219,7 +2485,7 @@ focus_tree = {
 			army_experience = 30
 			navy_experience = 30
 		}
-    }
+	}
 
 	#WINNING INTERNAL POLITICS SUBBRANCH
 	focus = {
@@ -2253,7 +2519,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 100
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_new_win_representation
@@ -2297,7 +2563,7 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_new_win_coalition
@@ -2318,7 +2584,7 @@ focus_tree = {
 			}	
 			add_stability = 0.1
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_new_win_spending
@@ -2457,7 +2723,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex 
+					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
@@ -2487,16 +2753,16 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex 
+					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_win_integration
-		icon = GFX_GER_focus_develop_colonies
+		icon = GFX_goal_GER_develop_colonies
 		x = 50
 		y = 8
 		cost = 10
@@ -2509,11 +2775,11 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = RUS_integrate
 		}
-    }	
+	}	
 
 	focus = {
 		id = RUS_new_win_korea
-		icon = GFX_GER_focus_develop_colonies
+		icon = GFX_goal_GER_develop_colonies
 		x = 48
 		y = 4
 		cost = 10
@@ -2626,7 +2892,7 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_lose_japwar
@@ -2657,7 +2923,7 @@ focus_tree = {
 			add_war_support = -0.1
 			add_stability = 0.01
 		}
-    }
+	}
 
 	#LOSING MILITARIZATION SUBBRANCH
 
@@ -2674,11 +2940,11 @@ focus_tree = {
 			focus = RUS_lose_japwar
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			add_war_support = 0.1
 			add_stability = -0.05
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_foreign_equipment
 		icon = small_arms
@@ -2686,7 +2952,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 
-		available = { 
+		available = {
 			NOT = { has_war_with = FRA }
 		}
 
@@ -2694,7 +2960,7 @@ focus_tree = {
 			focus = RUS_new_lose_militarize
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			FRA = {
 				send_equipment = {
 					equipment = infantry_equipment
@@ -2715,10 +2981,10 @@ focus_tree = {
 			#move up trade deficit spirit
 			if = {
 				limit = {
-					has_idea = RUS_trade_deficit_2 
+					has_idea = RUS_trade_deficit_2
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_2 
+					remove_idea = RUS_trade_deficit_2
 					add_idea = RUS_trade_deficit_3
 				}
 			}
@@ -2728,23 +2994,23 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = RUS_trade_deficit_1
-					add_idea = RUS_trade_deficit_2 
+					add_idea = RUS_trade_deficit_2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = RUS_trade_deficit_0 
+					has_idea = RUS_trade_deficit_0
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_0 
-					add_idea = RUS_trade_deficit_1 
+					remove_idea = RUS_trade_deficit_0
+					add_idea = RUS_trade_deficit_1
 				}
 			}
 			else = {
 				add_ideas = RUS_trade_deficit_0	
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_foreign_advisors
 		icon = GFX_goal_generic_intelligence_exchange
@@ -2762,10 +3028,10 @@ focus_tree = {
 			#decrease army penalty
 			if = {
 				limit = {
-					has_idea = RUS_shat_army 
+					has_idea = RUS_shat_army
 				}
 				swap_ideas = {
-					remove_idea = RUS_shat_army 
+					remove_idea = RUS_shat_army
 					add_idea = RUS_shat_army_1
 				}
 			}
@@ -2775,16 +3041,16 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = RUS_shat_army_1
-					add_idea = RUS_shat_army_2 
+					add_idea = RUS_shat_army_2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = RUS_shat_army_2 
+					has_idea = RUS_shat_army_2
 				}
 				swap_ideas = {
-					remove_idea = RUS_shat_army_2 
-					add_idea = RUS_shat_army_3 
+					remove_idea = RUS_shat_army_2
+					add_idea = RUS_shat_army_3
 				}
 			}
 			else = {
@@ -2793,7 +3059,7 @@ focus_tree = {
 			add_stability = -0.05
 			army_experience = 50
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_foreign_tools
 		icon = GFX_goal_generic_production
@@ -2807,14 +3073,14 @@ focus_tree = {
 			focus = RUS_new_foreign_advisors
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			#move up trade deficit spirit
 			if = {
 				limit = {
-					has_idea = RUS_trade_deficit_2 
+					has_idea = RUS_trade_deficit_2
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_2 
+					remove_idea = RUS_trade_deficit_2
 					add_idea = RUS_trade_deficit_3
 				}
 			}
@@ -2824,16 +3090,16 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = RUS_trade_deficit_1
-					add_idea = RUS_trade_deficit_2 
+					add_idea = RUS_trade_deficit_2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = RUS_trade_deficit_0 
+					has_idea = RUS_trade_deficit_0
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_0 
-					add_idea = RUS_trade_deficit_1 
+					remove_idea = RUS_trade_deficit_0
+					add_idea = RUS_trade_deficit_1
 				}
 			}
 			else = {
@@ -2841,7 +3107,7 @@ focus_tree = {
 			}
 			add_ideas = RUS_foreign_tools
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_improve_mil_schools
 		icon = GFX_focus_generic_military_academy
@@ -2855,10 +3121,10 @@ focus_tree = {
 			focus = RUS_new_foreign_tools
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			unlock_decision_category_tooltip = RUS_recover
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_naval_rebuild
 		icon = GFX_goal_generic_build_navy
@@ -2866,7 +3132,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 
-		available = { 
+		available = {
 			any_owned_state = {
 				is_coastal = yes
 			}
@@ -2876,11 +3142,11 @@ focus_tree = {
 			focus = RUS_new_lose_militarize
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			navy_experience = 50
 			add_political_power = 50
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_foreign_advisors_navy
 		icon = GFX_goal_generic_intelligence_exchange
@@ -2888,7 +3154,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 
-		available = { 
+		available = {
 			any_owned_state = {
 				is_coastal = yes
 			}
@@ -2898,13 +3164,13 @@ focus_tree = {
 			focus = RUS_new_naval_rebuild
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			navy_experience = 50
 			add_stability = -0.05
 			#decrease naval penalty
 			if = {
 				limit = {
-					has_idea = RUS_shat_navy 
+					has_idea = RUS_shat_navy
 				}
 				swap_ideas = {
 					remove_idea = RUS_shat_navy
@@ -2917,7 +3183,7 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = RUS_shat_navy_1
-					add_idea = RUS_shat_navy_2 
+					add_idea = RUS_shat_navy_2
 				}
 			}
 			else_if = {
@@ -2927,7 +3193,7 @@ focus_tree = {
 				remove_ideas = RUS_shat_navy_2	
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_foreign_license_navy
 		icon = GFX_goal_generic_scientific_exchange
@@ -2935,7 +3201,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 
-		available = { 
+		available = {
 			any_owned_state = {
 				is_coastal = yes
 			}
@@ -2945,7 +3211,7 @@ focus_tree = {
 			focus = RUS_new_foreign_advisors_navy
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 3
@@ -2954,10 +3220,10 @@ focus_tree = {
 			#increase deficit
 			if = {
 				limit = {
-					has_idea = RUS_trade_deficit_2 
+					has_idea = RUS_trade_deficit_2
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_2 
+					remove_idea = RUS_trade_deficit_2
 					add_idea = RUS_trade_deficit_3
 				}
 			}
@@ -2967,23 +3233,23 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = RUS_trade_deficit_1
-					add_idea = RUS_trade_deficit_2 
+					add_idea = RUS_trade_deficit_2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = RUS_trade_deficit_0 
+					has_idea = RUS_trade_deficit_0
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_0 
-					add_idea = RUS_trade_deficit_1 
+					remove_idea = RUS_trade_deficit_0
+					add_idea = RUS_trade_deficit_1
 				}
 			}
 			else = {
 				add_ideas = RUS_trade_deficit_0	
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_foreign_shipbuilding
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -2991,7 +3257,7 @@ focus_tree = {
 		y = 8
 		cost = 10
 
-		available = { 
+		available = {
 			any_owned_state = {
 				is_coastal = yes
 			}
@@ -3001,15 +3267,15 @@ focus_tree = {
 			focus = RUS_new_foreign_license_navy
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			add_offsite_building = { type = dockyard level = 3 }
 			#increase deficit
 			if = {
 				limit = {
-					has_idea = RUS_trade_deficit_2 
+					has_idea = RUS_trade_deficit_2
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_2 
+					remove_idea = RUS_trade_deficit_2
 					add_idea = RUS_trade_deficit_3
 				}
 			}
@@ -3019,23 +3285,23 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = RUS_trade_deficit_1
-					add_idea = RUS_trade_deficit_2 
+					add_idea = RUS_trade_deficit_2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = RUS_trade_deficit_0 
+					has_idea = RUS_trade_deficit_0
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_0 
-					add_idea = RUS_trade_deficit_1 
+					remove_idea = RUS_trade_deficit_0
+					add_idea = RUS_trade_deficit_1
 				}
 			}
 			else = {
 				add_ideas = RUS_trade_deficit_0	
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_export_resources
 		icon = GFX_goal_generic_construction2
@@ -3055,10 +3321,10 @@ focus_tree = {
 			#decrease deficit
 			if = {
 				limit = {
-					has_idea = RUS_trade_deficit_3 
+					has_idea = RUS_trade_deficit_3
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_3 
+					remove_idea = RUS_trade_deficit_3
 					add_idea = RUS_trade_deficit_2
 				}
 			}
@@ -3073,10 +3339,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_idea = RUS_trade_deficit_1 
+					has_idea = RUS_trade_deficit_1
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_1 
+					remove_idea = RUS_trade_deficit_1
 					add_idea = RUS_trade_deficit_0
 				}
 			}
@@ -3084,7 +3350,7 @@ focus_tree = {
 				remove_ideas = RUS_trade_deficit_0	
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_export_grain
 		icon = GFX_goal_generic_forceful_treaty
@@ -3104,10 +3370,10 @@ focus_tree = {
 			#decrease deficit
 			if = {
 				limit = {
-					has_idea = RUS_trade_deficit_3 
+					has_idea = RUS_trade_deficit_3
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_3 
+					remove_idea = RUS_trade_deficit_3
 					add_idea = RUS_trade_deficit_2
 				}
 			}
@@ -3122,10 +3388,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_idea = RUS_trade_deficit_1 
+					has_idea = RUS_trade_deficit_1
 				}
 				swap_ideas = {
-					remove_idea = RUS_trade_deficit_1 
+					remove_idea = RUS_trade_deficit_1
 					add_idea = RUS_trade_deficit_0
 				}
 			}
@@ -3133,7 +3399,7 @@ focus_tree = {
 				remove_ideas = RUS_trade_deficit_0	
 			}
 		}
-    }	
+	}	
 
 	#RUSSIA DEFEAT POLITICAL REFORMS
 
@@ -3167,7 +3433,7 @@ focus_tree = {
 				popularity = 0.2
 			}
 		}
-    }
+	}
 	#CONSERVATIVE PATH
 	focus = {
 		id = RUS_new_crack_down_revolutionaries
@@ -3192,7 +3458,7 @@ focus_tree = {
 				add_idea = RUS_mass_prot_1
 			}
 		}
-    }	
+	}	
 	focus = {
 		id = RUS_new_expand_ohkrana
 		icon = GFX_umc_goal_secret_police
@@ -3220,7 +3486,7 @@ focus_tree = {
 				popularity = -0.15
 			}			
 		}
-    }	
+	}	
 	focus = {
 		id = RUS_new_prop_campaign
 		icon = GFX_goal_generic_propaganda
@@ -3243,7 +3509,7 @@ focus_tree = {
 				add_idea = RUS_mass_prot_2
 			}			
 		}
-    }	
+	}	
 	focus = {
 		id = RUS_new_status_quo_constitution
 		icon = GFX_goal_generic_forceful_treaty
@@ -3263,7 +3529,7 @@ focus_tree = {
 			}
 			add_country_leader_trait = constitutional_restrictions
 		}
-    }
+	}
 
 	#LIBERAL PATH
 	focus = {
@@ -3285,7 +3551,7 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.15
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_limit_ohkrana
 		icon = GFX_focus_rom_handle_king
@@ -3316,7 +3582,7 @@ focus_tree = {
 				add_idea = RUS_mass_prot_1
 			}
 		}
-    }	
+	}	
 	focus = {
 		id = RUS_new_reduce_censorship
 		icon = GFX_focus_hol_the_foundations_of_defense
@@ -3347,7 +3613,7 @@ focus_tree = {
 				popularity = 0.1
 			}
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_liberal_constitution
 		icon = GFX_focus_generic_treaty
@@ -3370,7 +3636,7 @@ focus_tree = {
 			}
 			add_country_leader_role	= {
 				character = RUS_nikolai_ii
-			  	promote_leader = yes
+				promote_leader = yes
 				country_leader = {
 					ideology = constitutional_monarchism
 					expire = "1933.1.1"
@@ -3378,7 +3644,7 @@ focus_tree = {
 				}
 			}
 		}
-    }			
+	}			
 
 	#POLAND, FINLAND & BALTICS
 	focus = {
@@ -3397,7 +3663,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 75
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_new_undermine_independence
@@ -3406,7 +3672,7 @@ focus_tree = {
 		y = 9
 		cost = 10
 
-		available = { 
+		available = {
 			has_political_power > 100
 		}
 		prerequisite = {
@@ -3415,7 +3681,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
-			add_political_power = -100 
+			add_political_power = -100
 			RUS = {
 				every_controlled_state = {
 					limit = {
@@ -3432,7 +3698,7 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_new_full_independence
@@ -3441,7 +3707,7 @@ focus_tree = {
 		y = 10
 		cost = 10
 
-		available = { 
+		available = {
 			OR = {
 				NOT = { country_exists = POL }
 				NOT = { country_exists = FIN }
@@ -3465,7 +3731,7 @@ focus_tree = {
 			release_on_controlled = LAT
 			release_on_controlled = LIT
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_new_partial_independence
@@ -3491,7 +3757,7 @@ focus_tree = {
 			release_puppet_on_controlled = LAT
 			release_puppet_on_controlled = LIT
 		}
-    }
+	}
 
 	focus = {
 		id = RUS_new_russify
@@ -3511,7 +3777,7 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = RUS_russify
 		}
-    }
+	}
 
 
 	#DEMILITARIZATION SUBBRANCH
@@ -3524,8 +3790,8 @@ focus_tree = {
 		cost = 10
 
 		available = { }
-		mutually_exclusive = { 
-			focus = RUS_new_lose_militarize 
+		mutually_exclusive = {
+			focus = RUS_new_lose_militarize
 			focus = RUS_new_win_militarize
 		}
 		prerequisite = {
@@ -3533,14 +3799,14 @@ focus_tree = {
 			focus = RUS_win_japwar
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			#move down economy law by 1 level
 			if = {
 				limit = {
-					has_idea = tot_economic_mobilisation 
+					has_idea = tot_economic_mobilisation
 				}
 				swap_ideas = {
-					remove_idea = tot_economic_mobilisation 
+					remove_idea = tot_economic_mobilisation
 					add_idea = war_economy
 				}
 			}
@@ -3550,31 +3816,31 @@ focus_tree = {
 				}
 				swap_ideas = {
 					remove_idea = war_economy
-					add_idea = partial_economic_mobilisation 
+					add_idea = partial_economic_mobilisation
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = partial_economic_mobilisation 
+					has_idea = partial_economic_mobilisation
 				}
 				swap_ideas = {
-					remove_idea = partial_economic_mobilisation 
-					add_idea = low_economic_mobilisation 
+					remove_idea = partial_economic_mobilisation
+					add_idea = low_economic_mobilisation
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = low_economic_mobilisation 
+					has_idea = low_economic_mobilisation
 				}
 				swap_ideas = {
-					remove_idea = low_economic_mobilisation 
+					remove_idea = low_economic_mobilisation
 					add_idea = civilian_economy
 				}
 			}
 			add_war_support = -0.05
 			add_stability = 0.1
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_sell_equipment
 		icon = GFX_focus_usa_reestablish_the_gold_standard
@@ -3582,7 +3848,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 
-		available = { 
+		available = {
 			NOT = { has_war_with = FRA }
 		}
 
@@ -3590,7 +3856,7 @@ focus_tree = {
 			focus = RUS_new_demilitarize
 		}
 
-		completion_reward = {  
+		completion_reward = {
 			send_equipment = {
 				equipment = infantry_equipment
 				amount = 5000
@@ -3608,7 +3874,7 @@ focus_tree = {
 			}
 			add_ideas = RUS_arms_sales		
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_convert_mils
 		icon = GFX_goal_generic_construct_civ_factory
@@ -3652,7 +3918,7 @@ focus_tree = {
 				}
 			}	
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_small_army
 		icon = army_officers
@@ -3669,7 +3935,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = RUS_small_army
 		}
-    }
+	}
 	focus = {
 		id = RUS_new_convert_mil_schools
 		icon = GFX_focus_generic_military_academy
@@ -3680,7 +3946,7 @@ focus_tree = {
 		available = {
 			has_army_experience > 50
 			has_navy_experience > 50
-		 }
+		}
 
 		prerequisite = {
 			focus = RUS_new_small_army
@@ -3691,12 +3957,12 @@ focus_tree = {
 			army_experience = -50
 			navy_experience = -50
 		}
-    }
+	}
 	##########################
 	#BEGIN DNC MILITARY BRANCH
 	##########################
 
-    focus = {
+	focus = {
 		id = RUS_new_army_sit
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 40
@@ -3707,8 +3973,8 @@ focus_tree = {
 
 		}
 
-		completion_reward ={ 
-			add_political_power = 50 
+		completion_reward ={
+			add_political_power = 50
 			army_experience	= 25
 		}
 	}
@@ -3726,11 +3992,11 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_army_sit}
 
-		completion_reward ={ add_war_support = 0.05 
-							 add_political_power = 150 }	
-        }
+		completion_reward ={ add_war_support = 0.05
+							add_political_power = 150 }	
+		}
 
-    focus = {
+	focus = {
 		id = RUS_new_mandatory_ser
 		icon = GFX_focus_generic_little_entente
 		x = 38
@@ -3743,11 +4009,11 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_army_sit}
 
-		completion_reward ={ add_stability = -0.05 
+		completion_reward ={ add_stability = -0.05
 							add_ideas = RUS_mandatory}
-    }
+	}
 				
-    focus = {
+	focus = {
 		id = RUS_new_basic_edu
 		icon = GFX_GER_focus_new_research_techniques
 		x = 37
@@ -3764,9 +4030,9 @@ focus_tree = {
 		completion_reward ={ add_political_power = 100
 							add_ideas = RUS_smart_army}
 
-  	}
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_infantry_eq1
 		icon = small_arms
 		x = 35
@@ -3786,9 +4052,9 @@ focus_tree = {
 											}
 		}
 
-  	}
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_support_eq1
 		icon = GFX_goal_generic_construction2
 		x = 37
@@ -3810,7 +4076,7 @@ focus_tree = {
 		}
 	}
 
-    focus = {
+	focus = {
 		id = RUS_new_support_eq2
 		icon = GFX_goal_generic_army_doctrines
 		x = 37
@@ -3825,7 +4091,7 @@ focus_tree = {
 		prerequisite = {focus = RUS_new_art_eq1}
 		prerequisite = {focus = RUS_new_infantry_eq1}
 
-		completion_reward ={ 
+		completion_reward ={
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
 				uses = 2
@@ -3834,7 +4100,7 @@ focus_tree = {
 		}
 	}	
 
-    focus = {
+	focus = {
 		id = RUS_new_art_eq1
 		icon = GFX_goal_trench_artillery
 		x = 39
@@ -3854,9 +4120,9 @@ focus_tree = {
 											}
 		}
 
-  	}
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_modern_arm
 		icon = army_officers
 		x = 38
@@ -3868,10 +4134,10 @@ focus_tree = {
 		}
 		prerequisite = {focus = RUS_new_support_eq2}
 
-   		completion_reward ={ remove_ideas = RUS_disorg_army }	   
+		completion_reward ={ remove_ideas = RUS_disorg_army }	
 	}
 
-    focus = {
+	focus = {
 		id = RUS_new_navy
 		icon = GFX_goal_generic_build_navy
 		x = 42
@@ -3882,13 +4148,13 @@ focus_tree = {
 
 		}
 		prerequisite = {focus = RUS_new_army_sit}
-		completion_reward ={ 
-			add_ideas = RUS_navy 
+		completion_reward ={
+			add_ideas = RUS_navy
 			navy_experience	= 25
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_arctic
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 44
@@ -3901,22 +4167,22 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_army_sit}
 
-		completion_reward ={ 
+		completion_reward ={
 			825 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard level = 2
-					instant_build = yes 
+					instant_build = yes
 				}	
 			}
 			214 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = dockyard level = 2 instant_build = yes }	
-			} 
+			}
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_pacific
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 43
@@ -3934,9 +4200,9 @@ focus_tree = {
 				add_building_construction = { type = dockyard level = 2 instant_build = yes }	
 			}
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_doctr
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 45
@@ -3954,9 +4220,9 @@ focus_tree = {
 				category = naval_doctrine
 			}
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_battl
 		icon = GFX_goal_generic_navy_battleship
 		x = 43
@@ -3976,9 +4242,9 @@ focus_tree = {
 				category = bb_tech
 			}
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_cru
 		icon = GFX_focus_generic_cruiser2
 		x = 41
@@ -3997,9 +4263,9 @@ focus_tree = {
 				category = ca_tech
 			}
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_more_doc
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 43
@@ -4022,7 +4288,7 @@ focus_tree = {
 		}
 	}
 
-    focus = {
+	focus = {
 		id = RUS_new_modern_nav
 		icon = GFX_goal_generic_navy_battleship
 		x = 42
@@ -4067,11 +4333,11 @@ focus_tree = {
 	#######################
 
 
-    focus = {
+	focus = {
 		id = RUS_new_foreign_policy
 		icon = GFX_goal_foreign_policy
 		x = 11
-		y = 14
+		y = 13
 		cost = 10
 
 		available = {
@@ -4081,13 +4347,13 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.01
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_revive_three_emp
 		icon = GFX_goal_three_emperors_league
 		x = 17
-		y = 15
+		y = 14
 		cost = 10
 		ai_will_do = {
 			base = 10
@@ -4102,16 +4368,16 @@ focus_tree = {
 			is_in_faction = no
 		}
 
-		completion_reward ={ 
+		completion_reward ={
 			GER = { country_event = { id = dgk_germany.900 } }
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_focus_on_the_east
 		icon = GFX_focus_usa_focus_on_asia
 		x = 15
-		y = 16
+		y = 15
 		cost = 10
 
 		prerequisite = { focus = RUS_new_revive_three_emp}
@@ -4120,7 +4386,7 @@ focus_tree = {
 			has_tech = trench_warfare
 		}
 
-		completion_reward ={ 
+		completion_reward ={
 			408 = {
 				add_building_construction = {
 					type = bunker
@@ -4130,13 +4396,13 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_against_the_french
 		icon = GFX_focus_attack_france
 		x = 17
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4159,13 +4425,13 @@ focus_tree = {
 			}
 
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_family_meeting
 		icon = GFX_goal_generic_national_unity
 		x = 19
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4176,13 +4442,13 @@ focus_tree = {
 		}
 
 		completion_reward ={ }
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_tech_sharing
 		icon = GFX_goal_continuous_research
 		x = 17
-		y = 17
+		y = 16
 		cost = 10
 
 		
@@ -4197,13 +4463,13 @@ focus_tree = {
 		completion_reward ={
 			RUS = { add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons  } }
 		}
- 	}
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_balkan_question
 		icon = GFX_focus_BUL_free_balkan_states
 		x = 17
-		y = 18
+		y = 17
 		cost = 10
 
 		
@@ -4213,7 +4479,7 @@ focus_tree = {
 
 		}
 
-		completion_reward ={ 
+		completion_reward ={
 			give_guarantee = ROM
 			give_guarantee = BUL
 			give_guarantee = GRE
@@ -4224,13 +4490,13 @@ focus_tree = {
 			add_opinion_modifier = { target = SER modifier = large_decrease }
 			add_opinion_modifier = { target = MNT modifier = large_decrease }
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_meeting_in_paris
 		icon = GFX_goal_FRA_paris_meeting
 		x = 7
-		y = 15
+		y = 14
 		cost = 10
 
 		mutually_exclusive = { focus = RUS_new_revive_three_emp }
@@ -4243,13 +4509,13 @@ focus_tree = {
 
 		completion_reward ={ 	#FRA = { country_event = { id = france.2 } }		
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_guarentee_the_french
 		icon = GFX_focus_chi_reach_out_to_france
 		x = 11
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4259,22 +4525,22 @@ focus_tree = {
 
 		}
 
-		completion_reward ={ 
-			give_guarantee = FRA 
+		completion_reward ={
+			give_guarantee = FRA
 			# hidden_effect = {
-			# 	FRA = { 
-			# 		country_event = { id = france.1 } 
-			# 	} 
+			# 	FRA = {
+			# 		country_event = { id = france.1 }
+			# 	}
 			# }
-			custom_effect_tooltip = fra_gar 
+			custom_effect_tooltip = fra_gar
 		}
 	}
 
-    focus = {
+	focus = {
 		id = RUS_new_def_cau
 		icon = GFX_goal_generic_construct_military
 		x = 11
-		y = 17
+		y = 16
 		cost = 10
 
 		available = {
@@ -4310,12 +4576,12 @@ focus_tree = {
 				}		
 
 			}
-    }
-    focus = {
+	}
+	focus = {
 		id = RUS_new_def_afg
 		icon = GFX_goal_generic_construct_military
 		x = 11
-		y = 18
+		y = 17
 		cost = 10
 
 		available = {
@@ -4324,7 +4590,7 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_def_cau}
 
-		completion_reward ={ 
+		completion_reward ={
 				584 = {
 					add_building_construction = {
 					type = bunker
@@ -4374,12 +4640,12 @@ focus_tree = {
 					}
 				}		
 		}
-    }	
-    focus = {
+	}	
+	focus = {
 		id = RUS_new_ally
 		icon = GFX_goal_generic_alliance
 		x = 11
-		y = 19
+		y = 18
 		cost = 10
 
 		available = {
@@ -4388,18 +4654,18 @@ focus_tree = {
 
 		prerequisite = {focus = RUS_new_def_afg}
 
-		completion_reward ={ 
+		completion_reward ={
 				add_opinion_modifier = { target = ENG modifier = large_increase }
 				add_opinion_modifier = { target = FRA modifier = large_increase }
 				add_opinion_modifier = { target = GER modifier = large_increase }
 				add_opinion_modifier = { target = ITA modifier = large_increase }
 		}
-    }	
-    focus = {
+	}	
+	focus = {
 		id = RUS_new_british_menace
 		icon = GFX_focus_attack_britain
 		x = 9
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4409,7 +4675,7 @@ focus_tree = {
 
 		}
 
-		completion_reward ={ 
+		completion_reward ={
 			add_opinion_modifier = {
 				target = ENG
 				modifier = hostile_status
@@ -4422,13 +4688,13 @@ focus_tree = {
 			}
 
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_ottoman_question	
 		icon = GFX_focus_TUR_misak_i_milli
 		x = 5
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4438,17 +4704,17 @@ focus_tree = {
 
 		}
 
-		completion_reward ={ 
+		completion_reward ={
 			add_state_claim = 341
 			add_state_claim = 340
 			add_state_claim = 950
 		}
-    }
-    focus = {
+	}
+	focus = {
 		id = RUS_new_ott_militias
 		icon = GFX_focus_prc_infiltration
 		x = 5
-		y = 17
+		y = 16
 
 		cost = 10
 
@@ -4467,11 +4733,11 @@ focus_tree = {
 		}
 	}
 
-    focus = {
+	focus = {
 		id = RUS_new_german_question
 		icon = GFX_focus_usa_focus_on_europe
 		x = 7
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4481,7 +4747,7 @@ focus_tree = {
 
 		}
 
-		completion_reward ={ 
+		completion_reward ={
 			add_opinion_modifier = {
 				target = GER
 				modifier = hostile_status
@@ -4493,13 +4759,13 @@ focus_tree = {
 				}
 			}
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_build_up_poland
 		icon = GFX_goal_generic_construct_military
 		x = 7
-		y = 17
+		y = 16
 		cost = 10
 
 		
@@ -4509,28 +4775,23 @@ focus_tree = {
 			has_tech = trench_warfare
 		}
 
-		completion_reward ={ 
+		completion_reward ={
 			10 = {
-					add_building_construction = { 
-						type = bunker 
-						province = 3544 
-						level = 2 
-						instant_build = yes 
-					}
+				add_building_construction = {
+					type = bunker
+					province = 3544
+					level = 2
+					instant_build = yes
 				}
+			}
 		}
 	}
-	
 
-
-	
-                 
-
-    focus = {
+	focus = {
 		id = RUS_new_baltic_forts
 		icon = GFX_goal_generic_construct_military
 		x = 8
-		y = 18
+		y = 17
 		cost = 10
 
 		
@@ -4553,11 +4814,11 @@ focus_tree = {
 		}
 	}
 
-    focus = {
+	focus = {
 		id = RUS_new_austrian_front
 		icon = GFX_goal_generic_construct_military
 		x = 6
-		y = 18
+		y = 17
 		cost = 10
 
 		
@@ -4583,13 +4844,13 @@ focus_tree = {
 			}
 
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_black_sea_forts
 		icon = GFX_focus_generic_coastal_fort
 		x = 7
-		y = 19
+		y = 18
 		cost = 10
 
 		
@@ -4601,19 +4862,18 @@ focus_tree = {
 		}
 
 		completion_reward ={
-			137 = { 
+			137 = {
 				add_building_construction = { type = bunker province = 3686 level = 4 instant_build = yes }
 				add_building_construction = { type = bunker province = 6704 level = 4 instant_build = yes }
 			}
-
 		}
-    }
+	}
 
-    focus = {
+	focus = {
 		id = RUS_new_join_the_entent
 		icon = GFX_goal_support_democracy
 		x = 3
-		y = 16
+		y = 15
 		cost = 10
 
 		

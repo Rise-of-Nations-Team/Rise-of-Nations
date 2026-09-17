@@ -1087,7 +1087,7 @@ add_ideas =tblra_church_support
 	}
 	focus = {
 		id = FRA_develop_the_colonies
-		icon = GFX_GER_focus_develop_colonies
+		icon = GFX_goal_GER_develop_colonies
 		x = 16
 		y = 2
 

@@ -257,7 +257,7 @@ country_event = {
 
 	option = {
 		name = DNC_Russia.11.a
-		remove_ideas = RUS_crowd3
+		remove_ideas = RUS_DNC_crowded_cities_3_ns
 		add_stability = 0.02
 	}
 }
