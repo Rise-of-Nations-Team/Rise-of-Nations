@@ -1,48 +1,28 @@
-# //TODO: Add back once the focus tree is done
- RUS_trans_caucasian_railway_cat = {
- 	visible = {
- 		has_completed_focus = RUS_new_tcway
- 	}
- 	icon = generic_industry
- 	allowed = {
- 		original_tag = RUS
- 	}
- }
+RUS_DNC_trans_siberian_project_cat = {
 
- RUS_trans_siberian_railway_cat = {
- 	visible = {
- 		has_completed_focus = RUS_new_tsway
- 	}
- 	icon = generic_industry
- 	allowed = {
- 		original_tag = RUS
- 	}
- }
- RUS_literacydes = {
- 	icon = gre_paying_ifc_debt
- 	picture = GFX_RUS_liteacypic
- 	priority = 10
+	icon = generic_industry
 
-     visible = {
- 		has_completed_focus	= RUS_new_fight
- 	}
+	allowed = {
+		original_tag = RUS
+	}
 
- 	allowed = {
- 	}
- }
+	visible = {
+		has_completed_focus = RUS_DNC_expand_the_trans_siberian_railway
+	}
+}
 
- RUS_crowded = {
- 	icon = generic_economy
- 	picture = GFX_RUS_crowd
- 	priority = 5
+RUS_DNC_trans_caucasian_project_cat = {
 
-     visible = {
- 		has_completed_focus = RUS_new_hous
- 	}
- 	allowed = {
- 	}  
+	icon = generic_industry
 
- }
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = {
+		has_completed_focus = RUS_DNC_expand_the_trans_caucasus_railway
+	}
+}
 
  RUS_fear = {
  	icon = generic_propaganda

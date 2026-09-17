@@ -1,0 +1,224 @@
+ideas = {
+
+	country = {
+
+		usa_american_constitution = {
+			removal_cost = -1
+
+			allowed = {
+				tag = USA
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.10
+			}
+		}
+
+		usa_bill_of_rights = {
+			removal_cost = -1
+
+			allowed = {
+				tag = USA
+			}
+
+			modifier = {
+				political_power_gain = 0.05
+				foreign_subversive_activites = 0.10
+			}
+		}
+
+		USA_jim_crow_laws3 = {
+			removal_cost = -1
+			picture = USA_jim_crow_laws_worse
+
+			allowed = {
+				tag = USA
+			}
+
+			cancel = {
+				date > 1964.1.1
+			}
+
+			modifier = {
+				stability_factor = -0.08
+				recruitable_population = -0.18
+				political_power_gain = 0.18
+			}
+		}
+
+		firing_squads_USA = {
+			removal_cost = -1
+			picture = USA_jim_crow_laws_worse
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		firing_squads_USA_2 = {
+			removal_cost = -1
+			picture = USA_jim_crow_laws_worse
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.10
+				political_power_gain = 0.10
+			}
+		}
+
+		Productivity_Increase = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		NOR_state_investments = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_dockyard_factor = 0.15
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+
+		GRE_foreign_monopolies = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				trade_opinion_factor = 0.10
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		GRE_foreign_monopolies_2 = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				trade_opinion_factor = 0.20
+				consumer_goods_factor = -0.04
+			}
+		}
+
+		GRE_foreign_monopolies_3 = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				trade_opinion_factor = 0.30
+				consumer_goods_factor = -0.06
+			}
+		}
+
+		GRE_foreign_monopolies_4 = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				trade_opinion_factor = 0.40
+				consumer_goods_factor = -0.08
+			}
+		}
+
+		dreadnought_race = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				capital_ship = { build_cost_ic = -0.15 }
+			}
+
+			research_bonus = {
+				bb_tech = 0.10
+			}
+		}
+
+		dreadnought_race_2 = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				capital_ship = { build_cost_ic = -0.25 }
+			}
+
+			research_bonus = {
+				bb_tech = 0.20
+				ca_tech = 0.10
+			}
+		}
+
+		ENG_naval_production = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				screen_ship = { build_cost_ic = -0.10 }
+				submarine = { build_cost_ic = -0.10 }
+			}
+
+			research_bonus = {
+				ss_tech = 0.10
+			}
+		}
+
+		IRE_submarine_production_idea = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			equipment_bonus = {
+				submarine = { build_cost_ic = -0.20 }
+			}
+
+			research_bonus = {
+				ss_tech = 0.20
+			}
+		}
+	}
+}

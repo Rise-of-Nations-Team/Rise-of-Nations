@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+		AUH_industrialisation = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = no
+
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		AUH_Evidenzbureau1 = {
+			allowed = {
+				always = no
+			}
+			picture = generic_infantry_bonus
+			modifier = {
+				decryption_factor = 0.05
+
+			}
+		}
+		AUH_Evidenzbureau2 = {
+			allowed = {
+				always = no
+			}
+			picture = generic_infantry_bonus
+			modifier = {
+				decryption_factor = 0.1
+
+			}
+		}
+		AUH_Currency_reform = {
+			allowed = {
+				always = no
+			}
+			picture = generic_neutrality_drift_bonus
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.2
+			}
+		}
+		AUH_tax_reduction = {
+			allowed = {
+				always = no
+			}
+			picture = man_five_year_plan_industry
+			modifier = {
+				political_power_gain = -0.5
+				production_speed_buildings_factor = 0.05
+
+			}
+		}
+		AUH_population_displacement = {
+			allowed = {
+				always = no
+			}
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_weekly = 0.005
+				political_power_gain = -0.2
+				defence = -0.05
+				offence = -0.05
+			}
+		}
+		AUH_population_displacement2 = {
+			allowed = {
+				always = no
+			}
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_weekly = 0.007
+				political_power_gain = -0.3
+				defence = -0.1
+				offence = -0.1
+
+			}
+		}
+	}
+}

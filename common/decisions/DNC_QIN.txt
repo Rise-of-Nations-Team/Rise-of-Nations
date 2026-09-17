@@ -1256,7 +1256,7 @@ QIN_boxer_war_mission = {
 		is_good = no
 		timeout_effect = {
 			add_manpower = 40000
-			add_timed_idea = { idea = Total_War days = 300 }
+			add_timed_idea = { idea = RI_a_total_war days = 300 }
 			load_oob = BOX_1900
 			load_oob = BOX_1900
 		}

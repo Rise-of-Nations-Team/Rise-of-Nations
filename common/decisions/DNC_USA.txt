@@ -435,7 +435,7 @@ gold_standard_act_vote = {
 			}			
 		}
 	}
-USA_court_republican_votes.tt = {
+USA_court_republican_votes = {
 		icon = oppression
 		available = {
 
@@ -463,7 +463,7 @@ clamp_variable = { var = republican_against_vote min = 0 }
 
 		}
 	}		
-USA_court_democratic_votes.tt = {
+USA_court_democratic_votes = {
 		icon = oppression
 		available = {
 
@@ -685,7 +685,6 @@ USA_congress = {
 		remove_effect = {
 			clr_country_flag = USA_already_campaigning_in_state
 			country_event = USA_republican_campaign_decisions.1
-			calcelccollage = yes
 		}
 	}
 #	USA_republican_campaign_in_west_south_central_states1 = {

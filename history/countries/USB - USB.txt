@@ -78,28 +78,6 @@ add_ideas = {
 	USA_the_two_party_system
 }
 
-add_ideas = {
-	tax_high
-	tariffs_high
-	press_free
-	security_liberty_first
-	private_control
-	fdi_regulated
-	train_low
-	officer_train_low
-	age_18
-	age_35
-	army_budget3
-	airforce_budget3
-	navy_budget5
-	police_budget5
-	industry_budget4
-	engineering_budget4
-	infrastructure_budget4
-	education_budget5
-	health_budget5
-	foreign_volunteers
-}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1896.11.3"

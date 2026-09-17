@@ -159,8 +159,10 @@ characters={
 			}
 			available = {
 				NOT = {
-					has_country_leader = SIA_damrong_rajanubhab
-					ruling_only = yes
+					has_country_leader = {
+						character = SIA_damrong_rajanubhab
+						ruling_only = yes
+					}
 				}					
 				date < 1916.1.1		
 			}
@@ -179,8 +181,10 @@ characters={
 			}
 			available = {
 				NOT = {
-					has_country_leader = SIA_damrong_rajanubhab
-					ruling_only = yes
+					has_country_leader = {
+						character = SIA_damrong_rajanubhab
+						ruling_only = yes
+					}
 				}					
 				date > 1916.1.1		
 				date < 1944.1.1					
@@ -636,7 +640,7 @@ characters={
 		name="Prince Intawarorot Suriyawong"
 		portraits = {
 			army = {
-				large="gfx/leaders/LAA/Portrait_SIA_Intawarorot_Suriyawong.dds"
+				large="gfx/leaders/SIA/DNC/Portrait_SIA_Intawarorot_Suriyawong.dds"
 			}
 		}
 		corps_commander={
@@ -1321,8 +1325,10 @@ characters={
 				date > 1929.1.1
 				date < 1949.1.1
 				NOT = {
-					has_country_leader = SIA_thawon_thamrongnawasawat
-					ruling_only = yes
+					has_country_leader = {
+						character = SIA_thawon_thamrongnawasawat
+						ruling_only = yes
+					}
 				}
 			}
 		}
@@ -1337,8 +1343,10 @@ characters={
 				date > 1929.1.1
 				date < 1949.1.1	
 				NOT = {
-					has_country_leader = SIA_thawon_thamrongnawasawat
-					ruling_only = yes
+					has_country_leader = {
+						character = SIA_thawon_thamrongnawasawat
+						ruling_only = yes
+					}
 				}							
 			}
 		}		
@@ -1823,12 +1831,16 @@ characters={
 				date < 1970.1.1
 				OR = {
 					NOT = {
-						has_country_leader = SIA_thawi_bunyaket
-						ruling_only = yes
+						has_country_leader = {
+							character = SIA_thawi_bunyaket
+							ruling_only = yes
+						}
 					}
 					NOT = {
-						has_country_leader = SIA_plaek_phibunsongkhram
-						ruling_only = yes
+						has_country_leader = {
+							character = SIA_plaek_phibunsongkhram
+							ruling_only = yes
+						}
 					}
 				}
 			}
@@ -1857,8 +1869,10 @@ characters={
 						has_government = communism 
 					}	
 					NOT = {
-						has_country_leader = SIA_plaek_phibunsongkhram
-						ruling_only = yes
+						has_country_leader = {
+							character = SIA_plaek_phibunsongkhram
+							ruling_only = yes
+						}
 					}
 				}	
 				date > 1930.1.1

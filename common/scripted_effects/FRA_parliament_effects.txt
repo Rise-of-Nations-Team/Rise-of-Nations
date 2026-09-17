@@ -1,0 +1,52 @@
+# French parliament: parliament_seat_array holds the seats of each party,
+# parliament_member_array holds the party ids, starting at 1.
+
+clear_parliament_gui_arrays = {
+	clear_array = parliament_seat_array
+	clear_array = parliament_member_array
+	set_variable = { parliament_total_seats = 0 }
+}
+
+# Recounts the chamber, used to place the seats of the semicircle
+parliament_gui_positions = {
+	set_variable = { parliament_total_seats = 0 }
+	for_each_loop = {
+		array = parliament_seat_array
+		value = parl_seats
+		add_to_variable = { parliament_total_seats = parl_seats }
+	}
+}
+
+parliament_gui_initial = {
+	parliament_gui_positions = yes
+	set_variable = { parliament_seats_at_start = parliament_total_seats }
+}
+
+reload_parliament_gui = {
+	parliament_gui_positions = yes
+}
+
+# temp_member = party id, temp_seats = seats won or lost
+modify_parliament_seat = {
+	set_temp_variable = { temp_seat_index = temp_member }
+	subtract_from_temp_variable = { temp_seat_index = 1 }
+	set_temp_variable = { temp_new_seats = parliament_seat_array^temp_seat_index }
+	add_to_temp_variable = { temp_new_seats = temp_seats }
+	clamp_temp_variable = { var = temp_new_seats min = 0 }
+	set_variable = { parliament_seat_array^temp_seat_index = temp_new_seats }
+	reload_parliament_gui = yes
+}
+
+# remove_party loses every seat it holds, target_party takes them
+get_rid_of_party_for = {
+	set_temp_variable = { temp_remove_index = remove_party }
+	subtract_from_temp_variable = { temp_remove_index = 1 }
+	set_temp_variable = { temp_target_index = target_party }
+	subtract_from_temp_variable = { temp_target_index = 1 }
+	set_temp_variable = { temp_moved_seats = parliament_seat_array^temp_remove_index }
+	set_temp_variable = { temp_target_seats = parliament_seat_array^temp_target_index }
+	add_to_temp_variable = { temp_target_seats = temp_moved_seats }
+	set_variable = { parliament_seat_array^temp_remove_index = 0 }
+	set_variable = { parliament_seat_array^temp_target_index = temp_target_seats }
+	reload_parliament_gui = yes
+}

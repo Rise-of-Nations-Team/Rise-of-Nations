@@ -202,16 +202,6 @@ ideas = {
 					}
 				}
 			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
 
 			cost = 150
 			removal_cost = -1
@@ -333,16 +323,6 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
 			ai_will_do = {
    				factor = 2
 
@@ -522,16 +502,6 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
 			ai_will_do = {
    				base = 3
 
@@ -691,16 +661,6 @@ ideas = {
 							has_active_mission = TUR_etatism_crisis_3
 						}
 					}
-				}
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {

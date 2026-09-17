@@ -120,7 +120,7 @@ create_dynamic_country = { #Maderistas
 
 	set_stability = 0.8
 
-	recruit_character = MDR_francisco_madero
+	recruit_character = MEX_francisco_madero
 }
 
 create_dynamic_country = { #Villistas
@@ -149,7 +149,7 @@ create_dynamic_country = { #Villistas
 
 	set_stability = 0.8
 
-    recruit_character = VIL_pancho_villa
+    recruit_character = MEX_pancho_villa
 }
 
 create_dynamic_country = { #Carrancistas
@@ -179,7 +179,7 @@ create_dynamic_country = { #Carrancistas
 
 	set_stability = 0.8
 
-	recruit_character = CNT_venustiano_carranza
+	recruit_character = MEX_venustiano_carranza
 }
 
 create_dynamic_country = { #Zapatistas
@@ -209,7 +209,7 @@ create_dynamic_country = { #Zapatistas
 
 	set_stability = 0.8
 
-    recruit_character = ZAP_emiliano_zapata
+    recruit_character = MEX_emiliano_zapata
 }
 set_convoys = 45
 set_stability = 0.2

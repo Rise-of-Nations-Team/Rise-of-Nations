@@ -154,42 +154,10 @@ ideas = {
 			}
 		}
 
-		RUS_high_iliteracy3 = {
-			picture = generic_illiteracy
+		RUS_DNC_crowded_cities_ns = {
 
-			allowed = {
-				always = no
-			}
-			
-			cancel = {
-				date > 1910.1.1
-			}
+			picture = prc_low_popular_support3
 
-			modifier = {
-				stability_factor = -0.10
-				research_speed_factor = -0.20
-			}
-		}
-
-		RUS_high_iliteracy2 = {
-			picture = generic_illiteracy
-
-			allowed = {
-				always = no
-			}
-			
-			cancel = {
-				date > 1910.1.1
-			}
-
-			modifier = {
-				stability_factor = -0.05
-				research_speed_factor = -0.10
-			}
-		}
-
-		RUS_crowd = {
-			picture = generic_crowd
 			allowed = {
 				always = no
 			}
@@ -207,8 +175,12 @@ ideas = {
 			}
 		} 
 
-		RUS_crowd2 = {
-			picture = generic_crowd
+		RUS_DNC_crowded_cities_2_ns = {
+
+			name = RUS_DNC_crowded_cities_ns
+
+			picture = prc_low_popular_support2
+
 			allowed = {
 				always = no
 			}
@@ -226,8 +198,12 @@ ideas = {
 			}
 		} 
 
-		RUS_crowd3 = {
-			picture = generic_crowd
+		RUS_DNC_crowded_cities_3_ns = {
+
+			name = RUS_DNC_crowded_cities_ns
+
+			picture = prc_low_popular_support
+
 			allowed = {
 				always = no
 			}
@@ -898,6 +874,93 @@ ideas = {
 				consumer_goods_factor = 0.1
 				min_export = 0.1
 			}
+		}
+
+		RUS_high_iliteracy_ns = {
+			picture = generic_illiteracy
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			cancel = {
+				date > 1910.1.1
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				research_speed_factor = -0.1
+				monthly_population = 0.25
+			}
+		}
+
+		RUS_high_iliteracy_2_ns = {
+
+			name = RUS_high_iliteracy_ns
+
+			picture = generic_illiteracy
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			cancel = {
+				date > 1910.1.1
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = -0.2
+				monthly_population = 0.5
+			}
+		}
+
+		RUS_high_iliteracy_3_ns = {
+
+			name = RUS_high_iliteracy_ns
+
+			picture = generic_illiteracy
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			cancel = {
+				date > 1910.1.1
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				research_speed_factor = -0.3
+				monthly_population = 1
+			}
+		}
+
+		RUS_DNC_eastern_orthodox_schools_ns = {
+
+			picture = YUG_orthodox_church_support
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			cancel = {
+				date > 1910.1.1
+			}
+
+			modifier = {
+				research_speed_factor = 0.05
+				monthly_population = 0.1
+			}
+
 		}
 	}
 }

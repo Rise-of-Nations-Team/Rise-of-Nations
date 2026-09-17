@@ -26,10 +26,9 @@ destroyers = {
 				fixed_ship_fire_control_system_slot = empty
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
+				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1 }
+				mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
+				rear_1_custom_slot = empty
 			}
 		}
 	}
@@ -48,10 +47,9 @@ destroyers = {
 				fixed_ship_fire_control_system_slot = empty
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
+				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1 }
+				mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
+				rear_1_custom_slot = empty
 			}
 		}
 	}
@@ -70,10 +68,9 @@ destroyers = {
 				fixed_ship_fire_control_system_slot = empty
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
+				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1 }
+				mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
+				rear_1_custom_slot = empty
 			}
 		}
 	}
@@ -92,10 +89,9 @@ destroyers = {
 				fixed_ship_fire_control_system_slot = empty
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
+				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1 }
+				mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
+				rear_1_custom_slot = empty
 			}
 		}
 	}
@@ -114,10 +110,9 @@ destroyers = {
 				fixed_ship_fire_control_system_slot = empty
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
+				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1 }
+				mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
+				rear_1_custom_slot = empty
 			}
 		}
 	}
@@ -136,10 +131,9 @@ destroyers = {
 				fixed_ship_fire_control_system_slot = empty
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
+				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1 }
+				mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
+				rear_1_custom_slot = empty
 			}
 		}
 	}
@@ -151,39 +145,16 @@ destroyers = {
 		}
 		target_variant = {
 			match_value = 2000.0
-			type = destroyer_1922
+			type = destroyer_1
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = empty
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
-			}
-		}
-	}
-
-	a1922_destroyer = {
-		role_icon_index = 2
-		priority = {
-			base = 1
-		}
-		target_variant = {
-			match_value = 2000.0
-			type = destroyer_1922
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = empty
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
+				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1 }
+				mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
+				rear_1_custom_slot = empty
 			}
 		}
 	}
@@ -195,17 +166,16 @@ destroyers = {
 		}
 		target_variant = {
 			match_value = 2000.0
-			type = destroyer_1936
+			type = destroyer_2
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
 				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = empty
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1
-					mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
-					rear_1_custom_slot = empty
-				}
+				fixed_ship_torpedo_slot = { module = empty module = ship_torpedo_1 }
+				mid_1_custom_slot = { module = empty module = ship_torpedo_1 }
+				rear_1_custom_slot = empty
 			}
 		}
 	}

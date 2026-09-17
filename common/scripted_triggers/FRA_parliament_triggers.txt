@@ -1,0 +1,7 @@
+# temp_member = party id, temp_seats = amount to compare against
+
+has_more_than_number_of_seat = {
+	set_temp_variable = { temp_seat_index = temp_member }
+	subtract_from_temp_variable = { temp_seat_index = 1 }
+	check_variable = { parliament_seat_array^temp_seat_index > temp_seats }
+}

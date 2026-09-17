@@ -1,4 +1,3 @@
-enable_propaganda_campaigns = yes
 
 
 capital = 16
@@ -241,7 +240,6 @@ recruit_character = FRA_charles_touchard
 recruit_character = FRA_georges_durandviel
 recruit_character = FRA_paul_auvert
 recruit_character = FRA_louis_franchet_d_esperey
-recruit_character = FRA_maurice_sairrail
 recruit_character = FRA_emile_fayolle
 recruit_character = FRA_adolphe_guillaumat
 recruit_character = FRA_noel_edouard_de_castelnau

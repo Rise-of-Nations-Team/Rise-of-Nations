@@ -1,304 +1,249 @@
-# //TODO: Add back once the focus tree is done
-RUS_trans_caucasian_railway_cat = {
-	RUS_trans_caucasian_railway_phase1_236 = {
+economy_decisions = {
+
+	RUS_DNC_build_low_cost_housing = {
+
+		allowed = {
+			original_tag = RUS
+		}
+
+		visible = {
+			has_completed_focus = RUS_DNC_address_the_housing_crisis
+			OR = {
+				has_idea = RUS_DNC_crowded_cities_2_ns
+				has_idea = RUS_DNC_crowded_cities_3_ns
+			}
+		}
+
+		available = {
+			OR = {
+				has_idea = RUS_DNC_crowded_cities_2_ns
+				has_idea = RUS_DNC_crowded_cities_3_ns
+			}
+		}
+
+		days_remove = 360
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = RUS_DNC_crowded_cities_2_ns
+				}
+				swap_ideas = {
+					remove_idea = RUS_DNC_crowded_cities_2_ns
+					add_idea = RUS_DNC_crowded_cities_3_ns
+				}
+			}
+			else = {
+				remove_ideas = RUS_DNC_crowded_cities_3_ns
+			}
+		}
+
+	}
+
+}
+
+RUS_DNC_trans_siberian_project_cat = {
+
+	RUS_DNC_trans_siberian_project_phase1_577 = {
+
 		icon = GFX_decision_railway_building
- 		highlight_states = {
- 			highlight_state_targets = {
- 				state = 236	
- 			}
- 			highlight_color_while_active = 2
- 		}
- 		days_remove = 60
+
+		allowed = {
+			original_tag = RUS
+		}
+
+		available = {
+			controls_state = 577
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 577
+			}
+			highlight_color_while_active = 2
+		}
+
+		days_remove = 150
+
+		custom_cost_text = decision_cost_civ_factory_3
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
 		fire_only_once = yes
- 		cost = 20
- 		remove_effect = {
- 			236 = {
- 				add_building_construction = {
- 					type = infrastructure
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 		}
- 	}
- 	RUS_trans_caucasian_railway_phase1_237 = {
- 		icon = GFX_decision_railway_building
- 		highlight_states = {
- 			highlight_state_targets = {
- 				state = 237
- 			}
- 			highlight_color_while_active = 2
- 		}
- 		days_remove = 60
+
+		remove_effect = {
+			577 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	RUS_DNC_trans_siberian_project_phase1_576 = {
+
+		icon = GFX_decision_railway_building
+
+		allowed = {
+			original_tag = RUS
+		}
+
+		available = {
+			controls_state = 576
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 576
+			}
+			highlight_color_while_active = 2
+		}
+
+		days_remove = 150
+
+		custom_cost_text = decision_cost_civ_factory_3
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
 		fire_only_once = yes
- 		cost = 20
- 		remove_effect = {
- 			237 = {
- 				add_building_construction = {
- 					type = infrastructure
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 		}
- 	}
- }
- RUS_trans_siberian_railway_cat = {
- 	RUS_trans_siberian_railway_phase1_577 = {
- 		icon = GFX_decision_railway_building
- 		highlight_states = {
- 			highlight_state_targets = {
- 				state = 577	
-		
- 			}
- 			highlight_color_while_active = 2
- 		}
- 		days_remove = 60
+
+		remove_effect = {
+			576 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	RUS_DNC_trans_siberian_project_phase1_575 = {
+
+		icon = GFX_decision_railway_building
+
+		allowed = {
+			original_tag = RUS
+		}
+
+		available = {
+			controls_state = 575
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 575
+			}
+			highlight_color_while_active = 2
+		}
+
+		days_remove = 150
+
+		custom_cost_text = decision_cost_civ_factory_3
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
 		fire_only_once = yes
- 		cost = 20
- 		remove_effect = {
- 			577 = {
- 				add_building_construction = {
- 					type = infrastructure
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 		}
- 	}
- 	RUS_trans_siberian_railway_phase1_576 = {
- 		icon = GFX_decision_railway_building
- 		highlight_states = {
- 			highlight_state_targets = {
- 				state = 576
- 			}
- 			highlight_color_while_active = 2
- 		}
- 		days_remove = 60
- 		cost = 20
+
+		remove_effect = {
+			575 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+}
+
+RUS_DNC_trans_caucasian_project_cat = {
+
+	RUS_DNC_trans_caucasian_project_phase1_236 = {
+
+		icon = GFX_decision_railway_building
+
+		allowed = {
+			original_tag = RUS
+		}
+
+		available = {
+			controls_state = 236
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 236
+			}
+			highlight_color_while_active = 2
+		}
+
+		days_remove = 150
+
+		custom_cost_text = decision_cost_civ_factory_3
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
 		fire_only_once = yes
- 		remove_effect = {
- 			576 = {
- 				add_building_construction = {
- 					type = infrastructure
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 		}
- 	}
- 	RUS_trans_siberian_railway_phase1_575 = {
- 		icon = GFX_decision_railway_building
- 		highlight_states = {
- 			highlight_state_targets = {
- 				state = 575
- 			}
- 			highlight_color_while_active = 2
- 		}
- 		days_remove = 60
- 		cost = 20
+
+		remove_effect = {
+			236 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	RUS_DNC_trans_caucasian_project_phase1_237 = {
+
+		icon = GFX_decision_railway_building
+
+		allowed = {
+			original_tag = RUS
+		}
+
+		available = {
+			controls_state = 237
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 237
+			}
+			highlight_color_while_active = 2
+		}
+
+		days_remove = 150
+
+		custom_cost_text = decision_cost_civ_factory_3
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
 		fire_only_once = yes
- 		remove_effect = {
- 			575 = {
- 				add_building_construction = {
- 					type = infrastructure
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 		}
- 	}
 
- }
- RUS_literacydes = {
- 	RUS_build_schools1 = {
- 		icon = generic_political_actions
+		remove_effect = {
+			237 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 
- 		available = {
- 			has_idea = RUS_high_iliteracy3
-            
- 		}
-
- 		fire_only_once = yes
- 		days_re_enable = 0
-         days_remove = 100
-
- 		visible = {
-		
- 		}
-
- 		cost = 100
-
- 		remove_effect = {
-             random_owned_state = {
-                     add_extra_state_shared_building_slots = 1
-                     add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-                }
- 			add_stability = 0.05
-             swap_ideas = { 
-               remove_idea = RUS_high_iliteracy3
-               add_idea = RUS_high_iliteracy2
-                          }
- 		}
-
- 		ai_will_do = {
- 			factor = 50
- 		}
- 	}
-
-     RUS_build_schools2 = {
-
- 		available = {
- 			has_idea = RUS_high_iliteracy2
-            
- 		}
-
- 		fire_only_once = yes
- 		days_re_enable = 0
-         days_remove = 100
-
- 		visible = {
- 		   has_idea = RUS_high_iliteracy2
- 		}
-
- 		cost = 100
-
- 		remove_effect = {
-             random_owned_state = {
-                     add_extra_state_shared_building_slots = 1
-                     add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-                }
- 			add_stability = 0.05
-             remove_ideas = RUS_high_iliteracy2
-
- 		}
-
- 		ai_will_do = {
- 			factor = 50
- 		}
- 	}
-
-     RUS_promote_edu = {
-         
- 		 available = {
- 			 not = {has_idea = RUS_high_iliteracy2 }
- 			 not = {has_idea = RUS_high_iliteracy3 }
- 		 }
-
-         fire_only_once = yes
- 		days_re_enable = 0
- 		days_remove = 150
-
- 		visible = {
-
- 		}
-
- 		cost = 150
-
- 		remove_effect = {
- 			add_ideas = RUS_literate
- 		}
-
-       ai_will_do = {
- 		  factor = 100
- 	  }
- 	}
- }
-
- RUS_crowded = {
-
-    RUS_develop_mos = {
- 	   icon = GFX_decision_eng_install_government
-         
- 		 available = {
- 			 has_idea = RUS_crowd
- 		 }
-
-         fire_only_once = yes
- 		days_re_enable = 0
- 		days_remove = 10
-
- 		visible = {
-            tag = RUS
- 		}
-
- 		highlight_states={highlight_state_targets = { state = 219 }}        
-
- 		cost = 150
-
- 		remove_effect = {
- 			swap_ideas = { 
-               remove_idea = RUS_crowd
-               add_idea = RUS_crowd2
- 			             }
- 			add_stability = 0.05
- 		}
-
-       ai_will_do = {
- 		  factor = 90
- 	  }
-    }
-    RUS_develop_stpt = {
-         icon = GFX_decision_gre_investment_decisions
-
- 		 available = {
- 			 has_idea = RUS_crowd2
- 		             }
-
-         fire_only_once = yes
- 		days_re_enable = 0
- 		days_remove = 10
-
- 		visible = {
-            tag = RUS
- 		}
-
- 		highlight_states={highlight_state_targets = { state = 195 }}       
-
- 		cost = 150
-
- 		remove_effect = {
- 			swap_ideas = { 
-               remove_idea = RUS_crowd2
-               add_idea = RUS_crowd3
- 			             }
- 			add_stability = 0.05
- 		}
-
-       ai_will_do = {
- 		  factor = 90
- 	                }
-
- 	               }
-
-    RUS_develop_wrs = {
- 	   icon = GFX_decision_generic_factory
-         
- 		 available = {
- 			 has_idea = RUS_crowd3
- 		 }
-
-         fire_only_once = yes
- 		days_re_enable = 0
- 		days_remove = 10
-
- 		visible = {
- 			tag = RUS
- 		}
-
- 		highlight_states={highlight_state_targets = { state = 10 }} 
-
- 		cost = 150
-
- 		remove_effect = {
-               custom_effect_tooltip = crowd_final
-               add_political_power = 75
- 			  hidden_effect = {
- 				  RUS = { country_event = { id = DNC_Russia.11 days = 270 } }
- 			  }
-         }
-     }
- }
+}
 
  RUS_fear = {
     RUS_brob1 = {
