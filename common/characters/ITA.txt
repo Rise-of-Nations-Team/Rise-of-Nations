@@ -164,7 +164,9 @@ characters = {
 				specialization_air = 3
 			}
 			visible = {
-				has_completed_focus = ITADNC_n_the_naval_flying_service
+				owner = {
+					has_completed_focus = ITADNC_n_the_naval_flying_service
+				}
 			}
 		}
 		navy_leader = {

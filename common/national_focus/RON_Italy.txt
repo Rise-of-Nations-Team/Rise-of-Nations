@@ -154,6 +154,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_nazionale
+			}
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = arm_the_alpine_frontier
@@ -172,6 +179,11 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ITA_arm_the_alpine_works_tt
+			set_country_flag = ITA_arm_the_frontier_surveyed
+			if = {
+				limit = { NOT = { has_idea = ITA_arm_the_alpine_frontier } }
+				add_ideas = ITA_arm_the_alpine_frontier
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_to_variable = {
@@ -194,6 +206,89 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITADNC_arm_the_barriers_of_the_cadore
+		relative_position_id = ITADNC_arm_the_alpine_frontier
+		x = 0
+		y = 1
+		prerequisite = { focus = ITADNC_arm_the_alpine_frontier }
+		icon = GFX_goal_generic_defence
+		cost = 5
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_war_with = AUH
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ARMY_XP }
+
+		completion_reward = {
+			if = {
+				limit = { owns_state = 160 }
+				160 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = { all_provinces = yes limit_to_border = yes }
+					}
+				}
+			}
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = ITADNC_arm_the_line_of_the_tagliamento
+		relative_position_id = ITADNC_arm_the_alpine_frontier
+		x = 4
+		y = 1
+		prerequisite = { focus = ITADNC_arm_the_alpine_frontier }
+		icon = GFX_focus_SWE_hedgehog_defense
+		cost = 5
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_with = AUH
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ARMY_XP }
+
+		completion_reward = {
+			if = {
+				limit = { owns_state = 160 }
+				160 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = { all_provinces = yes limit_to_border = yes }
+					}
+				}
+			}
+			if = {
+				limit = { owns_state = 986 }
+				986 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = { all_provinces = yes limit_to_border = yes }
+					}
+				}
+			}
+			army_experience = 10
+		}
+	}
+	focus = {
 		id = ITADNC_arm_the_africa_command
 		relative_position_id = ITADNC_arm_the_army_corps_commands
 		x = -2
@@ -209,8 +304,20 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER }
 
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_sonnino
+			}
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_nazionale
+			}
+		}
+
 		completion_reward = {
-			army_experience = 10
+			army_experience = 35
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -224,6 +331,25 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ITA_arm_the_colonial_troops_tt
+			set_country_flag = ITA_arm_africa_chosen
+			if = {
+				limit = {
+					country_exists = ETH
+					NOT = { has_idea = ITA_wp_the_adwa_column }
+				}
+				add_ideas = ITA_wp_the_adwa_column
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ETH
+					value = 50
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_on_continent = africa
+				}
+				add_dynamic_modifier = { modifier = ITA_arm_the_column_is_ready }
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_to_variable = {
@@ -300,7 +426,6 @@ focus_tree = {
 							cost = 100
 							idea_token = ITA_arm_pedotti_at_the_alpini
 							ledger = army
-							allowed = { original_tag = ITA }
 							traits = { army_commando_1 }
 						}
 						activate = no
@@ -493,6 +618,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
 
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_nazionale
+			}
+		}
 		completion_reward = {
 			add_to_variable = {
 				ITA_arm_dig_in = 0.05
@@ -510,6 +642,34 @@ focus_tree = {
 				cost_reduction = 0.25
 				uses = 1
 				category = land_doctrine
+			}
+			if = {
+				limit = { owns_state = 160 }
+				160 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { owns_state = 992 }
+				992 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+					}
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -1363,7 +1523,6 @@ focus_tree = {
 							cost = 100
 							idea_token = ITA_arm_pollio_the_historian
 							ledger = army
-							allowed = { original_tag = ITA }
 							traits = { scholar_general }
 						}
 						activate = no
@@ -2065,7 +2224,6 @@ focus_tree = {
 							cost = 100
 							idea_token = ITA_air_ricaldoni_the_aviation_section
 							ledger = air
-							allowed = { original_tag = ITA }
 							traits = { air_air_combat_training_1 }
 						}
 						activate = no
@@ -2127,7 +2285,6 @@ focus_tree = {
 							cost = 100
 							idea_token = ITA_air_douhet_the_aviators_battalion
 							ledger = air
-							allowed = { original_tag = ITA }
 							traits = { air_strategic_bombing_1 }
 						}
 						activate = no
@@ -2812,6 +2969,12 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
+			add_tech_bonus = {
+				name = ITA_n_tb_the_high_seas_school
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
 			add_doctrine_cost_reduction = {
 				name = ITADNC_n_the_fleet_of_battle
 				cost_reduction = 0.25
@@ -2819,7 +2982,7 @@ focus_tree = {
 				category = naval_doctrine
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			navy_experience = 50
+			navy_experience = 60
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2879,7 +3042,6 @@ focus_tree = {
 							cost = 100
 							idea_token = ITA_n_bettolo_chief_of_the_naval_staff
 							ledger = navy
-							allowed = { original_tag = ITA }
 							traits = { navy_chief_reform_2 }
 						}
 						activate = no
@@ -3226,6 +3388,18 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = { 159 = { is_owned_and_controlled_by = ROOT } }
+				set_country_flag = ITA_e_the_white_coal_runs
+				159 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = ITADNC_e_the_current_instead_of_coal
@@ -3285,6 +3459,51 @@ focus_tree = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = { 158 = { is_owned_and_controlled_by = ROOT } }
+				set_country_flag = ITA_e_the_white_coal_runs
+				158 = {
+					add_dynamic_modifier = { modifier = ITA_e_the_white_coal }
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { 160 = { is_owned_and_controlled_by = ROOT } }
+				set_country_flag = ITA_e_the_white_coal_runs
+				160 = {
+					add_dynamic_modifier = { modifier = ITA_e_the_white_coal }
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = ITA_e_the_white_coal_runs
+					987 = { is_owned_and_controlled_by = ROOT }
+				}
+				987 = {
+					add_dynamic_modifier = { modifier = ITA_e_the_white_coal }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				subtract_from_variable = { var = ITA_e_rendita value = 0.05 tooltip = ITA_e_rendita_eased_tt }
+				clamp_variable = {
+					var = ITA_e_rendita
+					min = 0
+					max = 1
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3680,6 +3899,18 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = { 988 = { is_owned_and_controlled_by = ROOT } }
+				set_country_flag = ITA_e_the_white_coal_runs
+				988 = {
+					add_dynamic_modifier = { modifier = ITA_e_the_white_coal }
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = ITADNC_e_the_sulcis_pits
@@ -3786,6 +4017,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ITA_e_modify_industrial_modifier = yes
 			custom_effect_tooltip = ITA_e_the_drift_is_slowed_tt
+			custom_effect_tooltip = ITA_e_tt_the_duties_are_ready
 			subtract_from_variable = {
 				var = ITA_e_monthly_rendita_increase
 				value = 0.005
@@ -3877,7 +4109,6 @@ focus_tree = {
 							slot = political_advisor
 							cost = 100
 							idea_token = ITA_e_spingardi_at_the_war_office
-							allowed = { original_tag = ITA }
 							traits = { veteran_minister }
 						}
 						activate = no
@@ -4154,12 +4385,19 @@ focus_tree = {
 		available = {
 			NOT = { has_completed_focus = ITADNC_n_the_flotilla_unleashed }
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_nazionale
+			}
+		}
 		completion_reward = {
 			989 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4170,7 +4408,7 @@ focus_tree = {
 				uses = 1
 				category = cl_tech
 			}
-			navy_experience = 25
+			navy_experience = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_to_variable = {
@@ -4235,7 +4473,11 @@ focus_tree = {
 				uses = 1
 				category = naval_doctrine
 			}
-			navy_experience = 25
+			if = {
+				limit = { NOT = { has_dynamic_modifier = { modifier = ITA_n_the_auxiliary_squadron } } }
+				add_dynamic_modifier = { modifier = ITA_n_the_auxiliary_squadron }
+			}
+			navy_experience = 60
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_to_variable = {
@@ -4530,12 +4772,19 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 35
 			add_doctrine_cost_reduction = {
 				name = ITADNC_n_the_war_on_trade
 				cost_reduction = 0.25
 				uses = 1
 				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = ITA_n_tb_the_narrow_sea_school
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+				category = torpedotech
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_country_flag = ITA_n_school_narrow
@@ -4575,7 +4824,6 @@ focus_tree = {
 							cost = 100
 							idea_token = ITA_n_thaon_di_revel_chief_of_the_naval_staff
 							ledger = navy
-							allowed = { original_tag = ITA }
 							traits = { navy_chief_maneuver_2 }
 						}
 						activate = no
@@ -4749,6 +4997,17 @@ focus_tree = {
 				}
 				987 = { set_state_category = metropolis }
 			}
+			if = {
+				limit = { 162 = { is_owned_and_controlled_by = ROOT } }
+				162 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ITA_e_modify_industrial_modifier = yes
 			ITA_e_the_shops_grow = yes
@@ -4811,6 +5070,27 @@ focus_tree = {
 			}
 			custom_effect_tooltip = ITA_e_tt_war_cancels_the_charter
 			custom_effect_tooltip = ITA_e_tt_the_capital_answers
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 157 = { is_owned_and_controlled_by = ROOT } }
+				157 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				if = {
+					limit = { 992 = { is_owned_and_controlled_by = ROOT } }
+					992 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_to_variable = {
@@ -5023,6 +5303,13 @@ focus_tree = {
 		available = {
 			has_tech = RON_Extended_Machine_Tools
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_sonnino
+			}
+		}
 		completion_reward = {
 			random_core_state = {
 				limit = {
@@ -5068,6 +5355,19 @@ focus_tree = {
 				add_resource = {
 					type = steel
 					amount = 3
+				}
+			}
+			if = {
+				limit = { 989 = { is_owned_and_controlled_by = ROOT } }
+				989 = {
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						instant_build = yes
+						province = {
+							id = 6788
+						}
+					}
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -5175,6 +5475,13 @@ focus_tree = {
 		available = {
 			has_tech = RON_Early_Heavy_Machinery
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_giolitti
+			}
+		}
 		completion_reward = {
 			every_core_state = {
 				limit = {
@@ -5191,6 +5498,29 @@ focus_tree = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = { 161 = { is_owned_and_controlled_by = ROOT } }
+				161 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_stability = 0.02
+			}
+			if = {
+				limit = { 992 = { is_owned_and_controlled_by = ROOT } }
+				992 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -5255,6 +5585,28 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
+			if = {
+				limit = { 2 = { is_owned_and_controlled_by = ROOT } }
+				2 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { 990 = { is_owned_and_controlled_by = ROOT } }
+				990 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ITA_e_modify_industrial_modifier = yes
 			add_to_variable = {
@@ -5313,6 +5665,16 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = { 161 = { is_owned_and_controlled_by = ROOT } }
+				161 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
@@ -5348,6 +5710,13 @@ focus_tree = {
 				115 = { is_controlled_by = ROOT }
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_giolitti
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = ITA_e_tt_the_line_to_the_south
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -5367,6 +5736,19 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+			}
+			if = {
+				limit = { 992 = { is_owned_and_controlled_by = ROOT } }
+				992 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				subtract_from_variable = { var = ITA_piazza value = 3 }
+				ITA_piazza_bands = yes
+				custom_effect_tooltip = ITA_dec_apulian_aqueduct_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
@@ -5449,7 +5831,6 @@ focus_tree = {
 							slot = political_advisor
 							cost = 100
 							idea_token = ITA_e_tedesco_at_the_treasury
-							allowed = { original_tag = ITA }
 							traits = { liberal_grandee }
 						}
 						activate = no
@@ -5605,6 +5986,16 @@ focus_tree = {
 					}
 				}
 			}
+			if = {
+				limit = { 117 = { is_owned_and_controlled_by = ROOT } }
+				117 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_to_variable = {
@@ -5714,6 +6105,29 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 987 = { is_owned_and_controlled_by = ROOT } }
+				987 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { 162 = { is_owned_and_controlled_by = ROOT } }
+				162 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -5811,7 +6225,7 @@ focus_tree = {
 			158 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5822,6 +6236,17 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = { 159 = { is_owned_and_controlled_by = ROOT } }
+				159 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_dynamic_modifier = { modifier = ITA_e_the_white_coal }
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { country_exists = SWI }
@@ -5829,6 +6254,10 @@ focus_tree = {
 					add_opinion_modifier = {
 						target = ROOT
 						modifier = medium_increase
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = small_increase
 					}
 				}
 			}
@@ -6029,6 +6458,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_sonnino
+			}
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_reformist
+			}
+		}
 		completion_reward = {
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = ITA_h_the_colonial_office_modifier }
@@ -6040,9 +6480,20 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			unlock_decision_category_tooltip = ITA_h_governorate_cat
+			custom_effect_tooltip = ITA_h_the_colonial_office_grows_tt
 			hidden_effect = {
 				set_country_flag = ITA_s_colony_stays_civil
+			}
+			if = {
+				limit = { owns_state = 550 }
+				550 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				custom_effect_tooltip = ITA_dec_massawa_railway_tt
 			}
 		}
 	}
@@ -6670,7 +7121,15 @@ focus_tree = {
 				value = 5
 				tooltip = ITA_h_the_squares_empty_tt
 			}
+			custom_effect_tooltip = ITA_dec_amnesty_romagna_tt
 			hidden_effect = {
+				subtract_from_variable = { var = ITA_piazza value = 10 }
+				subtract_from_variable = { var = ITA_piazza_floor value = 2 }
+				clamp_variable = {
+					var = ITA_piazza_floor
+					min = 0
+					max = 45
+				}
 				ITA_piazza_bands = yes
 				ITA_dnc_the_path_is_giolitti = yes
 				set_country_flag = ITA_arm_army_out_of_the_streets
@@ -6697,8 +7156,6 @@ focus_tree = {
 			}
 			hidden_effect = {
 				set_country_flag = ITA_a_turati_will_sit
-				set_country_flag = ITA_g_amnesty_open
-				set_country_flag = ITA_g_divorce_law
 			}
 		}
 	}
@@ -6787,6 +7244,13 @@ focus_tree = {
 				set_country_flag = ITA_s_king_at_vienna
 				set_country_flag = ITA_v_vienna_mediates
 				set_country_flag = ITA_z_berlin_stands_by_vienna
+				if = {
+					limit = {
+						country_exists = AUH
+						NOT = { has_war_with = AUH }
+					}
+					AUH = { country_event = { id = ita_dnc.2236 days = 90 } }
+				}
 			}
 		}
 	}
@@ -7092,9 +7556,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = ITA_h_unlock_influence_countries_tt
-			unlock_decision_category_tooltip = ITA_h_influence_countries_cat
-			custom_effect_tooltip = ITA_h_unlock_colonial_trade_tt
-			unlock_decision_category_tooltip = ITA_h_emigrant_trade_cat
+			unlock_decision_tooltip = ITA_h_the_consulate_works_on
 			hidden_effect = {
 				set_country_flag = ITA_v_the_missions
 			}
@@ -7209,6 +7671,10 @@ focus_tree = {
 		completion_reward = {
 			ETH = {
 				country_event = { id = ita_dnc.2327 hours = 12 }
+			}
+			custom_effect_tooltip = ITA_dec_customs_at_massawa_tt
+			ETH = {
+				country_event = { id = ita_dnc.2224 days = 8 }
 			}
 			effect_tooltip = {
 				ETH = {
@@ -7548,6 +8014,16 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = ITA_g_brazil_banned
 			}
+			if = {
+				limit = {
+					country_exists = BRA
+					NOT = { has_war_with = BRA }
+				}
+				custom_effect_tooltip = ITA_dec_brazil_reopened_tt
+				BRA = {
+					country_event = { id = ita_dnc.2212 days = 365 }
+				}
+			}
 		}
 	}
 	focus = {
@@ -7751,6 +8227,34 @@ focus_tree = {
 				name = ITA_h_the_stations_of_the_benadir
 			}
 			custom_effect_tooltip = ITA_h_tt_the_stations_of_the_benadir
+			set_country_flag = ITA_af_benadir_bought_out
+			custom_effect_tooltip = ITA_dec_benadir_tt
+			if = {
+				limit = { NOT = { has_idea = ITA_w_the_ascari } }
+				add_ideas = ITA_w_the_ascari
+			}
+			if = {
+				limit = { owns_state = 559 }
+				559 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { owns_state = 1088 }
+				1088 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_stability = 0.02
+				custom_effect_tooltip = ITA_dec_sultans_treaties_tt
+			}
 			hidden_effect = {
 				IF = {
 					limit = {
@@ -7915,6 +8419,16 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = ITA_g_tripartite
 			}
+			custom_effect_tooltip = ITA_dec_the_zone_is_asked_tt
+			if = {
+				limit = { country_exists = ENG }
+				ENG = {
+					country_event = { id = ita_dnc.2228 days = 8 }
+				}
+			}
+			else = {
+				country_event = { id = ita_dnc.2230 days = 3 }
+			}
 		}
 	}
 	focus = {
@@ -8021,9 +8535,6 @@ focus_tree = {
 			custom_effect_tooltip = ITA_h_tt_the_capital_answers
 			hidden_effect = {
 				news_event = { id = ita_dnc.2312 hours = 12 }
-			}
-			hidden_effect = {
-				set_country_flag = ITA_z_expelled
 			}
 		}
 	}
@@ -8144,6 +8655,7 @@ focus_tree = {
 			add_state_claim = 164
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ITA_h_tt_the_wealth_of_the_east
+			custom_effect_tooltip = ITA_u_tt_the_stations_are_built
 		}
 	}
 	focus = {
@@ -8395,9 +8907,24 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = no
 
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_reformist
+			}
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = ITA_h_the_commercial_treaties_tt
-			unlock_decision_category_tooltip = ITA_h_commercial_treaties_cat
+			every_other_country = {
+				limit = {
+					is_major = yes
+					NOT = { has_war_with = ROOT }
+				}
+				add_opinion_modifier = { target = ROOT modifier = small_increase }
+			}
+			add_stability = 0.03
 		}
 	}
 	focus = {
@@ -8530,6 +9057,13 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = no
 
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_giolitti
+			}
+		}
 		completion_reward = {
 			every_core_state = {
 				limit = {
@@ -8552,8 +9086,23 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ITA_h_the_special_law_for_naples_tt
-			hidden_effect = {
-				set_country_flag = ITA_a_the_south_bought
+			if = {
+				limit = {
+					117 = {
+						is_owned_and_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+						}
+					}
+				}
+				117 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
@@ -8605,6 +9154,17 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = no
 
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_giolitti
+			}
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_nazionale
+			}
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ITA_h_nitti_minister_of_industry
@@ -8615,6 +9175,41 @@ focus_tree = {
 
 			custom_effect_tooltip = ITA_h_the_ministry_of_industry_tt
 			custom_effect_tooltip = ITA_h_plenipotentiary_me_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { 115 = { is_owned_and_controlled_by = ROOT } }
+				115 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_dec_special_laws_tt
+			custom_effect_tooltip = ITA_tt_piazza_down_m
+			hidden_effect = {
+				subtract_from_variable = { var = ITA_majority value = 3 }
+				subtract_from_variable = { var = ITA_piazza value = 4 }
+				ITA_chamber_bands = yes
+				ITA_piazza_bands = yes
+			}
 		}
 	}
 	focus = {
@@ -8809,6 +9404,17 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = ITA_h_the_agency_and_the_press_tt
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = FRA
+						tag = ENG
+						tag = GER
+						tag = AUH
+					}
+				}
+				add_opinion_modifier = { target = ROOT modifier = small_increase }
+			}
 		}
 	}
 	focus = {
@@ -8920,6 +9526,15 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ITA_h_sacchi_named_tt
 			show_ideas_tooltip = ITA_h_sacchi_and_the_extreme
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_stability = 0.02
+			custom_effect_tooltip = ITA_dec_womens_work_law_tt
+			hidden_effect = {
+				subtract_from_variable = { var = ITA_piazza value = 3 }
+				ITA_piazza_bands = yes
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -9462,6 +10077,29 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = ITA_k_unions
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						state = 987
+						state = 161
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = ITA_dec_municipal_socialism_tt
+			hidden_effect = {
+				subtract_from_variable = { var = ITA_piazza value = 3 }
+				ITA_piazza_bands = yes
+			}
 		}
 	}
 	focus = {
@@ -9865,6 +10503,10 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = ITA_g_the_north_is_lost
 			}
+			if = {
+				limit = { NOT = { has_idea = ITA_c_the_arma_reinforced } }
+				add_ideas = ITA_c_the_arma_reinforced
+			}
 		}
 	}
 	focus = {
@@ -10183,9 +10825,37 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = no
 
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_reformist
+			}
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = ITA_h_the_work_of_the_majority_tt
-			unlock_decision_category_tooltip = ITA_h_the_majority_cat
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				random_select_amount = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			subtract_from_variable = {
+				var = ITA_majority
+				value = 2
+				tooltip = ITA_tt_majority_down_s
+			}
+			hidden_effect = { ITA_chamber_bands = yes }
 		}
 	}
 	focus = {
@@ -10620,6 +11290,10 @@ focus_tree = {
 				factor = 0
 				has_country_flag = ITA_dnc_path_reformist
 			}
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_nazionale
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -10627,6 +11301,15 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = ITA_g_paris_convention
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = { owns_state = 458 }
+					NOT = { 458 = { is_claimed_by = ROOT } }
+				}
+				add_state_claim = 458
+			}
+			add_political_power = 20
 		}
 	}
 	focus = {
@@ -10931,12 +11614,24 @@ focus_tree = {
 				factor = 0
 				has_country_flag = ITA_dnc_path_reformist
 			}
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_nazionale
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
 			custom_effect_tooltip = ITA_l_unlock_influence_countries_tt
-			hidden_effect = {
-				set_country_flag = ITA_z_albanian_schools
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { NOT = { has_idea = ITA_z_the_schools_beyond_the_frontier } }
+				add_ideas = ITA_z_the_schools_beyond_the_frontier
+			}
+			if = {
+				limit = { country_exists = OTT }
+				OTT = {
+					add_opinion_modifier = { target = ROOT modifier = small_decrease }
+				}
 			}
 		}
 	}
@@ -11177,6 +11872,28 @@ focus_tree = {
 			custom_effect_tooltip = ITA_l_the_ladder_opens_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					country_exists = AUH
+					NOT = { has_war_with = AUH }
+					NOT = { has_country_flag = ITA_z_consul_expelled }
+					NOT = { has_idea = ITA_z_the_consular_service }
+					NOT = { has_idea = ITA_z_the_consular_service_reinforced }
+				}
+				custom_effect_tooltip = ITA_dec_trieste_gymnasts_tt
+				hidden_effect = {
+					subtract_from_variable = { var = ITA_vienna_trust value = 2 }
+					clamp_variable = {
+						var = ITA_vienna_trust
+						min = 0
+						max = 100
+					}
+				}
+				AUH = {
+					country_event = { id = ita_dnc.1605 days = 6 }
+				}
+			}
 
 			if = {
 				limit = {
@@ -11558,6 +12275,15 @@ focus_tree = {
 				set_country_flag = ITA_g_bank_only
 				set_country_flag = ITA_z_tripoli_renounced
 			}
+			set_country_flag = ITA_g_banco_di_roma
+			custom_effect_tooltip = ITA_dec_banks_branch_tripoli_tt
+			custom_effect_tooltip = ITA_dec_the_order_is_asked_tt
+			if = {
+				limit = { country_exists = SEO }
+				SEO = {
+					country_event = { id = ita_dnc.2244 days = 10 }
+				}
+			}
 		}
 	}
 	focus = {
@@ -11609,6 +12335,13 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_nazionale
+			}
+		}
 		completion_reward = {
 			MNT = {
 				country_event = { id = ita_dnc.2475 hours = 5 random_hours = 5 }
@@ -11633,6 +12366,22 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = ITA_g_antivari
 				set_country_flag = ITA_z_antivari_base
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_z_loan
+			MNT = {
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			custom_effect_tooltip = ITA_dec_montenegrin_loan_tt
+			custom_effect_tooltip = ITA_dec_article_twenty_nine_tt
+			if = {
+				limit = { country_exists = AUH }
+				AUH = {
+					country_event = { id = ita_dnc.2232 days = 10 }
+				}
+			}
+			else = {
+				country_event = { id = ita_dnc.2234 days = 3 }
 			}
 		}
 	}
@@ -11675,10 +12424,7 @@ focus_tree = {
 				add_claim_by = ROOT
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			unlock_decision_category_tooltip = ITA_l_governorate_tripolitania
-			unlock_decision_category_tooltip = ITA_l_governorate_cyrenaica
-			unlock_decision_category_tooltip = ITA_l_governorate_the_horn
-			unlock_decision_category_tooltip = ITA_l_governorate_the_islands
+			custom_effect_tooltip = ITA_l_the_governorships_tt
 			hidden_effect = {
 				set_country_flag = ITA_s_viceroy
 				ITA_dnc_the_era_ends = yes
@@ -11716,7 +12462,6 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = ITA_l_the_plate_is_open
 			custom_effect_tooltip = ITA_l_the_plate_tt
-			unlock_decision_category_tooltip = ITA_l_the_plate
 			hidden_effect = {
 				USA = { country_event = { id = ita_dnc.2490 } }
 			}
@@ -11880,6 +12625,19 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			if = {
+				limit = { has_idea = ITA_z_the_schools_beyond_the_frontier }
+				swap_ideas = {
+					remove_idea = ITA_z_the_schools_beyond_the_frontier
+					add_idea = ITA_z_the_schools_beyond_the_frontier_reinforced
+				}
+				if = {
+					limit = { country_exists = OTT }
+					OTT = {
+						add_opinion_modifier = { target = ROOT modifier = small_decrease }
+					}
+				}
+			}
 			if = {
 				limit = {
 					SER = {
@@ -12146,9 +12904,17 @@ focus_tree = {
 				factor = 0.05
 				date < 1911.1.1
 			}
+			modifier = {
+				factor = 4
+				has_country_flag = ITA_dnc_path_nazionale
+			}
 		}
 		completion_reward = {
 			set_country_flag = ITA_arm_the_plan_against_the_ally
+			if = {
+				limit = { NOT = { has_idea = ITA_i_the_map_of_the_adriatic } }
+				add_ideas = ITA_i_the_map_of_the_adriatic
+			}
 			if = {
 				limit = {
 					country_exists = SWI
@@ -12306,7 +13072,22 @@ focus_tree = {
 			is_subject = no
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_sonnino
+			}
+		}
 		completion_reward = {
+			if = {
+				limit = {
+					country_exists = ETH
+					NOT = { has_idea = ITA_af_the_lake_tana_survey }
+				}
+				add_ideas = ITA_af_the_lake_tana_survey
+				custom_effect_tooltip = ITA_dec_lake_tana_tt
+			}
 			if = {
 				limit = {
 					country_exists = ETH
@@ -12835,6 +13616,10 @@ focus_tree = {
 			add_political_power = 120
 			add_timed_idea = { idea = ITA_o_clamp_down_on_the_leagues days = 720 }
 			if = {
+				limit = { NOT = { has_idea = ITA_c_the_arma_reinforced } }
+				add_ideas = ITA_c_the_arma_reinforced
+			}
+			if = {
 				limit = { has_active_mission = ITA_u_growing_dissent_mission }
 				add_days_mission_timeout = { mission = ITA_u_growing_dissent_mission days = 30 }
 				custom_effect_tooltip = ITA_cw_the_hundred_days_are_bought_tt
@@ -13087,9 +13872,6 @@ focus_tree = {
 						expire = 0
 					}
 				}
-			}
-			hidden_effect = {
-				set_country_flag = ITA_s_berlin_backs_tunis
 			}
 		}
 	}
@@ -13544,6 +14326,10 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 0.5
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_nazionale
+			}
 		}
 		completion_reward = {
 			if = {
@@ -13582,6 +14368,22 @@ focus_tree = {
 			custom_effect_tooltip = ITA_o_the_antivari_yards_tt
 			hidden_effect = {
 				set_country_flag = ITA_g_antivari
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_z_loan
+			MNT = {
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			custom_effect_tooltip = ITA_dec_montenegrin_loan_tt
+			custom_effect_tooltip = ITA_dec_article_twenty_nine_tt
+			if = {
+				limit = { country_exists = AUH }
+				AUH = {
+					country_event = { id = ita_dnc.2232 days = 10 }
+				}
+			}
+			else = {
+				country_event = { id = ita_dnc.2234 days = 3 }
 			}
 		}
 	}
@@ -13813,6 +14615,12 @@ focus_tree = {
 			add_named_threat = {
 				threat = 5
 				name = ITA_o_threat_the_latin_league
+			}
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = ITA_o_the_league_is_kept } }
+				}
+				add_dynamic_modifier = { modifier = ITA_o_the_league_is_kept }
 			}
 			hidden_effect = {
 				ITA_dnc_the_era_ends = yes
@@ -14402,6 +15210,27 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			if = {
+				limit = { owns_state = 992 }
+				992 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+					is_major = no
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ITA_o_the_invitation_tt
 			if = {
 				limit = {
@@ -14724,6 +15553,13 @@ focus_tree = {
 				}
 			}
 			add_ideas = { ITA_o_the_adriatic_system }
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = ITA_o_the_league_is_kept } }
+				}
+				add_dynamic_modifier = { modifier = ITA_o_the_league_is_kept }
+				add_political_power = -25
+			}
 			AUH = {
 				country_event = { id = ita_dnc.2551 days = 1 }
 			}
@@ -15401,6 +16237,7 @@ focus_tree = {
 				effect_tooltip = { add_ideas = { ITA_u_the_denunciation } }
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			set_country_flag = ITA_w_alliance_denounced
 			AUH = { country_event = { id = ita_dnc.2832 days = 1 } }
 			GER = { country_event = { id = ita_dnc.2832 days = 1 } }
 		}
@@ -15451,7 +16288,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = { ITA_dnc_the_special_laws }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			unlock_decision_category_tooltip = ITA_dnc_south_cat
 			custom_effect_tooltip = ITA_u_the_south_is_paid_tt
 		}
 	}
@@ -15587,7 +16423,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = { ITA_u_the_municipal_works }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			unlock_decision_category_tooltip = ITA_dnc_works_cat
 			custom_effect_tooltip = ITA_u_the_industrial_counsellor_tt
 		}
 	}
@@ -16092,10 +16927,39 @@ focus_tree = {
 				add_core_of = ROOT
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			unlock_decision_tooltip = ITA_u_the_prefecture_of_nice
-			unlock_decision_tooltip = ITA_u_the_prefecture_of_savoy
-			unlock_decision_tooltip = ITA_u_the_roads_over_the_passes
-			unlock_decision_tooltip = ITA_u_the_western_customs_line
+			if = {
+				limit = { owns_state = 821 }
+				821 = { set_compliance = 40 }
+				add_stability = 0.03
+			}
+			if = {
+				limit = { owns_state = 735 }
+				735 = { set_compliance = 40 }
+				add_stability = 0.03
+			}
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 821
+						state = 735
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						owns_state = 821
+						owns_state = 735
+					}
+				}
+				add_political_power = 50
+				custom_effect_tooltip = ITA_u_the_customs_line_is_moved_tt
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ITA_u_the_settlement_is_signed_tt
 		}
@@ -16265,16 +17129,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 987
-						state = 989
-						state = 158
-					}
-				}
-				set_state_flag = ITA_u_the_leagues_rise
-			}
 			custom_effect_tooltip = ITA_u_the_provinces_rise_tt
 			add_timed_idea = { idea = ITA_u_the_general_strike days = 120 }
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -16287,11 +17141,9 @@ focus_tree = {
 					days = 45
 				}
 			}
-			unlock_decision_tooltip = ITA_ud_the_province_is_raised
+			add_war_support = 0.02
 			hidden_effect = {
 				set_country_flag = ITA_g_prefect_disobeyed
-				set_country_flag = ITA_r_king_refused
-				set_country_flag = ITA_v_king_refused
 			}
 		}
 	}
@@ -16483,7 +17335,13 @@ focus_tree = {
 			add_named_threat = { threat = 5 name = ITA_u_threat_the_country_is_ours }
 			add_political_power = 120
 			add_ideas = { ITA_u_the_country_is_ours }
-			unlock_decision_tooltip = ITA_ud_the_mills_run_at_night
+			if = {
+				limit = { NOT = { has_country_flag = ITA_u_the_law_on_the_hours } }
+				add_dynamic_modifier = {
+					modifier = ITA_ud_the_mills_run_at_night
+					days = 60
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = ITA_u_the_country_is_ours_tt
 			hidden_effect = {
@@ -17591,6 +18449,31 @@ focus_tree = {
 					add_idea = ITA_u_the_shield_of_the_right_and_labour
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						state = 987
+						state = 161
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = ITA_dec_municipal_socialism_tt
+			add_stability = 0.02
+			custom_effect_tooltip = ITA_dec_womens_work_law_tt
+			hidden_effect = {
+				subtract_from_variable = { var = ITA_piazza value = 6 }
+				ITA_piazza_bands = yes
+			}
 		}
 	}
 	focus = {
@@ -17699,6 +18582,7 @@ focus_tree = {
 		prerequisite = { focus = ITADNC_u_the_supreme_command_governs focus = ITADNC_u_the_king_is_called_home }
 		icon = GFX_focus_ITA_subdue_the_sentinels
 		cost = 5
+
 
 		available = {
 			OR = {
@@ -17822,6 +18706,38 @@ focus_tree = {
 				}
 				add_popularity = { ideology = communism popularity = 0.05 }
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = FRA
+						tag = ENG
+						tag = AUH
+						tag = RUS
+						tag = SPR
+						tag = OTT
+					}
+					communism > 0.15
+					NOT = { has_government = communism }
+					NOT = { is_in_faction_with = ROOT }
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_stability = -0.05
+				add_war_support = -0.03
+			}
+			every_other_country = {
+				limit = {
+					has_government = communism
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			add_war_support = 0.03
 		}
 	}
 	focus = {
@@ -17912,10 +18828,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			custom_effect_tooltip = ITA_u_the_congress_of_the_nations_tt
-			unlock_decision_category_tooltip = ITA_u_found_the_albanian_state
-			unlock_decision_category_tooltip = ITA_u_restore_croatia
-			unlock_decision_category_tooltip = ITA_u_establish_slovenia
-			unlock_decision_category_tooltip = ITA_u_raise_saint_stephen
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -18231,6 +19143,38 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			custom_effect_tooltip = ITA_u_the_leagues_abroad_tt
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = FRA
+						tag = ENG
+						tag = AUH
+						tag = RUS
+						tag = SPR
+						tag = OTT
+					}
+					NOT = { is_subject_of = ROOT }
+					NOT = { is_in_faction_with = ROOT }
+					NOT = { has_government = communism }
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.03
+				}
+				add_stability = -0.02
+			}
+			every_other_country = {
+				limit = {
+					capital_scope = { is_on_continent = europe }
+					NOT = { has_government = communism }
+					NOT = { is_subject_of = ROOT }
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.01
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					any_other_country = {
@@ -18517,9 +19461,36 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNATIONAL_TRADE }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_nazionale
+			}
+		}
 		completion_reward = {
 			add_ideas = { ITA_u_the_emigrant_fleet }
 			custom_effect_tooltip = ITA_u_the_ships_that_carry_them_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+			if = {
+				limit = { has_country_flag = ITA_dnc_path_nazionale }
+				add_war_support = 0.02
+			}
 			every_other_country = {
 				limit = {
 					capital_scope = { is_on_continent = south_america }
@@ -18591,6 +19562,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = ITA_u_the_works_for_the_ore_tt
+			country_event = { id = ita_dnc.3002 days = 7 }
 		}
 	}
 	focus = {
@@ -18724,7 +19696,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = ITA_u_unlock_influence_countries_tt
-			unlock_decision_category_tooltip = ITA_h_influence_countries_cat
+			unlock_decision_tooltip = ITA_h_the_consulate_works_on
 		}
 	}
 	focus = {
@@ -20209,10 +21181,55 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			unlock_decision_category_tooltip = ITA_u_found_the_albanian_state
-			unlock_decision_category_tooltip = ITA_u_restore_croatia
-			unlock_decision_category_tooltip = ITA_u_establish_slovenia
-			unlock_decision_category_tooltip = ITA_u_raise_saint_stephen
+			set_country_flag = ITA_u_the_albanian_cores_are_drawn
+			ALB = {
+				add_state_core = 44
+				add_state_core = 805
+				add_state_core = 976
+			}
+			if = {
+				limit = {
+					owns_state = 802
+					owns_state = 941
+					owns_state = 1155
+				}
+				ALB = {
+					add_state_core = 802
+					add_state_core = 941
+					add_state_core = 1155
+				}
+			}
+			set_country_flag = ITA_u_the_croatian_cores_are_drawn
+			CRO = {
+				add_state_core = 103
+				add_state_core = 109
+				add_state_core = 937
+				add_state_core = 869
+			}
+			set_country_flag = ITA_u_the_slovene_cores_are_drawn
+			if = {
+				limit = {
+					NOT = { 102 = { is_core_of = SLV } }
+				}
+				SLV = {
+					add_state_core = 102
+					add_state_core = 934
+					add_state_core = 935
+					add_state_core = 936
+				}
+			}
+			set_country_flag = ITA_u_the_hungarian_cores_are_drawn
+			HUN = {
+				add_state_core = 43
+				add_state_core = 155
+				add_state_core = 973
+				add_state_core = 664
+				add_state_core = 808
+				add_state_core = 810
+				add_state_core = 994
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_category_tooltip = ITA_u_the_duchies_cat
 		}
 	}
 	focus = {
@@ -21278,7 +22295,11 @@ focus_tree = {
 				}
 				add_claim_by = ROOT
 			}
-			unlock_decision_tooltip = ITA_n_take_up_the_liners
+			if = {
+				limit = { NOT = { has_dynamic_modifier = { modifier = ITA_n_the_auxiliary_squadron } } }
+				add_dynamic_modifier = { modifier = ITA_n_the_auxiliary_squadron }
+				navy_experience = 35
+			}
 			custom_effect_tooltip = ITA_u_grande_tt_the_locks_of_the_sea
 		}
 	}
@@ -21675,6 +22696,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = ITA_u_grande_tt_the_capital_answers
+			custom_effect_tooltip = ITA_u_tt_the_stations_are_built
 		}
 	}
 	focus = {
@@ -22013,6 +23035,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNATIONAL_TRADE }
 		completion_reward = {
 			custom_effect_tooltip = ITA_u_grande_tt_the_coaling_road
+			custom_effect_tooltip = ITA_u_tt_the_stations_are_built
 			hidden_effect = {
 				IF = {
 					limit = { 550 = { is_fully_controlled_by = ROOT } }
@@ -22185,7 +23208,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			unlock_decision_tooltip = ITA_h_gov_the_residency
+			custom_effect_tooltip = ITA_h_the_colonial_office_grows_tt
 		}
 	}
 	focus = {
@@ -22940,7 +23963,17 @@ focus_tree = {
 		available = {
 			has_country_flag = ITA_w_chapter_opened
 		}
-		ai_will_do = { factor = 10 }
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_sonnino
+			}
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_reformist
+			}
+		}
 		completion_reward = {
 			set_country_flag = ITA_w_colonies_reviewed
 			if = {
@@ -23014,6 +24047,17 @@ focus_tree = {
 				uses = 1
 				category = infantry_tech
 			}
+			if = {
+				limit = { owns_state = 550 }
+				550 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				custom_effect_tooltip = ITA_dec_massawa_railway_tt
+			}
 		}
 	}
 	focus = {
@@ -23032,6 +24076,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -20
 			set_country_flag = ITA_w_benadir_state_rule
+			set_country_flag = ITA_af_benadir_bought_out
 			if = {
 				limit = { has_country_flag = ITA_dnc_path_reformist }
 				custom_effect_tooltip = ITA_w_tt_the_extreme_left_forced_the_inquiry
@@ -23158,7 +24203,6 @@ focus_tree = {
 							slot = political_advisor
 							cost = 100
 							idea_token = ITA_w_salvago_raggi_governor_of_eritrea
-							allowed = { original_tag = ITA }
 							traits = { AST_governor_general }
 						}
 						activate = no
@@ -23224,6 +24268,10 @@ focus_tree = {
 			add_ideas = ITA_w_the_tripartite_understanding
 			add_opinion_modifier = { target = ETH modifier = large_increase }
 			add_opinion_modifier = { target = ENG modifier = small_increase }
+			custom_effect_tooltip = ITA_dec_customs_at_massawa_tt
+			ETH = {
+				country_event = { id = ita_dnc.2224 days = 4 }
+			}
 			ETH = {
 				country_event = { id = ita_dnc.1575 days = 12 }
 			}
@@ -23345,7 +24393,17 @@ focus_tree = {
 		available = {
 			OTT = { exists = yes }
 		}
-		ai_will_do = { factor = 9 }
+		ai_will_do = {
+			factor = 9
+			modifier = {
+				factor = 3
+				has_country_flag = ITA_dnc_path_giolitti
+			}
+			modifier = {
+				factor = 2
+				has_country_flag = ITA_dnc_path_nazionale
+			}
+		}
 		completion_reward = {
 			set_country_flag = ITA_w_tripoli_opened
 			if = {
@@ -23380,6 +24438,15 @@ focus_tree = {
 				uses = 1
 				category = naval_equipment
 			}
+			if = {
+				limit = { NOT = { has_idea = ITA_wp_the_libya_expedition } }
+				add_ideas = ITA_wp_the_libya_expedition
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = OTT
+					value = 50
+				}
+			}
 			add_opinion_modifier = { target = ENG modifier = medium_increase }
 			if = {
 				limit = { NOT = { owns_state = 448 } }
@@ -23396,6 +24463,16 @@ focus_tree = {
 			custom_effect_tooltip = ITA_w_tt_tripoli_claimed
 			add_named_threat = { threat = 2 name = ITA_w_threat_tripoli }
 			set_variable = { ITA_w_powers_consent = 0 }
+			set_country_flag = ITA_g_banco_di_roma
+			custom_effect_tooltip = ITA_dec_banks_branch_tripoli_tt
+			country_event = { id = ita_dnc.2216 days = 14 }
+			custom_effect_tooltip = ITA_dec_the_order_is_asked_tt
+			if = {
+				limit = { country_exists = SEO }
+				SEO = {
+					country_event = { id = ita_dnc.2244 days = 10 }
+				}
+			}
 			OTT = {
 				country_event = { id = ita_dnc.1580 days = 8 }
 			}
@@ -23587,7 +24664,6 @@ focus_tree = {
 							cost = 100
 							idea_token = ITA_w_cagni_the_landing_party
 							ledger = navy
-							allowed = { original_tag = ITA }
 							traits = { navy_amphibious_assault_1 }
 						}
 						activate = no
@@ -24261,7 +25337,6 @@ focus_tree = {
 							slot = political_advisor
 							cost = 100
 							idea_token = ITA_w_bertolini_at_the_colonies
-							allowed = { original_tag = ITA }
 							traits = { colonial_lawyer }
 						}
 						activate = no

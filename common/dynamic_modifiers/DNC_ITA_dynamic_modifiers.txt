@@ -37,43 +37,12 @@ ITA_p_the_province_ungoverned = {
 	local_building_slots = -2
 }
 
-ITA_p_the_league_settles = {
-	icon = GFX_idea_generic_agrarian_reform
-	enable = { always = yes }
-	recruitable_population_factor = -0.05
-	production_speed_buildings_factor = 0.05
-}
-
 ITA_c_the_crown = {
 	icon = GFX_idea_generic_constitutional_guarantees
 	enable = { always = yes }
 	remove_trigger = { always = no }
 	political_power_factor = ITA_c_crown_pp
 	stability_factor = ITA_c_crown_stab
-}
-
-ITA_arm_the_hypothesis_is_drawn = {
-	icon = GFX_idea_generic_army_war_college
-	enable = { always = yes }
-	army_artillery_attack_factor = 0.10
-	army_breakthrough_factor = 0.10
-	planning_speed = 0.15
-}
-
-ITA_arm_the_manoeuvre_is_rehearsed = {
-	icon = GFX_idea_generic_reserve_divisions
-	enable = { always = yes }
-	army_artillery_attack_factor = 0.05
-	army_breakthrough_factor = 0.05
-	planning_speed = 0.10
-	max_planning_factor = 0.10
-}
-
-ITA_arm_the_ground_is_walked = {
-	icon = GFX_idea_generic_intel_bonus
-	enable = { always = yes }
-	local_supplies = -0.10
-	local_manpower = -0.10
 }
 
 ITA_arm_the_column_is_ready = {
@@ -116,11 +85,12 @@ ITA_o_the_league_is_kept = {
 	opinion_gain_monthly_factor = 0.15
 }
 
-ITA_u_the_port_is_idle = {
-	icon = GFX_idea_generic_goods_red_bonus
+ITA_ud_the_mills_run_at_night = {
+	icon = GFX_idea_generic_production_bonus
 	enable = { always = yes }
-	local_resources_factor = -0.15
-	production_speed_buildings_factor = -0.10
+	remove_trigger = { has_country_flag = ITA_u_the_law_on_the_hours }
+	industrial_capacity_factory = 0.10
+	stability_factor = -0.05
 }
 ITA_arm_the_new_army = {
 	icon = GFX_idea_generic_army_war_college

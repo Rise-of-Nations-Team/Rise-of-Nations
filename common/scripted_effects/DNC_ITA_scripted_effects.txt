@@ -15,26 +15,6 @@ ITA_dnc_init = {
 }
 
 ITA_machine_reckon = {
-	if = {
-		limit = { has_country_flag = ITA_g_boards }
-		set_variable = { ITA_p_boards_cost = 0 }
-		else = { set_variable = { ITA_p_boards_cost = 35 } }
-	}
-	if = {
-		limit = { has_country_flag = ITA_g_chamber_may_dissolve }
-		set_variable = { ITA_c_dissolve_cost = 0 }
-		else = { set_variable = { ITA_c_dissolve_cost = 75 } }
-	}
-	if = {
-		limit = { has_country_flag = ITA_s_army_obeys }
-		set_variable = { ITA_p_troops_cost = 10 }
-		else = { set_variable = { ITA_p_troops_cost = 25 } }
-	}
-	if = {
-		limit = { has_country_flag = ITA_arm_army_out_of_the_streets }
-		set_variable = { ITA_pr_questore_cost = 0 }
-		else = { set_variable = { ITA_pr_questore_cost = 20 } }
-	}
 	set_variable = { ITA_machine_now = ITA_prefects }
 	clamp_variable = {
 		var = ITA_machine_now
@@ -774,9 +754,356 @@ ITA_dnc_monthly = {
 	ITA_election_watch = yes
 	ITA_circular_watch = yes
 	ITA_piazza_rungs = yes
+	ITA_h_the_colonial_office_month = yes
+	ITA_l_the_plate_month = yes
+	ITA_l_the_governorates_month = yes
+	ITA_e_the_duties_watch = yes
+	ITA_u_the_stations_month = yes
+	ITA_w_the_alliance_rung = yes
+	ITA_p_the_provinces_watch = yes
+	ITA_wr_the_war_watch = yes
 	if = {
 		limit = { NOT = { has_country_flag = ITA_end_verdict_given } }
 		ITA_chronicle_table = yes
+	}
+}
+
+ITA_w_the_alliance_rung = {
+	if = {
+		limit = {
+			country_exists = AUH
+			NOT = { has_war_with = AUH }
+			NOT = { has_country_flag = ITA_w_alliance_denounced }
+			NOT = { has_country_flag = ITA_dnc_path_sonnino }
+			NOT = { has_country_flag = ITA_dnc_path_concordat }
+			check_variable = {
+				var = ITA_vienna_trust
+				value = 25
+				compare = less_than
+			}
+		}
+		add_to_variable = { var = ITA_w_vienna_low_months value = 1 }
+	}
+	else = {
+		set_variable = { ITA_w_vienna_low_months = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = ITA_w_denunciation_lock
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		subtract_from_variable = { var = ITA_w_denunciation_lock value = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ITA_w_vienna_low_months
+				value = 3
+				compare = greater_than_or_equals
+			}
+		}
+		set_variable = { ITA_w_denunciation_lock = 12 }
+		country_event = { id = ita_dnc.3012 days = 3 }
+	}
+}
+
+ITA_p_the_provinces_watch = {
+	if = {
+		limit = {
+			has_country_flag = ITA_p_the_provinces_are_left
+			check_variable = {
+				var = ITA_piazza
+				value = 45
+				compare = less_than
+			}
+		}
+		clr_country_flag = ITA_p_the_provinces_are_left
+		country_event = { id = ita_dnc.604 days = 7 }
+	}
+}
+
+ITA_wr_the_war_watch = {
+	if = {
+		limit = {
+			has_war_with = OTT
+			NOT = { has_country_flag = ITA_wr_the_islands_are_asked }
+			NOT = { has_completed_focus = ITADNC_w_the_islands_as_a_pledge }
+			NOT = { owns_state = 164 }
+		}
+		set_country_flag = ITA_wr_the_islands_are_asked
+		country_event = { id = ita_dnc.3020 days = 5 }
+	}
+	if = {
+		limit = {
+			has_war = yes
+			has_character = ITA_ricciotti_garibaldi
+			NOT = { has_country_flag = ITA_wr_the_volunteers_are_asked }
+		}
+		set_country_flag = ITA_wr_the_volunteers_are_asked
+		country_event = { id = ita_dnc.3021 days = 5 }
+	}
+	if = {
+		limit = {
+			has_war_with = AUH
+			has_idea = ITA_cesare_battisti
+			NOT = { has_country_flag = ITA_wr_the_legion_is_asked }
+		}
+		set_country_flag = ITA_wr_the_legion_is_asked
+		country_event = { id = ita_dnc.3022 days = 5 }
+	}
+}
+
+ITA_h_the_colonial_office_month = {
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = ITA_h_the_colonial_office_modifier }
+			OR = {
+				controls_state = 550
+				controls_state = 559
+				has_country_flag = ITA_af_benadir_bought_out
+				controls_state = 661
+				controls_state = 164
+				controls_state = 1133
+			}
+		}
+		add_to_variable = { var = ITA_h_colonial_office_months value = 1 }
+		if = {
+			limit = {
+				check_variable = {
+					var = ITA_h_colonial_office_months
+					value = 6
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { ITA_h_colonial_office_months = 0 }
+			subtract_from_variable = { var = ITA_h_colonial_consumer_goods_factor value = 0.005 }
+			clamp_variable = {
+				var = ITA_h_colonial_consumer_goods_factor
+				min = -0.09
+				max = 0
+			}
+			add_to_variable = { var = ITA_h_colonial_production_speed_arms_factory_factor value = 0.005 }
+			clamp_variable = {
+				var = ITA_h_colonial_production_speed_arms_factory_factor
+				min = 0
+				max = 0.09
+			}
+			add_to_variable = { var = ITA_h_colonial_industrial_capacity_factory value = 0.005 }
+			clamp_variable = {
+				var = ITA_h_colonial_industrial_capacity_factory
+				min = 0
+				max = 0.09
+			}
+			subtract_from_variable = { var = ITA_h_colonial_subjects_autonomy_gain value = 0.005 }
+			clamp_variable = {
+				var = ITA_h_colonial_subjects_autonomy_gain
+				min = -0.09
+				max = 0
+			}
+		}
+	}
+}
+
+ITA_l_the_plate_month = {
+	if = {
+		limit = {
+			has_country_flag = ITA_l_the_plate_is_open
+			OR = {
+				country_exists = ARG
+				country_exists = URG
+			}
+			check_variable = {
+				var = ITA_l_plate_pressure
+				value = 10
+				compare = less_than
+			}
+		}
+		add_to_variable = { var = ITA_l_plate_months value = 1 }
+		if = {
+			limit = {
+				check_variable = {
+					var = ITA_l_plate_months
+					value = 4
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { ITA_l_plate_months = 0 }
+			add_to_variable = { var = ITA_l_plate_pressure value = 1 }
+			ITA_l_the_plate_is_read = yes
+			if = {
+				limit = {
+					check_variable = {
+						var = ITA_l_plate_pressure
+						value = 5
+						compare = greater_than_or_equals
+					}
+					NOT = { has_country_flag = ITA_l_the_chambers_are_opened }
+				}
+				set_country_flag = ITA_l_the_chambers_are_opened
+				country_event = { id = ita_dnc.3003 days = 5 }
+			}
+		}
+	}
+}
+
+ITA_l_the_governorates_month = {
+	if = {
+		limit = { has_completed_focus = ITADNC_l_the_governorships_beyond_the_sea }
+		if = {
+			limit = {
+				NOT = { has_country_flag = ITA_l_the_residency_at_tripoli }
+				controls_state = 661
+			}
+			set_country_flag = ITA_l_the_residency_at_tripoli
+			country_event = { id = ita_dnc.3004 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = ITA_l_the_residency_at_benghazi }
+				controls_state = 663
+			}
+			set_country_flag = ITA_l_the_residency_at_benghazi
+			country_event = { id = ita_dnc.3006 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = ITA_l_the_residency_of_the_horn }
+				controls_state = 550
+			}
+			set_country_flag = ITA_l_the_residency_of_the_horn
+			country_event = { id = ita_dnc.3008 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = ITA_l_the_residency_of_the_islands }
+				controls_state = 164
+			}
+			set_country_flag = ITA_l_the_residency_of_the_islands
+			country_event = { id = ita_dnc.3010 days = 7 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ITA_l_the_residency_at_tripoli
+				NOT = { has_country_flag = ITA_l_the_road_of_tripolitania }
+				controls_state = 661
+				controls_state = 448
+				controls_state = 662
+			}
+			set_country_flag = ITA_l_the_road_of_tripolitania
+			country_event = { id = ita_dnc.3005 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ITA_l_the_residency_at_benghazi
+				NOT = { has_country_flag = ITA_l_the_road_of_cyrenaica }
+				controls_state = 663
+				controls_state = 450
+				controls_state = 451
+			}
+			set_country_flag = ITA_l_the_road_of_cyrenaica
+			country_event = { id = ita_dnc.3007 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ITA_l_the_residency_of_the_horn
+				NOT = { has_country_flag = ITA_l_the_road_of_the_horn }
+				controls_state = 550
+				controls_state = 559
+			}
+			set_country_flag = ITA_l_the_road_of_the_horn
+			country_event = { id = ita_dnc.3009 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ITA_l_the_residency_of_the_islands
+				NOT = { has_country_flag = ITA_l_the_anchorage_of_the_islands }
+				controls_state = 164
+			}
+			set_country_flag = ITA_l_the_anchorage_of_the_islands
+			country_event = { id = ita_dnc.3011 days = 14 }
+		}
+	}
+}
+
+ITA_e_the_duties_watch = {
+	if = {
+		limit = {
+			has_country_flag = ITA_e_the_duties_are_asked
+			check_variable = {
+				var = ITA_e_rendita
+				value = 0.75
+				compare = less_than
+			}
+		}
+		clr_country_flag = ITA_e_the_duties_are_asked
+	}
+	else_if = {
+		limit = {
+			NOT = { has_country_flag = ITA_e_the_duties_are_asked }
+			has_completed_focus = ITADNC_e_the_consumption_duties
+			check_variable = {
+				var = ITA_e_rendita
+				value = 0.75
+				compare = greater_than_or_equals
+			}
+			OR = {
+				NOT = { has_country_flag = ITA_e_the_duty_on_salt_is_held }
+				NOT = { has_country_flag = ITA_e_the_duty_on_sugar_is_kept }
+				NOT = { has_country_flag = ITA_e_the_duty_on_grain_is_back }
+				NOT = { has_country_flag = ITA_e_the_arrears_are_called_in }
+			}
+		}
+		set_country_flag = ITA_e_the_duties_are_asked
+		country_event = { id = ita_dnc.3001 days = 3 }
+	}
+}
+
+ITA_u_the_stations_month = {
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = ITADNC_h_the_wealth_of_the_east
+				has_completed_focus = ITADNC_u_the_stations_of_the_red_sea_ww
+				has_completed_focus = ITADNC_u_the_concession_at_tientsin_ww
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				OR = {
+					state = 613
+					state = 609
+					state = 164
+					state = 326
+					state = 728
+				}
+				NOT = { has_state_flag = ITA_u_the_station_is_built }
+			}
+			set_state_flag = ITA_u_the_station_is_built
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = { all_provinces = yes limit_to_coastal = yes }
+			}
+			ROOT = { navy_experience = 25 }
+		}
+	}
+}
+
+ITA_u_the_next_ore_is_offered = {
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_country_flag = ITA_u_the_steel_is_traded }
+				NOT = { has_country_flag = ITA_u_the_bauxite_is_traded }
+				NOT = { has_country_flag = ITA_u_the_tungsten_is_traded }
+				NOT = { has_country_flag = ITA_u_the_chrome_is_traded }
+			}
+		}
+		country_event = { id = ita_dnc.3002 days = 90 }
 	}
 }
 
@@ -923,10 +1250,6 @@ ITA_crown_month = {
 		add_to_variable = { var = ITA_crown value = 1 }
 	}
 	if = {
-		limit = { has_country_flag = ITA_s_army_obeys }
-		add_to_variable = { var = ITA_crown value = 1 }
-	}
-	if = {
 		limit = { has_country_flag = ITA_a_turati_will_sit }
 		subtract_from_variable = { var = ITA_crown value = 1 }
 	}
@@ -940,7 +1263,6 @@ ITA_crown_month = {
 				}
 			}
 			NOT = { has_government = neutrality }
-			NOT = { has_country_flag = ITA_s_army_obeys }
 			NOT = { has_country_flag = ITA_a_turati_will_sit }
 		}
 		if = {
@@ -1005,6 +1327,25 @@ ITA_camera_low_months = {
 			}
 		}
 		add_to_variable = { var = ITA_camera_low_months value = 1 }
+		if = {
+			limit = {
+				has_country_flag = ITA_ch_b_ministry
+				has_war = no
+				NOT = { has_country_flag = ITA_s_chamber_prorogued }
+				NOT = { has_country_flag = ITA_c_the_chamber_is_tested }
+				check_variable = {
+					var = ITA_camera_low_months
+					value = 3
+					compare = greater_than_or_equals
+				}
+			}
+			set_country_flag = {
+				flag = ITA_c_the_chamber_is_tested
+				value = 1
+				days = 730
+			}
+			country_event = { id = ita_dnc.3023 days = 3 }
+		}
 	}
 	else = {
 		set_variable = { ITA_camera_low_months = 0 }
@@ -1028,19 +1369,6 @@ ITA_ch_messina_clock = {
 			clr_country_flag = ITA_ch_messina
 		}
 	}
-}
-
-ITA_r_garibaldian_legion = {
-	add_manpower = 5000
-	army_experience = 20
-	random_owned_controlled_state = {
-		limit = { is_core_of = ITA }
-		create_unit = {
-			division = "name = \"Legione Garibaldina\" division_template = \"Fanteria Divisione\" start_experience_factor = 0.3"
-			owner = PREV
-		}
-	}
-	custom_effect_tooltip = ITA_r_garibaldian_legion_tt
 }
 
 ITA_r_garibaldian_legion_to_the_rebels = {
@@ -1349,6 +1677,30 @@ ITA_chronicle_table = {
 		}
 		set_country_flag = ITA_ch_b_buggerru
 		country_event = { id = ita_dnc.2133 days = 2 }
+	}
+	else_if = {
+		limit = {
+			NOT = { has_country_flag = ITA_ch_b_faculty }
+			NOT = { has_country_flag = ITA_g_trieste_faculty }
+			country_exists = AUH
+			NOT = { has_war_with = AUH }
+			OR = {
+				has_country_flag = ITA_dnc_path_nazionale
+				has_completed_focus = ITADNC_l_the_italians_of_tunis
+				has_completed_focus = ITADNC_l_the_schools_of_the_levant
+				AND = {
+					has_country_flag = ITA_dnc_path_giolitti
+					has_country_flag = ITA_w_racconigi
+				}
+			}
+			check_variable = {
+				var = ITA_dnc_months
+				value = 58
+				compare = greater_than_or_equals
+			}
+		}
+		set_country_flag = ITA_ch_b_faculty
+		AUH = { country_event = { id = ita_dnc.1604 days = 8 } }
 	}
 	else_if = {
 		limit = {
@@ -1721,6 +2073,38 @@ ITA_g_the_five_capitals_are_asked = {
 			NOT = { country_exists = RUS }
 		}
 		custom_effect_tooltip = ITA_g_tt_no_capital_answers
+	}
+}
+
+ITA_g_the_next_capital_is_asked = {
+	add_political_power = -50
+	if = {
+		limit = {
+			NOT = { has_completed_focus = ITADNC_l_the_ultimatum_to_the_porte }
+			OR = {
+				AND = {
+					country_exists = FRA
+					NOT = { has_country_flag = ITA_g_sounded_fra }
+				}
+				AND = {
+					country_exists = ENG
+					NOT = { has_country_flag = ITA_g_sounded_eng }
+				}
+				AND = {
+					country_exists = GER
+					NOT = { has_country_flag = ITA_g_sounded_ger }
+				}
+				AND = {
+					country_exists = AUH
+					NOT = { has_country_flag = ITA_g_sounded_auh }
+				}
+				AND = {
+					country_exists = RUS
+					NOT = { has_country_flag = ITA_g_sounded_rus }
+				}
+			}
+		}
+		country_event = { id = ita_dnc.2216 days = 60 }
 	}
 }
 
@@ -3153,10 +3537,6 @@ ITA_cw_the_split_tail = {
 		set_variable = { ITA_p_ws = ROOT.ITA_p_ws }
 		set_variable = { ITA_c_crown_pp = ROOT.ITA_c_crown_pp }
 		set_variable = { ITA_c_crown_stab = ROOT.ITA_c_crown_stab }
-		set_variable = { ITA_p_boards_cost = ROOT.ITA_p_boards_cost }
-		set_variable = { ITA_c_dissolve_cost = ROOT.ITA_c_dissolve_cost }
-		set_variable = { ITA_p_troops_cost = ROOT.ITA_p_troops_cost }
-		set_variable = { ITA_pr_questore_cost = ROOT.ITA_pr_questore_cost }
 		set_variable = { ITA_cw_prefects_line = ROOT.ITA_cw_prefects_line }
 		set_variable = { ITA_cw_crown_line = ROOT.ITA_cw_crown_line }
 		set_variable = { ITA_cw_piedmont_line = ROOT.ITA_cw_piedmont_line }
@@ -3190,6 +3570,7 @@ ITA_cw_the_split_tail = {
 	every_country = {
 		limit = { original_tag = ITA has_country_flag = ITA_r_civil_war controls_state = 115 }
 		activate_mission = ITA_cw_palermo_asks_its_price
+		country_event = { id = ita_dnc.3014 days = 7 }
 	}
 	if = {
 		limit = { has_country_flag = ITA_cw_promised_the_fleet }

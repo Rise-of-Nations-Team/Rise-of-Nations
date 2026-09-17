@@ -511,7 +511,7 @@ ideas = {
 			}
 		}
 		ITA_a_the_kings_prerogative = {
-			picture = generic_monarchism_focus
+			picture = generic_king_handled
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -615,7 +615,7 @@ ideas = {
 			}
 		}
 		ITA_a_the_catholic_vote = {
-			picture = generic_religion
+			picture = ITA_papal_state_ns
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -692,7 +692,7 @@ ideas = {
 			}
 		}
 		ITA_a_the_statuto_restored = {
-			picture = generic_monarchism_focus
+			picture = generic_king_handled
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -793,7 +793,7 @@ ideas = {
 			picture = generic_army_war_college
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
-				industrial_capacity_military = 0.05
+				industrial_capacity_factory = 0.05
 				consumer_goods_factor = 0.03
 			}
 		}
@@ -2387,7 +2387,7 @@ ideas = {
 		}
 
 		ITA_end_the_crown_that_would_not_sign = {
-			picture = generic_monarchism_focus
+			picture = generic_king_handled
 			allowed = { always = no }
 			allowed_civil_war = { always = no }
 			removal_cost = -1
@@ -2605,7 +2605,7 @@ ideas = {
 		}
 
 		ITA_w_the_military_convention = {
-		picture = generic_military_academy
+		picture = generic_army_war_college
 		allowed = { always = no }
 		removal_cost = -1
 		modifier = {
@@ -2664,7 +2664,7 @@ ideas = {
 			}
 		}
 		ITA_o_the_school_of_war = {
-			picture = generic_military_academy
+			picture = generic_army_war_college
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -2764,7 +2764,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				army_artillery_attack_factor = 0.10
-				army_breakthrough_factor = 0.03
+				breakthrough_factor = 0.03
 				army_speed_factor = -0.03
 				consumer_goods_factor = 0.03
 			}
@@ -3193,17 +3193,6 @@ ideas = {
 				neutrality_drift = 0.03
 			}
 		}
-		ITA_s_the_south_administered = {
-			picture = generic_build_infrastructure
-			allowed = { always = no }
-			removal_cost = -1
-			modifier = {
-				production_speed_infrastructure_factor = 0.15
-				production_speed_buildings_factor = 0.06
-				stability_factor = 0.05
-				political_power_factor = -0.05
-			}
-		}
 		ITA_s_the_estimates_are_thin = {
 			picture = generic_disjointed_gov
 			allowed = { always = no }
@@ -3292,18 +3281,6 @@ ideas = {
 				communism_drift = 0.03
 			}
 		}
-		ITA_s_the_ministry_holds = {
-			picture = generic_monarchism_focus
-			allowed = { always = no }
-			removal_cost = -1
-			modifier = {
-				political_power_factor = 0.20
-				political_power_gain = 0.10
-				stability_factor = -0.05
-				neutrality_drift = 0.04
-				democratic_drift = -0.04
-			}
-		}
 		ITA_s_the_administration_that_governs = {
 			picture = generic_central_management
 			allowed = { always = no }
@@ -3341,18 +3318,6 @@ ideas = {
 				democratic_drift = -0.05
 			}
 		}
-
-		ITA_r_the_chambers_in_the_state = {
-			picture = generic_syndicalism
-			allowed = { always = no }
-			removal_cost = -1
-			modifier = {
-				stability_factor = 0.06
-				industrial_capacity_factory = 0.04
-				political_power_factor = 0.05
-				war_support_factor = -0.05
-			}
-		}
 		ITA_r_the_new_electorate = {
 			picture = generic_literacy
 			allowed = { always = no }
@@ -3387,7 +3352,7 @@ ideas = {
 			}
 		}
 		ITA_r_the_white_leagues = {
-			picture = generic_religion
+			picture = ITA_papal_state_ns
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -3559,7 +3524,7 @@ ideas = {
 		}
 
 		ITA_z_the_associazione_nazionalista = {
-			picture = generic_monarchism_focus
+			picture = generic_king_handled
 			allowed = { always = no }
 			allowed_civil_war = { always = no }
 			removal_cost = -1
@@ -3593,18 +3558,6 @@ ideas = {
 				war_support_factor = 0.06
 				conscription_factor = 0.05
 				research_speed_factor = 0.02
-			}
-		}
-
-		ITA_z_the_emigrant_who_is_counted = {
-			picture = generic_immigration
-			allowed = { always = no }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			modifier = {
-				monthly_population = 0.10
-				conscription_factor = 0.05
-				political_power_gain = 0.05
 			}
 		}
 
@@ -3822,7 +3775,7 @@ ideas = {
 				recon_factor = 0.10
 				air_agility_factor = -0.08
 				production_speed_air_base_factor = -0.10
-				political_power_gain_factor = -0.05
+				political_power_factor = -0.05
 				consumer_goods_factor = 0.02
 			}
 		}
@@ -3891,7 +3844,7 @@ ideas = {
 			modifier = {
 				experience_gain_air_factor = 0.15
 				air_accidents_factor = -0.05
-				air_wing_xp_loss_when_killed = -0.10
+				air_wing_xp_loss_when_killed_factor = -0.10
 				consumer_goods_factor = 0.01
 			}
 		}
@@ -3903,7 +3856,7 @@ ideas = {
 				air_accidents_factor = -0.10
 				production_speed_air_base_factor = 0.10
 				air_agility_factor = 0.05
-				political_power_gain_factor = 0.05
+				political_power_factor = 0.05
 				consumer_goods_factor = 0.01
 			}
 		}
@@ -3926,7 +3879,7 @@ ideas = {
 			modifier = {
 				production_speed_air_base_factor = 0.15
 				production_speed_industrial_complex_factor = 0.05
-				political_power_gain_factor = -0.03
+				political_power_factor = -0.03
 				consumer_goods_factor = 0.03
 			}
 		}
@@ -3936,7 +3889,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				experience_gain_air_factor = 0.10
-				air_wing_xp_loss_when_killed = -0.15
+				air_wing_xp_loss_when_killed_factor = -0.15
 				conscription_factor = 0.02
 				consumer_goods_factor = 0.01
 			}
@@ -3993,16 +3946,6 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.02
-			}
-		}
-
-		ITA_i_the_volunteers_are_registered = {
-			picture = generic_reserve_divisions
-			allowed = { always = no }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			modifier = {
-				recruitable_population_factor = 0.01
 			}
 		}
 
@@ -4290,20 +4233,6 @@ ideas = {
 				stability_factor = 0.10
 			}
 		}
-		ITA_z_the_adriatic_line = {
-			picture = generic_build_infrastructure
-			allowed = { always = no }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			targeted_modifier = {
-				tag = SER
-				trade_cost_for_target_factor = -0.10
-			}
-			targeted_modifier = {
-				tag = MNT
-				trade_cost_for_target_factor = -0.10
-			}
-		}
 		ITA_z_the_army_that_is_not_ready = {
 			picture = generic_neglected_military
 			allowed = { always = no }
@@ -4508,7 +4437,7 @@ ideas = {
 			allowed_civil_war = { always = no }
 			removal_cost = -1
 			modifier = {
-				convoy_efficiency = 0.10
+				convoy_escort_efficiency = 0.10
 			}
 		}
 		ITA_wp_plan_west = {
@@ -4571,15 +4500,6 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				naval_invasion_planning_bonus_speed = 0.20
-			}
-		}
-		ITA_ad_the_tobacco_regie = {
-			picture = generic_goods_red_bonus
-			allowed = { always = no }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			modifier = {
-				trade_opinion_factor = 0.02
 			}
 		}
 		ITA_g_the_wine_duties_fall = {
@@ -8319,7 +8239,7 @@ ideas = {
 		}
 
 		ITA_u_safeguard_the_porte_idea = {
-			picture = generic_defence
+			picture = home_defence_spirit
 			allowed = { always = no }
 			removal_cost = -1
 			modifier = {
@@ -8454,7 +8374,7 @@ ideas = {
 			allowed_civil_war = { always = no }
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_convoy = 0.30
+				industrial_capacity_dockyard = 0.05
 				convoy_escort_efficiency = 0.10
 			}
 			targeted_modifier = {

@@ -196,14 +196,9 @@ if = {
 	set_variable = { ITA_ch_messina_clock = 0 }
 	set_variable = { ITA_libya_months = 0 }
 	set_variable = { ITA_v_curia_steps = 0 }
-	set_variable = { ITA_e_remittance_cost = 45 }
 	set_variable = { ITA_election_result = 0 }
 	set_variable = { ITA_circular_clock = 18 }
 	set_variable = { ITA_bayonets = 0 }
-	set_variable = { ITA_p_boards_cost = 35 }
-	set_variable = { ITA_c_dissolve_cost = 75 }
-	set_variable = { ITA_p_troops_cost = 25 }
-	set_variable = { ITA_pr_questore_cost = 20 }
 
 	set_research_slots = 4
 	set_stability = 0.6
@@ -220,10 +215,8 @@ if = {
 			has_start_date < 1918.01.01
 		}
 		add_ideas = {
-			ITA_ww1_Risorgimento
 			limited_conscription
 			italian_shit_military
-			ww1_Scramble_for_Africa
 			ITA_the_non_expedit
 			ITA_t_a_great_power_on_paper
 		}
@@ -402,7 +395,12 @@ if = {
 
 	promote_character = { character = ITA_umberto_i ideology = monarchism }
 	promote_character = { character = ITA_luigi_pelloux ideology = democratic_militarism }
-	ITA_luigi_pelloux = { add_country_leader_trait = ITA_the_presidency }
+	ITA_luigi_pelloux = {
+		add_country_leader_trait = {
+			trait = ITA_the_presidency
+			ideology = democratic_militarism
+		}
+	}
 }
 
 1905.1.1 = {
