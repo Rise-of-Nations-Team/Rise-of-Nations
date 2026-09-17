@@ -119,7 +119,7 @@ ITA_e_the_consolidated_five_per_cent = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_economy_bad
 	custom_modifier_tooltip = ITA_e_rendita_tt
-	consumer_goods_factor = ITA_e_rendita
+	consumer_goods_factor = ITA_e_rendita_cg
 	civilian_intel_to_others = ITA_e_intel_to_others
 	army_intel_to_others = ITA_e_intel_to_others
 	navy_intel_to_others = ITA_e_intel_to_others
@@ -151,7 +151,7 @@ ITA_e_the_war_treasury = {
 	}
 	icon = GFX_idea_generic_economic_crisis
 	custom_modifier_tooltip = ITA_e_rendita_tt
-	consumer_goods_factor = ITA_e_rendita
+	consumer_goods_factor = ITA_e_rendita_cg
 	production_speed_arms_factory_factor = ITA_e_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = ITA_e_production_speed_dockyard_factor
 	production_speed_buildings_factor = ITA_e_production_speed_buildings_factor
@@ -173,7 +173,7 @@ ITA_e_the_credit_restored = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_mild_economic_recovery
 	custom_modifier_tooltip = ITA_e_rendita_tt
-	consumer_goods_factor = ITA_e_rendita
+	consumer_goods_factor = ITA_e_rendita_cg
 	production_speed_arms_factory_factor = ITA_e_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = ITA_e_production_speed_dockyard_factor
 	production_speed_buildings_factor = ITA_e_production_speed_buildings_factor
@@ -195,7 +195,7 @@ ITA_e_the_kingdom_solvent_mod = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_economy_miracle
 	custom_modifier_tooltip = ITA_e_rendita_tt
-	consumer_goods_factor = ITA_e_rendita
+	consumer_goods_factor = ITA_e_rendita_cg
 	production_speed_arms_factory_factor = ITA_e_production_speed_arms_factory_factor
 	production_speed_dockyard_factor = ITA_e_production_speed_dockyard_factor
 	production_speed_buildings_factor = ITA_e_production_speed_buildings_factor

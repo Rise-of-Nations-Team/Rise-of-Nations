@@ -22448,3 +22448,87 @@ country_event = {
 		add_war_support = 0.02
 	}
 }
+country_event = {
+	id = ita_dnc.3050
+	title = ita_dnc.3050.t
+	desc = ita_dnc.3050.d
+	picture = GFX_report_event_generic_stock_traders
+	is_triggered_only = yes
+	option = {
+		name = ita_dnc.3050.a
+		trigger = {
+			has_completed_focus = ITADNC_e_the_consumption_duties
+		}
+		ai_chance = { base = 40 }
+		subtract_from_variable = { var = ITA_e_rendita value = 0.10 tooltip = ITA_e_rendita_eased_tt }
+		add_stability = -0.03
+		clamp_variable = {
+			var = ITA_e_rendita
+			min = 0
+			max = 1
+		}
+		set_variable = { ITA_e_rendita_cg = ITA_e_rendita }
+		multiply_variable = { ITA_e_rendita_cg = 0.5 }
+	}
+	option = {
+		name = ita_dnc.3050.b
+		trigger = {
+			has_political_power > 74
+		}
+		ai_chance = { base = 30 }
+		add_political_power = -75
+		subtract_from_variable = { var = ITA_e_rendita value = 0.03 tooltip = ITA_e_rendita_eased_tt }
+		custom_effect_tooltip = ITA_e_the_rendita_converted_tt
+		ITA_e_the_rendita_rolls_over = yes
+		clamp_variable = {
+			var = ITA_e_rendita
+			min = 0
+			max = 1
+		}
+		set_variable = { ITA_e_rendita_cg = ITA_e_rendita }
+		multiply_variable = { ITA_e_rendita_cg = 0.5 }
+	}
+	option = {
+		name = ita_dnc.3050.c
+		ai_chance = { base = 20 }
+		subtract_from_variable = { var = ITA_e_rendita value = 0.15 tooltip = ITA_e_rendita_eased_tt }
+		add_to_variable = { ITA_e_monthly_rendita_increase = 0.003 }
+		custom_effect_tooltip = ITA_e_the_paris_loan_tt
+		if = {
+			limit = {
+				country_exists = FRA
+			}
+			FRA = { add_opinion_modifier = { target = ITA modifier = small_increase } }
+		}
+		clamp_variable = {
+			var = ITA_e_rendita
+			min = 0
+			max = 1
+		}
+		set_variable = { ITA_e_rendita_cg = ITA_e_rendita }
+		multiply_variable = { ITA_e_rendita_cg = 0.5 }
+	}
+	option = {
+		name = ita_dnc.3050.e
+		ai_chance = { base = 10 }
+		custom_effect_tooltip = ITA_e_the_debt_carried_tt
+	}
+}
+country_event = {
+	id = ita_dnc.3051
+	title = ita_dnc.3051.t
+	desc = ita_dnc.3051.d
+	picture = GFX_report_event_generic_stock_traders
+	is_triggered_only = yes
+	option = {
+		name = ita_dnc.3051.a
+		ai_chance = { base = 60 }
+		add_stability = -0.05
+		ITA_e_stop_the_extraordinary = yes
+	}
+	option = {
+		name = ita_dnc.3051.b
+		ai_chance = { base = 40 }
+		custom_effect_tooltip = ITA_e_the_wall_carried_tt
+	}
+}

@@ -127,7 +127,8 @@ if = {
 	set_variable = { ITA_n_detection = 0 }
 	set_variable = { ITA_n_hunting = 0 }
 	set_variable = { ITA_e_rendita = 0.1 }
-	set_variable = { ITA_e_monthly_rendita_start = 0.03 }
+	set_variable = { ITA_e_rendita_cg = 0.05 }
+	set_variable = { ITA_e_monthly_rendita_start = 0.015 }
 	set_variable = { ITA_e_monthly_rendita_increase = ITA_e_monthly_rendita_start }
 	set_variable = { ITA_e_conversion_crash = 0.75 }
 	set_variable = { ITA_e_expected_consumer_goods_penalty = 0.1 }

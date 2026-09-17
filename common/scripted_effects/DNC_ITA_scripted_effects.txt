@@ -2257,16 +2257,24 @@ ITA_e_add_rendita_penalty = {
 			custom_effect_tooltip = ITA_e_tt_the_wall_is_reached
 		}
 	}
+	clamp_variable = {
+		var = ITA_e_rendita
+		min = 0
+		max = 1
+	}
+	set_variable = { ITA_e_rendita_cg = ITA_e_rendita }
+	multiply_variable = { ITA_e_rendita_cg = 0.5 }
 }
 
 ITA_e_monthly_rendita = {
 	if = {
 		limit = {
-			OR = {
-				has_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
-				has_dynamic_modifier = { modifier = ITA_e_the_war_treasury }
+			has_dynamic_modifier = { modifier = ITA_e_the_war_treasury }
+			check_variable = {
+				var = ITA_e_rendita
+				value = 1
+				compare = less_than
 			}
-			check_variable = { var = ITA_e_rendita value = 1 compare = less_than }
 		}
 		add_to_variable = {
 			var = ITA_e_rendita
@@ -2278,9 +2286,72 @@ ITA_e_monthly_rendita = {
 		}
 		ITA_e_add_rendita_penalty = yes
 	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = ITA_e_the_war_treasury }
+		}
+		add_to_variable = { ITA_e_rendita_due_months = 1 }
+		if = {
+			limit = {
+				check_variable = {
+					var = ITA_e_rendita_due_months
+					value = 12
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { ITA_e_rendita_due_months = 0 }
+			country_event = { id = ita_dnc.3050 days = 3 }
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = ITA_e_rendita
+					value = 1
+					compare = greater_than_or_equals
+				}
+				NOT = { has_country_flag = ITA_e_the_wall_asked }
+			}
+			set_country_flag = {
+				flag = ITA_e_the_wall_asked
+				days = 180
+				value = 1
+			}
+			country_event = { id = ita_dnc.3051 days = 2 }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_dynamic_modifier = { modifier = ITA_e_the_credit_restored }
+				has_dynamic_modifier = { modifier = ITA_e_the_kingdom_solvent_mod }
+			}
+			NOT = { has_dynamic_modifier = { modifier = ITA_e_the_war_treasury } }
+			check_variable = {
+				var = ITA_e_rendita
+				value = 0
+				compare = greater_than
+			}
+		}
+		subtract_from_variable = { var = ITA_e_rendita value = 0.01 }
+	}
+	clamp_variable = {
+		var = ITA_e_rendita
+		min = 0
+		max = 1
+	}
+	set_variable = { ITA_e_rendita_cg = ITA_e_rendita }
+	multiply_variable = { ITA_e_rendita_cg = 0.5 }
 }
 
 ITA_e_pay_the_arrears = {
+	set_variable = { ITA_e_conversion_crash = ITA_e_arrears_counter }
+	multiply_variable = { ITA_e_conversion_crash = 0.025 }
+	add_to_variable = { ITA_e_conversion_crash = 0.2 }
+	clamp_variable = {
+		var = ITA_e_conversion_crash
+		min = 0.2
+		max = 0.75
+	}
 	set_temp_variable = { ITA_e_bill = ITA_e_arrears_counter }
 	multiply_temp_variable = { ITA_e_bill = 3 }
 	clamp_temp_variable = { var = ITA_e_bill min = 60 max = 420 }
@@ -3504,6 +3575,7 @@ ITA_cw_the_split_tail = {
 		set_variable = { ITA_dnc_months = ROOT.ITA_dnc_months }
 		set_variable = { ITA_camera_low_months = ROOT.ITA_camera_low_months }
 		set_variable = { ITA_e_rendita = ROOT.ITA_e_rendita }
+		set_variable = { ITA_e_rendita_cg = ROOT.ITA_e_rendita_cg }
 		set_variable = { ITA_e_monthly_rendita_start = ROOT.ITA_e_monthly_rendita_start }
 		set_variable = { ITA_e_monthly_rendita_increase = ROOT.ITA_e_monthly_rendita_increase }
 		set_variable = { ITA_e_conversion_crash = ROOT.ITA_e_conversion_crash }
@@ -3687,5 +3759,18 @@ ITA_cw_the_winner_is_settled = {
 			has_country_flag = ITA_cw_entrance_crown
 		}
 		country_event = { id = ita_dnc.2986 days = 2 }
+	}
+}
+ITA_e_the_rendita_rolls_over = {
+	subtract_from_variable = { ITA_e_monthly_rendita_increase = 0.003 }
+	if = {
+		limit = {
+			check_variable = {
+				var = ITA_e_monthly_rendita_increase
+				value = 0.005
+				compare = less_than
+			}
+		}
+		set_variable = { ITA_e_monthly_rendita_increase = 0.005 }
 	}
 }

@@ -3369,12 +3369,6 @@ focus_tree = {
 		icon = GFX_focus_generic_hydroelectric_energy
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_e_the_rendita_limit_tt
-				check_variable = { ITA_e_rendita < 0.9 }
-			}
-		}
 		continue_if_invalid = yes
 		completion_reward = {
 			random_core_state = {
@@ -3441,12 +3435,6 @@ focus_tree = {
 		icon = GFX_focus_generic_electrification
 		cost = 5
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_e_the_rendita_limit_tt
-				check_variable = { ITA_e_rendita < 0.9 }
-			}
-		}
 		continue_if_invalid = yes
 		completion_reward = {
 			158 = {
@@ -3598,10 +3586,6 @@ focus_tree = {
 				NOT = { is_core_of = ROOT }
 				is_fully_controlled_by = ROOT
 			}
-			custom_trigger_tooltip = {
-				tooltip = ITA_e_the_rendita_limit_tt
-				check_variable = { ITA_e_rendita < 0.9 }
-			}
 		}
 		continue_if_invalid = yes
 		completion_reward = {
@@ -3647,18 +3631,6 @@ focus_tree = {
 		available = {
 			has_completed_focus = ITADNC_e_the_sulcis_pits
 			has_completed_focus = ITADNC_e_the_electric_furnace
-			has_resources_in_collection = {
-				collection = collection:country_and_all_subjects
-				resource = coal
-				amount > 99
-				extracted = yes
-			}
-			has_resources_in_collection = {
-				collection = collection:country_and_all_subjects
-				resource = steel
-				amount > 199
-				extracted = yes
-			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = ITA_e_the_debt_is_cleared_tt
@@ -3807,10 +3779,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		available = {
 			has_tech = RON_Early_Machine_Tools
-			custom_trigger_tooltip = {
-				tooltip = ITA_e_the_rendita_limit_tt
-				check_variable = { ITA_e_rendita < 0.9 }
-			}
 		}
 		continue_if_invalid = yes
 		completion_reward = {
@@ -3871,12 +3839,6 @@ focus_tree = {
 		icon = GFX_focus_generic_coal_mining
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_e_the_rendita_limit_tt
-				check_variable = { ITA_e_rendita < 0.9 }
-			}
-		}
 		continue_if_invalid = yes
 		bypass = {
 			has_resources_in_collection = {

@@ -13,14 +13,12 @@ on_actions = {
 			if = {
 				limit = {
 					tag = ITA
-					has_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
-				}
-				ITA_e_monthly_rendita = yes
-			}
-			if = {
-				limit = {
-					tag = ITA
-					has_dynamic_modifier = { modifier = ITA_e_the_war_treasury }
+					OR = {
+						has_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
+						has_dynamic_modifier = { modifier = ITA_e_the_war_treasury }
+						has_dynamic_modifier = { modifier = ITA_e_the_credit_restored }
+						has_dynamic_modifier = { modifier = ITA_e_the_kingdom_solvent_mod }
+					}
 				}
 				ITA_e_monthly_rendita = yes
 			}
