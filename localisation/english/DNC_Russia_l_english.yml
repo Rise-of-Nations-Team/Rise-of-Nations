@@ -152,7 +152,7 @@
  RUS_new_develop_rural_desc: "Our newfound popularity will allow us to implement some economic development plans in the countryside to further move away from an agrarian economy."
  RUS_new_develop_rural_cau_desc: "Promoting industrialization and urbanization in the Caucuses will modernize our mining and drilling operations there and help secure our southern borders."
  RUS_new_develop_rural_sib_desc: "Developing Siberia will allow us to harness vast lands and resources the region has to offer."
- RUS_new_develop_rail: "To connect the newly developed regions, we need to undertake an extensive modernization of our rail infrastructure and rolling stock."
+ RUS_new_develop_rail_desc: "To connect the newly developed regions, we need to undertake an extensive modernization of our rail infrastructure and rolling stock."
  RUS_new_man_question: "The Manchurian question"
  RUS_new_man_fort: "Fortify the Chinese border"
  RUS_new_man_rail: "Build up Manchurian railways"

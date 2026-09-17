@@ -1291,7 +1291,7 @@ focus_tree = {
 		id = RUS_new_massind
 		icon = GFX_goal_generic_construction
 		x = 13
-		y = 10
+		y = 8
 
 		prerequisite = {
 			focus = RUS_new_noagri
@@ -1320,7 +1320,7 @@ focus_tree = {
 		id = RUS_new_focwes
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 15
-		y = 11
+		y = 9
 
 		prerequisite = {
 			focus = RUS_new_massind
@@ -1349,7 +1349,7 @@ focus_tree = {
 		id = RUS_new_focsib
 		icon = GFX_goal_generic_wolf_pack
 		x = 11
-		y = 11
+		y = 9
 
 		prerequisite = {
 			focus = RUS_new_massind
@@ -1378,7 +1378,7 @@ focus_tree = {
 		id = RUS_new_induru
 		icon = GFX_goal_generic_soviet_construction
 		x = 13
-		y = 12
+		y = 10
 
 		prerequisite = {focus = RUS_new_focsib}
 		prerequisite = {focus = RUS_new_focwes}
@@ -1402,7 +1402,7 @@ focus_tree = {
 		id = RUS_new_drilloil
 		icon = GFX_GER_focus_synthetic_rubber
 		x = 7
-		y = 10
+		y = 8
 
 		prerequisite = {
 			focus = RUS_new_noagri
@@ -1429,7 +1429,7 @@ focus_tree = {
 		id = RUS_new_oilciv
 		icon = GFX_goal_generic_oil_refinery
 		x = 9
-		y = 11
+		y = 9
 
 		prerequisite = {
 			focus = RUS_new_drilloil
@@ -1460,7 +1460,7 @@ focus_tree = {
 		id = RUS_new_oilmil
 		icon = GFX_focus_generic_tank_production
 		x = 5
-		y = 11
+		y = 9
 
 		prerequisite = {
 			focus = RUS_new_drilloil
@@ -1490,7 +1490,7 @@ focus_tree = {
 		id = RUS_new_lead
 		icon = GFX_GER_focus_new_research_techniques
 		x = 7
-		y = 12
+		y = 10
 
 		prerequisite = {
 			focus = RUS_new_oilciv
@@ -1514,7 +1514,7 @@ focus_tree = {
 		id = RUS_new_strong
 		icon = GFX_RUS_focus_first_russian_election
 		x = 10
-		y = 13
+		y = 11
 
 		cost = 10
 
@@ -4337,7 +4337,7 @@ focus_tree = {
 		id = RUS_new_foreign_policy
 		icon = GFX_goal_foreign_policy
 		x = 11
-		y = 14
+		y = 13
 		cost = 10
 
 		available = {
@@ -4353,7 +4353,7 @@ focus_tree = {
 		id = RUS_new_revive_three_emp
 		icon = GFX_goal_three_emperors_league
 		x = 17
-		y = 15
+		y = 14
 		cost = 10
 		ai_will_do = {
 			base = 10
@@ -4377,7 +4377,7 @@ focus_tree = {
 		id = RUS_new_focus_on_the_east
 		icon = GFX_focus_usa_focus_on_asia
 		x = 15
-		y = 16
+		y = 15
 		cost = 10
 
 		prerequisite = { focus = RUS_new_revive_three_emp}
@@ -4402,7 +4402,7 @@ focus_tree = {
 		id = RUS_new_against_the_french
 		icon = GFX_focus_attack_france
 		x = 17
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4431,7 +4431,7 @@ focus_tree = {
 		id = RUS_new_family_meeting
 		icon = GFX_goal_generic_national_unity
 		x = 19
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4448,7 +4448,7 @@ focus_tree = {
 		id = RUS_new_tech_sharing
 		icon = GFX_goal_continuous_research
 		x = 17
-		y = 17
+		y = 16
 		cost = 10
 
 		
@@ -4469,7 +4469,7 @@ focus_tree = {
 		id = RUS_new_balkan_question
 		icon = GFX_focus_BUL_free_balkan_states
 		x = 17
-		y = 18
+		y = 17
 		cost = 10
 
 		
@@ -4496,7 +4496,7 @@ focus_tree = {
 		id = RUS_new_meeting_in_paris
 		icon = GFX_goal_FRA_paris_meeting
 		x = 7
-		y = 15
+		y = 14
 		cost = 10
 
 		mutually_exclusive = { focus = RUS_new_revive_three_emp }
@@ -4515,7 +4515,7 @@ focus_tree = {
 		id = RUS_new_guarentee_the_french
 		icon = GFX_focus_chi_reach_out_to_france
 		x = 11
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4540,7 +4540,7 @@ focus_tree = {
 		id = RUS_new_def_cau
 		icon = GFX_goal_generic_construct_military
 		x = 11
-		y = 17
+		y = 16
 		cost = 10
 
 		available = {
@@ -4581,7 +4581,7 @@ focus_tree = {
 		id = RUS_new_def_afg
 		icon = GFX_goal_generic_construct_military
 		x = 11
-		y = 18
+		y = 17
 		cost = 10
 
 		available = {
@@ -4645,7 +4645,7 @@ focus_tree = {
 		id = RUS_new_ally
 		icon = GFX_goal_generic_alliance
 		x = 11
-		y = 19
+		y = 18
 		cost = 10
 
 		available = {
@@ -4665,7 +4665,7 @@ focus_tree = {
 		id = RUS_new_british_menace
 		icon = GFX_focus_attack_britain
 		x = 9
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4694,7 +4694,7 @@ focus_tree = {
 		id = RUS_new_ottoman_question	
 		icon = GFX_focus_TUR_misak_i_milli
 		x = 5
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4714,7 +4714,7 @@ focus_tree = {
 		id = RUS_new_ott_militias
 		icon = GFX_focus_prc_infiltration
 		x = 5
-		y = 17
+		y = 16
 
 		cost = 10
 
@@ -4737,7 +4737,7 @@ focus_tree = {
 		id = RUS_new_german_question
 		icon = GFX_focus_usa_focus_on_europe
 		x = 7
-		y = 16
+		y = 15
 		cost = 10
 
 		
@@ -4765,7 +4765,7 @@ focus_tree = {
 		id = RUS_new_build_up_poland
 		icon = GFX_goal_generic_construct_military
 		x = 7
-		y = 17
+		y = 16
 		cost = 10
 
 		
@@ -4791,7 +4791,7 @@ focus_tree = {
 		id = RUS_new_baltic_forts
 		icon = GFX_goal_generic_construct_military
 		x = 8
-		y = 18
+		y = 17
 		cost = 10
 
 		
@@ -4818,7 +4818,7 @@ focus_tree = {
 		id = RUS_new_austrian_front
 		icon = GFX_goal_generic_construct_military
 		x = 6
-		y = 18
+		y = 17
 		cost = 10
 
 		
@@ -4850,7 +4850,7 @@ focus_tree = {
 		id = RUS_new_black_sea_forts
 		icon = GFX_focus_generic_coastal_fort
 		x = 7
-		y = 19
+		y = 18
 		cost = 10
 
 		
@@ -4873,7 +4873,7 @@ focus_tree = {
 		id = RUS_new_join_the_entent
 		icon = GFX_goal_support_democracy
 		x = 3
-		y = 16
+		y = 15
 		cost = 10
 
 		
