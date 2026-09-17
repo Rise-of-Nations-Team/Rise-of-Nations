@@ -59,8 +59,7 @@ joint_focus = {
  		SPB = {
  			remove_civil_war_target = SPF
  		}
- 		every_country = {
- 			limit = { tag = SPF }
+ 		SPF = {
  			remove_civil_war_target = SPB
  			white_peace = SPB
  		}
@@ -94,8 +93,7 @@ joint_focus = {
  			SPB = {
  				has_completed_focus = SPB_SPF_remind_italy
  			}
- 			any_country = {
- 				tag = SPF
+ 			SPF = {
  				has_completed_focus = SPB_SPF_put_our_differences_aside
  			}
  		}
