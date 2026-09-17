@@ -38,10 +38,7 @@ characters = {
 			slot = high_command
 			idea_token = FEN_zhang_xueliang
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			ledger = air 
 			traits = {
@@ -93,10 +90,7 @@ characters = {
 			slot = army_chief
 			idea_token = FEN_guo_songling
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			traits = {
 				army_chief_defensive_2
@@ -128,10 +122,7 @@ characters = {
 			slot = political_advisor
 			idea_token = FEN_guo_songling_political
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			available = {
 				date > 1905.1.1
@@ -184,10 +175,7 @@ characters = {
 			slot = high_command
 			idea_token = FEN_yang_yuting
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			available = {
 				date > 1910.1.1
@@ -348,10 +336,7 @@ characters = {
 			slot = navy_chief
 			idea_token = FEN_zhang_jinghui
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			available = {
 				date < 1960.1.1
@@ -476,10 +461,7 @@ characters = {
 			slot = theorist
 			idea_token = FEN_ma_zhanshan
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			ledger = army
 			traits = {
@@ -537,10 +519,7 @@ characters = {
 			slot = army_chief
 			idea_token = FEN_sun_liechen
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			available = {
 				date > 1905.1.1				
@@ -667,10 +646,7 @@ characters = {
 			idea_token = CHI_date_junnosuke
 			ledger = army 
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}	
 			available = {
 				OR = {
@@ -729,10 +705,7 @@ characters = {
 			idea_token = CHI_konstantin_nechayev
 			ledger = army 
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}	
 			available = {
 				NOT = {
@@ -1006,10 +979,7 @@ characters = {
 			slot = theorist
 			idea_token = FEN_zhou_yawei
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			available = {
 				date > 1927.6.6
@@ -1054,10 +1024,7 @@ characters = {
 			idea_token = FEN_feng_yong
 			ledger = air
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = FEN
-				}
+				is_china_or_warlord_no_tt = yes
 			}
 			visible = {
 				date > 1931.9.18

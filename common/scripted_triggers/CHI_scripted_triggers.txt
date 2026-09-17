@@ -43,6 +43,7 @@ is_literally_china = {
 		original_tag = HBC
 
 		original_tag = QIN
+		original_tag = FEN
 	}
 }
 
@@ -73,6 +74,7 @@ is_literally_china_not_prc = { ## Needed for SEA MIO reasons
 		original_tag = HBC
 
 		original_tag = QIN
+		original_tag = FEN
 	}
 }
 
