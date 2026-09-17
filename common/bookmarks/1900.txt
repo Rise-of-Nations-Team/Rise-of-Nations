@@ -35,9 +35,9 @@ bookmarks = {
 				AUH_unequal_union
 			}
 			focuses = {
-				AUHDNC_the_dual_monarchy
-				AUHDNC_r_the_iron_ring_reforged
-				AUHDNC_m_the_sword_settles_it
+				AUHDNC_the_german_question
+				AUHDNC_lesser_german_solution
+				AUHDNC_greater_german_solution
 			}
 		}
 
