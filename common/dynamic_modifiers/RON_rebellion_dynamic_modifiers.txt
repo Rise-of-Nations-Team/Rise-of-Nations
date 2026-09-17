@@ -1,8 +1,0 @@
-RON_state_in_revolt = {
-	icon = GFX_idea_generic_army_war_college
-
-	local_building_slots_factor = -0.25
-	local_resources_factor = -0.25
-	local_manpower = -0.5
-	recruitment_factor = -0.2
-}

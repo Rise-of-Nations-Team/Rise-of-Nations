@@ -36,10 +36,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1909.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1910.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -70,10 +83,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1914.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1915.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -104,10 +130,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1937.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1938.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -142,9 +181,22 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				nuclear_tech_focus = yes
+				date < 1940.1.1
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 				date < 1944.1.1
 			}
 			#RESTRICTIONS
@@ -180,10 +232,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1942.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1944.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -235,10 +300,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1944.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1945.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -303,10 +381,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1949.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1950.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -340,10 +431,23 @@ technologies = {
 		desc = "THERMONUCLEAR_SPECIAL"
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1964.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1965.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -377,10 +481,23 @@ technologies = {
 		desc = "THERMONUCLEAR_SPECIAL"
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1979.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1980.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -414,10 +531,23 @@ technologies = {
 		desc = "NEUTRON_SPECIAL"
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1994.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1995.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -449,10 +579,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2009.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2010.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -484,10 +627,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2024.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2025.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -521,10 +677,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2039.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2040.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -593,10 +762,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1949.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1950.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -635,10 +817,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1964.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1965.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -677,10 +872,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1979.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1980.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -719,10 +927,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1994.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1995.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -761,10 +982,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2009.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2010.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -799,10 +1033,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2024.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2025.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -863,10 +1110,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1956.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1957.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -902,10 +1162,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1964.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1965.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -944,10 +1217,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1979.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1980.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -986,10 +1272,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1994.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1995.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1028,10 +1327,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2009.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2010.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1066,10 +1378,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2024.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2025.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1131,10 +1456,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1956.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1957.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1173,10 +1511,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1979.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1980.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1215,10 +1566,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1994.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1995.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1250,10 +1614,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2009.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2010.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1288,10 +1665,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2024.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2025.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1324,10 +1714,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1944.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1945.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1359,10 +1762,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1949.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1950.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1398,10 +1814,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1964.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1965.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1437,10 +1866,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 1994.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 1995.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1476,10 +1918,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2009.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2010.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1515,10 +1970,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2024.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2025.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {
@@ -1550,10 +2018,23 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			#WEIGHT
+			modifier = {
+				factor = 400
+				nuclear_tech_focus = yes
+			}
 			#DATE
 			modifier = {
 				factor = 0
+				date < 2039.1.1
+				nuclear_tech_focus = yes
+			}
+			modifier = {
+				factor = 0
 				date < 2040.1.1
+				NOT = {
+					nuclear_tech_focus = yes
+				}
 			}
 			#RESTRICTIONS
 			modifier = {

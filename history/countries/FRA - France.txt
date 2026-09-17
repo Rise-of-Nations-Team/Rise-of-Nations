@@ -355,7 +355,7 @@ set_country_flag = briand_president_du_conseil
 		}
 		set_global_flag = eight_nation_alliance_disbanded
 		set_global_flag = DNC_Create_TE
-		create_faction = TripleEntente
+		create_faction_from_template = faction_template_Entente
 		add_to_faction = FRA
 		add_to_faction = RUS
 	}

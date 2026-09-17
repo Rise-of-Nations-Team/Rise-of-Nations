@@ -2033,6 +2033,8 @@ technologies = {
 			factor = 300
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { concentrated_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = dispersed_industry is_researching_technology = dispersed_industry } }
 		}
 
@@ -2073,6 +2075,8 @@ technologies = {
 			factor = 300
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { concentrated_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = dispersed_industry2 is_researching_technology = dispersed_industry2 } }
 		}
 
@@ -2116,6 +2120,8 @@ technologies = {
 			modifier = { factor = 0 date < 1938.10.1 }
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { concentrated_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = dispersed_industry3 is_researching_technology = dispersed_industry3 } }
 		}
 
@@ -2159,6 +2165,8 @@ technologies = {
 			modifier = { factor = 0 date < 1940.10.1 }
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { concentrated_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = dispersed_industry4 is_researching_technology = dispersed_industry4 } }
 		}
 
@@ -2198,6 +2206,8 @@ technologies = {
 			modifier = { factor = 0 date < 1942.10.1 }
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { concentrated_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = dispersed_industry5 is_researching_technology = dispersed_industry5 } }
 		}
 
@@ -2242,6 +2252,8 @@ technologies = {
 			factor = 300
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { dispersed_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = concentrated_industry is_researching_technology = concentrated_industry } }
 		}
 
@@ -2285,6 +2297,8 @@ technologies = {
 			factor = 300
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { dispersed_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = concentrated_industry2 is_researching_technology = concentrated_industry2 } }
 		}
 
@@ -2331,6 +2345,8 @@ technologies = {
 			modifier = { factor = 0 date < 1938.10.1 }
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { dispersed_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = concentrated_industry3 is_researching_technology = concentrated_industry3 } }
 		}
 
@@ -2377,6 +2393,8 @@ technologies = {
 			modifier = { factor = 0 date < 1940.10.1 }
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { dispersed_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = concentrated_industry4 is_researching_technology = concentrated_industry4 } }
 		}
 
@@ -2420,6 +2438,8 @@ technologies = {
 			modifier = { factor = 0 date < 1942.10.1 }
 
 			#RESTRICTIONS
+			modifier = { factor = 0 NOT = { dispersed_industry_tech_focus = yes } }
+
 			modifier = { factor = 0 OR = { has_tech = concentrated_industry5 is_researching_technology = concentrated_industry5 } }
 		}
 
@@ -2985,8 +3005,11 @@ technologies = {
 			#DATE
 			modifier = { factor = 0 date < 1937.1.1 }
 
+			#WEIGHT
+			modifier = { factor = 150 OR = { rubber_processing_tech_focus = yes synth_tech_focus = yes } }
+
 			#RESTRICTIONS
-			modifier = { factor = 0 date < 1939.1.1 }
+			modifier = { factor = 0 date < 1939.1.1 NOT = { synth_tech_focus = yes } }
 			modifier = { factor = 0 num_of_military_factories < 20 }
 		}
 	}
@@ -3224,6 +3247,9 @@ technologies = {
 			#DATE
 			modifier = { factor = 0 date < 1937.1.1 }
 
+			#WEIGHT
+			modifier = { add = 250 rubber_processing_tech_focus = yes }
+
 			#RESTRICTIONS
 			modifier = { factor = 0.1 synthetic_refinery < 5 }
 
@@ -3267,6 +3293,9 @@ technologies = {
 
 			#DATE
 			modifier = { factor = 0 date < 1939.1.1 }
+
+			#WEIGHT
+			modifier = { add = 250 rubber_processing_tech_focus = yes }
 
 			#RESTRICTIONS
 			modifier = { factor = 0.1 synthetic_refinery < 10 }
@@ -3312,6 +3341,9 @@ technologies = {
 			#DATE
 			modifier = { factor = 0 date < 1941.1.1 }
 
+			#WEIGHT
+			modifier = { add = 250 rubber_processing_tech_focus = yes }
+
 			#RESTRICTIONS
 			modifier = { factor = 0.1 synthetic_refinery < 15 }
 
@@ -3350,6 +3382,9 @@ technologies = {
 
 			#DATE
 			modifier = { factor = 0 date < 1943.1.1 }
+
+			#WEIGHT
+			modifier = { add = 250 rubber_processing_tech_focus = yes }
 
 			#RESTRICTIONS
 			modifier = { factor = 0.1 synthetic_refinery < 20 }
@@ -3423,6 +3458,10 @@ technologies = {
 			factor = 20
 
 			#WEIGHT
+			modifier = { #minors with tons of resources research this so they can trade more
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
 			modifier = {
 				factor = 5
 				OR = {
@@ -3445,7 +3484,7 @@ technologies = {
 			}
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -3514,6 +3553,10 @@ technologies = {
 			factor = 20
 
 			#WEIGHT
+			modifier = { #minors with tons of resources research this so they can trade more
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
 			modifier = {
 				factor = 5
 				OR = {
@@ -3539,7 +3582,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation1 } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -3613,6 +3656,10 @@ technologies = {
 			modifier = { factor = 0 date < 1939.1.1 }
 
 			#WEIGHT
+			modifier = { #minors with tons of resources research this so they can trade more
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
 			modifier = {
 				factor = 5
 				OR = {
@@ -3638,7 +3685,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation2 } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -3709,6 +3756,10 @@ technologies = {
 
 			#WEIGHT
 			modifier = {
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
+			modifier = {
 				factor = 5
 				OR = {
 					AND = { check_variable = { resource@oil < 10 } check_variable = { resource_produced@oil > 100 } }
@@ -3733,7 +3784,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation3 } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -3809,6 +3860,10 @@ technologies = {
 
 			#WEIGHT
 			modifier = {
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
+			modifier = {
 				factor = 5
 				OR = {
 					AND = { check_variable = { resource@oil < 10 } check_variable = { resource_produced@oil > 100 } }
@@ -3833,7 +3888,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation4 } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -3967,6 +4022,10 @@ technologies = {
 
 			#WEIGHT
 			modifier = {
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
+			modifier = {
 				factor = 5
 				OR = {
 					AND = { check_variable = { resource@oil < 10 } check_variable = { resource_produced@oil > 100 } }
@@ -3991,7 +4050,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation5 } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -4060,6 +4119,10 @@ technologies = {
 
 			#WEIGHT
 			modifier = {
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
+			modifier = {
 				factor = 5
 				OR = {
 					AND = { check_variable = { resource@oil < 10 } check_variable = { resource_produced@oil > 100 } }
@@ -4084,7 +4147,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation_a } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -4153,6 +4216,10 @@ technologies = {
 
 			#WEIGHT
 			modifier = {
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
+			modifier = {
 				factor = 5
 				OR = {
 					AND = { check_variable = { resource@oil < 10 } check_variable = { resource_produced@oil > 100 } }
@@ -4177,7 +4244,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation_b } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -4246,6 +4313,10 @@ technologies = {
 
 			#WEIGHT
 			modifier = {
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
+			modifier = {
 				factor = 5
 				OR = {
 					AND = { check_variable = { resource@oil < 10 } check_variable = { resource_produced@oil > 100 } }
@@ -4270,7 +4341,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation_c } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 
@@ -4329,6 +4400,10 @@ technologies = {
 
 			#WEIGHT
 			modifier = {
+				factor = 2
+				resource_extraction_tech_focus = yes
+			}
+			modifier = {
 				factor = 5
 				OR = {
 					AND = { check_variable = { resource@oil < 10 } check_variable = { resource_produced@oil > 100 } }
@@ -4353,7 +4428,7 @@ technologies = {
 			modifier = { factor = 0 NOT = { has_tech = excavation_d } }
 
 			#PRIORITISE MAIN INDUSTRY TECHS
-			modifier = { factor = 0 prioritise_main_industry = yes }
+			modifier = { factor = 0 prioritise_main_industry = yes NOT = { resource_extraction_tech_focus = yes } }
 		}
 	}
 

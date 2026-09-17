@@ -450,7 +450,7 @@ country_event = {
 			base = 1000
 		}
 
-		create_faction = TripleEntente
+		create_faction_from_template = faction_template_Entente
 		hidden_effect = {
 			RUS = { country_event = { id = generic.5 days = 1 } }
 		}

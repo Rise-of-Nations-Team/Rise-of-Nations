@@ -4,53 +4,6 @@
 
 add_namespace = ron_early_wars
 
-add_namespace = ron_warsdiplo
-
-# Diplomatic aftermath of the colonial risings
-country_event = {
-	id = ron_warsdiplo.1
-	hidden = yes
-	is_triggered_only = yes
-
-	option = {
-		name = ron_warsdiplo.1.a
-	}
-}
-
-country_event = {
-	id = ron_warsdiplo.2
-	hidden = yes
-	is_triggered_only = yes
-
-	option = {
-		name = ron_warsdiplo.2.a
-	}
-}
-
-country_event = {
-	id = ron_warsdiplo.3
-	hidden = yes
-	is_triggered_only = yes
-
-	option = {
-		name = ron_warsdiplo.3.a
-	}
-}
-
-
-
-
-#    _____  ______ ____  ______ _      _      _____ ____  _   _  _____ 
-#   |  __ \|  ____|  _ \|  ____| |    | |    |_   _/ __ \| \ | |/ ____|
-#   | |__) | |__  | |_) | |__  | |    | |      | || |  | |  \| | (___  
-#   |  _  /|  __| |  _ <|  __| | |    | |      | || |  | |     |\___ \ 
-#   | | \ \| |____| |_) | |____| |____| |____ _| || |__| | |\  |____) |
-#   |_|  \_\______|____/|______|______|______|_____\____/|_| \_|_____/ 
-#                                                                      
-#                                                                      
-
-
-
 # War of the Golden Stool - This will be the template for rebelions and such, cause they don't have tags yet
 country_event = {
 	id = ron_early_wars.1
