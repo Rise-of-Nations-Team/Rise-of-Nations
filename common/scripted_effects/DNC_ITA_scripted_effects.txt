@@ -302,6 +302,17 @@ ITA_piazza_rungs = {
 			limit = {
 				check_variable = {
 					var = ITA_piazza
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { ITA_piazza_lock = 11 }
+			country_event = { id = ita_dnc.2200 days = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = ITA_piazza
 					value = 45
 					compare = greater_than_or_equals
 				}

@@ -6040,12 +6040,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			unlock_decision_category_tooltip = ITA_h_governorate_eritrea
-			unlock_decision_category_tooltip = ITA_h_governorate_somalia
-			unlock_decision_category_tooltip = ITA_h_governorate_benadir
-			unlock_decision_category_tooltip = ITA_h_governorate_east_africa
-			unlock_decision_category_tooltip = ITA_h_governorate_tripolitania
-			unlock_decision_category_tooltip = ITA_h_governorate_aegean
+			unlock_decision_category_tooltip = ITA_h_governorate_cat
 			hidden_effect = {
 				set_country_flag = ITA_s_colony_stays_civil
 			}
@@ -17705,7 +17700,6 @@ focus_tree = {
 		icon = GFX_focus_ITA_subdue_the_sentinels
 		cost = 5
 
-
 		available = {
 			OR = {
 				SWI = { exists = yes }
@@ -22191,10 +22185,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			unlock_decision_tooltip = ITA_h_gov_eritrea_the_residency
-			unlock_decision_tooltip = ITA_h_gov_somalia_the_residency
-			unlock_decision_tooltip = ITA_h_gov_benadir_the_residency
-			unlock_decision_tooltip = ITA_h_gov_east_africa_the_residency
+			unlock_decision_tooltip = ITA_h_gov_the_residency
 		}
 	}
 	focus = {

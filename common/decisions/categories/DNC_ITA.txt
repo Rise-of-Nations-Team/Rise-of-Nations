@@ -252,42 +252,6 @@ ITA_dnc_siege_cat = {
 	visible_when_empty = no
 }
 
-ITA_dnc_the_prefects = {
-	icon = generic_propaganda
-	priority = 43
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
-		has_country_flag = ITA_dnc_systems_open
-	}
-	visible_when_empty = no
-}
-
-ITA_dnc_the_chamber = {
-	icon = generic_democracy
-	priority = 41
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
-		has_country_flag = ITA_dnc_systems_open
-	}
-	visible_when_empty = no
-}
-
-ITA_dnc_the_crown = {
-	icon = generic_independence
-	priority = 39
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
-		has_country_flag = ITA_dnc_systems_open
-	}
-	visible_when_empty = no
-}
-
 ITA_dnc_messina = {
 	icon = generic_industry
 	priority = 37
@@ -313,7 +277,7 @@ ITA_h_colonial_levies = {
 	visible_when_empty = no
 }
 
-ITA_h_governorate_eritrea = {
+ITA_h_governorate_cat = {
 	icon = generic_industry
 	priority = 25
 	allowed = {
@@ -324,87 +288,14 @@ ITA_h_governorate_eritrea = {
 			has_completed_focus = ITADNC_h_the_colonial_office
 			has_completed_focus = ITADNC_u_unify_the_horn
 		}
-		controls_state = 550
-	}
-	visible_when_empty = no
-}
-
-ITA_h_governorate_somalia = {
-	icon = generic_industry
-	priority = 24
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
 		OR = {
-			has_completed_focus = ITADNC_h_the_colonial_office
-			has_completed_focus = ITADNC_u_unify_the_horn
+			controls_state = 550
+			controls_state = 559
+			has_country_flag = ITA_af_benadir_bought_out
+			controls_state = 661
+			controls_state = 164
+			controls_state = 1133
 		}
-		controls_state = 559
-	}
-	visible_when_empty = no
-}
-
-ITA_h_governorate_benadir = {
-	icon = generic_industry
-	priority = 23
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
-		OR = {
-			has_completed_focus = ITADNC_h_the_colonial_office
-			has_completed_focus = ITADNC_u_unify_the_horn
-		}
-		has_country_flag = ITA_af_benadir_bought_out
-	}
-	visible_when_empty = no
-}
-
-ITA_h_governorate_tripolitania = {
-	icon = generic_industry
-	priority = 22
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
-		OR = {
-			has_completed_focus = ITADNC_h_the_colonial_office
-			has_completed_focus = ITADNC_u_unify_the_horn
-		}
-		controls_state = 661
-	}
-	visible_when_empty = no
-}
-
-ITA_h_governorate_aegean = {
-	icon = generic_industry
-	priority = 21
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
-		OR = {
-			has_completed_focus = ITADNC_h_the_colonial_office
-			has_completed_focus = ITADNC_u_unify_the_horn
-		}
-		controls_state = 164
-	}
-	visible_when_empty = no
-}
-
-ITA_h_governorate_east_africa = {
-	icon = generic_industry
-	priority = 20
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
-		OR = {
-			has_completed_focus = ITADNC_h_the_colonial_office
-			has_completed_focus = ITADNC_u_unify_the_horn
-		}
-		controls_state = 1133
 	}
 	visible_when_empty = no
 }
