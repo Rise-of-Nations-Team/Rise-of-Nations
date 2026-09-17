@@ -204,5 +204,33 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	regio_esercito_trait = {
+		type = corps_commander
+		trait_type = personality_trait
+
+		modifier = {
+			army_morale_factor = 0.03
+			army_org_factor = 0.02
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	regia_marina_trait = {
+		type = navy
+		trait_type = personality_trait
+
+		modifier = {
+			navy_max_range_factor = 0.03
+			naval_morale_factor = 0.03
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
 ### EOF ###

@@ -1,4 +1,3 @@
-#!gfx:interface/RON_goals.gfx
 focus_tree = {
 	id = United_States_DNC
 	country = {
@@ -112,7 +111,7 @@ focus_tree = {
 	#Focus for Public Railroads
 	focus = {
 		id = USADNC_public_railroads
-		icon = GFX_align_to_soviet_union
+		icon = GFX_focus_generic_railroad
 		x = 61
 		y = 6
 		cost = 10
@@ -155,10 +154,6 @@ focus_tree = {
 					}
 					has_country_leader = {
 						name = "William Jennings Bryan"
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = USA_william_mckinley
 						ruling_only = yes
 					}
 				}
@@ -225,7 +220,7 @@ focus_tree = {
 	#Focus for Look to our neighbors
 	focus = {
 		id = USADNC_look_to_our_neighbors
-		icon = GFX_focus_mex_redeem_aztlan
+		icon = GFX_focus_crosshair_mexico
 		x = 14
 		y = 4
 		cost = 10
@@ -296,7 +291,7 @@ focus_tree = {
 	#Focus for Start rebuilding our relationship with japan
 	focus = {
 		id = USADNC_star_rebuilding_our_relationship_with_japan
-		icon = GFX_align_to_japan
+		icon = GFX_goal_generic_befriend_japan_alt
 		x = 25
 		y = 6
 		cost = 10
@@ -424,7 +419,7 @@ focus_tree = {
 	#Focus for Sign the US-Philippine economic recovery act
 	focus = {
 		id = USADNC_sign_the_usphilippine_economic_recovery_act
-		icon = GFX_focus_mex_privatisation
+		icon = GFX_focus_PHI_investment_fund
 		x = 33
 		y = 6
 		cost = 10
@@ -482,7 +477,7 @@ focus_tree = {
 	#Focus for Pay the Philippines Depts
 	focus = {
 		id = USADNC_pay_the_philippines_depts
-		icon = money
+		icon = GFX_goal_ron_generic_money
 		x = 32
 		y = 5
 		cost = 10
@@ -508,7 +503,7 @@ focus_tree = {
 	#Focus for Move troops out of the Philippines
 	focus = {
 		id = USADNC_move_troops_out_of_the_philippines
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_goal_continuous_boost_freedom
 		x = 34
 		y = 5
 		cost = 10
@@ -581,7 +576,7 @@ focus_tree = {
 	#Focus for Full control over the Philippines
 	focus = {
 		id = USADNC_full_control_over_the_philippines
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_crosshair_philippines
 		x = 37
 		y = 4
 		cost = 10
@@ -614,7 +609,7 @@ focus_tree = {
 	#Focus for Start the Americanization of the Philippines
 	focus = {
 		id = USADNC_start_the_americanization_of_the_philippines
-		icon = GFX_align_to_philippines
+		icon = GFX_focus_generic_befriend_philippines
 		x = 36
 		y = 5
 		cost = 10
@@ -651,7 +646,7 @@ focus_tree = {
 	#Focus for The Sequoyah Constitutional Convention
 	focus = {
 		id = USADNC_the_sequoyah_constitutional_convention
-		icon = GFX_goal_ISR_rome_and_jerusalem
+		icon = GFX_goal_constitutional_guarantees
 		x = 17
 		y = 3
 		cost = 10
@@ -743,7 +738,7 @@ focus_tree = {
 	#Focus for Hands off treatment of the Philippines
 	focus = {
 		id = USADNC_hands_off_treatment_of_the_philippines
-		icon = GFX_goal_continuous_boost_freedom
+		icon = GFX_focus_PHI_treaty_of_manila
 		x = 27
 		y = 8
 		cost = 10
@@ -1027,7 +1022,7 @@ focus_tree = {
 	#Focus for Free Trade Agreement with mexico
 	focus = {
 		id = USADNC_free_trade_agreement_with_mexico
-		icon = GFX_focus_mex_caudillo_private_armies
+		icon = GFX_goal_improve_trade_relations_mexico_dnc
 		x = 13
 		y = 5
 		cost = 10
@@ -1075,7 +1070,7 @@ focus_tree = {
 
 	focus = {
 		id = USADNC_sue_standard_oil
-		icon = GFX_ROM_develop_ploesti_oil_fields
+		icon = GFX_focus_AUS_lawmaking_leniency
 		x = 18
 		y = 17
 		cost = 10
@@ -1276,7 +1271,7 @@ focus_tree = {
 	#Focus for Make peace with the Philippine Republic
 	focus = {
 		id = USADNC_make_peace_with_the_philippine_republic
-		icon = small_arms2
+		icon = GFX_focus_generic_befriend_philippines
 		x = 29
 		y = 3
 		cost = 4
@@ -1316,7 +1311,7 @@ focus_tree = {
 	#Focus for The Philippine–American War
 	focus = {
 		id = USADNC_the_philippineamerican_war
-		icon = attack_philippines2
+		icon = GFX_focus_PHI_reconquista
 		x = 29
 		y = 2
 		cost = 4
@@ -1343,7 +1338,7 @@ focus_tree = {
 	#Focus for Excert our influence over the Philippines
 	focus = {
 		id = USADNC_excert_our_influence_over_the_philippines
-		icon = american_africa_eagle
+		icon = GFX_goal_ron_generic_philippines
 		x = 32
 		y = 10
 		cost = 10
@@ -1363,7 +1358,7 @@ focus_tree = {
 	#Focus for Put William Howard Taft in charge of the governance of the Philippines
 	focus = {
 		id = USADNC_put_william_howard_taft_in_charge_of_the_governance_of_the_philippines
-		icon = Philipines
+		icon = GFX_goal_USA_william_howard_taft
 		x = 29
 		y = 7
 		cost = 10
@@ -1386,7 +1381,7 @@ focus_tree = {
 			PHI = {
 				create_country_leader = {
 					name = "William Howard Taft"
-					picture = "WW1/Portrait_USA_William_H_Taft.dds"
+					picture = "gfx/leaders/USA/WW1/Portrait_USA_William_H_Taft.dds"
 					expire = "2060.1.1"
 					ideology = conservatism
 				}
@@ -1397,7 +1392,7 @@ focus_tree = {
 	#Focus for Free trade with the united kingdom
 	focus = {
 		id = USADNC_free_trade_with_the_united_kingdom
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_goal_improve_trade_relations_united_kingdom
 		x = 9
 		y = 5
 		cost = 10
@@ -1422,7 +1417,7 @@ focus_tree = {
 	#Focus for Free trade with germany
 	focus = {
 		id = USADNC_free_trade_with_germany
-		icon = GFX_focus_CZE_german_puppet
+		icon = GFX_goal_improve_trade_relations_german_empire
 		x = 11
 		y = 5
 		cost = 10
@@ -1468,7 +1463,7 @@ focus_tree = {
 	#Focus for Free trade agreement with the Philippines
 	focus = {
 		id = USADNC_free_trade_agreement_with_the_philippines
-		icon = GFX_align_to_philippines
+		icon = GFX_focus_PHI_bell_trade_act
 		x = 33
 		y = 4
 		cost = 10
@@ -1604,7 +1599,7 @@ focus_tree = {
 	#Focus for Apologize for war-crimes
 	focus = {
 		id = USADNC_apologize_for_warcrimes
-		icon = GFX_align_to_philippines
+		icon = GFX_focus_generic_befriend_philippines
 		x = 26
 		y = 9
 		cost = 10
@@ -1625,7 +1620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_president_mckinley
-		icon = GFX_goal_PAL_majlis_elections
+		icon = GFX_focus_generic_vote
 		x = 55
 		y = 1
 
@@ -1672,711 +1667,710 @@ focus_tree = {
 
 	focus = {
 		id = USA_the_civil_rights_issue
-		icon = GFX_focus_bo_blackshirts
+		icon = GFX_goal_generic_oppression
 		x = 52
 		y = 3
 
-	cost = 10
-	prerequisite = { focus = USA_mckinleys_inauguration }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	country_event = { id = USADNC.5 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a388democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a382democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a390democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a843democratic_support = 10 }
-	}
-	}
-
-	focus = {
-	id = USA_token_appointment
-	icon = GFX_goal_generic_seperation
-			x = 52
-			y = 4
-
-	cost = 10
-	prerequisite = { focus = USA_the_civil_rights_issue }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	add_political_power = 15
-	}
-	}
-
-	focus = {
-	id = USA_focus_on_sectionalism
-	icon = GFX_goal_Generic_Black_Market 
-			x = 51
-			y = 5
-
-	cost = 10
-	prerequisite = { focus = USA_token_appointment }
-	mutually_exclusive = { focus = USA_focus_on_civil_rights }
-
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	add_political_power = 15
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a392democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a383democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a883democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a376democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a379democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a380democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a838democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a374democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a388socialist_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a385socialist_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a382socialist_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a360socialist_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a373socialist_support = 10 }
-	swap_ideas = {
-		add_idea = USA_scars_of_1865_amplified
-		remove_idea = USA_scars_of_1865
-	}
-	}
-	}
-
-	focus = {
-	id = USA_promote_american_national_identity
-	icon = national_greatness
-			x = 51
-			y = 6
-
-	cost = 10
-	prerequisite = { focus = USA_focus_on_sectionalism }
-	mutually_exclusive = { focus = USA_enforce_the_14th_amendment }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	swap_ideas = {
-		add_idea =  USA_american_imperialism_improved
-		remove_idea = USA_american_imperialism
-	}
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a365democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a393democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a837democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a261democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a838democratic_support = 10 }
-
-	}
-	}
-
-	focus = {
-	id = USA_suppress_regional_sentiments
-	icon = GFX_goal_MON_separate_army_and_politics
-			x = 51
-			y = 7
-
-	cost = 10
-	prerequisite = { focus = USA_promote_american_national_identity }
-	mutually_exclusive = { focus = USA_attack_jim_crow_laws }
-
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a363democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a364democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a365democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a366democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a367democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a370democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a845democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a371democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a372democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a858democratic_support = 10 }
-	363 = { add_core_of = CSA }
-	364 = { add_core_of = CSA }
-	365 = { add_core_of = CSA }
-	366 = { add_core_of = CSA }
-	367 = { add_core_of = CSA }
-	370 = { add_core_of = CSA }
-	845 = { add_core_of = CSA }
-	371 = { add_core_of = CSA }
-	372 = { add_core_of = CSA }
-	858 = { add_core_of = CSA }
-	custom_effect_tooltip = "If the CSA does not have cores it will be cored."
-	}
-	}
-
-	focus = {
-	id = USA_focus_on_civil_rights
-	icon = national_unity_red
-			x = 53
-			y = 5
-
-	cost = 10
-	prerequisite = { focus = USA_token_appointment }
-	mutually_exclusive = { focus = USA_focus_on_sectionalism }
-
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	add_stability = -0.03
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a392republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a383republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a883republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a376republican_support = 10 }	
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a395republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a358republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a381republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a396republican_support = 10 }
-	swap_ideas = {
-		add_idea = USA_scars_of_1865_lower
-		remove_idea = USA_scars_of_1865
-	}
-	}
-	}
-
-	focus = {
-	id = USA_enforce_the_14th_amendment
-	icon = GFX_generic_army_modernizations
-			x = 53
-			y = 6
-
-	cost = 10
-	prerequisite = { focus = USA_focus_on_civil_rights }
-	mutually_exclusive = { focus = USA_promote_american_national_identity }
-
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-		every_state = {
-			limit = {
-				OR = {
-				is_core_of = TEX
-				is_core_of = CAL
-				}
+		cost = 10
+		prerequisite = { focus = USA_mckinleys_inauguration }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
 			}
-			remove_core_of = TEX
-			remove_core_of = CAL
 		}
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a365democratic_support = -4 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a393democratic_support = -4 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a837democratic_support = -4 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a261democratic_support = -4 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a838democratic_support = -4 }
-	}
+
+		completion_reward = {
+			country_event = { id = USADNC.5 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a388democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a382democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a390democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a843democratic_support = 10 }
+		}
 	}
 
 	focus = {
-	id = USA_attack_jim_crow_laws
-	icon = dangerous_laws
-			x = 53
-			y = 7
+		id = USA_token_appointment
+		icon = GFX_goal_generic_seperation
+		x = 52
+		y = 4
 
-	cost = 10
-	prerequisite = { focus = USA_enforce_the_14th_amendment }
-	mutually_exclusive = { focus = USA_suppress_regional_sentiments }
+		cost = 10
+		prerequisite = { focus = USA_the_civil_rights_issue }
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
 
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	swap_ideas = {
-		add_idea =  USA_jim_crow_laws0
-		remove_idea = USA_jim_crow_laws
-	}
-	add_political_power = 50
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a390democratic_support = -4 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a843democratic_support = -4 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a377democratic_support = -4 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a367democratic_support = -4 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a363democratic_support = -4 }
-	}
+		completion_reward = {
+			add_political_power = 15
+		}
 	}
 
 	focus = {
-	id = USA_outlaw_the_kkk
-	icon = GFX_goal_generic_ban_aristocrats
-			x = 52
-			y = 8
+		id = USA_focus_on_sectionalism
+		icon = GFX_goal_generic_black_market 
+		x = 51
+		y = 5
 
-	cost = 10
-	prerequisite = { focus = USA_attack_jim_crow_laws }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
+		cost = 10
+		prerequisite = { focus = USA_token_appointment }
+		mutually_exclusive = { focus = USA_focus_on_civil_rights }
 
-	completion_reward = {
-	swap_ideas = {
-		add_idea =  USA_jim_crow_laws00
-		remove_idea = USA_jim_crow_laws0
-	}
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a364democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a387democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a370democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a394democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a375democratic_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a390socialist_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a843socialist_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a377socialist_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a367socialist_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a363socialist_support = 10 }
-	}
-	}
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
 
-	focus = {
-	id = USA_trouble_in_cuba
-	icon = GFX_goal_staff_the_cabinet_with_civilians
-			x = 55
-			y = 3
-	bypass = {
-		owns_state = 315
-	}
-	cost = 10
-	prerequisite = { focus = USA_mckinleys_inauguration }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	custom_effect_tooltip = usaalreadydone
-	}
+		completion_reward = {
+			add_political_power = 15
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a392democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a383democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a883democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a376democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a379democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a380democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a838democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a374democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a388socialist_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a385socialist_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a382socialist_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a360socialist_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a373socialist_support = 10 }
+			swap_ideas = {
+				add_idea = USA_scars_of_1865_amplified
+				remove_idea = USA_scars_of_1865
+			}
+		}
 	}
 
 	focus = {
-	id = USA_aid_cuban_rebels
-	icon = GFX_goal_cuba_presidential_guard
-			x = 55
-			y = 4
-	bypass = {
-		owns_state = 315
-	}
-	cost = 10
-	prerequisite = { focus = USA_trouble_in_cuba }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
+		id = USA_promote_american_national_identity
+		icon = GFX_goal_national_greatness
+		x = 51
+		y = 6
 
-	completion_reward = {
-	custom_effect_tooltip = usaalreadydone
+		cost = 10
+		prerequisite = { focus = USA_focus_on_sectionalism }
+		mutually_exclusive = { focus = USA_enforce_the_14th_amendment }
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
 
-	}
-	}
+		completion_reward = {
+			swap_ideas = {
+				add_idea =  USA_american_imperialism_improved
+				remove_idea = USA_american_imperialism
+			}
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a365democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a393democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a837democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a261democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a838democratic_support = 10 }
 
-	focus = {
-	id = USA_anti_imperialist_propaganda
-	icon = GFX_goal_cuba_issuing_amnesties
-			x = 55
-			y = 5
-	bypass = {
-		owns_state = 315
-	}
-	cost = 10
-	prerequisite = { focus = USA_aid_cuban_rebels }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	custom_effect_tooltip = usaalreadydone
-
-	}
+		}
 	}
 
 	focus = {
-	id = USA_liberation_of_cuba
-	icon = GFX_goal_cuba_rewrite_the_constitution
-			x = 55
-			y = 6
-	bypass = {
-		owns_state = 315
-	}
-	cost = 10
-	prerequisite = { focus = USA_anti_imperialist_propaganda }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
+		id = USA_suppress_regional_sentiments
+		icon = GFX_goal_MON_separate_army_and_politics
+		x = 51
+		y = 7
 
-	completion_reward = {
-	custom_effect_tooltip = usaalreadydone
+		cost = 10
+		prerequisite = { focus = USA_promote_american_national_identity }
+		mutually_exclusive = { focus = USA_attack_jim_crow_laws }
 
-	}
-	}
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
 
-	focus = {
-	id = USA_strengthen_presence_in_the_philippines
-	icon = GFX_goal_generic_destroy_government
-			x = 55
-			y = 7
-
-	cost = 10
-	prerequisite = { focus = USA_liberation_of_cuba }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	PHI = {
-		is_puppet_of = USA
-	}
-	}
-
-	completion_reward = {
-	PHI ={
-		add_manpower = 100000
-	}
-	USA = {
-	add_manpower = -100000	
-	}
-	}
-	}
-
-
-
-	focus = {
-	id = USA_republican_economics
-	icon = GFX_goal_cuba_diminish_american_influence
-			x = 58
-			y = 3
-
-	cost = 10
-	prerequisite = { focus = USA_mckinleys_inauguration }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	add_ideas = civ_consommation 
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a359republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a380republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a374republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a372republican_support = 10 }
-	custom_effect_tooltip = "Party support will be changed in some states"
-	add_to_variable = { a839republican_support = 10 }
-	}
+		completion_reward = {
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a363democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a364democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a365democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a366democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a367democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a370democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a845democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a371democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a372democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a858democratic_support = 10 }
+			363 = { add_core_of = CSA }
+			364 = { add_core_of = CSA }
+			365 = { add_core_of = CSA }
+			366 = { add_core_of = CSA }
+			367 = { add_core_of = CSA }
+			370 = { add_core_of = CSA }
+			845 = { add_core_of = CSA }
+			371 = { add_core_of = CSA }
+			372 = { add_core_of = CSA }
+			858 = { add_core_of = CSA }
+			custom_effect_tooltip = "If the CSA does not have cores it will be cored."
+		}
 	}
 
 	focus = {
-	id = USA_the_dingley_act
-	icon = GFX_goal_generic_balanced_budget
-			x = 58
-			y = 4
+		id = USA_focus_on_civil_rights
+		icon = GFX_goal_generic_national_unity
+		x = 53
+		y = 5
 
-	cost = 10
-	prerequisite = { focus = USA_republican_economics }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
+		cost = 10
+		prerequisite = { focus = USA_token_appointment }
+		mutually_exclusive = { focus = USA_focus_on_sectionalism }
 
-	completion_reward = {
-	add_ideas = balanced_budget
-	}
-	}
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
 
-	focus = {
-	id = USA_continue_tariff_policy
-	icon = GFX_goal_generic_national_arsenal
-			x = 58
-			y = 5
-
-	cost = 10
-	prerequisite = { focus = USA_the_dingley_act }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	add_ideas =GER_tariffs_1
-	}
-	}
-
-	focus = {
-	id = USA_american_industrial_might
-	icon = improve_industry
-			x = 58
-			y = 6
-
-	cost = 10
-	prerequisite = { focus = USA_continue_tariff_policy }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	add_ideas = industry_liasons_spirit
-	}
+		completion_reward = {
+			add_stability = -0.03
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a392republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a383republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a883republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a376republican_support = 10 }	
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a395republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a358republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a381republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a396republican_support = 10 }
+			swap_ideas = {
+				add_idea = USA_scars_of_1865_lower
+				remove_idea = USA_scars_of_1865
+			}
+		}
 	}
 
 	focus = {
-	id = USA_center_of_global_manufacturing
-	icon = GFX_goal_generic_light_industry
-			x = 57
-			y = 7
+		id = USA_enforce_the_14th_amendment
+		icon = GFX_goal_dangerous_laws
+		x = 53
+		y = 6
 
-	cost = 10
-	prerequisite = { focus = USA_american_industrial_might }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
+		cost = 10
+		prerequisite = { focus = USA_focus_on_civil_rights }
+		mutually_exclusive = { focus = USA_promote_american_national_identity }
+
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = TEX
+					is_core_of = CAL
+					}
+				}
+				remove_core_of = TEX
+				remove_core_of = CAL
+			}
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a365democratic_support = -4 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a393democratic_support = -4 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a837democratic_support = -4 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a261democratic_support = -4 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a838democratic_support = -4 }
+		}
 	}
 
-	completion_reward = {
-	every_country = {
-		limit = {
+	focus = {
+		id = USA_attack_jim_crow_laws
+		icon = GFX_goal_USA_attack_segregation
+		x = 53
+		y = 7
+
+		cost = 10
+		prerequisite = { focus = USA_enforce_the_14th_amendment }
+		mutually_exclusive = { focus = USA_suppress_regional_sentiments }
+
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea =  USA_jim_crow_laws0
+				remove_idea = USA_jim_crow_laws
+			}
+			add_political_power = 50
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a390democratic_support = -4 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a843democratic_support = -4 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a377democratic_support = -4 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a367democratic_support = -4 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a363democratic_support = -4 }
+		}
+	}
+
+	focus = {
+		id = USA_outlaw_the_kkk
+		icon = GFX_goal_USA_ban_the_kkk
+		x = 52
+		y = 8
+
+		cost = 10
+		prerequisite = { 
+			focus = USA_suppress_regional_sentiments
+			focus = USA_attack_jim_crow_laws 
+		}
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea =  USA_jim_crow_laws00
+				remove_idea = USA_jim_crow_laws0
+			}
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a364democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a387democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a370democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a394democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a375democratic_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a390socialist_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a843socialist_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a377socialist_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a367socialist_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a363socialist_support = 10 }
+		}
+	}
+
+	focus = {
+		id = USA_trouble_in_cuba
+		icon = GFX_goal_staff_the_cabinet_with_civilians
+		x = 55
+		y = 3
+		bypass = {
+			owns_state = 315
+		}
+		cost = 10
+		prerequisite = { focus = USA_mckinleys_inauguration }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = usaalreadydone
+		}
+	}
+
+	focus = {
+		id = USA_aid_cuban_rebels
+		icon = GFX_goal_cuba_presidential_guard
+		x = 55
+		y = 4
+		bypass = {
+			owns_state = 315
+		}
+		cost = 10
+		prerequisite = { focus = USA_trouble_in_cuba }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = usaalreadydone
+		}
+	}
+
+	focus = {
+		id = USA_anti_imperialist_propaganda
+		icon = GFX_goal_cuba_issuing_amnesties
+		x = 55
+		y = 5
+		bypass = {
+			owns_state = 315
+		}
+		cost = 10
+		prerequisite = { focus = USA_aid_cuban_rebels }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = usaalreadydone
+		}
+	}
+
+	focus = {
+		id = USA_liberation_of_cuba
+		icon = GFX_goal_cuba_rewrite_the_constitution
+		x = 55
+		y = 6
+		bypass = {
+			owns_state = 315
+		}
+		cost = 10
+		prerequisite = { focus = USA_anti_imperialist_propaganda }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = usaalreadydone
+
+		}
+	}
+
+	focus = {
+		id = USA_strengthen_presence_in_the_philippines
+		icon = GFX_goal_generic_destroy_government
+		x = 55
+		y = 7
+
+		cost = 10
+		prerequisite = { focus = USA_liberation_of_cuba }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+			PHI = {
+				is_puppet_of = USA
+			}
+		}
+
+		completion_reward = {
+			PHI ={
+				add_manpower = 100000
+			}
+			USA = {
+				add_manpower = -100000	
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = USA_republican_economics
+		icon = GFX_goal_cuba_diminish_american_influence
+		x = 58
+		y = 3
+
+		cost = 10
+		prerequisite = { focus = USA_mckinleys_inauguration }
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			add_ideas = civ_consommation 
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a359republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a380republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a374republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a372republican_support = 10 }
+			custom_effect_tooltip = "Party support will be changed in some states"
+			add_to_variable = { a839republican_support = 10 }
+		}
+	}
+
+	focus = {
+		id = USA_the_dingley_act
+		icon = GFX_goal_generic_balanced_budget
+		x = 58
+		y = 4
+
+		cost = 10
+		prerequisite = { focus = USA_republican_economics }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			add_ideas = balanced_budget
+		}
+	}
+
+	focus = {
+		id = USA_continue_tariff_policy
+		icon = GFX_goal_generic_political_pressure
+		x = 58
+		y = 5
+
+		cost = 10
+		prerequisite = { focus = USA_the_dingley_act }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			add_ideas =GER_tariffs_1
+		}
+	}
+
+	focus = {
+		id = USA_american_industrial_might
+		icon = GFX_focus_generic_american_investments
+		x = 58
+		y = 6
+
+		cost = 10
+		prerequisite = { focus = USA_continue_tariff_policy }
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			add_ideas = industry_liasons_spirit
+		}
+	}
+
+	focus = {
+		id = USA_center_of_global_manufacturing
+		icon = GFX_goal_generic_light_industry
+		x = 57
+		y = 7
+
+		cost = 10
+		prerequisite = { focus = USA_american_industrial_might }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
 					capital_scope = { is_on_continent = south_america }
+				}
+				add_ideas = GER_economic_liberalism_idea
+			}
 		}
-		add_ideas = GER_economic_liberalism_idea
-	}
-	}
 	}
 
 	focus = {
-	id = USA_made_in_america
-	icon = GFX_goal_heavy_industry_factory
-			x = 59
-			y = 7
+		id = USA_made_in_america
+		icon = GFX_goal_heavy_industry_factory
+		x = 59
+		y = 7
 
-	cost = 10
-	prerequisite = { focus = USA_american_industrial_might }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
+		cost = 10
+		prerequisite = { focus = USA_american_industrial_might }
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
 
-	completion_reward = {
-	add_ideas = foreign_isolationism
-	add_ideas = foreign_neutral
-	}
-	}
-
-	focus = {
-	id = USA_on_the_issue_of_currency
-	icon = GFX_goal_industrial_bill
-			x = 61
-			y = 4
-
-	cost = 10
-	prerequisite = { focus = USA_republican_economics }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	add_political_power = 120
-	}
+		completion_reward = {
+			add_ideas = foreign_isolationism
+			add_ideas = foreign_neutral
+		}
 	}
 
 	focus = {
-	id = USA_continue_with_gold
-	icon = GFX_goal_generic_economics_reform_gold
-			x = 60
-			y = 5
+		id = USA_on_the_issue_of_currency
+		icon = GFX_goal_industrial_bill
+		x = 61
+		y = 4
 
-	cost = 10
-	prerequisite = { focus = USA_on_the_issue_of_currency }
-	mutually_exclusive = { focus = USA_advocate_bimetallism }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
+		cost = 10
+		prerequisite = { focus = USA_republican_economics }
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
 
-	completion_reward = {
-	add_ideas = golden_age_of_america
-	}
-	}
-
-	focus = {
-	id = USA_support_gold_standard_act
-	icon = GFX_goal_generic_positive_trade_relations_gold
-			x = 60
-			y = 6
-
-	cost = 10
-	prerequisite = { focus = USA_continue_with_gold }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
-
-	completion_reward = {
-	add_timed_idea = { idea = Productivity_Increase days = 210 }
-	}
+		completion_reward = {
+			add_political_power = 120
+		}
 	}
 
 	focus = {
-	id = USA_advocate_bimetallism
-	icon = GFX_goal_polish_wartime_industry
-			x = 62
-			y = 5
+		id = USA_continue_with_gold
+		icon = GFX_goal_generic_economics_reform_gold
+		x = 60
+		y = 5
 
-	cost = 10
-	prerequisite = { focus = USA_on_the_issue_of_currency }
-	mutually_exclusive = { focus = USA_continue_with_gold }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}
+		cost = 10
+		prerequisite = { focus = USA_on_the_issue_of_currency }
+		mutually_exclusive = { focus = USA_advocate_bimetallism }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
 
-	completion_reward = {
-	add_ideas = financing_literacy_campaign
-
-	}
+		completion_reward = {
+			add_ideas = golden_age_of_america
+		}
 	}
 
 	focus = {
-	id = USA_reapproachment_with_silver
-	icon = GFX_PER_centralize_industry
-			x = 62
-			y = 6
+		id = USA_support_gold_standard_act
+		icon = GFX_goal_generic_positive_trade_relations_gold
+		x = 60
+		y = 6
 
-	cost = 10
-	prerequisite = { focus = USA_advocate_bimetallism }
-	available = {
-	has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
+		cost = 10
+		prerequisite = { focus = USA_continue_with_gold }
+		available = {
+			has_country_leader = {
+			character = USA_william_mckinley
+			ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = { idea = Productivity_Increase days = 210 }
+		}
 	}
 
-	completion_reward = {
-	add_country_leader_trait = the_silver_president
+	focus = {
+		id = USA_advocate_bimetallism
+		icon = GFX_goal_LPD_strike_balance
+		x = 62
+		y = 5
+
+		cost = 10
+		prerequisite = { focus = USA_on_the_issue_of_currency }
+		mutually_exclusive = { focus = USA_continue_with_gold }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			add_ideas = financing_literacy_campaign
+		}
 	}
+
+	focus = {
+		id = USA_reapproachment_with_silver
+		icon = GFX_focus_CHL_silverworking
+		x = 62
+		y = 6
+
+		cost = 10
+		prerequisite = { focus = USA_advocate_bimetallism }
+		available = {
+			has_country_leader = {
+				character = USA_william_mckinley
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			add_country_leader_trait = the_silver_president
+		}
 	}
 
 
@@ -2384,7 +2378,7 @@ focus_tree = {
 	#Focus for Create The Panama Canal Commission
 	focus = {
 		id = USADNC_create_the_panama_canal_commission
-		icon = GFX_focus_mex_redeem_aztlan
+		icon = GFX_USA_panama_control
 		x = 20
 		y = 6
 		cost = 10
@@ -2398,7 +2392,7 @@ focus_tree = {
 				days = 1
 				id = eoanbm.1
 			}
-	USA_medium_neutrality_loss = yes
+			USA_medium_neutrality_loss = yes
 
 		}
 	}
@@ -2420,15 +2414,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.05
-				USA_huge_CP_gain = yes
+			USA_huge_CP_gain = yes
 			
 		}
 	}
 
 	#Focus for Free trade with Austria  Hungry
 	focus = {
-		id = USADNC_free_trade_with_austria__hungry
-		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		id = USADNC_free_trade_with_austria_hungary
+		icon = GFX_goal_improve_trade_relations_austria_hungary
 		x = 11
 		y = 6
 		cost = 10
@@ -2451,7 +2445,7 @@ focus_tree = {
 	#Focus for Free trade with France
 	focus = {
 		id = USADNC_free_trade_with_france
-		icon = GFX_align_to_france
+		icon = GFX_goal_improve_trade_relations_france
 		x = 9
 		y = 6
 		cost = 10
@@ -2474,7 +2468,7 @@ focus_tree = {
 	#Focus for Teddy Roosevelt takes office
 	focus = {
 		id = USADNC_teddy_roosevelt_takes_office
-		icon = american_military_agreement
+		icon = GFX_goal_USA_teddy_roosevelt_administration
 		x = 24
 		y = 11
 		cost = 10
@@ -2488,23 +2482,23 @@ focus_tree = {
 			add_political_power = 19
 			create_country_leader = {
 				name = "Theodore Roosevelt"
-				picture = "gfx/leaders/USA/WW1/USA_Theodore_RooseveltProgressivism.dds"
+				picture = "gfx/leaders/USA/WW1/USA_Theodore_Roosevelt.dds"
 				ideology = progressivism
 				traits = {
 					great_survivor
 					colonial_agitator
 				}
 			}		
-	USA_house_large_support = yes
-	USA_senate_large_opposition = yes
-	USA_senate_large_opposition = yes		
+			USA_house_large_support = yes
+			USA_senate_large_opposition = yes
+			USA_senate_large_opposition = yes		
 		}
 	}
 
 	#Focus for The Roosevelt administration
 	focus = {
 		id = USADNC_the_roosevelt_administration
-		icon = GFX_focus_spa_the_spanish_miracle
+		icon = GFX_USA_Square_deal
 		x = 24
 		y = 12
 		cost = 7
@@ -2583,12 +2577,11 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-							custom_trigger_tooltip = {
-					tooltip = "You need 30 senators and 80 representatives who approve of your government to pass this act"
-
-			check_variable = { senators_support > 30 }
-			check_variable = { representatives_support > 80 }
-							}		
+			custom_trigger_tooltip = {
+				tooltip = "You need 30 senators and 80 representatives who approve of your government to pass this act"
+				check_variable = { senators_support > 30 }
+				check_variable = { representatives_support > 80 }
+			}		
 		}
 		completion_reward = {
 			add_stability = 0.05
@@ -2608,18 +2601,16 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-							custom_trigger_tooltip = {
-					tooltip = "You need 40 senators and 180 representatives who approve of your government to pass this act"
-
-			check_variable = { senators_support > 40 }
-			check_variable = { representatives_support > 180 }
-							}
+			custom_trigger_tooltip = {
+				tooltip = "You need 40 senators and 180 representatives who approve of your government to pass this act"
+				check_variable = { senators_support > 40 }
+				check_variable = { representatives_support > 180 }
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = "This will increase black anger"
-				add_to_variable = { blackanger = 15 }
-				clamp_variable = { var = blackanger max = 100 }	
-
+			add_to_variable = { blackanger = 15 }
+			clamp_variable = { var = blackanger max = 100 }
 			COL = {
 				country_event = {
 					days = 1
@@ -2662,10 +2653,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-				custom_trigger_tooltip = {
-					tooltip = focus_republican_majority_house_tt
-					check_variable = { HOUSE_party2_seats > HOUSE_party3_seats }
-							}	
+			custom_trigger_tooltip = {
+				tooltip = focus_republican_majority_house_tt
+				check_variable = { HOUSE_party2_seats > HOUSE_party3_seats }
+			}	
 		}
 		completion_reward = {
 			add_resource = {
@@ -2748,7 +2739,7 @@ focus_tree = {
 	#Focus for Free trade agreement with Canada
 	focus = {
 		id = USADNC_free_trade_agreement_with_canada
-		icon = GFX_align_to_canada
+		icon = GFX_goal_improve_trade_relations_canada_dnc
 		x = 15
 		y = 5
 		cost = 10
@@ -2796,7 +2787,7 @@ focus_tree = {
 	#Focus for Oklahoma is admitted to the union
 	focus = {
 		id = USADNC_oklahoma_is_admitted_to_the_union
-		icon = GFX_generic_focus_treaty_sign
+		icon = GFX_goal_USA_oklahoma_into_the_usa
 		x = 17
 		y = 5
 		cost = 10
@@ -2983,7 +2974,7 @@ focus_tree = {
 	#Focus for Dissolve monopolies
 	focus = {
 		id = USADNC_dissolve_monopolies
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_focus_generic_anti_monopoly
 		x = 57
 		y = 6
 		cost = 10
@@ -3102,7 +3093,7 @@ focus_tree = {
 	#Focus for End american neutrality
 	focus = {
 		id = USADNC_end_american_neutrality
-		icon = neutrality
+		icon = GFX_goal_USA_over_there
 		x = 46
 		y = 12
 		cost = 10
@@ -3122,7 +3113,7 @@ focus_tree = {
 	#Focus for Fund the kkk
 	focus = {
 		id = USADNC_fund_the_kkk
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_goal_COR_deal_with_race_baitors
 		x = 47
 		y = 6
 		cost = 10
@@ -3143,7 +3134,7 @@ focus_tree = {
 	#Focus for Revive the golden circle
 	focus = {
 		id = USADNC_revive_the_golden_circle
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_BRA_north_and_south_america
 		x = 47
 		y = 14
 		cost = 10
@@ -3167,8 +3158,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = MEX
 			}
@@ -3183,7 +3174,10 @@ focus_tree = {
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = USADNC_end_american_neutrality }
+		prerequisite = { 
+			focus = USADNC_end_american_neutrality 
+			focus = USADNC_end_free_elections
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -3353,7 +3347,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_politics = {
-
 				ruling_party = fascism
 				elections_allowed = yes
 			}
@@ -3365,7 +3358,7 @@ focus_tree = {
 	#Focus for A alternative victory in the elections
 	focus = {
 		id = USADNC_a_alternative_victory_in_the_elections
-		icon = GFX_focus_usa_recruit_the_free_corps
+		icon = GFX_USA_democracy_savior
 		x = 56
 		y = 1
 		cost = 7
@@ -3375,18 +3368,19 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-	NOT = {
-		has_country_leader = {
-	character = USA_william_mckinley
-	ruling_only = yes
-	}
-	}	}
-	allow_branch = { 
-	has_country_leader = {
-	name = "William Jennings Bryan"
-	ruling_only = yes
-	}
-	}
+			NOT = {
+				has_country_leader = {
+					character = USA_william_mckinley
+					ruling_only = yes
+				}
+			}	
+		}
+		allow_branch = { 
+			has_country_leader = {
+				name = "William Jennings Bryan"
+				ruling_only = yes
+			}
+		}
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -3419,7 +3413,7 @@ focus_tree = {
 	#Focus for State-Enforced Religion
 	focus = {
 		id = USADNC_stateenforced_religion
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_por_concordat
 		x = 46
 		y = 11
 		cost = 10
@@ -3438,7 +3432,7 @@ focus_tree = {
 	#Focus for Put the KKK in the government
 	focus = {
 		id = USADNC_put_the_kkk_in_the_government
-		icon = GFX_focus_por_concordat
+		icon = GFX_goal_COR_klan_education
 		x = 47
 		y = 7
 		cost = 13
@@ -3458,7 +3452,7 @@ focus_tree = {
 	#Focus for Fill up the senate with klan members
 	focus = {
 		id = USADNC_fill_up_the_senate_with_klan_members
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_COR_knights_of_the_red
 		x = 46
 		y = 8
 		cost = 13
@@ -3479,8 +3473,8 @@ focus_tree = {
 	#Focus for Fill up the house with kkk members
 	focus = {
 		id = USADNC_fill_up_the_house_with_kkk_members
-		icon = GFX_focus_generic_self_management
-		x = 49
+		icon = GFX_goal_COR_take_the_fight_abroad
+		x = 48
 		y = 8
 		cost = 13
 		available_if_capitulated = yes
@@ -3500,7 +3494,7 @@ focus_tree = {
 	#Focus for Encourage the Personality Cult
 	focus = {
 		id = USADNC_encourage_the_personality_cult
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_goal_COR_crossburn
 		x = 47
 		y = 10
 		cost = 10
@@ -3602,18 +3596,24 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			MEX = { add_popularity = {
-				ideology = communism
-				popularity = 0.04
-			} }
-			BRA = { add_popularity = {
-				ideology = communism
-				popularity = 0.04
-			} }
-			CAN = { add_popularity = {
-				ideology = communism
-				popularity = 0.04
-			} }
+			MEX = { 
+				add_popularity = {
+					ideology = communism
+					popularity = 0.04
+				} 
+			}
+			BRA = { 
+				add_popularity = {
+					ideology = communism
+					popularity = 0.04
+				} 
+			}
+			CAN = { 
+				add_popularity = {
+					ideology = communism
+					popularity = 0.04
+				}
+			}
 		}
 	}
 
@@ -3630,8 +3630,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = puppet_wargoal_focus
 				target = MEX
 			}
@@ -3641,7 +3641,7 @@ focus_tree = {
 	#Focus for Secure our capital
 	focus = {
 		id = USADNC_secure_our_capital
-		icon = ENG_peacetime_development
+		icon = GFX_USA_congress_released
 		x = 60
 		y = 10
 		cost = 7
@@ -3656,7 +3656,8 @@ focus_tree = {
 					type = bunker
 					province = 3878
 					level = 2
-					instant_build = yes }
+					instant_build = yes 
+				}
 			}
 		}
 	}
@@ -3718,10 +3719,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			GER = { country_event = {
-				days = 1
-				id = generic.2
-			}
+			GER = { 
+				country_event = {
+					days = 1
+					id = generic.2
+				}
 			}
 		}
 	}
@@ -3729,7 +3731,7 @@ focus_tree = {
 	#Focus for Empower the president
 	focus = {
 		id = USADNC_empower_the_president
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_goal_COR_state_supreme_orderer
 		x = 51
 		y = 6
 		cost = 15
@@ -3774,7 +3776,7 @@ focus_tree = {
 	#Focus for Revoke the 15th amendment
 	focus = {
 		id = USADNC_revoke_the_15th_amendment
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_COR_repeal_15_modify_14
 		x = 51
 		y = 8
 		cost = 15
@@ -3795,7 +3797,7 @@ focus_tree = {
 	#Focus for Add Gorge washington to the dollar bill
 	focus = {
 		id = USADNC_add_gorge_washington_to_the_dollar_bill
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_goal_USA_house_of_washington
 		x = 52
 		y = 9
 		cost = 10
@@ -3813,7 +3815,7 @@ focus_tree = {
 	#Focus for Add the British monarch to the dollar bill
 	focus = {
 		id = USADNC_add_the_british_monarch_to_the_dollar_bill
-		icon = monarchy
+		icon = GFX_USA_lion_and_eagle
 		x = 50
 		y = 9
 		cost = 10
@@ -3834,7 +3836,7 @@ focus_tree = {
 	#Focus for A subject under the king
 	focus = {
 		id = USADNC_a_subject_under_the_king
-		icon = GFX_align_to_britain
+		icon = GFX_focus_generic_monarchy_2
 		x = 50
 		y = 10
 		cost = 15
@@ -3870,7 +3872,7 @@ focus_tree = {
 	#Focus for Support the empire
 	focus = {
 		id = USADNC_support_the_empire
-		icon = GFX_QIN_focus_modern_beiyang_army
+		icon = GFX_focus_JAP_ally_the_dragon_king
 		x = 41
 		y = 3
 		cost = 5
@@ -3892,7 +3894,7 @@ focus_tree = {
 	#Focus for Support the rebels
 	focus = {
 		id = USADNC_support_the_rebels
-		icon = GFX_focus_spr_crush_the_revolution
+		icon = GFX_focus_generic_china1
 		x = 45
 		y = 3
 		cost = 10
@@ -3905,11 +3907,10 @@ focus_tree = {
 		available = {
 			BOX = { exists = yes }
 			custom_trigger_tooltip = {
-					tooltip = "You need 70 senators and 200 representatives who approve of your government to pass this act"
-
-			check_variable = { senators_support > 70 }
-			check_variable = { representatives_support > 200 }
-							}
+				tooltip = "You need 70 senators and 200 representatives who approve of your government to pass this act"
+				check_variable = { senators_support > 70 }
+				check_variable = { representatives_support > 200 }
+			}
 		}
 		completion_reward = {
 			white_peace = BOX
@@ -3922,7 +3923,7 @@ focus_tree = {
 	#Focus for Send Equipment to the rebels
 	focus = {
 		id = USADNC_send_equipment_to_the_rebels
-		icon = china ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_CHI_chinese_republican_rebels
 		x = 46
 		y = 4
 		cost = 10
@@ -4162,7 +4163,7 @@ focus_tree = {
 				target = FRA
 				modifier = medium_increase
 			}
-	USA_medium_ENT_gain = yes		
+			USA_medium_ENT_gain = yes		
 
 		}
 	}
@@ -4182,11 +4183,12 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 100
 			hidden_effect = { D01 = { release = CAL }
-				CAL = { set_politics = {
-
-					ruling_party = communism
-					elections_allowed = no
-				} }
+				CAL = { 
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+				}
 				CAL = {
 					declare_war_on = {
 						target = D01
@@ -4200,7 +4202,7 @@ focus_tree = {
 	#Focus for Dawn of a new decade
 	focus = {
 		id = USADNC_dawn_of_a_new_decade
-		icon = GFX_focus_generic_self_management
+		icon = GFX_goal_generic_blue_democracy
 		x = 45
 		y = 0
 		cost = 5
@@ -4234,8 +4236,8 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_country_leader = {
-			character = USA_william_mckinley
-			ruling_only = yes
+				character = USA_william_mckinley
+				ruling_only = yes
 			}
 		}
 		completion_reward = {
@@ -4248,7 +4250,7 @@ focus_tree = {
 	#Focus for Free trade with japan
 	focus = {
 		id = USADNC_free_trade_with_japan
-		icon = GFX_align_to_japan
+		icon = GFX_goal_improve_trade_relations_japan
 		x = 7
 		y = 5
 		cost = 10
@@ -4271,7 +4273,7 @@ focus_tree = {
 	#Focus for Free trade with russia
 	focus = {
 		id = USADNC_free_trade_with_russia
-		icon = GFX_align_to_russia
+		icon = GFX_goal_improve_trade_relations_russia
 		x = 7
 		y = 6
 		cost = 10
@@ -4341,32 +4343,32 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = NIC
 			}
 
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = DOM
 			}
 
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = ELS
 			}
 
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = COS
 			}
 
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = GUA
 			}
@@ -4386,32 +4388,32 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = NIC
 			}
 
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = DOM
 			}
 
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = ELS
 			}
 
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = COS
 			}
 
-					create_wargoal = {			
-					expire = 250
+			create_wargoal = {			
+				expire = 250
 				type = annex_everything
 				target = CUB
 			}
@@ -4435,10 +4437,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = -2000
-			NIC = { start_civil_war = {
-				ideology = communism
-				size = 0.3
-			}
+			NIC = { 
+				start_civil_war = {
+					ideology = communism
+					size = 0.3
+				}
 			}
 
 			DOM = {
@@ -4505,7 +4508,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_gilded_age
-		icon = GFX_focus_bra_voice_of_brasil
+		icon = GFX_goal_generic_capitalism
 		x = 76
 		y = 1
 		allow_branch = {
@@ -4530,7 +4533,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_jeffersons_vision
-		icon = GFX_ROM_agrarianism 
+		icon = GFX_USA_jeffersonian_agrarianism 
 		x = 80
 		y = 1
 		cost = 10
@@ -4615,13 +4618,11 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_favorable_business_reg
-		icon = GFX_focus_bo_work
+		icon = GFX_goal_generic_industry_work
 		x = 76
 		y = 4
 
 		cost = 10
-
-		
 
 		prerequisite = { focus = USA_continue_subsidies }
 
@@ -4631,7 +4632,7 @@ focus_tree = {
 	} 
 	focus = {
 		id = USA_ignore_monopolization
-		icon = money
+		icon = GFX_focus_generic_monopoly
 		x = 76
 		y = 5
 		cost = 5
@@ -4650,14 +4651,10 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_true_free_market
-		icon = GFX_SIA_openfreemarket
+		icon = GFX_goal_open_free_market
 		x = 79
 		y = 5
-
 		cost = 5
-
-		
-
 		mutually_exclusive = { focus = USA_ignore_monopolization }
 
 		prerequisite = { focus = USA_favorable_business_reg }
@@ -4675,8 +4672,6 @@ focus_tree = {
 
 		cost = 5
 
-		
-
 		prerequisite = { focus = USA_true_free_market }
 
 		completion_reward = {
@@ -4688,13 +4683,11 @@ focus_tree = {
 
 	focus = {
 		id = USA_anti_monopoly_hearings
-		icon = ENG_london_peoples_court
+		icon = GFX_focus_generic_anti_monopoly
 		x = 79
 		y = 7
 
 		cost = 10
-
-		
 
 		prerequisite = { focus = USA_enforce_sherman_act }
 
@@ -4854,7 +4847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_continue_laissez_faire
-		icon = GFX_umc_goal_goverment_hands
+		icon = GFX_goal_generic_positive_trade_relations
 		x = 73
 		y = 2
 
@@ -4897,7 +4890,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_gold_question
-		icon = GFX_goal_generic_gold_money
+		icon = GFX_goal_USA_the_gold_question
 		x = 72
 		y = 3
 
@@ -4917,7 +4910,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_gold_standard_act
-		icon = GFX_goal_generic_economics_reform_gold
+		icon = GFX_goal_USA_the_gold_standard
 		x = 72
 		y = 4
 
@@ -4961,7 +4954,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_fiduciary_responsibility
-		icon = GFX_umc_goal_gold_up
+		icon = GFX_goal_gold_up
 		x = 72
 		y = 6
 
@@ -4978,14 +4971,10 @@ focus_tree = {
 
 	focus = {
 		id = USA_central_banking_question
-		icon = GFX_CHI_Bank
+		icon = GFX_focus_PER_national_bank
 		x = 72
 		y = 7
-
 		cost = 10
-
-		
-
 		prerequisite = { focus = USA_fiduciary_responsibility }
 
 		completion_reward = {
@@ -4995,7 +4984,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_bimetallism
-		icon = GFX_goal_Generic_Loadsamoney
+		icon = GFX_goal_generic_loads_of_money
 		x = 70
 		y = 5
 
@@ -5016,13 +5005,11 @@ focus_tree = {
 
 	focus = {
 		id = USA_america_silver_slippers
-		icon = GFX_sca_focus_danish_industry
+		icon = GFX_focus_CHL_silverworking
 		x = 70
 		y = 6
 
 		cost = 5
-
-		
 
 		bypass = {
 
@@ -5037,13 +5024,10 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_devalue_dollar
-		icon = GFX_goal_LAT_devaulate_the_currency
+		icon = GFX_focus_generic_devaluation
 		x = 70
 		y = 7
-
 		cost = 5
-
-		
 
 		bypass = {
 
@@ -5079,7 +5063,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_compromise_with_farmers
-		icon = GFX_goal_compromise_with_the_nationalities
+		icon = GFX_focus_generic_worker_administration
 		x = 74
 		y = 5
 
@@ -5129,7 +5113,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_american_ingenuity
-		icon = GFX_goal_generic_befriend_united_states
+		icon = GFX_focus_ARG_develop_the_electricity_sector
 		x = 78
 		y = 2
 		cost = 5
@@ -5145,7 +5129,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_hotbed_of_innovation
-		icon = ENG_industrial_research_grant
+		icon = GFX_focus_generic_education
 		x = 78
 		y = 3
 		cost = 5
@@ -5208,7 +5192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_limited_econ_intervention
-		icon = alliance_dark_green
+		icon = GFX_ron_alliance_dark_green
 		x = 80
 		y = 3
 		cost = 10
@@ -5223,7 +5207,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_break_up_businesses
-		icon = industry_communist3
+		icon = GFX_focus_BEL_government_resigns
 		x = 80
 		y = 4
 		cost = 5
@@ -5238,7 +5222,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_repeal_tariffs
-		icon = GFX_focus_bo_constitution
+		icon = GFX_goal_constitutional_guarantees
 		x = 82
 		y = 3
 		cost = 10
@@ -5304,12 +5288,10 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_german_trade
-		icon = GFX_goal_AUS_seek_german_help
+		icon = GFX_goal_improve_trade_relations_german_empire
 		x = 81
 		y = 7
 		cost = 10
-
-		
 		prerequisite = {
 			focus = USA_british_contracts
 		}
@@ -5399,7 +5381,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_domestic_processing
-		icon = GFX_SIA_domesticindustrylaw
+		icon = GFX_goal_USA_american_domestic_processing
 		x = 83
 		y = 5
 		cost = 10
@@ -5417,7 +5399,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_foreign_processing
-		icon = GFX_RebuildingtheIndustrialBase
+		icon = GFX_goal_generic_trade
 		mutually_exclusive = {
 			focus = USA_domestic_processing
 		}
@@ -5425,7 +5407,6 @@ focus_tree = {
 		y = 5
 		cost = 10
 
-		
 		prerequisite = {
 			focus = USA_farming_innovations
 		}
@@ -5435,12 +5416,11 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_textile_subsidies
-		icon = GFX_goal_Focus_Government_Bureaucracy
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
 		x = 83
 		y = 6
 		cost = 5
 
-		
 		prerequisite = {
 			focus = USA_domestic_processing
 		}
@@ -5450,12 +5430,10 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_minimal_protectionism
-		icon = GFX_goal_generic_positive_trade_relations_gold
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 83
 		y = 7
 		cost = 5
-
-		
 		prerequisite = {
 			focus = USA_textile_subsidies
 		}
@@ -5465,7 +5443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_self_sufficiency
-		icon = industry_united_states
+		icon = GFX_goal_USA_industry_united_states
 		x = 83
 		y = 8
 		cost = 5
@@ -5481,7 +5459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_merchant_fleets
-		icon = GFX_the_red_fleet
+		icon = GFX_focus_generic_merchant_fleet
 		x = 85
 		y = 6
 		cost = 5
@@ -5543,7 +5521,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_american_politics
-		icon = GFX_goal_USA_coa_navy
+		icon = GFX_goal_COR_america_preserved
 		x = 90
 		y = 10
 		cost = 5
@@ -5561,7 +5539,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_question_of_establishment
-		icon = american_founding_fathers
+		icon = GFX_goal_USA_american_founding_fathers
 		x = 90
 		y = 11
 		cost = 2
@@ -5588,7 +5566,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_status_quo #bypass
-		icon = GFX_goal_armed_neutrality
+		icon = GFX_focus_ARG_strengthening_the_concordancia
 		x = 85
 		y = 12
 		cost = 5
@@ -5714,7 +5692,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_winds_of_change #bypass
-		icon = GFX_focus_bra_voice_of_brasil
+		icon = GFX_goal_generic_propaganda
 		x = 95
 		y = 12
 		cost = 5
@@ -5745,7 +5723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_duopoly_preserved
-		icon = GFX_generic_focus_democratic_election
+		icon = GFX_focus_ARG_balancing_act
 		x = 85
 		y = 13
 		cost = 1
@@ -5764,7 +5742,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_partisan_politics
-		icon = GFX_QIN_focus_press_democratic
+		icon = GFX_goal_QIN_press_democratic
 		x = 85
 		y = 14
 		cost = 5
@@ -5783,7 +5761,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_confederate_legacy
-		icon = GFX_CSA_hall_of_heroes
+		icon = GFX_goal_CSA_hall_of_heroes
 		x = 81
 		y = 15
 		cost = 10
@@ -5817,7 +5795,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_damn_traitors
-		icon = GFX_CSA_resume_debate
+		icon = GFX_goal_CSA_resume_debate
 		x = 77
 		y = 16
 		cost = 5
@@ -5833,18 +5811,16 @@ focus_tree = {
 		
 		completion_reward = {
 			add_stability = 0.05
-						custom_effect_tooltip = "This will increase white anger"
+			custom_effect_tooltip = "This will increase white anger"
 			add_to_variable = { whiteanger = 10 }
 		}
 	}
 	focus = {
 		id = USA_lost_cause
-		icon = GFX_CSA_the_storm
+		icon = GFX_goal_CSA_the_storm
 		x = 81
 		y = 16
-		cost = 5
-
-		
+		cost = 5		
 		prerequisite = {
 			focus = USA_confederate_legacy
 		}
@@ -5857,23 +5833,23 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.05
-		852 = { remove_core_of = usa } 
-		 851 =	{ remove_core_of =  usa } 
-		 850 =	{ remove_core_of =  usa } 
-		 375 =	{ remove_core_of =  usa } 
-		 845 =	{ remove_core_of =  usa } 
-		 858 =	{ remove_core_of =  usa } 
-		 371 =	{ remove_core_of =  usa } 
-		 374 =	{ remove_core_of =  usa } 
-		 849 =	{ remove_core_of =  usa } 
-		 372 =	{ remove_core_of =  usa } 
-		 370 =	{ remove_core_of =  usa } 
-		 367 =	{ remove_core_of =  usa } 
-		 365 =	{ remove_core_of =  usa } 
-		 366 =	{ remove_core_of =  usa } 
-		 364 =	{ remove_core_of =  usa } 
-		 363 =	{ remove_core_of =  usa } 
-		 368 =	{ remove_core_of =  usa } 				
+			852 ={ remove_core_of = usa } 
+			851 ={ remove_core_of =  usa } 
+			850 ={ remove_core_of =  usa } 
+			375 ={ remove_core_of =  usa } 
+			845 ={ remove_core_of =  usa } 
+			858 ={ remove_core_of =  usa } 
+			371 ={ remove_core_of =  usa } 
+			374 ={ remove_core_of =  usa } 
+			849 ={ remove_core_of =  usa } 
+			372 ={ remove_core_of =  usa } 
+			370 ={ remove_core_of =  usa } 
+			367 ={ remove_core_of =  usa } 
+			365 ={ remove_core_of =  usa } 
+			366 ={ remove_core_of =  usa } 
+			364 ={ remove_core_of =  usa } 
+			363 ={ remove_core_of =  usa } 
+			368 ={ remove_core_of =  usa } 				
 		}
 	}
 	##################################
@@ -5881,7 +5857,7 @@ focus_tree = {
 	##################################
 	focus = {
 		id = USA_end_confederate_veneration
-		icon = GFX_CSA_prepare_philly 
+		icon = GFX_goal_COR_disband_the_klan 
 		x = 77
 		y = 17
 		cost = 10
@@ -5903,7 +5879,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_jim_crow_crackdown
-		icon = GFX_USA_march_on_the_capital
+		icon = GFX_goal_USA_outlaw_jim_crow
 		x = 76
 		y = 18
 		cost = 5
@@ -5921,7 +5897,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_1877_revisited
-		icon = GFX_CSA_young_republic
+		icon = GFX_goal_CSA_young_republic
 		x = 78
 		y = 18
 		cost = 5
@@ -6028,7 +6004,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_plessy_v_ferguson_revisited
-		icon = GFX_focus_CSA_dent
+		icon = GFX_goal_USA_plessy_v_ferguson_revisited
 		x = 76
 		y = 19
 		cost = 5
@@ -6057,7 +6033,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_fight_disenfranchisement
-		icon = GFX_AUS_democratic_army
+		icon = GFX_focus_ARG_defense_and_democracy
 		x = 78
 		y = 19
 		cost = 5
@@ -6075,7 +6051,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = "This will increase white anger"
-						custom_effect_tooltip = "This will increase white anger"
+			custom_effect_tooltip = "This will increase white anger"
 			add_to_variable = { whiteanger = 10 }
 			clamp_variable = { var = whiteanger max = 100 }
 
@@ -6083,7 +6059,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_enforce_14th_amendment
-		icon = GFX_goal_generic_bills
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = 77
 		y = 20
 		cost = 10
@@ -6123,7 +6099,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-						custom_effect_tooltip = "This will increase white anger"
+			custom_effect_tooltip = "This will increase white anger"
 			add_to_variable = { whiteanger = 15 }
 			clamp_variable = { var = whiteanger max = 100 }
 			USA_congress_small_support = yes			
@@ -6132,7 +6108,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_replace_southern_teachers
-		icon = GFX_PER_expand_national_schoolsystem
+		icon = GFX_focus_generic_education
 		x = 74
 		y = 18
 		cost = 6
@@ -6143,7 +6119,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-						custom_effect_tooltip = "This will increase white anger"
+			custom_effect_tooltip = "This will increase white anger"
 			add_to_variable = { whiteanger = 15 }
 			clamp_variable = { var = whiteanger max = 100 }
 			USA_congress_small_support = yes		
@@ -6164,7 +6140,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-						custom_effect_tooltip = "This will increase white anger"
+			custom_effect_tooltip = "This will increase white anger"
 			add_to_variable = { whiteanger = 15 }
 			USA_congress_medium_support = yes			
 		}
@@ -6172,7 +6148,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_show_the_horror
-		icon = GFX_BUL_memories_of_the_great_war
+		icon = GFX_goal_COR_destroy_the_legion
 		x = 74
 		y = 20
 		cost = 6
@@ -6190,7 +6166,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_shatter_the_mythos
-		icon = GFX_goal_Focus_Smash_Fasc
+		icon = GFX_focus_generic_smash_fascists
 		x = 76
 		y = 21
 		cost = 10
@@ -6219,7 +6195,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_confederate_monuments
-		icon = GFX_goal_generic_graveyard
+		icon = GFX_goal_COR_this_well_defend
 		x = 81
 		y = 17
 		cost = 6
@@ -6230,11 +6206,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-						add_popularity = {
-		    ideology = democratic
-		    popularity = -.05
-		}
-					375 = {
+			add_popularity = {
+		    	ideology = democratic
+		    	popularity = -0.10
+			}
+			375 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -6246,7 +6222,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_state_education
-		icon = GFX_AUS_vf_education
+		icon = GFX_goal_COR_confederate_education
 		x = 80
 		y = 18
 		cost = 6
@@ -6259,15 +6235,15 @@ focus_tree = {
 		completion_reward = {
 			add_country_leader_trait = education_reformer
 			add_popularity = {
-		    ideology = democratic
-		    popularity = -.05
-		}					
+		    	ideology = democratic
+		    	popularity = -0.10
+			}					
 		}
 	}
 
 	focus = {
 		id = USA_support_confederate_revisionism
-		icon = GFX_goal_education_reform
+		icon = GFX_goal_COR_christian_service_brigade
 		x = 80
 		y = 19
 		cost = 6
@@ -6279,32 +6255,32 @@ focus_tree = {
 		
 		completion_reward = {
 			add_popularity = {
-		    ideology = democratic
-		    popularity = -.05
-		}					
-		852 =	{ add_resistance = 30 } 
-		 851 =	{ add_resistance = 30  } 
-		 850 =	{ add_resistance = 30  } 
-		 375 =	{ add_resistance = 30  } 
-		 845 =	{ add_resistance = 30  } 
-		 858 =	{ add_resistance = 30  } 
-		 371 =	{ add_resistance = 30  } 
-		 374 =	{ add_resistance = 30  } 
-		 849 =	{ add_resistance = 30  } 
-		 372 =	{ add_resistance = 30  } 
-		 370 =	{ add_resistance = 30  } 
-		 367 =	{ add_resistance = 30  } 
-		 365 =	{ add_resistance = 30  } 
-		 366 =	{ add_resistance = 30  } 
-		 364 =	{ add_resistance = 30  } 
-		 363 =	{ add_resistance = 30  } 
-		 368 =	{ add_resistance = 30  } 	
+		    	ideology = democratic
+		   	 	popularity = -0.10
+			}					
+			852 =	{ add_resistance = 30 } 
+			851 =	{ add_resistance = 30  } 
+			850 =	{ add_resistance = 30  } 
+			375 =	{ add_resistance = 30  } 
+			845 =	{ add_resistance = 30  } 
+			858 =	{ add_resistance = 30  } 
+			371 =	{ add_resistance = 30  } 
+			374 =	{ add_resistance = 30  } 
+			849 =	{ add_resistance = 30  } 
+			372 =	{ add_resistance = 30  } 
+			370 =	{ add_resistance = 30  } 
+			367 =	{ add_resistance = 30  } 
+			365 =	{ add_resistance = 30  } 
+			366 =	{ add_resistance = 30  } 
+			364 =	{ add_resistance = 30  } 
+			363 =	{ add_resistance = 30  } 
+			368 =	{ add_resistance = 30  } 	
 		}
 	}
 
 	focus = {
 		id = USA_romanticize_CSA
-		icon = GFX_goal_generic_education
+		icon = GFX_goal_COR_looking_back_southern_sociologists
 		x = 80
 		y = 20
 		cost = 6
@@ -6321,7 +6297,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_turn_blind_eye
-		icon = GFX_goal_AFG_womens_education
+		icon = GFX_goal_COR_put_end_vigilante_lynching
 		x = 82
 		y = 18
 		cost = 6
@@ -6333,32 +6309,32 @@ focus_tree = {
 		
 		completion_reward = {
 			add_popularity = {
-		    ideology = democratic
-		    popularity = -.05
-		}					
-		852 =	{ add_resistance = 30 } 
-		 851 =	{ add_resistance = 30  } 
-		 850 =	{ add_resistance = 30  } 
-		 375 =	{ add_resistance = 30  } 
-		 845 =	{ add_resistance = 30  } 
-		 858 =	{ add_resistance = 30  } 
-		 371 =	{ add_resistance = 30  } 
-		 374 =	{ add_resistance = 30  } 
-		 849 =	{ add_resistance = 30  } 
-		 372 =	{ add_resistance = 30  } 
-		 370 =	{ add_resistance = 30  } 
-		 367 =	{ add_resistance = 30  } 
-		 365 =	{ add_resistance = 30  } 
-		 366 =	{ add_resistance = 30  } 
-		 364 =	{ add_resistance = 30  } 
-		 363 =	{ add_resistance = 30  } 
-		 368 =	{ add_resistance = 30  } 		
+				ideology = democratic
+				popularity = -0.10
+			}					
+			852 =	{ add_resistance = 30 } 
+			851 =	{ add_resistance = 30  } 
+			850 =	{ add_resistance = 30  } 
+			375 =	{ add_resistance = 30  } 
+			845 =	{ add_resistance = 30  } 
+			858 =	{ add_resistance = 30  } 
+			371 =	{ add_resistance = 30  } 
+			374 =	{ add_resistance = 30  } 
+			849 =	{ add_resistance = 30  } 
+			372 =	{ add_resistance = 30  } 
+			370 =	{ add_resistance = 30  } 
+			367 =	{ add_resistance = 30  } 
+			365 =	{ add_resistance = 30  } 
+			366 =	{ add_resistance = 30  } 
+			364 =	{ add_resistance = 30  } 
+			363 =	{ add_resistance = 30  } 
+			368 =	{ add_resistance = 30  } 		
 		}
 	}
 
 	focus = {
 		id = USA_separate_but_equal
-		icon = GFX_Goal_USA_desegregation
+		icon = GFX_goal_USA_desegregation
 		x = 82
 		y = 19
 		cost = 6
@@ -6370,14 +6346,14 @@ focus_tree = {
 		
 		completion_reward = {
 			add_popularity = {
-		    ideology = democratic
-		    popularity = -.05
-		}					
+				ideology = democratic
+				popularity = -0.10
+			}					
 			swap_ideas = {
 				remove_idea = USA_jim_crow_laws
 				add_idea = USA_jim_crow_laws2
 			}
-					375 = {
+			375 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -6402,28 +6378,28 @@ focus_tree = {
 		
 		completion_reward = {
 			add_popularity = {
-		    ideology = democratic
-		    popularity = -.05
-		}					
+				ideology = democratic
+				popularity = -0.05
+			}					
 			add_to_variable = { a376democratic_support = 10 }  # Alabama
-add_to_variable = { a261democratic_support = 10 }  # Arkansas
-add_to_variable = { a377democratic_support = 10 }  # Florida
-add_to_variable = { a357democratic_support = 10 }  # Georgia
-add_to_variable = { a374democratic_support = 10 }  # Louisiana
-add_to_variable = { a358democratic_support = 10 }  # Mississippi
-add_to_variable = { a359democratic_support = 10 }  # North Carolina
-add_to_variable = { a360democratic_support = 10 }  # South Carolina
-add_to_variable = { a844democratic_support = 10 }  # Tennessee
-add_to_variable = { a362democratic_support = 10 }  # Texas
-add_to_variable = { a363democratic_support = 10 }  # Virginia
-add_to_variable = { a364democratic_support = 10 }  # West Virginia
-custom_effect_tooltip = "Democratic Party support will be changed in SOUTHERN states"
+			add_to_variable = { a261democratic_support = 10 }  # Arkansas
+			add_to_variable = { a377democratic_support = 10 }  # Florida
+			add_to_variable = { a357democratic_support = 10 }  # Georgia
+			add_to_variable = { a374democratic_support = 10 }  # Louisiana
+			add_to_variable = { a358democratic_support = 10 }  # Mississippi
+			add_to_variable = { a359democratic_support = 10 }  # North Carolina
+			add_to_variable = { a360democratic_support = 10 }  # South Carolina
+			add_to_variable = { a844democratic_support = 10 }  # Tennessee
+			add_to_variable = { a362democratic_support = 10 }  # Texas
+			add_to_variable = { a363democratic_support = 10 }  # Virginia
+			add_to_variable = { a364democratic_support = 10 }  # West Virginia
+			custom_effect_tooltip = "Democratic Party support will be changed in SOUTHERN states"
 		}
 	}
 
 	focus = {
 		id = USA_out_of_sight
-		icon = GFX_goal_BRA_smoking_snakes
+		icon = GFX_focus_generic_strike_at_democracy2
 		x = 81
 		y = 21
 		cost = 6
@@ -6438,22 +6414,22 @@ custom_effect_tooltip = "Democratic Party support will be changed in SOUTHERN st
 		}
 		
 		completion_reward = {
-					swap_ideas = {
+			swap_ideas = {
 				remove_idea = USA_jim_crow_laws2
 				add_idea = USA_jim_crow_laws3
-			} 	
+			}
 			add_popularity = {
-		    ideology = democratic
-		    popularity = -.05
-		}					
-					375 = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			375 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
-			}		
+			}
 		}
 	}
 	 #########################################
@@ -6466,13 +6442,12 @@ custom_effect_tooltip = "Democratic Party support will be changed in SOUTHERN st
 	 ###### POPULIST FOCUSES #########
 	 #################################
 
-	 focus = {
+	focus = {
 		id = USA_question_of_populism
-		icon = GFX_focus_bra_populism
+		icon = GFX_goal_generic_populism
 		x = 85
 		y = 15
 		cost = 6
-
 		
 		prerequisite = {
 			focus = USA_partisan_politics
@@ -6485,7 +6460,7 @@ custom_effect_tooltip = "Democratic Party support will be changed in SOUTHERN st
 
 	focus = {
 		id = USA_absorb_populists
-		icon = attack_democracy4
+		icon = GFX_goal_tripartite_pact
 		x = 84
 		y = 16
 		cost = 1
@@ -6503,7 +6478,7 @@ custom_effect_tooltip = "Democratic Party support will be changed in SOUTHERN st
 
 	focus = {
 		id = USA_more_to_dems
-		icon = american_democratic_party
+		icon = GFX_goal_USA_american_democrats
 		x = 83
 		y = 17
 		cost = 1
@@ -6518,58 +6493,58 @@ custom_effect_tooltip = "Democratic Party support will be changed in SOUTHERN st
 		
 		completion_reward = {
 			add_to_variable = { a376democratic_support = 10 }
-add_to_variable = { a261democratic_support = 10 }
-add_to_variable = { a377democratic_support = 10 }
-add_to_variable = { a357democratic_support = 10 }
-add_to_variable = { a374democratic_support = 10 }
-add_to_variable = { a358democratic_support = 10 }
-add_to_variable = { a359democratic_support = 10 }
-add_to_variable = { a360democratic_support = 10 }
-add_to_variable = { a844democratic_support = 10 }
-add_to_variable = { a362democratic_support = 10 }
-add_to_variable = { a363democratic_support = 10 }
-add_to_variable = { a364democratic_support = 10 }
-add_to_variable = { a365democratic_support = 10 }
-add_to_variable = { a366democratic_support = 10 }
-add_to_variable = { a367democratic_support = 10 }
-add_to_variable = { a368democratic_support = 10 }
-add_to_variable = { a369democratic_support = 10 }
-add_to_variable = { a370democratic_support = 10 }
-add_to_variable = { a371democratic_support = 10 }
-add_to_variable = { a372democratic_support = 10 }
-add_to_variable = { a373democratic_support = 10 }
-add_to_variable = { a375democratic_support = 10 }
-add_to_variable = { a378democratic_support = 10 }
-add_to_variable = { a379democratic_support = 10 }
-add_to_variable = { a380democratic_support = 10 }
-add_to_variable = { a381democratic_support = 10 }
-add_to_variable = { a382democratic_support = 10 }
-add_to_variable = { a383democratic_support = 10 }
-add_to_variable = { a384democratic_support = 10 }
-add_to_variable = { a385democratic_support = 10 }
-add_to_variable = { a386democratic_support = 10 }
-add_to_variable = { a387democratic_support = 10 }
-add_to_variable = { a388democratic_support = 10 }
-add_to_variable = { a389democratic_support = 10 }
-add_to_variable = { a390democratic_support = 10 }
-add_to_variable = { a391democratic_support = 10 }
-add_to_variable = { a392democratic_support = 10 }
-add_to_variable = { a393democratic_support = 10 }
-add_to_variable = { a394democratic_support = 10 }
-add_to_variable = { a395democratic_support = 10 }
-add_to_variable = { a396democratic_support = 10 }
-add_to_variable = { a836democratic_support = 10 }
-add_to_variable = { a837democratic_support = 10 }
-add_to_variable = { a838democratic_support = 10 }
-add_to_variable = { a839democratic_support = 10 }
-add_to_variable = { a843democratic_support = 10 }
-add_to_variable = { a840democratic_support = 10 }
-custom_effect_tooltip = "Democratic Party support will be changed in some states"
+			add_to_variable = { a261democratic_support = 10 }
+			add_to_variable = { a377democratic_support = 10 }
+			add_to_variable = { a357democratic_support = 10 }
+			add_to_variable = { a374democratic_support = 10 }
+			add_to_variable = { a358democratic_support = 10 }
+			add_to_variable = { a359democratic_support = 10 }
+			add_to_variable = { a360democratic_support = 10 }
+			add_to_variable = { a844democratic_support = 10 }
+			add_to_variable = { a362democratic_support = 10 }
+			add_to_variable = { a363democratic_support = 10 }
+			add_to_variable = { a364democratic_support = 10 }
+			add_to_variable = { a365democratic_support = 10 }
+			add_to_variable = { a366democratic_support = 10 }
+			add_to_variable = { a367democratic_support = 10 }
+			add_to_variable = { a368democratic_support = 10 }
+			add_to_variable = { a369democratic_support = 10 }
+			add_to_variable = { a370democratic_support = 10 }
+			add_to_variable = { a371democratic_support = 10 }
+			add_to_variable = { a372democratic_support = 10 }
+			add_to_variable = { a373democratic_support = 10 }
+			add_to_variable = { a375democratic_support = 10 }
+			add_to_variable = { a378democratic_support = 10 }
+			add_to_variable = { a379democratic_support = 10 }
+			add_to_variable = { a380democratic_support = 10 }
+			add_to_variable = { a381democratic_support = 10 }
+			add_to_variable = { a382democratic_support = 10 }
+			add_to_variable = { a383democratic_support = 10 }
+			add_to_variable = { a384democratic_support = 10 }
+			add_to_variable = { a385democratic_support = 10 }
+			add_to_variable = { a386democratic_support = 10 }
+			add_to_variable = { a387democratic_support = 10 }
+			add_to_variable = { a388democratic_support = 10 }
+			add_to_variable = { a389democratic_support = 10 }
+			add_to_variable = { a390democratic_support = 10 }
+			add_to_variable = { a391democratic_support = 10 }
+			add_to_variable = { a392democratic_support = 10 }
+			add_to_variable = { a393democratic_support = 10 }
+			add_to_variable = { a394democratic_support = 10 }
+			add_to_variable = { a395democratic_support = 10 }
+			add_to_variable = { a396democratic_support = 10 }
+			add_to_variable = { a836democratic_support = 10 }
+			add_to_variable = { a837democratic_support = 10 }
+			add_to_variable = { a838democratic_support = 10 }
+			add_to_variable = { a839democratic_support = 10 }
+			add_to_variable = { a843democratic_support = 10 }
+			add_to_variable = { a840democratic_support = 10 }
+			custom_effect_tooltip = "Democratic Party support will be changed in some states"
 		}
 	}
 	focus = {
 		id = USA_more_to_repubs
-		icon = american_republican_party
+		icon = GFX_goal_USA_american_republicans
 		x = 85
 		y = 17
 		cost = 1
@@ -6584,60 +6559,60 @@ custom_effect_tooltip = "Democratic Party support will be changed in some states
 		}
 		
 		completion_reward = {
-		add_to_variable = { a376republican_support = 10 }
-add_to_variable = { a261republican_support = 10 }
-add_to_variable = { a377republican_support = 10 }
-add_to_variable = { a357republican_support = 10 }
-add_to_variable = { a374republican_support = 10 }
-add_to_variable = { a358republican_support = 10 }
-add_to_variable = { a359republican_support = 10 }
-add_to_variable = { a360republican_support = 10 }
-add_to_variable = { a844republican_support = 10 }
-add_to_variable = { a362republican_support = 10 }
-add_to_variable = { a363republican_support = 10 }
-add_to_variable = { a364republican_support = 10 }
-add_to_variable = { a365republican_support = 10 }
-add_to_variable = { a366republican_support = 10 }
-add_to_variable = { a367republican_support = 10 }
-add_to_variable = { a368republican_support = 10 }
-add_to_variable = { a369republican_support = 10 }
-add_to_variable = { a370republican_support = 10 }
-add_to_variable = { a371republican_support = 10 }
-add_to_variable = { a372republican_support = 10 }
-add_to_variable = { a373republican_support = 10 }
-add_to_variable = { a375republican_support = 10 }
-add_to_variable = { a378republican_support = 10 }
-add_to_variable = { a379republican_support = 10 }
-add_to_variable = { a380republican_support = 10 }
-add_to_variable = { a381republican_support = 10 }
-add_to_variable = { a382republican_support = 10 }
-add_to_variable = { a383republican_support = 10 }
-add_to_variable = { a384republican_support = 10 }
-add_to_variable = { a385republican_support = 10 }
-add_to_variable = { a386republican_support = 10 }
-add_to_variable = { a387republican_support = 10 }
-add_to_variable = { a388republican_support = 10 }
-add_to_variable = { a389republican_support = 10 }
-add_to_variable = { a390republican_support = 10 }
-add_to_variable = { a391republican_support = 10 }
-add_to_variable = { a392republican_support = 10 }
-add_to_variable = { a393republican_support = 10 }
-add_to_variable = { a394republican_support = 10 }
-add_to_variable = { a395republican_support = 10 }
-add_to_variable = { a396republican_support = 10 }
-add_to_variable = { a836republican_support = 10 }
-add_to_variable = { a837republican_support = 10 }
-add_to_variable = { a838republican_support = 10 }
-add_to_variable = { a839republican_support = 10 }
-add_to_variable = { a843republican_support = 10 }
-add_to_variable = { a840republican_support = 10 }
-custom_effect_tooltip = "Republican party support will greatly increase"	
+			add_to_variable = { a376republican_support = 10 }
+			add_to_variable = { a261republican_support = 10 }
+			add_to_variable = { a377republican_support = 10 }
+			add_to_variable = { a357republican_support = 10 }
+			add_to_variable = { a374republican_support = 10 }
+			add_to_variable = { a358republican_support = 10 }
+			add_to_variable = { a359republican_support = 10 }
+			add_to_variable = { a360republican_support = 10 }
+			add_to_variable = { a844republican_support = 10 }
+			add_to_variable = { a362republican_support = 10 }
+			add_to_variable = { a363republican_support = 10 }
+			add_to_variable = { a364republican_support = 10 }
+			add_to_variable = { a365republican_support = 10 }
+			add_to_variable = { a366republican_support = 10 }
+			add_to_variable = { a367republican_support = 10 }
+			add_to_variable = { a368republican_support = 10 }
+			add_to_variable = { a369republican_support = 10 }
+			add_to_variable = { a370republican_support = 10 }
+			add_to_variable = { a371republican_support = 10 }
+			add_to_variable = { a372republican_support = 10 }
+			add_to_variable = { a373republican_support = 10 }
+			add_to_variable = { a375republican_support = 10 }
+			add_to_variable = { a378republican_support = 10 }
+			add_to_variable = { a379republican_support = 10 }
+			add_to_variable = { a380republican_support = 10 }
+			add_to_variable = { a381republican_support = 10 }
+			add_to_variable = { a382republican_support = 10 }
+			add_to_variable = { a383republican_support = 10 }
+			add_to_variable = { a384republican_support = 10 }
+			add_to_variable = { a385republican_support = 10 }
+			add_to_variable = { a386republican_support = 10 }
+			add_to_variable = { a387republican_support = 10 }
+			add_to_variable = { a388republican_support = 10 }
+			add_to_variable = { a389republican_support = 10 }
+			add_to_variable = { a390republican_support = 10 }
+			add_to_variable = { a391republican_support = 10 }
+			add_to_variable = { a392republican_support = 10 }
+			add_to_variable = { a393republican_support = 10 }
+			add_to_variable = { a394republican_support = 10 }
+			add_to_variable = { a395republican_support = 10 }
+			add_to_variable = { a396republican_support = 10 }
+			add_to_variable = { a836republican_support = 10 }
+			add_to_variable = { a837republican_support = 10 }
+			add_to_variable = { a838republican_support = 10 }
+			add_to_variable = { a839republican_support = 10 }
+			add_to_variable = { a843republican_support = 10 }
+			add_to_variable = { a840republican_support = 10 }
+			custom_effect_tooltip = "Republican party support will greatly increase"	
 		}
 	}
 
 	focus = {
 		id = USA_change_election_laws
-		icon = elections
+		icon = GFX_focus_generic_election
 		x = 84
 		y = 18
 		cost = 5
@@ -6653,7 +6628,7 @@ custom_effect_tooltip = "Republican party support will greatly increase"
 				limit = {
 					is_ai = no
 				}
-			add_ideas = ra_patriotic_fraud
+				add_ideas = ra_patriotic_fraud
 			}
 			add_country_leader_trait = SWI_trade_unionist
 			custom_effect_tooltip = "Support for a more authoritarian government will increase oevr time..."
@@ -6677,59 +6652,59 @@ custom_effect_tooltip = "Republican party support will greatly increase"
 		
 		completion_reward = {
 			subtract_from_variable = { a376socialist_support = 10 }
-subtract_from_variable = { a261socialist_support = 10 }
-subtract_from_variable = { a377socialist_support = 10 }
-subtract_from_variable = { a357socialist_support = 10 }
-subtract_from_variable = { a374socialist_support = 10 }
-subtract_from_variable = { a358socialist_support = 10 }
-subtract_from_variable = { a359socialist_support = 10 }
-subtract_from_variable = { a360socialist_support = 10 }
-subtract_from_variable = { a844socialist_support = 10 }
-subtract_from_variable = { a362socialist_support = 10 }
-subtract_from_variable = { a363socialist_support = 10 }
-subtract_from_variable = { a364socialist_support = 10 }
-subtract_from_variable = { a365socialist_support = 10 }
-subtract_from_variable = { a366socialist_support = 10 }
-subtract_from_variable = { a367socialist_support = 10 }
-subtract_from_variable = { a368socialist_support = 10 }
-subtract_from_variable = { a369socialist_support = 10 }
-subtract_from_variable = { a370socialist_support = 10 }
-subtract_from_variable = { a371socialist_support = 10 }
-subtract_from_variable = { a372socialist_support = 10 }
-subtract_from_variable = { a373socialist_support = 10 }
-subtract_from_variable = { a375socialist_support = 10 }
-subtract_from_variable = { a378socialist_support = 10 }
-subtract_from_variable = { a379socialist_support = 10 }
-subtract_from_variable = { a380socialist_support = 10 }
-subtract_from_variable = { a381socialist_support = 10 }
-subtract_from_variable = { a382socialist_support = 10 }
-subtract_from_variable = { a383socialist_support = 10 }
-subtract_from_variable = { a384socialist_support = 10 }
-subtract_from_variable = { a385socialist_support = 10 }
-subtract_from_variable = { a386socialist_support = 10 }
-subtract_from_variable = { a387socialist_support = 10 }
-subtract_from_variable = { a388socialist_support = 10 }
-subtract_from_variable = { a389socialist_support = 10 }
-subtract_from_variable = { a390socialist_support = 10 }
-subtract_from_variable = { a391socialist_support = 10 }
-subtract_from_variable = { a392socialist_support = 10 }
-subtract_from_variable = { a393socialist_support = 10 }
-subtract_from_variable = { a394socialist_support = 10 }
-subtract_from_variable = { a395socialist_support = 10 }
-subtract_from_variable = { a396socialist_support = 10 }
-subtract_from_variable = { a836socialist_support = 10 }
-subtract_from_variable = { a837socialist_support = 10 }
-subtract_from_variable = { a838socialist_support = 10 }
-subtract_from_variable = { a839socialist_support = 10 }
-subtract_from_variable = { a843socialist_support = 10 }
-subtract_from_variable = { a840socialist_support = 10 }
-custom_effect_tooltip = "Socialist Party support will be changed in a state"
+			subtract_from_variable = { a261socialist_support = 10 }
+			subtract_from_variable = { a377socialist_support = 10 }
+			subtract_from_variable = { a357socialist_support = 10 }
+			subtract_from_variable = { a374socialist_support = 10 }
+			subtract_from_variable = { a358socialist_support = 10 }
+			subtract_from_variable = { a359socialist_support = 10 }
+			subtract_from_variable = { a360socialist_support = 10 }
+			subtract_from_variable = { a844socialist_support = 10 }
+			subtract_from_variable = { a362socialist_support = 10 }
+			subtract_from_variable = { a363socialist_support = 10 }
+			subtract_from_variable = { a364socialist_support = 10 }
+			subtract_from_variable = { a365socialist_support = 10 }
+			subtract_from_variable = { a366socialist_support = 10 }
+			subtract_from_variable = { a367socialist_support = 10 }
+			subtract_from_variable = { a368socialist_support = 10 }
+			subtract_from_variable = { a369socialist_support = 10 }
+			subtract_from_variable = { a370socialist_support = 10 }
+			subtract_from_variable = { a371socialist_support = 10 }
+			subtract_from_variable = { a372socialist_support = 10 }
+			subtract_from_variable = { a373socialist_support = 10 }
+			subtract_from_variable = { a375socialist_support = 10 }
+			subtract_from_variable = { a378socialist_support = 10 }
+			subtract_from_variable = { a379socialist_support = 10 }
+			subtract_from_variable = { a380socialist_support = 10 }
+			subtract_from_variable = { a381socialist_support = 10 }
+			subtract_from_variable = { a382socialist_support = 10 }
+			subtract_from_variable = { a383socialist_support = 10 }
+			subtract_from_variable = { a384socialist_support = 10 }
+			subtract_from_variable = { a385socialist_support = 10 }
+			subtract_from_variable = { a386socialist_support = 10 }
+			subtract_from_variable = { a387socialist_support = 10 }
+			subtract_from_variable = { a388socialist_support = 10 }
+			subtract_from_variable = { a389socialist_support = 10 }
+			subtract_from_variable = { a390socialist_support = 10 }
+			subtract_from_variable = { a391socialist_support = 10 }
+			subtract_from_variable = { a392socialist_support = 10 }
+			subtract_from_variable = { a393socialist_support = 10 }
+			subtract_from_variable = { a394socialist_support = 10 }
+			subtract_from_variable = { a395socialist_support = 10 }
+			subtract_from_variable = { a396socialist_support = 10 }
+			subtract_from_variable = { a836socialist_support = 10 }
+			subtract_from_variable = { a837socialist_support = 10 }
+			subtract_from_variable = { a838socialist_support = 10 }
+			subtract_from_variable = { a839socialist_support = 10 }
+			subtract_from_variable = { a843socialist_support = 10 }
+			subtract_from_variable = { a840socialist_support = 10 }
+			custom_effect_tooltip = "Socialist Party support will be changed in a state"
 		}
 	}
 
 	focus = {
 		id = USA_adopt_populism
-		icon = ENG_mosleys_democratic_election
+		icon = GFX_goal_ENG_mosleys_democratic_election
 		x = 87
 		y = 16
 		cost = 1
@@ -6742,14 +6717,13 @@ custom_effect_tooltip = "Socialist Party support will be changed in a state"
 		}
 		
 		completion_reward = {
-			add_ideas = TUR_populism
-			
+			add_ideas = TUR_populism			
 		}
 	}
 
 	focus = {
 		id = USA_silver_reexamined
-		icon = GFX_focus_jacob_money
+		icon = GFX_goal_USA_american_silver_reexamination
 		x = 87
 		y = 17
 		cost = 10
@@ -6760,7 +6734,7 @@ custom_effect_tooltip = "Socialist Party support will be changed in a state"
 		}
 		
 		completion_reward = {
-random_owned_state = {
+			random_owned_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -6789,12 +6763,13 @@ random_owned_state = {
 					level = 1
 					instant_build = yes
 				}
-			}		}
+			}		
+		}
 	}
 
 	focus = {
 		id = USA_anti_monopoly_rhetoric
-		icon = GFX_RON_Pile_of_Money
+		icon = GFX_goal_cuba_diminish_american_influence
 		x = 87
 		y = 18
 		cost = 6
@@ -6829,18 +6804,17 @@ random_owned_state = {
 
 	focus = {
 		id = USA_help_big_business
-		icon = GFX_goal_Generic_Monopoly
+		icon = GFX_focus_generic_industrial_experts
 		x = 87
 		y = 20
 		cost = 6
-
 		
 		prerequisite = {
 			focus = USA_help_farmers
 		}
 		
 		completion_reward = {
-random_owned_state = {
+			random_owned_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -6872,13 +6846,13 @@ random_owned_state = {
 			}
 		}
 	}
-######################################
-######## SOCIALIST FOCUSES ###########
-######################################
+	######################################
+	######## SOCIALIST FOCUSES ###########
+	######################################
 
 	focus = {
 		id = USA_socialist_problem
-		icon = GFX_goal_Generic_Socialist_Revolution
+		icon = GFX_goal_support_communism
 		x = 89
 		y = 15
 		cost = 10
@@ -6895,7 +6869,7 @@ random_owned_state = {
 
 	focus = {
 		id = USA_trade_union_question
-		icon = GFX_PER_trade_union
+		icon = GFX_goal_GRE_question_the_trade_unions
 		x = 89
 		y = 16
 		cost = 6
@@ -6910,11 +6884,11 @@ random_owned_state = {
 		}
 		
 		completion_reward = {
-				add_popularity = {
-			ideology = communism
-			popularity = -0.1
-		}	
-		add_country_leader_trait = anti_union_boss
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}	
+			add_country_leader_trait = anti_union_boss
 		}
 	}
 
@@ -6932,16 +6906,16 @@ random_owned_state = {
 		
 		completion_reward = {
 			add_ideas = FRA_communism_banned
-				add_popularity = {
-			ideology = communism
-			popularity = -0.1
-		}				
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}				
 		}
 	}
 
 	focus = {
 		id = USA_infiltrate_socialists
-		icon = GFX_forced_urbanization
+		icon = GFX_goal_SOV_forced_urbanization
 		x = 89
 		y = 18
 		cost = 10
@@ -6953,11 +6927,11 @@ random_owned_state = {
 		
 		completion_reward = {
 			add_stability = -0.1
-				add_popularity = {
-			ideology = communism
-			popularity = -0.1
-		}				
-								375 = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}				
+			375 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -6970,22 +6944,21 @@ random_owned_state = {
 
 	focus = {
 		id = USA_propaganda_campaign
-		icon = GFX_goal_generic_urban_warfare
+		icon = GFX_goal_SOV_dissolution_of_trade_unions
 		x = 89
 		y = 19
 		cost = 10
 
-		
 		prerequisite = {
 			focus = USA_infiltrate_socialists
 		}
 		
 		completion_reward = {
-				add_popularity = {
-			ideology = communism
-			popularity = -0.1
-		}				
-								844 = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}				
+			844 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -7017,72 +6990,69 @@ random_owned_state = {
 		
 		
 		completion_reward = {
-add_to_variable = { a376socialist_support = 4 }
-add_to_variable = { a261socialist_support = 4 }
-add_to_variable = { a377socialist_support = 4 }
-add_to_variable = { a357socialist_support = 4 }
-add_to_variable = { a374socialist_support = 4 }
-add_to_variable = { a358socialist_support = 4 }
-add_to_variable = { a359socialist_support = 4 }
-add_to_variable = { a360socialist_support = 4 }
-add_to_variable = { a844socialist_support = 4 }
-add_to_variable = { a362socialist_support = 4 }
-add_to_variable = { a363socialist_support = 4 }
-add_to_variable = { a364socialist_support = 4 }
-add_to_variable = { a365socialist_support = 4 }
-add_to_variable = { a366socialist_support = 4 }
-add_to_variable = { a367socialist_support = 4 }
-add_to_variable = { a368socialist_support = 4 }
-add_to_variable = { a369socialist_support = 4 }
-add_to_variable = { a370socialist_support = 4 }
-add_to_variable = { a371socialist_support = 4 }
-add_to_variable = { a372socialist_support = 4 }
-add_to_variable = { a373socialist_support = 4 }
-add_to_variable = { a375socialist_support = 4 }
-add_to_variable = { a378socialist_support = 4 }
-add_to_variable = { a379socialist_support = 4 }
-add_to_variable = { a380socialist_support = 4 }
-add_to_variable = { a381socialist_support = 4 }
-add_to_variable = { a382socialist_support = 4 }
-add_to_variable = { a383socialist_support = 4 }
-add_to_variable = { a384socialist_support = 4 }
-add_to_variable = { a385socialist_support = 4 }
-add_to_variable = { a386socialist_support = 4 }
-add_to_variable = { a387socialist_support = 4 }
-add_to_variable = { a388socialist_support = 4 }
-add_to_variable = { a389socialist_support = 4 }
-add_to_variable = { a390socialist_support = 4 }
-add_to_variable = { a391socialist_support = 4 }
-add_to_variable = { a392socialist_support = 4 }
-add_to_variable = { a393socialist_support = 4 }
-add_to_variable = { a394socialist_support = 4 }
-add_to_variable = { a395socialist_support = 4 }
-add_to_variable = { a396socialist_support = 4 }
-add_to_variable = { a836socialist_support = 4 }
-add_to_variable = { a837socialist_support = 4 }
-add_to_variable = { a838socialist_support = 4 }
-add_to_variable = { a839socialist_support = 4 }
-add_to_variable = { a843socialist_support = 4 }
-add_to_variable = { a840socialist_support = 4 }
-custom_effect_tooltip = "Socialist Party support will be changed in a state"
-remove_ideas = USA_the_two_party_system 
+			add_to_variable = { a376socialist_support = 4 }
+			add_to_variable = { a261socialist_support = 4 }
+			add_to_variable = { a377socialist_support = 4 }
+			add_to_variable = { a357socialist_support = 4 }
+			add_to_variable = { a374socialist_support = 4 }
+			add_to_variable = { a358socialist_support = 4 }
+			add_to_variable = { a359socialist_support = 4 }
+			add_to_variable = { a360socialist_support = 4 }
+			add_to_variable = { a844socialist_support = 4 }
+			add_to_variable = { a362socialist_support = 4 }
+			add_to_variable = { a363socialist_support = 4 }
+			add_to_variable = { a364socialist_support = 4 }
+			add_to_variable = { a365socialist_support = 4 }
+			add_to_variable = { a366socialist_support = 4 }
+			add_to_variable = { a367socialist_support = 4 }
+			add_to_variable = { a368socialist_support = 4 }
+			add_to_variable = { a369socialist_support = 4 }
+			add_to_variable = { a370socialist_support = 4 }
+			add_to_variable = { a371socialist_support = 4 }
+			add_to_variable = { a372socialist_support = 4 }
+			add_to_variable = { a373socialist_support = 4 }
+			add_to_variable = { a375socialist_support = 4 }
+			add_to_variable = { a378socialist_support = 4 }
+			add_to_variable = { a379socialist_support = 4 }
+			add_to_variable = { a380socialist_support = 4 }
+			add_to_variable = { a381socialist_support = 4 }
+			add_to_variable = { a382socialist_support = 4 }
+			add_to_variable = { a383socialist_support = 4 }
+			add_to_variable = { a384socialist_support = 4 }
+			add_to_variable = { a385socialist_support = 4 }
+			add_to_variable = { a386socialist_support = 4 }
+			add_to_variable = { a387socialist_support = 4 }
+			add_to_variable = { a388socialist_support = 4 }
+			add_to_variable = { a389socialist_support = 4 }
+			add_to_variable = { a390socialist_support = 4 }
+			add_to_variable = { a391socialist_support = 4 }
+			add_to_variable = { a392socialist_support = 4 }
+			add_to_variable = { a393socialist_support = 4 }
+			add_to_variable = { a394socialist_support = 4 }
+			add_to_variable = { a395socialist_support = 4 }
+			add_to_variable = { a396socialist_support = 4 }
+			add_to_variable = { a836socialist_support = 4 }
+			add_to_variable = { a837socialist_support = 4 }
+			add_to_variable = { a838socialist_support = 4 }
+			add_to_variable = { a839socialist_support = 4 }
+			add_to_variable = { a843socialist_support = 4 }
+			add_to_variable = { a840socialist_support = 4 }
+			custom_effect_tooltip = "Socialist Party support will be changed in a state"
+			remove_ideas = USA_the_two_party_system 
 		}
 	}
 
 	focus = {
 		id = USA_economic_populism
-		icon = ENG_consolidating_our_control
+		icon = GFX_goal_ENG_consolidating_our_control
 		x = 91
 		y = 14
 		cost = 10
 
-		
-
 		prerequisite = {
 			focus = USA_new_politics
 		}
-		
-		
+				
 		completion_reward = {
 			add_ideas = bra_instabilidade_2
 		}
@@ -7090,12 +7060,10 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_free_silver
-		icon = GFX_goal_mediacontrol
+		icon = GFX_focus_CHL_silverworking
 		x = 91
 		y = 15
 		cost = 6
-
-		
 
 		prerequisite = {
 			focus = USA_economic_populism
@@ -7109,12 +7077,10 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_the_financeers
-		icon = GFX_RON_State_Control
+		icon = GFX_focus_INS_work_with_oil_barons
 		x = 91
 		y = 16
 		cost = 6
-
-		
 
 		prerequisite = {
 			focus = USA_free_silver
@@ -7122,58 +7088,48 @@ remove_ideas = USA_the_two_party_system
 		
 		
 		completion_reward = {
-						add_ideas = controlled_industralization
+			add_ideas = controlled_industralization
 		}
 	}
 
 	focus = {
 		id = USA_examine_business_regulations
-		icon = GFX_PER_control_majlis
+		icon = GFX_focus_AUS_lawmaking_leniency
 		x = 91
 		y = 17
 		cost = 6
-
-		
-
 		prerequisite = {
 			focus = USA_the_financeers
 		}
 		
-		
 		completion_reward = {
-						add_ideas = convertible_factories
-
+			add_ideas = convertible_factories
 		}
 	}
 
 	focus = {
 		id = USA_church_and_state
-		icon = GFX_church
+		icon = GFX_focus_PHI_philippine_independent_church
 		x = 94
 		y = 14
 		cost = 6
 
-		
-
 		prerequisite = {
 			focus = USA_new_politics
 		}
-		
-		
+				
 		completion_reward = {
-			add_ideas =tblra_church_support
+			add_ideas = tblra_church_support
 		}
 	}
 
 	focus = {
 		id = USA_protestant_domination
-		icon = GFX_goal_generic_christian_education
+		icon = GFX_goal_USA_protestant_domination
 		x = 93
 		y = 15
 		cost = 1
-
 		
-
 		bypass = {
 
 		}
@@ -7194,7 +7150,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_pan_christian_society
-		icon = GFX_goal_Generic_Christian_Trade_Unions
+		icon = GFX_goal_generic_friendship_with_church
 		x = 95
 		y = 15
 		cost = 1
@@ -7241,7 +7197,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_temperance
-		icon = american_christianity
+		icon = GFX_goal_USA_american_christianity
 		x = 94
 		y = 17
 		cost = 6
@@ -7281,13 +7237,10 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_immigration
-		icon = nordic_resistance_movement
+		icon = GFX_focus_generic_immigration
 		x = 97
 		y = 14
 		cost = 10
-
-		
-
 		prerequisite = {
 			focus = USA_new_politics
 		}
@@ -7299,13 +7252,10 @@ remove_ideas = USA_the_two_party_system
 	}
 	focus = {
 		id = USA_religious_requirements
-		icon = GFX_goal_PAL_forcefully_remove_settler
+		icon = GFX_focus_PRC_petition_for_freedom
 		x = 97
 		y = 15
 		cost = 6
-
-		
-
 		prerequisite = {
 			focus = USA_immigration
 		}
@@ -7318,12 +7268,10 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_protestant_immigration
-		icon = GFX_focus_YUG_guarantee_religious_liberties
+		icon = GFX_goal_USA_protestant_inmigration
 		x = 96
-		y = 16
+		y = 17
 		cost = 10
-
-		
 
 		prerequisite = {
 			focus = USA_religious_requirements
@@ -7332,29 +7280,9 @@ remove_ideas = USA_the_two_party_system
 		prerequisite = {
 			focus = USA_protestant_domination
 		}
-		
-		
+				
 		completion_reward = {
 			add_ideas = USA_protestent_immigration
-		}
-	}
-
-	focus = {
-		id = USA_target_catholic_institutions
-		icon = GFX_goal_AFG_disband_loya_jirga
-		x = 96
-		y = 17
-		cost = 10
-
-		
-
-		prerequisite = {
-			focus = USA_protestant_immigration
-		}
-		
-		
-		completion_reward = {
-			add_ideas = tdlra_catholic_rejection
 		}
 	}
 
@@ -7368,7 +7296,7 @@ remove_ideas = USA_the_two_party_system
 		
 
 		prerequisite = {
-			focus = USA_target_catholic_institutions
+			focus = USA_protestant_immigration
 		}
 		
 		
@@ -7379,15 +7307,12 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_amnesty_for_irish
-		icon = GFX_align_to_ireland
+		icon = GFX_goal_align_to_ireland
 		x = 95
 		y = 19
 		cost = 1
-
-		
 		
 		bypass = {
-
 		
 		}
 
@@ -7401,25 +7326,23 @@ remove_ideas = USA_the_two_party_system
 		
 		
 		completion_reward = {
-										add_opinion_modifier = {
-    target = IRE
-    modifier = medium_increase
-}	
-										add_opinion_modifier = {
-    target = ENG
-    modifier = medium_decrease
-}	
+			add_opinion_modifier = {
+				target = IRE
+				modifier = medium_increase
+			}	
+			add_opinion_modifier = {
+				target = ENG
+				modifier = medium_decrease
+			}	
 		}
 	}
 
 	focus = {
 		id = USA_throw_them_out
-		icon = attack_ireland
+		icon = GFX_focus_generic_oppression
 		x = 97
 		y = 19
 		cost = 1
-
-		
 
 		prerequisite = {
 			focus = USA_irish_question
@@ -7431,10 +7354,10 @@ remove_ideas = USA_the_two_party_system
 		
 		
 		completion_reward = {
-					add_opinion_modifier = {
-    target = IRE
-    modifier = western_betrayal
-}
+			add_opinion_modifier = {
+				target = IRE
+				modifier = western_betrayal
+			}
 			add_manpower = -10000
 			add_stability = -0.1	
 		}
@@ -7442,7 +7365,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_force_assimilation
-		icon = GFX_goal_generic_usa_assistance
+		icon = GFX_focus_ARG_the_american_push
 		x = 95
 		y = 20
 		cost = 6
@@ -7461,7 +7384,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_america_for_americans
-		icon = GFX_Goal_USA_america_first
+		icon = GFX_goal_USA_befriend_america
 		x = 97
 		y = 20
 		cost = 10
@@ -7480,7 +7403,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_our_motherland
-		icon = american_military_agreement
+		icon = GFX_goal_generic_usa_assistance
 		x = 96
 		y = 21
 		cost = 10
@@ -7495,39 +7418,39 @@ remove_ideas = USA_the_two_party_system
 		
 		completion_reward = {
 			random_owned_state = {
-						random_list = {
-							50 = {
-								add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-								add_extra_state_shared_building_slots = 2
-							}
-							35 = {
-								add_building_construction = {
-									type = industrial_complex
-									level = 3
-									instant_build = yes
-								}
-								add_extra_state_shared_building_slots = 3
-							}
-							15 = {
-								add_building_construction = {
-									type = industrial_complex
-									level = 4
-									instant_build = yes
-								}
-								add_extra_state_shared_building_slots = 4
-							}
+				random_list = {
+					50 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
 						}
+						add_extra_state_shared_building_slots = 2
 					}
+					35 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 3
+					}
+					15 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 4
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 4
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = USA_open_immigration_policy
-		icon = GFX_goal_mexico_a_new_dawn
+		icon = GFX_focus_PHI_open_borders
 		x = 98
 		y = 16
 		cost = 1
@@ -7548,7 +7471,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_city_on_a_hill
-		icon = GFX_goal_generic_city_chain_forts
+		icon = GFX_USA_city_on_a_hill
 		x = 98
 		y = 17
 		cost = 10
@@ -7564,56 +7487,49 @@ remove_ideas = USA_the_two_party_system
 		
 		completion_reward = {
 			random_list = {
-							50 = {
-								random_owned_state = {
-								add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-								add_extra_state_shared_building_slots = 1
-								}
-							}
-							35 = {
-								random_owned_state = {
-								add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-								add_extra_state_shared_building_slots = 2
-								}
-							}
-							15 = {
-								random_owned_state = {
-									
-								
-								add_building_construction = {
-									type = industrial_complex
-									level = 3
-									instant_build = yes
-								}
-								add_extra_state_shared_building_slots = 3
-								}
-							}
+				50 = {
+					random_owned_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
 						}
+						add_extra_state_shared_building_slots = 1
+					}
+				}
+				35 = {
+					random_owned_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				15 = {
+					random_owned_state = {		
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 3
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = USA_worker_unions
-		icon = GFX_BEL_union_agreement
+		icon = GFX_goal_trade_union_deal
 		x = 100
 		y = 14
 		cost = 10
-
-		
-
 		prerequisite = {
 			focus = USA_new_politics
-		}
-		
-		
+		}				
 		completion_reward = {
 			add_country_leader_trait = trade_unionist
 		}
@@ -7622,7 +7538,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_right_to_strike
-		icon = GFX_FRA_strikes
+		icon = GFX_focus_PRC_bolshevik_urbanization
 		x = 100
 		y = 15
 		cost = 6
@@ -7641,7 +7557,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_maximum_hours
-		icon = GFX_goal_PRU_labbour
+		icon = GFX_focus_generic_worker_administration
 		x = 100
 		y = 16
 		cost = 6
@@ -7680,7 +7596,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_rent_control
-		icon = GFX_goal_generic_price_controls
+		icon = GFX_focus_generic_price_controls
 		x = 100
 		y = 18
 		cost = 6
@@ -7724,7 +7640,7 @@ remove_ideas = USA_the_two_party_system
 	
 	focus = {
 		id = USA_reorganize_war_department
-		icon = GFX_Goal_USA_War_dep
+		icon = GFX_goal_USA_war_department
 		x = 90
 		y = 2
 		
@@ -7744,7 +7660,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_overseas_army
-		icon = GFX_goal_USA_marines
+		icon = GFX_focus_NORDIC_dem_army
 		x = 88
 		y = 3
 		
@@ -7770,7 +7686,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_american_foreign_legion
-		icon = GFX_idea_MEX_politicised_army
+		icon = GFX_goal_ATH_foreign_experts
 		x = 87
 		y = 4
 		
@@ -7809,7 +7725,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_regional_recruitment_centers
-		icon = GFX_goal_generic_recruitment
+		icon = GFX_focus_CZE_army_reform
 		x = 87
 		y = 5
 		
@@ -7871,7 +7787,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_occupation_force
-		icon = GFX_goal_cuba_law_of_sugar_coordination
+		icon = GFX_goal_generic_recruitment
 		x = 89
 		y = 5
 		
@@ -7890,7 +7806,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_defending_our_positions
-		icon = GFX_focus_generic_collective_defense
+		icon = GFX_focus_AUS_frontmiliz_focus
 		x = 88
 		y = 6
 		
@@ -7935,14 +7851,10 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_expand_our_army
-		icon = GFX_Goal_USA_arsenal_of_democracy
+		icon = GFX_focus_PRC_arms_recovery_efforts
 		x = 92
-		y = 3
-		
+		y = 3		
 		cost = 6
-
-		
-
 		prerequisite = {
 			focus = USA_reorganize_war_department
 		}
@@ -7954,7 +7866,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_civil_war_lessons
-		icon = confederate_constitution
+		icon = GFX_goal_USA_confederate_constitution
 		x = 92
 		y = 4
 		
@@ -8005,27 +7917,22 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_industrial_warfare
-		icon = GFX_goal_CSA_rebuild_industry
+		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
 		x = 92
-		y = 5
-		
+		y = 5	
 		cost = 6
-
-		
-
 		prerequisite = {
 			focus = USA_civil_war_lessons
 		}
 		
 		completion_reward = { 
-					add_offsite_building = { type = industrial_complex level = 3 }
-
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
 
 	focus = {
 		id = USA_total_war_tactics
-		icon = GFX_focus_generic_study_foreign_tanks
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 92
 		y = 6
 		
@@ -8049,7 +7956,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_military_industrial_complex
-		icon = GFX_idea_man_five_year_plan_industry
+		icon = GFX_focus_generic_military_industry
 		x = 94
 		y = 6
 		
@@ -8075,7 +7982,7 @@ remove_ideas = USA_the_two_party_system
 	
 	focus = {
 		id = USA_military_contractors
-		icon = industry_military
+		icon = GFX_goal_industrial_bill
 		x = 94
 		y = 7
 		
@@ -8099,14 +8006,10 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_ready_to_defend
-		icon = GFX_goal_generic_tank_cogs
+		icon = GFX_goal_USA_arsenal_of_democracy
 		x = 90
-		y = 7
-		
+		y = 7	
 		cost = 5
-
-		
-
 		prerequisite = {
 			focus = USA_total_war_tactics
 		}
@@ -8128,7 +8031,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_fund_academies
-		icon = GFX_focus_bo_universities
+		icon = GFX_focus_generic_military_academy
 		x = 95
 		y = 2
 		
@@ -8152,7 +8055,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_expand_military_budget
-		icon = GFX_GER_focus_increase_mil_budget
+		icon = GFX_focus_increase_mil_budget
 		x = 95
 		y = 3
 		
@@ -8171,7 +8074,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_authorize_RnD_programs
-		icon = ENG_industrial_research_grant
+		icon = GFX_goal_ENG_industrial_research_grant
 		x = 95
 		y = 4
 		
@@ -8190,7 +8093,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_aerial_warfare
-		icon = GFX_Goal_USA_arsenal_of_democracy
+		icon = GFX_focus_usa_escort_fighters
 		x = 95
 		y = 5
 		
@@ -8286,7 +8189,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_submarine_development
-		icon = GFX_SIA_submarineprocurementproject
+		icon = GFX_goal_generic_navy_submarine
 		x = 100
 		y = 3
 		
@@ -8343,7 +8246,8 @@ remove_ideas = USA_the_two_party_system
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
-				category = asw_tech }
+				category = asw_tech 
+			}
 
 		}
 		
@@ -8351,7 +8255,7 @@ remove_ideas = USA_the_two_party_system
 
 	focus = {
 		id = USA_support_ship_focus
-		icon = ENG_the_ocean_sparkling_lights
+		icon = GFX_goal_ENG_the_ocean_sparkling_lights
 		x = 102
 		y = 4
 		
@@ -8367,7 +8271,8 @@ remove_ideas = USA_the_two_party_system
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
-				category = dd_tech }
+				category = dd_tech 
+			}
 			add_ideas = IRE_destroyer_production_idea
 			navy_experience = 20			
 		}
@@ -8400,18 +8305,17 @@ remove_ideas = USA_the_two_party_system
 		}
 		
 		completion_reward = { 
-				random_navy_leader = {
+			random_navy_leader = {
+				add_naval_commander_role ={
+					traits = { blue_water_expert spotter red_navy_trait }
+					skill= 3
+					attack_skill= 2
+					defense_skill= 3
+					maneuvering_skill= 3
+					coordination_skill= 3
 
-			add_naval_commander_role ={
-				traits = { blue_water_expert spotter red_navy_trait }
-				skill= 3
-				attack_skill= 2
-				defense_skill= 3
-				maneuvering_skill= 3
-				coordination_skill= 3
-
-			}
-				}				
+				}
+			}				
 		}
 	}
 
@@ -8535,7 +8439,7 @@ random_owned_state = {
 
 	focus = {
 		id = USA_global_navy
-		icon = ENG_marines
+		icon = GFX_focus_USA_fleet
 		x = 98
 		y = 8
 		
@@ -8577,8 +8481,6 @@ random_owned_state = {
 		
 		cost = 10
 
-		
-
 		prerequisite = {
 			focus = USA_great_white_fleet
 		}
@@ -8607,20 +8509,18 @@ random_owned_state = {
 
 	focus = {
 		id = USA_bigger_ships
-		icon = battleships
+		icon = GFX_goal_generic_navy_battleship
 		x = 102
 		y = 6
 		
 		cost = 5
-
-		
 
 		prerequisite = {
 			focus = USA_maximum_firepower
 		}
 		
 		completion_reward = { 
-						add_tech_bonus = {
+			add_tech_bonus = {
 				name = cr_bonus
 				bonus = 1.0
 				uses = 1
@@ -8631,13 +8531,11 @@ random_owned_state = {
 
 	focus = {
 		id = USA_bigger_guns
-		icon = GFX_grand_battlefleet_medium
+		icon = GFX_focus_generic_battleship_guns
 		x = 102
 		y = 7
 		
 		cost = 5
-
-		
 
 		prerequisite = {
 			focus = USA_bigger_ships
@@ -8711,7 +8609,7 @@ random_owned_state = {
 
 	focus = {
 		id = USA_united_states_marines 
-		icon = GFX_SIA_submarineprocurementproject
+		icon = GFX_goal_USA_marines
 		x = 107
 		y = 2
 		
@@ -8736,7 +8634,7 @@ random_owned_state = {
 
 	focus = {
 		id = USA_halls_of_montezuma
-		icon = GFX_goal_generic_navigate_the_seas
+		icon = GFX_focus_crosshair_mexico
 		x = 105
 		y = 3
 		
@@ -8757,7 +8655,7 @@ random_owned_state = {
 
 	focus = {
 		id = USA_shores_of_tripoli
-		icon = GFX_goal_generic_naval_academy
+		icon = GFX_focus_crosshair_libya
 		x = 109
 		y = 3
 		
@@ -8798,8 +8696,7 @@ random_owned_state = {
 		}
 		
 		completion_reward = { 
-						add_ideas = ship_investigation
-
+			add_ideas = ship_investigation
 		}
 	}
 
@@ -8840,24 +8737,19 @@ random_owned_state = {
 
 	focus = {
 		id = USA_americas_finest
-		icon = GFX_goal_coastal_navy
+		icon = GFX_goal_USA_american_military_agreement
 		x = 107
-		y = 5
-		
+		y = 5		
 		cost = 5
-
-		
-
 		prerequisite = {
 			focus = USA_fight_battles
 		}
 
 		prerequisite = {
 			focus = USA_land_and_sea
-		}
-		
+		}		
 		completion_reward = { 
-						add_tech_bonus = {
+			add_tech_bonus = {
 				name = ss_bonus
 				bonus = 1
 				uses = 2

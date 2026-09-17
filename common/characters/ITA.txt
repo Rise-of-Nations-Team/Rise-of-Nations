@@ -101,12 +101,10 @@ characters = {
 				naval_aviation_pioneer
 			}
 			visible = {
-				date < 1945.1.1
-				date > 1907.1.1
+				has_completed_focus = ITADNC_n_the_naval_flying_service
 			}
 			available = {
-				date < 1945.1.1
-				date > 1907.1.1			
+				has_completed_focus = ITADNC_n_the_naval_flying_service
 			}		
 		}	
 		scientist = {
@@ -247,49 +245,71 @@ characters = {
 			expire = "1947.12.28.1"
 			id = -1
 		}
+		country_leader = {
+			ideology = semi_constitutional_monarchy
+			traits = { the_soldier_king }
+			id = -1
+		}
+		country_leader = {
+			ideology = nationalism
+			traits = { the_soldier_king }
+			id = -1
+		}
+		country_leader = {
+			ideology = constitutional_monarchism
+			traits = { the_soldier_king }
+			id = -1
+		}
 	}	
 
-    ITA_luigi_pelloux = {
+	ITA_luigi_pelloux = {
 		name = ITA_luigi_pelloux
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ITA/WW1/Portrait_ITA_Luigi_Pelloux.dds"
-				small="gfx/interface/ideas/ITA/idea_ITA_Luigi_Pelloux.dds"
+				small = "gfx/interface/ideas/ITA/idea_ITA_Luigi_Pelloux.dds"
 			}
 		}
-        country_leader={
-			ideology= democratic_militarism
-            expire = "1924.10.26.1"
+		country_leader = {
+			ideology = democratic_militarism
+			expire = "1924.10.26.1"
 		}
-		
-		advisor={
+		country_leader = {
+			ideology = militarism
+		}
+		advisor = {
 			slot = political_advisor
 			idea_token = ITA_luigi_pelloux
-			allowed  = {
-				original_tag = ITA	
+			allowed = {
+				original_tag = ITA
 			}
-			traits  = {
+			traits = {
 				backroom_backstabber crime_fighter
 			}
-			ai_will_do  = {
-				factor  = 1.000
+			ai_will_do = {
+				factor = 1.000
 			}
 			available = {
 				NOT = {
 					has_government = communism
 				}
+				OR = {
+					has_completed_focus = ITADNC_h_the_royal_prerogative
+					has_completed_focus = ITADNC_o_the_statuto_alone
+					has_completed_focus = ITADNC_u_return_to_the_statuto
+					has_country_flag = ITA_cw_the_leaders_reinstated
+					NOT = { has_country_flag = ITA_dnc_systems_open }
+				}
 			}
 		}
-
-        corps_commander = {
-			traits={ regio_esercito_trait politically_connected harsh_leader old_guard organizer skilled_staffer }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=0
-
+		corps_commander = {
+			traits = { regio_esercito_trait politically_connected harsh_leader old_guard organizer skilled_staffer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 0
 		}
 	}	
 
@@ -316,6 +336,10 @@ characters = {
 			available = {
 				NOT = {
 					is_country_leader = yes
+				}
+				OR = {
+					has_country_flag = ITA_g_giolitti_at_the_interior
+					NOT = { has_country_flag = ITA_dnc_path_giolitti }
 				}
 			}
 		}		
@@ -381,6 +405,12 @@ characters = {
 				NOT = {
 					is_country_leader = yes
 				}
+				OR = {
+					has_completed_focus = ITADNC_h_luzzatti_at_the_treasury
+					has_completed_focus = ITADNC_e_the_pareggio
+					has_completed_focus = ITADNC_e_the_workmens_houses
+					has_completed_focus = ITADNC_u_the_public_works_of_the_recovery
+				}
 			}
 		}			
 		country_leader = {
@@ -397,28 +427,35 @@ characters = {
 				large = "gfx/leaders/ITA/WW1/Portrait_ITA_Antonio_Salandra.dds"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = political_advisor
-			idea_token = ITA_sidney_sonnino
-			allowed  = {
-				original_tag = ITA	
+			idea_token = ITA_antonio_salandra
+			allowed = {
+				original_tag = ITA
 			}
-			traits  = {
+			traits = {
 				compassionate_gentleman
 			}
-			ai_will_do  = {
-				factor  = 1.000
+			ai_will_do = {
+				factor = 1.000
 			}
 			available = {
 				NOT = {
 					is_country_leader = yes
 				}
+				OR = {
+					has_completed_focus = ITADNC_h_the_prefects_are_instructed
+					has_completed_focus = ITADNC_h_salandra_and_the_right
+					has_completed_focus = ITADNC_u_the_conservative_leaning
+					has_country_flag = ITA_cw_the_leaders_reinstated
+					NOT = { has_country_flag = ITA_dnc_systems_open }
+				}
 			}
-		}		
+		}
 		country_leader = {
 			ideology = conservatism
 			traits = { conservative_grandee }
-            expire = "1932.1.1.1"			
+			expire = "1932.1.1.1"
 		}
 	}	
 
@@ -538,7 +575,7 @@ characters = {
 				}
 			}
 			traits = {
-				democratic_reformer 
+				TUR_liberal_reformer
 			}
 			do_effect = {
 				NOT = {
@@ -605,6 +642,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ITA/INT/Italy_Benito_Mussolini_Socialist.dds"
+				small = GFX_idea_ITA_benito_mussolini
 			}
 		}
 
@@ -613,6 +651,31 @@ characters = {
 			traits = {  }
 			expire = "1933.1.1.1"
 			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_benito_mussolini
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				communist_orator
+				harsh_propagandist
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_completed_focus = ITADNC_u_the_men_who_came_back_from_lugano
+					has_completed_focus = ITADNC_u_the_syndicate_governs
+					has_completed_focus = ITADNC_u_call_the_general_strike
+				}
+			}
 		}
 
 		corps_commander = {
@@ -637,11 +700,34 @@ characters = {
 		portraits={
 			civilian={
 				large="gfx/leaders/ITA/WW1/Portrait_ITA_Enrico_Corradini.dds"
+				small=GFX_idea_generic_fascist_demagogue_western_european_2d
 			}
 		}
 		country_leader={
 			ideology= proto_fascism
             expire = "1922.1.1.1"
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_enrico_corradini
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				ideological_crusader
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_completed_focus = ITADNC_u_the_syndicate_governs
+					has_completed_focus = ITADNC_u_call_the_general_strike
+				}
+			}
 		}
 	}
 
@@ -659,16 +745,35 @@ characters = {
 		}		
 	}	
 
-    ITA_constantino_lazzari = {
+	ITA_constantino_lazzari = {
 		name = "Constantino Lazzari"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ITA/WW1/Portrait_Italy_Costantino_Lazzari.dds"
 			}
 		}
-        country_leader={
-			ideology= socialism
-            expire = "1927.1.1.1"
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_constantino_lazzari
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				popular_figurehead
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				has_country_flag = ITA_cw_lazzari_freed
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1927.1.1.1"
 		}
 	}
 
@@ -679,6 +784,15 @@ characters = {
 				large="gfx/leaders/ITA/WW1/General_Alberto_Pollio.dds"
 				small="gfx/interface/ideas/ITA/idea_ITA_Alberto_Pollio.dds"
 			}
+			civilian={
+				large="gfx/leaders/ITA/WW1/General_Alberto_Pollio.dds"
+				small="gfx/interface/ideas/ITA/idea_ITA_Alberto_Pollio.dds"
+			}
+		}
+		country_leader={
+			ideology = militarism
+			traits = { }
+			id = -1
 		}		
 		advisor={
 			slot = army_chief
@@ -709,6 +823,12 @@ characters = {
 				large="gfx/leaders/ITA/WW1/Portrait_Italy_Prince_Emanuele_Filiberto.dds"
 				small="gfx/interface/ideas/ITA/idea_ITA_Emanuele_Filiberto.dds"
 			}
+			civilian={
+				large="gfx/leaders/ITA/WW1/Portrait_Italy_Prince_Emanuele_Filiberto.dds"
+			}
+		}
+		country_leader = {
+			ideology = constitutional_monarchism
 		}
 		corps_commander={
 			traits={ regio_esercito_trait politically_connected brilliant_strategist media_personality skilled_staffer }
@@ -1295,6 +1415,7 @@ characters = {
 		name = "Tommaso Tittoni"
 		portraits = {
 			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 				small = "gfx/interface/ideas/ITA/idea_ITA_Tommaso_Tittoni.dds"
 			}
 		}
@@ -1305,7 +1426,12 @@ characters = {
 				original_tag = ITA
 			}
 			available = {
-				date < 1931.1.1
+				OR = {
+					has_completed_focus = ITADNC_l_the_price_of_article_seven
+					has_completed_focus = ITADNC_h_the_understanding_with_vienna
+					has_country_flag = ITA_cw_the_leaders_reinstated
+					NOT = { has_country_flag = ITA_dnc_systems_open }
+				}
 			}
 			visible = {
 				date < 1931.1.1
@@ -1316,6 +1442,9 @@ characters = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+		country_leader = {
+			ideology = conservatism
 		}
 	}	
 	
@@ -1491,7 +1620,12 @@ characters = {
 				army_artillery_2
 			}
 			available = {
-				date < 1919.1.1
+				OR = {
+					has_completed_focus = ITADNC_arm_the_war_hypotheses
+					has_completed_focus = ITADNC_h_the_army_is_paid
+					has_completed_focus = ITADNC_u_the_territorial_militia
+					NOT = { has_country_flag = ITA_dnc_systems_open }
+				}
 			}
 			visible = {
 				date < 1919.1.1
@@ -1528,6 +1662,25 @@ characters = {
 				factor = 3
 			}					
 			cost = 100
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ITA_giulio_douhet_theorist
+			ledger = air
+			cost = 100
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_completed_focus = ITADNC_air_the_memoranda_of_douhet
+			}
+			traits = {
+				air_warfare_theorist
+				victory_through_airpower
+			}
+			ai_will_do = {
+				factor = 3
+			}
 		}
 		corps_commander = {
 			traits = { regio_esercito_trait trait_cautious media_personality commando }
@@ -1569,6 +1722,24 @@ characters = {
 				factor = 3
 			}					
 			cost = 100
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ITA_maurizio_moris_air_chief
+			ledger = air
+			cost = 100
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_completed_focus = ITADNC_air_the_directorate
+			}
+			traits = {
+				air_chief_reform_1
+			}
+			ai_will_do = {
+				factor = 3
+			}
 		}
 	}	
 
@@ -2894,7 +3065,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				navy_capital_ship_2
+				navy_capital_ship_1
 			}
 			cost = 100
 			ai_will_do = {
@@ -3191,7 +3362,8 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				naval_aviation_pioneer
+				naval_theorist
+				political_publicist
 			}
 		}
 	}
@@ -4051,7 +4223,7 @@ characters = {
 				#ITA_government_is_somewhat_fascist = yes
 			}
 			traits = {
-				silent_workhorse
+				staunch_loyalist
 			}
 
 			ai_will_do = {
@@ -4283,7 +4455,7 @@ characters = {
 				}
 			}
 			traits = {
-				army_chief_drill_2
+				army_chief_organizational_3
 			}
 			cost = 100
 			ai_will_do = {
@@ -4422,7 +4594,7 @@ characters = {
 				# }
 			}
 			traits = {
-				economist
+				economic_reformer
 			}
 
 			ai_will_do = {
@@ -5606,6 +5778,1197 @@ characters = {
 			traits = {  }
 			expire = "2012.1.29.1"
 			id = -1
+		}
+	}
+
+	ITA_vittorio_cuniberti = {
+		name = ITA_vittorio_cuniberti
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_2
+				small = GFX_idea_generic_navy_europe_1
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = ITA_vittorio_cuniberti
+			ledger = navy
+			allowed = {
+				original_tag = ITA
+			}
+			visible = {
+				has_completed_focus = ITADNC_n_the_ideal_battleship
+			}
+			available = {
+				has_completed_focus = ITADNC_n_the_ideal_battleship
+			}
+			traits = {
+				naval_theorist
+				naval_architect
+			}
+			research_bonus = {
+				bb_tech = 0.10
+			}
+		}
+	}
+
+	ITA_edoardo_masdea = {
+		name = ITA_edoardo_masdea
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_3
+				small = GFX_idea_generic_navy_europe_2
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = ITA_edoardo_masdea
+			ledger = navy
+			allowed = {
+				original_tag = ITA
+			}
+			visible = {
+				date > 1908.1.1
+				has_completed_focus = ITADNC_n_the_dante_alighieri
+			}
+			available = {
+				date > 1908.1.1
+				has_completed_focus = ITADNC_n_the_dante_alighieri
+			}
+			traits = {
+				naval_theorist
+				talented_engineer
+			}
+			research_bonus = {
+				naval_equipment = 0.08
+			}
+		}
+	}
+
+	ITA_giacinto_pullino = {
+		name = ITA_giacinto_pullino
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_1
+				small = GFX_idea_generic_navy_europe_3
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = ITA_giacinto_pullino
+			ledger = navy
+			allowed = {
+				original_tag = ITA
+			}
+			visible = {
+				date > 1905.1.1
+				has_completed_focus = ITADNC_n_the_submarine_flotilla
+			}
+			available = {
+				date > 1905.1.1
+				has_completed_focus = ITADNC_n_the_submarine_flotilla
+			}
+			traits = {
+				naval_theorist
+				submarine_specialist
+			}
+			research_bonus = {
+				ss_tech = 0.08
+			}
+		}
+	}
+
+	ITA_cesare_laurenti = {
+		name = ITA_cesare_laurenti
+		portraits = {
+			army = {
+				large = GFX_Portrait_Europe_Generic_navy_2
+				small = GFX_Portrait_Europe_Generic_navy_1_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = ITA_cesare_laurenti
+			ledger = navy
+			allowed = {
+				original_tag = ITA
+			}
+			visible = {
+				has_completed_focus = ITADNC_n_the_submarine_flotilla
+			}
+			available = {
+				has_completed_focus = ITADNC_n_the_submarine_flotilla
+			}
+			traits = {
+				naval_theorist
+				submarine_manufacturer
+			}
+			research_bonus = {
+				ss_tech = 0.10
+			}
+		}
+	}
+}
+
+characters = {
+
+	ITA_giuseppe_zanardelli = {
+		name = "Giuseppe Zanardelli"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+				small = GFX_idea_generic_political_advisor_europe_3
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+		}
+	}
+
+	ITA_giuseppe_saracco = {
+		name = "Giuseppe Saracco"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_4
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giuseppe_saracco
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				moderate_reformist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_alessandro_fortis = {
+		name = "Alessandro Fortis"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+				small = GFX_idea_generic_political_advisor_europe_5
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_alessandro_fortis
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				political_reformer_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_ettore_sacchi = {
+		name = "Ettore Sacchi"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_europe_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_ettore_sacchi
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				democratic_firebrand
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_filippo_turati = {
+		name = "Filippo Turati"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+				small = GFX_idea_generic_democratic_reformer_commonwealth_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_filippo_turati
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				social_reformer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_country_flag = ITA_a_turati_will_sit
+					has_country_flag = ITA_cw_the_leaders_reinstated
+				}
+			}
+		}
+		country_leader = {
+			ideology = socialism
+		}
+	}
+
+	ITA_leonida_bissolati = {
+		name = "Leonida Bissolati"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_communist_revolutionary_commonwealth_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_leonida_bissolati
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				pragmatic_socialist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_completed_focus = ITADNC_u_the_minimum_programme
+					has_country_flag = ITA_cw_the_leaders_reinstated
+				}
+			}
+		}
+	}
+
+	ITA_rinaldo_rigola = {
+		name = "Rinaldo Rigola"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_air_close_air_sup_western_european_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_rinaldo_rigola
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				veteran_trade_unionist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_completed_focus = ITADNC_u_the_confederation_of_labour
+					has_completed_focus = ITADNC_h_the_state_stands_aside
+				}
+			}
+		}
+	}
+
+	ITA_arturo_labriola = {
+		name = "Arturo Labriola"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+				small = GFX_idea_generic_army_europe_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_arturo_labriola
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				left_trade_unionist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				has_completed_focus = ITADNC_u_the_syndicate_governs
+			}
+		}
+		country_leader = {
+			ideology = syndicalism
+		}
+	}
+
+	ITA_errico_malatesta = {
+		name = "Errico Malatesta"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = anarcho_syndicalism
+		}
+	}
+
+	ITA_napoleone_colajanni = {
+		name = "Napoleone Colajanni"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+				small = GFX_idea_generic_air_air_combat_trainer_western_european_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_napoleone_colajanni
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				constitutional_philosopher
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_completed_focus = ITADNC_u_the_minimum_programme
+					has_completed_focus = ITADNC_o_recall_the_chamber
+					has_country_flag = ITA_cw_palermo_promised
+					has_country_flag = ITA_cw_the_leaders_reinstated
+				}
+			}
+		}
+		country_leader = {
+			ideology = democratic_republicanism
+		}
+	}
+
+	ITA_ernesto_nathan = {
+		name = "Ernesto Nathan"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_south_america_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_ernesto_nathan
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				master_of_politics
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_filippo_meda = {
+		name = "Filippo Meda"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_fascist_demagogue_commonwealth_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_filippo_meda
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				political_reformer_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				has_country_flag = ITA_dnc_path_concordat
+			}
+		}
+	}
+
+	ITA_ottorino_gentiloni = {
+		name = "Vincenzo Ottorino Gentiloni"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_6.dds"
+				small = GFX_idea_generic_war_industrialist_commonwealth_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_ottorino_gentiloni
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				silver_tongue
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+		country_leader = {
+			ideology = christian_democracy
+		}
+	}
+
+	ITA_giuseppe_toniolo = {
+		name = "Giuseppe Toniolo"
+		portraits = {
+			civilian = {
+				small = GFX_ace_m_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giuseppe_toniolo
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				welfare_architect
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_romolo_murri = {
+		name = "Romolo Murri"
+		portraits = {
+			civilian = {
+				small = GFX_ace_m_0
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_romolo_murri
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				champion_of_equality
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_ernesto_pacelli = {
+		name = "Ernesto Pacelli"
+		portraits = {
+			civilian = {
+				small = GFX_DEN_ace_m_0
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_ernesto_pacelli
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				captain_of_industry
+				industry_magnate
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				has_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				has_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
+			}
+		}
+	}
+
+	ITA_bonaldo_stringher = {
+		name = "Bonaldo Stringher"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_war_industrialist_western_european_2d
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ITA_bonaldo_stringher
+			ledger = civilian
+			cost = 100
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				OR = {
+					has_country_flag = ITA_e_the_bank_is_chartered
+					has_country_flag = ITA_g_stringher_at_the_bank
+				}
+			}
+			traits = {
+				industry_magnate
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	ITA_giulio_prinetti = {
+		name = "Giulio Prinetti"
+		portraits = {
+			civilian = {
+				small = GFX_western_european_2d_ace_m_0
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giulio_prinetti
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				skillful_diplomat
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_emilio_visconti_venosta = {
+		name = "Emilio Visconti Venosta"
+		portraits = {
+			civilian = {
+				small = GFX_western_european_2d_ace_m_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_emilio_visconti_venosta
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				modernizer_and_diplomat
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_antonino_di_san_giuliano = {
+		name = "Antonino di San Giuliano"
+		portraits = {
+			civilian = {
+				small = GFX_western_european_2d_ace_m_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_antonino_di_san_giuliano
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				ambitious_diplomat
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_luigi_federzoni = {
+		name = "Luigi Federzoni"
+		portraits = {
+			civilian = {
+				small = GFX_eastern_european_2d_ace_m_0
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_luigi_federzoni
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				nationalist_journalist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_gabriele_dannunzio = {
+		name = "Gabriele D'Annunzio"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Portrait_ITA_Gabriele_D_Annunzio.dds"
+				small = GFX_eastern_european_2d_ace_m_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_gabriele_dannunzio
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				propaganda_expert
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_cesare_battisti = {
+		name = "Cesare Battisti"
+		portraits = {
+			civilian = {
+				small = GFX_eastern_european_2d_ace_m_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_cesare_battisti
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				anti_habsburg
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_completed_focus = ITADNC_l_the_unredeemed_brothers
+					has_completed_focus = ITADNC_u_restore_the_venetian_borders
+				}
+			}
+		}
+	}
+
+	ITA_alceste_de_ambris = {
+		name = "Alceste De Ambris"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_fortification_engineer_eastern_european_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_alceste_de_ambris
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				communist_orator
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_completed_focus = ITADNC_u_the_works_to_the_syndicate
+					has_completed_focus = ITADNC_u_the_syndicate_governs
+				}
+			}
+		}
+	}
+
+	ITA_ferdinando_martini = {
+		name = "Ferdinando Martini"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_army_chief_def_eastern_european_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_ferdinando_martini
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				colonial_governor
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_ernesto_teodoro_moneta = {
+		name = "Ernesto Teodoro Moneta"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_army_chief_off_eastern_european_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_ernesto_teodoro_moneta
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				disarmament_proponent
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				OR = {
+					has_completed_focus = ITADNC_u_the_shield_of_the_constitution
+					has_completed_focus = ITADNC_h_the_pact_against_anarchy
+				}
+			}
+		}
+	}
+
+	ITA_salvatore_barzilai = {
+		name = "Salvatore Barzilai"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_naval_theorist_eastern_european_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_salvatore_barzilai
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				democratic_reformer
+				liberal_journalist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_luigi_albertini = {
+		name = "Luigi Albertini"
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_navy_anti_submarine_eastern_european_2d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_luigi_albertini
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				editor
+				monarchist_media_mogul
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	ITA_ricciotti_garibaldi = {
+		name = "Ricciotti Garibaldi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				small = GFX_idea_generic_army_europe_1
+			}
+		}
+		corps_commander = {
+			traits = {
+				regio_esercito_trait
+				trait_reckless
+				media_personality
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	ITA_tancredi_saletta = {
+		name = "Tancredi Saletta"
+		portraits = {
+			army = {
+				small = GFX_idea_generic_army_europe_4
+			}
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ITA_tancredi_saletta
+			ledger = army
+			cost = 50
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_completed_focus = ITADNC_arm_the_army_after_adwa
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	ITA_ettore_pedotti = {
+		name = "Ettore Pedotti"
+		portraits = {
+			army = {
+				small = GFX_idea_generic_army_europe_5
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ITA_ettore_pedotti
+			ledger = army
+			cost = 50
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_completed_focus = ITADNC_arm_the_war_school_at_turin
+			}
+			traits = {
+				army_chief_reform_1
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	ITA_carlo_mirabello = {
+		name = "Carlo Mirabello"
+		portraits = {
+			army = {
+				small = GFX_idea_generic_navy_europe_2
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ITA_carlo_mirabello
+			ledger = navy
+			cost = 50
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	ITA_giovanni_bettolo = {
+		name = "Giovanni Bettolo"
+		portraits = {
+			army = {
+				small = GFX_idea_generic_navy_europe_3
+			}
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ITA_giovanni_bettolo
+			ledger = navy
+			cost = 50
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				navy_chief_maneuver_1
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+}
+
+characters = {
+
+	ITA_anna_kuliscioff = {
+		name = "Anna Kuliscioff"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_female_1.dds"
+				small = GFX_idea_generic_political_advisor_female_europe
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_anna_kuliscioff
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				democratic_reformer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				has_completed_focus = ITADNC_u_the_women_of_the_leagues
+			}
+		}
+	}
+
+	ITA_nullo_baldini = {
+		name = "Nullo Baldini"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_9.dds"
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_nullo_baldini
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				leader_of_the_agrarian_union
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+				has_completed_focus = ITADNC_u_the_collective_tenancies
+			}
+		}
+	}
+
+	ITA_giuseppe_ottolenghi = {
+		name = "Giuseppe Ottolenghi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+				small = GFX_idea_generic_army_europe_3
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ITA_giuseppe_ottolenghi
+			ledger = army
+			cost = 50
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			available = {
+				has_completed_focus = ITADNC_arm_the_great_manoeuvres
+			}
+		}
+	}
+
+	ITA_vincenzo_garioni = {
+		name = "Vincenzo Garioni"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		corps_commander = {
+			traits = { regio_esercito_trait career_officer infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				OR = {
+					has_completed_focus = ITADNC_h_the_corps_for_china
+					has_completed_focus = ITADNC_o_the_army_of_the_king
+				}
+			}
+		}
+	}
+
+	ITA_emilio_de_giorgis = {
+		name = "Emilio De Giorgis"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		corps_commander = {
+			traits = { regio_esercito_trait career_officer militias_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				OR = {
+					has_completed_focus = ITADNC_h_the_carabinieri_for_macedonia
+					has_completed_focus = ITADNC_o_secure_the_new_order
+					has_completed_focus = ITADNC_u_the_office_of_public_vigilance
+				}
+			}
 		}
 	}
 }

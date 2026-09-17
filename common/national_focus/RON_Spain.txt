@@ -1,4 +1,3 @@
-#!gfx:interface/RON_goals.gfx
 focus_tree = {
 	id = Spain_DNC
 

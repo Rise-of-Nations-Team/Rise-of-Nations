@@ -1,0 +1,800 @@
+﻿l_english:
+
+### DNC Focus Tree
+  USADNC_retake_lost_teritory: "Retake Lost Territory"
+  USADNC_retake_lost_teritory_desc: "We must recover our former borders!"
+  USADNC_talks_with_germany: "Talks with Germany"
+  USADNC_talks_with_germany_desc: "We must talk with German advisors about possibly joining the dual alliance, or perhaps working out a trade treaty."
+  USADNC_the_seymour_expedition: "The Seymour Expedition"
+  USADNC_the_seymour_expedition_desc: "The Seymour Expedition will be a multi-national military force with the aim to march into Beijing."
+  USADNC_send_the_treaty_to_britian: "Send the Treaty to Britian"
+  USADNC_send_the_treaty_to_britian_desc: "We must send the treaty to the United Kingdom to be ratified and finally begin construction of the Panama Canal."
+  USADNC_public_railroads: "Public Railroads"
+  USADNC_public_railroads_desc: "We must be rid of the railroad companies, as they continue to practice corporate favoritism. We should turn the railroads into a public service."
+  USADNC_william_mckinleys_assassination: "William McKinley Assassinated"
+  USADNC_william_mckinleys_assassination_desc: "William McKinley's assassination has been a shock to our nation. What shall we do next?"
+  USADNC_the_boxer_rebellion: "The Boxer Rebellion"
+  USADNC_the_boxer_rebellion_desc: "China has come to us pleading to help to put down the Yihetuan Movement. We must decide whether to show our continued support to the empire, orto the rebels."
+  USADNC_ratify_the_haypauncefote_treaty: "Ratify the Hay-Pauncefote Treaty"
+  USADNC_ratify_the_haypauncefote_treaty_desc: "The Hay–Pauncefote Treaty is a preliminary treaty that gives us permission to start construction the Panama Canal."
+  USADNC_look_to_our_neighbors: "Look to Our Neighbors"
+  USADNC_look_to_our_neighbors_desc: "We must attempt to maintain healthy relationships with our neighbouring nations."
+  USADNC_implement_a_income_tax: "Implement an Income Tax"
+  USADNC_implement_a_income_tax_desc: "Implementing an income tax will be certainly not be a easy task, but it is something that must be done for our nation to move forward."
+  USADNC_end_the_philippines_resistance: "End the Philippines Resistance"
+  USADNC_end_the_philippines_resistance_desc: "We must end Philippine resistance to our rule. We have successfully subdued the Philippines and the resistance movement is declining. We must meet with the rebels and negotiate terms with them to stop their guerilla warfare campaign."
+  USADNC_britan_accepts_the_treaty: "Britain Accepts the Treaty"
+  USADNC_britan_accepts_the_treaty_desc: "With the treaty being accepted we may start preparations to building the canal"
+  USADNC_star_rebuilding_our_relationship_with_japan: "Our Relationship with Japan"
+  USADNC_star_rebuilding_our_relationship_with_japan_desc: "Japan has sent volunteers to the Philippines. Our relationship is almost at a breaking point. We must send try to rebuild our relationship with Japan."
+  USADNC_denounce_benevolent_assimilation: "Denounce Benevolent Assimilation"
+  USADNC_denounce_benevolent_assimilation_desc: "We must denounce William McKinley for starting this war, but we will still keep his policy in place to try to appease the people of the Philippines."
+  USADNC_destruction_of_villages: "Destruction of Villages"
+  USADNC_destruction_of_villages_desc: "We must destroy the Filipino culture and rebuild it from the ground up."
+  USADNC_harsh_treatment_to_the_locals: "Harsh Treatment of the Locals"
+  USADNC_harsh_treatment_to_the_locals_desc: "The locals have done nothing but harass us. The war ended with more casualties than neccessary due to continued insurgency. They must pay for the damages."
+  USADNC_sign_the_usphilippine_economic_recovery_act: "Sign the US-Philippine Economic Recovery Act"
+  USADNC_sign_the_usphilippine_economic_recovery_act_desc: "We must both assist each-other in war reparations in order to repair both of our nations - both financially and diplomatically."
+  USADNC_philippine_government_act: "Philippine Government Act"
+  USADNC_philippine_government_act_desc: "The Philippine Government Act will establish a colonial government in the Philippines, putting a end to the Philippine–American War"
+  USADNC_move_troops_out_of_the_philippines: "Move Troops Out of the Philippines"
+  USADNC_move_troops_out_of_the_philippines_desc: "We must end the occupation of the Philippines and start to repair relations with them."
+  USADNC_issue_american_currency_to_the_philippines: "Issue American Currency to the Philippines"
+  USADNC_issue_american_currency_to_the_philippines_desc: "We must placate American industry in the Philippines to rebuild their economy and help them civilize."
+  USADNC_encourage_immigration_to_the_philippines: "Encourage Migration"
+  USADNC_encourage_immigration_to_the_philippines_desc: "We must have more Americans in the Philippines in order to promote the Americanization of the Philippines."
+  USADNC_full_control_over_the_philippines: "Full Control over the Philippines"
+  USADNC_full_control_over_the_philippines_desc: "We have won this war. We must take our rightful territory back."
+  USADNC_start_the_americanization_of_the_philippines: "Begin the Americanization"
+  USADNC_start_the_americanization_of_the_philippines_desc: "We must start bringing American culture to the Philippines. We wil; start issuing American currency, and making English as a mandated second language."
+  USADNC_oklahoma_enabling_act: "Oklahoma Enabling Act"
+  USADNC_oklahoma_enabling_act_desc: "The Oklahoma Enabling Act gave the Oklahoma territory power to elect delegates."
+  USADNC_the_sequoyah_constitutional_convention: "The Sequoyah Constitutional Convention"
+  USADNC_the_sequoyah_constitutional_convention_desc: "The Sequoyah Constitutional Convention will be American and Indian meeting to attempt to secure statehood for Indian Territory"
+  USADNC_path_to_statehood_for_the_territory_of_oklahoma: "Path to Oklahoma Statehood"
+  USADNC_path_to_statehood_for_the_territory_of_oklahoma_desc: "The Territory of Oklahoma has westernized and modernized enough for us to make it a official state."
+  USADNC_limited_governance_over_the_philippines: "Limited Governance Over the Philippines"
+  USADNC_limited_governance_over_the_philippines_desc: "Creating a Supervised State in the Philippines is the best way to go."
+  USADNC_hands_off_treatment_of_the_philippines: "Hands-Off Treatment of the Philippines"
+  USADNC_hands_off_treatment_of_the_philippines_desc: "We must go with a hands off treatment to govern the Philippines."
+  USADNC_darft_a_list_of_monopolies: "Draft a List of Monopolies"
+  USADNC_darft_a_list_of_monopolies_desc: "We must draft a list of big business that is deemed too big for competition."
+  USADNC_denounce_imperialism_from_the_european_powers: "Denounce Imperialism From the European Powers"
+  USADNC_denounce_imperialism_from_the_european_powers_desc: "The European powers do not wish to help China, but to exploit it. We must support the sovereignty and recognize the effort made by the Boxers."
+  USADNC_pass_chinese_inclusion_act: "Pass Chinese Inclusion Act"
+  USADNC_pass_chinese_inclusion_act_desc: "Repeal the Chinese Exclusion Act and allow immigration from China."
+  USADNC_isthmian_canal_act: "Isthmian Canal Act"
+  isthmian_canal_act: "Isthmian Canal Act"
+  USADNC_isthmian_canal_act_desc: "The Canal Act called for the funding and building of the Panama Canal. We must pass this act to start construction of the Canal."
+  USADNC_full_annexation_of_the_philippines: "Full Annexation of the Philippines"
+  USADNC_full_annexation_of_the_philippines_desc: "We must fully annex the Philippians and admit it into our territory."
+  USADNC_promises_philippine_independence_within_a_few_years: "Promise Philippine Independence"
+  USADNC_promises_philippine_independence_within_a_few_years_desc: "We promise the island of the Philippines independence - eventually. However we must not act too hastily or it may reduce their internal stability."
+  USADNC_end_the_occupation_of_the_philippines_imminently: "Immediately End the Occupation"
+  USADNC_end_the_occupation_of_the_philippines_imminently_desc: "The calls for ending the occupation of the Philippines can not go unheard. We must order our troops to move out of the Philippines immediately."
+  USADNC_look_overseas: "Look Overseas"
+  USADNC_look_overseas_desc: "We must look overseas to find new trading partners."
+  USADNC_send_manpower_to_the_rebels: "Send Manpower to the Rebels"
+  USADNC_send_manpower_to_the_rebels_desc: "We must send them some of our manpower add fuel to the fire."
+  USADNC_join_the_entete: "Join the Entente"
+  USADNC_join_the_entete_desc: "France requires our help. We must agree to defend them at all costs."
+  USADNC_dissolve_standard_oil: "Dissolve Standard Oil"
+  USADNC_dissolve_standard_oil_desc: "With the lawsuit over we must split Standered Oil up into 32 different subsidiary companies."
+  USADNC_free_trade_agreement_with_mexico: "Free Trade Agreement with Mexico"
+  USADNC_free_trade_agreement_with_mexico_desc: "Mexico, though unstable, has many valuable natural resources. A free trade agreement will improve our relations."
+  USADNC_alliance_focus: "Alliance Focus"
+  USADNC_alliance_focus_desc: "In order to preserve our country we need to intervene in European affairs."
+  USADNC_sue_standard_oil: "Sue Standard Oil"
+  USADNC_sue_standard_oil_desc: "We must Standard Oil for their monopoly over the oil industry."
+  USADNC_pass_the_hepburn_act: "Pass the Hepburn Act"
+  USADNC_pass_the_hepburn_act_desc: "This act gave the Interstate Commerce Commission the power to set maximum railroad rates and extended its jurisdiction. This prevented railroad companies from choosing favorites and giving free passes to loyal shippers."
+  USADNC_pass_the_elkins_antirebate_act: "Pass the Elkins Anti-Rebate Act"
+  USADNC_pass_the_elkins_antirebate_act_desc: "This law will give railroads power to administer their rates, forbidding railroad companies from giving rebates to shippers"
+  USADNC_bring_communism_to_canada: "Bring Communism to Canada"
+  USADNC_bring_communism_to_canada_desc: "We must influence our northern neighbors, and spread Communist ideals to them."
+  USADNC_open_the_american_economy: "Open up the American Economy"
+  USADNC_open_the_american_economy_desc: "We must start to promote the ideas of a free American markets and open up the economy to move away from isolationism."
+  USADNC_rid_all_political_opposition: "Eliminate Political Opposition"
+  USADNC_rid_all_political_opposition_desc: "We must oust all opposition in our country and prepare for the war."
+  USADNC_form_a_communist_defense_pace: "Form a Communist Defense Pact"
+  USADNC_form_a_communist_defense_pace_desc: "We must form a defense pact in order to protect communism."
+  USADNC_revoke_the_bill_of_rights: "Revoke the Bill of Rights"
+  USADNC_revoke_the_bill_of_rights_desc: "Americans do not need the state to assure their right. Rather, the citizens should ensure the rights of the state. We must favour the continuity of the state over the rights of the individual."
+  USADNC_send_more_forces_to_help_out_china: "Send more Forces to Assist China"
+  USADNC_send_more_forces_to_help_out_china_desc: "We must send more forces to help out China and defeat the rebels."
+  USADNC_make_peace_with_the_philippine_republic: "Make Peace with the Philippine Republic"
+  USADNC_make_peace_with_the_philippine_republic_desc: "It is time to make pace with the Philippines"
+  USADNC_rid_of_the_moros: "Pacify of The Moros"
+  USADNC_rid_of_the_moros_desc: "The Moro population are preparing an insurrection and we should stop it before it gets out of hand."
+  USADNC_the_philippineamerican_war: "The Philippine–American War"
+  USADNC_the_philippineamerican_war_desc: "We have occupied the Philippines, now we must propose peace with the people."
+  USADNC_excert_our_influence_over_the_philippines: "Influence Over the Philippines"
+  USADNC_excert_our_influence_over_the_philippines_desc: "We must exert our influence over the Philippines - rebuilding their nation while also giving us economic power over them."
+  USADNC_put_william_howard_taft_in_charge_of_the_governance_of_the_philippines: "Taft as Governer of the Philippines"
+  USADNC_put_william_howard_taft_in_charge_of_the_governance_of_the_philippines_desc: "William Howard Taft is already the Secretary of War ,and he will make a perfect fit for the Governer."
+  USADNC_free_trade_with_the_united_kingdom: "Free Trade with the UK"
+  USADNC_free_trade_with_the_united_kingdom_desc: "The United Kingdom has been trying to improve relations with The Great Rapprochement and even supported us through the Spanish american war we should return the favor and sign a free trade agreement with the United Kingdom"
+  USADNC_free_trade_with_germany: "Free Trade with Germany"
+  USADNC_free_trade_with_germany_desc: "Although our relationship has been straining and they threaten Venezuelan occupation it will be in our best interest to start a free trade agreement with Germany, as there vast territory can hold rich national resources"
+  USADNC_extend_the_chinese_exclusion_act: "Extend The Chinese Exclusion Act"
+  USADNC_extend_the_chinese_exclusion_act_desc: "Extend the act to required "each Chinese resident to register and obtain a certificate of residence. Without a certificate they will face deportation"
+  USADNC_free_trade_agreement_with_the_philippines: "Free Trade Agreement with the Philippines"
+  USADNC_free_trade_agreement_with_the_philippines_desc: "We will release the Philippines, and force them to sign a free trade agreement with us."
+  USADNC_calls_for_ending_the_occupation_of_the_philippines: "Public Demands End to Occupation"
+  USADNC_calls_for_ending_the_occupation_of_the_philippines_desc: "The people of America acknowledge the Filipino people's claims to their home islands. Calls for de-occupation have already begun. Even staunch colonialists acknowledge that the Filipino guerilla warfare campaign has created public war-weariness, and continued occupation may not be in our best interests."
+  USADNC_free_trade_aggreements: "Free Trade Agreements"
+  USADNC_free_trade_aggreements_desc: "We should form free trade agreements with other nations to improve relationships with them and to gain easier access to their goods and services."
+  USADNC_internal_politics: "Internal Politics"
+  USADNC_internal_politics_desc: "Unlock focuses that have to do with internal politics."
+  USADNC_apologize_for_warcrimes: "Apologize for War Crimes"
+  USADNC_apologize_for_warcrimes_desc: "We may have gone a bit too far with the Philippines campaign. We massacred large numbers of the population and we should issue a official apology to the nation."
+  USADNC_create_the_panama_canal_commission: "Create The Panama Canal Commission"
+  USADNC_create_the_panama_canal_commission_desc: "With the treaty signed and the United Kingdom accepting our agreement we may now start dedicating workers and factories to the project."
+  USADNC_britan_rejects_the_treaty: "Britan Rejects the Treaty"
+  USADNC_britan_rejects_the_treaty_desc: "With the United Kingdom rejecting the Treaty the dream of a connected south and north america may never come to fruition."
+  USADNC_free_trade_with_austria__hungry: "Free Trade with Austria-Hungary"
+  USADNC_free_trade_with_austria__hungry_desc: "Austria-Hungary is an ally to the German empire and any friend of Germany should be a friend of the United States. Yet another large empire that we should befriend, and start a trade agreement with."
+  USADNC_free_trade_with_france: "Free Trade with France"
+  USADNC_free_trade_with_france_desc: "France is already an ally of the United States we should expand our relationship further."
+  USADNC_teddy_roosevelt_takes_office: "Teddy Roosevelt Takes Office"
+  USADNC_teddy_roosevelt_takes_office_desc: "The vice president Teddy Roosevelt will now take office as the president of the United States."
+  USADNC_the_roosevelt_administration: "The Roosevelt Administration"
+  USADNC_the_roosevelt_administration_desc: "As Roosevelt takes office what acts will he pass?"
+  USADNC_send_supplies_to_the_nationalists: "Supply the Nationalists"
+  USADNC_send_supplies_to_the_nationalists_desc: "We must supply the nationalists and fund the rebellion."
+  USADNC_the_invasion_of_colombia: "Invasion of Colombia"
+  USADNC_the_invasion_of_colombia_desc: "Colombia has refused to let Panama stay independent. The time to act is now. We must begin the invasion of Colombia."
+  USADNC_setup_the_first_federal_bird_reservation: "First Federal Bird Reservation"
+  USADNC_setup_the_first_federal_bird_reservation_desc: "President Theodore Roosevelt will establish a bird reservation on Pelican Island."
+  USADNC_fund_the_panama_nationalists: "Fund the Panama Nationalists"
+  USADNC_fund_the_panama_nationalists_desc: "Our negotiations with Colombia to acquire the Panama Canal Zone have fallen through. Perhaps we can help Panama get independence in exchange for the territory?"
+  USADNC_guarantee_the_independence_of_panama: "Guarantee Panama"
+  USADNC_guarantee_the_independence_of_panama_desc: "With our Guarantee going to Panama we can discourage Colombia from putting down the uprising."
+  USADNC_target_standard_oil: "Target Standard Oil"
+  USADNC_target_standard_oil_desc: "Standard Oil is the only major American oil company. We must dissolve it to promote healthy competition."
+  USADNC_sherman_antitrust_act: "Sherman Anti-Trust Act"
+  USADNC_sherman_antitrust_act_desc: "The Sherman Anti-Trust Act was a act to break up monopolies, giving Roosevelt the nickname of the Trust Buster."
+  USADNC_pass_congregational_acts: "Pass Congregational Acts"
+  USADNC_pass_congregational_acts_desc: "We must pass congregational acts to progress our nation.
+  USADNC_target_rail_road_companies: "Target Railroad Companies"
+  USADNC_target_rail_road_companies_desc: "Railroad companies are giving rebates to people shipping goods and discouraging natural competition."
+  USADNC_free_trade_agreement_with_canada: "Free Trade Agreement with Canada"
+  USADNC_free_trade_agreement_with_canada_desc: "Canada can be a gateway to better relationship with the United Kingdom."
+  USADNC_suppress_the_niagara_movement: "Suppress the Niagara Movement"
+  USADNC_suppress_the_niagara_movement_desc: "We must suppress the civil rights movement in Niagara as it is a hindrance to proper American culture."
+  USADNC_oklahoma_is_admitted_to_the_union: "Oklahoma Admitted to the Union"
+  USADNC_oklahoma_is_admitted_to_the_union_desc: "Oklahoma must finally be finally given full statehood."
+  USADNC_support_the_niagara_movement: "Support the Niagara Movement"
+  USADNC_support_the_niagara_movement_desc: "We must support the civil rights movement in Niagara."
+  USADNC_protect_the_revolution_overseas: "Protect the Revolution Overseas"
+  USADNC_protect_the_revolution_overseas_desc: "We must protect the revolution by looking overseas. Perhaps a European power would be willing to help us protect our commune."
+  USADNC_form_a_north_american_communist_union: "Form a North American Communist Union"
+  USADNC_form_a_north_american_communist_union_desc: "With the major nations of North America falling to communism we can now declare a protectorate doctrine, defending the American coasts from the evil capitalists."
+  USADNC_bring_communism_to_brazil: "Bring Communism to Brazil"
+  USADNC_bring_communism_to_brazil_desc: "Brazil is the biggest nation in South America, we should spread our communist ideals to them."
+  USADNC_rewrite_the_constitution: "Rewrite the Constitution"
+  USADNC_rewrite_the_constitution_desc: "We must scrap the old Constitution and rewrite it to better suit our communist cause."
+  USADNC_censor_the_media: "Censor the Media"
+  USADNC_censor_the_media_desc: "We must remove all negative press about the Communist party, further strengthening our grip on our country."
+  USADNC_storm_the_white_house: "Storm the White House"
+  USADNC_storm_the_white_house_desc: "We must spread the flames of revolution - peacefully or not."
+  USADNC_promote_the_communist_manifesto: "Promote the Communist Manifesto"
+  USADNC_promote_the_communist_manifesto_desc: "The Communist Manifesto was a excellent piece of literature and should be required reading for our population."
+  USADNC_dissolve_monopolies: "Dissolve Monopolies"
+  USADNC_dissolve_monopolies_desc: "We must dissolve these corporate monopolies - they eat away at our nations productivity with anti-competitive practices."
+  USADNC_ban_political_parties: "Ban Political Parties"
+  USADNC_ban_political_parties_desc: "We do not need political parties. They lead to pointless disagreements and they get nothing done. We need the KKK in charge of America, to promote proper American culture and morality."
+  USADNC_the_second_american_civil_war: "The Second American Civil War"
+  USADNC_the_second_american_civil_war_desc: "We have stormed the capital and raised our new flag, however it seems like some of America is not content on becoming Communist."
+  USADNC_independence_for_cuba: "Independence for Cuba"
+  USADNC_independence_for_cuba_desc: "We must end the occupation of Cuba and keep our promise to end military occupation"
+  USADNC_expand_presidential_powers: "Expand Presidential Powers"
+  USADNC_expand_presidential_powers_desc: "The current powers of the President are to weak. We must expand their power making the President's job easier."
+  USADNC_end_american_neutrality: "End American Neutrality"
+  USADNC_end_american_neutrality_desc: "America no longer needs to be neutral - we should expand our influence over the world."
+  USADNC_fund_the_kkk: "Fund the KKK"
+  USADNC_fund_the_kkk_desc: "We must send funding to the Klu Klux Klan as their way of life is most favorable and in line with proper American culture."
+  USADNC_revive_the_golden_circle: "Revive the Golden Circle"
+  USADNC_revive_the_golden_circle_desc: "The Golden Circle - a plan proposed by the confederates - is sounding more and more like a good idea. We should revive it."
+  USADNC_our_rightful_claim_on_mexico: "Our Rightful Claim on Mexico"
+  USADNC_our_rightful_claim_on_mexico_desc: "Mexico will fit nicely into the Union."
+  USADNC_revoke_the_monroe_doctrine: "Revoke the Monroe Doctrine"
+  USADNC_revoke_the_monroe_doctrine_desc: "We no longer need the Monroe Doctrine. It is a irrelevant and outdated document."
+  USADNC_promote_farright_parties: "Promote Far-Right Parties"
+  USADNC_promote_farright_parties_desc: "We must promote the parties that have America's best interests in mind."
+  USADNC_ideological_focus: "Ideological Focus"
+  USADNC_ideological_focus_desc: "We must take a hard look at our ideologies and the current state of our country."
+  USADNC_the_rightful_ruler: "The Rightful Ruler"
+  USADNC_the_rightful_ruler_desc: "America's ruler should be a Klan member. Since we have already established many significant social reforms, we should put someone with the proper mindset in charge."
+  USADNC_a_alternative_victory_in_the_elections: "An Alternative Election Victory"
+  USADNC_a_alternative_victory_in_the_elections_desc: "With William McKinley losing the election what should our country do next?"
+  USADNC_promote_farleft_parties: "Promote Far-Left Parties"
+  USADNC_promote_farleft_parties_desc: "We must promote far-left parties, they have America's best interests in mind."
+  USADNC_stateenforced_religion: "State-Enforced Religion"
+  USADNC_stateenforced_religion_desc: "We must enforce a state religion in America, as establishing proper morality is the KKK's core value."
+  USADNC_put_the_kkk_in_the_government: "KKK Positions in the Government"
+  USADNC_put_the_kkk_in_the_government_desc: "Members of the Klan should be given positions in the government. We must fill our cabinet with the most effective and diligent members from the Klan."
+  USADNC_fill_up_the_senate_with_klan_members: "A Senate of Klan Members"
+  USADNC_fill_up_the_senate_with_klan_members_desc: "The Laws of the United States should be dictated by Klan members, and they should control and influence the American way of life."
+  USADNC_fill_up_the_house_with_kkk_members: "KKK Members The House of Representatives"
+  USADNC_fill_up_the_house_with_kkk_members_desc: "The House of Representatives should represents the United States. With the victory of the KKK, the House should represent them as well."
+  USADNC_encourage_the_personality_cult: "Encourage the Personality Cult"
+  USADNC_encourage_the_personality_cult_desc: "The cult of personality surrounding the KKK should be expanded and be broadcast over the american radio. We will broadcasts their ideals all throughout America."
+  USADNC_end_free_elections: "End Free Elections"
+  USADNC_end_free_elections_desc: "We no longer need elections as the Klan already dictate our way of life, so we might as well end the unneccessary practice of voting."
+  USADNC_dawn_of_a_new_decade: "Dawn of a New Decade"
+  USADNC_dawn_of_a_new_decade_desc: "The previous decade has come to a close. With the new decade beginning, we must decide on what course our nation should take."
+  USADNC_william_mckinleys_administration: "William McKinley's Administration"
+  USADNC_william_mckinleys_administration_desc: "William McKinley has promised to promote free-trade within America. We must have it!"
+  USADNC_persue_the_dream_of_flight: "Pursue the Dream of Flight"
+  USADNC_persue_the_dream_of_flight_desc: "America should be the first country to take flight into the air. We must invest money in the development of flying machines."
+  USADNC_create_a_us_airforce_department: "Form the US Air Force"
+  USADNC_create_a_us_airforce_department_desc: "America requires an Air Force of our own."
+  USADNC_a_peaceful_revolution: "A Peaceful Revolution"
+  USADNC_a_peaceful_revolution_desc: "We have stormed the capital of America with little to no opposition. It seems like America is content with being under the Communist government."
+  USADNC_switch_to_a_socialist_style_of_economy: "Embrace Socialism"
+  USADNC_switch_to_a_socialist_style_of_economy_desc: "Laissez-faire capitalism is a thing of the past. We must switch to a more modern Market Socialist economic system."
+  USADNC_spread_communism: "Spread Communism"
+  USADNC_spread_communism_desc: "We should spread communism to other nations, using the Monroe doctrine as it was intended."
+  USADNC_bring_communism_to_mexico: "Bring Communism to Mexico"
+  USADNC_bring_communism_to_mexico_desc: "We must spread Communism to Mexico, bringing it into the revolution."
+  USADNC_secure_our_capital: "Secure our Capital"
+  USADNC_secure_our_capital_desc: "We must fortify our capital building to prevent any democratic forces from entering."
+  USADNC_everyone_must_fight: "Everyone Must Fight"
+  USADNC_everyone_must_fight_desc: "We must never surrender! We must continue to fight on no matter what cost."
+  USADNC_victory_in_the_war: "Victory in the War"
+  USADNC_victory_in_the_war_desc: "We have won the civil war! This will change history for years to come!"
+  USADNC_taxes_not_tariffs: "Taxes, Not Tariffs"
+  USADNC_taxes_not_tariffs_desc: "Teddy Roosevelt was in favor of having free trade without tariffs. He planned to remove the deficit by implementing an income tax."
+  USADNC_free_trade_with_japan: "Free Trade with Japan"
+  USADNC_free_trade_with_japan_desc: "We have opened up Japan to the world of trade. We should sign a free trade agreement with them."
+  USADNC_free_trade_with_russia: "Free Trade with Russia"
+  USADNC_free_trade_with_russia_desc: "The Russian Empire has had positive relations with us since they offered us additional land in Alaska. We should enter a free-trade agreement with them."
+  USADNC_the_panama_agreement: "The Panama Agreement"
+  USADNC_the_panama_agreement_desc: "The Panama Agreement will be an agreement between us and Panama to build the Panama Canal in secret."
+  USADNC_pass_congregational_acts_ii: "Pass Congregational Acts II"
+  USADNC_pass_congregational_acts_ii_desc: "We must continue to pass relevant congregational acts to make our government stronger."
+  USADNC_our_claims_on_central_america: "Our Claims on Central America"
+  USADNC_our_claims_on_central_america_desc: "Central America rightfully belongs to us! We must conqueror all of Central America."
+  USADNC_cuban_claims: "Cuban Claims"
+  USADNC_cuban_claims_desc: "Take over all of Cuba and have them join the Empire."
+  USADNC_destabilize_central_america: "Destabilize Central America"
+  USADNC_destabilize_central_america_desc: "We must upset the status quo in Central America in preparation for spreading communism."
+  USADNC_the_kings_act: "The Kings Act"
+  USADNC_the_kings_act_desc: "We must pass relevant Kings Acts to improve our nation."
+  USADNC_join_the_duel_alliance: "Join the Dual Alliance"
+  USADNC_join_the_duel_alliance_desc: "We shall send a request to Germany to join their alliance so we both can protect each other."
+  USADNC_empower_the_president: "Empower the President"
+  USADNC_empower_the_president_desc: "We must empower the president and get things done!"
+  USADNC_support_the_monarchy_party: "Support the Monarchy Party"
+  USADNC_support_the_monarchy_party_desc: "The Monarchy Party believes that America should be a absolute monarchy. We should support this party."
+  USADNC_revoke_the_15th_amendment: "Revoke the 15th Amendment"
+  USADNC_revoke_the_15th_amendment_desc: "People should not be able to vote in America. America should be an absolute monarchy."
+  USADNC_add_gorge_washington_to_the_dollar_bill: "George Washington on the Dollar Bill"
+  USADNC_add_gorge_washington_to_the_dollar_bill_desc: "George Washington the first president of the United States should be remembered as a monarch rather then an elected leader,"
+  USADNC_add_the_british_monarch_to_the_dollar_bill: "Add the British Monarch to the Dollar Bill"
+  USADNC_add_the_british_monarch_to_the_dollar_bill_desc: "We have already have been under the British monarchy once. we should return back to the United Kingdom as a subject under the throne."
+  USADNC_a_subject_under_the_king: "A Subject Under the King"
+  USADNC_a_subject_under_the_king_desc: "The United States will be a subject under the British crown. We will forget about the american revolution."
+  USADNC_on_our_own: "On Our Own"
+  USADNC_on_our_own_desc: "We must become a monarchy while also preserving the independance of the Union."
+  USADNC_support_the_empire: "Support the Empire"
+  USADNC_support_the_empire_desc: "The Empire is the true holder of the Mandate of Heaven and the Chinese throne."
+  USADNC_support_the_rebels: "Support the Rebels"
+  USADNC_support_the_rebels_desc: "The rebels are fighting for a righteous cause. We will support them."
+  USADNC_send_equipment_to_the_rebels: "Send Equipment to the Rebels"
+  USADNC_send_equipment_to_the_rebels_desc: "The rebels are under supplied and reduced to using swords and shields. We will send them guns and modern equipment."
+  USADNC_stay_democratic: "Stay Democratic"
+  USADNC_stay_democratic_desc: "Democracy is the way forward."
+  USADNC_formation_of_the_secret_service: "Formation of the Secret Service"
+  USADNC_formation_of_the_secret_service_desc: "The Secret Service or USSS is a law enforcement agency formed to protect the nation's leaders and safeguard the financial and critical infrastructure of the United States."
+  USADNC_immigration_act_of_1907: "Immigration Act of 1907"
+  USADNC_immigration_act_of_1907_desc: "This bill was made to restrict Japanese immigration. Roosevelt proclaimed in 1907 that "Probably a very large proportion, including most of the undesirable class, does not come here of its own initiative, but because of the activity of the agents of the great transportation companies, they wheedle and cajole many immigrants, often against their best interest, to come here.""
+  USADNC_great_britain_friendship_act: "Great Britain Friendship Act"
+  USADNC_great_britain_friendship_act_desc: "We must offer foreign aid to United Kingdom if Europe ever bursts out into war."
+  USADNC_create_a_embassy_in_the_german_empire: "An Embassy in the German Empire"
+  USADNC_create_a_embassy_in_the_german_empire_desc: "We shall side with the German empire and Austria-Hungary. We must start rebuilding our relationship by establishing an embassy in the German empire"
+  USADNC_create_a_embassy_in_the_united_kingdom: "An Embassy in the United Kingdom"
+  USADNC_create_a_embassy_in_the_united_kingdom_desc: "We shall side with the United Kingdom and France. We must start rebuilding our relationship by establishing an embassy in the United Kingdom."
+  USADNC_chose_a_side: "Chose a Side"
+  USADNC_chose_a_side_desc: "Europe is preparing for war. Perhaps we should choose a nation to ally with in case of conflict."
+  USADNC_create_a_embassy_in_austria_hungry: "An Embassy in Austria-Hungary"
+  USADNC_create_a_embassy_in_austria_hungry_desc: "We should also try to rebuild relations with Austria-Hungary as they are an ally to the German Empire."
+  USADNC_german_friendship_act: "German Friendship Act"
+  USADNC_german_friendship_act_desc: "We must offer foreign aid to Germany if Europe ever bursts out into war."
+  USADNC_create_a_embassy_in_france: "An Embassy in France"
+  USADNC_create_a_embassy_in_france_desc: "We should also try to rebuild relations with France as they are a ally to the United Kingdom."
+  USADNC_pay_the_philippines_depts: "Agree to Pay Damages"
+  USADNC_pay_the_philippines_depts_desc: "We have caused a great deal of damage in the Philippines. With them in this damaged state it will be hard for us to utilize them to their fullest potential."
+  USADNC_fund_communist_uprisings: "Fund Communist Uprisings"
+  USADNC_fund_communist_uprisings_desc: "We must fund communist uprisings throughout the United States perhaps some states may want to rebel against the union"
+  USADNC_fund_government_aviation_programs: "Fund Aviation Programs"
+  USADNC_fund_government_aviation_programs_desc: "We must spend government money to quickly complete an airplane."
+########### 1900-1914 Focus Tree Localisation ###########
+USA_gilded_age: "The Gilded Age"
+USA_gilded_age_desc: "It is the golden age of the United States. With the reconstruction finally ending in the 1870's, the USA could finally spread its wings and launch into the new century. At no time in history has the country experienced a period of more rapid economic growth and development than now. Fortunes are made, gambled, and lost in the span of a few years, and the boom has fueled innovation and the emergence of the first American global corporations. Things in the east are booming, as names like John D. Rockefeller, Andrew Carnegie, and J. P. Morgan rule the day. However, not all is as it seems on the surface..."
+
+USA_jeffersons_vision: "Jefferson's Vision"
+USA_jeffersons_vision_desc: "Revisiting the ideals of Thomas Jefferson, we see a vision of America rooted in agrarianism, individual liberty, and a limited government. His philosophy emphasizes the importance of an educated and virtuous citizenry, advocating for a nation of independent farmers and minimal government intervention."
+
+USA_corporate_primacy: "Corporate Primacy"
+USA_corporate_primacy_desc: "In the rapidly industrializing landscape of the Gilded Age, corporate primacy has taken hold. Large corporations dominate the economy, wielding immense power and influence over both market practices and government policies. This era is marked by a laissez-faire approach, allowing businesses to thrive with minimal regulation."
+
+USA_continue_subsidies: "Continue Subsidies"
+USA_continue_subsidies_desc: "Continuing government subsidies for key industries can promote further economic growth and stability. By providing financial support to emerging and existing sectors, the state can stimulate innovation, job creation, and competitiveness on a global scale."
+
+USA_favorable_business_reg: "Favorable Business Regulation"
+USA_favorable_business_reg_desc: "Implementing favorable business regulations can create an environment conducive to economic growth. By reducing bureaucratic hurdles and offering incentives for business operations, we can attract investment, encourage entrepreneurship, and boost overall productivity."
+
+USA_ignore_monopolization: "Ignore Monopolization"
+USA_ignore_monopolization_desc: "Choosing to ignore the rise of monopolies can lead to unchecked corporate power. While this may result in short-term economic benefits, the long-term consequences could include reduced competition, higher consumer prices, and greater economic inequality."
+
+USA_true_free_market: "True Free Market"
+USA_true_free_market_desc: "Embracing a true free market economy involves minimal government intervention, allowing supply and demand to dictate market conditions. This approach promotes competition, innovation, and efficient resource allocation, fostering a dynamic and resilient economic environment."
+
+USA_enforce_sherman_act: "Enforce the Sherman Act"
+USA_enforce_sherman_act_desc: "The Sherman Antitrust Act was enacted to combat anti-competitive practices and ensure fair competition. By strictly enforcing this legislation, we can prevent monopolies, protect consumer interests, and maintain a balanced economic landscape."
+
+USA_anti_monopoly_hearings: "Anti-Monopoly Hearings"
+USA_anti_monopoly_hearings_desc: "Holding anti-monopoly hearings can expose unfair business practices and curb corporate dominance. These hearings serve as a platform for scrutinizing the activities of large corporations, promoting transparency, accountability, and fair market conditions."
+
+USA_fair_competition: "Fair Competition"
+USA_fair_competition_desc: "Promoting fair competition is essential for a healthy economy. By implementing regulations that prevent monopolistic behaviors and encourage diverse market participation, we can ensure that businesses operate on a level playing field, fostering innovation and consumer choice."
+
+USA_encourage_vertical_integration: "Encourage Vertical Integration"
+USA_encourage_vertical_integration_desc: "Vertical integration involves merging companies that operate at different stages of the production process. Encouraging this practice can lead to greater efficiency, cost savings, and improved control over the supply chain, enhancing overall competitiveness."
+
+USA_consolidate_sectors: "Consolidate Sectors"
+USA_consolidate_sectors_desc: "Consolidating sectors can streamline operations and reduce redundancies. By merging smaller companies into larger entities, we can achieve economies of scale, increase market share, and improve overall industry stability."
+
+USA_sponsored_industrialization: "Sponsored Industrialization"
+USA_sponsored_industrialization_desc: "Government-sponsored industrialization can accelerate economic development. By providing financial support and infrastructure investment, the state can stimulate industrial growth, create jobs, and enhance national productivity."
+
+USA_continue_laissez_faire: "Continue Laissez-Faire"
+USA_continue_laissez_faire_desc: "Continuing a laissez-faire approach involves minimal government interference in economic affairs. This philosophy promotes individual initiative, free markets, and limited regulation, allowing businesses to operate with maximum freedom and flexibility."
+
+USA_continue_protectionism: "Continue Protectionism"
+USA_continue_protectionism_desc: "Maintaining protectionist policies can safeguard domestic industries from foreign competition. By imposing tariffs and trade barriers, we can support local businesses, preserve jobs, and strengthen the national economy against external market pressures."
+
+USA_gold_question: "The Gold Question"
+USA_gold_question_desc: "The debate over the gold standard revolves around whether to maintain gold as the basis for our currency. Proponents argue it ensures monetary stability and confidence, while opponents believe it limits economic flexibility and growth potential."
+
+USA_gold_standard_act: "Gold Standard Act"
+USA_gold_standard_act_desc: "The Gold Standard Act solidifies gold as the foundation of our monetary system. This legislation aims to provide a stable and predictable currency value, fostering investor confidence and international trade reliability."
+
+USA_gold_stay_course: "Stay the Course with Gold"
+USA_gold_stay_course_desc: "Staying the course with the gold standard can maintain monetary stability and prevent inflation. By ensuring that our currency remains backed by a tangible asset, we can preserve public trust and international credibility in our financial system."
+
+USA_fiduciary_responsibility: "Fiduciary Responsibility"
+USA_fiduciary_responsibility_desc: "Fiduciary responsibility involves managing financial resources with the utmost care and integrity. Adhering to this principle ensures that public funds are used wisely, investments are prudent, and economic decisions benefit the broader society."
+
+USA_central_banking_question: "Central Banking Question"
+USA_central_banking_question_desc: "The establishment of a central bank is a contentious issue. Advocates argue it can provide financial stability, manage inflation, and oversee monetary policy, while critics fear it may concentrate too much power and undermine free-market principles."
+
+USA_bimetallism: "Bimetallism"
+USA_bimetallism_desc: "Bimetallism proposes the use of both gold and silver as the basis for our currency. This system aims to increase money supply, reduce deflationary pressures, and provide greater flexibility in monetary policy compared to a gold-only standard."
+
+USA_america_silver_slippers: "America's Silver Slippers"
+USA_america_silver_slippers_desc: "Embracing silver in our monetary system can enhance economic growth and stability. By adopting a bimetallic standard, we can expand the money supply, support farmers and miners, and mitigate the limitations imposed by a gold-only currency."
+
+USA_devalue_dollar: "Devalue the Dollar"
+USA_devalue_dollar_desc: "Devaluing the dollar can make our exports more competitive and stimulate economic growth. However, it also carries risks of inflation and reduced purchasing power, necessitating careful management to balance these potential outcomes."
+
+USA_higher_man_tariffs: "Higher Manufacturing Tariffs"
+USA_higher_man_tariffs_desc: "Imposing higher tariffs on manufactured goods can protect domestic industries from foreign competition. This policy aims to preserve jobs, support local businesses, and promote national economic self-sufficiency."
+
+USA_compromise_with_farmers: "Compromise with Farmers"
+USA_compromise_with_farmers_desc: "Reaching a compromise with farmers can address their economic concerns and foster rural development. By providing financial support, improving infrastructure, and implementing fair trade policies, we can strengthen the agricultural sector and ensure its sustainability."
+
+USA_purchase_ag_debt: "Purchase Agricultural Debt"
+USA_purchase_ag_debt_desc: "Purchasing agricultural debt can alleviate financial burdens on farmers. By reducing their debt load, we can stabilize the agricultural sector, prevent bankruptcies, and promote long-term economic health in rural areas."
+
+USA_american_ingenuity: "American Ingenuity"
+USA_american_ingenuity_desc: "American ingenuity represents the innovative spirit and creativity that drive our nation's progress. By fostering a culture of invention and problem-solving, we can achieve technological advancements, economic growth, and global leadership."
+
+USA_hotbed_of_innovation: "Hotbed of Innovation"
+USA_hotbed_of_innovation_desc: "The United States is a hotbed of innovation, attracting talent and investment from around the world. Our dynamic economy, robust infrastructure, and supportive policies create an environment where new ideas can flourish and transform industries."
+
+USA_american_work_ethic: "American Work Ethic"
+USA_american_work_ethic_desc: "The American work ethic is characterized by dedication, perseverance, and a commitment to excellence. This cultural value drives productivity, economic success, and the continuous improvement of our society and industries."
+
+USA_agricultural_primacy: "Agricultural Primacy"
+USA_agricultural_primacy_desc: "Agricultural primacy emphasizes the importance of farming and rural life in our national identity and economy. By prioritizing agricultural development, we can ensure food security, support rural communities, and maintain a balanced economic structure."
+
+USA_limited_econ_intervention: "Limited Economic Intervention"
+USA_limited_econ_intervention_desc: "Limited economic intervention advocates for minimal government involvement in market activities. This approach relies on free-market mechanisms to allocate resources, drive innovation, and foster economic growth without excessive regulation."
+
+USA_break_up_businesses: "Break Up Businesses"
+USA_break_up_businesses_desc: "Breaking up large businesses can prevent monopolistic practices and promote fair competition. By dismantling corporate giants, we can create a more dynamic market environment, benefiting consumers and smaller enterprises."
+
+USA_repeal_tariffs: "Repeal Tariffs"
+USA_repeal_tariffs_desc: "Repealing tariffs can promote free trade and lower consumer prices. By removing trade barriers, we encourage international commerce, increase market efficiency, and enhance the availability of diverse goods and services."
+
+USA_common_man_policy: "Common Man Policy"
+USA_common_man_policy_desc: "Adopting policies that support the common man can promote social and economic equity. By addressing the needs of ordinary citizens, we can reduce inequality, improve living standards, and foster a more inclusive society."
+
+USA_global_trade: "Global Trade"
+USA_global_trade_desc: "Engaging in global trade opens up markets and creates opportunities for economic growth. By participating in international commerce, we can diversify our economy, access new resources, and strengthen diplomatic ties with other nations."
+
+USA_british_contracts: "British Contracts"
+USA_british_contracts_desc: "Securing British contracts can enhance our trade relations and economic stability. By partnering with the United Kingdom, we can access new markets, attract investment, and benefit from shared technological advancements."
+
+USA_german_trade: "German Trade"
+USA_german_trade_desc: "Expanding trade with Germany can boost our economic growth and diversify our market opportunities. By strengthening our commercial ties with this industrial powerhouse, we can enhance mutual prosperity and technological exchange."
+
+USA_nation_of_farmers: "Nation of Farmers"
+USA_nation_of_farmers_desc: "Embracing our identity as a nation of farmers can reinforce the importance of agriculture in our society. By supporting farming communities and sustainable practices, we can ensure food security, rural development, and environmental stewardship."
+
+USA_develop_western_territories: "Develop Western Territories"
+USA_develop_western_territories_desc: "Developing the western territories can unlock vast economic potential and foster national growth. By investing in infrastructure, supporting settlers, and promoting resource extraction, we can expand our economic frontier and integrate these regions into the national economy."
+
+USA_farming_innovations: "Farming Innovations"
+USA_farming_innovations_desc: "Innovations in farming can revolutionize agricultural productivity and sustainability. By adopting new technologies and practices, we can improve crop yields, reduce environmental impact, and ensure a stable food supply."
+
+USA_domestic_processing: "Domestic Processing"
+USA_domestic_processing_desc: "Focusing on domestic processing can add value to our raw materials and create jobs. By developing local industries that process agricultural and mineral products, we can enhance economic resilience and reduce reliance on foreign markets."
+
+USA_foreign_processing: "Foreign Processing"
+USA_foreign_processing_desc: "Outsourcing processing to foreign markets can reduce costs and increase efficiency. By leveraging international resources and labor, we can enhance our competitiveness and focus on higher-value aspects of production."
+
+USA_textile_subsidies: "Textile Subsidies"
+USA_textile_subsidies_desc: "Providing subsidies to the textile industry can support domestic manufacturing and job creation. By financially assisting this sector, we can enhance its global competitiveness and preserve a critical component of our industrial base."
+
+USA_minimal_protectionism: "Minimal Protectionism"
+USA_minimal_protectionism_desc: "Adopting minimal protectionism encourages free trade and market efficiency. By reducing tariffs and trade barriers, we can foster international commerce, lower consumer prices, and stimulate economic growth."
+
+USA_self_sufficiency: "Self-Sufficiency"
+USA_self_sufficiency_desc: "Promoting self-sufficiency can strengthen national resilience and reduce dependence on foreign resources. By developing local industries and sustainable practices, we can ensure a stable supply of essential goods and services."
+
+USA_merchant_fleets: "Merchant Fleets"
+USA_merchant_fleets_desc: "Building and maintaining robust merchant fleets can support international trade and economic growth. By enhancing our shipping capabilities, we can ensure the efficient transport of goods, boost exports, and strengthen our global economic presence."
+
+USA_global_free_trade: "Global Free Trade"
+USA_global_free_trade_desc: "Advocating for global free trade can open up new markets and enhance economic prosperity. By reducing trade barriers worldwide, we can promote economic integration, increase consumer choice, and foster international cooperation."
+
+USA_business_unites_us: "Business Unites Us"
+USA_business_unites_us_desc: "Business activities can serve as a unifying force, bringing diverse communities together through economic collaboration. By promoting entrepreneurship and commercial ventures, we can create shared opportunities and strengthen social cohesion."
+
+USA_american_politics: "American Politics"
+USA_american_politics_desc: "The landscape of American politics is shaped by the interplay of various ideologies, parties, and interest groups. Understanding this dynamic environment is crucial for navigating and influencing policy decisions that impact our nation's future."
+
+USA_question_of_establishment: "Question of Establishment"
+USA_question_of_establishment_desc: "The question of establishment revolves around the role and influence of established institutions and elites in shaping national policy. Addressing this issue involves balancing tradition and innovation, ensuring that governance remains effective and representative."
+
+USA_status_quo: "Preserve the Status Quo"
+USA_status_quo_desc: "Preserving the status quo involves maintaining existing policies and structures. This approach seeks to provide stability and continuity, avoiding disruptions that could arise from significant changes or reforms."
+
+USA_winds_of_change: "Winds of Change"
+USA_winds_of_change_desc: "The winds of change signify a period of transformation and reform. Embracing new ideas and policies can address contemporary challenges, drive progress, and adapt our nation to evolving social, economic, and political landscapes."
+
+USA_duopoly_preserved: "Preserve Political Duopoly"
+USA_duopoly_preserved_desc: "Preserving the political duopoly involves maintaining the dominance of the two major parties. This approach aims to ensure stability and continuity in governance, preventing the fragmentation that could arise from a multiparty system."
+
+USA_partisan_politics: "Partisan Politics"
+USA_partisan_politics_desc: "Partisan politics is characterized by strong allegiance to a particular political party and its policies. This dynamic often leads to competition and conflict between parties, influencing legislative processes and policy outcomes."
+
+USA_confederate_legacy: "Confederate Legacy"
+USA_confederate_legacy_desc: "The Confederate legacy refers to the historical and cultural impact of the Confederacy and its values. Addressing this legacy involves examining issues of heritage, memory, and the ongoing influence of Confederate symbols and narratives in society."
+
+USA_damn_traitors: "Damn Traitors"
+USA_damn_traitors_desc: "The sentiment of 'damn traitors' reflects a strong condemnation of those who supported the Confederacy. This perspective emphasizes the need for accountability and justice for actions perceived as betraying the Union and its principles."
+
+USA_lost_cause: "The Lost Cause"
+USA_lost_cause_desc: "The Lost Cause is a narrative that romanticizes the Confederate cause and portrays it as a noble but doomed effort. This interpretation often downplays the role of slavery and promotes a revisionist view of Civil War history."
+
+USA_end_confederate_veneration: "End Confederate Veneration"
+USA_end_confederate_veneration_desc: "Ending Confederate veneration involves removing symbols and narratives that glorify the Confederacy. This approach seeks to promote a more accurate and inclusive understanding of history, acknowledging the impact of slavery and the Civil War."
+
+USA_jim_crow_crackdown: "Jim Crow Crackdown"
+USA_jim_crow_crackdown_desc: "Cracking down on Jim Crow laws involves actively challenging and dismantling segregationist policies. This effort aims to promote racial equality, protect civil rights, and address the systemic discrimination faced by African Americans."
+
+USA_1877_revisited: "1877 Revisited"
+USA_1877_revisited_desc: "Revisiting 1877 involves examining the implications of the Compromise of 1877 and its impact on Reconstruction. This period marked the end of federal intervention in the South and the beginning of the Jim Crow era, shaping race relations for decades."
+
+USA_plessy_v_ferguson_revisited: "Plessy v. Ferguson Revisited"
+USA_plessy_v_ferguson_revisited_desc: "Revisiting Plessy v. Ferguson involves re-examining the 1896 Supreme Court decision that upheld racial segregation. This case established the 'separate but equal' doctrine, influencing segregation laws and practices across the United States."
+
+USA_fight_disenfranchisement: "Fight Disenfranchisement"
+USA_fight_disenfranchisement_desc: "Fighting disenfranchisement involves challenging laws and practices that prevent people, particularly minorities, from exercising their right to vote. This effort aims to ensure fair and inclusive democratic participation for all citizens."
+
+USA_enforce_14th_amendment: "Enforce the 14th Amendment"
+USA_enforce_14th_amendment_desc: "Enforcing the 14th Amendment involves ensuring that all citizens receive equal protection under the law. This commitment aims to uphold civil rights, address discrimination, and promote social justice in accordance with the Constitution."
+
+USA_federal_curriculum: "Federal Curriculum"
+USA_federal_curriculum_desc: "Implementing a federal curriculum involves standardizing educational content across the nation. This approach aims to ensure consistent and high-quality education for all students, regardless of their location or background."
+USA_replace_southern_teachers: "Replace Southern Teachers"
+USA_replace_southern_teachers_desc: "Advocating for the replacement of educators in Southern states to enforce Northern values and perspectives in schools."
+
+USA_ban_revisionist_books: "Ban Revisionist Books"
+USA_ban_revisionist_books_desc: "Proposing the prohibition of books that challenge or revise historical narratives, particularly concerning the Civil War and Reconstruction."
+
+USA_show_the_horror: "Show the Horror"
+USA_show_the_horror_desc: "Highlighting and emphasizing the atrocities and negative aspects of Southern history, particularly focusing on slavery and its aftermath."
+
+USA_shatter_the_mythos: "Shatter the Mythos"
+USA_shatter_the_mythos_desc: "Efforts to dismantle and discredit the glorification and romanticization of the Confederacy and its leaders."
+
+USA_confederate_monuments: "Confederate Monuments"
+USA_confederate_monuments_desc: "Controversy surrounding the existence and public display of statues and memorials honoring Confederate figures and soldiers."
+
+USA_state_education: "State Education"
+USA_state_education_desc: "Policies and debates regarding the role and control of state governments in shaping educational curricula and standards."
+
+USA_support_confederate_revisionism: "Support Confederate Revisionism"
+USA_support_confederate_revisionism_desc: "Advocating for historical interpretations that favor or justify Confederate ideals."
+
+USA_romanticize_CSA: "Romanticize CSA"
+USA_romanticize_CSA_desc: "Portraying the Confederate States of America (CSA) in a nostalgic or idealized manner, overlooking or downplaying its controversial history."
+
+USA_turn_blind_eye: "Turn Blind Eye"
+USA_turn_blind_eye_desc: "Ignoring or minimizing problematic aspects of Southern history, such as slavery and discrimination."
+
+USA_separate_but_equal: "Separate but Equal"
+USA_separate_but_equal_desc: "Supporting policies or practices that maintain segregation under the guise of equality, echoing historical justifications for racial separation."
+
+USA_end_electoral_oversight: "End Electoral Oversight"
+USA_end_electoral_oversight_desc: "Opposing federal oversight or intervention in state electoral processes, advocating for states' rights and autonomy in managing elections."
+
+USA_out_of_sight: "Out of Sight"
+USA_out_of_sight_desc: "Keeping controversial historical topics or issues related to Southern history out of public discourse or education."
+
+USA_question_of_populism: "Question of Populism"
+USA_question_of_populism_desc: "Debates and policies concerning the rise of populist movements and their impact on American politics and society."
+
+USA_absorb_populists: "Absorb Populists"
+USA_absorb_populists_desc: "Efforts by established political parties to incorporate or co-opt populist sentiments and issues into their platforms."
+
+USA_more_to_dems: "More to Dems"
+USA_more_to_dems_desc: "Shifts or developments favoring the Democratic Party in terms of voter support, policy alignment, or electoral strategy."
+
+USA_more_to_repubs: "More to Repubs"
+USA_more_to_repubs_desc: "Shifts or developments favoring the Republican Party in terms of voter support, policy alignment, or electoral strategy."
+
+USA_change_election_laws: "Change Election Laws"
+USA_change_election_laws_desc: "Proposals or actions aimed at altering electoral laws and regulations, impacting voting rights, procedures, or campaign finance."
+
+USA_no_third_parties: "No Third Parties"
+USA_no_third_parties_desc: "Opposition to the presence or influence of third-party candidates or movements in American politics, advocating for a two-party system."
+
+USA_adopt_populism: "Adopt Populism"
+USA_adopt_populism_desc: "Political strategies or policies embracing populist rhetoric, appeals, or platforms to attract voter support."
+
+USA_silver_reexamined: "Silver Reexamined"
+USA_silver_reexamined_desc: "Reevaluation or debates regarding the historical significance and economic impact of the 'free silver' movement in American politics."
+
+USA_anti_monopoly_rhetoric: "Anti-Monopoly Rhetoric"
+USA_anti_monopoly_rhetoric_desc: "Public discourse or political rhetoric opposing monopolies and advocating for measures to promote competition and fair markets."
+
+USA_help_farmers: "Help Farmers"
+USA_help_farmers_desc: "Policies, programs, or initiatives aimed at supporting agricultural producers, addressing their needs, and promoting rural development."
+
+USA_help_big_business: "Help Big Business"
+USA_help_big_business_desc: "Government policies, incentives, or actions benefiting large corporations or industries, aiming to stimulate economic growth and competitiveness."
+
+USA_socialist_problem: "Socialist Problem"
+USA_socialist_problem_desc: "Concerns, debates, or opposition regarding socialist ideologies, policies, or movements in American society and politics."
+
+USA_trade_union_question: "Trade Union Question"
+USA_trade_union_question_desc: "Debates, policies, or issues surrounding labor unions, their rights, influence, and impact on the economy and workforce."
+
+USA_smear_campaign: "Smear Campaign"
+USA_smear_campaign_desc: "Coordinated efforts to spread negative or misleading information about political opponents or rivals to undermine their credibility and support."
+
+USA_infiltrate_socialists: "Infiltrate Socialists"
+USA_infiltrate_socialists_desc: "Efforts to monitor, influence, or counter socialist movements, ideologies, or organizations within American society or politics."
+
+USA_propaganda_campaign: "Propaganda Campaign"
+USA_propaganda_campaign_desc: "Systematic dissemination of biased or misleading information to shape public opinion, influence perceptions, or promote specific agendas."
+
+USA_new_politics: "New Politics"
+USA_new_politics_desc: "Emerging political movements, strategies, or ideologies challenging traditional norms, practices, or party structures in American politics."
+
+USA_economic_populism: "Economic Populism"
+USA_economic_populism_desc: "Political rhetoric or policies advocating for the interests of ordinary people against economic elites, emphasizing economic justice and fairness."
+
+USA_free_silver: "Free Silver"
+USA_free_silver_desc: "Historical advocacy for the unlimited coinage of silver as a means to inflate currency and alleviate economic hardships, particularly affecting farmers and debtors."
+
+USA_the_financeers: "The Financeers"
+USA_the_financeers_desc: "Influential individuals, groups, or institutions involved in financial affairs, economic policy-making, or the management of capital in American society."
+
+USA_examine_business_regulations: "Examine Business Regulations"
+USA_examine_business_regulations_desc: "Reviewing, assessing, or debating government regulations impacting businesses, industries, or economic activities in the United States."
+
+USA_church_and_state: "Church and State"
+USA_church_and_state_desc: "Debates, policies, or legal issues concerning the separation or interaction of religious institutions and government in American society."
+
+USA_protestant_domination: "Protestant Domination"
+USA_protestant_domination_desc: "Historical or contemporary influence and prevalence of Protestant beliefs, practices, or institutions in American culture, politics, and society."
+
+USA_pan_christian_society: "Pan-Christian Society"
+USA_pan_christian_society_desc: "Visions, movements, or efforts to promote unity or collaboration among Christian denominations, fostering a collective identity or societal influence."
+
+USA_god_and_evolution: "God and Evolution"
+USA_god_and_evolution_desc: "Debates, controversies, or legal challenges regarding the teaching of evolution, creationism, or intelligent design in American schools."
+
+USA_temperance: "Temperance"
+USA_temperance_desc: "Historical or contemporary movements advocating for moderation or abstinence from alcohol consumption, addressing social and health impacts."
+
+USA_question_of_tolerance: "Question of Tolerance"
+USA_question_of_tolerance_desc: "Debates, policies, or societal attitudes regarding acceptance, diversity, and the rights of minority groups in American culture and politics."
+
+USA_immigration: "Immigration"
+USA_immigration_desc: "Policies, debates, or issues related to the influx, regulation, and impact of immigrants on American society, culture, and economy."
+
+USA_religious_requirements: "Religious Requirements"
+USA_religious_requirements_desc: "Debates or controversies over religious practices, requirements, or freedoms, particularly concerning public institutions and accommodations."
+
+USA_protestant_immigration: "Protestant Immigration"
+USA_protestant_immigration_desc: "Historical or contemporary trends, impacts, or debates surrounding Protestant immigrants and their integration into American society."
+
+USA_target_catholic_institutions: "Target Catholic Institutions"
+USA_target_catholic_institutions_desc: "Efforts, policies, or actions aimed at influencing or restricting the activities, practices, or influence of Catholic institutions in American society."
+
+USA_irish_question: "Irish Question"
+USA_irish_question_desc: "Historical or contemporary debates, challenges, or issues surrounding Irish immigrants and their integration or treatment in American society."
+
+USA_amnesty_for_irish: "Amnesty for Irish"
+USA_amnesty_for_irish_desc: "Advocacy for legal forgiveness or pardons for Irish immigrants or their descendants who may have faced historical discrimination or legal penalties."
+
+USA_throw_them_out: "Throw Them Out"
+USA_throw_them_out_desc: "Advocacy or policies advocating for the expulsion or removal of immigrants or specific ethnic groups deemed undesirable in American society."
+
+USA_force_assimilation: "Force Assimilation"
+USA_force_assimilation_desc: "Policies or efforts to compel immigrants or minority groups to adopt dominant cultural norms, values, or practices in American society."
+
+USA_america_for_americans: "America for Americans"
+USA_america_for_americans_desc: "Advocacy for prioritizing the interests, rights, and privileges of native-born Americans over those of immigrants or foreign-born residents."
+
+USA_our_motherland: "Our Motherland"
+USA_our_motherland_desc: "Expressions of patriotism or allegiance to America as the homeland or motherland for its citizens, emphasizing national identity and pride."
+
+USA_open_immigration_policy: "Open Immigration Policy"
+USA_open_immigration_policy_desc: "Advocacy or support for lenient or unrestricted immigration policies allowing greater numbers of immigrants to enter and settle in the United States."
+
+USA_city_on_a_hill: "City on a Hill"
+USA_city_on_a_hill_desc: "Referring to America as a shining example or beacon of hope and virtue for other nations to emulate, often linked to exceptionalism and moral leadership."
+
+USA_worker_unions: "Worker Unions"
+USA_worker_unions_desc: "Organized associations of workers formed to protect and promote their interests, rights, and welfare in the workplace."
+
+USA_right_to_strike: "Right to Strike"
+USA_right_to_strike_desc: "The legal or moral entitlement of workers to engage in strikes or collective industrial action to negotiate better wages, conditions, or benefits."
+
+USA_maximum_hours: "Maximum Hours"
+USA_maximum_hours_desc: "Policies or regulations limiting the number of hours employees can work per day or week, aimed at protecting their health, safety, and well-being."
+
+USA_wage_protections: "Wage Protections"
+USA_wage_protections_desc: "Government policies, laws, or regulations designed to safeguard workers' wages, ensuring fair compensation and preventing exploitation."
+
+USA_rent_control: "Rent Control"
+USA_rent_control_desc: "Government-imposed limits or regulations on residential rental prices, often implemented to protect tenants from excessive rent increases."
+
+USA_armed_forces: "Armed Forces"
+USA_armed_forces_desc: "The military institutions, personnel, and operations of the United States, responsible for national defense and security."
+
+USA_reorganize_war_department: "Reorganize War Department"
+USA_reorganize_war_department_desc: "Efforts or proposals to restructure or reform the War Department, aiming to enhance efficiency, effectiveness, or oversight in military affairs."
+
+USA_overseas_army: "Overseas Army"
+USA_overseas_army_desc: "Military deployments, operations, or presence of American armed forces in foreign countries or territories outside the continental United States."
+
+USA_american_foreign_legion: "American Foreign Legion"
+USA_american_foreign_legion_desc: "Establishment of an American Foreign Legion, modeled after foreign military units, to recruit non-citizen volunteers for military service."
+
+USA_overseas_engineers: "Overseas Engineers"
+USA_overseas_engineers_desc: "Deployment of American engineering units to overseas territories for infrastructure development, military construction, or humanitarian missions."
+
+USA_regional_recruitment_centers: "Regional Recruitment Centers"
+USA_regional_recruitment_centers_desc: "Establishment of regional recruitment centers across the country to enlist and train new military personnel efficiently."
+
+USA_occupation_force: "Occupation Force"
+USA_occupation_force_desc: "Deployment and maintenance of military forces in occupied territories or regions for security, stabilization, or governance."
+
+USA_defending_our_positions: "Defending Our Positions"
+USA_defending_our_positions_desc: "Strategies, policies, or actions to defend and secure American military positions, outposts, or territories from external threats."
+
+USA_expand_our_army: "Expand Our Army"
+USA_expand_our_army_desc: "Initiatives or policies to increase the size, strength, or capabilities of the U.S. Army through recruitment, training, or modernization."
+
+USA_civil_war_lessons: "Civil War Lessons"
+USA_civil_war_lessons_desc: "Study and application of military strategies, tactics, and lessons learned from the American Civil War to modern military doctrine and operations."
+
+USA_industrial_warfare: "Industrial Warfare"
+USA_industrial_warfare_desc: "Utilization of industrial resources, technology, and production capabilities to support military operations and enhance combat effectiveness."
+
+USA_total_war_tactics: "Total War Tactics"
+USA_total_war_tactics_desc: "Adoption of total war strategies involving the mobilization of all resources, civilian and military, to achieve decisive victory in conflict."
+
+USA_military_industrial_complex: "Military-Industrial Complex"
+USA_military_industrial_complex_desc: "Integration and collaboration between military institutions and industrial sectors to develop and produce military equipment and technology."
+
+USA_military_contractors: "Military Contractors"
+USA_military_contractors_desc: "Engagement of private contractors or companies to provide specialized services, equipment, or support to the U.S. military."
+
+USA_ready_to_defend: "Ready to Defend"
+USA_ready_to_defend_desc: "Ensuring preparedness and capability of U.S. military forces to defend national interests, territory, and allies against potential threats."
+
+USA_fund_academies: "Fund Academies"
+USA_fund_academies_desc: "Allocation of resources and funding to military academies for education, training, and development of future military leaders."
+
+USA_expand_military_budget: "Expand Military Budget"
+USA_expand_military_budget_desc: "Increase in government expenditure allocated to defense and military operations, including procurement, training, and infrastructure."
+
+USA_authorize_RnD_programs: "Authorize R&D Programs"
+USA_authorize_RnD_programs_desc: "Approval and support for research and development programs aimed at advancing military technology, innovation, and capabilities."
+
+USA_aerial_warfare: "Aerial Warfare"
+USA_aerial_warfare_desc: "Strategies, tactics, and technology developments focused on air combat, aerial reconnaissance, and support operations in military campaigns."
+
+USA_state_of_the_navy: "State of the Navy"
+USA_state_of_the_navy_desc: "Assessment, evaluation, or discussion of the readiness, capabilities, and strategic role of the U.S. Navy in national defense and global operations."
+
+USA_continued_dreadnought_investment: "Continued Dreadnought Investment"
+USA_continued_dreadnought_investment_desc: "Continued investment and expansion of the dreadnought fleet as a cornerstone of naval strategy and projection of maritime power."
+
+USA_great_white_fleet: "Great White Fleet"
+USA_great_white_fleet_desc: "Historical deployment of the U.S. Navy's Great White Fleet to demonstrate naval strength and promote American interests globally."
+
+USA_submarine_development: "Submarine Development"
+USA_submarine_development_desc: "Research, design, and deployment of submarines for underwater warfare, reconnaissance, and strategic deterrence."
+
+USA_undersea_warfare: "Undersea Warfare"
+USA_undersea_warfare_desc: "Strategies, technologies, and operations focused on underwater combat, including submarine warfare and anti-submarine tactics."
+
+USA_commission_destroyers: "Commission Destroyers"
+USA_commission_destroyers_desc: "Building and commissioning of destroyer-class ships for fleet defense, escort missions, and anti-submarine warfare capabilities."
+
+USA_support_ship_focus: "Support Ship Focus"
+USA_support_ship_focus_desc: "Emphasis on the development and deployment of support ships for logistics, supply, medical aid, and other non-combat roles in naval operations."
+
+USA_versatile_task_forces: "Versatile Task Forces"
+USA_versatile_task_forces_desc: "Formation and deployment of versatile task forces capable of multi-mission operations, adapting to various strategic and operational needs."
+
+USA_streamlined_production_techniques: "Streamlined Production Techniques"
+USA_streamlined_production_techniques_desc: "Adoption of efficient manufacturing methods and practices to accelerate production of military equipment and resources."
+
+USA_screen_ships: "Screen Ships"
+USA_screen_ships_desc: "Deployment of screening forces and tactics to protect fleet formations, monitor enemy movements, and maintain situational awareness."
+
+USA_quantity_over_quality: "Quantity over Quality"
+USA_quantity_over_quality_desc: "Emphasis on producing a larger quantity of military assets, personnel, or equipment rather than focusing on individual quality or capability."
+
+USA_manueverability_over_firepower: "Maneuverability over Firepower"
+USA_manueverability_over_firepower_desc: "Prioritization of agility, speed, and maneuverability in military operations and tactics over sheer firepower or static defenses."
+
+USA_global_navy: "Global Navy"
+USA_global_navy_desc: "Maintenance, expansion, and deployment of naval forces for global operations, presence, and power projection in international waters."
+
+USA_maximum_firepower: "Maximum Firepower"
+USA_maximum_firepower_desc: "Emphasis on maximizing the offensive capabilities and firepower of military units, platforms, or weapons systems."
+
+USA_bigger_ships: "Bigger Ships"
+USA_bigger_ships_desc: "Development, construction, or acquisition of larger naval vessels, carriers, or warships for enhanced operational capabilities and force projection."
+
+USA_bigger_guns: "Bigger Guns"
+USA_bigger_guns_desc: "Development, installation, or upgrade of larger caliber guns, cannons, or artillery on naval vessels or ground-based military platforms."
+
+USA_new_naval_theory: "New Naval Theory"
+USA_new_naval_theory_desc: "Emerging or evolving concepts, doctrines, or strategies shaping naval warfare, operations, and tactics in contemporary or future scenarios."
+
+USA_the_battleship: "The Battleship"
+USA_the_battleship_desc: "Historical or contemporary significance, roles, and capabilities of battleships as key components of naval fleets and power projection."
+
+USA_united_states_marines: "United States Marines"
+USA_united_states_marines_desc: "Historical legacy, traditions, and roles of the United States Marine Corps (USMC) in amphibious warfare, expeditionary missions, and national defense."
+
+USA_halls_of_montezuma: "Halls of Montezuma"
+USA_halls_of_montezuma_desc: "Reference to the Battle of Chapultepec during the Mexican-American War, commemorating the USMC's bravery and victory."
+
+USA_shores_of_tripoli: "Shores of Tripoli"
+USA_shores_of_tripoli_desc: "Reference to the Battle of Derna during the First Barbary War, symbolizing the USMC's first overseas land battle and victory."
+
+USA_fight_battles: "Fight Battles"
+USA_fight_battles_desc: "Engagement in military engagements, conflicts, or battles to defend national interests, protect allies, or uphold international security."
+
+USA_land_and_sea: "Land and Sea"
+USA_land_and_sea_desc: "Integrated military operations and strategies combining land-based and maritime forces to achieve tactical and strategic objectives."
+
+USA_americas_finest: "America's Finest"
+USA_americas_finest_desc: "Acknowledgment or tribute to the dedication, courage, and professionalism of America's armed forces, showcasing their commitment to national defense."
