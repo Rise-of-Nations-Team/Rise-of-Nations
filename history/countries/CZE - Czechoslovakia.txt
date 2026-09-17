@@ -2,22 +2,7 @@ capital = 9
 oob = "CZE_1919"
 add_ideas = {
 	free_trade
-	tax_average
-	tariffs_average
 	low_economic_mobilisation
-	press_free
-	private_control
-	fdi_encouraged
-	foreign_volunteers
-	train_medium
-	officer_train_low
-	security_liberty_first
-	education_budget5
-	health_budget3
-	infrastructure_budget3
-	foreign_cooperative
-	RON_Roman_Catholicism
-	CZE_defensive_fervour
 	CZE_divided_nation
 }
 

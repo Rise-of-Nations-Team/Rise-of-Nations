@@ -566,8 +566,8 @@ news_event = { # Death of Carlos VII
 			else = {
 				add_country_leader_trait = SPR_carlist_pretender
 			}
-			set_country_leader_name = {
-				ideology = neutrality
+			set_character_name = {
+				character = SPR_Jaime_III
 				name = "Jaime III"
 			}
 		}
