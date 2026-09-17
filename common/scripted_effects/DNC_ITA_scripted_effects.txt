@@ -15,26 +15,6 @@ ITA_dnc_init = {
 }
 
 ITA_machine_reckon = {
-	if = {
-		limit = { has_country_flag = ITA_g_boards }
-		set_variable = { ITA_p_boards_cost = 0 }
-		else = { set_variable = { ITA_p_boards_cost = 35 } }
-	}
-	if = {
-		limit = { has_country_flag = ITA_g_chamber_may_dissolve }
-		set_variable = { ITA_c_dissolve_cost = 0 }
-		else = { set_variable = { ITA_c_dissolve_cost = 75 } }
-	}
-	if = {
-		limit = { has_country_flag = ITA_s_army_obeys }
-		set_variable = { ITA_p_troops_cost = 10 }
-		else = { set_variable = { ITA_p_troops_cost = 25 } }
-	}
-	if = {
-		limit = { has_country_flag = ITA_arm_army_out_of_the_streets }
-		set_variable = { ITA_pr_questore_cost = 0 }
-		else = { set_variable = { ITA_pr_questore_cost = 20 } }
-	}
 	set_variable = { ITA_machine_now = ITA_prefects }
 	clamp_variable = {
 		var = ITA_machine_now
@@ -297,6 +277,17 @@ ITA_piazza_rungs = {
 			}
 			set_variable = { ITA_piazza_lock = 12 }
 			country_event = { id = ita_dnc.601 days = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = ITA_piazza
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { ITA_piazza_lock = 11 }
+			country_event = { id = ita_dnc.2200 days = 3 }
 		}
 		else_if = {
 			limit = {
@@ -594,6 +585,140 @@ ITA_election_watch = {
 		set_country_flag = ITA_c_election_1909
 		country_event = { id = ita_dnc.702 days = 2 }
 	}
+	if = {
+		limit = { has_country_flag = ITA_c_election_1904 }
+		if = {
+			limit = {
+				has_character = ITA_emilio_de_giorgis
+				has_completed_focus = ITADNC_h_the_carabinieri_for_macedonia
+				NOT = { has_country_flag = ITA_c_de_giorgis_takes_the_gendarmerie }
+			}
+			set_country_flag = ITA_c_de_giorgis_takes_the_gendarmerie
+			every_unit_leader = {
+				limit = { is_character = ITA_emilio_de_giorgis }
+				include_invisible = yes
+				add_skill_level = 1
+				add_unit_leader_trait = organizer
+			}
+		}
+		if = {
+			limit = {
+				has_character = ITA_giuseppe_zanardelli
+				NOT = { has_country_leader = { character = ITA_giuseppe_zanardelli ruling_only = yes } }
+			}
+			retire_character = ITA_giuseppe_zanardelli
+		}
+		if = {
+			limit = { has_character = ITA_nicola_heusch }
+			retire_character = ITA_nicola_heusch
+		}
+		if = {
+			limit = { has_character = ITA_giuseppe_ottolenghi }
+			retire_character = ITA_giuseppe_ottolenghi
+		}
+		if = {
+			limit = { has_character = ITA_fiorenzo_bava_beccaris }
+			retire_character = ITA_fiorenzo_bava_beccaris
+		}
+		if = {
+			limit = { has_character = ITA_giuseppe_palumbo }
+			retire_character = ITA_giuseppe_palumbo
+		}
+	}
+	if = {
+		limit = { has_country_flag = ITA_c_election_1909 }
+		if = {
+			limit = {
+				has_character = ITA_mario_di_robilant
+				has_completed_focus = ITADNC_h_the_carabinieri_for_macedonia
+				NOT = { has_country_flag = ITA_c_robilant_takes_the_gendarmerie }
+			}
+			set_country_flag = ITA_c_robilant_takes_the_gendarmerie
+			every_unit_leader = {
+				limit = { is_character = ITA_mario_di_robilant }
+				include_invisible = yes
+				add_skill_level = 1
+				add_unit_leader_trait = militias_officer
+			}
+		}
+		if = {
+			limit = {
+				has_character = ITA_tancredi_saletta
+				NOT = { has_country_leader = { character = ITA_tancredi_saletta ruling_only = yes } }
+			}
+			retire_character = ITA_tancredi_saletta
+		}
+		if = {
+			limit = {
+				has_character = ITA_alessandro_fortis
+				NOT = { has_country_leader = { character = ITA_alessandro_fortis ruling_only = yes } }
+			}
+			retire_character = ITA_alessandro_fortis
+		}
+		if = {
+			limit = { has_character = ITA_giuseppe_saracco }
+			retire_character = ITA_giuseppe_saracco
+		}
+		if = {
+			limit = { has_character = ITA_emanuele_gianturco }
+			retire_character = ITA_emanuele_gianturco
+		}
+		if = {
+			limit = { has_character = ITA_francesco_siacci }
+			retire_character = ITA_francesco_siacci
+		}
+		if = {
+			limit = { has_character = ITA_giulio_prinetti }
+			retire_character = ITA_giulio_prinetti
+		}
+		if = {
+			limit = { has_character = ITA_antonio_starabba_di_rudini }
+			retire_character = ITA_antonio_starabba_di_rudini
+		}
+		if = {
+			limit = { has_character = ITA_emilio_de_giorgis }
+			retire_character = ITA_emilio_de_giorgis
+		}
+		if = {
+			limit = { has_character = ITA_enrico_costantino_morin }
+			retire_character = ITA_enrico_costantino_morin
+		}
+		if = {
+			limit = { has_character = ITA_coriolano_ponza_di_san_martino }
+			retire_character = ITA_coriolano_ponza_di_san_martino
+		}
+	}
+	if = {
+		limit = { has_country_flag = ITA_dnc_era_end }
+		if = {
+			limit = { has_character = ITA_carlo_mirabello }
+			retire_character = ITA_carlo_mirabello
+		}
+		if = {
+			limit = { has_character = ITA_andrea_costa }
+			retire_character = ITA_andrea_costa
+		}
+		if = {
+			limit = { has_character = ITA_angelo_majorana_calatabiano }
+			retire_character = ITA_angelo_majorana_calatabiano
+		}
+		if = {
+			limit = { has_character = ITA_edoardo_masdea }
+			retire_character = ITA_edoardo_masdea
+		}
+		if = {
+			limit = { has_character = ITA_vittorio_asinari_di_bernezzo }
+			retire_character = ITA_vittorio_asinari_di_bernezzo
+		}
+		if = {
+			limit = { has_character = ITA_camillo_candiani }
+			retire_character = ITA_camillo_candiani
+		}
+		if = {
+			limit = { has_character = ITA_antonio_baldissera }
+			retire_character = ITA_antonio_baldissera
+		}
+	}
 }
 
 ITA_circular_watch = {
@@ -629,9 +754,356 @@ ITA_dnc_monthly = {
 	ITA_election_watch = yes
 	ITA_circular_watch = yes
 	ITA_piazza_rungs = yes
+	ITA_h_the_colonial_office_month = yes
+	ITA_l_the_plate_month = yes
+	ITA_l_the_governorates_month = yes
+	ITA_e_the_duties_watch = yes
+	ITA_u_the_stations_month = yes
+	ITA_w_the_alliance_rung = yes
+	ITA_p_the_provinces_watch = yes
+	ITA_wr_the_war_watch = yes
 	if = {
 		limit = { NOT = { has_country_flag = ITA_end_verdict_given } }
 		ITA_chronicle_table = yes
+	}
+}
+
+ITA_w_the_alliance_rung = {
+	if = {
+		limit = {
+			country_exists = AUH
+			NOT = { has_war_with = AUH }
+			NOT = { has_country_flag = ITA_w_alliance_denounced }
+			NOT = { has_country_flag = ITA_dnc_path_sonnino }
+			NOT = { has_country_flag = ITA_dnc_path_concordat }
+			check_variable = {
+				var = ITA_vienna_trust
+				value = 25
+				compare = less_than
+			}
+		}
+		add_to_variable = { var = ITA_w_vienna_low_months value = 1 }
+	}
+	else = {
+		set_variable = { ITA_w_vienna_low_months = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = ITA_w_denunciation_lock
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		subtract_from_variable = { var = ITA_w_denunciation_lock value = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ITA_w_vienna_low_months
+				value = 3
+				compare = greater_than_or_equals
+			}
+		}
+		set_variable = { ITA_w_denunciation_lock = 12 }
+		country_event = { id = ita_dnc.3012 days = 3 }
+	}
+}
+
+ITA_p_the_provinces_watch = {
+	if = {
+		limit = {
+			has_country_flag = ITA_p_the_provinces_are_left
+			check_variable = {
+				var = ITA_piazza
+				value = 45
+				compare = less_than
+			}
+		}
+		clr_country_flag = ITA_p_the_provinces_are_left
+		country_event = { id = ita_dnc.604 days = 7 }
+	}
+}
+
+ITA_wr_the_war_watch = {
+	if = {
+		limit = {
+			has_war_with = OTT
+			NOT = { has_country_flag = ITA_wr_the_islands_are_asked }
+			NOT = { has_completed_focus = ITADNC_w_the_islands_as_a_pledge }
+			NOT = { owns_state = 164 }
+		}
+		set_country_flag = ITA_wr_the_islands_are_asked
+		country_event = { id = ita_dnc.3020 days = 5 }
+	}
+	if = {
+		limit = {
+			has_war = yes
+			has_character = ITA_ricciotti_garibaldi
+			NOT = { has_country_flag = ITA_wr_the_volunteers_are_asked }
+		}
+		set_country_flag = ITA_wr_the_volunteers_are_asked
+		country_event = { id = ita_dnc.3021 days = 5 }
+	}
+	if = {
+		limit = {
+			has_war_with = AUH
+			has_idea = ITA_cesare_battisti
+			NOT = { has_country_flag = ITA_wr_the_legion_is_asked }
+		}
+		set_country_flag = ITA_wr_the_legion_is_asked
+		country_event = { id = ita_dnc.3022 days = 5 }
+	}
+}
+
+ITA_h_the_colonial_office_month = {
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = ITA_h_the_colonial_office_modifier }
+			OR = {
+				controls_state = 550
+				controls_state = 559
+				has_country_flag = ITA_af_benadir_bought_out
+				controls_state = 661
+				controls_state = 164
+				controls_state = 1133
+			}
+		}
+		add_to_variable = { var = ITA_h_colonial_office_months value = 1 }
+		if = {
+			limit = {
+				check_variable = {
+					var = ITA_h_colonial_office_months
+					value = 6
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { ITA_h_colonial_office_months = 0 }
+			subtract_from_variable = { var = ITA_h_colonial_consumer_goods_factor value = 0.005 }
+			clamp_variable = {
+				var = ITA_h_colonial_consumer_goods_factor
+				min = -0.09
+				max = 0
+			}
+			add_to_variable = { var = ITA_h_colonial_production_speed_arms_factory_factor value = 0.005 }
+			clamp_variable = {
+				var = ITA_h_colonial_production_speed_arms_factory_factor
+				min = 0
+				max = 0.09
+			}
+			add_to_variable = { var = ITA_h_colonial_industrial_capacity_factory value = 0.005 }
+			clamp_variable = {
+				var = ITA_h_colonial_industrial_capacity_factory
+				min = 0
+				max = 0.09
+			}
+			subtract_from_variable = { var = ITA_h_colonial_subjects_autonomy_gain value = 0.005 }
+			clamp_variable = {
+				var = ITA_h_colonial_subjects_autonomy_gain
+				min = -0.09
+				max = 0
+			}
+		}
+	}
+}
+
+ITA_l_the_plate_month = {
+	if = {
+		limit = {
+			has_country_flag = ITA_l_the_plate_is_open
+			OR = {
+				country_exists = ARG
+				country_exists = URG
+			}
+			check_variable = {
+				var = ITA_l_plate_pressure
+				value = 10
+				compare = less_than
+			}
+		}
+		add_to_variable = { var = ITA_l_plate_months value = 1 }
+		if = {
+			limit = {
+				check_variable = {
+					var = ITA_l_plate_months
+					value = 4
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { ITA_l_plate_months = 0 }
+			add_to_variable = { var = ITA_l_plate_pressure value = 1 }
+			ITA_l_the_plate_is_read = yes
+			if = {
+				limit = {
+					check_variable = {
+						var = ITA_l_plate_pressure
+						value = 5
+						compare = greater_than_or_equals
+					}
+					NOT = { has_country_flag = ITA_l_the_chambers_are_opened }
+				}
+				set_country_flag = ITA_l_the_chambers_are_opened
+				country_event = { id = ita_dnc.3003 days = 5 }
+			}
+		}
+	}
+}
+
+ITA_l_the_governorates_month = {
+	if = {
+		limit = { has_completed_focus = ITADNC_l_the_governorships_beyond_the_sea }
+		if = {
+			limit = {
+				NOT = { has_country_flag = ITA_l_the_residency_at_tripoli }
+				controls_state = 661
+			}
+			set_country_flag = ITA_l_the_residency_at_tripoli
+			country_event = { id = ita_dnc.3004 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = ITA_l_the_residency_at_benghazi }
+				controls_state = 663
+			}
+			set_country_flag = ITA_l_the_residency_at_benghazi
+			country_event = { id = ita_dnc.3006 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = ITA_l_the_residency_of_the_horn }
+				controls_state = 550
+			}
+			set_country_flag = ITA_l_the_residency_of_the_horn
+			country_event = { id = ita_dnc.3008 days = 7 }
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = ITA_l_the_residency_of_the_islands }
+				controls_state = 164
+			}
+			set_country_flag = ITA_l_the_residency_of_the_islands
+			country_event = { id = ita_dnc.3010 days = 7 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ITA_l_the_residency_at_tripoli
+				NOT = { has_country_flag = ITA_l_the_road_of_tripolitania }
+				controls_state = 661
+				controls_state = 448
+				controls_state = 662
+			}
+			set_country_flag = ITA_l_the_road_of_tripolitania
+			country_event = { id = ita_dnc.3005 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ITA_l_the_residency_at_benghazi
+				NOT = { has_country_flag = ITA_l_the_road_of_cyrenaica }
+				controls_state = 663
+				controls_state = 450
+				controls_state = 451
+			}
+			set_country_flag = ITA_l_the_road_of_cyrenaica
+			country_event = { id = ita_dnc.3007 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ITA_l_the_residency_of_the_horn
+				NOT = { has_country_flag = ITA_l_the_road_of_the_horn }
+				controls_state = 550
+				controls_state = 559
+			}
+			set_country_flag = ITA_l_the_road_of_the_horn
+			country_event = { id = ita_dnc.3009 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ITA_l_the_residency_of_the_islands
+				NOT = { has_country_flag = ITA_l_the_anchorage_of_the_islands }
+				controls_state = 164
+			}
+			set_country_flag = ITA_l_the_anchorage_of_the_islands
+			country_event = { id = ita_dnc.3011 days = 14 }
+		}
+	}
+}
+
+ITA_e_the_duties_watch = {
+	if = {
+		limit = {
+			has_country_flag = ITA_e_the_duties_are_asked
+			check_variable = {
+				var = ITA_e_rendita
+				value = 0.75
+				compare = less_than
+			}
+		}
+		clr_country_flag = ITA_e_the_duties_are_asked
+	}
+	else_if = {
+		limit = {
+			NOT = { has_country_flag = ITA_e_the_duties_are_asked }
+			has_completed_focus = ITADNC_e_the_consumption_duties
+			check_variable = {
+				var = ITA_e_rendita
+				value = 0.75
+				compare = greater_than_or_equals
+			}
+			OR = {
+				NOT = { has_country_flag = ITA_e_the_duty_on_salt_is_held }
+				NOT = { has_country_flag = ITA_e_the_duty_on_sugar_is_kept }
+				NOT = { has_country_flag = ITA_e_the_duty_on_grain_is_back }
+				NOT = { has_country_flag = ITA_e_the_arrears_are_called_in }
+			}
+		}
+		set_country_flag = ITA_e_the_duties_are_asked
+		country_event = { id = ita_dnc.3001 days = 3 }
+	}
+}
+
+ITA_u_the_stations_month = {
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = ITADNC_h_the_wealth_of_the_east
+				has_completed_focus = ITADNC_u_the_stations_of_the_red_sea_ww
+				has_completed_focus = ITADNC_u_the_concession_at_tientsin_ww
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				OR = {
+					state = 613
+					state = 609
+					state = 164
+					state = 326
+					state = 728
+				}
+				NOT = { has_state_flag = ITA_u_the_station_is_built }
+			}
+			set_state_flag = ITA_u_the_station_is_built
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = { all_provinces = yes limit_to_coastal = yes }
+			}
+			ROOT = { navy_experience = 25 }
+		}
+	}
+}
+
+ITA_u_the_next_ore_is_offered = {
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_country_flag = ITA_u_the_steel_is_traded }
+				NOT = { has_country_flag = ITA_u_the_bauxite_is_traded }
+				NOT = { has_country_flag = ITA_u_the_tungsten_is_traded }
+				NOT = { has_country_flag = ITA_u_the_chrome_is_traded }
+			}
+		}
+		country_event = { id = ita_dnc.3002 days = 90 }
 	}
 }
 
@@ -697,7 +1169,7 @@ ITA_end_the_verdict_is_refused = {
 			limit = { NOT = { has_character = ITA_luigi_luzzatti } }
 			recruit_character = ITA_luigi_luzzatti
 		}
-		promote_character = ITA_luigi_luzzatti
+		promote_character = { character = ITA_luigi_luzzatti ideology = liberalism }
 		set_party_name = {
 			ideology = democratic
 			name = ITA_end_the_caretakers
@@ -778,10 +1250,6 @@ ITA_crown_month = {
 		add_to_variable = { var = ITA_crown value = 1 }
 	}
 	if = {
-		limit = { has_country_flag = ITA_s_army_obeys }
-		add_to_variable = { var = ITA_crown value = 1 }
-	}
-	if = {
 		limit = { has_country_flag = ITA_a_turati_will_sit }
 		subtract_from_variable = { var = ITA_crown value = 1 }
 	}
@@ -795,7 +1263,6 @@ ITA_crown_month = {
 				}
 			}
 			NOT = { has_government = neutrality }
-			NOT = { has_country_flag = ITA_s_army_obeys }
 			NOT = { has_country_flag = ITA_a_turati_will_sit }
 		}
 		if = {
@@ -860,6 +1327,25 @@ ITA_camera_low_months = {
 			}
 		}
 		add_to_variable = { var = ITA_camera_low_months value = 1 }
+		if = {
+			limit = {
+				has_country_flag = ITA_ch_b_ministry
+				has_war = no
+				NOT = { has_country_flag = ITA_s_chamber_prorogued }
+				NOT = { has_country_flag = ITA_c_the_chamber_is_tested }
+				check_variable = {
+					var = ITA_camera_low_months
+					value = 3
+					compare = greater_than_or_equals
+				}
+			}
+			set_country_flag = {
+				flag = ITA_c_the_chamber_is_tested
+				value = 1
+				days = 730
+			}
+			country_event = { id = ita_dnc.3023 days = 3 }
+		}
 	}
 	else = {
 		set_variable = { ITA_camera_low_months = 0 }
@@ -883,19 +1369,6 @@ ITA_ch_messina_clock = {
 			clr_country_flag = ITA_ch_messina
 		}
 	}
-}
-
-ITA_r_garibaldian_legion = {
-	add_manpower = 5000
-	army_experience = 20
-	random_owned_controlled_state = {
-		limit = { is_core_of = ITA }
-		create_unit = {
-			division = "name = \"Legione Garibaldina\" division_template = \"Fanteria Divisione\" start_experience_factor = 0.3"
-			owner = PREV
-		}
-	}
-	custom_effect_tooltip = ITA_r_garibaldian_legion_tt
 }
 
 ITA_r_garibaldian_legion_to_the_rebels = {
@@ -1204,6 +1677,30 @@ ITA_chronicle_table = {
 		}
 		set_country_flag = ITA_ch_b_buggerru
 		country_event = { id = ita_dnc.2133 days = 2 }
+	}
+	else_if = {
+		limit = {
+			NOT = { has_country_flag = ITA_ch_b_faculty }
+			NOT = { has_country_flag = ITA_g_trieste_faculty }
+			country_exists = AUH
+			NOT = { has_war_with = AUH }
+			OR = {
+				has_country_flag = ITA_dnc_path_nazionale
+				has_completed_focus = ITADNC_l_the_italians_of_tunis
+				has_completed_focus = ITADNC_l_the_schools_of_the_levant
+				AND = {
+					has_country_flag = ITA_dnc_path_giolitti
+					has_country_flag = ITA_w_racconigi
+				}
+			}
+			check_variable = {
+				var = ITA_dnc_months
+				value = 58
+				compare = greater_than_or_equals
+			}
+		}
+		set_country_flag = ITA_ch_b_faculty
+		AUH = { country_event = { id = ita_dnc.1604 days = 8 } }
 	}
 	else_if = {
 		limit = {
@@ -1579,6 +2076,38 @@ ITA_g_the_five_capitals_are_asked = {
 	}
 }
 
+ITA_g_the_next_capital_is_asked = {
+	add_political_power = -50
+	if = {
+		limit = {
+			NOT = { has_completed_focus = ITADNC_l_the_ultimatum_to_the_porte }
+			OR = {
+				AND = {
+					country_exists = FRA
+					NOT = { has_country_flag = ITA_g_sounded_fra }
+				}
+				AND = {
+					country_exists = ENG
+					NOT = { has_country_flag = ITA_g_sounded_eng }
+				}
+				AND = {
+					country_exists = GER
+					NOT = { has_country_flag = ITA_g_sounded_ger }
+				}
+				AND = {
+					country_exists = AUH
+					NOT = { has_country_flag = ITA_g_sounded_auh }
+				}
+				AND = {
+					country_exists = RUS
+					NOT = { has_country_flag = ITA_g_sounded_rus }
+				}
+			}
+		}
+		country_event = { id = ita_dnc.2216 days = 60 }
+	}
+}
+
 ITA_dnc_clear_the_path = {
 	clr_country_flag = ITA_dnc_path_giolitti
 	clr_country_flag = ITA_dnc_path_sonnino
@@ -1728,16 +2257,24 @@ ITA_e_add_rendita_penalty = {
 			custom_effect_tooltip = ITA_e_tt_the_wall_is_reached
 		}
 	}
+	clamp_variable = {
+		var = ITA_e_rendita
+		min = 0
+		max = 1
+	}
+	set_variable = { ITA_e_rendita_cg = ITA_e_rendita }
+	multiply_variable = { ITA_e_rendita_cg = 0.5 }
 }
 
 ITA_e_monthly_rendita = {
 	if = {
 		limit = {
-			OR = {
-				has_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
-				has_dynamic_modifier = { modifier = ITA_e_the_war_treasury }
+			has_dynamic_modifier = { modifier = ITA_e_the_war_treasury }
+			check_variable = {
+				var = ITA_e_rendita
+				value = 1
+				compare = less_than
 			}
-			check_variable = { var = ITA_e_rendita value = 1 compare = less_than }
 		}
 		add_to_variable = {
 			var = ITA_e_rendita
@@ -1749,9 +2286,72 @@ ITA_e_monthly_rendita = {
 		}
 		ITA_e_add_rendita_penalty = yes
 	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = ITA_e_the_war_treasury }
+		}
+		add_to_variable = { ITA_e_rendita_due_months = 1 }
+		if = {
+			limit = {
+				check_variable = {
+					var = ITA_e_rendita_due_months
+					value = 12
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { ITA_e_rendita_due_months = 0 }
+			country_event = { id = ita_dnc.3050 days = 3 }
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = ITA_e_rendita
+					value = 1
+					compare = greater_than_or_equals
+				}
+				NOT = { has_country_flag = ITA_e_the_wall_asked }
+			}
+			set_country_flag = {
+				flag = ITA_e_the_wall_asked
+				days = 180
+				value = 1
+			}
+			country_event = { id = ita_dnc.3051 days = 2 }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_dynamic_modifier = { modifier = ITA_e_the_credit_restored }
+				has_dynamic_modifier = { modifier = ITA_e_the_kingdom_solvent_mod }
+			}
+			NOT = { has_dynamic_modifier = { modifier = ITA_e_the_war_treasury } }
+			check_variable = {
+				var = ITA_e_rendita
+				value = 0
+				compare = greater_than
+			}
+		}
+		subtract_from_variable = { var = ITA_e_rendita value = 0.01 }
+	}
+	clamp_variable = {
+		var = ITA_e_rendita
+		min = 0
+		max = 1
+	}
+	set_variable = { ITA_e_rendita_cg = ITA_e_rendita }
+	multiply_variable = { ITA_e_rendita_cg = 0.5 }
 }
 
 ITA_e_pay_the_arrears = {
+	set_variable = { ITA_e_conversion_crash = ITA_e_arrears_counter }
+	multiply_variable = { ITA_e_conversion_crash = 0.025 }
+	add_to_variable = { ITA_e_conversion_crash = 0.2 }
+	clamp_variable = {
+		var = ITA_e_conversion_crash
+		min = 0.2
+		max = 0.75
+	}
 	set_temp_variable = { ITA_e_bill = ITA_e_arrears_counter }
 	multiply_temp_variable = { ITA_e_bill = 3 }
 	clamp_temp_variable = { var = ITA_e_bill min = 60 max = 420 }
@@ -2038,7 +2638,7 @@ ITA_h_promote_the_named_minister = {
 	custom_effect_tooltip = ITA_h_the_king_names_a_president_tt
 	if = {
 		limit = { check_variable = { ITA_h_promoting = 1 } }
-		promote_character = ITA_francesco_saverio_nitti
+		promote_character = { character = ITA_francesco_saverio_nitti ideology = radicalism }
 		add_country_leader_trait = ITA_h_nitti_president
 	}
 	else_if = {
@@ -2056,12 +2656,12 @@ ITA_h_promote_the_named_minister = {
 	}
 	else_if = {
 		limit = { check_variable = { ITA_h_promoting = 3 } }
-		promote_character = ITA_luigi_luzzatti
+		promote_character = { character = ITA_luigi_luzzatti ideology = liberalism }
 		add_country_leader_trait = ITA_h_luzzatti_president
 	}
 	else_if = {
 		limit = { check_variable = { ITA_h_promoting = 4 } }
-		promote_character = ITA_giovanni_giolitti
+		promote_character = { character = ITA_giovanni_giolitti ideology = democratic_socialism }
 		if = {
 			limit = { has_completed_focus = ITADNC_h_the_guards_of_public_safety }
 			add_country_leader_trait = ITA_h_giolitti_president_guards
@@ -2072,7 +2672,7 @@ ITA_h_promote_the_named_minister = {
 	}
 	else_if = {
 		limit = { check_variable = { ITA_h_promoting = 5 } }
-		promote_character = ITA_vittorio_emanuele_orlando
+		promote_character = { character = ITA_vittorio_emanuele_orlando ideology = democratic_socialism }
 		add_country_leader_trait = ITA_h_orlando_president
 	}
 	else_if = {
@@ -2090,7 +2690,7 @@ ITA_h_promote_the_named_minister = {
 	}
 	else_if = {
 		limit = { check_variable = { ITA_h_promoting = 7 } }
-		promote_character = ITA_antonio_salandra
+		promote_character = { character = ITA_antonio_salandra ideology = conservatism }
 		add_country_leader_trait = ITA_h_salandra_president
 	}
 	if = {
@@ -2464,28 +3064,117 @@ ITA_cw_the_kingdom_splits = {
 			navy_ratio = var:ITA_cw_navy_ratio
 			capital = var:ITA_cw_rebel_capital
 			states = all
-			keep_all_characters = yes
+			keep_political_leader = yes
+			keep_political_party_members = yes
 			states_filter = {
 				has_state_flag = ITA_cw_secedes
 				is_controlled_by = ROOT
 			}
 			PREV = {
-				ITA_giuseppe_zanardelli = { set_nationality = PREV.PREV }
-				ITA_filippo_turati = { set_nationality = PREV.PREV }
-				ITA_leonida_bissolati = { set_nationality = PREV.PREV }
-				ITA_napoleone_colajanni = { set_nationality = PREV.PREV }
-				ITA_ettore_sacchi = { set_nationality = PREV.PREV }
-				ITA_salvatore_barzilai = { set_nationality = PREV.PREV }
-				ITA_anna_kuliscioff = { set_nationality = PREV.PREV }
-				ITA_ettore_pedotti = { set_nationality = PREV.PREV }
 				if = {
-					limit = { has_country_flag = ITA_cw_giolitti_at_milan }
+					limit = { has_character = ITA_giuseppe_zanardelli }
+					ITA_giuseppe_zanardelli = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_filippo_turati }
+					ITA_filippo_turati = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_leonida_bissolati }
+					ITA_leonida_bissolati = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_napoleone_colajanni }
+					ITA_napoleone_colajanni = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_ettore_sacchi }
+					ITA_ettore_sacchi = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_salvatore_barzilai }
+					ITA_salvatore_barzilai = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_anna_kuliscioff }
+					ITA_anna_kuliscioff = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_ettore_pedotti }
+					ITA_ettore_pedotti = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_country_flag = ITA_cw_giolitti_at_milan has_character = ITA_giovanni_giolitti }
 					ITA_giovanni_giolitti = { set_nationality = PREV.PREV }
 				}
 				if = {
+					limit = { has_character = ITA_giuseppe_marcora }
+					ITA_giuseppe_marcora = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_edoardo_pantano }
+					ITA_edoardo_pantano = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_andrea_costa }
+					ITA_andrea_costa = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_claudio_treves }
+					ITA_claudio_treves = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_enrico_ferri }
+					ITA_enrico_ferri = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_francesco_cocco_ortu }
+					ITA_francesco_cocco_ortu = { set_nationality = PREV.PREV }
+				}
+				PREV = {
+					if = {
+						limit = { has_character = ITA_giuseppe_zanardelli }
+						promote_character = { character = ITA_giuseppe_zanardelli ideology = liberalism }
+					}
+					else_if = {
+						limit = { has_character = ITA_napoleone_colajanni }
+						promote_character = { character = ITA_napoleone_colajanni ideology = democratic_republicanism }
+					}
+					else_if = {
+						limit = { has_character = ITA_filippo_turati }
+						promote_character = { character = ITA_filippo_turati ideology = socialism }
+					}
+					else_if = {
+						limit = { has_character = ITA_giovanni_giolitti }
+						promote_character = { character = ITA_giovanni_giolitti ideology = democratic_socialism }
+					}
+				}
+				if = {
 					limit = { has_country_flag = ITA_cw_the_admirals_refused }
-					ITA_giovanni_bettolo = { set_nationality = PREV.PREV }
-					ITA_carlo_mirabello = { set_nationality = PREV.PREV }
+					if = {
+						limit = { has_character = ITA_giovanni_bettolo }
+						ITA_giovanni_bettolo = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_carlo_mirabello }
+						ITA_carlo_mirabello = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_enrico_costantino_morin }
+						ITA_enrico_costantino_morin = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_camillo_candiani }
+						ITA_camillo_candiani = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_giuseppe_palumbo }
+						ITA_giuseppe_palumbo = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_enrico_gualterio }
+						ITA_enrico_gualterio = { set_nationality = PREV.PREV }
+					}
 				}
 			}
 		}
@@ -2551,30 +3240,109 @@ ITA_cw_the_kingdom_splits = {
 			navy_ratio = var:ITA_cw_navy_ratio
 			capital = var:ITA_cw_rebel_capital
 			states = all
-			keep_all_characters = yes
+			keep_political_leader = yes
+			keep_political_party_members = yes
 			states_filter = {
 				has_state_flag = ITA_cw_secedes
 				is_controlled_by = ROOT
 			}
 			PREV = {
 				if = {
-					limit = { NOT = { has_country_flag = ITA_ch_monza_happened } }
+					limit = { NOT = { has_country_flag = ITA_ch_monza_happened } has_character = ITA_umberto_i }
 					ITA_umberto_i = { set_nationality = PREV.PREV }
 				}
-				else = {
+				else_if = {
+					limit = { has_character = ITA_vittorio_emanuele_iii }
 					ITA_vittorio_emanuele_iii = { set_nationality = PREV.PREV }
 				}
-				ITA_luigi_pelloux = { set_nationality = PREV.PREV }
-				ITA_antonio_salandra = { set_nationality = PREV.PREV }
-				ITA_sidney_sonnino = { set_nationality = PREV.PREV }
-				ITA_paolo_boselli = { set_nationality = PREV.PREV }
-				ITA_tommaso_tittoni = { set_nationality = PREV.PREV }
-				ITA_emanuele_filiberto = { set_nationality = PREV.PREV }
-				ITA_prince_vittorio_emmanuele_of_savoy = { set_nationality = PREV.PREV }
+				if = {
+					limit = { has_character = ITA_luigi_pelloux }
+					ITA_luigi_pelloux = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_antonio_salandra }
+					ITA_antonio_salandra = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_sidney_sonnino }
+					ITA_sidney_sonnino = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_paolo_boselli }
+					ITA_paolo_boselli = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_tommaso_tittoni }
+					ITA_tommaso_tittoni = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_emanuele_filiberto }
+					ITA_emanuele_filiberto = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_prince_vittorio_emmanuele_of_savoy }
+					ITA_prince_vittorio_emmanuele_of_savoy = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_antonio_starabba_di_rudini }
+					ITA_antonio_starabba_di_rudini = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_francesco_guicciardini }
+					ITA_francesco_guicciardini = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_pietro_carmine }
+					ITA_pietro_carmine = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_fiorenzo_bava_beccaris }
+					ITA_fiorenzo_bava_beccaris = { set_nationality = PREV.PREV }
+				}
+				if = {
+					limit = { has_character = ITA_coriolano_ponza_di_san_martino }
+					ITA_coriolano_ponza_di_san_martino = { set_nationality = PREV.PREV }
+				}
+				PREV = {
+					if = {
+						limit = { NOT = { has_country_flag = ITA_ch_monza_happened } has_character = ITA_umberto_i }
+						promote_character = { character = ITA_umberto_i ideology = monarchism }
+					}
+					else_if = {
+						limit = { has_character = ITA_vittorio_emanuele_iii }
+						promote_character = { character = ITA_vittorio_emanuele_iii ideology = monarchism }
+					}
+					else_if = {
+						limit = { has_character = ITA_luigi_pelloux }
+						promote_character = { character = ITA_luigi_pelloux ideology = militarism }
+					}
+				}
 				if = {
 					limit = { has_country_flag = ITA_cw_the_admirals_refused }
-					ITA_giovanni_bettolo = { set_nationality = PREV.PREV }
-					ITA_carlo_mirabello = { set_nationality = PREV.PREV }
+					if = {
+						limit = { has_character = ITA_giovanni_bettolo }
+						ITA_giovanni_bettolo = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_carlo_mirabello }
+						ITA_carlo_mirabello = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_enrico_costantino_morin }
+						ITA_enrico_costantino_morin = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_camillo_candiani }
+						ITA_camillo_candiani = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_giuseppe_palumbo }
+						ITA_giuseppe_palumbo = { set_nationality = PREV.PREV }
+					}
+					if = {
+						limit = { has_character = ITA_enrico_gualterio }
+						ITA_enrico_gualterio = { set_nationality = PREV.PREV }
+					}
 				}
 			}
 		}
@@ -2612,7 +3380,37 @@ ITA_cw_the_split_tail = {
 			set_cosmetic_tag = ITA_KINGDOM
 			set_party_name = { ideology = democratic long_name = ITA_cw_fascio_delle_opposizioni_long name = ITA_cw_fascio_delle_opposizioni }
 			set_popularities = { democratic = 65 communism = 20 neutrality = 15 }
-			promote_character = { character = ITA_giuseppe_zanardelli ideology = liberalism }
+			if = {
+				limit = {
+					ROOT = { has_country_flag = ITA_cw_giolitti_at_milan }
+					has_character = ITA_giovanni_giolitti
+				}
+				promote_character = { character = ITA_giovanni_giolitti ideology = democratic_socialism }
+			}
+			else_if = {
+				limit = { has_character = ITA_giuseppe_zanardelli }
+				promote_character = { character = ITA_giuseppe_zanardelli ideology = liberalism }
+			}
+			else_if = {
+				limit = { has_character = ITA_napoleone_colajanni }
+				promote_character = { character = ITA_napoleone_colajanni ideology = democratic_republicanism }
+			}
+			else_if = {
+				limit = { has_character = ITA_filippo_turati }
+				promote_character = { character = ITA_filippo_turati ideology = socialism }
+			}
+			else_if = {
+				limit = { has_character = ITA_salvatore_barzilai }
+				ITA_salvatore_barzilai = {
+					add_country_leader_role = {
+						country_leader = {
+							ideology = democratic_republicanism
+							expire = "1946.1.1"
+						}
+						promote_leader = yes
+					}
+				}
+			}
 			set_stability = 0.9
 			set_war_support = 0.8
 			load_oob = "ITA_civil_war_chamber"
@@ -2668,11 +3466,27 @@ ITA_cw_the_split_tail = {
 			set_party_name = { ideology = neutrality long_name = ITA_cw_partito_dell_ordine_long name = ITA_cw_partito_dell_ordine }
 			set_popularities = { neutrality = 70 democratic = 25 communism = 5 }
 			if = {
-				limit = { NOT = { ROOT = { has_country_flag = ITA_ch_monza_happened } } }
+				limit = {
+					NOT = { ROOT = { has_country_flag = ITA_ch_monza_happened } }
+					has_character = ITA_umberto_i
+				}
 				promote_character = { character = ITA_umberto_i ideology = monarchism }
 			}
-			else = {
+			else_if = {
+				limit = { has_character = ITA_vittorio_emanuele_iii }
 				promote_character = { character = ITA_vittorio_emanuele_iii ideology = monarchism }
+			}
+			else_if = {
+				limit = { has_character = ITA_emanuele_filiberto }
+				ITA_emanuele_filiberto = {
+					add_country_leader_role = {
+						country_leader = {
+							ideology = monarchism
+							expire = "1946.1.1"
+						}
+						promote_leader = yes
+					}
+				}
 			}
 			if = {
 				limit = { NOT = { ROOT = { has_country_flag = ITA_ch_monza_happened } } NOT = { has_idea = ITA_umberto } }
@@ -2761,6 +3575,7 @@ ITA_cw_the_split_tail = {
 		set_variable = { ITA_dnc_months = ROOT.ITA_dnc_months }
 		set_variable = { ITA_camera_low_months = ROOT.ITA_camera_low_months }
 		set_variable = { ITA_e_rendita = ROOT.ITA_e_rendita }
+		set_variable = { ITA_e_rendita_cg = ROOT.ITA_e_rendita_cg }
 		set_variable = { ITA_e_monthly_rendita_start = ROOT.ITA_e_monthly_rendita_start }
 		set_variable = { ITA_e_monthly_rendita_increase = ROOT.ITA_e_monthly_rendita_increase }
 		set_variable = { ITA_e_conversion_crash = ROOT.ITA_e_conversion_crash }
@@ -2794,10 +3609,6 @@ ITA_cw_the_split_tail = {
 		set_variable = { ITA_p_ws = ROOT.ITA_p_ws }
 		set_variable = { ITA_c_crown_pp = ROOT.ITA_c_crown_pp }
 		set_variable = { ITA_c_crown_stab = ROOT.ITA_c_crown_stab }
-		set_variable = { ITA_p_boards_cost = ROOT.ITA_p_boards_cost }
-		set_variable = { ITA_c_dissolve_cost = ROOT.ITA_c_dissolve_cost }
-		set_variable = { ITA_p_troops_cost = ROOT.ITA_p_troops_cost }
-		set_variable = { ITA_pr_questore_cost = ROOT.ITA_pr_questore_cost }
 		set_variable = { ITA_cw_prefects_line = ROOT.ITA_cw_prefects_line }
 		set_variable = { ITA_cw_crown_line = ROOT.ITA_cw_crown_line }
 		set_variable = { ITA_cw_piedmont_line = ROOT.ITA_cw_piedmont_line }
@@ -2831,6 +3642,7 @@ ITA_cw_the_split_tail = {
 	every_country = {
 		limit = { original_tag = ITA has_country_flag = ITA_r_civil_war controls_state = 115 }
 		activate_mission = ITA_cw_palermo_asks_its_price
+		country_event = { id = ita_dnc.3014 days = 7 }
 	}
 	if = {
 		limit = { has_country_flag = ITA_cw_promised_the_fleet }
@@ -2940,5 +3752,25 @@ ITA_cw_the_winner_is_settled = {
 		complete_national_focus = ITADNC_u_what_italy_will_be
 		complete_national_focus = ITADNC_u_royalist_sentiment
 		complete_national_focus = ITADNC_u_return_to_the_statuto
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ITA_cw_crown_side
+			has_country_flag = ITA_cw_entrance_crown
+		}
+		country_event = { id = ita_dnc.2986 days = 2 }
+	}
+}
+ITA_e_the_rendita_rolls_over = {
+	subtract_from_variable = { ITA_e_monthly_rendita_increase = 0.003 }
+	if = {
+		limit = {
+			check_variable = {
+				var = ITA_e_monthly_rendita_increase
+				value = 0.005
+				compare = less_than
+			}
+		}
+		set_variable = { ITA_e_monthly_rendita_increase = 0.005 }
 	}
 }
