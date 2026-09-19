@@ -10,7 +10,7 @@ state={
 	history={
 		owner = ARG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			10953 = {
 				naval_base = 1
 			}

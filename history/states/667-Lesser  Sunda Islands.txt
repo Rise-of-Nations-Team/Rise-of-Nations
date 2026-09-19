@@ -9,7 +9,7 @@ state = {
 		owner = HOL
 		add_core_of = INS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			1355 = {
 				naval_base = 1
 

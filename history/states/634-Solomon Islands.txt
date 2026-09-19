@@ -6,7 +6,7 @@ state = {
 		owner = ENG
 		add_core_of = SOL
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			1269 = {
 				naval_base = 2
 

@@ -8,7 +8,7 @@ state = {
 		owner = FRA
 		add_core_of = SOL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			7390 = {
 				naval_base = 1
 			}

@@ -9,7 +9,7 @@ state = {
 		owner = MOR
 		add_core_of = MOR
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			12857 = {
 				naval_base = 1
 			}

@@ -6,7 +6,7 @@ state = {
 		owner = ITA
 		add_core_of = SOM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 

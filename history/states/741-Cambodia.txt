@@ -13,7 +13,7 @@ state = {
 			7376 1
 		}
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			7432 = {
 				naval_base = 1
 

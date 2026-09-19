@@ -21,7 +21,7 @@ state = {
 		1912.1.1 = { owner = CHI controller = CHI add_core_of = CHI }
 		1919.7.1 = { owner = GUI controller = GUI }
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			arms_factory = 1
 
 		}

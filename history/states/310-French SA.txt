@@ -9,7 +9,7 @@ state = {
 		owner = FRA
 		add_core_of = CAY
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			12885 = {
 				naval_base = 1
 			}

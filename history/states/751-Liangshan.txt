@@ -27,7 +27,7 @@ state = {
 		1912.1.1 = { owner = CHI controller = CHI add_core_of = CHI }
 		1919.7.1 = { owner = SIC controller = SIC }
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 
 		}
 		victory_points = {
@@ -42,7 +42,7 @@ state = {
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 1
-				infrastructure = 0
+				infrastructure = 1
 
 			}
 

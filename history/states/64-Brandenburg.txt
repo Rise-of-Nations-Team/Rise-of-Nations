@@ -8,7 +8,7 @@ state = {
 			13452 5
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 			industrial_complex = 1
 			
             13452 = {

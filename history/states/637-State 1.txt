@@ -9,7 +9,7 @@ state = {
 	history = {
 		owner = RUS
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			12207 = {
 				naval_base = 1
 

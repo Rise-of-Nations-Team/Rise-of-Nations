@@ -16,7 +16,7 @@ state = {
 		} 
 
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 
 		1960.1.1 = { owner = NGA controller = NGA }

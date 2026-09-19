@@ -24,7 +24,7 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 
 		1946.1.1 = {

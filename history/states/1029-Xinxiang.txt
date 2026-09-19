@@ -20,7 +20,7 @@ state = {
 		1933.1.1 = { owner = CHI controller = CHI }
 		1938.10.25 = {
 			buildings = {
-				infrastructure = 6
+				infrastructure = 4
 				air_base = 2
 				arms_factory = 2
 

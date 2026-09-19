@@ -8,7 +8,7 @@ state = {
 		owner = ENG
 		add_core_of = NAU
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			13038 = {
 				naval_base = 1
 			}

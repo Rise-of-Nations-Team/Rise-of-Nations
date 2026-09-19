@@ -12,7 +12,7 @@ state = {
 			12034 1
 		}
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 
 		1941.1.1 = { owner = VIC controller = VIC add_claim_by = FRA }

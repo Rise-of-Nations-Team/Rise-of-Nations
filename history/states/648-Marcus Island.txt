@@ -8,7 +8,7 @@ state =
 	{
 		owner = JAP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			air_base = 1
 			13026 = {
 				naval_base = 1

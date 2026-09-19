@@ -9,7 +9,7 @@ state =
 	{
 		owner = ENG
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			1280 = {
 				naval_base = 1
 			}

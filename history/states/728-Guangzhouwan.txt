@@ -10,7 +10,7 @@ state = {
 		add_core_of = QIN
 		add_core_of = CHI add_core_of = BOX
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			11981 = {
 				naval_base = 1
 			}

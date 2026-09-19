@@ -11,7 +11,7 @@ state = {
 		}
 		owner = RAJ
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 		add_core_of = PAK
 		add_core_of = BLC

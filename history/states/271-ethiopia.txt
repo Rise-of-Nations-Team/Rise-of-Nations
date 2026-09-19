@@ -13,7 +13,7 @@ state={
 		}
 		owner = ETH
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			arms_factory = 2
 			industrial_complex = 1
 			air_base = 1

@@ -6,7 +6,7 @@ state = {
 		owner = FRA
 		add_core_of = LAO
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 
 		}
 		1900.1.1 = { owner = VIN controller = VIN add_core_of = VIN }

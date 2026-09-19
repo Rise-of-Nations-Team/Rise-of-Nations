@@ -5,7 +5,7 @@ state = {
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 

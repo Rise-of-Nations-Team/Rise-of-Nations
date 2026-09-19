@@ -13,7 +13,7 @@ state = {
 		#add_core_of = KIR
 		add_core_of = TUV
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			13056 = {
 				naval_base = 1
 			}

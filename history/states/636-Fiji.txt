@@ -9,7 +9,7 @@ state = {
 		owner = ENG
 		add_core_of = FIJ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			4286 = {
 				naval_base = 1
 			}

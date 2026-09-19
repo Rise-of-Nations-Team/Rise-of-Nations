@@ -8,7 +8,7 @@ state = {
 		add_core_of = CMR
 		add_core_of = NGA
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 
 		}
 

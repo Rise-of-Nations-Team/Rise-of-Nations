@@ -8,7 +8,7 @@ state =
 	{
 		owner = ECU
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			5023 = {
 				naval_base = 1
 			}

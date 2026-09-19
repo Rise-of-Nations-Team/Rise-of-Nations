@@ -6,7 +6,7 @@ state = {
 		owner = GER
 		add_core_of = PNG
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			4226 = {
 				naval_base = 1
 

@@ -30,7 +30,7 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			arms_factory = 2
 			air_base = 1
 		}

@@ -20,7 +20,7 @@ state =
 			1519 3
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			arms_factory = 2
 			industrial_complex = 2
 		}

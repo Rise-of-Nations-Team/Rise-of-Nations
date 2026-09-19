@@ -12,7 +12,7 @@ state = {
 	history = {
 		owner = RUS
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 		add_core_of = FIN add_core_of = RUS
 		set_state_flag = RUS_core 1918.11.11 = { owner = FIN controller = FIN }

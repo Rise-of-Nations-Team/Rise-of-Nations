@@ -7,7 +7,7 @@ state = {
 	history = {
 		owner = FRA
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			2165 = {
 				naval_base = 1
 			}

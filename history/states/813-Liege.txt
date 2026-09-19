@@ -20,7 +20,7 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 2
 			air_base = 1
 

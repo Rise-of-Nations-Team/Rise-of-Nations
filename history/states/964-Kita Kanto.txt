@@ -6,7 +6,7 @@ state = {
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 			industrial_complex = 2
 
 		}

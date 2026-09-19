@@ -17,7 +17,7 @@ state = {
 		}
 		
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 		# Gaba
 		victory_points = { 

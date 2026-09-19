@@ -11,7 +11,7 @@ state = {
 		add_core_of = RAP
 
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			13294 = {
 				naval_base = 1
 			}

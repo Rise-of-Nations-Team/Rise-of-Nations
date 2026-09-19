@@ -15,7 +15,7 @@ state = {
 		add_core_of = NGA
 
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			arms_factory = 0
 			industrial_complex = 1
 

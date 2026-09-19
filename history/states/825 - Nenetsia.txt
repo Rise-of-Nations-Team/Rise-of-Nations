@@ -16,7 +16,7 @@ state = {
 		}
 		owner = RUS
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			12530 = {
 				naval_base = 1
 			}

@@ -11,7 +11,7 @@ state = {
 	history = {
 		owner = DEN
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			12512 = {
 				naval_base = 1
 			}

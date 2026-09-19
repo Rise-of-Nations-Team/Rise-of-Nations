@@ -16,7 +16,7 @@ state = {
 		1992.1.1 = { owner = RUS controller = RUS }
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			air_base = 1
 		}
 	}

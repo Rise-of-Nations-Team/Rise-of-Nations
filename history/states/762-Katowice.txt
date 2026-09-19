@@ -40,7 +40,7 @@ state = {
 		1946.1.1 = { owner = POL controller = POL remove_core_of = GER }
 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 		}
 

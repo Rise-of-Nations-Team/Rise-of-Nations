@@ -10,7 +10,7 @@ state = {
 		add_core_of = CBV
 		owner = POR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			13014 = {
 				naval_base = 1
 			}

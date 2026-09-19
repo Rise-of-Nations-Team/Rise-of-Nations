@@ -8,7 +8,7 @@ state = {
 		owner = USA
 		add_core_of = KIR
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			13048 = {
 				naval_base = 1
 			}

@@ -8,7 +8,7 @@ state = {
 	history = {
 		owner = OTT
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 
 		}
 		victory_points = {

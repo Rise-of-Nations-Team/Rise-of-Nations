@@ -14,7 +14,7 @@ state = {
 	history = {
 		owner = AUH
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			5283 = {
 				bunker = 1
 

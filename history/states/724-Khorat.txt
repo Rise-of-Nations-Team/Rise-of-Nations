@@ -8,7 +8,7 @@ state = {
 	history = {
 		owner = SIA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		victory_points = {
