@@ -6,7 +6,7 @@ state = {
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			industrial_complex = 5
 
 		}

@@ -6,7 +6,7 @@ state = {
 		owner = ENG
 		add_core_of = NGA
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 
 		}
 

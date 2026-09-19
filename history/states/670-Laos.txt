@@ -13,7 +13,7 @@ state = {
 			1464 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 
 		}
 		1900.1.1 = { owner = VIN controller = VIN add_core_of = VIN }

@@ -9,7 +9,7 @@ state = {
 		set_state_flag = german_population
 		owner = USA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 			industrial_complex = 3
 
 		}

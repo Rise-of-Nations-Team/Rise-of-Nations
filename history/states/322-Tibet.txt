@@ -8,7 +8,7 @@ state = {
 	history = {
 		owner = QIN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 			industrial_complex = 1
 
 		}

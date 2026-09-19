@@ -6,7 +6,7 @@ state = {
 		add_claim_by = GRE
 		owner = OTT
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			arms_factory = 1
 
 		}

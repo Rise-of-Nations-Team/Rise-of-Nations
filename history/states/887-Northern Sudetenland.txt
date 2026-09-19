@@ -9,7 +9,7 @@ state={
 		}
 		owner = AUH
 		buildings = {
-			infrastructure = 8
+			infrastructure = 6
 			industrial_complex = 1
 			469 = {
 				bunker = 1

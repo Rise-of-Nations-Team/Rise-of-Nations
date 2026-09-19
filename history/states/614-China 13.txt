@@ -11,7 +11,7 @@ state = {
 		add_core_of = CHI add_core_of = BOX
 		add_core_of = ZHI
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
 		1910.1.1 = { owner = QIN controller = QIN }
 		1912.1.1 = { owner = CHI controller = CHI add_core_of = CHI }

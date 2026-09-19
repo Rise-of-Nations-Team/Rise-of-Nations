@@ -5,7 +5,7 @@ state = {
 	history = {
 		owner = KNS
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			130 = {
 				naval_base = 1
 

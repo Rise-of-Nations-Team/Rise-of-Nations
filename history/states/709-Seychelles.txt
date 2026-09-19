@@ -10,7 +10,7 @@ state = {
 		add_core_of = SEY
 		owner = ENG
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			2188 = {
 				naval_base = 1
 			}

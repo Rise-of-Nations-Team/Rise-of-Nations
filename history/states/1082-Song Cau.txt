@@ -7,7 +7,7 @@ state = {
 		owner = FRA
 
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 
 		}
 		1900.1.1 = { owner = VIN controller = VIN }

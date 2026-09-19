@@ -14,7 +14,7 @@ state=
 		add_core_of = KNS
 		add_core_of = SWE
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 			408 = {
 				naval_base = 1
 			}

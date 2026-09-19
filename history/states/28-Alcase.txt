@@ -17,7 +17,7 @@ state = {
 		victory_points = { 9503 10 }
 		victory_points = { 9559 5 }
 		buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			industrial_complex = 3
 		}
 		add_core_of = FRA
@@ -48,7 +48,7 @@ state = {
 		1933.1.1 = {
 			remove_core_of = GER
 			buildings = {
-				infrastructure = 7
+				infrastructure = 5
 				industrial_complex = 3
 				549 = {
 					bunker = 10
@@ -86,7 +86,7 @@ state = {
 		1936.1.1 = {
 			remove_core_of = GER
 			buildings = {
-				infrastructure = 7
+				infrastructure = 5
 				industrial_complex = 3
 				549 = {
 					bunker = 10
@@ -125,14 +125,14 @@ state = {
 		1941.1.1 = {
 			remove_core_of = GER
 			buildings = {
-				infrastructure = 7
+				infrastructure = 5
 				industrial_complex = 3
 			}
 			owner = GER controller = GER }
 		1945.1.1 = {
 			remove_core_of = GER
 			buildings = {
-				infrastructure = 7
+				infrastructure = 5
 				industrial_complex = 3
 			}
 			owner = FRA

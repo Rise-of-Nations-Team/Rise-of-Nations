@@ -11,7 +11,7 @@ state = {
 	history = {
 		owner = PER
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 		}
 		victory_points = {
 			2026 1

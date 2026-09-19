@@ -8,7 +8,7 @@ state = {
 			11853 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 
 		}
 		add_core_of = TUR add_core_of = OTT

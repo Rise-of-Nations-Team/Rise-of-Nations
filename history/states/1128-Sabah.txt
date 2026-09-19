@@ -13,7 +13,7 @@ state={
 			10212 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 		}
 		1900.1.1 = {
 			owner = MAL

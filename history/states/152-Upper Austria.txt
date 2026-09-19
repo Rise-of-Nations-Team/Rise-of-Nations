@@ -9,7 +9,7 @@ state = {
 	history = {
 		owner = AUH
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 			industrial_complex = 2
 
 		}

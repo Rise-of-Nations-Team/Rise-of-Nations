@@ -12,7 +12,7 @@ state = {
 		owner = FRA
 
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 		}
 		add_core_of = FRA add_core_of = VIC
 		add_core_of = OCC

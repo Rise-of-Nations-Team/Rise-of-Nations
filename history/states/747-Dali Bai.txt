@@ -30,7 +30,7 @@ state = {
 			owner = YUN
 			controller = YUN
 			buildings = {
-				infrastructure = 3
+				infrastructure = 1
 			}
 		}
 

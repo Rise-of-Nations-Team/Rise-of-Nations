@@ -18,7 +18,7 @@ state={
 			11279 3 #Leicester
 		}
 		buildings = {
-			infrastructure = 4 #was: 8
+			infrastructure = 2 #was: 8
 			arms_factory = 2
 			industrial_complex = 1
 			air_base = 5

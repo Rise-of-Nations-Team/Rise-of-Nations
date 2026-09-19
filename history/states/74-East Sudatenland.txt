@@ -9,7 +9,7 @@ state={
 		}
 		owner = AUH
 		buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			arms_factory = 1
 
 		}

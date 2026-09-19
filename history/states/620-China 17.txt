@@ -12,7 +12,7 @@ state = {
 		1919.7.1 = { owner = ZHI controller = ZHI }
 		1933.1.1 = { owner = CHI controller = CHI }
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			arms_factory = 2
 
 		}

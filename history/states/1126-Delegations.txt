@@ -17,7 +17,7 @@ state = {
 		add_core_of = DEL
 
 		buildings = {
-			infrastructure = 10
+			infrastructure = 8
 			13466 = {
 				bunker = 10
 			}

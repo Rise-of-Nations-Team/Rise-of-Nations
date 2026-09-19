@@ -10,7 +10,7 @@ state =
 		add_core_of = JAP
 
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			air_base = 3
 			3995 = {
 				naval_base = 1

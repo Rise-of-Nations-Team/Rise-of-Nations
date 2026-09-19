@@ -8,7 +8,7 @@ state = {
 			241 5
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			dockyard = 2
 			fuel_silo = 1
 			241 = {

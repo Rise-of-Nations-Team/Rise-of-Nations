@@ -5,7 +5,7 @@ state = {
 	history = {
 		owner = ADR
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
 		victory_points = {
 			13388 1

@@ -9,7 +9,7 @@ state = {
 		owner = ENG
 		add_core_of = GND
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
 		1974.1.1 = {
 			owner = GND

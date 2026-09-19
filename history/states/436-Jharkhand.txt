@@ -14,7 +14,7 @@ state = {
 		owner = RAJ
 		add_core_of = IND 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
 
 		1947.1.1 = {

@@ -19,7 +19,7 @@ state = {
 		add_core_of = FRA
 		add_core_of = VIC
 		buildings = {
-			infrastructure = 8
+			infrastructure = 6
 			industrial_complex = 1
 		}
 		1941.1.1 = {

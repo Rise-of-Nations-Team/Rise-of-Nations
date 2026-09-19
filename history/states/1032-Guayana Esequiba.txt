@@ -7,7 +7,7 @@ state = {
 		add_claim_by = VEN
 		owner = ENG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 
 		}
 

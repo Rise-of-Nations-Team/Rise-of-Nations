@@ -25,7 +25,7 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 
 		}
 

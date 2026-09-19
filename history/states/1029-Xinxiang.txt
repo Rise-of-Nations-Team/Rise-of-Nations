@@ -12,7 +12,7 @@ state = {
 		add_core_of = CHI add_core_of = BOX
 		add_core_of = ZHI
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 
 		}
 		1912.1.1 = { owner = CHI controller = CHI add_core_of = CHI }
@@ -20,7 +20,7 @@ state = {
 		1933.1.1 = { owner = CHI controller = CHI }
 		1938.10.25 = {
 			buildings = {
-				infrastructure = 8
+				infrastructure = 6
 				air_base = 2
 				arms_factory = 2
 

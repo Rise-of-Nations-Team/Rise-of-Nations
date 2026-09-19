@@ -11,7 +11,7 @@ state = {
 		add_core_of = ZHI
 		add_core_of = ANH
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 
 		}
 

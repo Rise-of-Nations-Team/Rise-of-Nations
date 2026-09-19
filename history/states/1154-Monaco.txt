@@ -9,7 +9,7 @@ state = {
 		}
 		add_core_of = MCO
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 
 		}
 

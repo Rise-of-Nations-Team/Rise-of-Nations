@@ -7,7 +7,7 @@ state = {
 		add_core_of = MOR
 		add_core_of = WES
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 			8038 = {
 				naval_base = 1
 

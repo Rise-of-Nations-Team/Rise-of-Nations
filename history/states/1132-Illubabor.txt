@@ -24,7 +24,7 @@ state = {
 		}
 		
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 		}
 		# Gambeila
 		victory_points = { 

@@ -13,7 +13,7 @@ state = {
 		add_core_of = CHI add_core_of = BOX
 		add_core_of = ANH
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 			industrial_complex = 1
 
 		}
