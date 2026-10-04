@@ -25,9 +25,9 @@ country_event = {
 	option = {
 		name = ronww2_country.1.a
 		create_country_leader = {
-			name = "King Boris I"
+			name = "Boris I"
 			desc = "POLITICS_KING_BORIS_DESC"
-			picture = "portrait_europe_generic_5.dds"
+			picture = "gfx/leaders/ADR/Portrait_Andorra_King_Boris_I.dds"
 			expire = "2060.1.1"
 			ideology = oligarchism
 		}
@@ -55,8 +55,7 @@ country_event = {
 		name = ronww2_country.2.a
 		create_country_leader = {
 			name = "General Council"
-			desc = "POLITICS_KING_BORIS_DESC"
-			picture = "Portrait_Andorra_General_council.dds"
+			picture = "gfx/leaders/ADR/Portrait_Andorra_General_council.dds"
 			expire = "2060.1.1"
 			ideology = conservatism
 		}

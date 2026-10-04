@@ -1423,7 +1423,7 @@ country_event = {
 						create_country_leader = {
 							name = "Alfred Klahr"
 							desc = "POLITICS_ALFRED_KLAHR_DESC"
-							picture = "Alfred_Klahr_Marxism.dds"
+							picture = "gfx/leaders/AUS/Portrait_Austria_Alfred_Klahr.dds"
 							expire = "2060.1.1"
 							ideology = marxism
 						}
@@ -1461,7 +1461,7 @@ country_event = {
 		create_country_leader = {
 			name = "Alfred Klahr"
 			desc = "POLITICS_ALFRED_KLAHR_DESC"
-			picture = "Alfred_Klahr_Marxism.dds"
+			picture = "gfx/leaders/AUS/Portrait_Austria_Alfred_Klahr.dds"
 			expire = "2060.1.1"
 			ideology = marxism
 		}
@@ -1532,7 +1532,7 @@ country_event = {
 
 		create_country_leader = {
 			name = "Leopold III"
-			picture = "Portrait_Belgium_Leopold_III.dds"
+			picture = "gfx/leaders/BEL/Portrait_Belgium_Leopold_iii.dds"
 			expire = "1983.9.15"
 			ideology = despotism
 			traits = {

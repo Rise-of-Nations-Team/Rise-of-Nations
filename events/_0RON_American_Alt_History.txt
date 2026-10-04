@@ -6563,7 +6563,7 @@ country_event = {
 		retire_ideology_leader = neutrality
 		create_country_leader = {
 			name = "Regency of The Empire of Brazil"
-			picture = "Brazilian_Regency.dds"
+			picture = "gfx/leaders/BRA/Brazilian_Regency.dds"
 			ideology = despotism
 		}
 		set_cosmetic_tag = VRB_Empire
@@ -6599,7 +6599,7 @@ country_event = {
 					}
 					create_country_leader = {
 						name = "Regency of The Empire of Brazil"
-						picture = "Brazilian_Regency.dds"
+						picture = "gfx/leaders/BRA/Brazilian_Regency.dds"
 						ideology = despotism
 					}
 					set_cosmetic_tag = VRB_Empire
@@ -6653,7 +6653,7 @@ country_event = {
 		retire_ideology_leader = neutrality
 		create_country_leader = {
 			name = "Regency of The Mexican Empire"
-			picture = "Mexican_Regency.dds"
+			picture = "gfx/leaders/MEX/Mexican_Regency.dds"
 			ideology = despotism
 		}
 		set_cosmetic_tag = VRS_Empire
@@ -6689,7 +6689,7 @@ country_event = {
 					}
 					create_country_leader = {
 						name = "Regency of The Mexican Empire"
-						picture = "Mexican_Regency.dds"
+						picture = "gfx/leaders/MEX/Mexican_Regency.dds"
 						ideology = despotism
 					}
 					set_cosmetic_tag = VRS_Empire
@@ -8033,7 +8033,7 @@ country_event = {
 				create_country_leader = {
 					name = "Salvador Abascal"
 					desc = "POLITICS_SALVADOR_ABASCAL_DESC"
-					picture = "Portrait_MEX_Salvador_Abascal.dds"
+					picture = "gfx/leaders/MEX/Portrait_MEX_Salvador_Abascal.dds"
 					expire = "2060.1.1"
 					ideology = falangism
 					traits = {
@@ -10669,7 +10669,7 @@ country_event = {
 			create_country_leader = {
 				name = "Edward F. L. Wood"
 				desc = "umc_leader_edward_wood_desc"
-				picture = "Portrait_Britain_Edward_Halifax.dds"
+				picture = "gfx/leaders/ENG/Portrait_Britain_Edward_Halifax.dds"
 				ideology = conservatism
 			}
 			GER = {
@@ -10738,7 +10738,7 @@ country_event = {
 			create_country_leader = {
 				name = "Edward F. L. Wood"
 				desc = "umc_leader_edward_wood_desc"
-				picture = "Portrait_Britain_Edward_Halifax.dds"
+				picture = "gfx/leaders/ENG/Portrait_Britain_Edward_Halifax.dds"
 				ideology = conservatism
 			}
 			GER = {

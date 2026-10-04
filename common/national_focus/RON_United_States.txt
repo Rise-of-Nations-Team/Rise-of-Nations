@@ -1395,7 +1395,7 @@ focus = {
 		PHI = {
 			create_country_leader = {
 				name = "William Howard Taft"
-				picture = "WW1/Portrait_USA_William_H_Taft.dds"
+				picture = "gfx/leaders/USA/WW1/Portrait_USA_William_H_Taft.dds"
 				expire = "2060.1.1"
 				ideology = conservatism
 			}
@@ -45721,11 +45721,11 @@ focus = {
 		set_politics = {
 			ruling_party = neutrality
 		}		
-set_party_name = { 
-ideology = neutrality
-long_name = "Jesus Christ Party"
-name = "JCP"
-}		
+		set_party_name = { 
+			ideology = neutrality
+			long_name = "Jesus Christ Party"
+			name = "JCP"
+		}		
 		create_country_leader = { #Jesus Christ
 			name = "Jesus Christ" 
 			picture = "gfx/leaders/POL/Portrait_POL_Jesus_Christ.dds"  
