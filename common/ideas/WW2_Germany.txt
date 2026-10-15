@@ -494,7 +494,8 @@ ideas = {
 				convoy_escort_efficiency = 0.25
 				amphibious_invasion = 0.35
 				amphibious_invasion_defence = 0.35
-				naval_invasion_capacity = 100
+				naval_invasion_division_cap = 80
+				naval_invasion_plan_cap = 25
 			}
 		}
 		ger_german_engineering = {

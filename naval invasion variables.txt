@@ -1,0 +1,3 @@
+SOV_red_fleet_naval_invasion_capacity
+ITA_rm_naval_invasion_capacity
+JUNO_navy_naval_invasion_capacity
