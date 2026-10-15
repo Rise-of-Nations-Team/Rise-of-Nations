@@ -4033,7 +4033,8 @@ technologies = {
 	mtg_transport = {
 
 		transport_capacity = -0.5
-		naval_invasion_capacity = 10
+		naval_invasion_division_cap = 15
+		naval_invasion_plan_cap = 10
 
 		path = {
 			leads_to_tech = mtg_landing_craft
@@ -4086,7 +4087,8 @@ technologies = {
 
 		invasion_preparation = -0.5
 		amphibious_invasion_defence = 0.15
-		naval_invasion_capacity = 40
+		naval_invasion_division_cap = 50
+		naval_invasion_plan_cap = 20
 
 		path = {
 			leads_to_tech = mtg_tank_landing_craft
@@ -4164,7 +4166,8 @@ technologies = {
 
 		amphibious_invasion = 0.25
 		amphibious_invasion_defence = 0.5
-		naval_invasion_capacity = 100
+		naval_invasion_division_cap = 100
+		naval_invasion_plan_cap = 40
 
 		research_cost = 2
 		start_year = 1944
@@ -4214,7 +4217,7 @@ technologies = {
 	mtg_cw_landing_craft = {
 
 		transport_capacity = -0.5
-		naval_invasion_capacity = 10
+		naval_invasion_plan_cap = 15
 
 		path = {
 			leads_to_tech = mtg_amphibious_assault_ship
@@ -4256,7 +4259,8 @@ technologies = {
 
 		invasion_preparation = -0.5
 		amphibious_invasion_defence = 0.15
-		naval_invasion_capacity = 40
+		naval_invasion_division_cap = 10
+		naval_invasion_plan_cap = 25
 
 		research_cost = 2.3
 		start_year = 1980
