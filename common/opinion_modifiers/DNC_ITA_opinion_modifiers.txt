@@ -1,0 +1,40 @@
+opinion_modifiers = {
+
+	ITA_l_award_at_belgrade_other = {
+		value = -30
+		decay = 1
+	}
+
+	ITA_l_award_at_cetinje_other = {
+		value = -25
+		decay = 1
+	}
+
+	ITA_l_second_award_at_cetinje_other = {
+		value = -30
+		decay = 1
+	}
+
+	ITA_u_guardian_of_the_adriatic = {
+		value = 40
+		decay = 1
+	}
+
+	ITA_u_trading_partners = {
+		value = 25
+		decay = 1
+	}
+
+	ITA_h_the_stations_are_ours = {
+		value = -20
+		decay = 1
+	}
+
+	ITA_u_the_understanding_with_london = {
+		value = 25
+	}
+
+	ITA_u_the_anglo_italian_defence_pact = {
+		value = 50
+	}
+}
