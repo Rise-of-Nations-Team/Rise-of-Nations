@@ -12,18 +12,34 @@ SCAN_DIRS = [
     Path("interface"),
     Path("events"),
     Path("history"),
-    Path("localisation")
+    Path("localisation"),
+    Path("portraits"),
+    Path("common/portraits")
 ]
 
-# Folders or patterns inside gfx/ that should NEVER be touched (like flags)
-EXCLUDED_GFX_PATTERNS = ("gfx/flags",)
+# Folders or patterns inside gfx/ that should NEVER be touched
+EXCLUDED_GFX_PATTERNS = (
+    "gfx/flags",
+    "gfx/entities",
+    "gfx/fonts",
+    "gfx/models"
+)
 
-# Set to False so it deletes the files right away
+# Deletes files right away
 DRY_RUN = False  
 # ---------------------
 
 # Regex to match any path starting with gfx/ inside quotes
 GFX_PATH_REGEX = re.compile(r'["\']?(gfx/[^"\'()\s<>]+)["\']?', re.IGNORECASE)
+
+def get_safe_path(path_str):
+    """Adds the Windows long-path prefix to bypass the 260 character limit."""
+    abs_path = os.path.abspath(path_str)
+    if os.name == 'nt' and not abs_path.startswith('\\\\?\\'):
+        if abs_path.startswith('\\\\'):
+            return '\\\\?\\UNC\\' + abs_path[2:]
+        return '\\\\?\\' + abs_path
+    return abs_path
 
 def get_all_gfx_files(gfx_path):
     """Recursively collects all relative file paths inside the gfx directory."""
@@ -34,39 +50,48 @@ def get_all_gfx_files(gfx_path):
         return gfx_set
     
     for file_path in gfx_path.rglob("*"):
-        if file_path.is_file():
-            rel_path = file_path.relative_to(Path("."))
-            rel_path_str = str(rel_path).replace("\\", "/")
-            
-            # Skip flags and any other excluded patterns
-            if any(exc in rel_path_str for exc in EXCLUDED_GFX_PATTERNS):
-                continue
+        try:
+            if file_path.is_file():
+                rel_path = file_path.relative_to(Path("."))
+                rel_path_str = str(rel_path).replace("\\", "/")
                 
-            gfx_set.add(rel_path_str)
+                # Skip excluded patterns
+                if any(exc in rel_path_str for exc in EXCLUDED_GFX_PATTERNS):
+                    continue
+                    
+                gfx_set.add(rel_path_str)
+        except Exception:
+            continue
             
-    print(f"Found {len(gfx_set):,} eligible files in gfx/ (flags excluded).")
+    print(f"Found {len(gfx_set):,} eligible files in gfx/ (protected folders excluded).")
     return gfx_set
 
 def scan_file_for_gfx(file_path):
     """Reads a single file and extracts all referenced gfx paths."""
     found = set()
     try:
-        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        safe_fp = get_safe_path(file_path)
+        with open(safe_fp, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
             matches = GFX_PATH_REGEX.findall(content)
             for match in matches:
                 found.add(match.replace("\\", "/").strip('"\''))
-    except Exception as e:
-        print(f"Could not read {file_path}: {e}")
+    except Exception:
+        pass
     return found
 
 def get_referenced_gfx():
     """Scans target directories concurrently using multiple threads."""
-    print("Scanning mod script files for references...")
+    print("Scanning mod script and portrait files for references...")
     text_files = []
     for scan_dir in SCAN_DIRS:
         if scan_dir.exists():
-            text_files.extend([p for p in scan_dir.rglob("*") if p.is_file()])
+            for p in scan_dir.rglob("*"):
+                try:
+                    if p.is_file():
+                        text_files.append(p)
+                except Exception:
+                    continue
         else:
             print(f"Notice: Directory '{scan_dir}' does not exist, skipping.")
 
@@ -108,13 +133,13 @@ def main():
     print("\nDeleting unused files...")
     deleted_count = 0
     for file_path_str in unused_files:
-        file_path = Path(file_path_str)
         try:
-            if file_path.exists():
-                file_path.unlink()
+            safe_file_path = get_safe_path(file_path_str)
+            if os.path.exists(safe_file_path):
+                os.remove(safe_file_path)
                 deleted_count += 1
         except Exception as e:
-            print(f"Failed to delete {file_path}: {e}")
+            print(f"Failed to delete {file_path_str}: {e}")
             
     print(f"Successfully deleted {deleted_count:,} unused files.")
     print(f"Completed in {time.time() - start_time:.2f} seconds.")
