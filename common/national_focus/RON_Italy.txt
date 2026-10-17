@@ -290,6 +290,97 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITADNC_arm_the_army_corps_commands
+		relative_position_id = ITADNC_arm_the_great_manoeuvres
+		x = 2
+		y = 2
+		prerequisite = { focus = ITADNC_arm_the_great_manoeuvres focus = ITADNC_arm_the_war_hypotheses }
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		available = { }
+
+		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			army_experience = 10
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ITA_arm_the_marshals_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_character = ITA_pietro_frugoni
+						ITA_pietro_frugoni = { is_field_marshal = no }
+					}
+					ITA_pietro_frugoni = {
+						promote_leader = yes
+					}
+				}
+				if = {
+					limit = {
+						has_character = ITA_luigi_nava
+						ITA_luigi_nava = { is_field_marshal = no }
+					}
+					ITA_luigi_nava = {
+						promote_leader = yes
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				ITA_arm_org = 0.05
+				tooltip = ITA_arm_org_tt
+			}
+			add_to_variable = {
+				ITA_arm_command = 0.05
+				tooltip = ITA_arm_command_tt
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_doctrine_cost_reduction = {
+				name = arm_the_army_corps_commands
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+			if = {
+				limit = {
+					has_character = ITA_roberto_brusati
+					NOT = {
+						any_army_leader = { is_character = ITA_roberto_brusati }
+					}
+				}
+				hidden_effect = {
+					add_corps_commander_role = {
+						character = ITA_roberto_brusati
+						traits = { regio_esercito_trait old_guard career_officer skilled_staffer trait_mountaineer }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_unit_leader = {
+						limit = { is_character = ITA_roberto_brusati }
+						include_invisible = yes
+						add_skill_level = 1
+						add_attack = 1
+						add_defense = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_arm_brusati_takes_the_first_corps_tt
+		}
+	}
+	focus = {
 		id = ITADNC_arm_the_africa_command
 		relative_position_id = ITADNC_arm_the_army_corps_commands
 		x = -2
@@ -433,97 +524,6 @@ focus_tree = {
 					}
 				}
 			}
-		}
-	}
-	focus = {
-		id = ITADNC_arm_the_army_corps_commands
-		relative_position_id = ITADNC_arm_the_great_manoeuvres
-		x = 2
-		y = 2
-		prerequisite = { focus = ITADNC_arm_the_great_manoeuvres focus = ITADNC_arm_the_war_hypotheses }
-		icon = GFX_goal_generic_army_doctrines
-		cost = 5
-		available = { }
-
-		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			army_experience = 10
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = ITA_arm_the_marshals_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						has_character = ITA_pietro_frugoni
-						ITA_pietro_frugoni = { is_field_marshal = no }
-					}
-					ITA_pietro_frugoni = {
-						promote_leader = yes
-					}
-				}
-				if = {
-					limit = {
-						has_character = ITA_luigi_nava
-						ITA_luigi_nava = { is_field_marshal = no }
-					}
-					ITA_luigi_nava = {
-						promote_leader = yes
-					}
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_to_variable = {
-				ITA_arm_org = 0.05
-				tooltip = ITA_arm_org_tt
-			}
-			add_to_variable = {
-				ITA_arm_command = 0.05
-				tooltip = ITA_arm_command_tt
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_doctrine_cost_reduction = {
-				name = arm_the_army_corps_commands
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
-			}
-			if = {
-				limit = {
-					has_character = ITA_roberto_brusati
-					NOT = {
-						any_army_leader = { is_character = ITA_roberto_brusati }
-					}
-				}
-				hidden_effect = {
-					add_corps_commander_role = {
-						character = ITA_roberto_brusati
-						traits = { regio_esercito_trait old_guard career_officer skilled_staffer trait_mountaineer }
-						skill = 3
-						attack_skill = 2
-						defense_skill = 3
-						planning_skill = 2
-						logistics_skill = 3
-					}
-				}
-			}
-			else = {
-				hidden_effect = {
-					every_unit_leader = {
-						limit = { is_character = ITA_roberto_brusati }
-						include_invisible = yes
-						add_skill_level = 1
-						add_attack = 1
-						add_defense = 1
-					}
-				}
-			}
-			custom_effect_tooltip = ITA_arm_brusati_takes_the_first_corps_tt
 		}
 	}
 	focus = {
@@ -752,53 +752,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_country_flag = ITA_arm_company_officine_galileo
 			custom_effect_tooltip = ITA_arm_company_officine_galileo_tt
-		}
-	}
-	focus = {
-		id = ITADNC_arm_the_field_wireless
-		relative_position_id = ITADNC_arm_the_supply_columns
-		x = 1
-		y = 1
-		prerequisite = { focus = ITADNC_arm_the_supply_columns focus = ITADNC_arm_the_defence_of_the_kingdom }
-		icon = GFX_focus_generic_radio_communication
-		cost = 5
-		available = {
-			has_war = no
-			has_tech = RON_Late_Telegraph
-		}
-
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = arm_the_field_wireless
-				bonus = 1
-				uses = 1
-				category = signal_company_tech
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_to_variable = {
-				ITA_arm_planning = 0.05
-				tooltip = ITA_arm_planning_tt
-			}
-			add_to_variable = {
-				ITA_arm_mobilization = 0.05
-				tooltip = ITA_arm_mobilization_tt
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_to_variable = {
-				var = ITA_arm_core_defence
-				value = 0.05
-				tooltip = ITA_arm_core_defence_tt
-			}
-			add_to_variable = {
-				var = ITA_arm_dig_in
-				value = 0.05
-				tooltip = ITA_arm_dig_in_tt
-			}
 		}
 	}
 	focus = {
@@ -1321,6 +1274,53 @@ focus_tree = {
 				var = ITA_arm_command
 				value = 0.05
 				tooltip = ITA_arm_command_tt
+			}
+		}
+	}
+	focus = {
+		id = ITADNC_arm_the_field_wireless
+		relative_position_id = ITADNC_arm_the_supply_columns
+		x = 1
+		y = 1
+		prerequisite = { focus = ITADNC_arm_the_supply_columns focus = ITADNC_arm_the_defence_of_the_kingdom }
+		icon = GFX_focus_generic_radio_communication
+		cost = 5
+		available = {
+			has_war = no
+			has_tech = RON_Late_Telegraph
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = arm_the_field_wireless
+				bonus = 1
+				uses = 1
+				category = signal_company_tech
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				ITA_arm_planning = 0.05
+				tooltip = ITA_arm_planning_tt
+			}
+			add_to_variable = {
+				ITA_arm_mobilization = 0.05
+				tooltip = ITA_arm_mobilization_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_to_variable = {
+				var = ITA_arm_core_defence
+				value = 0.05
+				tooltip = ITA_arm_core_defence_tt
+			}
+			add_to_variable = {
+				var = ITA_arm_dig_in
+				value = 0.05
+				tooltip = ITA_arm_dig_in_tt
 			}
 		}
 	}
