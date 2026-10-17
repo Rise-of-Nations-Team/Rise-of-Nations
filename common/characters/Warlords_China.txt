@@ -1,0 +1,3254 @@
+characters={
+	
+	                                      
+#  _____  _       _    _                
+# |   __||_| ___ | |_ |_| ___  ___  ___ 
+# |__   || ||   || '_|| || .'||   || . |
+# |_____||_||_|_||_,_||_||__,||_|_||_  |
+#                                  |___|
+
+	SIK_sheng_shicai={
+		name=SIK_sheng_shicai
+		portraits={
+			civilian={
+				large=GFX_portrait_SIK_sheng_shicai
+			}
+			army={
+				large="GFX_portrait_sheng_shicai"
+				small=GFX_portrait_SIK_sheng_shicai_small
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			traits = { SIK_communist_in_name_only SIK_duban }
+			id=-1
+		}
+	}
+
+	SIK_chiang_yufen={
+		name=SIK_chiang_yufen
+		portraits={
+			army={
+				large=GFX_portrait_SIK_chiang_yufen
+				small=GFX_portrait_SIK_chiang_yufen_small
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	SIK_sheng_shiqi={
+		name=SIK_sheng_shiqi
+		portraits={
+			army={
+				large = GFX_portrait_SIK_sheng_shiqi
+				small = GFX_portrait_SIK_sheng_shiqi_military_small
+			}
+			civilian = {
+				small = GFX_portrait_SIK_sheng_shiqi_civilian_small
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			traits = {
+				organizer
+			}
+		}
+	}
+
+	SIK_ishaq_musonov={
+		name=SIK_ishaq_musonov
+		portraits={
+			army={
+				large = GFX_portrait_SIK_ishaq_musonov
+				small = GFX_portrait_SIK_ishaq_musonov_small
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+			traits = {
+				trait_mountaineer
+			}
+		}
+	}
+
+	SIK_kwong_jin={
+		name=SIK_kwong_jin
+		portraits={
+			civilian={
+				large=GFX_portrait_SIK_kwong_jin
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ captain_of_industry compassionate_gentleman }
+			expire="1952.1.1.12"
+			id=-1
+		}
+	}
+
+	SIK_luo_wei={
+		name=SIK_luo_wei
+		portraits={
+			civilian={
+				large=GFX_portrait_SIK_luo_wei
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ reluctant_interventionist dealbroker }
+			expire="1950.1.1.12"
+			id=-1
+		}
+	}
+
+	SIK_liang_jiang={
+		name=SIK_liang_jiang
+		portraits={
+			civilian={
+				large=GFX_portrait_SIK_liang_jiang
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ financial_expert }
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+
+
+	### THEORISTS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	SIK_tan_ma={
+		name=SIK_tan_ma
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={
+			cost = 100	
+			slot = theorist
+			idea_token = SIK_tan_ma
+			ledger = army
+			allowed = {
+				original_tag = SIK
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	SIK_xie_peng={
+		name=SIK_xie_peng
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SIK_xie_peng
+			ledger = air
+			allowed = {
+				original_tag = SIK
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+	
+	SIK_gao_jiang={
+		name=SIK_gao_jiang
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SIK_gao_jiang
+			ledger = navy
+			allowed = {
+				original_tag = SIK
+			}
+			
+			traits = {
+				naval_theorist
+			}
+		}
+	}
+
+
+	### ARMY CHIEFS ###
+
+	# Alexander von Falkenhausen in CHI file
+
+	SIK_yol_bars={
+		name=SIK_yol_bars
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SIK_yol_bars
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SIK_ma_wei={
+		name=SIK_ma_wei
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SIK_ma_wei
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 25 
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	SIK_sa_zhenbing={
+		name=SIK_sa_zhenbing
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = SIK_sa_zhenbing
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SIK_deng_tian={
+		name=SIK_deng_tian
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = SIK_deng_tian
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	SIK_piotr_orlov={
+		name=SIK_piotr_orlov
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SIK_piotr_orlov
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SIK_yang_tian={
+		name=SIK_yang_tian
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_1"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SIK_yang_tian
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	SIK_cheng_fang={
+		name=SIK_cheng_fang
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIK_cheng_fang
+			ledger = air
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				air_air_superiority_3
+			}
+			cost = 200
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SIK_mao_wu={
+		name=SIK_mao_wu
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIK_mao_wu
+			ledger = army
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 25
+			}
+		}
+	}
+
+	SIK_yu_wei={
+		name=SIK_yu_wei
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = SIK_yu_wei
+			ledger = army
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SIK_kwong_tian={
+		name=SIK_kwong_tian
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIK_kwong_tian
+			ledger = army
+			allowed = {
+				original_tag = SIK
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+
+	
+	### POLITICAL ADVISORS ###
+
+	# Dai Li in CHI file
+	# T.V. Soong in CHI file
+	# Deng Xiaoping in PRC file
+	# Kang Sheng in PRC file
+	# Luo Ruiqing in PRC file
+
+	SIK_isa_yusuf_alptekin={
+		name=SIK_isa_yusuf_alptekin
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIK_isa_yusuf_alptekin
+			allowed  = {
+				original_tag  = SIK
+			}
+			traits  = {
+				captain_of_industry 
+			}
+			ai_will_do = {
+				base = 0.5 
+			}
+		}
+	}
+
+	SIK_habibullah_huseinov={
+		name=SIK_habibullah_huseinov
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIK_habibullah_huseinov
+			allowed  = {
+				original_tag  = SIK
+			}
+			traits  = {
+				armaments_organizer 
+			}
+			ai_will_do = {
+				base = 0.5 
+			}
+		}
+	}
+
+	SIK_zhang_xiliang={
+		name=SIK_zhang_xiliang
+		portraits={
+			civilian={
+				small=GFX_portrait_SIK_zhang_xiliang_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIK_zhang_xiliang
+			allowed  = {
+				original_tag  = SIK
+			}
+			traits  = {
+				war_industrialist 
+			}
+			ai_will_do = {
+				base = 0.5 
+			}
+		}
+	}
+
+	SIK_garegin_apresov = {
+		name = SIK_garegin_apresov
+
+		portraits = {
+			civilian = {
+				small = GFX_portrait_SIK_garegin_apresov_small
+			}
+		}	
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SIK_garegin_apresov
+			allowed = {
+				original_tag = SIK
+			}
+			available = {
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+			cost = 150
+			traits = { SIK_soviet_consul_general_trait }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+#  __ __                          
+# |  |  | _ _  ___  ___  ___  ___ 
+# |_   _|| | ||   ||   || .'||   |
+#   |_|  |___||_|_||_|_||__,||_|_|
+#                                 
+
+	YUN_long_yun={
+		name=YUN_long_yun
+		portraits={
+			civilian={
+				large="GFX_portrait_yun_long_yun"
+			}
+			army = {
+				small=GFX_portrait_YUN_long_yun_small
+				large="GFX_portrait_yun_long_yun"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = { YUN_king_of_yunnan }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	YUN_lu_han = {
+		name = YUN_lu_han
+
+		portraits = {
+			army = {
+				small = GFX_portrait_YUN_lu_han_small
+				large = GFX_portrait_YUN_lu_han
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = YUN_lu_han
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+				cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+
+		corps_commander = {
+			traits = { YUN_dubious_loyalty organizer }
+			skill = 3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	YUN_hu_ruoyu = {
+		name = YUN_hu_ruoyu
+		portraits = {
+			army = {
+				small = GFX_portrait_YUN_hu_ruoyu_small
+				large = GFX_portrait_YUN_hu_ruoyu
+			}
+		}
+
+		corps_commander = {
+			traits = { trait_mountaineer trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	YUN_mao_dong={
+		name=YUN_mao_dong
+		portraits={
+			civilian={
+				large=GFX_portrait_YUN_mao_dong
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ editor financial_expert }
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	
+	YUN_cheng_peng={
+		name=YUN_cheng_peng
+		portraits={
+			civilian={
+				large=GFX_portrait_YUN_cheng_peng
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+
+	YUN_hsia_wu={
+		name=YUN_hsia_wu
+		portraits={
+			civilian={
+				large=GFX_portrait_YUN_hsia_wu
+			}
+		}
+		country_leader={
+			ideology=falangism
+			expire="1946.1.1.12"
+			id=-1
+		}
+	}
+
+
+	### THEORISTS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	YUN_pan_tian={
+		name=YUN_pan_tian
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = YUN_pan_tian
+			ledger = army
+			allowed = {
+				original_tag = YUN
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	YUN_zhu_hu={
+		name=YUN_zhu_hu
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			cost = 100	
+			slot = theorist
+			idea_token = YUN_zhu_hu
+			ledger = air
+			allowed = {
+				original_tag = YUN
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+
+	YUN_liao_fang={
+		name=YUN_liao_fang
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = YUN_liao_fang
+			ledger = navy
+			allowed = {
+				original_tag = YUN
+			}
+			
+			traits = {
+				naval_theorist
+			}
+		}
+	}
+
+
+	### ARMY CHIEFS ###
+
+	# Alexander von Falkenhausen in CHI file
+
+	YUN_li_jiang={
+		name=YUN_li_jiang
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+		advisor={		
+			slot = army_chief
+			idea_token = YUN_li_jiang
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	YUN_zhang_wu={
+		name=YUN_zhang_wu
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = YUN_zhang_wu
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	YUN_chen_zhao={
+		name=YUN_chen_zhao
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = YUN_chen_zhao
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	YUN_huang_dong={
+		name=YUN_huang_dong
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = YUN_huang_dong
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	# Lu Han is up there in this file along with other Country Leaders and Unit Leaders
+
+	YUN_liu_zhao={
+		name=YUN_liu_zhao
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = YUN_liu_zhao
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	YUN_liang_peng={
+		name=YUN_liang_peng
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = YUN_liang_peng
+			ledger = air
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				air_strategic_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	YUN_hu_wei={
+		name=YUN_hu_wei
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+		advisor={		
+			slot = high_command
+			idea_token = YUN_hu_wei
+			ledger = army
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	YUN_luo_sun={
+		name=YUN_luo_sun
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = YUN_luo_sun
+			ledger = army
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+	
+	YUN_wang_jiang={
+		name=YUN_wang_jiang
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = YUN_wang_jiang
+			ledger = army
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### POLITICAL ADVISORS ###
+
+	# Dai Li in CHI file
+	# T.V. Soong in CHI file
+	# Deng Xiaoping in PRC file
+	# Kang Sheng in PRC file
+	# Luo Ruiqing in PRC file
+
+	#This Zhou Zhirou is only for old content
+	YUN_zhou_zhirou={
+		name=YUN_zhou_zhirou
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YUN_zhou_zhirou
+			allowed  = {
+				original_tag  = YUN
+			}
+			traits  = {
+				compassionate_gentleman 
+			}
+		}
+	}
+
+	YUN_liu_wenhui={
+		name=YUN_liu_wenhui
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YUN_liu_wenhui
+			allowed  = {
+				original_tag  = YUN
+			}
+			traits  = {
+				armaments_organizer 
+			}
+		}
+	}
+
+	YUN_ding_zhipan={
+		name=YUN_ding_zhipan
+		portraits={
+			army={
+				small=GFX_portrait_YUN_ding_zhipan_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YUN_ding_zhipan
+			allowed  = {
+				original_tag  = YUN
+			}
+			traits  = {
+				prince_of_terror 
+			}
+		}
+	}                                                        
+#  __ __  _  _         _    _____              _____      
+# |  |  ||_|| |_  ___ |_|  |   __| ___  ___   |     | ___ 
+# |-   -|| || . || -_|| |  |__   || .'||   |  | | | || .'|
+# |__|__||_||___||___||_|  |_____||__,||_|_|  |_|_|_||__,|
+#                                                         
+
+	XSM_ma_bufang={
+		name=XSM_ma_bufang
+		portraits={
+			civilian={
+				large="GFX_portrait_xsm_ma_bufang"
+			}
+			army={
+				large="GFX_portrait_xsm_ma_bufang"
+				small="GFX_idea_XSM_ma_bufang"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XSM_ma_bufang
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+				cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		corps_commander={
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			skill = 3
+			traits = { cavalry_leader }
+			legacy_id=-1
+		}
+	}
+
+	XSM_han_youwen = {
+		name = XSM_han_youwen
+		portraits = {
+			army = {
+				large = GFX_portrait_XSM_han_youwen
+				small = GFX_portrait_XSM_han_youwen_small
+			}
+		}
+		corps_commander = {
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			skill = 3
+			traits = { cavalry_leader }
+			legacy_id = -1
+			visible = {
+				has_completed_focus = XSM_recruit_salar_officers
+			}
+		}
+	}
+
+	XSM_han_yimu = {
+		name = XSM_han_yimu
+		portraits = {
+			army = {
+				large = GFX_portrait_XSM_han_yimu
+				small = GFX_portrait_XSM_han_yimu_small
+			}
+		}
+		corps_commander = {
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			skill = 2
+			traits = { infantry_officer }
+			legacy_id = -1
+			visible = {
+				has_completed_focus = XSM_recruit_salar_officers
+			}
+		}
+	}
+
+	XSM_ma_hongbin={
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+			}
+			name=XSM_ma_hongbin
+			portraits={
+				army={ #Trust me these portraits match together
+					large=GFX_portrait_XSM_ma_hongbin
+					small="GFX_idea_generic_army_asia_1"
+				}
+			}
+			advisor={
+				slot = army_chief
+				idea_token = XSM_ma_hongbin
+				allowed = {
+					original_tag = XSM
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+					cost = 100
+				ai_will_do = {
+					base = 1.000
+				}
+			}
+
+			corps_commander={
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=-1
+			}
+		}
+		instance = {
+			allowed = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			name=XSM_ma_hongbin
+			portraits={
+				army={ #Trust me these portraits match together
+					large= GFX_portrait_NXM_ma_hongbin
+					small= GFX_portrait_NXM_ma_hongbin_small
+				}
+			}
+			advisor={
+				slot = army_chief
+				idea_token = XSM_ma_hongbin
+				allowed = {
+					OR = {
+						original_tag = XSM
+						original_tag = KHM
+						original_tag = NXM
+						original_tag = GSM
+						original_tag = MAN
+					}
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+					cost = 100
+				ai_will_do = {
+					base = 1.000
+				}
+			}
+
+			corps_commander={
+				traits = { XSM_dubious_loyalty }
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=-1
+			}
+		}
+		
+	}
+
+	XSM_mao_sun={
+		name=XSM_mao_sun
+		portraits={
+			civilian={
+				large=GFX_portrait_XSM_mao_sun
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ national_integralist }
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	XSM_hsia_sun={
+		name=XSM_hsia_sun
+		portraits={
+			civilian={
+				large=GFX_portrait_XSM_hsia_sun
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ smooth_talking_charmer armaments_organizer }
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	XSM_hsia_jin={
+		name=XSM_hsia_jin
+		portraits={
+			civilian={
+				large=GFX_portrait_XSM_hsia_jin
+			}
+		}
+		country_leader={
+			ideology=rexism
+			traits={ economist silent_workhorse }
+			expire="1955.1.1.12"
+			id=-1
+		}
+	}
+
+
+	### THEORISTS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	XSM_keng_shoushan={
+		name=XSM_keng_shoushan
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+		advisor={
+			cost = 100	
+			slot = theorist
+			idea_token = XSM_keng_shoushan
+			ledger = army
+			allowed = {
+				original_tag = XSM
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	XSM_ma_hongkui={
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+			}
+			name=XSM_ma_hongkui
+			portraits={
+				army={
+					small="GFX_idea_generic_air_asia_2"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = XSM_ma_hongkui
+				ledger = air
+				allowed = {
+					original_tag = XSM
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+			}
+
+		}
+		instance = {
+			allowed = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			name=XSM_ma_hongkui
+			portraits={
+				army={
+					large= GFX_portrait_NXM_ma_hongkui
+					small= GFX_portrait_NXM_ma_hongkui_small
+				}
+			}
+			country_leader={
+				ideology=despotism
+				traits = { NXM_king_of_ningxia }
+				expire="1965.1.1.1"
+				id=-1
+			}
+
+			field_marshal={
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=-1
+			}
+		}
+	}
+
+	
+	### ARMY CHIEFS ###
+
+	# Alexander von Falkenhausen in CHI file
+
+	# Ma Hongbin is up there in this file as a Unit Leader too
+
+	XSM_ma_buqing={
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+			}
+			name=XSM_ma_buqing
+			portraits={
+				army={
+					small="GFX_idea_generic_army_asia_3" #Changed in NSB so that the other Army Chief can an advisor portrait matching his general portrait
+				}
+			}
+			advisor={
+				slot = army_chief
+				idea_token = XSM_ma_buqing
+				allowed = {
+					original_tag = XSM
+				}
+				traits = {
+					army_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1.000
+				}
+			}
+		}
+		instance = {
+			allowed = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			name=XSM_ma_buqing
+			portraits={
+				army={
+					large= GFX_portrait_GSM_ma_buqing
+					small= GFX_portrait_GSM_ma_buqing_small
+				}
+			}
+
+			field_marshal={
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=-1
+			}
+
+			country_leader={
+				ideology=despotism
+				traits = { GSM_staunch_anti_communist }
+				expire="1965.1.1.1"
+				id=-1
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	XSM_lian_zenguang={
+		name=XSM_lian_zenguang
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = XSM_lian_zenguang
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	XSM_keng_gui={
+		name=XSM_keng_gui
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+		advisor={		
+			slot = navy_chief
+			idea_token = XSM_keng_gui
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	XSM_may_chongan={
+		name=XSM_may_chongan
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_1"
+			}
+		}
+		advisor={		
+			slot = air_chief
+			idea_token = XSM_may_chongan
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	XSM_chun_minsheng={
+		name=XSM_chun_minsheng
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={		
+			slot = air_chief
+			idea_token = XSM_chun_minsheng
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	XSM_ma_donghai={
+		name=XSM_ma_donghai
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = XSM_ma_donghai
+			ledger = air
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	XSM_wu_qi={
+		name=XSM_wu_qi
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = XSM_wu_qi
+			ledger = army
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				army_cavalry_3
+			}
+			cost = 200
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	XSM_au_yongrui={
+		name=XSM_au_yongrui
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = XSM_au_yongrui
+			ledger = army
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	XSM_ho_tengfei={
+		name=XSM_ho_tengfei
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = XSM_ho_tengfei
+			ledger = navy
+			allowed = {
+				original_tag = XSM
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### POLITICAL ADVISORS ###
+
+	# Dai Li in CHI file
+	# T.V. Soong in CHI file
+	# Deng Xiaoping in PRC file
+	# Kang Sheng in PRC file
+	# Luo Ruiqing in sahred file
+
+	XSM_fang_jing={
+		name=XSM_fang_jing
+		portraits={
+			army={
+				small=GFX_portrait_XSM_fang_jing_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XSM_fang_jing
+			allowed  = {
+				original_tag  = XSM
+			}
+			traits  = {
+				smooth_talking_charmer 
+			}
+		}
+	}
+
+	XSM_zi_shen={
+		name=XSM_zi_shen
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XSM_zi_shen
+			allowed  = {
+				original_tag  = XSM
+			}
+			traits  = {
+				backroom_backstabber 
+			}
+			ai_will_do  = {
+				base  = 0.000
+			}
+		}
+	}
+
+	XSM_li_shiqun={
+		name=XSM_li_shiqun
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = XSM_li_shiqun
+			allowed  = {
+				original_tag  = XSM
+			}
+			traits  = {
+				prince_of_terror 
+			}
+		}
+	}
+
+	#Only used in SEA for Qinhai Ma which will be the name of XSM
+	QHM_ma_lin = {
+		name=QHM_ma_lin
+		portraits={
+			army={
+				large = GFX_portrait_QHM_ma_lin
+				small = GFX_portrait_QHM_ma_lin_small
+			}
+		}
+
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { XSM_devout_leader }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+# _____  _                   _ 
+#|   __|| |_  ___  ___  _ _ |_|
+#|__   ||   || .'||   ||_'_|| |
+#|_____||_|_||__,||_|_||_,_||_|
+#                              
+
+	SHX_yan_xishan={
+		name=SHX_yan_xishan
+		portraits={
+			civilian={
+				large="GFX_portrait_yan_xishan"
+			}
+			army={
+				small=GFX_portrait_SHX_yan_xishan_small
+				large="GFX_portrait_yan_xishan"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SHX_yan_xishan
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = { SHX_model_governor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SHX_wang_jingguo={
+		name=SHX_wang_jingguo
+		portraits={
+			army={ #These two portraits match
+				large = GFX_portrait_SHX_wang_jingguo
+				small = GFX_portrait_SHX_wang_jingguo_small
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	SHX_zhang_shen={
+		name=SHX_zhang_shen
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_land_8"
+			}
+			army={
+				small=GFX_portrait_SHX_zhang_shen_small
+				large="GFX_portrait_asia_generic_land_8"
+			}
+		}
+		advisor={		
+			slot = high_command
+			idea_token = SHX_zhang_shen
+			ledger = army
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				army_logistics_2
+			}
+				cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ quartermaster_general financial_expert }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+
+	SHX_luo_zhao={
+		name=SHX_luo_zhao
+		portraits={
+			civilian={
+				large=GFX_portrait_SHX_luo_zhao
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			expire="1955.1.1.12"
+			id=-1
+		}
+	}
+
+	SHX_liao_ting={
+		name=SHX_liao_ting
+		portraits={
+			civilian={
+				large=GFX_portrait_SHX_liao_ting
+			}
+		}
+		country_leader={
+			ideology=nazism
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+
+
+	### THEORISTS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	SHX_ma_tian={
+		name=SHX_ma_tian
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SHX_ma_tian
+			ledger = army
+			allowed = {
+				original_tag = SHX
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	SHX_wang_li_sun={
+		name=SHX_wang_li_sun
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SHX_wang_li_sun
+			ledger = air
+			allowed = {
+				original_tag = SHX
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+
+
+	### ARMY CHIEFS ###
+
+	# Alexander von Falkenhausen in CHI file
+
+	# Yan Xishan is up there in this file along with other Country Leaders
+
+	SHX_kong_fang={
+		name=SHX_kong_fang
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SHX_kong_fang
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	SHX_sun_li={
+		name=SHX_sun_li
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = SHX_sun_li
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SHX_peng_dong={
+		name=SHX_peng_dong
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = SHX_peng_dong
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	SHX_yang_lu={
+		name=SHX_yang_lu
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SHX_yang_lu
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SHX_cheng_zhao={
+		name=SHX_cheng_zhao
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor={	
+			slot = air_chief
+			idea_token = SHX_cheng_zhao
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	# Zhang Shen up there in this file along with other Country Leaders
+
+	SHX_huang_peng={
+		name=SHX_huang_peng
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SHX_huang_peng
+			ledger = army
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SHX_min_lan_tung_tin={
+		name=SHX_min_lan_tung_tin
+		portraits={
+			army={
+				small=GFX_portrait_SHX_min_lan_tung_tin_small
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SHX_min_lan_tung_tin
+			ledger = army
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				army_artillery_3
+			}
+			cost = 200
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SHX_tan_fang={
+		name=SHX_tan_fang
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SHX_tan_fang
+			ledger = air
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				air_bomber_interception_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SHX_zhu_ting={
+		name=SHX_zhu_ting
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SHX_zhu_ting
+			ledger = air
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				air_air_combat_training_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### POLITICAL ADVISORS ###
+
+	# Dai Li in CHI file
+	# T.V. Soong in CHI file
+	# Deng Xiaoping in PRC file
+	# Kang Sheng in PRC file
+	# Luo Ruiqing in PRC file
+
+	SHX_wang_zuanxu={
+		name=SHX_wang_zuanxu
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHX_wang_zuanxu
+			allowed  = {
+				original_tag  = SHX
+			}
+			traits  = {
+				fortification_engineer 
+			}
+		}
+	}
+
+	SHX_fu_zuoyi={
+		name=SHX_fu_zuoyi
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHX_fu_zuoyi
+			allowed  = {
+				original_tag  = SHX
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+
+	SHX_qu_yangke={
+		name=SHX_qu_yangke
+		portraits={
+			army={
+				small=GFX_portrait_SHX_qu_yangke_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHX_qu_yangke
+			allowed  = {
+				original_tag  = SHX
+			}
+			traits  = {
+				prince_of_terror 
+			}
+		}
+	}
+
+#  _____                           _ 
+# |   __| _ _  ___  ___  ___  _ _ |_|
+# |  |  || | || .'||   || . ||_'_|| |
+# |_____||___||__,||_|_||_  ||_,_||_|
+#                       |___|        
+
+	GXC_li_zongren={
+		name=GXC_li_zongren
+		portraits={
+			civilian={
+				large= GFX_portrait_GXC_li_zongren
+			}
+			army={
+				small=GFX_portrait_GXC_li_zongren_small
+				large= GFX_portrait_GXC_li_zongren #"GFX_portrait_li_zongren"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GXC_li_zongren
+			allowed  = {
+				OR = {
+					original_tag  = GXC
+					original_tag  = GDC
+				}
+			}
+			traits  = {
+				prince_of_terror 
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			traits={ GXC_fierce_leader }
+			id=-1
+		}
+
+		field_marshal = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			traits = {
+				inflexible_strategist 
+			}
+			visible = {
+				
+			}
+		}
+	}
+
+	GXC_chen_jitang={
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+			}
+			name=GXC_chen_jitang
+			portraits={
+				army={
+					large= GFX_portrait_GXC_chen_jitang
+					small=GFX_portrait_GXC_chen_jitang_small
+				}
+			}
+			advisor={
+				slot = army_chief
+				idea_token = GXC_chen_jitang
+				allowed = {
+					original_tag = GXC
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+					cost = 100
+				ai_will_do = {
+					base = 1.000
+				}
+			}
+		}
+		instance = {
+			allowed = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			name=GXC_chen_jitang
+			portraits={
+				army={
+					large= GFX_portrait_GDC_chen_jitang
+					small = GFX_portrait_GDC_chen_jitang_small
+				}
+			}
+			field_marshal={
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=-1
+				visible = {
+					#OR = {
+					#	has_completed_focus = CHI_personal_leadership
+					#	original_tag = CHI
+					#}
+				}
+			}
+
+			country_leader={
+				ideology=despotism
+				traits={ GDC_king_of_the_southern_skies }
+				expire="1965.1.1.1"
+				id=-1
+			}
+		}
+	}
+
+	GND_yu_hanmou = {
+		name = GND_yu_hanmou
+		portraits = {
+			army = {
+				small = GFX_portrait_GND_yu_hanmou_small
+				large = GFX_portrait_GND_yu_hanmou
+			}
+		}
+
+		corps_commander = {
+			traits = { infantry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+
+	CHI_sun_tongxuan = {
+		name = CHI_sun_tongxuan
+		portraits = {
+			army = {
+				small = GFX_portrait_CHI_sun_tongxuan_small
+				large = GFX_portrait_CHI_sun_tongxuan
+			}
+		}
+
+		corps_commander = {
+			traits = { infantry_leader trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	CHI_song_zheyuan = {
+		name = CHI_song_zheyuan
+		portraits = {
+			army = {
+				small = GFX_portrait_CHI_song_zheyuan_small
+				large = GFX_portrait_CHI_song_zheyuan
+			}
+		}
+
+		corps_commander = {
+			traits = { infantry_leader war_hero }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+			traits = { CHI_the_northern_bastion_trait }
+		}
+	}
+
+	GXC_liu_peng={
+		name=GXC_liu_peng
+		portraits={
+			civilian={
+				large=GFX_portrait_GXC_liu_peng
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ editor ideological_crusader }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+
+	GXC_zhang_lu={
+		name=GXC_zhang_lu
+		portraits={
+			civilian={
+				large=GFX_portrait_GXC_zhang_lu
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ dealbroker }
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+
+	GXC_li_ting={
+		name=GXC_li_ting
+		portraits={
+			civilian={
+				large=GFX_portrait_GXC_li_ting
+			}
+		}
+		country_leader={
+			ideology=rexism
+			traits={ compassionate_gentleman }
+			expire="1953.1.1.12"
+			id=-1
+		}
+	}
+
+
+	### THEORISTS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	GXC_yu_hanmou={
+		name=GXC_yu_hanmou
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = GXC_yu_hanmou
+			ledger = army
+			allowed = {
+				original_tag = GXC
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	GXC_bai_yeung={
+		name=GXC_bai_yeung
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = GXC_bai_yeung
+			ledger = air
+			allowed = {
+				original_tag = GXC
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+
+	GXC_heng_lo={
+		name=GXC_heng_lo
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = GXC_heng_lo
+			ledger = navy
+			allowed = {
+				original_tag = GXC
+			}
+			
+			traits = {
+				naval_theorist
+			}
+		}
+	}
+
+
+	### ARMY CHIEFS ###
+
+	# Alexander von Falkenhausen in CHI file
+
+	# Chen Jitang is up there in this file along with other Unit and Country Leaders
+
+	GXC_huang_shaohong={
+		name=GXC_huang_shaohong
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = GXC_huang_shaohong
+			allowed = {
+				original_tag = GXC
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	GXC_huo_duyi={
+		name=GXC_huo_duyi
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = GXC_huo_duyi
+			allowed = {
+				original_tag = GXC
+			}
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	GXC_bai_chongxi={
+		name=GXC_bai_chongxi
+		portraits={
+			army = {
+				large = GFX_portrait_GXC_bai_chongxi
+				small = GFX_portrait_GXC_bai_chongxi_small
+			}
+		}
+		corps_commander={
+			traits = { organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = GXC_bai_chongxi
+			allowed = {
+				OR = {
+					original_tag = GXC
+					original_tag = GDC
+				}
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Claire Lee Chennault is in CHI file
+
+	#This Wang_shuming is only for old content
+	GXC_wang_shuming={
+		name=GXC_wang_shuming
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_1"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = GXC_wang_shuming
+			allowed = {
+				original_tag = GXC
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	GXC_niu_keung={
+		name=GXC_niu_keung
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = GXC_niu_keung
+			allowed = {
+				original_tag = GXC
+			}
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	GXC_yang_hulin={
+		name=GXC_yang_hulin
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GXC_yang_hulin
+			ledger = air
+			allowed = {
+				original_tag = GXC
+			}
+			traits = {
+				air_air_superiority_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	GXC_do_liang={
+		name=GXC_do_liang
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GXC_do_liang
+			ledger = army
+			allowed = {
+				original_tag = GXC
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	GXC_teng_qingshan={
+		name=GXC_teng_qingshan
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GXC_teng_qingshan
+			ledger = army
+			allowed = {
+				original_tag = GXC
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	GXC_zha_zemin={
+		name=GXC_zha_zemin
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GXC_zha_zemin
+			ledger = navy
+			allowed = {
+				original_tag = GXC
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### POLITICAL ADVISORS ###
+
+	# Dai Li in CHI file
+	# T.V. Soong in CHI file
+	# Deng Xiaoping in PRC file
+	# Kang Sheng in PRC file
+	# Luo Ruiqing in PRC file
+
+	# Li Zongren is up there in this file along with other Country Leaders
+
+	GXC_li_jishen={
+		name=GXC_li_jishen
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GXC_li_jishen
+			allowed  = {
+				original_tag  = GXC
+			}
+			traits  = {
+				smooth_talking_charmer 
+			}
+		}
+	}
+
+	GXC_lei_zhong={
+		name=GXC_lei_zhong
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GXC_lei_zhong
+			allowed  = {
+				original_tag  = GXC
+			}
+			traits  = {
+				popular_figurehead 
+			}
+		}
+	}
+# _____  _       _                  
+#|   __||_| ___ | |_  _ _  ___  ___ 
+#|__   || ||  _||   || | || .'||   |
+#|_____||_||___||_|_||___||__,||_|_|
+#                                   
+
+	SIC_liu_xiang = {
+		name=SIC_liu_xiang
+		portraits={
+			army={
+				large= GFX_portrait_SIC_liu_xiang
+				small= GFX_portrait_SIC_liu_xiang_small
+			}
+		}
+		
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { SIC_reckless_commander }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SIC_yang_sen = {
+		name=SIC_yang_sen
+		portraits={
+			army={
+				large= GFX_portrait_SIC_yang_sen
+				small= GFX_portrait_SIC_yang_sen_military_small
+			}
+			civilian = {
+				small = GFX_portrait_SIC_yang_sen_civilian_small
+			}
+		}
+		
+		corps_commander={
+		traits = { organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { CHI_taoist_devotee_trait }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SIC_liu_wenhui = {
+		name=SIC_liu_wenhui
+		portraits={
+			army={
+				large = GFX_portrait_SIC_liu_wenhui
+				small = GFX_portrait_SIC_liu_wenhui_small
+			}
+		}
+		
+		corps_commander={
+		traits = { harsh_leader SIC_dubious_loyalty }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+	}
+
+# _____  _                _                
+#|   __|| |_  ___  ___  _| | ___  ___  ___ 
+#|__   ||   || .'||   || . || . ||   || . |
+#|_____||_|_||__,||_|_||___||___||_|_||_  |
+#                                     |___|
+	
+	SND_han_fuju = {
+		name=SND_han_fuju
+		portraits={
+			army={
+				large = GFX_portrait_SND_han_fuju
+				small = GFX_portrait_SND_han_fuju_small
+			}
+		}
+		
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { SND_unreliable_opportunist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+                                              
+# _____  _         _                _____      
+#|  |  || |_  ___ | |_  ___  ___   |     | ___ 
+#|    -||   || . ||  _|| .'||   |  | | | || .'|
+#|__|__||_|_||___||_|  |__,||_|_|  |_|_|_||__,|
+#                                              
+	
+	KHM_ma_hushan = {
+		name=KHM_ma_hushan
+		portraits={
+			army={
+				large= GFX_portrait_KHM_ma_hushan
+				small= GFX_portrait_KHM_ma_hushan_small
+			}
+		}
+		
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+		country_leader={
+			ideology=despotism
+			traits = { KHM_padishah }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	KHM_mahmut_muhiti = {
+		name=KHM_mahmut_muhiti
+		portraits={
+			army={
+				large= GFX_portrait_KHM_mahmut_muhiti
+				small= GFX_portrait_KHM_mahmut_muhiti_small
+			}
+		}
+		
+		corps_commander ={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	KHM_ma_zhancang = {
+		name=KHM_ma_zhancang
+		portraits={
+			army={
+				large= GFX_portrait_KHM_ma_zhancang
+				small= GFX_portrait_KHM_ma_zhancang_small
+			}
+		}
+		
+		corps_commander ={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+			traits = {
+				hill_fighter
+			}
+		}
+	}
+
+
+	### KUMUL
+
+	KUM_yulbars_khan = {
+		name=KUM_yulbars_khan
+		portraits={
+			army={
+				large= GFX_portrait_KUM_yulbars_khan
+				small= GFX_portrait_KUM_yulbars_khan_small
+			}
+		}
+		
+		corps_commander ={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			traits = {
+				cavalry_leader
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+			traits = { KUM_wild_horse }
+		}
+	}
+
+	HBC_wu_peifu = {
+
+		name = HBC_wu_peifu
+
+		portraits = {
+			civilian = {
+				small = GFX_portrait_HBC_wu_peifu_small
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = HBC_wu_peifu
+
+			allowed = {
+				is_literally_china = yes 
+			}
+
+			visible = {
+
+			}
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			traits = {
+				CHI_jade_marshal 
+			}
+
+		}
+
+	}
+
+	GSM_ma_yuanxiang = {
+
+		name = GSM_ma_yuanxiang
+
+		portraits = {
+			civilian = {
+				small = GFX_portrait_GSM_ma_yuanxiang_small
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = GSM_ma_yuanxiang
+
+			allowed = {
+				is_literally_china = yes 
+			}
+
+			visible = {
+
+			}
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				has_country_flag = XSM_rebuilt_the_ninghai_army_flag 
+			}
+
+			traits = {
+				CHI_border_garrison_commander
+			}
+
+		}
+
+	}
+
+	XSM_wang_jingzhai = {
+
+		name = XSM_wang_jingzhai
+
+		portraits = {
+			civilian = {
+				small = GFX_portrait_XSM_wang_jingzhai_small
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = XSM_wang_jingzhai
+
+			allowed = {
+				is_literally_china = yes 
+			}
+
+			visible = {
+
+			}
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			traits = {
+				gentle_scholar
+			}
+
+		}
+
+	}
+
+	KHM_peter_fleming = {
+
+		name = KHM_peter_fleming
+
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KHM_peter_fleming_small
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = KHM_peter_fleming
+
+			allowed = {
+				original_tag = KHM 
+			}
+
+			visible = {
+
+			}
+
+			available = {
+				NOT = {
+					has_war_with = ENG
+				}
+			}
+
+			traits = {
+				KHM_british_connection
+			}
+
+		}
+
+	}
+
+	KHM_ma_shaowu = {
+
+		name = KHM_ma_shaowu
+
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KHM_ma_shaowu_small
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = KHM_ma_shaowu
+
+			allowed = {
+				is_literally_china = yes 
+			}
+
+			visible = {
+
+			}
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			traits = {
+				KHM_daoyin_of_kashgar
+			}
+
+		}
+
+	}
+
+	KHM_khoya_niyaz = {
+
+		name = KHM_khoya_niyaz
+
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KHM_khoya_niyaz_small
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = KHM_khoya_niyaz
+
+			allowed = {
+				original_tag = KHM 
+			}
+
+			visible = {
+
+			}
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				has_country_flag = KHM_established_the_kashgar_clique_flag 
+			}
+
+			traits = {
+				KHM_civil_governor_for_life 
+			}
+
+		}
+
+	}
+
+	KHM_muhammad_amin_bughra = {
+
+		name = KHM_muhammad_amin_bughra
+
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KHM_muhammad_amin_bughra_small
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = KHM_muhammad_amin_bughra
+
+			allowed = {
+				original_tag = KHM 
+			}
+
+			visible = {
+
+			}
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				has_country_flag = KHM_established_the_kashgar_clique_flag 
+			}
+
+			traits = {
+				KHM_jadidist_emir 
+			}
+
+		}
+
+	}
+
+
+}

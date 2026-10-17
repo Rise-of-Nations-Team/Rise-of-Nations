@@ -1,0 +1,2063 @@
+characters={
+
+	### KINGS OF SIAM/THAILAND ###
+
+	SIA_chulalongkorn={
+		name="Rama V"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/DNC/Portrait_SIA_Chulalongkorn.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			traits = {
+				phra_piya_maharat
+			}
+		}
+		field_marshal = {
+			traits = { trait_royal politically_connected media_personality expert_delegator }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_government = neutrality
+			}
+		}
+	}
+
+	SIA_vajiravudh={
+		name="Rama VI"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/WW1/Portrait_SIA_Vajiravudh.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			traits = {
+				SIA_national_reformer
+			}
+		}
+	}	
+
+	SIA_prajadhipok={
+		name="Rama VII"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/INT/Portrait_SIA_Prajadhipok.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+		}
+	}	
+
+	SIA_ananthamahidon={
+		name="Rama VIII"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_SIA_Regency_Ananda_Mahidol.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+		}
+	}	
+	
+	SIA_bhumibol_adulyadej={
+		name="Rama IX"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/CW/Portrait_SIA_Bhumibol_Adulyadej.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+		}
+	}	
+
+	SIA_maha_vajiralongkorn={
+		name="Rama X"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/MD/Portrait_SIA_Vajiralongkorn.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+		}		
+	}
+
+	### COUNTRY LEADERS ###
+
+	SIA_anarchists={
+		name="Anarchists"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic_anarchist_commune.dds"
+			}		
+		}	
+		country_leader={
+			ideology=anarchist_communism
+			id=-1
+		}
+	}	
+	
+	SIA_pracha_thanyapaiboon={
+		name="Pracha Thanyapaiboon"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/CW/Portrait_SIA_Pracha_Thanyapaiboon_Early_CW.dds"
+			}		
+		}	
+		country_leader={
+			ideology=marxism
+			traits = {  }			
+			expire="2020.1.1.1"
+			id=-1
+		}
+	}	
+
+	SIA_thianwan_wannapho={
+		name="Thianwan Wannapho"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/DNC/Portrait_SIA_Thianwan_Wannapho.dds"
+			}		
+		}	
+		country_leader={
+			ideology=liberalism
+			traits = { BRA_modernist_architect HUN_moderate_lawyer }			
+			expire="1916.1.1.1"
+			id=-1
+		}
+	}		
+
+	SIA_damrong_rajanubhab={
+		name="Prince Tisavarakumara"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/DNC/Portrait_SIA_Prince_Damrong_Rajanubhab.dds"
+				small="gfx/interface/ideas/SIA/idea_SIA_damrong_rajanubhab.dds"
+			}		
+			army={
+				large="gfx/leaders/SIA/DNC/Portrait_SIA_Prince_Damrong_Rajanubhab.dds"
+				small="gfx/interface/ideas/SIA/idea_SIA_damrong_rajanubhab_army.dds"
+			}				
+		}	
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_damrong_rajanubhab_minister
+			allowed = {
+				original_tag  = SIA
+			}
+			traits  = {
+				IRQ_minister_of_the_interior
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = SIA_damrong_rajanubhab
+						ruling_only = yes
+					}
+				}					
+				date < 1916.1.1		
+			}
+			visible = {
+				date < 1916.1.1					
+			}
+		}	
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_damrong_rajanubhab_education
+			allowed = {
+				original_tag  = SIA
+			}
+			traits  = {
+				MEN_nationalist_education_enthusiast
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = SIA_damrong_rajanubhab
+						ruling_only = yes
+					}
+				}					
+				date > 1916.1.1		
+				date < 1944.1.1					
+			}
+			visible = {
+				date > 1916.1.1			
+				date < 1944.1.1		
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected trait_cautious career_officer old_guard trait_engineer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			visible = {
+				date < 1944.1.1
+				NOT = {
+					has_government = communism
+				}
+			}
+		}								
+		country_leader={
+			ideology=constitutional_monarchism
+			traits = { NOR_popular_reformer BRA_education_pioneer }			
+			expire="1944.1.1.1"
+			id=-1
+		}
+	}		
+
+	SIA_phraya_manopakorn_nititada={
+		name="Phraya Manopakorn Nititada"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_SIA_Phraya_Manopakorn_Nititada.dds"
+			}		
+		}	
+		country_leader={
+			ideology=populism
+			traits = { sharp_tongued_lawyer BRA_authoritarian_populist }			
+			expire="1949.1.1.1"
+			id=-1
+		}
+	}		
+
+	SIA_phraya_phahon={
+		name="Phraya Phahon"
+		portraits={
+			civilian={
+				large = GFX_portrait_Phraya_Phahon
+				small = "gfx/interface/ideas/SIA/idea_SIA_phraya_phahon.dds"
+			}
+			army = {
+				small = "gfx/interface/ideas/SIA/idea_SIA_phraya_phahon_army.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_phraya_phahon
+			allowed = {
+				original_tag = SIA
+			}
+			cost = 100
+			traits = { 
+				army_artillery_2 
+			}			
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				date > 1924.1.1
+				date < 1948.1.1				
+			}
+			visible = {
+				date > 1924.1.1
+				date < 1948.1.1
+			}			
+		}		
+		corps_commander = {
+			traits = { politically_connected trait_cautious career_officer old_guard trait_engineer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			visible = {
+				date > 1924.1.1
+				date < 1948.1.1
+			}
+		}		
+		country_leader={
+			ideology=militarism
+			desc = "POLITICS_PHRAYA_PHAHON_DESC"	
+			traits = { SIA_leader_of_the_1932_revolution }					
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+
+	SIA_plaek_phibunsongkhram={
+		name="Plaek Phibunsongkhram"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_SIA_Plaek_Phibunsongkhram.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_plaek_phibunsongkhram
+			allowed = {
+				original_tag = SIA
+			}
+			traits = { 
+				army_chief_offensive_2 
+			}			
+			available = {
+				NOT = {
+					has_government = communism
+				}				
+				date > 1928.1.1
+				date < 1958.1.1				
+			}
+			cost = 100
+		}		
+		corps_commander = {
+			traits = { politically_connected harsh_leader media_personality artillery_officer brilliant_strategist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				date > 1928.1.1
+				date < 1958.1.1	
+			}			
+		}		
+		country_leader={
+			ideology=rw_militarism
+			desc = "POLITICS_PLAEK_PHIBUNSONGKHRAM_DESC"
+			expire="1953.1.1.12"
+			id=-1
+		}
+	}	
+
+	SIA_pridi_banomyong={
+		name="Pridi Banomyong"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_SIA_Pridi_Banomyong.dds"
+				small = "gfx/interface/ideas/SIA/idea_SIA_pridi_phanomyong.dds"
+			}		
+		}	
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_pridi_banomyong
+			allowed = {
+				original_tag  = SIA
+			}
+			traits  = {
+				economist
+			}
+			available = {
+				is_country_leader = no
+				date > 1930.1.1
+				date < 1960.1.1		
+			}
+			visible = {
+				date > 1930.1.1
+				date < 1960.1.1					
+			}
+		}		
+		country_leader={
+			ideology=socialism
+			traits = {  }			
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+
+	SIA_song_noppakul = {
+		name = "Song Noppakul"
+		portraits = {
+			civilian = {	
+				large = "gfx/leaders/SIA/Portrait_SIA_Song_Noppakul.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_song_noppakul
+			allowed = { 
+				original_tag = SIA 
+			}
+			available = {
+				is_country_leader = no
+			}
+			traits  = {
+				communist_revolutionary
+				socialite_connections
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1960.1.1"
+			traits = {
+				SIA_flexible_communist_r56
+				SIA_determined_guerrilla_leader_r56
+			}
+		}
+	}
+
+	SIA_khuang_aphaiwong={
+		name="Khuang Aphaiwong"
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Khuang_Aphaiwong_Civ.dds"		
+				small= "gfx/interface/ideas/SIA/idea_SIA_Khuang_Aphaiwong.dds"		
+			}
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Khuang_Aphaiwong.dds"
+			}
+		}	
+
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_khuang_aphaiwong
+			allowed = {
+				original_tag  = SIA
+			}
+			traits  = {
+				mediator 
+			}
+			available = {
+				date > 1928.1.1
+				date < 1969.1.1
+				NOT = {
+					has_government = fascism
+				}
+			}
+			visible = {
+				date > 1928.1.1
+				date < 1969.1.1
+			}			
+		}
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				date > 1928.1.1
+				date < 1969.1.1
+			}			
+		}				
+		country_leader={
+			ideology=liberalism
+			traits={ financial_expert HUN_popular_liberal }
+			expire="1969.1.1.12"
+			id=-1
+		}		
+	}	
+
+	SIA_thanin_kraivichien={
+		name="Thanin Kraivichien"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/CW/Portrait_SIA_Thanin_Kraivichien.dds"
+			}		
+		}	
+		country_leader={
+			ideology=rw_nationalism
+			traits = {  }			
+			expire="2025.1.1.1"
+			id=-1
+		}
+	}	
+
+	SIA_chatichai_choonhavan={
+		name="Chatichai Choonhavan"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/CW/Portrait_SIA_Chatichai_Choonhavan.dds"
+			}		
+		}	
+		country_leader={
+			ideology=conservatism
+			traits = {  }			
+			expire="1999.1.1.1"
+			id=-1
+		}
+	}		
+	
+	SIA_chuan_leekpai={
+		name="Chuan Leekpai"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/MD/Portrait_SIA_Chuan_Leekpai.dds"
+			}		
+		}	
+		country_leader={
+			ideology=market_liberalism
+			traits = {  }			
+			expire="2030.1.1.1"
+			id=-1
+		}
+	}		
+
+	### GENERALS ###
+
+	SIA_boworadej_kridakorn={
+		name="Prince Boworadej"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/WW1/Portrait_SIA_Prince_Boworadej.dds"
+				small="GFX_idea_generic_army_asia_2"
+			}
+			civilian = {
+				small = GFX_portrait_SIA_prince_boworadet_small
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_boworadej_kridakorn_civil
+
+			allowed = {
+				original_tag = SIA
+			}
+
+			available = {
+				is_country_leader = no
+				date > 1910.1.1
+				date < 1949.1.1				
+			}
+			traits = {
+				royalist_bulldog
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+		advisor={
+			slot = army_chief
+			idea_token = SIA_boworadej_kridakorn
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				army_chief_morale_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5.000 
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				is_country_leader = no				
+				date > 1910.1.1
+				date < 1949.1.1
+			}
+			visible = {
+				date > 1910.1.1
+				date < 1949.1.1
+			}			
+		}
+		field_marshal = {
+			traits = { old_guard trait_reckless politically_connected harsh_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				date > 1910.1.1
+				date < 1949.1.1
+			}
+		}
+	}
+	
+	SIA_paribatra_sukhumbandhu={
+		name="Prince Paribatra Sukhumbandhu"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/WW1/Portrait_SIA_Paribatra_Sukhumbhand.dds"
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}		
+		advisor={
+			slot = army_chief
+			idea_token = SIA_paribatra_sukhumbandhu
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5.000 
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				date > 1904.1.1
+				date < 1946.1.1
+			}
+			visible = {
+				date > 1904.1.1
+				date < 1946.1.1
+			}			
+		}
+		field_marshal = {
+			traits = { politically_connected inspirational_leader brilliant_strategist naval_invader jungle_rat }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1904.1.1
+				date < 1946.1.1
+			}
+		}
+	}
+	
+	SIA_narisara_nuwattiwong ={
+		name="Prince Narisara Nuwattiwong"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/DNC/Portrait_SIA_Narisara_Nuwattiwong.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious infantry_officer organizer skilled_staffer hill_fighter ranger }
+			skill=3
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+			visible = {
+				date < 1948.1.1
+			}			
+		}
+	}	
+	
+	SIA_intawarorot_suriyawong = {
+		name="Prince Intawarorot Suriyawong"
+		portraits = {
+			army = {
+				large="gfx/leaders/SIA/DNC/Portrait_SIA_Intawarorot_Suriyawong.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+			visible = {
+				date < 1911.1.1
+			}			
+		}
+	}	
+
+	SIA_phraya_thepahatsadin ={
+		name="Phraya Thepahatsadin"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/WW1/Portrait_SIA_Phraya_Thepahatsadin.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				date < 1949.1.1
+			}			
+		}
+	}	
+
+	SIA_phao_siyanon={
+		name="Phao Siyanon"
+		portraits={
+			civilian = {
+				small = "gfx/interface/ideas/SIA/idea_SIA_phao_siyanon.dds"				
+			}
+			army={
+				large="gfx/leaders/SIA/Portrait_SIA_Phao_Siyanon.dds"
+				small = "gfx/interface/ideas/SIA/idea_SIA_phao_siyanon_army.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_phao_siyanon
+			allowed = {
+				original_tag  = SIA
+			}
+			traits  = {
+				prince_of_terror 
+			}
+			available = {
+				NOT = { 
+					has_government = communism 
+				}	
+				date > 1935.1.1
+				date < 1960.1.1								
+			}
+			visible = {
+				NOT = { 
+					has_government = communism 
+				}				
+				date > 1935.1.1
+				date < 1960.1.1				
+			}						
+		}		
+		corps_commander={
+			traits={ politically_connected militias_officer commando }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				NOT = { 
+					has_government = communism 
+				}				
+				date > 1935.1.1
+				date < 1960.1.1				
+			}
+		}
+	}
+	
+	SIA_prince_subhasvasti = {
+		name="Prince Subhasvasti"
+		portraits={
+			army={
+				large=GFX_portrait_SIA_prince_subhasvasti
+				small=GFX_portrait_SIA_prince_subhasvasti_small
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_prince_subhasvasti
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				#OR = {
+				#	has_completed_focus = SIA_seri_thai
+				#	has_completed_focus = SIA_standing_our_ground
+				#	has_completed_focus = SIA_the_provincial_council_of_state
+				#}
+				date > 1919.1.1
+				date < 1960.1.1	
+				NOT = { 
+					has_government = communism 
+				}							
+			}
+			traits = {
+				SIA_seri_thai_organizer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+
+		corps_commander={
+			traits={ inflexible_strategist trait_cautious organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+			visible = {
+				date > 1919.1.1
+				date < 1960.1.1
+				#OR = {
+				#	has_completed_focus = SIA_seri_thai
+				#	has_completed_focus = SIA_standing_our_ground
+				#	has_completed_focus = SIA_the_provincial_council_of_state
+				#}
+				NOT = { 
+					has_government = communism 
+				}				
+			}
+		}
+	}	
+
+	SIA_duong_ramintra={
+		name="Duong Ramintra"
+		portraits={
+			army={
+				large="gfx/leaders/SIA/Portrait_SIA_Duong_Ramintra.dds"
+			}
+		}
+		corps_commander={
+			traits={ militias_officer brilliant_strategist career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+			visible = {
+				date > 1929.1.1
+				date < 1955.1.1				
+			}
+		}
+	}	
+
+	SIA_phin_choonhavan = {
+		name = "Phin Choonhavan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Phin_Choonhavan.dds"
+			}
+		}
+		field_marshal = {
+			traits = { politically_connected career_officer lucky trickster trait_reckless old_guard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				date > 1925.1.1
+				date < 1960.1.1
+			}			
+		}		
+	}	
+
+	SIA_charun_rattanakul_serirengrit = {
+		name = "Charun Rattanakul Serirengrit"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Charun_Rattanakun_Seriroengrit.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_charun_rattanakul_serirengrit
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				date > 1925.1.1
+				date < 1949.1.1				
+			}
+			visible = {
+				date > 1925.1.1
+				date < 1949.1.1
+			}			
+		}		
+		field_marshal = {
+			traits = { organizer logistics_wizard old_guard trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			visible = {
+				date > 1925.1.1
+				date < 1949.1.1
+			}			
+		}		
+	}	
+
+	SIA_chula_chakrabongse ={
+		name="Prince Chula Chakrabongse"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Chula_Chakrabongse.dds"	
+			}
+		}
+		corps_commander={
+			traits={ politically_connected media_personality trait_cautious hill_fighter }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=-1
+			visible = {
+				date > 1929.1.1
+				date < 1955.1.1
+			}			
+		}		
+	}	
+	
+	SIA_nakhonchaisri_suradej={
+		name="Prince Chirapravati Voradej"
+		portraits={
+			army={
+				large="gfx/leaders/SIA/DNC/Portrait_SIA_Chirapravati_Voradej.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			visible = {
+				date < 1914.1.1
+			}				
+		}
+	}	
+	
+	SIA_phraya_songsuradet = {
+		name = "Phraya Songsuradet"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Phraya_Songsuradet.dds"
+			}
+		}	
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_phraya_songsuradet_chief
+			allowed = { 
+				original_tag = SIA 
+			}
+			available = {
+				NOT = { 
+					has_government = communism 
+				}
+				date > 1930.1.1
+				date < 1945.1.1				
+			}
+			traits = { 
+				army_chief_defensive_2 
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+				date > 1930.1.1
+				date < 1945.1.1
+			}			
+		}	
+		corps_commander = {
+			traits = { politically_connected brilliant_strategist trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				date > 1930.1.1
+				date < 1945.1.1
+			}
+		}			
+	}	
+
+	SIA_pichit_kriangsakphichit = {
+		name="Pichit Kriangsakphichit"
+		portraits={
+			army={
+				large="gfx/leaders/SIA/Portrait_SIA_Pichit_Kriangsakphichit.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_pichit_kriangsakphichit
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				army_chief_planning_2
+			}			
+			available = {
+				date > 1930.1.1
+				date < 1955.1.1
+			}
+			cost = 100
+		}		
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				date > 1930.1.1
+				date < 1955.1.1
+			}			
+		}
+	}	
+	
+	SIA_adul_adulyadejchrat = {
+		name = "Adul Adulyadejchrat"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Adul_Adulyadejchrat.dds"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected artillery_officer organizer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				date > 1930.1.1
+				date < 1960.1.1
+			}			
+		}		
+	}		
+
+	SIA_jit_wichitsongkram ={ #Real person but unknown when he was born or died, will leave him to be around for 19 years -Harry
+		name="Jit Wichitsongkram"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Jit_Wichitsongkhram.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_jit_wichitsongkram
+			allowed = {
+				original_tag = SIA
+			}
+			traits = { 
+				army_regrouping_2 
+			}			
+			available = {
+				date > 1930.1.1
+				date < 1949.1.1				
+			}
+			visible = {
+				date > 1930.1.1
+				date < 1949.1.1				
+			}
+			cost = 100
+		}		
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				date > 1930.1.1
+				date < 1949.1.1				
+			}			
+		}
+	}	
+
+	SIA_chakchai_supangksen ={ #Unknown when he was born or when he died, will leave him to be around for 19 years -Harry
+		name="Chakchai Supangksen"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Chakchai_Supangksen.dds"
+			}
+		}		
+		corps_commander={
+			traits={ organizer militias_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=-1
+			visible = {
+				NOT = {
+					has_government = fascism
+				}
+				date > 1930.1.1
+				date < 1949.1.1
+			}
+		}
+	}		
+
+	SIA_sai_kotchaseni ={ 
+		name="Sai Kotchaseni"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Sai_Kotchaseni.dds"
+			}
+		}		
+		corps_commander={
+			traits={ engineer_officer skilled_staffer urban_assault_specialist adaptable }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+			visible = {
+				date > 1930.1.1
+				date < 1955.1.1
+			}
+		}
+	}	
+
+	SIA_chumbhotbongs_paribatra = { 
+		name = "Prince Chumbhotbongs Boriphat"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Chumbhotbongs_Paribatra.dds"	
+			}
+		}
+		corps_commander={
+			traits={ organizer infantry_leader brilliant_strategist }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id=-1
+			visible = {
+				date > 1926.1.1
+				date < 1959.1.1
+			}
+		}		
+	}	
+
+	SIA_sarit_thanarat = { 
+		name = "Sarit Thanarat"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Sarit_Thanarat.dds"	
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist career_officer infantry_leader trickster commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id=-1
+			visible = {
+				date > 1939.1.1
+				date < 1970.1.1
+			}
+		}		
+	}	
+
+	SIA_luang_senanarong ={
+		name="Luang Senanarong"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Luang_Senanarong.dds"	
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_luang_senanarong
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				date > 1933.1.1
+				date < 1954.1.1				
+			}
+			cost = 100
+			traits = { 
+				army_chief_defensive_2 
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				date > 1933.1.1
+				date < 1954.1.1
+			}			
+		}		
+	}	
+
+	SIA_luang_prasartpitthayayuth ={
+		name="Luang Prasartpitthayayuth"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Phra_Prasad_Pittayayut.dds"	
+			}
+		}
+		corps_commander={
+			traits={ war_hero skilled_staffer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=-1
+			visible = {
+				date > 1926.1.1
+				date < 1950.1.1
+			}			
+		}		
+	}	
+
+	SIA_thanom_kittikachorn ={
+		name="Thanom Kittikachorn"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/CW/Portrait_SIA_Thanom_Kittikachorn.dds"	
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=-1
+			visible = {
+				date > 1945.1.1
+				date < 1980.1.1
+			}			
+		}		
+	}	
+
+	SIA_kriangsak_chomanan ={
+		name="Kriangsak Chomanan"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/CW/Portrait_SIA_Kriangsak_Chomanan.dds"	
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=-1
+			visible = {
+				date > 1955.1.1
+				date < 1990.1.1
+			}			
+		}		
+	}		
+
+	### ADMIRALS ###
+
+	SIA_bhanurangsi_savangwongse={
+		name="Prince Bhanurangsi Savangwongse"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/DNC/Portrait_SIA_Bhanurangsi_Savangwongse.dds"				
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}		
+		advisor={
+			slot = navy_chief
+			idea_token = SIA_thawon_thamrongnawasawat
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+				date < 1929.1.1
+			}				
+			available = {
+				date < 1929.1.1				
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly old_guard_navy navy_career_officer big_guns_expert spotter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 1
+			visible = {
+				date < 1929.1.1
+			}			
+		}		
+	}	
+	
+	SIA_thawon_thamrongnawasawat={
+		name="Thawon Thamrongnawasawat"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Thawan_Thamrongnawasawat.dds"				
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}		
+		advisor={
+			slot = navy_chief
+			idea_token = SIA_thawon_thamrongnawasawat
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				date > 1929.1.1
+				date < 1949.1.1
+				NOT = {
+					has_country_leader = {
+						character = SIA_thawon_thamrongnawasawat
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		navy_leader = {
+			traits = { fleet_protector gentlemanly spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			visible = {
+				date > 1929.1.1
+				date < 1949.1.1	
+				NOT = {
+					has_country_leader = {
+						character = SIA_thawon_thamrongnawasawat
+						ruling_only = yes
+					}
+				}							
+			}
+		}		
+	}	
+
+	SIA_phraya_wichitchonthee={ 
+		name="Phraya Wichitchonthee"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Phraya_Wichitchonthee.dds"
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}		
+		advisor={
+			slot = navy_chief
+			idea_token = SIA_phraya_wichitchonthee
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+				date > 1924.1.1
+				date < 1949.1.1
+			}
+			available = {
+				date > 1924.1.1
+				date < 1949.1.1				
+			}
+		}
+		navy_leader = {
+			traits = { big_guns_expert marksman seawolf }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 3
+			visible = {
+				date > 1924.1.1
+				date < 1949.1.1
+			}			
+		}
+	}	
+
+	SIA_sanguan_rujirapha={ 
+		name="Sanguan Rujirapha"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Sanguan_Rujirapha.dds"
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}		
+		navy_leader = {
+			traits = { fleet_protector ironside lancer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 3
+			visible = {
+				date > 1930.1.1
+				date < 1955.1.1
+			}			
+		}
+	}	
+
+	SIA_luang_yuthasastr_koson = {
+		name = "Luang Yuthasastr-koson"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Luang_Yuthasastrkosol.dds"
+			}
+		}		
+		advisor = {
+			slot = navy_chief
+			idea_token = idea_SIA_luang_yuthasastr_koson
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				date > 1930.1.1
+				date < 1965.1.1				
+			}
+		}
+		navy_leader = {
+			traits = { bold blockade_runner naval_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			visible = {
+				date > 1930.1.1
+				date < 1965.1.1
+			}				
+		}
+	}	
+
+	### HIGH COMMAND ###
+
+	SIA_luang_sinthusongkhramchai={
+		name="Luang Sinthusongkhramchai"
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_SIA_Sindh_Kamalanavin.dds"
+				small="GFX_idea_generic_air_asia_1"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = SIA_luang_sinthusongkhramchai
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+				date > 1928.1.1
+				date < 1952.1.1
+			}
+			available = {
+				NOT = {
+					has_idea = SIA_luang_sinthusongkhramchai_2
+				}
+				date > 1928.1.1
+				date < 1952.1.1				
+			}			
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIA_luang_sinthusongkhramchai_2
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_submarine_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5.000
+			}
+			visible = {
+				date > 1928.1.1
+				date < 1952.1.1
+			}	
+			available = {
+				NOT = {
+					has_idea = SIA_luang_sinthusongkhramchai
+				}
+				date > 1928.1.1
+				date < 1952.1.1				
+			}					
+		}		
+		navy_leader = {
+			traits = { gunnery_expert naval_lineage blockade_runner }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			visible = {
+				date > 1928.1.1
+				date < 1952.1.1
+			}			
+		}		
+	}	
+
+	SIA_phraya_preechacholayudha={ #Real person, couldn't find info on his birth or death, will leave him to last for 24 years -Harry
+		name="Phraya Preechacholayudha"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = SIA_phraya_preechacholayudha
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+				date > 1925.1.1
+				date < 1949.1.1
+			}
+			available = {
+				date > 1925.1.1
+				date < 1949.1.1				
+			}
+		}
+	}
+
+	SIA_phraya_chitnasongkhla={ #GENERIC
+		name="Phraya Chitnasongkhla"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}		
+		advisor={
+			slot = army_chief
+			idea_token = SIA_phraya_chitnasongkhla
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	SIA_tianliang_huntrakool={
+		name="Tianliang Huntrakool" #GENERIC
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = SIA_tianliang_huntrakool
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				army_infantry_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5.000
+			}
+		}
+	}	
+
+	SIA_chalermkiet_wattanangkul={ 
+		name="Chalermkiet Wattanangkul"
+		portraits={
+			army={
+				small="gfx/interface/ideas/SIA/idea_SIA_chalermkiart_watthanangul.dds"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = SIA_chalermkiet_wattanangkul
+			ledger = air
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+				date > 1934.1.1
+				date < 1960.1.1
+			}
+			available = {
+				date > 1934.1.1
+				date < 1960.1.1				
+			}
+		}
+	}
+
+	SIA_phra_mongkolnavin = { #Conflicting sources as there is also a Prince from 1914, and one born in 1933, will leave him to be around for 19 years
+		name = "Phra Mongkolnavin"
+		portraits={
+			army={
+				large= "gfx/leaders/SIA/Portrait_SIA_Mongkol_Mongkolnavin.dds"
+			}		
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIA_phra_mongkolnavin
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				date > 1930.1.1
+				date < 1949.1.1				
+			}
+			visible = {
+				date > 1930.1.1
+				date < 1949.1.1
+			}
+		}	
+		navy_leader = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			visible = {
+				date > 1930.1.1
+				date < 1949.1.1
+			}			
+		}				
+	}	
+
+	SIA_phra_vechayanrangsarit={ #GENERIC
+		name="Phra Vechayanrangsarit"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}		
+		advisor={
+			slot = air_chief
+			idea_token = SIA_phra_vechayanrangsarit
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	SIA_phraya_chalermarkiart={ #GENERIC
+		name="Phraya Chalermarkiart"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}		
+		advisor={
+			slot = air_chief
+			idea_token = SIA_phraya_chalermarkiart
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}	
+
+	### THEORISTS ###
+
+	SIA_phra_silpasakrakorn={ #GENERIC
+		name="Phra Silpasakrakorn"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}		
+		advisor={
+			cost = 100			
+			slot = theorist
+			idea_token = SIA_phra_silpasakrakorn
+			ledger = air
+			allowed = {
+				original_tag = SIA
+			}				
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}	
+
+	SIA_sawat_phutianands={
+		name="Sawat Phutianands"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}		
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SIA_sawat_phutianands
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}		
+			traits = {
+				naval_theorist
+			}
+			visible = {
+				date > 1936.1.1
+				date < 1965.1.1
+			}
+			available = {
+				date > 1936.1.1
+				date < 1965.1.1				
+			}
+		}
+	}
+
+	SIA_manphya_khanphialong={ #GENERIC
+		name="Manphya Khanphialong"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}		
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SIA_manphya_khanphialong
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}	
+			traits = {
+				military_theorist
+			}
+		}
+	}	
+
+	### POLITICAL ADVISORS ###
+
+	SIA_thawi_bunyaket={
+		name="Thawi Bunyaket"
+		portraits={
+			civilian={
+				large ="gfx/leaders/SIA/Portrait_SIA_Thawi_Bunyaket.dds"
+				small="gfx/interface/ideas/SIA/idea_SIA_thawi_bunyaket.dds"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_thawi_bunyaket
+			allowed = {
+				original_tag = SIA
+			}
+			traits  = {
+				captain_of_industry 
+			}
+			available = {
+				date > 1925.1.1
+				date < 1970.1.1
+				OR = {
+					NOT = {
+						has_country_leader = {
+							character = SIA_thawi_bunyaket
+							ruling_only = yes
+						}
+					}
+					NOT = {
+						has_country_leader = {
+							character = SIA_plaek_phibunsongkhram
+							ruling_only = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	SIA_direk_chaiyanam={ 
+		name="Direk Jayanama"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_direk_chainam.dds"
+			}
+		}	
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_direk_chaiyanam
+			allowed = {
+				original_tag  = SIA
+			}
+			traits  = {
+				skillful_diplomat compassionate_gentleman
+			}
+			available = {
+				OR = {
+					NOT = { 
+						has_government = communism 
+					}	
+					NOT = {
+						has_country_leader = {
+							character = SIA_plaek_phibunsongkhram
+							ruling_only = yes
+						}
+					}
+				}	
+				date > 1930.1.1
+				date < 1960.1.1		
+			}
+			visible = {
+				date > 1930.1.1
+				date < 1960.1.1					
+			}
+		}
+	}
+	
+	SIA_pao_pienlert_boripanyutakit = {
+		name ="Pao Pienlert Boripanyutakit"
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/SIA/idea_SIA_Pao_Pienlert_Boripanyutakit.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_pao_pienlert_boripanyutakit
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = { 
+					has_government = communism 
+				}
+			}
+			visible = {
+				date > 1925.1.1
+				date < 1960.1.1
+			}
+			traits = {
+				war_industrialist
+			}
+		}
+	}	
+
+	SIA_wichit_wichitwathakan = {
+		name = "Wichit Wichitwathakan"
+		portraits = {
+			civilian = { 
+				large = "gfx/leaders/SIA/Portrait_SIA_Wichit_Wichitwathakan.dds"
+				small = "gfx/interface/ideas/SIA/idea_SIA_Wichit_Wichitwathakan.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_wichit_wichitwathakan
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				date > 1925.1.1
+				date < 1960.1.1		
+			}
+			visible = {
+				date > 1925.1.1
+				date < 1960.1.1					
+			}
+			traits = {
+				irredentist_academic
+				fascist_demagogue 
+			}
+			do_effect = {
+				not  = {
+					has_government  = fascism
+				}
+			}
+			ai_will_do  = {
+				factor  = 0
+			}
+		}
+	}
+	
+	SIA_seni_pramoj = {
+		name = "Seni Pramoj"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/Portrait_SIA_Seni_Pramoj.dds"
+				small= "gfx/interface/ideas/SIA/idea_SIA_seni_pramoj.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_seni_pramoj
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				date > 1930.1.1
+				date < 1980.1.1
+				has_completed_focus = SIA_restorationofdemocracy
+			}
+			visible = {
+				date > 1930.1.1
+				date < 1980.1.1				
+			}
+			traits = {
+				BRA_distinguished_diplomat democratic_reformer
+			}
+		}
+	}	
+
+	SIA_luang_chuangsakram = {
+		name = "Luang Chuangsakram"
+		portraits = {
+			civilian = {
+				small= "gfx/interface/ideas/SIA/idea_SIA_Luang_Chuangsakram.dds"
+			}
+		}		
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_luang_chuangsakram
+			allowed  = {
+				original_tag = SIA
+			}
+			traits  = {
+				silent_workhorse 
+			}
+			ai_will_do = {
+				factor = 4
+			}			
+		}
+	}	
+
+	SIA_pote_sarasin = {
+		name = "Pote Sarasin"
+		portraits = {
+			civilian = {
+				small= "gfx/interface/ideas/SIA/idea_SIA_pote_sarasin.dds"
+			}
+		}		
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_pote_sarasin
+			allowed  = {
+				original_tag = SIA
+			}
+			traits  = {
+				smooth_talking_charmer 
+			}
+			ai_will_do = {
+				factor = 4
+			}	
+			visible = {
+				date > 1933.1.1
+				date < 1975.1.1
+			}
+			available = {
+				date > 1933.1.1
+				date < 1975.1.1
+			}					
+		}
+	}	
+
+	SIA_leng_srisomwong = {
+		name = "Leng Srisomwong"
+		portraits = {
+			civilian = {
+				small= "gfx/interface/ideas/SIA/idea_SIA_Leng_Srisomwong.dds"
+			}
+		}		
+		advisor = {
+			slot = political_advisor
+			idea_token = SIA_leng_srisomwong
+			allowed  = {
+				original_tag = SIA
+			}
+			traits  = {
+				liberal_economist dealbroker 
+			}
+			ai_will_do = {
+				factor = 4
+			}	
+			visible = {
+				date > 1930.1.1
+				date < 1955.1.1
+			}
+			available = {
+				date > 1930.1.1
+				date < 1955.1.1
+			}					
+		}
+	}		
+}

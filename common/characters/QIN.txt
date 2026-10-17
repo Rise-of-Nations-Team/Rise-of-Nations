@@ -1,14 +1,14 @@
 characters={
 
 	QIN_cixi={
-		name="Cixi"
+		name=QIN_cixi
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Empress_Dowager_Cixi.dds"
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism
             desc = "POLITICS_DOWAGER_CIXI_DESC"			
 			traits = {  }
 			expire="1908.11.16.1"			
@@ -16,14 +16,14 @@ characters={
 	}
 
 	QIN_zaifeng={
-		name="Zaifeng"
+		name=QIN_zaifeng
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Prince_Zaifeng.dds"
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism
 			desc = "POLITICS_PRINCE_CHUN_DESC"
 			traits = { incompetent_leader }
 			expire="1951.2.3.1"			
@@ -31,21 +31,21 @@ characters={
 	}
 
 	QIN_xuantong={
-		name="Xuantong"
+		name=QIN_xuantong
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Puyi_1908.dds"
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism
 			traits = {  }
 			expire="1967.10.17.1"			
 		}		
 	}
 
 	QIN_yikuang={
-		name="Yikuang"
+		name=QIN_yikuang
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Yikuang.dds"
@@ -80,7 +80,7 @@ characters={
 	}
 
 	QIN_kang_youwei={
-		name= "Kang Youwei"
+		name=QIN_kang_youwei
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Kang_Youwei.dds"
@@ -110,7 +110,7 @@ characters={
 	}
 
 	QIN_jiang_kanghu={
-		name="Jiang Kanghu"
+		name=QIN_jiang_kanghu
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/China_LW_Anarchist_JiangKanghu.dds"
@@ -123,7 +123,7 @@ characters={
 	}	
 
 	QIN_yuan_shikai={
-		name="Yuan Shikai"
+		name=QIN_yuan_shikai
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Yuan_Shikai.dds"
@@ -146,6 +146,17 @@ characters={
 				date < 1916.6.6
 			}			
 		}
+		field_marshal={
+			traits={ qing_army_trait politically_connected yuan_shikai_loyalist fast_planner inspirational_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			visible = {
+				date < 1916.6.6
+			}			
+		}
 		country_leader={
 			ideology=stratocracy
 			traits={ generallissimo }
@@ -159,7 +170,7 @@ characters={
 	}
 
 	QIN_chiang_kai_shek={
-		name="Chiang Kai Shek"
+		name=QIN_chiang_kai_shek
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Chiang_Kai_Shek_WW1.dds"
@@ -192,7 +203,7 @@ characters={
 	}	
 
 	QIN_sun_yatsen={
-		name="Sun Yat-sen"
+		name=QIN_sun_yatsen
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Sun_Yat_Sen.dds"
@@ -221,7 +232,7 @@ characters={
 	}	
 
 	QIN_zaitao={
-		name="Zaitao"
+		name=QIN_zaitao
 		portraits={
 			army={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Prince_Zaitao.dds"
@@ -259,7 +270,7 @@ characters={
 	}
 
 	QIN_yinchang={
-		name="Yinchang"
+		name=QIN_yinchang
 		portraits={
 			army={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Yinchang.dds"
@@ -296,7 +307,7 @@ characters={
 	}
 	
 	QIN_wang_shizhen={
-		name="Wang Shizhen"
+		name=QIN_wang_shizhen
 		portraits={
 			army={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Wang_Shizhen.dds"
@@ -334,7 +345,7 @@ characters={
 	}	
 
 	QIN_zhang_xun={
-		name="Zhang Xun"
+		name=QIN_zhang_xun
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Zhang_Xun.dds"
@@ -354,7 +365,7 @@ characters={
 	}
 
 	QIN_duan_qirui={
-		name="Duan Qirui"
+		name=QIN_duan_qirui
 		portraits={
 			civilian={
 				large="gfx/leaders/ANH/Portrait_Duan_Qirui.dds"
@@ -391,7 +402,7 @@ characters={
 	}
 
 	QIN_duan_zhigui={
-		name="Duan Zhigui"
+		name=QIN_duan_zhigui
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Duan_Zhigui.dds"
@@ -411,7 +422,7 @@ characters={
 	}
 
 	QIN_jiang_chaozong={
-		name="Jiang Chaozong"
+		name=QIN_jiang_chaozong
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Jiang_Chaozong.dds"
@@ -431,7 +442,7 @@ characters={
 	}
 
 	QIN_lu_rongting={
-		name="Lu Rongting"
+		name=QIN_lu_rongting
 		portraits={
 			army={
 				small="GFX_idea_generic_army_chief_def"
@@ -460,7 +471,7 @@ characters={
 	}
 
 	QIN_chen_bingkun={
-		name="Chen Bingkun"
+		name=QIN_chen_bingkun
 		portraits={
 			army={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Chen_Bingkun.dds"
@@ -488,7 +499,7 @@ characters={
 	}
 
 	QIN_long_jiguang={
-		name="Long Jiguang"
+		name=QIN_long_jiguang
 		portraits={
 			army={
 				small="GFX_idea_generic_army_chief_off"
@@ -509,7 +520,7 @@ characters={
 	}
 
 	QIN_liu_xianshi={
-		name="Liu Xianshi"
+		name=QIN_liu_xianshi
 		portraits={
 			army={
 				small="GFX_idea_generic_army_art"
@@ -530,7 +541,7 @@ characters={
 	}
 
 	QIN_feng_guozhang={
-		name="Feng Guozhang"
+		name=QIN_feng_guozhang
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Feng_Guo_Zhang.dds"
@@ -550,7 +561,7 @@ characters={
 	}
 
 	QIN_cao_kun={
-		name="Cao Kun"
+		name=QIN_cao_kun
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Cao_Kun.dds"
@@ -570,7 +581,7 @@ characters={
 	}
 
 	QIN_yang_zengxin={
-		name="Yang Zengxin"
+		name=QIN_yang_zengxin
 		portraits={
 			army={
 				small="GFX_idea_generic_army_log"
@@ -591,7 +602,7 @@ characters={
 	}
 
 	QIN_jiang_guiti={
-		name="Jiang Guiti"
+		name=QIN_jiang_guiti
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Jiang_Guiti.dds"
@@ -611,7 +622,7 @@ characters={
 	}
 
 	QIN_ma_fuxiang={
-		name="Ma Fuxiang"
+		name=QIN_ma_fuxiang
 		portraits={
 			army={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Ma_Fuxiang.dds"
@@ -631,7 +642,7 @@ characters={
 	}
 
 	QIN_ma_qi={
-		name="Ma Qi"
+		name=QIN_ma_qi
 		portraits={
 			army={
 				small="GFX_idea_generic_military_theorist"
@@ -652,7 +663,7 @@ characters={
 	}
 
 	QIN_zhang_huaizhi={
-		name="Zhang Huaizhi"
+		name=QIN_zhang_huaizhi
 		portraits={
 			army={
 				small="GFX_idea_generic_air_chief_all_weather"
@@ -673,7 +684,7 @@ characters={
 	}
 
 	QIN_tang_jiyao = {
-		name = "Tang Jiyao"
+		name = QIN_tang_jiyao
 		portraits = {
 			civilian = {
 				small = "GFX_idea_generic_army_asia_2"
@@ -706,7 +717,7 @@ characters={
 	}
 
 	QIN_wang_huaiqing = {
-		name = "Wang Huaiqing"
+		name = QIN_wang_huaiqing
 		portraits = {
 			army = {
 				large = "gfx/leaders/CHI/WW1/Portrait_China_Wang_Huaiqing.dds"
@@ -726,7 +737,7 @@ characters={
 	}
 
 	QIN_cai_chengxun = {   # 蔡成勳
-		name = "Cai Chengxun"
+		name = QIN_cai_chengxun
 		portraits = {
 			army = {
 				large = "gfx/leaders/CHI/WW1/Portrait_China_Cai_Chengxun.dds"
@@ -745,8 +756,31 @@ characters={
 		}
 	}
 
+	QIN_zhang_zuolin = { # 張作霖
+		name = "Zhang Zuolin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Zhang_Zuolin.dds"
+			}
+		}
+		field_marshal = {
+			traits = { politically_connected old_guard harsh_leader substance_abuser organizer skilled_staffer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				date < 1930.1.1
+				NOT = {
+					country_exists = FEN
+				}					
+			}
+		}		
+	}	
+
 	QIN_qi_xieyuan = {
-		name = "Qi Xieyuan"
+		name = QIN_qi_xieyuan
 		portraits = {
 			army = {
 				large = "gfx/leaders/CHI/WW1/Portrait_China_Qi_Xieyuan.dds"
@@ -766,7 +800,7 @@ characters={
 	}	
 
 	QIN_mo_rongxin={
-		name="Mo Rongxin"
+		name=QIN_mo_rongxin
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/WW1/China_Gen_Mo_Rongxin.dds"
@@ -783,6 +817,36 @@ characters={
 			visible = {
 				date < 1930.3.20
 			}				
+		}
+	}	
+
+	QIN_yang_sen = {
+		name=SIC_yang_sen
+		portraits={
+			army={
+				large= GFX_portrait_SIC_yang_sen
+				small= GFX_portrait_SIC_yang_sen_military_small
+			}
+			civilian = {
+				small = GFX_portrait_SIC_yang_sen_civilian_small
+			}
+		}
+		
+		corps_commander={
+			traits = { organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				date > 1910.1.1
+				date < 1960.1.1
+				NOT = {
+					country_exists = SIC
+				}				
+			}
 		}
 	}	
 
@@ -872,7 +936,7 @@ characters={
     #ADMIRALS
 
 	QIN_sa_zhenbing={
-		name="Sa Zhenbing"
+		name=QIN_sa_zhenbing
 		portraits={
 			army={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Sa_Zhenbing.dds"
@@ -909,7 +973,7 @@ characters={
 	}	
 
 	QIN_cheng_biguang={
-		name="Cheng Biguang"
+		name=QIN_cheng_biguang
 		portraits={
 			navy={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Cheng_Biguang.dds"
@@ -946,7 +1010,7 @@ characters={
 	}
 
 	QIN_lin_baoyi={
-		name="Lin Baoyi"
+		name=QIN_lin_baoyi
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_asia_generic_navy_6.dds"
@@ -967,7 +1031,7 @@ characters={
 	}
 
 	QIN_lin_jianzhang={
-		name="Lin Jianzhang"
+		name=QIN_lin_jianzhang
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_asia_generic_navy_6.dds"
@@ -988,7 +1052,7 @@ characters={
 	}
 
 	QIN_liu_guanxiong={
-		name="Liu Guanxiong"
+		name=QIN_liu_guanxiong
 		portraits={
 			navy={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Liu_Guanxiong.dds"
@@ -1025,7 +1089,7 @@ characters={
 	}
 
 	QIN_du_xigui={
-		name="Du Xigui"
+		name=QIN_du_xigui
 		portraits={
 			navy={
 				large="gfx/leaders/CHI/WW1/China_Adm_DuXigui.dds"
@@ -1046,7 +1110,7 @@ characters={
 	}	
 
 	QIN_zaize={
-		name="Zaize"
+		name=QIN_zaize
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_2"
@@ -1083,7 +1147,7 @@ characters={
 	}
 
 	QIN_liang_dunyan={
-		name="Liang Dunyan"
+		name=QIN_liang_dunyan
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_1"
@@ -1108,7 +1172,7 @@ characters={
 	}
 
 	QIN_liang_qichao={
-		name="Liang Qichao"
+		name=QIN_liang_qichao
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/DNC/Portrait_China_Liang_Qichao.dds"
@@ -1134,7 +1198,7 @@ characters={
 	}
 	
 	QIN_shanqi={
-		name="Shanqi"
+		name=QIN_shanqi
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_3"
@@ -1162,7 +1226,7 @@ characters={
 	}	
 
 	QIN_zhao_bingjun={
-		name="Zhao Bingjun"
+		name=QIN_zhao_bingjun
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_1"
@@ -1200,7 +1264,7 @@ characters={
 	}
 	
 	QIN_natong={
-		name="Natong"
+		name=QIN_natong
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_3"
@@ -1228,7 +1292,7 @@ characters={
 	}
 
 	QIN_wuzhen={
-		name="Wuzhen"
+		name=QIN_wuzhen
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_2"
@@ -1254,7 +1318,7 @@ characters={
 	}
 
 	QIN_shouxun={
-		name="Shouxun"
+		name=QIN_shouxun
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_1"
@@ -1280,7 +1344,7 @@ characters={
 	}
 
 	QIN_zaixun={
-		name="Zaixun"
+		name=QIN_zaixun
 		portraits={
 			army={
 				small="gfx/interface/ideas/CHI/idea_QIN_zaixun.dds"
@@ -1306,7 +1370,7 @@ characters={
 	}
 
 	QIN_tan_xueheng={
-		name="Tan Xueheng"
+		name=QIN_tan_xueheng
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_2"
@@ -1331,7 +1395,7 @@ characters={
 	}
 
 	QIN_xu_shichang = {
-		name = "Xu Shichang"
+		name = QIN_xu_shichang
 		portraits = {
 			civilian = {
 				small = "GFX_idea_CHI_xu_shichang_advisor"
@@ -1362,7 +1426,7 @@ characters={
     #REGIONAL ACADEMIES
 
 	QIN_baoding_military_academy = {
-		name = "Baoding Military Academy"
+		name = QIN_baoding_military_academy
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_manpower_bonus"
@@ -1386,7 +1450,7 @@ characters={
 	}
 
 	QIN_yunnan_military_academy = {
-		name = "Yunnan Military Academy"
+		name = QIN_yunnan_military_academy
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_manpower_bonus"
@@ -1410,7 +1474,7 @@ characters={
 	}
 
 	QIN_yunnan_aviation_academy = {
-		name = "Yunnan Aviation Academy"
+		name = QIN_yunnan_aviation_academy
 		portraits = {
 			army = {
 				small = "GFX_idea_air_support_focus"

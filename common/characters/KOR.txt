@@ -54,7 +54,7 @@ characters = {
 	}
 
 	KOR_gojong = {
-		name = "Gojong"
+		name = KOR_gojong
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/KOR/DNC/KOR_Gojong.dds"

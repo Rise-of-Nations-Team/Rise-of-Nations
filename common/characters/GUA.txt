@@ -1,7 +1,7 @@
 characters={
 	### 1900 ###
 	GUA_jose_leon_castillo={
-		name="Jose Leon Castillo"
+		name=GUA_jose_leon_castillo
 		portraits={
 			civilian={
 				large="gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
@@ -20,7 +20,7 @@ characters={
 	#No socialist leader until the late 1910s
 	###
 	GUA_manuel_lisandro_barillas={
-		name="Manuel Lisandro Barillas"
+		name=GUA_manuel_lisandro_barillas
 		portraits={
 			civilian={
 				large="gfx/leaders/Europe/portrait_europe_generic_land_10.dds"
@@ -36,7 +36,7 @@ characters={
 		}
 	}
 	GUA_manuel_estrada_cabrera={
-		name="Manuel Estrada Cabrera"
+		name=GUA_manuel_estrada_cabrera
 		portraits={
 			civilian={
 				large="gfx/leaders/GUA/DNC/GUA_Manuel_Estrada_Cabrera.dds"
@@ -53,7 +53,7 @@ characters={
 	}
 	### 1910 ###
 	GUA_carlos_herrera_y_luna={
-		name="Carlos Herrera y Luna"
+		name=GUA_carlos_herrera_y_luna
 		portraits={
 			civilian={
 				large="gfx/leaders/Europe/portrait_europe_generic_4.dds"
@@ -69,7 +69,7 @@ characters={
 		}
 	}
 	GUA_antonio_obando_Sanchez={
-		name="Antonio Obando Sanchez"
+		name=GUA_antonio_obando_Sanchez
 		portraits={
 			civilian={
 				large="gfx/leaders/GUA/portrait_GUA_antonio_obando_sanchez.dds"
@@ -85,7 +85,7 @@ characters={
 		}
 	}
 	GUA_jose_reyes_roda={
-		name="Jose Reyes Roda"
+		name=GUA_jose_reyes_roda
 		portraits={
 			civilian={
 				large="gfx/leaders/GUA/WW1/portrait_GUA_jose_reyes_roda.dds"
