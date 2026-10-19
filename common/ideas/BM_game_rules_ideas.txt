@@ -581,7 +581,8 @@ ideas = {
 
 			modifier = {
 				naval_invasion_prep_speed = 0.20
-				naval_invasion_capacity = 10
+				naval_invasion_division_cap = 10
+				naval_invasion_plan_cap = 10
 			}
 		}
 		RULE_INVASION_LIMIT_2_IDEA = {
@@ -592,7 +593,8 @@ ideas = {
 
 			modifier = {
 				naval_invasion_prep_speed = 0.40
-				naval_invasion_capacity = 20
+				naval_invasion_division_cap = 20
+				naval_invasion_plan_cap = 20
 			}
 		}
 		RULE_INVASION_LIMIT_3_IDEA = {
@@ -603,7 +605,8 @@ ideas = {
 
 			modifier = {
 				naval_invasion_prep_speed = 0.60
-				naval_invasion_capacity = 30
+				naval_invasion_division_cap = 30
+				naval_invasion_plan_cap = 30
 			}
 		}
 		RULE_INVASION_LIMIT_4_IDEA = {
@@ -614,7 +617,8 @@ ideas = {
 
 			modifier = {
 				naval_invasion_prep_speed = 1.0 # +100%
-				naval_invasion_capacity = 50
+				naval_invasion_division_cap = 50
+				naval_invasion_plan_cap = 50
 			}
 		}
 		RULE_INVASION_LIMIT_DEFAULT_IDEA = {
