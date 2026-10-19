@@ -52,6 +52,15 @@ ideas = {
 			allowed = {
 				always = no # triggered via event 
 			}
+
+			cancel = {
+				NOT = {
+					PHI = {
+						is_subject_of = USA
+					}
+				}
+			}
+
 			picture = FRA_factory_strikes
 
 			modifier = {
