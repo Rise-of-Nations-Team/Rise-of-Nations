@@ -37,7 +37,7 @@ ideas = {
 				production_speed_buildings_factor = -0.25
 			}
 		}
-usa_php_reapyment = {
+		usa_php_reapyment = {
 			allowed = {
 				always = no # triggered via event 
 			}
