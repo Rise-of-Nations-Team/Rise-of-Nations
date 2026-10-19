@@ -258,7 +258,7 @@ country_event = {
 			40 = {  country_event = { id = ron_warsdiplo.2 hours = 1 } }
 			40 = {  
 				country_event = { id = ron_warsdiplo.3 hours = 1 } 
-				add_to_temp_array = { rebel_state = 445 }
+				add_to_temp_array = { rebel_state = 455 }
 				create_rebellion = yes
 			}
 		}
@@ -272,7 +272,7 @@ country_event = {
 			30 = { country_event = { id = ron_warsdiplo.2 hours = 1 } }
 			30 = {
 				country_event = { id = ron_warsdiplo.3 hours = 1 } 
-				add_to_temp_array = { rebel_state = 445 }
+				add_to_temp_array = { rebel_state = 455 }
 				create_rebellion = yes
 			}
 		}
@@ -286,7 +286,7 @@ country_event = {
 			20 = { country_event = { id = ron_warsdiplo.2 hours = 1 } }
 			20 = { 
 				country_event = { id = ron_warsdiplo.3 hours = 1 } 
-				add_to_temp_array = { rebel_state = 445 }
+				add_to_temp_array = { rebel_state = 455 }
 				create_rebellion = yes
 			}
 		}
