@@ -61,6 +61,10 @@ ideas = {
 				}
 			}
 
+			on_remove = {
+				set_country_flag = USA_has_removed_phillipine_resistance
+			}
+
 			picture = FRA_factory_strikes
 
 			modifier = {

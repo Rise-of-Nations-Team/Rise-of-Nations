@@ -6563,6 +6563,7 @@ USA_communal_defense:0 "Communal Defense"
  American_Dollar:0 "American Dollar"
  Standered_Oil_Monopoly:0 "Standard Oil"
  Philippine_Resistance:0 "Organized Filipino Militias"
+ USA_has_removed_phillipine_resistance:0 "No longer has idea §HOrganized Filipino Militias§!"
  america_php:0 "Philippine Administration"
 
  MP_number_factories_sent_to:0 "[?THIS.marshall_plan_received_factories]"
