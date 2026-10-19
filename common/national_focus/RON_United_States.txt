@@ -1360,9 +1360,7 @@ focus = {
 	cost = 10
 	available_if_capitulated = yes
 	bypass = {
-		NOT = {
-			has_country_flag = USA_has_removed_phillipine_resistance
-		}
+		has_country_flag = USA_has_removed_phillipine_resistance
 	}
 	prerequisite = {
 		focus = USADNC_destruction_of_villages
