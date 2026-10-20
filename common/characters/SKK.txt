@@ -1,0 +1,83 @@
+characters={
+	SKK_thutob_namgyal={
+		name="Thutob Namgyal"
+		portraits={
+			civilian={
+				large="gfx/leaders/SKK/DNC/SKK_thutob_namgyal.dds"
+			}
+		}
+		country_leader={
+			ideology=theocratic_monarchism
+			traits = {
+				dharma_king
+			}
+		}
+	}
+
+	SKK_sidkeong_tulku_namgyal={
+		name="Sidkeong Tulku Namgyal"
+		portraits={
+			civilian={
+				large="gfx/leaders/SKK/WW1/SKK_sidkeong_namgyal.dds"
+			}
+		}
+		country_leader={
+			ideology=theocratic_monarchism
+			traits = {
+				dharma_king
+			}
+		}
+	}
+
+	SKK_tashi_namgyal={
+		name="Tashi Namgyal"
+		portraits={
+			civilian={
+				large="gfx/leaders/SKK/SKK_tashi_namgyal.dds"
+			}
+		}
+		country_leader={
+			ideology=theocratic_monarchism
+			traits = {
+				dharma_king
+			}
+		}
+	}
+
+	SKK_palden_namgyal={
+		name="Palden Namgyal"
+		portraits={
+			civilian={
+				large="gfx/leaders/SKK/CW/SKK_palden_namgyal.dds"
+			}
+		}
+		country_leader={
+			ideology=theocratic_monarchism
+			traits = {
+				dharma_king
+			}
+		}
+	}	
+
+	SKK_charles_alfred_bell={
+		name="Charles Alfred Bell"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = SKK_charles_alfred_bell
+			allowed = {
+				original_tag = SKK
+			}
+			available = {
+				is_subject_of = ENG
+			}	
+			traits  = {
+				backroom_backstabber 
+			}
+		}
+	}
+}

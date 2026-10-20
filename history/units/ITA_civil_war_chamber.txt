@@ -1,0 +1,138 @@
+division_template = {
+	name = "Guardia Civica"
+	is_locked = yes
+	template_counter = 3
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Guardia Civica di Milano"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Porta Ticinese"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Porta Garibaldi"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Porta Venezia"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Monza"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Como"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Bergamo"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Brescia"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Pavia"
+		location = 3780
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Genova"
+		location = 6788
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Sampierdarena"
+		location = 6788
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Sestri"
+		location = 6788
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Chiavari"
+		location = 6788
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Novi"
+		location = 6788
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Savona"
+		location = 3772
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Albenga"
+		location = 3772
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Acqui"
+		location = 3772
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Alessandria"
+		location = 3772
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Ferrara"
+		location = 6793
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Bologna"
+		location = 6793
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Ravenna"
+		location = 6793
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Forli"
+		location = 6793
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Imola"
+		location = 6793
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Reggio"
+		location = 6793
+		division_template = "Guardia Civica"
+	}
+	division = {
+		name = "Guardia Civica di Parma"
+		location = 6793
+		division_template = "Guardia Civica"
+	}
+}

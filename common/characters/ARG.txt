@@ -93,6 +93,22 @@ characters={
 			}
 		}		
 	}
+	ARG_manuel_quintana={
+		name="Manuel Pedro Quintana"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARG/DNC/ARG_Manuel_Pedro_Quintana.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits = {
+				SWI_conservative_democrat old_figurehead
+			}
+			expire="1907.1.1.1"
+			id=-1
+		}
+	}	
 	ARG_rosendo_fraga={
 		name=ARG_rosendo_fraga
 		portraits={
@@ -288,6 +304,27 @@ characters={
 			logistics_skill=1
 		}
 	}
+	ARG_hector_varela = {
+		name="Héctor Benigno Varela"
+		portraits = {
+			army = {
+				large="gfx/leaders/ARG/DNC/ARG_Hector_Benigno_Varela.dds"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader organizer cavalry_leader cavalry_officer hill_fighter }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				date > 1905.1.1
+				date < 1924.1.1
+			}
+		}
+	}	
 	#Navy#
 	ARG_martin_rivadavia={
 		name=ARG_martin_rivadavia
@@ -356,14 +393,6 @@ characters={
 				large="gfx/leaders/ARG/WW1/Portrait_Argentina_Hipolito_Yrigoyen.dds"
 			}
 		}
-		country_leader={
-			ideology=socialism
-			traits = {
-				socdem_reformist ARG_argentine_nationalist
-			}
-			expire="2060.1.1.1"
-			id=-1
-		}
 	}
 
 	ARG_jose_figueroa_alcorta={
@@ -373,15 +402,16 @@ characters={
 				large="gfx/leaders/ARG/WW1/ARG_jose_figueroa_alcorta.dds"
 			}
 		}
-		country_leader={
-			ideology=nonaligned_conservatism
-			traits = {
-				sharp_tongued_lawyer
-			}
-			expire="2060.1.1.1"
-			id=-1
-		}
 	}
+
+	ARG_roque_saenz_pena={
+		name="Roque José Antonio Sáenz Peña"
+		portraits={
+			civilian={
+				large="gfx/leaders/ARG/WW1/Portrait_ARG_Roque_Saenz_Pena.dds"
+			}
+		}
+	}	
 
 	ARG_manuel_domecq_garcia={
 		name=ARG_manuel_domecq_garcia
@@ -521,6 +551,161 @@ characters={
 			}			
 		}
 	}
+
+	ARG_juan_tonazzi = {
+		name="Juan Nerón Tonazzi"
+		portraits = {
+			army = {
+				large=GFX_portrait_ARG_juan_tonazzi
+				small=GFX_portrait_ARG_juan_tonazzi_small
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious inflexible_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				date > 1925.1.1
+				date < 1949.1.1
+			}
+		}
+	}	
+
+	ARG_alberto_gilbert = {
+		name="Alberto Gilbert"		
+		portraits = {
+			army = {
+				large=GFX_portrait_ARG_alberto_gilbert
+				small=GFX_portrait_ARG_alberto_gilbert_small
+			}
+		}
+		advisor = {
+			cost = 100			
+			slot = theorist
+			idea_token = ARG_alberto_gilbert
+			ledger = army
+			allowed = {
+				original_tag = ARG
+			}				
+			traits = {
+				grand_battle_plan_expert
+			}
+			visible = {
+				date > 1930.1.1
+				date < 1949.1.1
+			}			
+		}		
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				date > 1930.1.1
+				date < 1949.1.1
+			}
+		}
+	}	
+
+	ARG_eduardo_avalos = {
+		name="Eduardo Jorge Ávalos"			
+		portraits = {
+			army = {
+				large=GFX_portrait_ARG_eduardo_avalos
+				small=GFX_portrait_ARG_eduardo_avalos_small
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = ARG_eduardo_avalos
+			ledger = army
+			allowed = {
+				original_tag = ARG
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			visible = {
+				date > 1927.1.1
+				date < 1949.1.1
+			}			
+		}
+
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				date > 1927.1.1
+				date < 1949.1.1
+			}			
+		}
+	}	
+
+	ARG_nicolas_accame = {
+		name = "Nicolás Cruz Accame"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARG/Portrait_ARG_Nicolas_Accame.dds"
+				small = "GFX_idea_ARG_nicolas_accame"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ARG_nicolas_accame
+			allowed = {
+				original_tag = ARG
+			}
+			cost = 100
+			traits = {
+				army_logistics_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				date > 1929.1.1
+				date < 1949.1.1
+				NOT = {
+					has_government = communism
+				}				
+			}
+		}
+		corps_commander = {
+			traits = {
+				politically_connected
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				date > 1929.1.1
+				date < 1949.1.1				
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}	
 
 	### 1933 ###
 
@@ -824,6 +1009,58 @@ characters={
 		}
 	}
 
+	ARG_juan_bautista_molina = {
+		name = "Juan Bautista Molina"
+		portraits={
+			army = {
+				large="gfx/leaders/ARG/Portrait_ARG_Juan_Bautista_Molina.dds"				
+				small = "gfx/interface/ideas/arg/ARG_advisor_portrait_juan_bautista_molina.dds"
+			}
+			civilian={
+				large="gfx/leaders/ARG/Portrait_ARG_Juan_Bautista_Molina.dds"
+				small = "gfx/interface/ideas/arg/ARG_advisor_portrait_juan_bautista_molina_civ.dds"				
+			}						
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ARG_juan_bautista_molina
+			available = {
+				date > 1925.1.1
+				date < 1949.1.1					
+				NOT = { 
+					has_government = communism 
+				}
+			}
+			visible = {
+				date > 1925.1.1
+				date < 1949.1.1		
+				NOT = { 
+					has_government = communism 
+				}							
+			}
+			ai_will_do = { factor = 20 }
+			traits = {
+				falangist_militarist 
+			}
+		}		
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+			visible = {
+				date > 1925.1.1
+				date < 1949.1.1						
+				NOT = { 
+					has_government = communism 
+				}			
+			}		
+		}
+	}	
+
 	ARG_alberto_teisaire={
 		name=ARG_alberto_teisaire
 		portraits={
@@ -871,6 +1108,43 @@ characters={
 			}
 		}
 	}
+
+	ARG_benito_sueyro = {
+		name="Benito S. Sueyro"		
+		portraits = {
+			army = {
+				large=GFX_portrait_ARG_benito_sueyro
+				small=GFX_portrait_ARG_benito_sueyro_small
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ARG_benito_sueyro
+			allowed = {
+				original_tag = ARG
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}			
+		navy_leader = {
+			traits = { gentlemanly }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+			legacy_id = -1
+			visible = {
+				date > 1925.1.1
+				date < 1949.1.1
+			}			
+		}
+	}	
 
 	### 1936 ###
 
@@ -947,7 +1221,7 @@ characters={
 		advisor = {
 			slot = political_advisor
 			idea_token = ARG_carlos_saavedra_lamas
-			allowed  = {
+			allowed = {
 				original_tag  = ARG
 			}
 			traits  = {
@@ -1577,13 +1851,31 @@ characters={
 		name=ARG_humberto_sosa_molina
 		portraits={
 			army={
-				large="gfx/leaders/Europe/portrait_europe_generic_land_10.dds"
+				large="gfx/leaders/ARG/Portrait_ARG_Humberto_Soza_Molina.dds"
 				small="gfx/interface/ideas/idea_europe_generic_5.dds"
 			}
 		}
+		advisor = {
+			slot = theorist
+			idea_token = ARG_humberto_sosa_molina
+			allowed = {
+				original_tag = ARG
+			}
+			cost = 100
+			traits = {
+				air_warfare_theorist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			visible = {
+				date > 1927.1.1
+				date < 1957.1.1				
+			}
+		}	
 		corps_commander={
 			traits={ 
-				#
+				politically_connected career_officer
 			}
 			skill=2
 			attack_skill=1
@@ -1591,10 +1883,10 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			visible = {
-				date < 2000.1.1
-				date > 1948.12.31
+				date > 1927.1.1
+				date < 1957.1.1
 			}
-		}
+		}		
 	}
 
 	ARG_arturo_ossorio_arana={

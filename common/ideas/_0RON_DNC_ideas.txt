@@ -37,7 +37,7 @@ ideas = {
 				production_speed_buildings_factor = -0.25
 			}
 		}
-		usa_php_reapyment = {
+usa_php_reapyment = {
 			allowed = {
 				always = no # triggered via event 
 			}
@@ -52,19 +52,6 @@ ideas = {
 			allowed = {
 				always = no # triggered via event 
 			}
-
-			cancel = {
-				NOT = {
-					PHI = {
-						is_subject_of = USA
-					}
-				}
-			}
-
-			on_remove = {
-				set_country_flag = USA_has_removed_phillipine_resistance
-			}
-
 			picture = FRA_factory_strikes
 
 			modifier = {

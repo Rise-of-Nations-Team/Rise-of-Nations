@@ -1,0 +1,133 @@
+division_template = {
+	name = "Legione dei Carabinieri Reali"
+	is_locked = yes
+	template_counter = 3
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Legione di Napoli"
+		location = 819
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Capodimonte"
+		location = 819
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Castellammare"
+		location = 819
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione del Vomero"
+		location = 819
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Portici"
+		location = 819
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Caserta"
+		location = 819
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Salerno"
+		location = 955
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Avellino"
+		location = 955
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Potenza"
+		location = 955
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Taranto"
+		location = 11837
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Bari"
+		location = 11837
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Lecce"
+		location = 11837
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Brindisi"
+		location = 11837
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Foggia"
+		location = 11837
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Pescara"
+		location = 6831
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Chieti"
+		location = 6831
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione dell'Aquila"
+		location = 6831
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Palermo"
+		location = 10074
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Trapani"
+		location = 10074
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Girgenti"
+		location = 10074
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Caltanissetta"
+		location = 10074
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Messina"
+		location = 4159
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Catania"
+		location = 4159
+		division_template = "Legione dei Carabinieri Reali"
+	}
+	division = {
+		name = "Legione di Siracusa"
+		location = 4159
+		division_template = "Legione dei Carabinieri Reali"
+	}
+}

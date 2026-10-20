@@ -13,30 +13,36 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 20
+	democratic = 20
 	communism = 5
 	neutrality = 50
+	islamism = 25
 }
 
-create_country_leader = {
-	name = "Abdelaziz of Morocco"
-	picture = "gfx/leaders/MOR/DNC/Abdelaziz_of_Morocco.dds"
-	ideology = emiratism
-}
+recruit_character = MOR_mulay_abdalaziz
+recruit_character = MOR_mulay_abdelhafid
+recruit_character = MOR_yusef_bin_hassan
+recruit_character = MOR_maal_al_aynayn
+recruit_character = MOR_ahmed_al_hiba
+recruit_character = MOR_thami_el_glaoui
 
-create_country_leader = {
-	name = "Abdelaziz of Morocco"
-	picture = "gfx/leaders/MOR/DNC/Abdelaziz_of_Morocco.dds"
-	ideology = despotism
-}
+recruit_character = MOR_mulai_ahmed_er_raisuni
+recruit_character = MOR_abdellah_zakour
+recruit_character = MOR_mhand_n_ifrutant
+recruit_character = MOR_mouha_ou_hammou_zayani
+recruit_character = MOR_mohammed_ameziane
+recruit_character = MOR_mohammed_mehedi_uld_ben_ismael
 
-create_country_leader = {
-	name = "Abdelaziz of Morocco"
-	picture = "gfx/leaders/MOR/DNC/Abdelaziz_of_Morocco.dds"
-	ideology = constitutional_monarchism
-}
-recruit_character = MOR_Paul_von_Lettow_Vorbeck
+recruit_character = MOR_mohammed_el_mokri
+recruit_character = MOR_madani_el_glaoui
+recruit_character = MOR_taieb_el_goundafi
+recruit_character = MOR_abou_bakr_ben_bouazza
+recruit_character = MOR_sidi_mohamed_of_tazeroualt
+recruit_character = MOR_el_habib_baqqa
+recruit_character = MOR_ibn_zaydan
+recruit_character = MOR_harry_aubrey_de_vere_maclean
+recruit_character = MOR_andrew_belton
+
 1900.1.1 = {
 	oob = "MOR_1900"
 	create_dynamic_country = {
@@ -54,23 +60,22 @@ recruit_character = MOR_Paul_von_Lettow_Vorbeck
 	    reserve_dynamic_country = yes
 	}
 	create_dynamic_country = {
-	            original_tag = MOR
-	            set_country_flag = MOR_FRA_expedition
-	            set_politics = {
-			        ruling_party = democratic
-		        }
-		        set_political_party = {
-			        ideology = democratic
-			        popularity = 100
-		        }
+	    original_tag = MOR
+	    set_country_flag = MOR_FRA_expedition
+	    set_politics = {
+			ruling_party = democratic
+		}
+		set_political_party = {
+			ideology = democratic
+			popularity = 100
+		}
 		
-		        set_research_slots = 3
-	            reserve_dynamic_country = yes
-	        }
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
 	add_ideas = {
 		MOR_debt3
 	}
-	#recruit_character = MOR_Paul_von_Lettow_Vorbeck
 	if = {
 		limit = {
 			has_start_date < 1914.1.1
@@ -96,52 +101,70 @@ recruit_character = MOR_Paul_von_Lettow_Vorbeck
 		}
 	}
 }
+
 1910.1.1 = {
 	set_cosmetic_tag = MOR_PROTECTORATE
 	oob = "MOR_1910"
-	
-	create_country_leader = {
-		name = "Abd al-Hafid of Morocco"
-		picture = "gfx/leaders/MOR/DNC/Abd_al-Hafid_of_Morocco.dds"
-		ideology = emiratism
-	}
-
-	create_country_leader = {
-		name = "Abd al-Hafid of Morocco"
-		picture = "gfx/leaders/MOR/DNC/Abd_al-Hafid_of_Morocco.dds"
-		ideology = despotism
-	}
-
-	create_country_leader = {
-		name = "Abd al-Hafid of Morocco"
-		picture = "gfx/leaders/MOR/DNC/Abd_al-Hafid_of_Morocco.dds"
-		ideology = constitutional_monarchism
-	}
-
+	retire_character = MOR_mulay_abdalaziz
+	promote_character = MOR_mulay_abdelhafid
 }
+
 1914.1.1 = {
 	drop_cosmetic_tag = yes
 	oob = ""
+	promote_character = MOR_yusef_bin_hassan
+	retire_character = MOR_maal_al_aynayn	
+	retire_character = MOR_mohammed_ameziane
 }
-1927.1.1 = {
-	create_country_leader = {
-		name = "Mohammed V"
-		picture = "gfx/leaders/MOR/Portrait_MOR_Mohammed_V.dds"
-		ideology = emiratism
-	}
 
-	create_country_leader = {
-		name = "Mohammed V"
-		picture = "gfx/leaders/MOR/Portrait_MOR_Mohammed_V.dds"
-		ideology = despotism
-	}
+1919.1.1 = {
+	recruit_character = MOR_muhammad_bin_yusef
+	retire_character = MOR_madani_el_glaoui
+	retire_character = MOR_abou_bakr_ben_bouazza
+	retire_character = MOR_sidi_mohamed_of_tazeroualt
+	retire_character = MOR_el_habib_baqqa
+}
 
-	create_country_leader = {
-		name = "Mohammed V"
-		picture = "gfx/leaders/MOR/Portrait_MOR_Mohammed_V.dds"
-		ideology = constitutional_monarchism
+1920.1.1 = {
+	retire_character = MOR_ahmed_al_hiba	
+	retire_character = MOR_harry_aubrey_de_vere_maclean
+	retire_character = MOR_mhand_n_ifrutant
+}
+
+1925.1.1 = {
+	retire_character = MOR_mulai_ahmed_er_raisuni	
+	retire_character = MOR_mouha_ou_hammou_zayani
+	retire_character = MOR_mohammed_mehedi_uld_ben_ismael
+}
+
+1930.1.1 = {
+	retire_character = MOR_yusef_bin_hassan	
+	retire_character = MOR_taieb_el_goundafi
+	add_country_leader_role = {
+		character = MOR_muhammad_bin_yusef 
+		promote_leader = yes
+		country_leader = {
+			ideology=monarchism
+			expire="1962.1.1"
+		}
 	}
 }
+
+1939.1.1 = {
+	retire_character = MOR_mulay_abdelhafid	
+}
+
+1949.1.1 = {
+	retire_character = MOR_ibn_zaydan	
+	retire_character = MOR_andrew_belton
+}
+
+1955.1.1 = {
+	retire_character = MOR_thami_el_glaoui	
+	retire_character = MOR_mohammed_el_mokri
+	retire_character = MOR_abdellah_zakour	
+}
+
 1970.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
@@ -152,6 +175,8 @@ recruit_character = MOR_Paul_von_Lettow_Vorbeck
 	set_popularities = {
 		neutrality = 100
 	}
+	retire_character = MOR_muhammad_bin_yusef
+
 	create_country_leader = {
 		name = "Hassan II"
 		picture = "gfx/leaders/MOR/CW/Morroco_KingHassan_II.dds"

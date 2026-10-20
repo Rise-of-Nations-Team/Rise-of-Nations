@@ -1,0 +1,88 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ita_council_ui_window"
+		orientation = lower_left
+		position = { x = 0 y = 0 }
+		size = { width = 420 height = 200 }
+		clipping = no
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_bg"
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "ita_council_title"
+			position = { x = 10 y = 10 }
+			font = "hoi_20b"
+			text = "ITA_h_the_council_dm"
+			format = center
+			maxWidth = 400
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "ita_council_seat_1_container"
+			position = { x = 20 y = 44 }
+			size = { width = 124 height = 148 }
+			clipping = no
+
+			iconType = {
+				name = "ita_council_seat_1_portrait"
+				spriteType = "GFX_blank_leader_portrait"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "ITA_h_the_council_dm_tt"
+			}
+
+			iconType = {
+				name = "ita_council_seat_1_frame"
+				spriteType = "GFX_ascended_advisors_unappointed_frame"
+				position = { x = 0 y = 0 }
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "ita_council_seat_2_container"
+			position = { x = 154 y = 44 }
+			size = { width = 124 height = 148 }
+			clipping = no
+
+			iconType = {
+				name = "ita_council_seat_2_portrait"
+				spriteType = "GFX_blank_leader_portrait"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "ITA_h_the_council_dm_tt"
+			}
+
+			iconType = {
+				name = "ita_council_seat_2_frame"
+				spriteType = "GFX_ascended_advisors_unappointed_frame"
+				position = { x = 0 y = 0 }
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "ita_council_seat_3_container"
+			position = { x = 288 y = 44 }
+			size = { width = 124 height = 148 }
+			clipping = no
+
+			iconType = {
+				name = "ita_council_seat_3_portrait"
+				spriteType = "GFX_blank_leader_portrait"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "ITA_h_the_council_dm_tt"
+			}
+
+			iconType = {
+				name = "ita_council_seat_3_frame"
+				spriteType = "GFX_ascended_advisors_unappointed_frame"
+				position = { x = 0 y = 0 }
+				alwaystransparent = yes
+			}
+		}
+	}
+}

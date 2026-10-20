@@ -66,23 +66,4 @@ characters={
 			id=-1
 		}
 	}
-	CAL_={
-		name=CAL_
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_8_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_8"
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
 }

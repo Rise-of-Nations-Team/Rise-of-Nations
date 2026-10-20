@@ -1,0 +1,45 @@
+ITA_dnc_ai_behavior = {
+	name = "ITA_DNC_AI_BEHAVIOR"
+	group = "RULE_GROUP_DNC_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_ITA_DNC_DEFAULT_DESC"
+	}
+	option = {
+		name = ITA_HISTORICAL
+		text = "RULE_OPTION_ITA_HISTORICAL"
+		desc = "RULE_OPTION_ITA_HISTORICAL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ITA_CROWN
+		text = "RULE_OPTION_ITA_CROWN"
+		desc = "RULE_OPTION_ITA_CROWN_DESC"
+	}
+	option = {
+		name = ITA_CONSTITUTIONAL
+		text = "RULE_OPTION_ITA_CONSTITUTIONAL"
+		desc = "RULE_OPTION_ITA_CONSTITUTIONAL_DESC"
+	}
+	option = {
+		name = ITA_COMANDO
+		text = "RULE_OPTION_ITA_COMANDO"
+		desc = "RULE_OPTION_ITA_COMANDO_DESC"
+	}
+	option = {
+		name = ITA_OATH
+		text = "RULE_OPTION_ITA_OATH"
+		desc = "RULE_OPTION_ITA_OATH_DESC"
+	}
+	option = {
+		name = ITA_REPUBLIC
+		text = "RULE_OPTION_ITA_REPUBLIC"
+		desc = "RULE_OPTION_ITA_REPUBLIC_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_ITA_DNC_RANDOM_DESC"
+	}
+}

@@ -4292,132 +4292,132 @@ spriteType = { name = "GFX_idea_RUS_ww1_orthodox_church" texturefile = "gfx/inte
 	### Red Finland Ideas
 
 	SpriteType = {
-		name = "GFX_idea_FNR_August_Wesley"
+		name = "GFX_idea_FIN_August_Wesley"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_August_Wesley.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Edvard_Gylling2"
+		name = "GFX_idea_FIN_Edvard_Gylling2"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Edvard_Gylling2.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Edvard_Gylling"
+		name = "GFX_idea_FIN_Edvard_Gylling"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Edvard_Gylling.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Ernst_Hausen"
+		name = "GFX_idea_FIN_Ernst_Hausen"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Ernst_Hausen.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Verner_Lehtimaki"
+		name = "GFX_idea_FIN_Verner_Lehtimaki"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Verner_Lehtimaki.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Verner_Lehtimaki2"
+		name = "GFX_idea_FIN_Verner_Lehtimaki2"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Verner_Lehtimaki2.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Verner_Lehtimaki3"
+		name = "GFX_idea_FIN_Verner_Lehtimaki3"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Verner_Lehtimaki3.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Adolf_Taimi"
+		name = "GFX_idea_FIN_Adolf_Taimi"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Adolf_Taimi.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Adolf_Taimi2"
+		name = "GFX_idea_FIN_Adolf_Taimi2"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Adolf_Taimi2.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Adolf_Taimi3"
+		name = "GFX_idea_FIN_Adolf_Taimi3"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Adolf_Taimi3.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Ali_Aaltonen"
+		name = "GFX_idea_FIN_Ali_Aaltonen"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Ali_Aaltonen.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Eino_Rajha"
+		name = "GFX_idea_FIN_Eino_Rajha"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Eino_Rajha.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Evert_Eloranta"
+		name = "GFX_idea_FIN_Evert_Eloranta"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Evert_Eloranta.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Eero_Haapalainen"
+		name = "GFX_idea_FIN_Eero_Haapalainen"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Eero_Haapalainen.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Lauri_Letonmaki"
+		name = "GFX_idea_FIN_Lauri_Letonmaki"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Lauri_Letonmaki.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Jalo_Kohonen"
+		name = "GFX_idea_FIN_Jalo_Kohonen"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Jalo_Kohonen.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Kullervo_Manner"
+		name = "GFX_idea_FIN_Kullervo_Manner"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Kullervo_Manner.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Yrjo_Sirola"
+		name = "GFX_idea_FIN_Yrjo_Sirola"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Yrjo_Sirola.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Oskari_Tokoi"
+		name = "GFX_idea_FIN_Oskari_Tokoi"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Oskari_Tokoi.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Edvard_Gylling"
+		name = "GFX_idea_FIN_Edvard_Gylling"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Edvard_Gylling.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Mattia_Turkia"
+		name = "GFX_idea_FIN_Mattia_Turkia"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Mattia_Turkia.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Konstantin_Lindqvist"
+		name = "GFX_idea_FIN_Konstantin_Lindqvist"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Konstantin_Lindqvist.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Johan_Erik_Lumivuokko"
+		name = "GFX_idea_FIN_Johan_Erik_Lumivuokko"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Johan_Erik_Lumivuokko.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Emil_Elo"
+		name = "GFX_idea_FIN_Emil_Elo"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Emil_Elo.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Otto_Wille_Kuusinen"
+		name = "GFX_idea_FIN_Otto_Wille_Kuusinen"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Otto_Wille_Kuusinen.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_FNR_Antti_Kiviranta"
+		name = "GFX_idea_FIN_Antti_Kiviranta"
 		texturefile = "gfx/interface/ideas/FNR/idea_FNR_Antti_Kiviranta.dds"
 	}
 

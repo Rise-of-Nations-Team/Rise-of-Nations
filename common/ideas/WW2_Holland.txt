@@ -517,26 +517,4 @@ ideas = {
 	}
 	#Advisors
 
-	political_advisor = {
-
-		tdlra_andries_cornelis_dirk_de_graeff = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = HOL
-			}
-
-			visible = {
-				date > 1933.1.1
-				date < 1949.1.1
-			}
-			available = {
-				date > 1933.1.1
-				date < 1949.1.1
-			}
-
-			traits = { war_industrialist }
-		}
-	}
 }

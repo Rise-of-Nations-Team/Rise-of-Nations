@@ -1,6 +1,6 @@
 characters={
 	RAJ_marquess_curzon={
-		name="Marquess George Curzon"
+		name=RAJ_marquess_curzon
 		portraits={
 			civilian={
 				large="gfx/leaders/RAJ/DNC/Portrait_RAJ_George_Curzon.dds"
@@ -14,7 +14,7 @@ characters={
 	}
 
 	RAJ_viscount_melgund={ #1910 - Start
-		name="Viscount Melgund"
+		name=RAJ_viscount_melgund
 		portraits={
 			civilian={
 				large="gfx/leaders/RAJ/WW1/RAJ_Gilbert_Elliot.dds"
@@ -28,7 +28,7 @@ characters={
 	}	
 
 	RAJ_lord_hardinge={ #1910 - November
-		name="Lord Hardinge"
+		name=RAJ_lord_hardinge
 		portraits={
 			civilian={
 				large="gfx/leaders/RAJ/WW1/RAJ_Charles_Hardinge.dds"
@@ -42,7 +42,7 @@ characters={
 	}	
 
 	RAJ_lord_chelmsford={ #1919
-		name="Lord Chelmsford"
+		name=RAJ_lord_chelmsford
 		portraits={
 			civilian={
 				large="gfx/leaders/RAJ/WW1/RAJ_Frederic_Thesiger.dds"
@@ -170,7 +170,7 @@ characters={
 	}
 
 	RAJ_bal_gangadhar_tilak={ #1900-1910
-		name="Bal Gangadhar Tilak"
+		name=RAJ_bal_gangadhar_tilak
 		portraits={
 			civilian={
 				large="gfx/leaders/RAJ/DNC/Portrait_RAJ_Bal_Gangadhar_Tilak.dds"
@@ -184,7 +184,7 @@ characters={
 	}	
 
 	RAJ_v_d_savarkar={ #1919 (later on could return by 1945 if Subhas dies)
-		name="V. D. Savarkar"
+		name=RAJ_v_d_savarkar
 		portraits={
 			civilian={
 				large="GFX_RAJ_veer_savarkar"
@@ -199,7 +199,7 @@ characters={
 	}
 
 	RAJ_subhas_chanda_bose={ #1933
-		name="Subhas Chanda Bose"
+		name=RAJ_subhas_chanda_bose
 		portraits={
 			army={
 				small="GFX_idea_RAJ_subhas_chanda_bose" #small="GFX_idea_generic_political_advisor_india_1"
@@ -255,7 +255,7 @@ characters={
 	}
 
 	RAJ_lala_lajpat_rai={ #1900-1910 
-		name="Lala Lajpat Rai"
+		name=RAJ_lala_lajpat_rai
 		portraits={
 			civilian={
 				large="gfx/leaders/RAJ/DNC/Portrait_RAJ_Lala_Lajpat_Rai.dds"
@@ -269,7 +269,7 @@ characters={
 	}		
 
 	RAJ_manabendra_nath_roy={ #1910 (disappears by 1919, reappears by 1925 and again disappears by 1936, reapppearing in 1946 or 1948)
-		name="Manabendra Nath Roy"
+		name=RAJ_manabendra_nath_roy
 		portraits={
 			civilian={
 				large="gfx/leaders/RAJ/WW1/RAJ_Manabendra_Nath_Roy_WWI.dds"
@@ -298,7 +298,7 @@ characters={
 	}
 
 	RAJ_mahatma_mohandas_gandhi={ #1900-1925
-		name="Mahatma Mohandas Gandhi"
+		name=RAJ_mahatma_mohandas_gandhi
 		portraits={
 			army={
 				large="gfx/leaders/RAJ/WW1/RAJ_Mohandas_Karamchand_Gandhi.dds"
@@ -323,7 +323,7 @@ characters={
 	}	
 
 	RAJ_b_p_sitaramayya={ #1925-1948
-		name="B. P. Sitaramayya"
+		name=RAJ_b_p_sitaramayya
 		portraits={
 			civilian={
 				large="GFX_RAJ_pattabhi_sitaramayya"
@@ -338,7 +338,7 @@ characters={
 	}
 
 	RAJ_muhammad_ali_jinnah={ #1900-1949 (Pretty Much him as the only voice for the Muslims)
-		name="Muhammad Ali Jinnah"
+		name=RAJ_muhammad_ali_jinnah
 		portraits={
 			civilian={
 				large = "gfx/leaders/RAJ/DNC/Portrait_RAJ_Muhammad_Ali_Jinnah_DNC.dds"
@@ -529,7 +529,7 @@ characters={
 	### THEORISTS ###
 
 	RAJ_rajendra_prasad={
-		name="Rajendra Prasad"
+		name=RAJ_rajendra_prasad
 		portraits={
 			army={
 				small="GFX_idea_RAJ_rajendra_prasad" #small="GFX_idea_generic_army_arab_1"
@@ -638,7 +638,7 @@ characters={
 	### ARMY CHIEFS ###
 
 	RAJ_arthur_a_barrett={
-		name="Arthur A. Barrett"
+		name=RAJ_arthur_a_barrett
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
@@ -664,7 +664,7 @@ characters={
 	}
 
 	RAJ_reginald_savory={
-		name="Reginald Savory"
+		name=RAJ_reginald_savory
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_1"
@@ -1290,7 +1290,7 @@ characters={
 			traits = {
 				compassionate_gentleman
 			}
-			expire="1960.1.1.1"
+			expire="1919.1.1.1"
 			id=-1
 		}
 	}

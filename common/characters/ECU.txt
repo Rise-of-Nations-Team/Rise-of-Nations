@@ -155,8 +155,8 @@ characters={
 		}
 	}	
 
-	ECU_federico_páez={
-		name="Federico Paez"
+	ECU_federico_paez={
+		name=ECU_federico_paez
 		portraits={
 			civilian={
 				large="GFX_Portrait_ecuador_federico_paez"

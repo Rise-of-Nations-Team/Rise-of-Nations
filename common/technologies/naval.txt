@@ -2615,8 +2615,7 @@ technologies = {
 	transport = {
 
 		transport_capacity = -0.5
-		naval_invasion_division_cap = 15
-		naval_invasion_plan_cap = 10
+		naval_invasion_capacity = 10
 
 		path = {
 			leads_to_tech = landing_craft
@@ -2645,8 +2644,7 @@ technologies = {
 
 		invasion_preparation = -0.5
 		amphibious_invasion_defence = 0.15
-		naval_invasion_division_cap = 50
-		naval_invasion_plan_cap = 20
+		naval_invasion_capacity = 40
 
 		path = {
 			leads_to_tech = tank_landing_craft
@@ -2675,8 +2673,7 @@ technologies = {
 
 		amphibious_invasion = 0.25
 		amphibious_invasion_defence = 0.5
-		naval_invasion_division_cap = 100
-		naval_invasion_plan_cap = 40
+		naval_invasion_capacity = 100
 
 		research_cost = 2
 		start_year = 1944
@@ -2707,7 +2704,7 @@ technologies = {
 	cw_landing_craft = {
 
 		transport_capacity = -0.5
-		naval_invasion_plan_cap = 15
+		naval_invasion_capacity = 10
 
 		path = {
 			leads_to_tech = amphibious_assault_ship
@@ -2749,8 +2746,7 @@ technologies = {
 
 		invasion_preparation = -0.5
 		amphibious_invasion_defence = 0.15
-		naval_invasion_division_cap = 10
-		naval_invasion_plan_cap = 25
+		naval_invasion_capacity = 40
 
 		research_cost = 2.3
 		start_year = 1985

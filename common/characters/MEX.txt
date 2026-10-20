@@ -16,7 +16,7 @@ characters = {
     }
 
 	MEX_agustin_iii = {
-		name = "Agustin III"
+		name = MEX_agustin_iii
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/MEX/DNC/MEX_Agustin_de_Iturbide_y_Green.dds"
@@ -43,7 +43,7 @@ characters = {
 	}	
 
 	MEX_porfirio_diaz={
-		name = "Porfirio Diaz"
+		name = MEX_porfirio_diaz
 		portraits={
 			civilian={
 				large="gfx/leaders/MEX/DNC/MEX_Porfirio_Diaz.dds"
@@ -72,7 +72,7 @@ characters = {
 	}
 	
 	MEX_francisco_leon_de_la_barra = {
-		name="Francisco Leon de la Barra"
+		name=MEX_francisco_leon_de_la_barra
 		portraits={
 			civilian={
 				large="gfx/leaders/MEX/WW1/Francisco_Leon_De_La_Barra.dds"
@@ -98,7 +98,7 @@ characters = {
 	}
 
 	MEX_francisco_madero={
-		name = "Francisco Madero"
+		name = MEX_francisco_madero
 		portraits={
 			civilian={
 				large="gfx/leaders/MEX/WW1/Portrait_Mexico_Francisco_Madero.dds"
@@ -111,7 +111,7 @@ characters = {
 	}
 
 	MEX_bernardo_reyes={
-		name= "Bernardo Reyes"
+		name= MEX_bernardo_reyes
 		portraits={
 			army = {
 				large="gfx/leaders/MEX/DNC/MEX_Bernardo_Reyes.dds"
@@ -160,7 +160,7 @@ characters = {
 	}
 
 	MEX_emiliano_zapata = {
-		name = "Emiliano Zapata"
+		name = MEX_emiliano_zapata
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/MEX/WW1/Portrait_Mexico_Emiliano_Zapata.dds"
@@ -187,7 +187,7 @@ characters = {
     #Generals
 
 	MEX_victoriano_huerta={
-		name = "Victoriano Huerta"
+		name = MEX_victoriano_huerta
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/Portrait_Mexico_Victoriano_Huerta.dds"
@@ -211,7 +211,7 @@ characters = {
 	}	
 
 	MEX_venustiano_carranza={
-		name = "Venustiano Carranza"
+		name = MEX_venustiano_carranza
 		portraits={
 			civilian={
 				large="gfx/leaders/MEX/WW1/Portrait_Mexico_Venustiano_Carranza.dds"
@@ -238,7 +238,7 @@ characters = {
 	}
 
 	MEX_alvaro_obregon={ 
-		name = "Alvaro Obregon"
+		name = MEX_alvaro_obregon
 		portraits={
 			civilian={
 				large="gfx/leaders/MEX/WW1/General_Alvaro_Obregon.dds"
@@ -277,7 +277,7 @@ characters = {
 	}	
 
 	MEX_plutarco_calles={ 
-		name = "Plutarco Calles"
+		name = MEX_plutarco_calles
 		portraits={
 			civilian={
 				large="gfx/leaders/MEX/WW1/Portrait_Mexico_Plutarco_Calles_WW1.dds"
@@ -307,7 +307,7 @@ characters = {
 	}
 
 	MEX_felix_diaz={ 
-		name= "Felix Diaz"
+		name= MEX_felix_diaz
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Felix_Diaz.dds"
@@ -336,7 +336,7 @@ characters = {
 	}	
 
 	MEX_higinio_aguilar={ #Diaz - Huerta - Obregon
-		name= "Higinio Aguilar"
+		name= MEX_higinio_aguilar
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Higinio_Aguilar.dds"
@@ -363,7 +363,7 @@ characters = {
 	}
 
 	MEX_pedro_gabay_quevedo={ 
-		name= "Pedro Gabay Quevedo"
+		name= MEX_pedro_gabay_quevedo
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Pedro_Gabay_Quevedo.dds"
@@ -384,7 +384,7 @@ characters = {
 	}	
 
     MEX_pablo_gonzalez = {
-        name = "Pablo Gonzalez"
+        name = MEX_pablo_gonzalez
 		portraits={
 			army={
 				small="GFX_idea_MEX_pablo_gonzalez"				
@@ -424,7 +424,7 @@ characters = {
     }
 
 	MEX_andres_figueroa={
-		name="Andres Figueroa"
+		name=MEX_andres_figueroa
 		portraits={
 			army={
 				large="gfx/leaders/MEX/portrait_mex_andres_figueroa_figueroa.dds" 
@@ -446,7 +446,7 @@ characters = {
 	}		
 
 	MEX_lucio_blanco={ #Madero - Carranza - Gutierrez 
-		name="Lucio Blanco"
+		name=MEX_lucio_blanco
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Lucio_Blanco.dds"
@@ -470,7 +470,7 @@ characters = {
 	}
 
 	MEX_juan_g_cabral={ #Madero - Carranza - Gutierrez
-		name="Juan G. Cabral"
+		name=MEX_juan_g_cabral
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Juan_Cabral.dds"
@@ -495,7 +495,7 @@ characters = {
 	}
 
 	MEX_cesareo_castro_villareal={ #Madero - Carranza - Exile
-		name="Cesareo Castro Villareal"
+		name=MEX_cesareo_castro_villareal
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Cesareo_Castro_Villareal.dds"
@@ -517,7 +517,7 @@ characters = {
 	}
 
 	MEX_francisco_luis_urquizo={ #Madero - Carranza - Exile
-		name= "Francisco Luis Urquizo"
+		name= MEX_francisco_luis_urquizo
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Francsico_Urquizo.dds"
@@ -539,7 +539,7 @@ characters = {
 	}
 
 	MEX_felipe_angeles={ #Diaz - Madero - Villa
-		name= "Felipe Angeles"
+		name= MEX_felipe_angeles
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Felipe_Angeles.dds"
@@ -620,7 +620,7 @@ characters = {
 	}
 
 	MEX_roque_gonzalez_garza={ #Madero - Villa - Gutierrez
-		name= "Roque Gonzalez Garza"
+		name= MEX_roque_gonzalez_garza
 		portraits={
 			civilian={
 				large="gfx/leaders/MEX/WW1/Portrait_Mexico_Roque_Gonzalez_Garza.dds"
@@ -648,7 +648,7 @@ characters = {
 	}	
 
 	MEX_salvador_alvarado={ #Madero - Carranza - 
-		name = "Salvador Alvarado"
+		name = MEX_salvador_alvarado
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Salvador_Alvarado.dds"
@@ -673,7 +673,7 @@ characters = {
 	}	
 
 	MEX_ramon_f_iturbe={ #Madero - Carranza
-		name="Ramon F. Iturbe"
+		name=MEX_ramon_f_iturbe
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Ramon_Fuentes_Iturbe.dds"
@@ -698,7 +698,7 @@ characters = {
 	}	
 
 	MEX_felix_uresti_gomez={ #Carranza revolutionary forces
-		name="Felix Uresti Gomez"
+		name=MEX_felix_uresti_gomez
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Felix_Uresti_Gomez.dds"
@@ -722,7 +722,7 @@ characters = {
 	}	
 
 	MEX_panfilo_natera={ #Carranza revolutionary forces
-		name="Panfilo Natera"
+		name=MEX_panfilo_natera
 		portraits={
 			army={
 				large="gfx/leaders/MEX/portrait_mex_panfilo_natera_garcia.dds"
@@ -743,7 +743,7 @@ characters = {
 	}		
 
 	MEX_jesus_h_salgado={ #Zapata
-		name="Jesus H. Salgado"
+		name=MEX_jesus_h_salgado
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Jesus_Salgado.dds"
@@ -764,7 +764,7 @@ characters = {
 	}	
 
 	MEX_rodolfo_herrero={ 
-		name="Rodolfo Herrero"
+		name=MEX_rodolfo_herrero
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Jesus_Salgado.dds"
@@ -780,15 +780,15 @@ characters = {
 			visible = {
 				date > 1910.1.1					
 				date < 1936.1.1	
-				NOT = {
-					has_government = fascism
-				}		
+				has_government = democratic								
+				has_government = communism
+				has_government = neutrality				
 			}
 		}
 	}	
 
 	MEX_otilio_montano={ #Zapata
-		name= "Otilio Montano"
+		name= MEX_otilio_montano
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Otilio_Montano.dds"
@@ -809,7 +809,7 @@ characters = {
 	}	
 
 	MEX_eufemio_zapata={ #Zapata
-		name="Eufemio Zapata"
+		name=MEX_eufemio_zapata
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/Portrait_Mexico_Eufemio_Zapata.dds"
@@ -830,7 +830,7 @@ characters = {
 	}	
 
 	MEX_pancho_villa={
-		name= "Francisco Villa"
+		name= MEX_pancho_villa
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/Portrait_Mexico_Pancho_Villa.dds"
@@ -854,7 +854,7 @@ characters = {
 	}	
 
 	MEX_francisco_mendoza_palma={ #Zapata
-		name="Francisco Mendoza Palma"
+		name=MEX_francisco_mendoza_palma
 		portraits={
 			army={
 				large="gfx/leaders/MEX/WW1/General_Francisco_Palma.dds"
@@ -876,7 +876,7 @@ characters = {
 	#Admirals
 
 	MEX_hilario_rodriguez_malpica_saliva={
-		name= "Hilario Rodriguez Malpica Saliva"
+		name= MEX_hilario_rodriguez_malpica_saliva
 		portraits={
 			navy={
 				large="gfx/leaders/MEX/WW1/Admiral_Hilario_Malpica.dds"
@@ -899,7 +899,7 @@ characters = {
 	}	
 
 	MEX_manuel_azueta={
-		name="Manuel Azueta"
+		name=MEX_manuel_azueta
 		portraits={
 			navy={
 				large="gfx/leaders/MEX/WW1/Admiral_Manuel_Azueta.dds"
@@ -972,7 +972,7 @@ characters = {
 	#Advisors
 
     MEX_jose_vasconcelos = {
-        name = "Jose Vasconcelos"
+        name = MEX_jose_vasconcelos
 		portraits={
 			army={
 				small=GFX_portrait_MEX_jose_vasconcelos_small
@@ -997,7 +997,7 @@ characters = {
     }	
 
     MEX_alberto_pani = {
-        name = "Alberto Pani"
+        name = MEX_alberto_pani
 
         advisor = {
             slot = political_advisor
@@ -1068,7 +1068,7 @@ characters = {
 	#INT-WW2
 
 	MEX_gustavo_saenz_de_sicilia={
-		name="Gustavo Saenz de Sicilia"
+		name=MEX_gustavo_saenz_de_sicilia
 		portraits={
 			civilian={
 				large="gfx/leaders/MEX/INT/MEX_Gustavo_Saenez_de_Sicilia.dds"
@@ -1296,10 +1296,10 @@ characters = {
 		name=MEX_juan_andreu
 		portraits={
 			civilian={
-				large="gfx/leaders/MEX/Portrait_Mexico_Juan_Andreu_Alzaman.dds" #Can become country leader (Fascism -> Fascism)
+				large="GFX_portrait_MEX_juan_andreu" #Can become country leader (Fascism -> Fascism)
 			}
 			army={
-				large="gfx/leaders/MEX/Portrait_Mexico_Juan_Andreu_Alzaman_Army.dds"
+				large="GFX_portrait_MEX_juan_andreu" 
 			}			
 		}
 		corps_commander={
@@ -1646,57 +1646,6 @@ characters = {
 			}			
 		}		
     }	
-
-	MEX_joaquin_amaro_dominguez = {
-		name ="Joaquin Amaro Dominguez"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/MEX/Portrait_Mexico_Joaquin_Amaro.dds"
-			}			
-			army = {
-				large = "gfx/leaders/MEX/Portrait_Mexico_Joaquin_Amaro.dds"
-			}
-		}
-		corps_commander = {
-			traits = { career_officer war_hero commando }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			visible = {
-				date > 1916.1.1
-				date < 1953.1.1
-			}			
-		}
-		advisor = {
-			slot = high_command
-			idea_token = MEX_joaquin_amaro_dominguez_high_command
-			ledger = army
-			available = {
-				not_already_hired_except_as = high_command
-			}
-			traits = { army_logistics_2 }
-			cost = 100
-			visible = {
-				date > 1916.1.1
-				date < 1953.1.1
-			}			
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = MEX_joaquin_amaro_dominguez_army_chief
-			available = {
-				not_already_hired_except_as = army_chief
-			}
-			traits = { army_chief_reform_2 }
-			cost = 100
-			visible = {
-				date > 1916.1.1
-				date < 1953.1.1
-			}			
-		}
-	}		
 
     MEX_agustin_olachea = {
         name = MEX_agustin_olachea

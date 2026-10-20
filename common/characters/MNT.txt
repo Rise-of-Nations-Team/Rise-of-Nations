@@ -101,7 +101,7 @@ characters={
 	}	
 
 	MNT_jovan_plamenac={
-		name="Jovan Plamenac"
+		name=MNT_jovan_plamenac
 		portraits={
 			civilian={
 				large="gfx/leaders/MNT/WW1/Montenegro_Monarchism_JovanPlamenac.dds"
@@ -115,7 +115,7 @@ characters={
 	}			
 
 	MNT_janko_vukotic={
-		name="Janko Vukotic"
+		name=MNT_janko_vukotic
 		portraits={
 			army={
 				small="GFX_idea_MNT_Janko_Vukotic"
@@ -164,7 +164,7 @@ characters={
 	}
 
 	MNT_boidar_jankovic={    
-		name="Boidar Jankovic"
+		name=MNT_boidar_jankovic
 		portraits={
 			army={
 				large="gfx/leaders/MNT/WW1/FM-Boidar_Jankovia.dds"

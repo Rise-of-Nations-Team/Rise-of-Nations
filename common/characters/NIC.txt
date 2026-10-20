@@ -1,6 +1,6 @@
 characters={
-	NIC_josé_santos_zelaya={
-		name=characters
+	NIC_jose_santos_zelaya={
+		name=NIC_jose_santos_zelaya
 		portraits={
 			civilian={
 				large="gfx/leaders/NIC/DNC/NIC_José_Santos_Zelaya.dds"
@@ -12,8 +12,8 @@ characters={
 			id=-1
 		}
 	}
-	NIC_anastasio_somoza_garcía={
-		name=country_leader
+	NIC_anastasio_somoza_garcia={
+		name=NIC_anastasio_somoza_garcia
 		portraits={
 			civilian={
 				large="GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
@@ -52,8 +52,8 @@ characters={
 			id=-1
 		}
 	}
-	NIC_josé_madriz_rodríguez={
-		name=country_leader
+	NIC_jose_madriz_rodriguez={
+		name=NIC_jose_madriz_rodriguez
 		portraits={
 			civilian={
 				large="gfx/leaders/NIC/WW1/Jose_Madriz.dds"
@@ -65,8 +65,8 @@ characters={
 			id=-1
 		}
 	}
-	NIC_andrés_sevilla={
-		name=country_leader
+	NIC_andres_sevilla={
+		name=NIC_andres_sevilla
 		portraits={
 			civilian={
 				large="gfx/leaders/RON_Generic/Islamic_Latino1.dds"

@@ -1,0 +1,110 @@
+characters = {
+	TON_siaosi_tupou_ii = {
+		name = "George Tupou II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TON/DNC/Portrait_TON_George_Tupou_II.dds"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+		}
+		field_marshal = {
+			traits = { trait_royal inspirational_leader trait_cautious } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1 
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				is_country_leader = yes
+			}	
+		}
+	}
+
+	TON_salote_tupou_iii = {
+		name = "Salote Tupou III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TON/WW1/Portrait_TON_Salote_Tupou_III_WW1.dds"
+			}
+		}
+		gender = female
+		country_leader = {
+			ideology = monarchism
+		}
+	}
+
+	TON_taufaahau_tupou_iv = {
+		name = "Taufa'ahau Tupou IV"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TON/CW/Portrait_TON_Taufaahau_Tupou_IV.dds"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+		}
+	}	
+
+	TON_siaosi_tupou_v = {
+		name = "George Tupou V"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TON/MD/Portrait_TON_George_Tupou_V.dds"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+		}
+	}	
+
+	TON_ahoeitu_tupou_vi = {
+		name = "Aho'eitu Tupou VI"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TON/MD/Portrait_TON_Tupou_VI.dds"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+		}
+	}	
+	
+	TON_fatafehi_tuipelehake = {
+		name = "Fatafehi Tu'ipelehake"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TON/CW/Portrait_TON_Prince_Fatafehi_Tuipelehake.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_independent
+		}
+	}	
+
+	TON_siaosi_vaea = {
+		name = "Siaosi Vaea"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TON/MD/Portrait_TON_Baron_Vaea_of_Houma.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_independent
+		}
+	}	
+
+	TON_samiuela_akilisi_pohiva = {
+		name = "Samiuela 'Akilisi Pohiva"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TON/MD/Portrait_TON_Samiuela_Akilisi_Pohiva.dds"
+			}
+		}
+		country_leader = {
+			ideology = reformism
+		}
+	}	
+
+}

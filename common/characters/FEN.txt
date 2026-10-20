@@ -1,0 +1,1108 @@
+characters = {
+	FEN_zhang_zuolin = { # 張作霖
+		name = "Zhang Zuolin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Zhang_Zuolin.dds"
+			}
+		}
+		country_leader = {
+			ideology=stratocracy
+			traits = { tiger_of_mukden bandit hate_opium }
+		}
+		country_leader = {
+			ideology=chinese_nationalism
+			traits = { tiger_of_mukden bandit hate_opium }
+		}
+		field_marshal = {
+			traits = { politically_connected old_guard harsh_leader substance_abuser organizer skilled_staffer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				date < 1930.1.1
+			}
+		}		
+	}
+
+	FEN_zhang_xueliang={
+		name="Zhang Xueliang"
+		portraits={
+			army={
+				large="gfx/leaders/CHI/INT/Portrait_China_Zhang_Xueliang_INT.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FEN_zhang_xueliang
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			ledger = air 
+			traits = {
+				air_close_air_support_1 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				date > 1919.1.1
+				date < 1976.1.1					
+			}
+			visible = {
+				date > 1919.1.1
+				date < 1976.1.1				
+			}			
+		}		
+		corps_commander={
+			traits = { politically_connected trait_reckless media_personality artillery_officer }			
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				date > 1919.1.1
+				date < 1976.1.1				
+			}
+		}
+		country_leader={
+			ideology=chinese_nationalism
+			traits={ headstrong XIC_young_marshall }
+			expire="1976.1.1.1"
+			id=-1
+		}
+
+	}	
+
+	FEN_guo_songling = { # 郭松龄
+		name = "Guo Songling"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/CHI/idea_CHI_guo_songling.png"
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Guo_Songling.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = FEN_guo_songling
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			available = {
+				date > 1905.1.1
+				date < 1926.1.1
+			}
+			visible = {
+				date > 1905.1.1
+				date < 1926.1.1
+			}			
+			on_add = {
+				ROOT = {
+					if = {
+						limit = {
+							has_idea = FEN_guo_songling_political
+						}
+						deactivate_advisor = FEN_guo_songling_political
+					}
+				}
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FEN_guo_songling_political
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			available = {
+				date > 1905.1.1
+				date < 1926.1.1
+			}
+			visible = {
+				date > 1905.1.1
+				date < 1926.1.1
+			}			
+			traits = {
+				democratic_reformer
+			}
+			on_add = {
+				ROOT = {
+					if = {
+						limit = {
+							has_idea = FEN_guo_songling
+						}
+						deactivate_advisor = FEN_guo_songling
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist artillery_officer career_officer politically_connected career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				date > 1905.1.1
+				date < 1926.1.1
+			}
+		}
+	}
+
+	FEN_yang_yuting = { # 楊宇霆
+		name = "Yang Yuting"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/CHI/idea_CHI_yang_yuting.png"
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Yang_Yuting.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = FEN_yang_yuting
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			available = {
+				date > 1910.1.1
+				date < 1930.1.1
+			}
+			visible = {
+				date > 1910.1.1
+				date < 1930.1.1				
+			}
+			ledger = army
+			traits = {
+				army_entrenchment_1 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { artillery_officer trait_cautious career_officer organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				date > 1910.1.1
+				date < 1930.1.1				
+			}			
+		}
+	}
+
+	FEN_jiang_dengxuan = { # 姜登选
+		name = "Jiang Dengxuan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/DNC/Portrait_China_Generic_Army_1.dds"
+			}
+		}
+		corps_commander = {
+			traits = { artillery_officer organizer }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				date < 1926.1.1
+			}
+		}
+	}
+
+	FEN_zhang_zongchang = { # 張宗昌
+		name = "Zhang Zongchang"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Zhang_Zongchang.dds"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader trait_reckless rail_director substance_abuser media_personality skirmisher }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				date < 1933.1.1
+			}
+		}
+	}
+
+	FEN_zhang_zuoxiang = { # 张作相
+		name = "Zhang Zuoxiang"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Zhang_Zuoxiang.dds"
+				small = "gfx/interface/ideas/CHI/idea_CHI_zhang_zuoxiang.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FEN_zhang_zuoxiang
+			traits = {
+				silent_workhorse 
+			}
+			ai_will_do = {
+				factor = 10.000
+			}
+			available = {
+				date < 1949.1.1				
+			}
+			visible = {
+				date < 1949.1.1
+			}			
+		}
+		corps_commander = {
+			traits = { irregulars_officer cavalry_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				date < 1949.1.1
+			}
+		}
+	}
+
+	FEN_tang_yulin = { # 汤玉麟
+		name = "Tang Yulin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Tang_Yulin.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date < 1937.1.1
+			}
+		}
+	}
+
+	FEN_wu_junsheng = { # 吳俊陞
+		name = "Wu Junsheng"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Wu_Junsheng.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard cavalry_officer substance_abuser }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				date < 1929.1.1
+			}
+		}
+	}
+
+	FEN_zhang_jinghui = { # 张景惠
+		name = "Zhang Jinghui"
+		portraits = {
+			army = {
+				large="gfx/leaders/MAN/portrait_man_zhang_jinghui.dds"
+				small="GFX_idea_MAN_zhang_jinghui"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = FEN_zhang_jinghui
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			available = {
+				date < 1960.1.1
+			}
+			visible = {
+				date < 1960.1.1				
+			}
+			traits = {
+				navy_chief_shore_bombardement_1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = { old_guard infantry_officer career_officer }
+			skill =2 
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				date < 1960.1.1
+			}
+		}
+	}
+
+	FEN_zhang_haipeng = { # 張海鵬
+		name= "Zhang Haipeng"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MAN/portrait_man_zhang_haipeng.dds"
+				small = "GFX_idea_MAN_zhang_haipeng"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard infantry_officer organizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				date < 1949.1.1
+			}
+		}
+	}
+
+	FEN_jixing = { # 吉兴, he is a part of the Aisin-Gioro clan
+		name= "Jixing"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/DNC/Portrait_China_Jixing.dds"
+			}
+		}
+		corps_commander = {
+			traits = { artillery_officer career_officer trait_royal }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				NOT = {
+					has_government = communism
+					has_war_with = QIN
+				}						
+				date < 1949.1.1
+			}
+		}
+	}
+
+	FEN_bao_guiqing = { # 鮑貴卿
+		name= "Bao Guiqing"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Bao_Guiqing.png"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard career_officer trait_engineer }
+			skill=2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill=3
+			visible = {
+				date < 1935.1.1
+			}
+		}
+	}
+
+	FEN_xu_yuanquan = { # 徐源泉
+		name= "Xu Yuanquan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Xu_Yuanquan.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious trait_reckless engineer_officer ranger substance_abuser }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				date > 1919.1.1
+				date < 1949.1.1
+			}
+		}
+	}
+
+	FEN_ma_zhanshan = { # 马占山
+		name= "Ma Zhanshan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Ma_Zhanshan_INT.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = FEN_ma_zhanshan
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			ledger = army
+			traits = {
+				military_theorist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				date > 1910.1.1
+				date < 1950.1.1
+			    NOT = { 
+				    MAN = {
+					    exists = yes
+			        }					
+				}					
+			}
+			visible = {
+				date > 1910.1.1
+				date < 1950.1.1
+			    NOT = { 
+				    MAN = {
+					    exists = yes
+			        }					
+				}	
+			}
+		}
+		corps_commander = {
+			traits = { irregulars_officer cavalry_leader commando trickster }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				date > 1910.1.1
+				date < 1950.1.1
+			    NOT = { 
+				    MAN = {
+					    exists = yes
+			        }					
+				}					
+			}			
+		}
+	}
+
+	FEN_sun_liechen = { # 孫烈臣
+		name= "Sun Liechen"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Sun_Liechen.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = FEN_sun_liechen
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			available = {
+				date > 1905.1.1				
+				date < 1925.1.1
+			}
+			traits = {
+				army_chief_offensive_1 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = { old_guard organizer logistics_wizard }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				date > 1905.1.1
+				date < 1925.1.1
+			}
+		}
+	}
+
+	FEN_ma_longtan = { # 馬龍潭
+		name= "Ma Longtan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Ma_Longtan.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard cavalry_officer inflexible_strategist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				date < 1939.1.1
+			}
+		}
+	}
+
+	FEN_li_jinglin = { # 李景林 "China's First Sword" / "God of the Sword"
+		name= "Li Jinglin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Lin_Jinglin.dds"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist trait_cautious harsh_leader skirmisher ranger thorough_planner }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				date > 1907.1.1
+				date < 1932.1.1
+			}
+		}
+	}
+
+	FEN_feng_zhanhai = { # 馮占海
+		name = "Feng Zhanhai"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/portrait_chi_feng_zhanhai.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer hill_fighter infantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_country_leader = {
+					character = FEN_zhang_xueliang
+					ruling_only = yes
+				}
+				date > 1919.1.1
+				date < 1964.1.1
+			}			
+		}
+	}
+
+	FEN_wan_fulin = { # 万福麟
+		name = "Wan Fulin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/portrait_CHI_wan_fulin.dds"
+				small = GFX_idea_CHI_wan_fulin
+			}
+		}
+		corps_commander = {
+			traits = { old_guard ranger hill_fighter }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1905.1.1
+				date < 1949.1.1
+			}
+		}
+	}
+
+	FEN_date_junnosuke = { # 伊達 順之助 / 張宗援
+		name = "Date Junnosuke"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MAN/Portrait_MAN_Date_Junnosuke.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CHI_date_junnosuke
+			ledger = army 
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}	
+			available = {
+				OR = {
+			    	NOT = { 
+				    	MAN = {
+					    	exists = yes
+			        	}					
+					}	
+					NOT = {
+						has_government = communism
+					}										
+				}
+				date > 1910.1.1
+				date < 1949.1.1						
+			}
+			traits  = {
+				army_commando_1
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected irregulars_officer trickster harsh_leader  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_country_leader = {
+					character = FEN_zhang_zongchang
+					ruling_only = yes
+				}
+			    NOT = { 
+				    MAN = {
+					    exists = yes
+			        }					
+				}	
+				NOT = {
+					has_government = communism
+				}		
+				date > 1910.1.1
+				date < 1949.1.1			
+			}			
+		}
+	}
+
+	FEN_konstantin_nechayev = { # Konstantin Nechayev
+		name = "Konstantin Nechaev"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MAN/portrait_MAN_konstantin_nechayev.dds"
+				small = "GFX_idea_SOV_konstantin_nechayev"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CHI_konstantin_nechayev
+			ledger = army 
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}	
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				SOV = {
+					exists = yes
+					has_government = communism
+				}	
+				NOT = {
+					country_exists = MAN
+				}								
+				date > 1905.1.1
+				date < 1949.1.1
+			}
+			traits  = {
+				army_commando_1
+			}
+		}
+		corps_commander = { 
+			traits = { cavalry_officer war_hero harsh_leader trait_reckless substance_abuser }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				SOV = {
+					exists = yes
+					has_government = communism
+				}
+				NOT = {
+					country_exists = RUS
+				}
+				NOT = {
+					country_exists = MAN
+				}				
+				date > 1905.1.1
+				date < 1949.1.1				
+			}
+		}
+	}
+
+	FEN_ji_jinchun = { # 汲金純, He and Zhang Haipeng were long time friends before joining Fengtian, but he will not join Manchukuo
+		name = "Ji Jinchun"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Ji_Jinchun.dds"
+			}
+		}
+		corps_commander = { # He supported Zhang Xun and went to Beijing personally to support it before being detained by Duan Qirui
+			traits = { irregulars_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date < 1949.1.1
+			}
+		}
+	}
+
+	FEN_bao_wenyue = { # 鲍文樾
+		name = "Bao Wenyue"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Bao_Wenyue.dds"
+			}
+		}
+		corps_commander = { # should Chiang put Xueliang under house arrest, he will defect to Wang Jingwei much to Xueliang's own disappointment
+			traits = { career_officer infantry_officer organizer trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				date > 1926.6.1
+				date < 1960.1.1
+			}			
+		}
+	}
+
+	FEN_guo_xipeng = { # 郭希鹏
+		name = "Guo Xipeng"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Guo_Xipeng.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer } 
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1926.1.1
+				date < 1960.1.1
+			}			
+		}
+	}
+
+	FEN_liu_zhendong = { # 刘震东
+		name = "Liu Zhendong"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Liu_Zhendong.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer organizer trickster } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				date > 1925.1.1
+				date < 1939.1.1
+			}			
+		}
+	}
+
+	FEN_wang_shuchang = { # 王树常
+		name = "Wang Shuchang"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Wang_Shuchang.png"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer organizer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1922.1.1
+				date < 1955.1.1
+			}			
+		}
+	}
+
+	FEN_yu_zhishan = { # 于芷山
+		name = "Yu Zhishan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MAN/Portrait_MAN_Yu_Zhishan.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer irregulars_officer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1920.1.1
+				date < 1951.1.1
+				NOT = {
+					country_exists = MAN
+				}				
+			}			
+		}
+	}
+
+	FEN_zang_shiyi = { # 臧式毅
+		name = "Zang Shiyi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MAN/Portrait_MAN_Zang_Shiyi.dds"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected career_officer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1928.6.4
+				date < 1957.1.1
+				NOT = {
+					country_exists = MAN
+				}				
+			}			
+		}
+	}
+
+	FEN_xing_shilian = { # 邢士廉, he is a Yang Yuting associate
+		name = "Xing Shilian"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Xing_Shilian.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1920.12.4
+				date < 1955.1.1
+			}			
+		}
+	}
+
+	FEN_liu_zhennian = { # 劉珍年
+		name = "Liu Zhennian"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Liu_Zhennian.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_officer} 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {			
+				has_country_leader = {
+					character = FEN_zhang_zongchang
+					ruling_only = yes
+				}
+				date > 1916.1.1
+				date < 1936.1.1
+			}			
+		}
+	}
+
+	FEN_zhang_tingshu = { # 张廷枢
+		name = "Zhang Tingshu"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Zhang_Tingshu.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer trait_reckless trait_engineer fast_planner  } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {			
+				date > 1925.1.1
+				date < 1950.1.1
+			}			
+		}
+	}
+
+	FEN_zhou_yawei = { # 周亚卫
+		name = "Zhou Yawei"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Zhou_Yawei.dds"
+			}
+		}
+		advisor = { 
+			slot = theorist
+			idea_token = FEN_zhou_yawei
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			available = {
+				date > 1927.6.6
+				date < 1960.1.1				
+			}
+			visible = {
+				date > 1927.6.6
+				date < 1960.1.1				
+			}
+			ledger = air 
+			traits = {
+				air_warfare_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		corps_commander = {
+			traits = { } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1927.6.6
+				date < 1960.1.1
+			}			
+		}
+	}
+
+	FEN_feng_yong = { # 冯庸
+		name = "Feng Yong"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Feng_Yong.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = FEN_feng_yong
+			ledger = air
+			allowed = {
+				is_china_or_warlord_no_tt = yes
+			}
+			visible = {
+				date > 1931.9.18
+				date < 1960.1.1
+			}
+			available = {
+				#has_completed_focus = FEN_focus_flying_corps
+			}
+			traits  = {
+				air_air_superiority_1
+			}
+		}		
+		corps_commander = {
+			traits = { organizer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				date > 1931.9.18
+				date < 1960.1.1
+			}			
+		}
+	}
+
+	FEN_yu_zhen = { # 于珍
+		name = "Yu Zhen"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/INT/Portrait_China_Yu_Zhen.dds"
+			}
+		}
+		corps_commander = {
+			# Note to self: Event should involve the embezzlement of funds back in 1918 where he was briefly fired and either you should keep him or not. Also he was reinstated in 1921.
+			traits = { organizer politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {			
+				date > 1921.1.1
+				date < 1959.1.1
+				NOT = {
+					has_country_leader = {
+						# Xueliang does not like him and when Yang Yuting is gone then he is fired
+						character = FEN_zhang_xueliang
+						ruling_only = yes
+					}
+					# He may come back if Japan invades China
+				}
+			}			
+		}
+	}
+
+	FEN_ding_chao = { # 丁超
+		name = "Ding Chao"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHI/WW1/Portrait_China_Ding_Chao.dds"
+			}
+		}
+		# He would become anti-japanese should it be revealed that Qi Xia has collaborated with Japan and Zhang Jinghui defection
+		corps_commander = {
+			traits = { organizer infantry_officer } 
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {			
+				date > 1915.1.1
+				date < 1949.1.1
+				NOT = {
+					country_exists = MAN
+				}				
+			}			
+		}
+	}	
+}

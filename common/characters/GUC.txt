@@ -1,6 +1,6 @@
 characters = {
 	GUC_li_hongzhang = {
-		name = "Li Hongzhang"
+		name = GUC_li_hongzhang
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CHI/DNC/Portrait_China_Li_Hongzhang.dds"
@@ -14,7 +14,7 @@ characters = {
 	}
 
 	GUC_lu_rongting={
-		name="Lu Rongting"
+		name=GUC_lu_rongting
 		portraits={
 			army={
 				large="gfx/leaders/CHI/WW1/Portrait_China_Lu_Rongting.dds"
@@ -39,7 +39,7 @@ characters = {
 	}
 
 	GUC_chen_bingkun = {
-		name = "Chen Bingkun" 
+		name = GUC_chen_bingkun
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CHI/WW1/Portrait_China_Chen_Bingkun.dds"
@@ -64,7 +64,7 @@ characters = {
 	}	
 
 	GUC_long_yun = {
-		name = "Long Yun"
+		name = GUC_long_yun
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_yun_long_yun"

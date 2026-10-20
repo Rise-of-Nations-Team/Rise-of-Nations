@@ -1,37 +1,64 @@
 RON_universal_setup = yes
   
-capital = 670#today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos
-oob = "LAO_1936"
+capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos
+
 set_research_slots = 3
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1900.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 100
+	neutrality = 100
 }
 
-create_country_leader = {
-	name = "Souphanouvong"
-	picture = "Souphanouvong.dds"
-	
-	ideology = marxism
+recruit_character = LAO_sisavang_vong
+
+1914.1.1 = {
+	recruit_character = LAO_phetsarath_ratanavongsa	
 }
 
-create_country_leader = {
-	name = "Sisavang Vong"
-	picture = "Sisavang_Vong.dds"
-	
-	ideology = despotism
+1925.1.1 = {
+	recruit_character = LAO_souvanna_phouma
+	recruit_character = LAO_sisavang_vatthana	
+	set_portraits = {
+		character = LAO_sisavang_vong
+		civilian = {
+			large = GFX_portrait_LAO_sisavang_vong
+			small = GFX_portrait_LAO_sisavang_vong_civilian_small
+		}
+		army = {
+			small = GFX_portrait_LAO_sisavang_vong_military_small
+		}
+	}		
 }
 
-create_country_leader = {
-	name = "Kou Voragong"
-	picture = "Kou_Voragong.dds"
-	
-	ideology = conservatism
+1930.1.1 = {
+	recruit_character = LAO_souphanouvong
+	recruit_character = LAO_kou_abhay
+}
+
+1933.1.1 = {
+	recruit_character = LAO_kou_voravong	
+}
+
+1936.1.1 = {
+	oob = "LAO_1936"	
+	promote_character = LAO_kou_voravong
+}
+
+1939.1.1 = {
+	recruit_character = LAO_kaysone_phomvihane
+}
+
+1949.1.1 = {
+	set_portraits = {
+		character = LAO_souphanouvong
+		civilian={ 
+			large = "gfx/leaders/LAO/CW/Laos_Souphanouvong_Early_CW.dds"			
+		}
+	}	
 }
 
 1960.1.1 = {
@@ -42,17 +69,35 @@ create_country_leader = {
 		elections_allowed = yes
 	}
 	set_popularities = {
-		democratic = 100
+		democratic = 50
+		communism = 30
+		neutrality = 30
 	}
-	create_country_leader = {
-		name = "Souvanna Phouma"
-		picture = "gfx/leaders/LAO/CW/Laos_Souvanna_Phouma.dds"
-		
-		ideology = constitutional_monarchism
-	}
+	promote_character = LAO_souvanna_phouma
+	retire_character = LAO_phetsarath_ratanavongsa		
+	retire_character = LAO_sisavang_vong
+	retire_character = LAO_kou_voravong
+	recruit_character = LAO_khamtai_siphandon
 }
 
-#couldnt find historical fascists
+1970.1.1 = {
+	set_portraits = {
+		character = LAO_kaysone_phomvihane
+		civilian={ 
+			large = "gfx/leaders/LAO/CW/Laos_Kaysone_Phomvihane_Late_CW.dds"			
+		}
+	}	
+
+	set_portraits = {
+		character = LAO_souphanouvong
+		civilian={ 
+			large = "gfx/leaders/LAO/CW/Laos_Souphanouvong_Late_CW.dds"			
+		}
+	}	
+	recruit_character = LAO_choummaly_sayasone
+	retire_character = LAO_kou_abhay
+}
+
 1980.1.1 = {
 	set_politics = {
 		ruling_party = communism
@@ -63,21 +108,18 @@ create_country_leader = {
 	set_popularities = {
 		communism = 100
 	}
-	create_country_leader = {
-		name = "Souphanouvong"
-		picture = "gfx/leaders/LAO/CW/Laos_Souphanouvong.dds"
-		
-		ideology = leninism
-	}
+	promote_character = LAO_kaysone_phomvihane
+	recruit_character = LAO_bounnhang_vorachit
+	retire_character = LAO_sisavang_vatthana
+}
+
+1985.1.1 = {
+	retire_character = LAO_souvanna_phouma
 }
 
 1990.1.1 = {
-	create_country_leader = {
-		name = "Kaysone Phomvihane"
-		picture = "gfx/leaders/LAO/CW/Laos_Kaysone_Phomvihane.dds"
-		
-		ideology = leninism
-	}
+
+	retire_character = LAO_souphanouvong
 }
 
 2000.1.1 = {
@@ -91,12 +133,9 @@ create_country_leader = {
 	set_popularities = {
 		communism = 100
 	}
-	create_country_leader = {
-		name = "Khamtai Siphandon"
-		picture = "gfx/leaders/LAO/MD/Laos_Khamtai_Siphandon.dds"
-		
-		ideology = leninism
-	}
+	promote_character = LAO_khamtai_siphandon
+	retire_character = LAO_kaysone_phomvihane
+
 	create_corps_commander = {
 		name = "Douangchay Phichit"
 		picture = "gfx/leaders/LAO/MD/Douangchay_Phichit.dds"
@@ -104,28 +143,9 @@ create_country_leader = {
 	}
 }
 2008.1.1 = {
-	create_country_leader = {
-		name = "Choummaly Sayasone"
-		picture = "gfx/leaders/LAO/MD/Laos_Choummaly_Sayasone.dds"
-		
-		ideology = marxism
-	}
-}
-
-2016.1.1 = {
-	create_country_leader = {
-		name = "Choummaly Sayasone"
-		picture = "gfx/leaders/LAO/MD/Laos_ChoummalySayasone.dds"
-		
-		ideology = leninism
-	}
+	promote_character = LAO_choummaly_sayasone
 }
 
 2020.1.1 = {
-	create_country_leader = {
-		name = "Bounnhang Vorachit"
-		picture = "gfx/leaders/LAO/MD/LAO_Bounnhang_Vorachit_Marxism.dds"
-		
-		ideology = marxism
-	}
+	promote_character = LAO_bounnhang_vorachit
 }

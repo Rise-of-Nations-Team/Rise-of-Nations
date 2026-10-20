@@ -10,53 +10,89 @@ set_stability = 0.5
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1997.1.1"
+	last_election = "1900.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 40
-	democratic = 56
+	neutrality = 56
+	democratic = 40
 	communism = 4
 }
 
-create_country_leader = {
-	name = "Tāufaʻahau Tupou IV"
-	picture = "gfx/leaders/TON/CW/Tonga_Taufa_ahauTupouIV.dds"
-	ideology = despotism
-	expire = "2006.9.10"
+recruit_character = TON_siaosi_tupou_ii
+
+1910.1.1 = {
+	recruit_character = TON_salote_tupou_iii
 }
 
-2006.9.10 = {
-	create_country_leader = {
-		name = "George Tupou V"
-		picture = "gfx/leaders/TON/MD/George_Tupou_V.dds"
-		ideology = despotism
-		expire = "2012.3.18"
+1919.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1918.4.5"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	retire_character = TON_siaosi_tupou_ii
+	promote_character = TON_salote_tupou_iii	
+}
+
+1930.1.1 = {
+	recruit_character = TON_taufaahau_tupou_iv
+}
+
+1933.1.1 = {
+	set_portraits = {
+		character = TON_salote_tupou_iii	
+		civilian={ 
+			large = "gfx/leaders/TON/Portrait_TON_Salote_Tupou_III.dds"			
+		}
 	}
 }
+
+1942.1.1 = {
+	recruit_character = TON_fatafehi_tuipelehake
+}
+
+1949.1.1 = {
+	recruit_character = TON_siaosi_vaea	
+}
+
+1970.1.1 = {
+	retire_character = TON_salote_tupou_iii	
+	promote_character = TON_taufaahau_tupou_iv	
+	recruit_character = TON_siaosi_tupou_v
+	recruit_character = TON_samiuela_akilisi_pohiva
+}
+
+1990.1.1 = {
+	recruit_character = TON_ahoeitu_tupou_vi	
+}
+
+2000.1.1 = {
+	oob = "TON_2000"	
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1997.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	retire_character = TON_fatafehi_tuipelehake
+}
+
 2008.1.1 = {
-	create_country_leader = {
-		name = "Feleti Sevele"
-		picture = "gfx/leaders/TON/MD/Tonga_Feleti_Sevele.dds"
-		
-		ideology = despotism
-	}
+	promote_character = TON_siaosi_tupou_v	
+	retire_character = TON_taufaahau_tupou_iv
+	retire_character = TON_siaosi_vaea	
 }
-2012.3.18 = {
-	create_country_leader = {
-		name = "Tupou VI"
-		picture = "gfx/leaders/TON/MD/Tupou_VI.dds"
-		ideology = despotism
-	}
+
+2013.1.1 = {
+	retire_character = TON_siaosi_tupou_v	
+	promote_character = TON_ahoeitu_tupou_vi	
+	promote_character = TON_samiuela_akilisi_pohiva	
 }
 
 2020.1.1 = {
-	create_country_leader = {
-		name = "Tupou VI"
-		picture = "gfx/leaders/TON/MD/TON_Tupou_VI_Despotism.dds"
-		
-		ideology = despotism
-	}
+
 }

@@ -278,7 +278,7 @@ characters={
 	}
 
 	EST_friedrich_kaarle={
-		name=FIN_friedrich_kaarle
+		name=FIN_fredrik_kaarle_i
 		portraits={
 			civilian={
 				large="gfx/leaders/EST/portrait_EST_frederik_karl.dds"
