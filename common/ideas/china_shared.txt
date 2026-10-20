@@ -155,31 +155,11 @@ ideas = {
 
 	}
 
-	political_advisor = {
-
-	}
 	
-	army_chief = {
 	
-	}
 	
-	navy_chief = {
-		
 
-	}
-	
-	air_chief = {
-	
-	}
 
-	high_command = {
-
-	
-	}
-
-	theorist = {
-
-	}
 
 	naval_manufacturer = { 
 		
