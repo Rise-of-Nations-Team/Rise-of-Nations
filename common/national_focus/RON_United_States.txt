@@ -12968,7 +12968,7 @@ add_to_variable = { a395democratic_support = 10 }
 	
 	focus = {
 		id = USAIW_red_unions
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 1
 		y = 0
 		cost = 10
@@ -17240,7 +17240,7 @@ add_to_variable = { a374republican_support = 10 }
 
 	focus = {
 		id = USA_Mobilize_the_Auto_Industry
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = USA_Liberal_II }
 		x = 13
 		y = 9
@@ -18826,7 +18826,7 @@ add_to_variable = { a368republican_support = 10 }
 
 	focus = {
 		id = USA_Motorization_Effort
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		mutually_exclusive = { focus = USA_Infantry_Division_Effort }
 		mutually_exclusive = { focus = USA_Mechanized_Focus }
 		#mutually_exclusive = { focus = USA_Brazilians }
@@ -18863,7 +18863,7 @@ add_to_variable = { a368republican_support = 10 }
 
 	#focus = {
 	#	id = USA_Motorized_Artillery_Doctrine
-	#	icon = GFX_goal_WIP
+	#	icon = GFX_focus_PLACEHOLDER
 	#	mutually_exclusive = { focus = USA_Subsidies_for_Detroit }
 	#	prerequisite = { focus = USA_Motorization_Effort }
 	#	x = 49
@@ -18960,7 +18960,7 @@ add_to_variable = { a368republican_support = 10 }
 
 	focus = {
 		id = USA_Motorized_Production_Effort
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = USA_Subsidies_for_Detroit focus = USA_Support_Company_Focus }
 		x = 50
 		y = 8
@@ -19027,7 +19027,7 @@ add_to_variable = { a368republican_support = 10 }
 
 	focus = {
 		id = USA_APC_Doctrine
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = USA_Mechanized_Focus }
 		x = 53
 		y = 6
@@ -19575,7 +19575,7 @@ add_to_variable = { a368republican_support = 10 }
 
 	focus = {
 		id = USA_Resource_Independence
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = USA_Rationing }
 		x = 42
 		y = 6
@@ -19606,7 +19606,7 @@ add_to_variable = { a368republican_support = 10 }
 
 	focus = {
 		id = USA_Rationing
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		prerequisite = { focus = USA_Thousand_Divisions_Plan focus = USA_War_Mobilization }
 		x = 42
 		y = 5
@@ -20348,7 +20348,7 @@ add_to_variable = { a368republican_support = 10 }
 
 	focus = {
 		id = USA_Modernize_the_Armor_Force
-		icon = GFX_focus_generic_license_production #GFX_goal_WIP 
+		icon = GFX_focus_generic_license_production #GFX_focus_PLACEHOLDER 
 		icon = GFX_goal_generic_army_tanks
 		#prerequisite = { focus = USA_Work_On_Modern_Land_Doctrines }
 		prerequisite = { focus = USA_Lessons_on_Mobile_Warfare }
@@ -20444,7 +20444,7 @@ add_to_variable = { a368republican_support = 10 }
 
 	#focus = {
 	#	id = USA_Motorized_Artillery_Brigades
-	#	icon = GFX_goal_WIP
+	#	icon = GFX_focus_PLACEHOLDER
 	#	prerequisite = { focus = USA_Take_Advantage_of_US_Industrial_Superiority }
 	#	x = 30
 	#	y = 9
@@ -33477,7 +33477,7 @@ add_to_variable = { a368republican_support = 10 }
 	}
 	focus = {
 		id = USA_WW2_motorisation_efforts
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		relative_position_id = USA_WW2_state_of_the_military
 		x = 6
 		y = 3
@@ -38622,7 +38622,7 @@ focus = {
 #Focus for Celler–Kefauver Act
 focus = {
 	id = USA_CW_cellerkefauver_act
-	icon = GFX_goal_WIP ##Unfortunately, the tool could not find your icon in the game's files
+	icon = GFX_focus_PLACEHOLDER ##Unfortunately, the tool could not find your icon in the game's files
 	x = 101
 	y = 6
 	cost = 10
@@ -42790,7 +42790,7 @@ add_political_power = 312
 	#Focus for trickle down economics
 	focus = {
 		id = MD_TRUMP_USA_trickle_down_economics
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 44
 		y = 4
 		cost = 10
@@ -42807,7 +42807,7 @@ add_political_power = 312
 	#Focus for Economic boom
 	focus = {
 		id = MD_TRUMP_USA_economic_boom
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 43
 		y = 5
 		cost = 10
@@ -43173,7 +43173,7 @@ add_stability = 0.03
 	#Focus for Polarize the public
 	focus = {
 		id = MD_TRUMP_USA_polarize_the_public
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 44
 		y = 9
 		cost = 3
@@ -43279,7 +43279,7 @@ add_stability = 0.03
 	#Focus for Last flight out
 	focus = {
 		id = MD_TRUMP_USA_last_flight_out
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 13
 		y = 6
 		cost = 10
@@ -43296,7 +43296,7 @@ add_stability = 0.03
 	#Focus for Increase troop presence
 	focus = {
 		id = MD_TRUMP_USA_increase_troop_presence
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 11
 		y = 5
 		cost = 10
@@ -43321,7 +43321,7 @@ add_stability = 0.03
 	#Focus for The stalemate continues
 	focus = {
 		id = MD_TRUMP_USA_the_stalemate_continues
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 12
 		y = 7
 		cost = 10
@@ -43348,7 +43348,7 @@ add_stability = 0.03
 	#Focus for Send china federal aid
 	focus = {
 		id = MD_TRUMP_USA_send_china_federal_aid
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 28
 		y = 6
 		cost = 10
@@ -43366,7 +43366,7 @@ add_stability = 0.03
 	#Focus for Abandon Afghanistan
 	focus = {
 		id = MD_TRUMP_USA_abandon_afghanistan
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 13
 		y = 5
 		cost = 10
@@ -43398,7 +43398,7 @@ add_stability = 0.03
 	#Focus for Continue the one china policy
 	focus = {
 		id = MD_TRUMP_USA_continue_the_one_china_policy
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 28
 		y = 4
 		cost = 10
@@ -43419,7 +43419,7 @@ add_stability = 0.03
 	#Focus for Lift chinese embargos
 	focus = {
 		id = MD_TRUMP_USA_lift_chinese_embargos
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 28
 		y = 5
 		cost = 10
@@ -43461,7 +43461,7 @@ add_stability = 0.03
 	#Focus for NATO strong and united
 	focus = {
 		id = MD_TRUMP_USA_nato_strong_and_united
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 20
 		y = 7
 		cost = 10
@@ -43515,7 +43515,7 @@ add_stability = 0.03
 	#Focus for China trade deal
 	focus = {
 		id = MD_TRUMP_USA_china_trade_deal
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 26
 		y = 7
 		cost = 10
@@ -43654,7 +43654,7 @@ add_stability = 0.03
 	#Focus for Recognize Jerusalem as capital of Israel
 	focus = {
 		id = MD_TRUMP_USA_recognize_jerusalem_as_capital_of_israel
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 1
 		y = 4
 		cost = 10
@@ -43678,7 +43678,7 @@ add_stability = 0.03
 	#Focus for The Middle East
 	focus = {
 		id = MD_TRUMP_USA_the_middle_east
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 6
 		y = 3
 		cost = 10
@@ -43692,7 +43692,7 @@ add_stability = 0.03
 	#Focus for Europe
 	focus = {
 		id = MD_TRUMP_USA_europe
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 18
 		y = 3
 		cost = 10
@@ -43714,7 +43714,7 @@ add_stability = 0.03
 	#Focus for Asia
 	focus = {
 		id = MD_TRUMP_USA_asia
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 26
 		y = 3
 		cost = 10
@@ -43736,7 +43736,7 @@ add_stability = 0.03
 	#Focus for Begin the trade war
 	focus = {
 		id = MD_TRUMP_USA_begin_the_trade_war
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 24
 		y = 4
 		cost = 10
@@ -43757,7 +43757,7 @@ add_stability = 0.03
 	#Focus for Persian Gulf Crisis
 	focus = {
 		id = MD_TRUMP_USA_persian_gulf_crisis
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 6
 		y = 4
 		cost = 10
@@ -43811,7 +43811,7 @@ add_stability = 0.03
 	##Focus for debug
 	#focus = {
 	#	id = MD_TRUMP_USA_debug
-	#	icon = GFX_goal_WIP
+	#	icon = GFX_focus_PLACEHOLDER
 	#	x = 83
 	#	y = 12
 	#	cost = 10
@@ -43824,7 +43824,7 @@ add_stability = 0.03
 	#Focus for Afganastan War
 	focus = {
 		id = MD_TRUMP_USA_afganastan_war
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 12
 		y = 4
 		cost = 10
@@ -43842,7 +43842,7 @@ add_stability = 0.03
 	#Focus for Expand NATO
 	focus = {
 		id = MD_TRUMP_USA_expand_nato
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 16
 		y = 4
 		cost = 10
@@ -43862,7 +43862,7 @@ add_stability = 0.03
 	#Focus for Empower Nato
 	focus = {
 		id = MD_TRUMP_USA_empower_nato
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 20
 		y = 4
 		cost = 10
@@ -43885,7 +43885,7 @@ add_stability = 0.03
 	#Focus for Expand our air presence
 	focus = {
 		id = MD_TRUMP_USA_expand_our_air_presence
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 7
 		y = 6
 		cost = 10
@@ -43906,7 +43906,7 @@ add_stability = 0.03
 	#Focus for Expand our troop presence
 	focus = {
 		id = MD_TRUMP_USA_expand_our_troop_presence
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 9
 		y = 6
 		cost = 10
@@ -43927,7 +43927,7 @@ SIG = { diplomatic_relation = {
 	#Focus for Declartion of war
 	focus = {
 		id = MD_TRUMP_USA_declartion_of_war
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 8
 		y = 7
 		cost = 10
@@ -43964,7 +43964,7 @@ type = annex_everything
 	#Focus for Aim for the president
 	focus = {
 		id = MD_TRUMP_USA_aim_for_the_president
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 3
 		y = 6
 		cost = 10
@@ -43984,7 +43984,7 @@ type = annex_everything
 	#Focus for Force members to pay their fair share
 	focus = {
 		id = MD_TRUMP_USA_force_members_to_pay_their_fair_share
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 19
 		y = 5
 		cost = 10
@@ -44006,7 +44006,7 @@ type = annex_everything
 	#Focus for Review Our Options
 	focus = {
 		id = MD_TRUMP_USA_review_our_options
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 16
 		y = 5
 		cost = 10
@@ -44023,7 +44023,7 @@ type = annex_everything
 	#Focus for Send the invitations
 	focus = {
 		id = MD_TRUMP_USA_send_the_invitations
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 15
 		y = 6
 		cost = 10
@@ -44046,7 +44046,7 @@ type = annex_everything
 	#Focus for Brazil's Special Status
 	focus = {
 		id = MD_TRUMP_USA_brazils_special_status
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 17
 		y = 6
 		cost = 10
@@ -44065,7 +44065,7 @@ type = annex_everything
 	#Focus for Increase Military presence in nato
 	focus = {
 		id = MD_TRUMP_USA_increase_military_presence_in_nato
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 21
 		y = 5
 		cost = 10
@@ -44086,7 +44086,7 @@ type = annex_everything
 	#Focus for Aid Isreal
 	focus = {
 		id = MD_TRUMP_USA_aid_isreal
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 1
 		y = 5
 		cost = 10
@@ -44107,7 +44107,7 @@ type = annex_everything
 	#Focus for A wall for isreal
 	focus = {
 		id = MD_TRUMP_USA_a_wall_for_isreal
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 1
 		y = 6
 		cost = 10
@@ -44143,7 +44143,7 @@ add_building_construction = {
 	#Focus for A clear message
 	focus = {
 		id = MD_TRUMP_USA_a_clear_message
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 5
 		y = 6
 		cost = 10
@@ -44164,7 +44164,7 @@ add_building_construction = {
 	#Focus for Expand our intelligence
 	focus = {
 		id = MD_TRUMP_USA_expand_our_intelligence
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 4
 		y = 7
 		cost = 10
@@ -44181,7 +44181,7 @@ add_building_construction = {
 	#Focus for A clear stance on foreign affairs
 	focus = {
 		id = MD_TRUMP_USA_a_clear_stance_on_foreign_affairs
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 12
 		y = 8
 		cost = 10
@@ -44225,7 +44225,7 @@ add_building_construction = {
 	#Focus for Look to the middle east
 	focus = {
 		id = MD_TRUMP_USA_look_to_the_middle_east
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 16
 		y = 7
 		cost = 10
@@ -44255,7 +44255,7 @@ add_building_construction = {
 	#Focus for NATO against china
 	focus = {
 		id = MD_TRUMP_USA_nato_against_china
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 20
 		y = 6
 		cost = 10
@@ -44283,7 +44283,7 @@ add_building_construction = {
 	#Focus for Isreal our greatist ally
 	focus = {
 		id = MD_TRUMP_USA_isreal_our_greatist_ally
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 1
 		y = 7
 		cost = 10
@@ -44300,7 +44300,7 @@ add_building_construction = {
 	#Focus for Send our demands
 	focus = {
 		id = MD_TRUMP_USA_send_our_demands
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 11
 		y = 6
 		cost = 10
@@ -44322,7 +44322,7 @@ add_building_construction = {
 	#Focus for Begin tarrifs
 	focus = {
 		id = MD_TRUMP_USA_begin_tarrifs
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 24
 		y = 6
 		cost = 10
@@ -44359,7 +44359,7 @@ add_building_construction = {
 	#Focus for Put down political opponents
 	focus = {
 		id = MD_TRUMP_USA_put_down_political_opponents
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 35
 		y = 11
 		cost = 10
@@ -44378,7 +44378,7 @@ add_building_construction = {
 	#Focus for Partisan politics
 	focus = {
 		id = MD_TRUMP_USA_partisan_politics
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 46
 		y = 7
 		cost = 3
@@ -44560,7 +44560,7 @@ add_building_construction = {
 	}
 focus = {
 		id = MD_TRUMP_USA_the_second_civil_war
-		icon = GFX_goal_WIP  
+		icon = GFX_focus_PLACEHOLDER  
 		x = 39
 		y = 11
 		cost = 4
@@ -44599,7 +44599,7 @@ focus = {
 }
 focus = {
 		id = MD_TRUMP_USA_a_house_divided
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 37
 		y = 12
 		cost = 4
@@ -44632,7 +44632,7 @@ focus = {
 } 
 focus = {
 		id = MD_TRUMP_USA_trumps_path_continues
-		icon = GFX_goal_WIP  
+		icon = GFX_focus_PLACEHOLDER  
 		x = 36
 		y = 13
 		cost = 4
@@ -44669,7 +44669,7 @@ focus = {
 }
 focus = {
 		id = MD_TRUMP_USA_the_new_washington
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 38
 		y = 13
 		cost = 4
@@ -44704,7 +44704,7 @@ focus = {
 
 focus = {
 		id = MD_TRUMP_USA_the_show_goes_on
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 41
 		y = 12
 		cost = 4
@@ -44730,7 +44730,7 @@ focus = {
 }
 focus = {
 		id = MD_TRUMP_USA_the_american_ceasear
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 40
 		y = 13
 		cost = 4
@@ -44750,7 +44750,7 @@ focus = {
 }
 focus = {
 		id = MD_TRUMP_USA_take_a_back_seat
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 42
 		y = 13
 		cost = 4
@@ -44770,7 +44770,7 @@ focus = {
 }
 focus = {
 		id = MD_TRUMP_USA_finish_the_civil_war
-		icon = GFX_goal_WIP
+		icon = GFX_focus_PLACEHOLDER
 		x = 39
 		y = 14
 		cost = 4
@@ -44793,7 +44793,7 @@ focus = {
 #biden 
 focus = {
 	id = MD_TRUMP_USA_the_second_civil_war_biden
-	icon = GFX_goal_WIP  
+	icon = GFX_focus_PLACEHOLDER  
 	x = 49
 	y = 11
 	cost = 4
@@ -44824,7 +44824,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_riding_with_biden
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 47
 	y = 12
 	cost = 4
@@ -44849,7 +44849,7 @@ focus = {
 } 
 focus = {
 	id = MD_TRUMP_USA_biden_in_charge
-	icon = GFX_goal_WIP  
+	icon = GFX_focus_PLACEHOLDER  
 	x = 46
 	y = 13
 	cost = 4
@@ -44874,7 +44874,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_let_military_do_its_job
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 48
 	y = 13
 	cost = 4
@@ -44909,7 +44909,7 @@ focus = {
 
 focus = {
 	id = MD_TRUMP_USA_communist_plot
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 51
 	y = 12
 	cost = 4
@@ -44933,7 +44933,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_crush_the_traitors
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 50
 	y = 13
 	cost = 4
@@ -44956,7 +44956,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_new_communist_leader
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 52
 	y = 13
 	cost = 4
@@ -44974,7 +44974,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_finish_the_civil_war_biden
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 49
 	y = 14
 	cost = 4
@@ -44994,7 +44994,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_rebuilding_our_country
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 45
 	y = 15
 	cost = 4
@@ -45015,7 +45015,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_trumps_fallen_empire
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 36
 	y = 16
 	cost = 4
@@ -45046,7 +45046,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_restore_democracy
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 36
 	y = 17
 	cost = 4
@@ -45080,7 +45080,7 @@ name = "AFP"
 }
 focus = {
 	id = MD_TRUMP_back_to_normalcy
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 36
 	y = 18
 	cost = 4
@@ -45102,7 +45102,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_the_new_king
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 38
 	y = 16
 	cost = 4
@@ -45134,7 +45134,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_one_nation
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 40
 	y = 16
 	cost = 4
@@ -45165,7 +45165,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_great_american_wall
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 42
 	y = 16
 	cost = 4
@@ -45215,7 +45215,7 @@ focus = {
 
 focus = {
 	id = MD_TRUMP_USA_america_is_back
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 45
 	y = 19
 	cost = 4
@@ -45233,7 +45233,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_bidens_victory
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 45
 	y = 16
 	cost = 4
@@ -45255,7 +45255,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_military_in_charge
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 48
 	y = 16
 	cost = 4
@@ -45277,7 +45277,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_liberals_were_wrong
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 50
 	y = 16
 	cost = 5
@@ -45301,7 +45301,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_crush_imperalism
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 52
 	y = 16
 	cost = 5
@@ -45335,7 +45335,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_soros_in_charge
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 54
 	y = 16
 	cost = 5
@@ -45357,7 +45357,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_obedience
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 54
 	y = 17
 	cost = 5
@@ -45393,7 +45393,7 @@ level = 3
 }
 focus = {
 	id = MD_TRUMP_USA_soros_state
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 54
 	y = 18
 	cost = 5
@@ -45419,7 +45419,7 @@ level = 5
 }
 focus = {
 	id = MD_TRUMP_USA_begin_reprerations
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 52
 	y = 17
 	cost = 5
@@ -45438,7 +45438,7 @@ focus = {
 
 focus = {
 	id = MD_TRUMP_USA_abolish_capitalism
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 52
 	y = 18
 	cost = 5
@@ -45462,7 +45462,7 @@ level = 5
 }
 focus = {
 	id = MD_TRUMP_USA_abolish_the_state
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 50
 	y = 17
 	cost = 5
@@ -45489,7 +45489,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_abolish_economics
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 50
 	y = 18
 	cost = 5
@@ -45510,7 +45510,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_bring_back_american_excepatnalism
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 48
 	y = 17
 	cost = 4
@@ -45538,7 +45538,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_secure_the_elections
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 48
 	y = 18
 	cost = 4
@@ -45556,7 +45556,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_reestablish_democracy
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 44
 	y = 17
 	cost = 4
@@ -45590,7 +45590,7 @@ name = "AFP"
 }
 focus = {
 	id = MD_TRUMP_USA_start_of_first_term
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 44
 	y = 18
 	cost = 4
@@ -45609,7 +45609,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_melt_the_titan_bases_in_antartica
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 46
 	y = 17
 	cost = 4
@@ -45634,7 +45634,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_form_the_sea_empire
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 46
 	y = 18
 	cost = 4
@@ -45666,7 +45666,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_confederate_america
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 42
 	y = 17
 	cost = 4
@@ -45688,7 +45688,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_rejoin_nato
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 42
 	y = 18
 	cost = 4
@@ -45705,7 +45705,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_under_god
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 40
 	y = 17
 	cost = 4
@@ -45740,7 +45740,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_indivisible_kingdom
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 40
 	y = 18
 	cost = 4
@@ -45763,7 +45763,7 @@ every_country = {
 }
 focus = {
 	id = MD_TRUMP_USA_prepare_for_the_crusades
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 38
 	y = 17
 	cost = 4
@@ -45784,7 +45784,7 @@ focus = {
 }
 focus = {
 	id = MD_TRUMP_USA_crusade_into_mexico
-	icon = GFX_goal_WIP
+	icon = GFX_focus_PLACEHOLDER
 	x = 38
 	y = 18
 	cost = 4 
