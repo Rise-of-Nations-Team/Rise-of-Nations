@@ -1,19 +1,13 @@
 RON_universal_setup = yes
 capital = 276
+
 oob = "CAN_1900"
-if = {
-	limit = {
-		has_start_date < 1945.01.01
-	}
-	set_cosmetic_tag = CAN_DOMINION
-}
 
 if = {
 	limit = {
-		has_start_date > 1944.01.01
 		has_start_date < 1966.01.01
 	}
-	set_cosmetic_tag = CAN_OLD
+	set_cosmetic_tag = CAN_UK
 }
 
 add_ideas = {
@@ -73,7 +67,7 @@ set_popularities = {
 }
 
 1905.1.1 = {
- recruit_character = CAN_r_b_bennett
+	recruit_character = CAN_r_b_bennett
 }
 recruit_character = CAN_george_volkoff
 

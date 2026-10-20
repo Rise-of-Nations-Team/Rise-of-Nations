@@ -1,0 +1,168 @@
+RON_universal_setup = yes
+
+
+capital = 328
+
+add_ideas = {
+	#PRC_government_corruption
+	CHI_ineffective_bureaucracy_warlord
+}
+
+set_country_flag = chinese_warlord
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1900.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 30
+	neutrality = 70
+}
+
+recruit_character = FEN_zhang_zuolin
+recruit_character = FEN_guo_songling
+recruit_character = FEN_jiang_dengxuan
+recruit_character = FEN_zhang_zongchang
+recruit_character = FEN_zhang_zuoxiang
+recruit_character = FEN_tang_yulin
+recruit_character = FEN_wu_junsheng
+recruit_character = FEN_zhang_jinghui
+recruit_character = FEN_zhang_haipeng
+recruit_character = FEN_jixing
+recruit_character = FEN_bao_guiqing
+recruit_character = FEN_sun_liechen
+recruit_character = FEN_ma_longtan
+recruit_character = FEN_wan_fulin
+recruit_character = FEN_konstantin_nechayev
+recruit_character = FEN_ji_jinchun
+
+1905.1.1 = {
+	recruit_character = FEN_yang_yuting
+	recruit_character = FEN_ma_zhanshan
+	recruit_character = FEN_li_jinglin
+	recruit_character = FEN_date_junnosuke
+}
+
+1910.1.1 = {
+	recruit_character = FEN_zhang_xueliang
+	recruit_character = FEN_xu_yuanquan
+	recruit_character = FEN_feng_zhanhai
+	recruit_character = FEN_yu_zhishan
+	recruit_character = FEN_liu_zhennian
+	recruit_character = FEN_ding_chao
+}
+
+1919.1.1 = {
+	add_ideas = boxer_protocols
+	add_ideas = boxer_protocols_visible
+	country_lock_all_division_template = yes
+	recruit_character = FEN_bao_wenyue
+	recruit_character = FEN_guo_xipeng
+	recruit_character = FEN_liu_zhendong
+	recruit_character = FEN_wang_shuchang
+	recruit_character = FEN_xing_shilian
+	recruit_character = FEN_zhang_tingshu
+	recruit_character = FEN_yu_zhen
+	set_portraits = {
+		character = FEN_zhang_zuolin
+		civilian={ 
+			large = "gfx/leaders/CHI/INT/Portrait_China_Zhang_Zuolin_INT.dds"			
+		}
+		army={ 
+			large = "gfx/leaders/CHI/INT/Portrait_China_Zhang_Zuolin_INT.dds"			
+		}		
+	}	
+}
+
+1925.1.1 = {
+	retire_character = FEN_sun_liechen
+	recruit_character = FEN_zang_shiyi
+	recruit_character = FEN_zhou_yawei
+}
+
+1930.1.1 = {
+	retire_character = FEN_zhang_zuolin
+	retire_character = FEN_guo_songling
+	retire_character = FEN_yang_yuting
+	retire_character = FEN_jiang_dengxuan
+	retire_character = FEN_wu_junsheng
+	recruit_character = FEN_feng_yong
+}
+
+1933.1.1 = {
+	set_air_oob = "FEN_1936_air_bba"
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1928.6.4"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	remove_ideas = boxer_protocols
+	remove_ideas = boxer_protocols_visible
+	country_lock_all_division_template = no
+	retire_character = FEN_zhang_zongchang
+	retire_character = FEN_li_jinglin
+	set_portraits = {
+		character = FEN_zhang_xueliang
+		army={
+			large="GFX_portrait_chi_zhang_xueliang"
+			small="GFX_idea_CHI_zhang_xueliang"
+		}	
+	}	
+}
+
+1936.1.1 = {
+	oob = "YUN_1936"	
+	set_air_oob = "FEN_1936_air_bba"
+	set_technology = {
+		infantry_weapons = 1
+	}
+	retire_character = FEN_bao_guiqing
+	retire_character = FEN_liu_zhennian
+}
+
+1939.1.1 = {
+	retire_character = FEN_tang_yulin
+	retire_character = FEN_ma_longtan
+	retire_character = FEN_liu_zhendong
+}
+
+1949.1.1 = {
+	retire_character = FEN_zhang_zuoxiang
+	retire_character = FEN_zhang_haipeng
+	retire_character = FEN_jixing
+	retire_character = FEN_xu_yuanquan
+	retire_character = FEN_wan_fulin
+	retire_character = FEN_date_junnosuke
+	retire_character = FEN_konstantin_nechayev
+	retire_character = FEN_ji_jinchun
+	retire_character = FEN_ding_chao
+}
+
+1955.1.1 = {
+	retire_character = FEN_ma_zhanshan
+	retire_character = FEN_wang_shuchang
+	retire_character = FEN_yu_zhishan
+	retire_character = FEN_xing_shilian
+	retire_character = FEN_zhang_tingshu
+}
+
+1960.1.1 = {
+	retire_character = FEN_zhang_jinghui
+	retire_character = FEN_bao_wenyue
+	retire_character = FEN_guo_xipeng
+	retire_character = FEN_zang_shiyi
+	retire_character = FEN_zhou_yawei
+	retire_character = FEN_feng_yong
+	retire_character = FEN_yu_zhen
+}
+
+1970.1.1 = {
+	retire_character = FEN_feng_zhanhai
+}
+
+1975.1.1 = {
+	retire_character = FEN_zhang_xueliang
+}

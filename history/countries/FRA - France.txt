@@ -34,6 +34,66 @@ add_ideas = {
 	foreign_volunteers
 }
 
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	early_infantry_weapons_1900 = 1
+	RON_Support_Innovations = 1	
+	RON_Basic_Light_Field_Gun = 1
+	jungletroops = 1
+	desertinfantry_at = 1
+	marines = 1
+	basic_train = 1
+	steam_train_1 = 1
+	armored_train_0 = 1
+	rail_infrastructure_0 = 1
+	horses = 1
+	ww1_motorised_infantry = 1
+	RON_Trained_Horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+	RON_Early_Machine_Tools = 1
+	RON_Early_Production = 1
+	RON_Early_Construction = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_torpedo = 1
+			mtg_ww1_destroyer1 = 1
+			early_ship_hull_dreadnought = 1
+			early_ship_hull_submarine_ww1 = 1
+			mtg_transport = 1
+		}
+	else = {
+		set_technology = {
+			ww1_battleship0 = 1
+			ww1_battleship1 = 1
+			ww1_heavy_cruiser0 = 1
+			ww1_light_cruiser0 = 1
+			ww1_destroyer0 = 1
+			ww1_destroyer1 = 1
+			ww1_submarine0 = 1
+			ww1_moduleMTG_mines = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_military_balloons = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
+}
+
 if = {
 	limit = {
 		has_start_date < 1919.1.1
@@ -73,6 +133,20 @@ if = {
 	}
 	add_ideas = {
 		FRA_Colonial_Holdings
+	}
+}
+
+if = {
+	limit = {
+		has_start_date < 1960.1.1
+	}
+	set_autonomy = {
+		target = TUN
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = TUN
 	}
 }
 
@@ -187,7 +261,6 @@ recruit_character = FRA_charles_touchard
 recruit_character = FRA_georges_durandviel
 recruit_character = FRA_paul_auvert
 recruit_character = FRA_louis_franchet_d_esperey
-recruit_character = FRA_maurice_sairrail
 recruit_character = FRA_emile_fayolle
 recruit_character = FRA_adolphe_guillaumat
 recruit_character = FRA_noel_edouard_de_castelnau
@@ -230,9 +303,9 @@ recruit_character = FRA_guillaume_venard
 recruit_character = FRA_nicolas_casanova
 recruit_character = FRA_benoit_durieux
 recruit_character = FRA_eric_bellot_des_minieres
-recruit_character = FRA_jeanfrederic_lenoble
+recruit_character = FRA_jean_frederic_lenoble
 recruit_character = FRA_eric_maury
-recruit_character = FRA_jeanfrancois_lafont_rapnouil
+recruit_character = FRA_jean_francois_lafont_rapnouil
 recruit_character = FRA_pierre_liot_de_nortbecourt
 recruit_character = FRA_jean_maurin
 recruit_character = FRA_christophe_prazuck
@@ -241,7 +314,7 @@ recruit_character = FRA_denis_beraud
 recruit_character = FRA_bruno_thouvenin
 recruit_character = FRA_francois_rebourd
 recruit_character = FRA_louismichel_guillaume
-recruit_character = FRA_charleshenri_du_che
+recruit_character = FRA_charles_henri_du_che
 recruit_character = FRA_pascal_ausseur
 recruit_character = FRA_emmanuel_de_oliveira
 recruit_character = FRA_jeanbaptiste_dupuis
@@ -443,7 +516,7 @@ set_country_flag = briand_president_du_conseil
 
 	recruit_character = FRA_aubert_frere
 	recruit_character = FRA_marcel_garchery
-	recruit_character = FRA_edouardjean_requin
+	recruit_character = FRA_edouard_jean_requin
 
 }
 
@@ -549,7 +622,7 @@ set_country_flag = briand_president_du_conseil
 	recruit_character = FRA_georges_blanchard
 	recruit_character = FRA_paul_legentilhomme
 	recruit_character = FRA_jean_flavigny
-	recruit_character = FRA_charlesmarie_conde
+	recruit_character = FRA_charles_marie_conde
 	recruit_character = FRA_napoleon_vi
 	recruit_character = FRA_benoit_frachon
 }
@@ -1353,10 +1426,10 @@ set_country_flag = briand_president_du_conseil
 	retire_character = FRA_jean_flavigny
 	retire_character = FRA_gaston_billotte
 	retire_character = FRA_gabriel_bougrain
-	retire_character = FRA_charlesmarie_conde
+	retire_character = FRA_charles_marie_conde
 	retire_character = FRA_marcel_garchery
 	retire_character = FRA_pierre_billotte
-	retire_character = FRA_edouardjean_requin
+	retire_character = FRA_edouard_jean_requin
 	retire_character = FRA_robertauguste_touchon	
 
     promote_character = FRA_vincent_auriol

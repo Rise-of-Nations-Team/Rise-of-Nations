@@ -24,30 +24,12 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 51
-	neutrality = 49
+	democratic = 80
+	neutrality = 10
+	fascism = 10
 }
 
-create_country_leader = {
-	name = "Foreign Legations"
-	picture = "gfx/leaders/DEL/Foreign_Legations.dds"
-	
-	ideology = liberalism
-}
-
-create_country_leader = {
-	name = "Foreign Legations"
-	picture = "gfx/leaders/DEL/Foreign_Legations.dds"
-	
-	ideology = nonaligned_liberalism
-}
-
-create_field_marshal = {
-	name = "Claude Maxwell MacDonald"
-	picture = "gfx/leaders/DEL/Claude_Maxwell_MacDonald.dds"
-	traits = {
-		defensive_doctrine
-		organisational_leader
-	}
-	skill = 5
-}
+recruit_character = DEL_foreign_legations
+recruit_character = DEL_triads_organization
+recruit_character = DEL_claude_macdonald
+recruit_character = DEL_lu_xun

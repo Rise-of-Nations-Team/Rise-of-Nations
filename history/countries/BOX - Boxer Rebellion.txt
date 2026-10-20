@@ -18,6 +18,11 @@ add_ideas = {
 	BOX_xenophobic_zeal
 }
 
+set_technology = {
+  tech_support = 1
+  early_infantry_weapons = 1    
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1900.1.1"

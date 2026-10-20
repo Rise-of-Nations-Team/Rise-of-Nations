@@ -41,7 +41,7 @@ recruit_character = ECU_leonidas_plaza
 recruit_character = ECU_emilio_estrada
 recruit_character = ECU_alfredo_baquerizo
 recruit_character = ECU_juan_de_dios_martinez
-recruit_character = ECU_federico_páez
+recruit_character = ECU_federico_paez
 recruit_character = ECU_pedro_jacinto_montero	
 recruit_character = ECU_carlos_concha
 
@@ -170,7 +170,7 @@ recruit_character = ECU_asamblea_constituyente
 		neutrality = 30
 		communism = 15				
 	}
-	promote_character = ECU_federico_páez
+	promote_character = ECU_federico_paez
 	recruit_character = ECU_luis_larea_alba
 	recruit_character = ECU_cesar_endara_penaherrera
 	recruit_character = ECU_benigno_andrade_flores	
@@ -298,7 +298,7 @@ recruit_character = ECU_asamblea_constituyente
 	set_popularities = {
 		democratic = 100
 	}
-	retire_character = ECU_federico_páez
+	retire_character = ECU_federico_paez
     retire_character = ECU_juan_de_dios_martinez	
 	retire_character = ECU_ricardo_paredes	
 	retire_character = ECU_alberto_enriquez_gallo	

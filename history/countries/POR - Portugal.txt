@@ -152,6 +152,9 @@ set_party_name = { ideology = neutrality  long_name = POR_neutrality_party_1900_
 	retire_character = POR_ernesto_hintze_ribeiro
 }
 
+add_ideas = {
+	POR_casa_braganza_idea
+}
 
 ### WW1 Start Date
 

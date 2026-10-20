@@ -20,12 +20,9 @@ set_popularities = {
 	democratic = 100
 }
 
-create_country_leader = {
-	name = "Willem Burger"
-	picture = "gfx/leaders/SRE/DNC/SRE_Schalk_Willem_Burger.dds"
-	
-	ideology = conservatism
-}
+recruit_character = SRE_paul_kruger
+recruit_character = SRE_willem_burger
+recruit_character = SRE_koos_de_la_rey
 
 if = {
 	limit = {
@@ -36,4 +33,8 @@ if = {
 	add_ideas = {
 		ENG_second_boer_war2
 	}
+}
+
+1914.9.15 = {
+	retire_character = SRE_koos_de_la_rey
 }

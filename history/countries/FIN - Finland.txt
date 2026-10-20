@@ -34,21 +34,24 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1898.8.29"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 40
-	democratic = 50
+	neutrality = 60
+	democratic = 30
 	communism = 10
 }
 
-add_ideas = {
-	sisu
-}
+#add_ideas = {
+#	sisu
+#}
+
+recruit_character = FIN_nikolay_bobrikov
+recruit_character = FIN_ivan_obolensky
+recruit_character = FIN_franz_albert_seyn
 
 recruit_character = FIN_kaarlo_juho_stahlberg
-promote_character = FIN_kaarlo_juho_stahlberg
 recruit_character = FIN_kullervo_manner
 
 recruit_character = FIN_pehr_evind_svinhufvud
@@ -58,8 +61,6 @@ recruit_character = FIN_carl_mannerheim
 
 #WW1
 recruit_character = FIN_vilho_petter_nenonen
-
-recruit_character = FIN_vilho_annala
 
 recruit_character = FIN_erik_heinrichs
 recruit_character = FIN_harald_ohquist
@@ -79,42 +80,42 @@ recruit_character = FIN_lauri_tiainen
 recruit_character = FIN_antti_hackzell
 
 ##White Finland - 1918
-recruit_character = FIN_friedrich_kaarle
-recruit_character = FNN_Juhani_Arajarvi
-recruit_character = FNN_Kaarlo_Castren
-recruit_character = FNN_Lauri_Ingman
+recruit_character = FIN_fredrik_kaarle_i
+#recruit_character = FNN_Juhani_Arajarvi
+#recruit_character = FNN_Kaarlo_Castren
+#recruit_character = FNN_Lauri_Ingman
 #recruit_character = FNN_Lauri_Malmberg
-recruit_character = FNN_Martin_Wetzer
-recruit_character = FNN_Omni_Talas
-recruit_character = FNN_Otto_Stenroth
-recruit_character = FNN_Carl_Seber
-recruit_character = FNN_Johan_Allan_Hygerth
-recruit_character = FNN_Ernst_Linder
-recruit_character = FNN_Ernst_Loftstrom
-recruit_character = FNN_Hannes_Ignatius
-recruit_character = FNN_Hans_Kalm
-recruit_character = FNN_Karl_Fredrik_Wilkama
+#recruit_character = FNN_Martin_Wetzer
+#recruit_character = FNN_Omni_Talas
+#recruit_character = FNN_Otto_Stenroth
+#recruit_character = FNN_Carl_Seber
+#recruit_character = FNN_Johan_Allan_Hygerth
+#recruit_character = FNN_Ernst_Linder
+#recruit_character = FNN_Ernst_Loftstrom
+#recruit_character = FNN_Hannes_Ignatius
+#recruit_character = FNN_Hans_Kalm
+#recruit_character = FNN_Karl_Fredrik_Wilkama
 
 ##Red Finland - 1918
-recruit_character = FNR_Antti_Kiviranta
-recruit_character = FNR_Otto_Wille_Kuusinen
-recruit_character = FNR_Emil_Elo
-recruit_character = FNR_Johan_Erik_Lumivuokko
-recruit_character = FNR_Konstantin_Lindqvist
-recruit_character = FNR_Mattia_Turkia
-recruit_character = FNR_Edvard_Gylling
-recruit_character = FNR_Oskari_Tokoi
-recruit_character = FNR_Yrjo_Sirola
-recruit_character = FNR_Jalo_Kohonen
-recruit_character = FNR_Lauri_Letonmaki
-recruit_character = FNR_Adolf_Taimi
-recruit_character = FNR_Eero_Haapalainen
-recruit_character = FNR_Evert_Eloranta
-recruit_character = FNR_Eino_Rahja
-recruit_character = FNR_Ali_Aaltonen
-recruit_character = FNR_Verner_Lehtimaki
-recruit_character = FNR_August_Wesley
-recruit_character = FNR_Ernst_Hausen
+#recruit_character = FNR_Antti_Kiviranta
+#recruit_character = FNR_Otto_Wille_Kuusinen
+#recruit_character = FNR_Emil_Elo
+#recruit_character = FNR_Johan_Erik_Lumivuokko
+#recruit_character = FNR_Konstantin_Lindqvist
+#recruit_character = FNR_Mattia_Turkia
+#recruit_character = FNR_Edvard_Gylling
+#recruit_character = FNR_Oskari_Tokoi
+#recruit_character = FNR_Yrjo_Sirola
+#recruit_character = FNR_Jalo_Kohonen
+#recruit_character = FNR_Lauri_Letonmaki
+#recruit_character = FNR_Adolf_Taimi
+#recruit_character = FNR_Eero_Haapalainen
+#recruit_character = FNR_Evert_Eloranta
+#recruit_character = FNR_Eino_Rahja
+#recruit_character = FNR_Ali_Aaltonen
+#recruit_character = FNR_Verner_Lehtimaki
+#recruit_character = FNR_August_Wesley
+#recruit_character = FNR_Ernst_Hausen
 
 #INT
 recruit_character = FIN_aimo_aaltonen
@@ -161,12 +162,46 @@ create_dynamic_country = {
 	}
 }
 
+set_cosmetic_tag = FIN_duchy
+
+1905.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1904.1.1"
+		election_frequency = 36
+		elections_allowed = no
+	}	
+	retire_character = FIN_nikolay_bobrikov
+	promote_character = FIN_ivan_obolensky
+}
+
+1910.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1909.1.1"
+		election_frequency = 36
+		elections_allowed = no
+	}	
+	retire_character = FIN_ivan_obolensky
+	promote_character = FIN_franz_albert_seyn
+	recruit_character = FIN_vilho_annala
+}
+
 1918.1.1 = {
 	oob = "FNN_1918"
+	promote_character = FIN_kaarlo_juho_stahlberg	
 }
 
 1919.1.1 = {
 	oob = "FIN_1919"
+	set_popularities = {
+		neutrality = 40
+		democratic = 50
+		communism = 10
+	}	
+	retire_character = FIN_franz_albert_seyn
+
+	drop_cosmetic_tag = yes
 }
 
 1925.1.1 = {
@@ -182,10 +217,10 @@ create_dynamic_country = {
 }
 
 1931.3.1 = {
-	promote_character = FIN_friedrich_kaarle 
+	promote_character = FIN_fredrik_kaarle_i 
 
 	set_portraits = {
-		character = FIN_friedrich_kaarle 
+		character = FIN_fredrik_kaarle_i 
 		army = {
 			large = "gfx/leaders/FIN/Portrait_FIN_friedrich_karl.dds"
 		}
