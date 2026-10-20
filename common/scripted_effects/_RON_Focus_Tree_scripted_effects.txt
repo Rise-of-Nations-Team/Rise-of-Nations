@@ -70,7 +70,7 @@ RON_handle_DNC_focus_trees = {
 		limit = {
 			tag = ITA
 		}
-		load_focus_tree = italian_focus
+		load_focus_tree = Italy_DNC
 	}
 
 	else_if = {
@@ -227,7 +227,7 @@ RON_handle_WW1_focus_trees = {
 		limit = {
 			tag = ITA
 		}
-		load_focus_tree = italian_focus
+		load_focus_tree = Italy_WW1
 	}
 
 	else_if = {
@@ -361,7 +361,7 @@ RON_handle_WW2_focus_trees = {
 		limit = {
 			tag = ITA
 		}
-		load_focus_tree = italian_focus
+		load_focus_tree = Italy_WW2
 	}
 
 	else_if = {

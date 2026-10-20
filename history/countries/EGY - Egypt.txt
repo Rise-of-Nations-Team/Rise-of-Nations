@@ -14,120 +14,71 @@ if = {
 	set_cosmetic_tag = EGY_DOMINION
 }
 
-1900.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1898.1.1"
-		election_frequency = 60
-		elections_allowed = no
-	}
-
-	add_ideas = abbas_ii
-
-	set_popularities = {
-		democratic = 20
-		islamism = 20
-		fascism = 5
-		communism = 5
-		neutrality = 50
-	}
-
-	recruit_character = EGY_adly_yakan_pasha
-	promote_character = EGY_adly_yakan_pasha
-	set_party_name = { ideology = democratic  long_name = EGY_liberal_constitutionalist_party_long name = EGY_liberal_constitutionalist_party }
-
-	recruit_character = EGY_salama_moussa
-	promote_character = EGY_salama_moussa
-	set_party_name = { ideology = communism  long_name = EGY_socialist_party_long name = EGY_socialist_party }
-
-	recruit_character = EGY_mustafa_kamil_pasha
-	promote_character = EGY_mustafa_kamil_pasha
-	set_party_name = { ideology = fascism  long_name = EGY_watani_long name = EGY_watani }
-
-	recruit_character = EGY_mustafa_fahmi_pasha
-	promote_character = EGY_mustafa_fahmi_pasha
-	set_party_name = { ideology = neutrality  long_name = EGY_prime_minister name = EGY_prime_minister }
-
-	recruit_character = EGY_mohamed_tawfik_naseem_pasha
-	promote_character = EGY_mohamed_tawfik_naseem_pasha
-	set_party_name = { ideology = islamism  long_name = EGY_ittihad_party_long name = EGY_ittihad_party }
-
-	recruit_character = EGY_abbas_ii
-
-	recruit_character = EGY_mohamed_mahmoud_pasha
-	recruit_character = EGY_muhammad_hafiz_ramadan
-	recruit_character = EGY_ismail_sidqi_pasha
-	recruit_character = EGY_hassan_al_banna
-
-	recruit_character = EGY_henri_curiel
-	recruit_character = EGY_gamel_abdel_nasser
-	recruit_character = EGY_ahmad_mahir_pasha
-	recruit_character = EGY_hassan_al_hudaybi
-
-	recruit_character = EGY_fouad_serageddin
-	recruit_character = EGY_mahmoud_amin_el_lem
-	recruit_character = EGY_anwar_sadat
-	recruit_character = EGY_mohammed_abdul_salam_farag
-	recruit_character = EGY_faud_ii
-
-	recruit_character = EGY_ayman_nour
-	recruit_character = EGY_hosni_mubarak
-	recruit_character = EGY_khairat_el_shater
-	
-
-	EGY = {
-		446 = {
-			add_province_modifier = {
-				static_modifiers = { DNCCairo }
-				province = {
-					id = 7011
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { DNCGiza }
-				province = {
-					id = 3996
-				}
-			}
-		}
-		447 = {
-			add_province_modifier = {
-				static_modifiers = { DNCAlexandria }
-				province = {
-					id = 4076
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { DNCElAlamein }
-				province = {
-					id = 1071
-				}
-			}
-		}
-		456 = {
-			add_province_modifier = {
-				static_modifiers = { DNCAswan }
-				province = {
-					id = 11999
-				}
-			}
-		}
-		995 = {
-			add_province_modifier = {
-				static_modifiers = { DNCSuez }
-				province = {
-					id = 4073
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { DNCPortSaid }
-				province = {
-					id = 12049
-				}
-			}
-		}
-	}	
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1898.1.1"
+	election_frequency = 60
+	elections_allowed = no
 }
+
+#add_ideas = abbas_ii
+
+set_popularities = {
+	democratic = 20
+	islamism = 20
+	fascism = 5
+	communism = 5
+	neutrality = 50
+}
+
+recruit_character = EGY_adly_yakan_pasha
+promote_character = EGY_adly_yakan_pasha
+set_party_name = { ideology = democratic  long_name = EGY_liberal_constitutionalist_party_long name = EGY_liberal_constitutionalist_party }
+
+recruit_character = EGY_salama_moussa
+promote_character = EGY_salama_moussa
+set_party_name = { ideology = communism  long_name = EGY_socialist_party_long name = EGY_socialist_party }
+
+recruit_character = EGY_mustafa_kamil_pasha
+promote_character = EGY_mustafa_kamil_pasha
+set_party_name = { ideology = fascism  long_name = EGY_watani_long name = EGY_watani }
+
+recruit_character = EGY_mustafa_fahmi_pasha
+promote_character = EGY_mustafa_fahmi_pasha
+set_party_name = { ideology = neutrality  long_name = EGY_prime_minister name = EGY_prime_minister }
+
+recruit_character = EGY_mohamed_tawfik_naseem_pasha
+promote_character = EGY_mohamed_tawfik_naseem_pasha
+set_party_name = { ideology = islamism  long_name = EGY_ittihad_party_long name = EGY_ittihad_party }
+
+recruit_character = EGY_abbas_ii
+
+recruit_character = EGY_mohamed_mahmoud_pasha
+recruit_character = EGY_muhammad_hafiz_ramadan
+recruit_character = EGY_ismail_sidqi_pasha
+recruit_character = EGY_hassan_al_banna
+
+recruit_character = EGY_henri_curiel
+recruit_character = EGY_gamel_abdel_nasser
+recruit_character = EGY_ahmad_mahir_pasha
+recruit_character = EGY_hassan_al_hudaybi
+
+recruit_character = EGY_fouad_serageddin
+recruit_character = EGY_mahmoud_amin_el_lem
+recruit_character = EGY_anwar_sadat
+recruit_character = EGY_mohammed_abdul_salam_farag
+recruit_character = EGY_fuad_ii
+
+recruit_character = EGY_ayman_nour
+recruit_character = EGY_hosni_mubarak
+recruit_character = EGY_khairat_el_shater
+
+#ww1
+recruit_character = EGY_mohammad_farid
+recruit_character = EGY_mustafa_said_pasha
+recruit_character = EGY_ahmed_ali_al_mwawi
+recruit_character = EGY_hussein_kamel
+recruit_character = EGY_fuad_i
 
 1910.1.1 = {
 	set_politics = {
@@ -137,23 +88,26 @@ if = {
 		elections_allowed = no
 	}
 
-	recruit_character = EGY_mohammad_farid
 	promote_character = EGY_mohammad_farid
 	retire_character = EGY_mustafa_kamil_pasha
 
-	recruit_character = EGY_mustafa_said_pasha
 	promote_character = EGY_mustafa_said_pasha
 	retire_character = EGY_mustafa_fahmi_pasha
 
-	recruit_character = EGY_ahmed_ali_al_mwawi
+	if = {
+		limit = {
+			has_start_date < 1919.01.01
+		}
+		add_ideas = {
+			EGY_british_pressure
+			EGY_seperated_people
+			EGY_people_uprising
+		}
+	}
 }
 
 1914.12.19 = {
-	remove_ideas = abbas_ii
-	add_ideas = hussein_kamel
-
 	retire_character = EGY_abbas_ii
-	recruit_character = EGY_hussein_kamel
 
 	if = {
 		limit = {
@@ -165,11 +119,7 @@ if = {
 }
 
 1917.10.9 = {
-	remove_ideas = hussein_kamel
-	add_ideas = fuad_i
-
 	retire_character = EGY_hussein_kamel
-	recruit_character = EGY_fuad_i
 }
 
 1919.1.1 = {
@@ -219,107 +169,10 @@ if = {
 	promote_character = EGY_hassan_al_banna
 	retire_character = EGY_mohamed_tawfik_naseem_pasha
 	set_party_name = { ideology = islamism  long_name = EGY_muslim_brotherhood_long name = EGY_muslim_brotherhood }
-
-	EGY = {
-		446 = {
-			remove_province_modifier = {
-				static_modifiers = { DNCCairo }
-				province = {
-					id = 7011
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { WW2Cairo }
-				province = {
-					id = 7011
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { DNCGiza }
-				province = {
-					id = 3996
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { WW2Giza }
-				province = {
-					id = 3996
-				}
-			}
-		}
-		447 = {
-			remove_province_modifier = {
-				static_modifiers = { DNCAlexandria }
-				province = {
-					id = 4076
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { WW2Alexandria }
-				province = {
-					id = 4076
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { DNCElAlamein }
-				province = {
-					id = 1071
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { WW2ElAlamein }
-				province = {
-					id = 1071
-				}
-			}
-		}
-		456 = {
-			remove_province_modifier = {
-				static_modifiers = { DNCAswan }
-				province = {
-					id = 11999
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { WW2Aswan }
-				province = {
-					id = 11999
-				}
-			}
-		}
-		995 = {
-			remove_province_modifier = {
-				static_modifiers = { DNCSuez }
-				province = {
-					id = 4073
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { WW2Suez }
-				province = {
-					id = 4073
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { DNCPortSaid }
-				province = {
-					id = 12049
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { WW2PortSaid }
-				province = {
-					id = 12049
-				}
-			}
-		}
-	}
 }
 
 1936.1.1 = {
 	set_air_oob = "EGY_1936_air_bba"
-	remove_ideas = fuad_i
-	add_ideas = farouk_i
 
 	recruit_character = EGY_ali_mahir_pasha
 	promote_character = EGY_ali_mahir_pasha
@@ -443,101 +296,6 @@ if = {
 	recruit_character = EGY_kamal_hassan_ali
 	recruit_character = EGY_abdul_munim_wassel
 	recruit_character = EGY_ibrahim_el_orabi
-
-	EGY = {
-		446 = {
-			remove_province_modifier = {
-				static_modifiers = { WW2Cairo }
-				province = {
-					id = 7011
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { CWCairo }
-				province = {
-					id = 7011
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { WW2Giza }
-				province = {
-					id = 3996
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { CWGiza }
-				province = {
-					id = 3996
-				}
-			}
-		}
-		447 = {
-			remove_province_modifier = {
-				static_modifiers = { WW2Alexandria }
-				province = {
-					id = 4076
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { CWAlexandria }
-				province = {
-					id = 4076
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { WW2ElAlamein }
-				province = {
-					id = 1071
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { CWElAlamein }
-				province = {
-					id = 1071
-				}
-			}
-		}
-		456 = {
-			remove_province_modifier = {
-				static_modifiers = { WW2Aswan }
-				province = {
-					id = 11999
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { CWAswan }
-				province = {
-					id = 11999
-				}
-			}
-		}
-		995 = {
-			remove_province_modifier = {
-				static_modifiers = { WW2Suez }
-				province = {
-					id = 4073
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { CWSuez }
-				province = {
-					id = 4073
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { WW2PortSaid }
-				province = {
-					id = 12049
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { CWPortSaid }
-				province = {
-					id = 12049
-				}
-			}
-		}
-	}
 }
 
 1952.1.1 = {
@@ -694,101 +452,6 @@ if = {
 	###Generals###
 	retire_character = EGY_salah_halabi
 	retire_character = EGY_youssef_sabri_abu_taleb
-
-	EGY = {
-		446 = {
-			remove_province_modifier = {
-				static_modifiers = { CWCairo }
-				province = {
-					id = 7011
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { MDCairo }
-				province = {
-					id = 7011
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { CWGiza }
-				province = {
-					id = 3996
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { MDGiza }
-				province = {
-					id = 3996
-				}
-			}
-		}
-		447 = {
-			remove_province_modifier = {
-				static_modifiers = { CWAlexandria }
-				province = {
-					id = 4076
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { MDAlexandria }
-				province = {
-					id = 4076
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { CWElAlamein }
-				province = {
-					id = 1071
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { MDElAlamein }
-				province = {
-					id = 1071
-				}
-			}
-		}
-		456 = {
-			remove_province_modifier = {
-				static_modifiers = { CWAswan }
-				province = {
-					id = 11999
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { MDAswan }
-				province = {
-					id = 11999
-				}
-			}
-		}
-		995 = {
-			remove_province_modifier = {
-				static_modifiers = { CWSuez }
-				province = {
-					id = 4073
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { MDSuez }
-				province = {
-					id = 4073
-				}
-			}
-			remove_province_modifier = {
-				static_modifiers = { CWPortSaid }
-				province = {
-					id = 12049
-				}
-			}
-			add_province_modifier = {
-				static_modifiers = { MDPortSaid }
-				province = {
-					id = 12049
-				}
-			}
-		}
-	}
 }
 2008.1.1 = {
 	set_politics = {

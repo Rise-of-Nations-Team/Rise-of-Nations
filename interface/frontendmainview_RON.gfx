@@ -12,12 +12,12 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_main_menu_ron"
-		texturefile = "gfx/main_menu.dds"
+		texturefile = "gfx/main_menu_1_7_11.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_main_menu_ron_small"
-		texturefile = "gfx/main_menu_small.dds"
+		texturefile = "gfx/main_menu_1_7_11_small.dds"
 	}
 
 	SpriteType = {
@@ -39,5 +39,15 @@ spriteTypes = {
 		name = "GFX_main_menu_1_7_3_ron_small"
 		texturefile = "gfx/main_menu_1_7_3_small.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_main_menu_ron_old"
+		texturefile = "gfx/main_menu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_main_menu_ron_old_small"
+		texturefile = "gfx/main_menu_small.dds"
+	}	
 
 }

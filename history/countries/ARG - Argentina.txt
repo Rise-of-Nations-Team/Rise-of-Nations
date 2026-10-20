@@ -32,45 +32,36 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 85
-	democratic = 15
+	neutrality = 60
+	democratic = 40
 }
 
 1900.1.1 = {
 
 	#Political
 	recruit_character = ARG_bartolome_mitre
-	promote_character = ARG_bartolome_mitre
 	set_party_name = { ideology = democratic  long_name = ARG_union_civica_nacional_long name = ARG_union_civica_nacional }
 
 	recruit_character = ARG_juan_bautista_justo
-	promote_character = ARG_juan_bautista_justo
 	set_party_name = { ideology = communism  long_name = ARG_partido_socialista_long name = ARG_partido_socialista }
 
 	recruit_character = ARG_jose_felix_uriburu
-	promote_character = ARG_jose_felix_uriburu
 	ARG_jose_felix_uriburu = {
 		unit_leader_event = { id = generic.206 days = 9692 }
 	}
 	set_party_name = { ideology = fascism  long_name = ARG_alianza_libertadora_nacionalista_long name = ARG_alianza_libertadora_nacionalista }
 
 	recruit_character = ARG_julio_argentino_roca
-	promote_character = ARG_julio_argentino_roca
 	set_party_name = { ideology = neutrality  long_name = ARG_partido_autonomista_nacional_long name = ARG_partido_autonomista_nacional }
-
+	recruit_character = ARG_manuel_quintana
+	recruit_character = ARG_jose_figueroa_alcorta
+	recruit_character = ARG_roque_saenz_pena		
 	recruit_character = ARG_hipolito_yrigoyen
-	#recruit_character = ARG_juan_bautista_justo
 	recruit_character = ARG_norberto_pinero
-	
 	recruit_character = ARG_lisandro_de_la_torre
-	recruit_character = ARG_orestes_tomas_ghioldi
 	recruit_character = ARG_manuel_carles
 	recruit_character = ARG_agustin_pedro_justo
 	
-
-	recruit_character = ARG_jose_p_tamborini
-	recruit_character = ARG_rodolfo_jose_ghioldi
-	recruit_character = ARG_juan_domingo_peron
 	recruit_character = ARG_pedro_eugenio_aramburu
 	
 	recruit_character = ARG_raul_alfonsin
@@ -121,6 +112,7 @@ set_popularities = {
 	ARG_lorenzo_vintter = {
 		unit_leader_event = { id = generic.206 days = 1921 }
 	}
+	recruit_character = ARG_hector_varela
 
 	recruit_character = ARG_manuel_a_rodriguez
 	recruit_character = ARG_francisco_medina
@@ -200,7 +192,7 @@ set_popularities = {
 	recruit_character = ARG_tomas_moyano
 
 
-					#Navy#
+	#Navy#
 	recruit_character = ARG_martin_rivadavia
 	ARG_martin_rivadavia = {
 		unit_leader_event = { id = generic.206 days = 409 }
@@ -263,18 +255,34 @@ set_popularities = {
 	
 }
 
+1905.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1904.10.12"
+		election_frequency = 72
+		elections_allowed = yes
+	}	
+	set_popularities = {
+		democratic = 60
+		neutrality = 20		
+		communism = 20
+	}	
+	set_party_name = { ideology = democratic  long_name = ARG_partido_autonomista_nacional_long name = ARG_partido_autonomista_nacional }
+	promote_character = ARG_manuel_quintana		
+}
+
 1910.1.1 = {
 	oob = "ARG_1910"
 	set_politics = {
-		ruling_party = neutrality
-		last_election = "1904.4.10"
+		ruling_party = democratic
+		last_election = "1906.3.12"
 		election_frequency = 72
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		neutrality = 80
-		democratic = 20
+		neutrality = 20
+		democratic = 80
 	}
 
 	set_technology = {
@@ -296,44 +304,48 @@ set_popularities = {
 		ww1_electronic_mechanical_engineering = 1
 	}
 
-	recruit_character = ARG_elpidio_gonzalez
-	
-	promote_character = ARG_hipolito_yrigoyen
-	retire_character = ARG_bartolome_mitre
-	set_party_name = { ideology = democratic  long_name = ARG_union_civica_radical_long name = ARG_union_civica_radical }
+	retire_character = ARG_manuel_quintana	
+	retire_character = ARG_bartolome_mitre	
+	add_country_leader_role = {
+		character = ARG_jose_figueroa_alcorta 
+		promote_leader = yes
+		country_leader = {
+			ideology=conservatism
+			traits = { sharp_tongued_lawyer }			
+			expire="1932.1.1.1"
+		}
+	}	
 
-	
-	promote_character = ARG_juan_bautista_justo
-	#retire_character = ARG_bartolome_mitre
+	recruit_character = ARG_elpidio_gonzalez	
 	set_party_name = { ideology = communism  long_name = ARG_partido_socialista_long name = ARG_partido_socialista }
-
-	#recruit_character = ARG_jose_felix_uriburu
-	promote_character = ARG_jose_felix_uriburu
-	#retire_character = ARG_bartolome_mitre
 	set_party_name = { ideology = fascism  long_name = ARG_alianza_libertadora_nacionalista_long name = ARG_alianza_libertadora_nacionalista }
 
-	recruit_character = ARG_jose_figueroa_alcorta
-	promote_character = ARG_jose_figueroa_alcorta
-	retire_character = ARG_julio_argentino_roca
-	set_party_name = { ideology = neutrality  long_name = ARG_partido_autonomista_nacional_long name = ARG_partido_autonomista_nacional }
 
-					#Army#
-	ARG_rosendo_fraga = {
-		demote_leader = yes
-	}
-	ARG_eduardo_racedo = {
-		promote_leader = yes
-	}
+	#Army#
 	retire_character = ARG_luis_maria_campos
 
-					#Navy#
+	#Navy#
 	retire_character = ARG_martin_rivadavia
 	
 }
 
 1914.1.1 = {
 	oob = "ARG_1914"
-
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1910.10.12"
+		election_frequency = 72
+		elections_allowed = yes
+	}	
+	add_country_leader_role = {
+		character = ARG_roque_saenz_pena 
+		promote_leader = yes
+		country_leader = {
+			ideology=reformism
+			traits = { democratic_reformer }			
+			expire="1915.1.1.1"
+		}
+	}
 	retire_character = ARG_eduardo_racedo
 	recruit_character = ARG_antonio_parodi
 	recruit_character = ARG_ramon_castillo	
@@ -351,26 +363,24 @@ set_popularities = {
 		democratic = 66
 		communism = 9
 		neutrality = 25
+	}	
+
+	retire_character = ARG_roque_saenz_pena	
+	add_country_leader_role = {
+		character = ARG_hipolito_yrigoyen 
+		promote_leader = yes
+		country_leader = {
+			ideology=radicalism
+			traits = { socdem_reformist ARG_argentine_nationalist }			
+			expire="1933.1.1.1"
+		}
 	}
-
-	#recruit_character = ARG_hipolito_yrigoyen
-	promote_character = ARG_hipolito_yrigoyen
-	#retire_character = ARG_bartolome_mitre
 	set_party_name = { ideology = democratic  long_name = ARG_union_civica_radical_long name = ARG_union_civica_radical }
-
-	#recruit_character = ARG_juan_bautista_justo
-	promote_character = ARG_juan_bautista_justo
 	set_party_name = { ideology = communism  long_name = ARG_partido_socialista_long name = ARG_partido_socialista }
-
-	#recruit_character = ARG_jose_felix_uriburu
-	promote_character = ARG_jose_felix_uriburu
-	#retire_character = ARG_bartolome_mitre
 	set_party_name = { ideology = fascism  long_name = ARG_alianza_libertadora_nacionalista_long name = ARG_alianza_libertadora_nacionalista }
-
-	
-	promote_character = ARG_norberto_pinero
-	retire_character = ARG_jose_figueroa_alcorta
 	set_party_name = { ideology = neutrality  long_name = ARG_partido_autonomista_nacional_long name = ARG_partido_autonomista_nacional }
+
+	recruit_character = ARG_jose_p_tamborini	
 
 	recruit_character = ARG_carlos_alberto_pueyrredon	
 	recruit_character = ARG_geronimo_arnedo_alvarez
@@ -382,20 +392,31 @@ set_popularities = {
 
 	#Army#
 	retire_character = ARG_enrique_godoy
+	retire_character = ARG_julio_argentino_roca	
 	#retire_character = ARG_eduardo_racedo
 	retire_character = ARG_lorenzo_vintter
 	#recruit_character = ARG_basilio_pertine
 	recruit_character = ARG_carlos_von_der_becke
+	recruit_character = ARG_juan_tonazzi	
+	recruit_character = ARG_juan_bautista_molina
 
 	#Navy#
 	retire_character = ARG_onorfe_betbeder
 	recruit_character = ARG_leon_scasso
 	recruit_character = ARG_ramon_poch	
 	recruit_character = ARG_mario_fincati
+	recruit_character = ARG_benito_sueyro
 }	
 
 1925.1.1 = {
+	retire_character = ARG_hector_varela
+
 	recruit_character = ARG_roberto_marcelino_ortiz
+	recruit_character = ARG_orestes_tomas_ghioldi	
+	recruit_character = ARG_juan_domingo_peron	
+	recruit_character = ARG_alberto_gilbert	
+	recruit_character = ARG_eduardo_avalos 
+	recruit_character = ARG_nicolas_accame
 }
 
 1933.1.1 = {
@@ -457,7 +478,7 @@ set_popularities = {
 	}
 
 	recruit_character = ARG_miguel_carcano
-
+	recruit_character = ARG_rodolfo_jose_ghioldi	
 	retire_character = ARG_norberto_pinero
 	set_party_name = { ideology = neutrality  long_name = ARG_concordancia name = ARG_concordancia }
 
@@ -529,12 +550,7 @@ set_popularities = {
 	promote_character = ARG_marcelo_t_de_alvear
 	retire_character = ARG_lisandro_de_la_torre
 	set_party_name = { ideology = democratic  long_name = ARG_union_civica_radical_long name = ARG_union_civica_radical }
-
-	promote_character = ARG_orestes_tomas_ghioldi
-	#retire_character = ARG_juan_bautista_justo
 	set_party_name = { ideology = communism  long_name = ARG_partido_comunista_long name = ARG_partido_comunista }
-
-	#retire_character = ARG_jose_felix_uriburu
 	set_party_name = { ideology = fascism  long_name = ARG_liga_patriotica_argentina_long name = ARG_liga_patriotica_argentina }
 
 	promote_character = ARG_agustin_pedro_justo
@@ -722,14 +738,13 @@ set_popularities = {
 		promote_leader = yes
 		country_leader = {
 			ideology=democratic_peronism
-			traits = { nationalist_symbol }
+			traits = { ARG_peronism_trait nationalist_symbol }
 			expire="1975.1.1.1"
 		}
 	}		
 
 	promote_character = ARG_jose_p_tamborini
 	retire_character = ARG_marcelo_t_de_alvear
-	set_party_name = { ideology = democratic  long_name = ARG_union_democratica_long name = ARG_union_democratica }
 
 	promote_character = ARG_rodolfo_jose_ghioldi
 	retire_character = ARG_orestes_tomas_ghioldi
@@ -753,13 +768,18 @@ set_popularities = {
 	retire_character = ARG_basilio_pertine
 	retire_character = ARG_angel_allaria
 	retire_character = ARG_gregorio_velez
+	retire_character = ARG_juan_tonazzi		
+	retire_character = ARG_alberto_gilbert
+	retire_character = ARG_eduardo_avalos 
+	retire_character = ARG_nicolas_accame
+	retire_character = ARG_juan_bautista_molina
 	
-
 	#Navy#
 	retire_character = ARG_manuel_domecq_garcia
 	retire_character = ARG_alberto_teisaire
 	retire_character = ARG_eleazar_videla
 	retire_character = ARG_mario_fincati
+	retire_character = ARG_benito_sueyro
 }
 
 1955.1.1 = {
@@ -789,9 +809,6 @@ set_popularities = {
 	promote_character = ARG_arturo_frondizi
 	retire_character = ARG_jose_p_tamborini
 	set_party_name = { ideology = democratic  long_name = ARG_union_civica_radical_intransigente_long name = ARG_union_civica_radical_intransigente }
-
-	promote_character = ARG_rodolfo_jose_ghioldi
-	retire_character = ARG_orestes_tomas_ghioldi
 	set_party_name = { ideology = communism  long_name = ARG_partido_comunista_long name = ARG_partido_comunista }
 
 	set_portraits = {

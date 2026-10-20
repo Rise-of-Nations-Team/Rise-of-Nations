@@ -1,0 +1,282 @@
+characters={
+
+	##TERRITORIAL GOVERNORS##
+	HAW_sanford_b_dole={
+		name= "Sanford Ballard Dole"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/DNC/HAW_Sanford_B_Dole.dds"
+			}
+		}
+		country_leader={
+			ideology=democratic_republicanism
+			traits={ GER_governor_general_trait unpopular2 autarkic_capitalist pro_westernization }
+			expire="1926.1.1.1"
+			id=-1
+		}
+	}	
+
+	HAW_george_r_carter={
+		name= "George Robert Carter"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/DNC/HAW_George_Robert_Carter.dds"
+			}
+		}
+		country_leader={
+			ideology=democratic_republicanism
+			traits={ GER_governor_general_trait }
+			expire="1933.1.1.1"
+			id=-1
+		}
+	}	
+
+	HAW_walter_f_frear={
+		name= "Walter Francis Frear"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/DNC/HAW_Walter_Francis_Frear.dds"
+			}
+		}
+		country_leader={
+			ideology=democratic_republicanism
+			traits={ GER_governor_general_trait }
+			expire="1948.1.1.1"
+			id=-1
+		}
+	}	
+
+	HAW_lucius_e_pinkham={
+		name= "Lucius Eugene Pinkham"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/WW1/HAW_Lucius_Eugene_Pinkham.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ GER_governor_general_trait }
+			expire="1923.1.1.1"
+			id=-1
+		}
+	}	
+
+	HAW_charles_j_mccarthy={
+		name= "Charles James McCarthy"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/WW1/HAW_Charles_James_McCarthy.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ GER_governor_general_trait }
+			expire="1930.1.1.1"
+			id=-1
+		}
+	}	
+
+	HAW_lawrence_m_judd={
+		name= "Lawrence McCully Judd"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/INT/Portrait_HAW_Lawrence_Judd.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ GER_governor_general_trait }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+
+	HAW_joseph_poindexter = {
+		name = "Joseph Poindexter"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/Portrait_HAW_Joseph_Poindexter.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1952.1.1.1"
+	        traits = { GER_governor_general_trait sharp_tongued_lawyer pro_allied_politician }			
+			id = -1			
+		}
+	}
+
+	HAW_ingram_stainback = {
+		name = "Ingram Macklin Stainback"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/Portrait_HAW_Ingram_Stainback.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1961.1.1.1"
+	        traits = { GER_governor_general_trait }			
+			id = -1			
+		}
+	}
+	
+	HAW_samuel_king = {
+		name = "Samuel Wilder King"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/CW/Portrait_HAW_Samuel_King.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1970.1.1.1"
+	        traits = { GER_governor_general_trait }			
+			id = -1			
+		}
+	}		
+
+	##HAWAIIAN ROYALS##
+	
+	HAW_liliuokalani={
+		name= "Lili'uokalani"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/DNC/HAW_Sanford_B_Dole.dds"
+			}
+		}
+		gender = female
+		country_leader={
+			ideology=monarchism
+			traits={ nationalist_symbol popular_queen constitutional_monarch }
+			expire="1918.1.1.1"
+			id=-1
+		}
+	}		
+
+	HAW_elizabeth_kekaaniau={
+		name= "Elizabeth Keka'ani'au"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/DNC/HAW_Elizabeth_Kekaaniauokalani_Laanui.dds"
+			}
+		}
+		gender = female		
+		country_leader={
+			ideology=monarchism
+			traits={ nationalist_symbol popular_queen constitutional_monarch }
+			expire="1929.1.1.1"
+			id=-1
+		}
+	}		
+
+	HAW_david_kalakaua_kawananakoa = {
+		name = "David Kalakaua Kawananakoa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/Portrait_HAW_David_Kalakaua_Kawananakoa.dds"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+			expire = "1954.1.1.1"
+	        traits = { PER_rightful_king_trait RAJ_GOE_cultural_icon JUNO_popular_among_the_people }			
+			id = -1			
+		}
+	}	
+
+	HAW_lydia_liliuokalani_kawananakoa = {
+		name = "Lydia Liliuokalani Kawananakoa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/CW/Portrait_HAW_Lydia_Liliuokalani.dds"
+			}
+		}
+		gender = female			
+		country_leader = {
+			ideology = monarchism
+			expire = "1970.1.1.1"
+	        traits = { JUNO_popular_among_the_people }			
+			id = -1			
+		}
+	}		
+
+	## COUNTRY LEADERS ##
+
+	HAW_anarchists={
+		name= "Anarchists"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic_anarchist_commune.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			id=-1
+		}
+	}	
+
+	HAW_jack_w_hall = {
+		name = "Jack Wayne Hall"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/Portrait_HAW_Jack_Hall.dds"
+			}
+		}
+		country_leader = {
+			ideology = syndicalism
+			expire = "1970.1.1.1"
+	        traits = { JUNO_militant_communist SWI_trade_unionist }			
+			id = -1			
+		}
+	}	
+
+	HAW_charles_fujimoto = {
+		name = "Charles Fujimoto"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/CW/Portrait_HAW_Charles_Fujimoto.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1980.1.1.1"
+	        traits = { marxist_academic communist_orator JUNO_militant_communist }			
+			id = -1			
+		}
+	}	
+	
+	HAW_james_d_dole={
+		name="James Drummond Dole"
+		portraits={
+			civilian={
+				large = "gfx/leaders/HAW/DNC/HAW_James_D_Dole.dds"
+				small="gfx/interface/ideas/HAW/Idea_James_Dole.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HAW_james_dole
+			allowed = {
+				original_tag  = HAW
+			}
+			traits  = {
+				SWI_corporatist 
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+			visible = {
+				date < 1959.1.1
+			}
+		}
+		country_leader = {
+			ideology = stratocracy
+			expire = "1960.1.1.1"
+	        traits = { NOR_conservative_businessman }			
+			id = -1			
+		}		
+	}		
+}

@@ -182,7 +182,7 @@ characters={
     }
 
     USA_alexander_graham_bell = {
-	    name = "Alexander Graham Bell"
+	    name = USA_alexander_graham_bell
 	    portraits = {
 	        civilian = {
 	            large = "gfx/leaders/USA/DNC/USA_Alexander_Graham_Bell_scientist.dds"
@@ -202,7 +202,7 @@ characters={
 	### LEADERS ###
 
 	USA_william_mckinley={
-		name="William McKinley"
+		name=USA_william_mckinley
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/DNC/USA_William_McKinley.dds"
@@ -217,7 +217,7 @@ characters={
 	}
 
 	USA_theodore_roosevelt={
-		name="Theodore Roosevelt"
+		name=USA_theodore_roosevelt
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/WW1/USA_Theodore_RooseveltProgressivism.dds"
@@ -232,7 +232,7 @@ characters={
 	}
 
 	USA_William_Jennings_Bryan={
-		name="William Jennings Bryan"
+		name=USA_William_Jennings_Bryan
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/DNC/USA_William_Jennings_Bryan.dds"
@@ -246,7 +246,7 @@ characters={
 	}
 
 	USA_eugene_chafin={
-		name="Eugene Chafin"
+		name=USA_eugene_chafin
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/WW1/USA_Eugene_ChafinModeratism.dds"
@@ -260,7 +260,7 @@ characters={
 	}
 
 	USA_alton_b_parker={
-		name="Alton B. Parker"
+		name=USA_alton_b_parker
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/DNC/USA_Alton_B._Parker.dds"
@@ -274,7 +274,7 @@ characters={
 	}
 
 	USA_eugene_debs={
-		name="Eugene Debs"
+		name=USA_eugene_debs
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/WW1/USA_Eugene_DebbsMarxism.dds"
@@ -288,7 +288,7 @@ characters={
 	}
 
 	USA_william_simmons={
-		name="William Simmons"
+		name=USA_william_simmons
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/WW1/USA_William_Simmonswhite_nationalism.dds"
@@ -302,7 +302,7 @@ characters={
 	}
 
 	USA_duse_mohamed_ali={
-		name="Duse Mohamed Ali"
+		name=USA_duse_mohamed_ali
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/DNC/USA_Duse_Mohamed_Ali.dds"
@@ -316,7 +316,7 @@ characters={
 	}	
 
 	USA_william_h_taft={
-		name="William H. Taft"
+		name=USA_william_h_taft
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/WW1/Portrait_USA_William_H_Taft.dds"
@@ -331,7 +331,7 @@ characters={
 	}
 
 	USA_charles_e_hughes={
-		name="Charles Evans Hughes"
+		name=USA_charles_e_hughes
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/WW1/USA_Charles_Evans_Hughes.dds"
@@ -344,7 +344,7 @@ characters={
 	}
 
 	USA_alfred_m_smith={
-		name="Alfred M. Smith"
+		name=USA_alfred_m_smith
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/INT/USA_Al_Smith.dds"
@@ -357,7 +357,7 @@ characters={
 	}
 
 	USA_herbert_hoover={
-		name="Herbert Hoover"
+		name=USA_herbert_hoover
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/WW1/USA_Herbert_Hoover.dds"
@@ -371,7 +371,7 @@ characters={
 	}
 
 	USA_james_m_cox={
-		name="James M. Cox"
+		name=USA_james_m_cox
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/INT/USA_James_M_Cox.dds"
@@ -398,7 +398,7 @@ characters={
 	}
 
 	USA_robert_m_la_follette={
-		name="Robert M. La Follette"
+		name=USA_robert_m_la_follette
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/INT/USA_Robert_M._La_Follette.dds"
@@ -411,7 +411,7 @@ characters={
 	}
 
 	USA_calvin_coolidge={
-		name="Calvin Coolidge"
+		name=USA_calvin_coolidge
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/INT/Portrait_USA_Calvin_Coolidge.dds"
@@ -424,7 +424,7 @@ characters={
 	}
 
 	USA_john_davis={
-		name="John W. Davis"
+		name=USA_john_davis
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/INT/USA_John_W._Davis.dds"
@@ -437,7 +437,7 @@ characters={
 	}
 
 	USA_warren_g_harding={
-		name="Warren G. Harding"
+		name=USA_warren_g_harding
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/INT/USA_Warren_G_Harding.dds"
@@ -508,7 +508,7 @@ characters={
 	}
 
 	USA_elijah_muhammad={
-		name="Elijah Muhammad"
+		name=USA_elijah_muhammad
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/Portrait_USA_Elijah_Muhammad.dds"
@@ -613,7 +613,7 @@ characters={
 	}
 
 	USA_smedley_butler={
-		name="Smedley Butler"
+		name=USA_smedley_butler
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/Portrait_USA_Smedley_Butler.dds"
@@ -717,8 +717,10 @@ characters={
 				date > 1936.1.1
 				date < 1960.1.1
 				NOT = {
-					has_country_leader = USA_dwight_d_eisenhower
-					ruling_only = yes					
+					has_country_leader = {
+						character = USA_dwight_d_eisenhower
+						ruling_only = yes
+					}				
 					has_idea = USA_dwight_d_eisenhower_2
 				}
 			}
@@ -745,8 +747,10 @@ characters={
 				date > 1936.1.1
 				date < 1960.1.1
 				NOT = {
-					has_country_leader = USA_dwight_d_eisenhower
-					ruling_only = yes					
+					has_country_leader = {
+						character = USA_dwight_d_eisenhower
+						ruling_only = yes
+					}
 					has_idea = USA_dwight_d_eisenhower
 				}
 			}

@@ -125,21 +125,12 @@ ENG_robert_watson_watt = {
 		}
 		country_leader={
 			desc="POLITICS_QUEEN_VICTORIA_DESC"
-			ideology=despotism
+			ideology=monarchism
 			traits = {
 				DNC_Beloved_Monarch
 				DNC_Well_Connected
 			}
 			expire="1901.1.22.1"
-		}
-		country_leader = {
-			desc = "POLITICS_QUEEN_VICTORIA_DESC"
-			expire = "1901.1.22"
-			ideology = constitutional_monarchism
-			traits = {
-				DNC_Beloved_Monarch
-				DNC_Well_Connected
-			}
 		}
 	}
 
@@ -1294,7 +1285,7 @@ ENG_robert_watson_watt = {
 		name=ENG_sir_douglas_haig
 		portraits={
 			army={
-				large="gfx/leaders/ENG/WW1/Douglas_Haig.dds"
+				large="gfx/leaders/ENG/WW1/Portrait_Britain_Douglas_Haig.dds"
 			}
 		}
 		field_marshal={
@@ -1969,11 +1960,7 @@ ENG_robert_watson_watt = {
 			}
 		}
 		country_leader={
-			ideology=constitutional_monarchism
-			expire="1936.1.20.1"
-		}
-		country_leader={
-			ideology=despotism
+			ideology=monarchism
 			expire="1936.1.20.1"
 		}
 	}
@@ -1986,11 +1973,7 @@ ENG_robert_watson_watt = {
 			}
 		}
 		country_leader={
-			ideology=constitutional_monarchism
-			expire="1910.5.6.1"
-		}
-		country_leader={
-			ideology=despotism
+			ideology=monarchism
 			expire="1910.5.6.1"
 		}
 	}
@@ -2475,7 +2458,7 @@ ENG_robert_watson_watt = {
 		portraits={
 			army={
 				small="gfx/interface/ideas/ENG/idea_EN1_Henry_Wilson.dds"
-				large="gfx/leaders/ENG/Portrait_Britain_Henry_Hughes_Wilson.dds"
+				large="gfx/leaders/ENG/Portrait_Britain_Henry_Maitland_Wilson.dds"
 			}
 		}
 		advisor={

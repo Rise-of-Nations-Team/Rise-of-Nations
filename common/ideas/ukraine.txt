@@ -890,28 +890,6 @@ ideas = {
 
 	}
 
-	political_advisor = {
-
-
-		UKR_pavlo = {
-			
-			picture = pavlo
-			
-			allowed = {
-				original_tag = UKR
-			}
-
-			available = {
-				has_completed_focus = UKR_under_the_hetmans_guidance
-			}
-			
-			traits = { puppeter_hetman }
-	
-			ai_will_do = { factor = 1000 }
-	
-		}
-
-	}
 
 	naval_manufacturer = {
 		
@@ -954,46 +932,6 @@ ideas = {
 		}	
 	}
 
-	army_chief = {
 
-		UKR_pavlo2 = {
-			
-			picture = pavlo
-			
-			allowed = {
-				original_tag = UKR
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = UKR_collaborate_with_the_hetman
-					has_completed_focus = UKR_a_talk_with_the_hetman
-				}
-			}
-			
-			traits = { hetman_general }
-	
-			ai_will_do = { factor = 1000 }
-	
-		}
-
-	}
-
-	high_command = {
-
-		UKR_random_army_infantry = {
-		
-			picture = idea_generic_army_south_america_4
-
-			allowed = {
-				tag = UKR
-			}
-			
-			traits = { army_infantry_2 }
-
-			ai_will_do = { factor = 4 }
-		}
-
-	}
 
 }

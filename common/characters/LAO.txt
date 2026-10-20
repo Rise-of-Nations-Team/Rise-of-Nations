@@ -1,0 +1,276 @@
+characters = {
+
+	# King Sisavangvong
+	LAO_sisavang_vong = { 
+		name = LAO_sisavang_vong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/DNC/portrait_LAO_sisavang_vong_DNC.dds"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+			traits = { king_of_luang_prabang }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = emperor_fascism
+			traits = { king_of_luang_prabang }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_government = neutrality
+				date < 1960.1.1
+			}
+		}
+	}
+
+	LAO_sisavang_vatthana = { 
+		name = "Prince Sisavang Vatthana"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/portrait_LAO_sisavang_vattana.dds"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+			traits = { king_of_luang_prabang }
+			expire = "1980.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = emperor_fascism
+			traits = { king_of_luang_prabang }
+			expire = "1980.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+				date < 1980.1.1
+			}
+		}
+	}	
+
+	LAO_phetsarath_ratanavongsa = { 
+		name = "Prince Phetsarath Ratanavongsa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/Portrait_LAO_Phetsarath_Ratanavongsa.dds"
+			}
+			
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { politically_connected engineer_officer }			
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				date > 1914.1.1
+				date < 1960.1.1
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+	}	
+
+	# Kou Voravong
+	LAO_kou_voravong = { 
+		name = LAO_kou_voravong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/Portrait_LAO_Kou_Voragong.dds"
+			}
+			
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { champion_of_the_lao_issara }
+			expire = "1960.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { politically_connected jungle_rat }			
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				date > 1933.1.1
+				date < 1960.1.1
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+	}
+
+	LAO_souvanna_phouma = { 
+		name = "Prince Souvanna Phouma"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/Portrait_LAO_Souvanna_Phouma.dds"
+			}
+			
+		}
+		country_leader = {
+			ideology = constitutional_monarchism
+			traits = {  }
+			expire = "1985.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { politically_connected infantry_leader organizer }			
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				date > 1925.1.1
+				date < 1985.1.1
+				OR = {
+					NOT = {
+						has_government = communism
+					}
+					NOT = {
+						has_government = fascism
+					}					
+				}
+			}
+		}
+	}	
+
+	# Souphanouvong
+	LAO_souphanouvong = { 
+		name = LAO_souphanouvong
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/Portrait_LAO_Souphanouvong.dds"
+			}
+			
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { LAO_the_red_prince }
+			expire = "1996.1.1.1"
+			id = -1
+		}	
+	}
+
+	LAO_kaysone_phomvihane = { 
+		name = "Kaysone Phomvihane"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/CW/Laos_Kaysone_Phomvihane_Early_CW.dds"
+			}
+			
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			expire = "1993.1.1.1"
+			id = -1
+		}	
+	}	
+
+	LAO_khamtai_siphandon = { 
+		name = "Khamtai Siphandon"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds" #TEMPORARY
+			}
+			
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			expire = "2026.1.1.1"
+			id = -1
+		}	
+	}	
+
+	LAO_choummaly_sayasone = { 
+		name = "Choummaly Sayasone"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/MD/Portrait_LAO_Choummaly_Sayasone.dds" 
+			}
+			
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "2030.1.1.1"
+			id = -1
+		}	
+	}	
+
+	LAO_bounnhang_vorachit = { 
+		name = "Bounnhang Vorachit"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds" #TEMPORARY
+			}
+			
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "2030.1.1.1"
+			id = -1
+		}	
+	}	
+
+	LAO_kou_abhay = { 
+		name = "Kou Abhay"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/Portrait_LAO_Kou_Abhay.dds"
+			}
+			
+		}
+		corps_commander = {
+			traits = { politically_connected old_guard infantry_officer trait_cautious }			
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				date > 1933.1.1
+				date < 1965.1.1
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+
+}
+

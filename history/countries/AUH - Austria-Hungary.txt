@@ -3,6 +3,9 @@ RON_universal_setup = yes
 capital = 4
 oob = "AUH_1900"
 set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.4
+
 add_ideas = {
 	foreign_warmonger
 	partial_economic_mobilisation
@@ -25,6 +28,62 @@ add_ideas = {
 	industry_budget4
 	engineering_budget4
 	infrastructure_budget4
+}
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	early_infantry_weapons_1900 = 1
+	RON_Support_Innovations = 1	
+	marines = 1
+	jungletroops = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	basic_train = 1
+	steam_train_1 = 1
+	horses = 1
+	ww1_motorised_infantry = 1
+	RON_Trained_Horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+	RON_Early_Machine_Tools = 1
+	RON_Early_Production = 1
+	RON_Early_Construction = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_torpedo = 1
+			mtg_ww1_destroyer1 = 1
+			early_ship_hull_dreadnought = 1
+			early_ship_hull_submarine_ww1 = 1
+			mtg_transport = 1
+		}
+	else = {
+		set_technology = {
+			ww1_battleship0 = 1
+			ww1_heavy_cruiser0 = 1
+			ww1_light_cruiser0 = 1
+			ww1_destroyer0 = 1
+			ww1_submarine0 = 1
+			ww1_moduleMTG_mines = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_military_balloons = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
 }
 
 set_variable = {
@@ -57,24 +116,16 @@ set_variable = {
 set_variable = {
 	ROM_support = 55
 }
+
 set_stability = 0.5
 ### WW1 Start Date
 add_ideas = {
 	multi_ethnic
 	AUH_ww1_House_Habsburg_Lorraine
+	AUH_backward_navy_industry
+	AUH_inexperenced_colonial_administrators
+	AUH_unequal_union
 }
-
-if = {
-	limit = {
-		has_start_date < 1920.01.01
-	}
-	add_ideas = {
-		AUH_backward_navy_industry
-		AUH_inexperenced_colonial_administrators
-		AUH_unequal_union
-	}
-}
-
 
 set_politics = {
 	ruling_party = neutrality
@@ -91,11 +142,17 @@ set_popularities = {
 
 recruit_character = AUH_franz_joseph_i
 recruit_character = AUH_heinrich_ritter_von_wittek
+recruit_character = AUH_karl_i
+recruit_character = AUH_zita_von_bourbonparma
+recruit_character = AUH_otto_von_habsburg
 recruit_character = AUH_george_ritter_von_schonerer
+recruit_character = AUH_hans_knirsch
+recruit_character = AUH_adolf_hitler
 recruit_character = AUH_franz_ferdinand_i
 recruit_character = AUH_zdenko_von_lotikowitz
 recruit_character = AUH_stjepan_sarkotic
 recruit_character = AUH_eduard_von_paar
+recruit_character = AUH_paul_von_brlog
 recruit_character = AUH_friedrich_von_teschen
 recruit_character = AUH_anton_liposcak
 recruit_character = AUH_conrad_von_hotzendorf
@@ -172,12 +229,8 @@ if = {
 	puppet = BOS
 }
 
-1907.2.1 = {
- recruit_character = AUH_hans_knirsch
-}
-
 1907.2.2 = {
- retire_character = AUH_george_ritter_von_schonerer
+	retire_character = AUH_george_ritter_von_schonerer
 }
 
 1910.1.1 = {
@@ -194,9 +247,6 @@ if = {
 		communism = 5
 		neutrality = 64
 	}
-
- recruit_character = AUH_karl_i
- recruit_character = AUH_paul_von_brlog
 
 	set_technology = {
 		tech_support = 1
@@ -241,30 +291,18 @@ if = {
 
 1914.1.1 = {
 	oob = "AUH_1914"
-	if = {
-		limit = {
-			has_start_date < 1918.1.1
-		}
-		
-		recruit_character = CZE_radola_gajda
-	}
 }
 
 1916.11.21 = {
- retire_character = AUH_franz_joseph_i
+	retire_character = AUH_franz_joseph_i
 }
 
 1920.1.2 = {
- recruit_character = AUH_adolf_hitler
- retire_character = AUH_gustav_von_vojka
+	retire_character = AUH_gustav_von_vojka
 }
 
 1920.1.2 = {
- retire_character = AUH_hans_knirsch
-}
-
-1930.1.1 = {
- recruit_character = AUH_otto_von_habsburg
+	retire_character = AUH_hans_knirsch
 }
 
 ### END OF WW1 Start Date

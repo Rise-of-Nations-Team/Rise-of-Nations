@@ -15,7 +15,7 @@ characters={
 	}
 
 	COS_cleto_gonzalez_viquez = {
-		name="Cleto Gonzalez Viquez"		
+		name=COS_cleto_gonzalez_viquez
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/COS/WW1/portrait_COS_Cleto_Gonzalez.dds"

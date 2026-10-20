@@ -710,8 +710,11 @@ characters={
 		name=POL_jozef_pilsudski
 		portraits={
 			civilian={
-				large="gfx/leaders/POL/WW1/Poland_JozefPilsudski.dds"
+				large="gfx/leaders/POL/WW1/Poland_Jozef_Pilsudski.dds"
 			}
+			army={
+				large="gfx/leaders/POL/WW1/Poland_Jozef_Pilsudski.dds"
+			}			
 		}
 		country_leader={
 			ideology=nationalism

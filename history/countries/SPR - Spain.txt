@@ -3,7 +3,9 @@ RON_universal_setup = yes
 
 
 capital = 41
+
 oob = "SPR_1900"
+
 add_ideas = {
 	export_focus
 	tax_low
@@ -55,7 +57,7 @@ every_state = {
 }
 set_variable = { 290.control_cost = 25}
 
-### WW1 Start Date
+## WW1 Start Date
 
 if = {
 	limit = {
@@ -155,10 +157,10 @@ recruit_character = SPR_niceto_alcala_zamora
 recruit_character = SPR_pablo_iglesias_posse
 recruit_character = SPR_Carlos_VII
 recruit_character = SPR_Jaime_III
-recruit_character = SPR_alfonso_carlos_i
 recruit_character = SPR_segismundo_moret
 recruit_character = SPR_praxedes_mateo_sagasta
 recruit_character = SPR_antonio_maura
+recruit_character = SPR_alfonso_carlos_i
 
 recruit_character = SPR_camilo_polavieja
 recruit_character = SPR_adolfo_jimenez_castellanos
@@ -191,7 +193,7 @@ recruit_character = SPR_julio_mangada
 recruit_character = SPR_andres_saliquet
 recruit_character = SPR_rafael_estrada_arnaiz
 
-#Advisors
+Advisors
 recruit_character = SPR_manuel_santa_cruz
 recruit_character = SPR_salvador_bermudez_de_castro
 recruit_character = SPR_manuel_garcia_prieto
@@ -356,26 +358,40 @@ create_dynamic_country = {
 	oob = "SPR_1910"
 	set_politics = {
 		ruling_party = neutrality
-		last_election = "1907.1.12"
-		election_frequency = 60
-		elections_allowed = no
+		last_election = "1910.3.8"
+		election_frequency = 48
+		elections_allowed = yes
 	}
-
 	set_popularities = {
-		neutrality = 88
-		communism = 12
+		democratic = 25
+		fascism = 3
+		communism = 8
+		neutrality = 64
 	}
 
 	## Please make stuff like this only apply to a certain date, Here I did it for you
 	if = {
 		limit = {
-			has_start_date > 1909.01.01
 			has_start_date < 1919.01.01
 		}
 		set_autonomy = {
 			target = MOR
 			autonomous_state = autonomy_protectorate
 			freedom_level = 0.35
+		}
+	}
+
+	if = {
+		limit = {
+			has_start_date < 1919.01.01
+		}
+		add_ideas = {
+			SPR_proceso_de_transicion_a_la_republica
+			SPR_III_catalonia_revolt
+			SPR_artilleros_en_huelga
+			SPR_golpe_de_martinez_campos
+			SPR_asesinato_del_general_castillejos
+			SPR_derrota_cubana
 		}
 	}
 
@@ -399,11 +415,11 @@ create_dynamic_country = {
 	}
 
 	retire_character = SPR_Carlos_VII
-	set_country_leader_name = {
+	set_character_name = {
 		character = SPR_Jaime_III
 		name = "Jaime III"
 	}
-
+	
 	set_portraits = {
 		character = SPR_alfonso_carlos_i
 		army = {
@@ -413,8 +429,8 @@ create_dynamic_country = {
 		army = {
 			large = "gfx/leaders/SPR/portrait_spa_infante_alfonso_carlos.dds"
 			small = "gfx/interface/ideas/SPR/advisors/idea_SPR_Alfonso_de_Borbon_y_Austria_Este_int.png"
-		}		
-	}	
+		}
+	}
 }
 
 1914.1.1 = {
@@ -525,7 +541,7 @@ create_dynamic_country = {
 	set_country_leader_name = {
 		character = SPR_alfonso_carlos_i
 		name = "Alfonso Carlos I"
-	}	
+	}
 
 	set_portraits = {
 		character = SPR_gonzalo_queipo_de_llano

@@ -3,7 +3,9 @@ RON_universal_setup = yes
 
 
 capital = 277
+
 oob = "MEX_1900"
+
 add_ideas = {
 	export_focus
 	tax_average
@@ -19,6 +21,32 @@ add_ideas = {
 	education_budget5
 	health_budget5
 	foreign_neutral
+	MEX_idea_porfiriato
+	MEX_idea_haciendas
+}
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	WW1_tech_engineers = 1
+	basic_train = 1
+	horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
 }
 
 set_country_flag = monroe_doctrine
@@ -108,7 +136,7 @@ create_dynamic_country = { #Maderistas
 
 	set_stability = 0.8
 
- recruit_character = MDR_francisco_madero
+	recruit_character = MEX_francisco_madero
 }
 
 create_dynamic_country = { #Villistas
@@ -137,7 +165,7 @@ create_dynamic_country = { #Villistas
 
 	set_stability = 0.8
 
-    recruit_character = VIL_pancho_villa
+    recruit_character = MEX_pancho_villa
 }
 
 create_dynamic_country = { #Carrancistas
@@ -167,7 +195,7 @@ create_dynamic_country = { #Carrancistas
 
 	set_stability = 0.8
 
-	recruit_character = CNT_venustiano_carranza
+	recruit_character = MEX_venustiano_carranza
 }
 
 create_dynamic_country = { #Zapatistas
@@ -197,7 +225,7 @@ create_dynamic_country = { #Zapatistas
 
 	set_stability = 0.8
 
-    recruit_character = ZAP_emiliano_zapata
+    recruit_character = MEX_emiliano_zapata
 }
 set_convoys = 45
 set_stability = 0.2
@@ -228,14 +256,6 @@ set_popularities = {
 			has_start_date > 1909.1.1
 			has_start_date < 1911.1.1
 		}
-		#country_event = { id = ww1_mexico.3 days = 174 }
-		#country_event = { id = ww1_mexico.4 days = 140 }
-		#country_event = { id = ww1_mexico.5 days = 278 }
-		#country_event = { id = ww1_mexico.6 days = 399 }
-		#country_event = { id = ww1_mexico.10 days = 790 }
-		country_event = { id = ww1_mexico.12 days = 1018 }
-		country_event = { id = ww1_mexico.13 days = 1096 }
-		country_event = { id = ww1_mexico.14 days = 1144 }
 	}
 
 	set_politics = {
@@ -269,9 +289,7 @@ set_popularities = {
 		horses = 1
 		ww1_electronic_mechanical_engineering = 1
 	}
-
-   	recruit_character = MEX_gildardo_magana
-   	recruit_character = MEX_joaquin_amaro_dominguez	
+	recruit_character = MEX_gildardo_magana
 }
 
 1914.1.1 = {
@@ -286,9 +304,9 @@ set_popularities = {
 }
 
 1917.1.1 = {
- 	retire_character = MEX_porfirio_diaz
- 	retire_character = MEX_victoriano_huerta
- 	recruit_character = MEX_gustavo_saenz_de_sicilia 
+	retire_character = MEX_porfirio_diaz
+	retire_character = MEX_victoriano_huerta
+	recruit_character = MEX_gustavo_saenz_de_sicilia
 }
 
 1919.1.1 = {
@@ -301,13 +319,13 @@ set_popularities = {
 	set_popularities = {
 		democratic = 100
 	}
- 	promote_character = MEX_venustiano_carranza
- 	recruit_character = MEX_adolfo_de_la_huerta 
- 	recruit_character = MEX_saturnino_cedillo
- 	recruit_character = MEX_lazaro_cardenas 
- 	recruit_character = MEX_manuel_avila_camacho 
- 	recruit_character = MEX_bartolome_garcia_correa 
- 	recruit_character = MEX_anacleto_guerrero_guajardo
+	promote_character = MEX_venustiano_carranza
+	recruit_character = MEX_adolfo_de_la_huerta 
+	recruit_character = MEX_saturnino_cedillo
+	recruit_character = MEX_lazaro_cardenas 
+	recruit_character = MEX_manuel_avila_camacho 
+	recruit_character = MEX_bartolome_garcia_correa 
+	recruit_character = MEX_anacleto_guerrero_guajardo
 }
 
 1920.1.1 = {
@@ -323,9 +341,9 @@ set_popularities = {
 }
 
 1923.1.1 = {
- recruit_character = MEX_luis_maria_martinez
- recruit_character = MEX_luis_montes_de_oca	
- recruit_character = MEX_jose_gonzalo_escobar
+	recruit_character = MEX_luis_maria_martinez
+	recruit_character = MEX_luis_montes_de_oca	
+	recruit_character = MEX_jose_gonzalo_escobar
 }
 
 1925.1.1 = {
@@ -551,19 +569,18 @@ set_popularities = {
 }
 
 1955.1.1 = {
- 	retire_character = MEX_francisco_mugica
- 	retire_character = MEX_roque_gonzalez_garza 
- 	retire_character = MEX_othon_blanco 
- 	retire_character = MEX_jose_vasconcelos 
- 	retire_character = MEX_adolfo_de_la_huerta  
- 	retire_character = MEX_manuel_avila_camacho 
-	retire_character = MEX_joaquin_amaro_dominguez
+ retire_character = MEX_francisco_mugica
+ retire_character = MEX_roque_gonzalez_garza 
+ retire_character = MEX_othon_blanco 
+ retire_character = MEX_jose_vasconcelos 
+ retire_character = MEX_adolfo_de_la_huerta  
+ retire_character = MEX_manuel_avila_camacho 
 
- 	retire_character = MEX_hernan_laborde	
- 	retire_character = MEX_dionisio_encina	   
- 	retire_character = MEX_aaron_saenz	 
+ retire_character = MEX_hernan_laborde	
+ retire_character = MEX_dionisio_encina	   
 
- 	recruit_character = MEX_gustavo_diaz_ordaz
+ retire_character = MEX_aaron_saenz	 
+ recruit_character = MEX_gustavo_diaz_ordaz
 
 	set_portraits = {
 		character = MEX_francisco_luis_urquizo

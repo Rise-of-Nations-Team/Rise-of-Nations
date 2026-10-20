@@ -1821,7 +1821,7 @@ news_event = {
 	id = ronww1_news.83
 	title = ronww1_news.83.t
 	desc = ronww1_news.83.d
-	picture = GFX_news_event_halleys_comet_flies_over
+	picture = GFX_news_event_halley's_comet_flies_over
 	
 	major = yes
 	

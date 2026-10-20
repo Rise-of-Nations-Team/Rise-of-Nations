@@ -1,0 +1,206 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_load_1_small"
+		texturefile = "gfx/loadingscreens/load_1_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_2_small"
+		texturefile = "gfx/loadingscreens/load_2_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_3_small"
+		texturefile = "gfx/loadingscreens/load_3_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_4_small"
+		texturefile = "gfx/loadingscreens/load_4_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_5_small"
+		texturefile = "gfx/loadingscreens/load_5_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_6_small"
+		texturefile = "gfx/loadingscreens/load_6_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_7_small"
+		texturefile = "gfx/loadingscreens/load_7_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_8_small"
+		texturefile = "gfx/loadingscreens/load_8_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_9_small"
+		texturefile = "gfx/loadingscreens/load_9_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_load_10_small"
+		texturefile = "gfx/loadingscreens/load_10_small.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_load_11_small"
+		texturefile = "gfx/loadingscreens/load_11_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_12_small"
+		texturefile = "gfx/loadingscreens/load_12_small.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_load_13_small"
+		texturefile = "gfx/loadingscreens/load_13_small.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_load_14_small"
+		texturefile = "gfx/loadingscreens/load_14_small.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_load_15_small"
+		texturefile = "gfx/loadingscreens/load_15_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_load_16_small"
+		texturefile = "gfx/loadingscreens/load_16_small.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_load_17_small"
+		texturefile = "gfx/loadingscreens/load_17_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_18_small"
+		texturefile = "gfx/loadingscreens/load_18_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_19_small"
+		texturefile = "gfx/loadingscreens/load_19_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_20_small"
+		texturefile = "gfx/loadingscreens/load_20_small.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_load_21_small"
+		texturefile = "gfx/loadingscreens/load_21_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_22_small"
+		texturefile = "gfx/loadingscreens/load_22_small.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_load_23_small"
+		texturefile = "gfx/loadingscreens/load_23_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_24_small"
+		texturefile = "gfx/loadingscreens/load_24_small.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_load_25_small"
+		texturefile = "gfx/loadingscreens/load_25_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_26_small"
+		texturefile = "gfx/loadingscreens/load_26_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_27_small"
+		texturefile = "gfx/loadingscreens/load_27_small.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_load_28_small"
+		texturefile = "gfx/loadingscreens/load_28_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_29_small"
+		texturefile = "gfx/loadingscreens/load_29_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_30_small"
+		texturefile = "gfx/loadingscreens/load_30_small.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_load_31_small"
+		texturefile = "gfx/loadingscreens/load_31_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_32_small"
+		texturefile = "gfx/loadingscreens/load_32_small.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_load_33_small"
+		texturefile = "gfx/loadingscreens/load_33_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_34_small"
+		texturefile = "gfx/loadingscreens/load_34_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_35_small"
+		texturefile = "gfx/loadingscreens/load_35_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_36_small"
+		texturefile = "gfx/loadingscreens/load_36_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_37_small"
+		texturefile = "gfx/loadingscreens/load_37_small.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_load_38_small"
+		texturefile = "gfx/loadingscreens/load_38_small.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_load_39_small"
+		texturefile = "gfx/loadingscreens/load_39_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_load_40_small"
+		texturefile = "gfx/loadingscreens/load_40_small.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_frontend_loading_screen_border_small"
+		texturefile = "gfx/loadingscreens/loading_screen_border_small.dds"
+	}
+}

@@ -1,7 +1,7 @@
 characters={
 
 	JAP_mutsuhito={
-		name="Mutsuhito"
+		name=JAP_mutsuhito
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/DNC/JAP_Emperor_Meiji.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	JAP_yoshihito={
-		name="Yoshihito"
+		name=JAP_yoshihito
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Emperor_Taisho.dds"
@@ -27,7 +27,7 @@ characters={
 		}
 	}
 	JAP_hirohito={
-		name="Hirohito"
+		name=JAP_hirohito
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/INT/Portrait_JAP_Hirohito_1920.dds"
@@ -42,7 +42,7 @@ characters={
 	}
 
 	JAP_yasuhito = {
-		name = "Yasuhito"
+		name = JAP_yasuhito
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/JAP/Portrait_Japan_Prince_Yasuhito.dds"
@@ -68,7 +68,7 @@ characters={
 	}
 
 	JAP_saito_makoto={
-		name="Saito Makoto"
+		name=JAP_saito_makoto
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/INT/Portrait_JAP_Saito_Makoto.dds"
@@ -369,7 +369,7 @@ characters={
 		}
 	}
 	JAP_yamagata_aritomo = {
-		name = "Yamagata Aritomo"
+		name = JAP_yamagata_aritomo
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/JAP/WW1/JAP_Yamagata_Aritomo.dds"
@@ -408,7 +408,7 @@ characters={
 	}
 
 	JAP_tokugawa_iesato = {
-		name = "Tokugawa Iesato"
+		name = JAP_tokugawa_iesato
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/JAP/WW1/Portrait_Japan_Shogun_Tokugawa_Iesato.dds"
@@ -448,7 +448,7 @@ characters={
 	}
 
 	JAP_kotoku_shusui={
-		name="Kotoku Shusui"
+		name=JAP_kotoku_shusui
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/WW1/JAP_Kotoku_Shusuia.dds"
@@ -461,7 +461,7 @@ characters={
 	}
 
 	JAP_toyama_mitsuru={
-		name="Toyama Mitsuru"
+		name=JAP_toyama_mitsuru
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/Portrait_JAP_Toyama_Mitsuru.dds"
@@ -501,7 +501,7 @@ characters={
 	}
 
 	JAP_genichiro_fukuchi={
-		name="Genichiro Fukuchi"
+		name=JAP_genichiro_fukuchi
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/DNC/JAP_Genichiro_Fukuchi.dds"
@@ -515,7 +515,7 @@ characters={
 	}	
 
 	JAP_hamaguchi_osachi={
-		name="Hamaguchi Osachi"
+		name=JAP_hamaguchi_osachi
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Hamaguchi_Osachi.dds"
@@ -554,7 +554,7 @@ characters={
 	}
 
 	JAP_sakai_toshihiko={
-		name="Sakai Toshihiko"
+		name=JAP_sakai_toshihiko
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Sakai_Toshihiko.dds"
@@ -597,7 +597,7 @@ characters={
 
 	#GENERALS AND FIELD MARSHALS
 	JAP_hasegawa_yoshimichi={
-		name="Hasegawa Yoshimichi"
+		name=JAP_hasegawa_yoshimichi
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Hasegawa_Yoshimichi.dds"
@@ -634,7 +634,7 @@ characters={
 	}
 
 	JAP_oku_yasukata={
-		name="Oku Yasukata"
+		name=JAP_oku_yasukata
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Oku_Yasukata.dds"
@@ -672,7 +672,7 @@ characters={
 	}
 
 	JAP_fushimi_sadanaru={
-		name="Fushimi Sadanaru"
+		name=JAP_fushimi_sadanaru
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Fushimi_Sadanaru.dds"
@@ -692,7 +692,7 @@ characters={
 	}	
 
 	JAP_fukushima_yasumasa={
-		name="Fukushima Yasumasa"
+		name=JAP_fukushima_yasumasa
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Fukushima_Yasumasa.dds"
@@ -729,7 +729,7 @@ characters={
 	}
 
 	JAP_oyama_iwao={
-		name="Oyama Iwao"
+		name=JAP_oyama_iwao
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Oyama_Iwao.dds"
@@ -767,7 +767,7 @@ characters={
 	}
 
 	JAP_katsura_taro={
-		name="Katsura Taro"
+		name=JAP_katsura_taro
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Katsura_Taro.dds"				
@@ -787,7 +787,7 @@ characters={
 	}
 
 	JAP_kamio_mitsuomi={
-		name="Kamio Mitsuomi"
+		name=JAP_kamio_mitsuomi
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Kamio_Mitsuomi.dds"
@@ -809,7 +809,7 @@ characters={
 	}
 
 	JAP_kawamura_kageaki={
-		name="Kawamura Kageaki"
+		name=JAP_kawamura_kageaki
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Kawamura_Kageki.dds"
@@ -830,7 +830,7 @@ characters={
 	}
 
 	JAP_tamemoto_kuroki={
-		name="Tamemoto Kuroki"
+		name=JAP_tamemoto_kuroki
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Kamio_Mitsuomi.dds"
@@ -852,7 +852,7 @@ characters={
 	}
 
 	JAP_nogi_maresuke={
-		name="Nogi Maresuke"
+		name=JAP_nogi_maresuke
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Nogi_Maresuke.dds"
@@ -873,7 +873,7 @@ characters={
 	}	
 
 	JAP_haraguchi_kensai={
-		name="Haraguchi Kensai"
+		name=JAP_haraguchi_kensai
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Haraguchi_Kensai.dds"		
@@ -894,7 +894,7 @@ characters={
 	}
 
 	JAP_ueda_arisawa={
-		name="Ueda Arisawa"
+		name=JAP_ueda_arisawa
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Ueda_Arisawa.dds"
@@ -915,7 +915,7 @@ characters={
 	}
 
 	JAP_nagaoka_gaishi={
-		name="Nagaoka Gaishi"
+		name=JAP_nagaoka_gaishi
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Nagaoka_Gaishi.dds"
@@ -936,7 +936,7 @@ characters={
 	}
 
 	JAP_kazushige_ugaki = {
-		name="Kazushige Ugaki"
+		name =JAP_kazushige_ugaki
 		portraits = {
 			army = {
 				large = "gfx/leaders/JAP/WW1/Portrait_Japan_Kazushige_Ugaki.dds"
@@ -976,7 +976,7 @@ characters={
 	}	
 
 	JAP_uehara_yusaku={
-		name="Uehara Yusaku"
+		name=JAP_uehara_yusaku
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Uehara_Yusaku.dds"
@@ -1031,7 +1031,7 @@ characters={
 	}
 
 	JAP_yamanashi_hanzo={
-		name="Yamanashi Hanzo"
+		name=JAP_yamanashi_hanzo
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Yamanashi_Hanzo.dds"		
@@ -1052,7 +1052,7 @@ characters={
 	}
 
 	JAP_yui_mitsue={
-		name="Yui Mitsue"
+		name=JAP_yui_mitsue
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Yui_Mitsue.dds"
@@ -1073,7 +1073,7 @@ characters={
 	}
 
 	JAP_otani_kikuzo={
-		name="Otani Kikuzo"
+		name=JAP_otani_kikuzo
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Otani_Kikuzo.dds"
@@ -1093,7 +1093,7 @@ characters={
 	}
 
 	JAP_takeji_nara={
-		name="Takeji Nara"
+		name=JAP_takeji_nara
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Takeji_Nara.dds"
@@ -1115,7 +1115,7 @@ characters={
 
 	#NAVY ADMIRALS
 	JAP_kamimura_hikonojo={
-		name="Kamimura Hikonojo"
+		name=JAP_kamimura_hikonojo
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Kamimura_Hikonojo.dds"
@@ -1136,7 +1136,7 @@ characters={
 	}
 
 	JAP_togo_heihachiro={
-		name="Togo Heihachiro"
+		name=JAP_togo_heihachiro
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Togo_Heihachiro.dds"
@@ -1174,7 +1174,7 @@ characters={
 	}
 
 	JAP_ijuin_goro={
-		name="Ijuin Goro"
+		name=JAP_ijuin_goro
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Iujin_Goro.dds"
@@ -1211,7 +1211,7 @@ characters={
 	}
 
 	JAP_dewa_shigeto={
-		name="Dewa Shigeto"
+		name=JAP_dewa_shigeto
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Dewa_Shigeto.dds"
@@ -1232,7 +1232,7 @@ characters={
 	}
 
 	JAP_kanji_kato={
-		name="Kanji Kato"
+		name=JAP_kanji_kato
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Kanji_Kato.dds"
@@ -1253,7 +1253,7 @@ characters={
 	}	
 
 	JAP_ito_sukeyuki = {
-		name = "Ito Sukeyuki"
+		name = JAP_ito_sukeyuki
 		portraits = {
 			army = {
 				large = "gfx/leaders/JAP/WW1/Admiral_Ito_Sukeyuki.dds"
@@ -1273,7 +1273,7 @@ characters={
 	}	
 
 	JAP_inoue_yoshika={
-		name="Inoue Yoshika"
+		name=JAP_inoue_yoshika
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Inoue_Yoshika.dds"
@@ -1313,7 +1313,7 @@ characters={
 	}
 
 	JAP_kataoka_shichiro={
-		name="Kataoka Shichiro"
+		name=JAP_kataoka_shichiro
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Kataoka_Shichiro.dds"
@@ -1334,7 +1334,7 @@ characters={
 	}
 
 	JAP_kato_sadakichi={
-		name="Kato Sadakichi"
+		name=JAP_kato_sadakichi
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Kato_Sadakichi.dds"
@@ -1355,7 +1355,7 @@ characters={
 	}
 
 	JAP_hidaka_sonojo={
-		name="Hidaka Sonojo"
+		name=JAP_hidaka_sonojo
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Hidaka_Sonojo.dds"				
@@ -1375,7 +1375,7 @@ characters={
 	}	
 
 	JAP_uryu_sotokichi={
-		name="Uryu Sotokichi"
+		name=JAP_uryu_sotokichi
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/Admiral_Uryu_Sotokichi.dds"	
@@ -1397,7 +1397,7 @@ characters={
 
 	#POLITICAL ADVISORS
 	JAP_hara_takashi={
-		name="Hara Takashi"
+		name=JAP_hara_takashi
 		portraits={
 			civilian={
 				small="GFX_idea_generic_political_advisor_asia_4"
@@ -1428,7 +1428,7 @@ characters={
 	}
 
 	JAP_ishii_kikujiro={
-		name="Ishii Kikujiro"
+		name=JAP_ishii_kikujiro		
 		advisor={
 			slot = political_advisor
 			idea_token = JAP_ishii_kikujiro
@@ -1451,7 +1451,7 @@ characters={
 	}
 
 	JAP_yasuda_zenjiro={
-		name="Yasuda Zenjiro"	
+		name=JAP_yasuda_zenjiro	
 		portraits={
 			civilian={
 				small="GFX_idea_generic_political_advisor_asia_3"
@@ -1483,7 +1483,7 @@ characters={
 	}
 
 	JAP_takahashi_korekiyo={
-		name = "Takahashi Korekiyo"
+		name = JAP_takahashi_korekiyo
 		portraits={
 			civilian={
 				large = "gfx/leaders/JAP/WW1/Portrait_Japan_Takahashi_Korekiyo.dds"
@@ -1516,7 +1516,7 @@ characters={
 	}
 
 	JAP_makino_nobuaki={
-		name="Makino Nobuaki"
+		name=JAP_makino_nobuaki	
 		portraits={
 			civilian={
 				small="GFX_idea_generic_political_advisor_asia_1"
@@ -1547,7 +1547,7 @@ characters={
 	}
 
 	JAP_okuma_shigenobu={
-		name="Okuma Shigenobu"
+		name=JAP_okuma_shigenobu
 		portraits={
 			civilian={
 				small="GFX_idea_generic_political_advisor_asia_2"
@@ -1578,7 +1578,7 @@ characters={
 	}
 
 	JAP_saionji_kinmochi={
-		name="Saionji Kinmochi"
+		name=JAP_saionji_kinmochi
 		portraits={
 			civilian={
 				small="GFX_idea_generic_political_advisor_asia_5"
@@ -1609,7 +1609,7 @@ characters={
 	}
 
 	JAP_terauchi_masatake={
-		name="Terauchi Masatake"
+		name=JAP_terauchi_masatake
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/WW1/Portrait_Japan_Terauchi_Masatake.dds"
@@ -1641,7 +1641,7 @@ characters={
 	}	
 
 	JAP_goto_shinpei={
-		name="Goto Shinpei"
+		name=JAP_goto_shinpei
 		portraits={
 			civilian={
 				small="GFX_idea_generic_political_advisor_asia_5"
@@ -1673,7 +1673,7 @@ characters={
 	}	
 
 	JAP_arahata_kanson={
-		name="Arahata Kanson"
+		name=JAP_arahata_kanson
 		portraits={
 			army={
 				small="GFX_idea_generic_communist_revolutionary_asian_2d"
@@ -1706,7 +1706,7 @@ characters={
 
 	#HIGH COMMAND ADVISORS
 	JAP_murakami_kakuichi={
-		name="Murakami Kakuichi"
+		name=JAP_murakami_kakuichi
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_1"
@@ -1735,7 +1735,7 @@ characters={
 	}
 
 	JAP_sakatani_yoshiro={
-		name="Sakatani Yoshiro"
+		name=JAP_sakatani_yoshiro
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_1"
@@ -1765,7 +1765,7 @@ characters={
 	}
 
 	JAP_kanin_kotohito={
-		name="Kanin Kotohito"
+		name=JAP_kanin_kotohito
 		portraits={
 			army={
 				large="gfx/leaders/JAP/WW1/General_Kanin_Kotohito.dds"				
@@ -1808,7 +1808,7 @@ characters={
 	}
 
 	JAP_kigoshi_yasutsuna={
-		name="Kigoshi Yasutsuna"
+		name=JAP_kigoshi_yasutsuna
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_1"
@@ -1836,7 +1836,7 @@ characters={
 	}
 
 	JAP_tokugawa_yoshitoshi={ #Appears by 1910
-		name="Tokugawa Yoshitoshi"
+		name=JAP_tokugawa_yoshitoshi
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_4"
@@ -1868,7 +1868,7 @@ characters={
 	}
 
 	JAP_yoshinori_shirakawa={
-		name="Yoshinori Shirakawa"
+		name=JAP_yoshinori_shirakawa
 		portraits={
 			army={
 				large="gfx/leaders/JAP/Portrait_Japan_Yoshinori_Shirakawa.dds"
@@ -1911,7 +1911,7 @@ characters={
 	}
 
 	JAP_tanaka_giichi={
-		name="Tanaka Giichi"
+		name=JAP_tanaka_giichi
 		portraits={
 			army={
 				small="gfx/interface/ideas/JAP/idea_JAP_Tanaka_Giichi.png"
@@ -1956,7 +1956,7 @@ characters={
 	}
 
 	JAP_kato_tomosaburo={
-		name="Kato Tomosaburo"
+		name=JAP_kato_tomosaburo
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_1"
@@ -1984,7 +1984,7 @@ characters={
 	}
 
 	JAP_oka_ichinosuke={
-		name="Oka Ichinosuke"
+		name=JAP_oka_ichinosuke
 		portraits={
 			army={
 				small="GFX_idea_asia_generic_land_2"
@@ -2012,7 +2012,7 @@ characters={
 	}
 
 	JAP_inoue_ikutaro={
-		name="Inoue Ikutaro"
+		name=JAP_inoue_ikutaro
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_2"
@@ -2040,7 +2040,7 @@ characters={
 	}
 
 	JAP_kusunose_yukihiko={
-		name="Kusunose Yukihiko"
+		name=JAP_kusunose_yukihiko
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_5"
@@ -2069,7 +2069,7 @@ characters={
 	}
 
 	JAP_takarabe_takeshi={
-		name="Takarabe Takeshi"
+		name=JAP_takarabe_takeshi
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_3"
@@ -2097,7 +2097,7 @@ characters={
 	}
 
 	JAP_yashiro_rokuro={
-		name="Yashiro Rokuro"
+		name=JAP_yashiro_rokuro
 		portraits={
 			army={
 				small="GFX_idea_asia_generic_navy_1"
@@ -2156,7 +2156,7 @@ characters={
 	}	
 
 	JAP_tomoyuki_yamashita={
-		name="Tomoyuki Yamashita"
+		name=JAP_tomoyuki_yamashita
 		portraits={
 			army={
 				small="GFX_idea_tomoyuki_yamashita"

@@ -380,7 +380,7 @@ set_popularities = {
 		communism = 5
 	}
 	create_country_leader = {
-		name = "JÃ¡nos Ãÿder"
+		name = "JÃ¡nos Ãder"
 		picture = "gfx/leaders/HUN/MD/Hungary_Janos_Ader.dds"
 		
 		ideology = christian_democracy
@@ -389,8 +389,8 @@ set_popularities = {
 
 2020.1.1 = {
 	create_country_leader = {
-		name = "JÃ¡nos Ãÿder"
-		picture = "gfx/leaders/HUN/MD/HUN_JÃ¡nos_Ãÿder_Conservatism.dds"
+		name = "JÃ¡nos Ãder"
+		picture = "gfx/leaders/HUN/MD/Hungary_Janos_Ader.dds"
 		
 		ideology = conservatism
 	}

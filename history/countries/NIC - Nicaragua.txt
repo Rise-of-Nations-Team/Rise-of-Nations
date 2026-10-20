@@ -20,34 +20,12 @@ set_popularities = {
 	democratic = 100
 }
 
-create_country_leader = {
-	name = "José Santos Zelaya"
-	picture = "gfx/leaders/NIC/DNC/NIC_José_Santos_Zelaya.dds"
-	
-	ideology = liberalism
-}
+recruit_character = NIC_jose_santos_zelaya
+recruit_character = NIC_anastasio_somoza_garcia
+recruit_character = NIC_daniel_ortega
+recruit_character = NIC_anastasio_somoza_debayle
 
-create_country_leader = {
-	name = "Anastasio Somoza García"
-	desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
-	picture = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
-	
-	ideology = militarism
-}
-
-create_country_leader = {
-	name = "Daniel Ortega"
-	picture = "gfx/leaders/NIC/CW/Nicaragua-Daniel_Ortega.dds"
-	
-	ideology = sandinism
-}
-
-create_country_leader = {
-	name = "Anastasio Somoza Debayle"
-	picture = "gfx/leaders/NIC/CW/Anastasio_Somoza_Debayle.dds"
-	
-	ideology = rw_nationalism
-}
+recruit_character = NIC_jose_madriz_rodriguez
 
 1910.1.1 = {
 	oob = "NIC_1910"
@@ -62,12 +40,7 @@ create_country_leader = {
 		democratic = 100
 	}
 
-	create_country_leader = {
-		name = "José Madriz Rodríguez"
-		picture = "gfx/leaders/NIC/WW1/Jose_Madriz.dds"
-		
-		ideology = liberalism
-	}
+	promote_character = NIC_jose_madriz_rodriguez
 
 	set_technology = {
 		tech_support = 1

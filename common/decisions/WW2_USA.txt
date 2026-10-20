@@ -17073,8 +17073,7 @@ usa_war_in_the_pacific = {
 		modifier = {
 			invasion_preparation = -0.5
 			amphibious_invasion_defence = 0.35
-			naval_invasion_division_cap = 60
-			naval_invasion_plan_cap = 20
+			naval_invasion_capacity = 60
 			max_planning = 1
 			army_attack_factor = 0.45
 			army_defence_factor = 0.2
@@ -17272,8 +17271,7 @@ usa_war_in_europe = {
 		modifier = {
 			invasion_preparation = -0.25
 			amphibious_invasion_defence = 0.15
-			naval_invasion_division_cap = 30
-			naval_invasion_plan_cap = 15
+			naval_invasion_capacity = 30
 			max_planning = 0.5
 		}
 	}

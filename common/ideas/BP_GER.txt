@@ -251,47 +251,4 @@ ideas = {
 			}
 		}
 	}
-	political_advisor = {
-		reinhard_heydrich = {
-
-
-			allowed = {
-				OR = {
-					original_tag = CZE
-					original_tag = RKH
-				}
-			}
-			visible = {
-				date > 1933.1.1
-				date < 1949.1.1
-			}
-			available = {
-				date > 1933.1.1
-				date < 1949.1.1
-				has_government = fascism
-				is_in_faction_with = GER
-				GER = { NOT = { has_country_flag = heydrich_was_killed } }
-			}
-
-			traits = { hangman }
-		}
-
-		anton_mussert = {
-
-
-			allowed = {
-				original_tag = RKN
-			}
-			visible = {
-				date > 1933.1.1
-				date < 1949.1.1
-			}
-			available = {
-				date > 1933.1.1
-				date < 1949.1.1
-			}
-
-			traits = { net_leider }
-		}
-	}
 }

@@ -17,3 +17,17 @@ set_research_slots = 0
 add_ideas = {
 	RI_optimisation
 }
+
+1900.1.1 = {
+	set_global_flag = DNC_RON_ERA_gflg
+}
+
+1910.1.1 = {
+	clr_global_flag = DNC_RON_ERA_gflg
+	set_global_flag = WW1_RON_ERA_gflg
+}
+
+1919.1.1 = {
+	clr_global_flag = WW1_RON_ERA_gflg
+	set_global_flag = INT_RON_ERA_gflg
+}
