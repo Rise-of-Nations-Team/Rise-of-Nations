@@ -118,6 +118,17 @@ bookmarks = {
 
 		#### MINORS ####
 
+		ITA = {
+			minor = yes
+			history = "ITA_PRE_WW1_DESC"
+			ideology = neutrality
+			version = base_game
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
 		QIN = {
 			minor = yes
 			history = "QIN_PRE_WW1_DESC"
