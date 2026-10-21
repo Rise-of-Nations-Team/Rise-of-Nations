@@ -1951,7 +1951,7 @@ technologies = {
 		}
 
 		enable_building = {
-			building = anti_air
+			building = anti_air_building
 			level = 5
 		}
 
@@ -2890,7 +2890,7 @@ technologies = {
 		}
 
 		enable_building = {
-			building = anti_air
+			building = anti_air_building
 			level = 5
 		}
 
