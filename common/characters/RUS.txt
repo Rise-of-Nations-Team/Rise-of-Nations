@@ -2233,15 +2233,6 @@ characters = {
 		}
 	}
 
-	RUS_provisional_government = {
-		name="Provisional Government"
-		portraits={
-			civilian={
-				large = "gfx/leaders/RUS/Provisional_Government.dds"
-			}
-		}		
-	}
-
 	RUS_interregnum = {
 		name="Interregnum"
 		portraits={
