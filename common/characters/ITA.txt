@@ -4084,16 +4084,7 @@ ITA_curio_bernardis = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				if = {
-					limit = {
-						has_government = fascism
-						# has_completed_focus = ITA_utilize_the_blackshirts
-						# has_completed_focus = ITA_cooperate_with_moderates
-					}
-				}
-				else = {
-					has_government = fascism
-				}
+				has_government = fascism
 			}
 			traits = {
 				editor
