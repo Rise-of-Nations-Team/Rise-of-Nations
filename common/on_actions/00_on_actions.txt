@@ -1310,11 +1310,6 @@ on_actions = {
 				}
 
 				GER = { #Axis and Austria just didn't get along
-					IF = {
-						limit = {
-							is_historical_focus_on = yes
-						}
-					}
 					add_ai_strategy = {
 						type = alliance
 						id = AUS
@@ -1322,11 +1317,6 @@ on_actions = {
 					}
 				}
 				AUS = {
-					IF = {
-						limit = {
-							is_historical_focus_on = yes
-						}
-					}
 					add_ai_strategy = {
 						type = alliance
 						id = GER
