@@ -654,7 +654,6 @@ recruit_character = USA_william_sims
 	recruit_character = USA_henry_wallace
 	recruit_character = USA_jesse_h_jones	
 	recruit_character = USA_claude_r_wickard
-	recruit_character = USA_daniel_c_roper
 	recruit_character = USA_homer_s_cummings	
 	recruit_character = USA_francis_biddle
 	recruit_character = USA_james_allred

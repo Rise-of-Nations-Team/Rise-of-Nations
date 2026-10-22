@@ -2582,30 +2582,7 @@ characters={
 				}						
 			}
 		}
-	}	
-
-	USA_daniel_c_roper = {
-		name = "Daniel Calhoun Roper"
-		portraits = {
-			civilian={
-				small = "gfx/interface/ideas/USA/idea_USA_daniel_c_roper.dds"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = USA_daniel_c_roper
-			traits = { HUN_moderate_lawyer }			
-			allowed = {
-				original_tag = USA
-			}
-			visible = {
-				date < 1944.1.1		
-			}
-			available = {
-				date < 1944.1.1						
-			}
-		}
-	}	
+	}		
 
 	USA_david_f_houston = {
 		name = "David Franklin Houston"
