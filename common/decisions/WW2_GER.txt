@@ -19,6 +19,11 @@ GER_reich_labor_service_cat = {
 			51 = { is_fully_controlled_by = ROOT }
 			51 = { is_fully_controlled_by = ROOT }
 			42 = { is_fully_controlled_by = ROOT }
+			792 = { is_fully_controlled_by = ROOT }
+			1055 = { is_fully_controlled_by = ROOT }
+			790 = { is_fully_controlled_by = ROOT }
+			788 = { is_fully_controlled_by = ROOT }
+			979 = { is_fully_controlled_by = ROOT }
 		}
 
 		cancel_trigger = { 
@@ -30,6 +35,11 @@ GER_reich_labor_service_cat = {
 				51 = { is_controlled_by = ROOT }
 				51 = { is_controlled_by = ROOT }
 				42 = { is_controlled_by = ROOT }
+				792 = { is_controlled_by = ROOT }
+				1055 = { is_controlled_by = ROOT }
+				790 = { is_controlled_by = ROOT }
+				788 = { is_controlled_by = ROOT }
+				979 = { is_controlled_by = ROOT }
 			} 
 		}
 
@@ -41,17 +51,11 @@ GER_reich_labor_service_cat = {
 				state = 55 #Hessen
 				state = 51 #Rhineland
 				state = 42 #Moselland
-			}
-		}
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 56 #Weser-Ems
-				state = 59 #Hannover
-				state = 57 #Westfalen
-				state = 55 #Hessen
-				state = 51 #Rhineland
-				state = 42 #Moselland
+				state = 792 #Bitburg
+				state = 1055 #Saarland
+				state = 790 #Frankfurt
+				state = 788 #Ostrheinland
+				state = 979 #Ostfriesland
 			}
 		}
 
@@ -75,6 +79,11 @@ GER_reich_labor_service_cat = {
 						state = 55 #Hessen
 						state = 51 #Rhineland
 						state = 42 #Moselland
+						state = 792 #Bitburg
+						state = 1055 #Saarland
+						state = 790 #Frankfurt
+						state = 788 #Ostrheinland
+						state = 979 #Ostfriesland
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -104,6 +113,7 @@ GER_reich_labor_service_cat = {
 			61 = { is_fully_controlled_by = ROOT }
 			62 = { is_fully_controlled_by = ROOT }
 			63 = { is_fully_controlled_by = ROOT }
+			797 = { is_fully_controlled_by = ROOT }
 		}
 
 		cancel_trigger = { 
@@ -113,6 +123,7 @@ GER_reich_labor_service_cat = {
 				61 = { is_controlled_by = ROOT }
 				62 = { is_controlled_by = ROOT }
 				63 = { is_controlled_by = ROOT }
+				797 = { is_controlled_by = ROOT }
 			} 
 		}
 
@@ -123,6 +134,7 @@ GER_reich_labor_service_cat = {
 				state = 61 #Mecklenburg
 				state = 62 #Vorpommern
 				state = 63 #Hinterpommern
+				state = 797 #Settin
 			}
 		}
 
@@ -145,6 +157,7 @@ GER_reich_labor_service_cat = {
 						state = 61 #Mecklenburg
 						state = 62 #Vorpommern
 						state = 63 #Hinterpommern
+						state = 797 #Settin
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -173,14 +186,21 @@ GER_reich_labor_service_cat = {
 			5 = { is_fully_controlled_by = ROOT }
 			66 = { is_fully_controlled_by = ROOT }
 			67 = { is_fully_controlled_by = ROOT }
+			68 = { is_fully_controlled_by = ROOT }
+		    803 = { is_fully_controlled_by = ROOT }
+            801 = { is_fully_controlled_by = ROOT }
+			878 = { is_fully_controlled_by = ROOT }
 		}
-
 		cancel_trigger = { 
 			NOT = { 
 				763 = { is_controlled_by = ROOT }
 				5 = { is_controlled_by = ROOT }
 				66 = { is_controlled_by = ROOT }
 				67 = { is_controlled_by = ROOT }
+				68 = { is_controlled_by = ROOT }
+		    	803 = { is_controlled_by = ROOT }
+            	801 = { is_controlled_by = ROOT }
+				878 = { is_controlled_by = ROOT }
 			}
 			if = {
 				limit = {
@@ -192,10 +212,10 @@ GER_reich_labor_service_cat = {
 			}
 			if = {
 				limit = {
-					865 = { is_core_of = ROOT }
+					807 = { is_core_of = ROOT }
 				}
 				NOT = {
-					865 = { is_controlled_by = ROOT }
+					807 = { is_controlled_by = ROOT }
 				}
 			}
 			if = {
@@ -230,8 +250,13 @@ GER_reich_labor_service_cat = {
 				state = 5 #Ermland-Masuren
 				state = 66 #Niederschlesien
 				state = 67 #Oberschlesien
+				state = 68 #Ostmark
+				state = 803 #Neisse
+				state = 801 #Ostniederschlesien
+				state = 878 #Glatz
+
 				state = 85 #Danzig, hinting to the player they can develop this state too
-				state = 865 #Gdynia, hinting to the player they can develop this state too
+				state = 807 #Gdynia, hinting to the player they can develop this state too
 				state = 86 #Poznan, hinting to the player they can develop this state too
 				state = 762 #Katowice, hinting to the player they can develop this state too
 				state = 188 #Memel, hinting to the player they can develop this state too
@@ -256,8 +281,13 @@ GER_reich_labor_service_cat = {
 						state = 5 #Ermland-Masuren
 						state = 66 #Niederschlesien
 						state = 67 #Oberschlesien
+						state = 68 #Ostmark
+						state = 803 #Neisse
+						state = 801 #Ostniederschlesien
+						state = 878 #Glatz
+
 						state = 85 #Danzig - in case Germany has cored it
-						state = 865 #Gdynia - in case Germany has cored it
+						state = 807 #Gdynia - in case Germany has cored it
 						state = 86 #Poznan - in case Germany has cored it
 						state = 762 #Katowice- in case Germany has cored it
 						state = 188 #Memel - in case Germany has cored it
@@ -288,7 +318,10 @@ GER_reich_labor_service_cat = {
 			64 = { is_fully_controlled_by = ROOT }
 			65 = { is_fully_controlled_by = ROOT }
 			60 = { is_fully_controlled_by = ROOT }
-			68 = { is_fully_controlled_by = ROOT }
+			1105 = { is_fully_controlled_by = ROOT }
+			794 = { is_fully_controlled_by = ROOT }
+			793 = { is_fully_controlled_by = ROOT }
+			795 = { is_fully_controlled_by = ROOT }
 		}
 
 		cancel_trigger = { 
@@ -296,16 +329,22 @@ GER_reich_labor_service_cat = {
 				64 = { is_controlled_by = ROOT }
 				65 = { is_controlled_by = ROOT }
 				60 = { is_controlled_by = ROOT }
-				68 = { is_controlled_by = ROOT }
+				1105 = { is_controlled_by = ROOT }
+				794 = { is_controlled_by = ROOT }
+				793 = { is_controlled_by = ROOT }
+				795 = { is_controlled_by = ROOT }
 			} 
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 64 #Brandenburg
+				state = 64 #East Berlin
 				state = 65 #Sachsen
 				state = 60 #Thüringen
-				state = 68 #Ostmark
+				state = 1105 #West Berlin
+				state = 794 #Brandenburg
+				state = 793 #Magdeburg-Anhalt
+				state = 795 #Sachsen
 			}
 		}
 
@@ -323,10 +362,13 @@ GER_reich_labor_service_cat = {
 			every_core_state = {
 				limit = {
 					OR = {
-						state = 64 #Brandenburg
+						state = 64 #East Berlin
 						state = 65 #Sachsen
 						state = 60 #Thüringen
-						state = 68 #Ostmark
+						state = 1105 #West Berlin
+						state = 794 #Brandenburg
+						state = 793 #Magdeburg-Anhalt
+						state = 795 #Sachsen
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -356,6 +398,9 @@ GER_reich_labor_service_cat = {
 			50 = { is_fully_controlled_by = ROOT }
 			53 = { is_fully_controlled_by = ROOT }
 			54 = { is_fully_controlled_by = ROOT }
+			877 = { is_fully_controlled_by = ROOT }
+			800 = { is_fully_controlled_by = ROOT }
+			798 = { is_fully_controlled_by = ROOT }
 		}
 
 		cancel_trigger = { 
@@ -365,6 +410,9 @@ GER_reich_labor_service_cat = {
 				50 = { is_controlled_by = ROOT }
 				53 = { is_controlled_by = ROOT }
 				54 = { is_controlled_by = ROOT }
+				877 = { is_controlled_by = ROOT }
+				800 = { is_controlled_by = ROOT }
+				798 = { is_controlled_by = ROOT }
 			} 
 		}
 
@@ -375,6 +423,9 @@ GER_reich_labor_service_cat = {
 				state = 52 #Oberbayern
 				state = 53 #Niederbayern
 				state = 54 #Franken
+				state = 877 #Swaben
+				state = 800 #Burghausen
+				state = 798 #Berchtesgaden
 			}
 		}
 
@@ -397,6 +448,9 @@ GER_reich_labor_service_cat = {
 						state = 52 #Oberbayern
 						state = 53 #Niederbayern
 						state = 54 #Franken
+						state = 877 #Swaben
+						state = 800 #Burghausen
+						state = 798 #Berchtesgaden
 					}
 				}
 				add_extra_state_shared_building_slots = 1

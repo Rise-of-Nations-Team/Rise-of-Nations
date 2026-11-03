@@ -1762,9 +1762,9 @@ technologies = {
 
 		start_year = 1944
 
-		path = {
-			leads_to_tech = cw_ship_hull_carrier_1
-		}
+		#path = {
+		#	leads_to_tech = cw_ship_hull_carrier_1
+		#}
 
 		folder = {
 			name = mtgnavalfolder
