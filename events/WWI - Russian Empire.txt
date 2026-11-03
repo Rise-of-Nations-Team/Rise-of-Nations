@@ -1653,26 +1653,26 @@ country_event = {
 			every_owned_state = {
 				add_core_of = FNR
 			}
-			FNR_Antti_Kiviranta = { set_nationality = FNR }
-			FNR_Otto_Wille_Kuusinen = { set_nationality = FNR }
-			FNR_Emil_Elo = { set_nationality = FNR }
-			FNR_Johan_Erik_Lumivuokko = { set_nationality = FNR }
-			FNR_Konstantin_Lindqvist = { set_nationality = FNR }
-			FNR_Mattia_Turkia = { set_nationality = FNR }
-			FNR_Edvard_Gylling = { set_nationality = FNR }
-			FNR_Oskari_Tokoi = { set_nationality = FNR }
-			FNR_Yrjo_Sirola = { set_nationality = FNR }
-			FNR_Kullervo_Manner = { set_nationality = FNR }
-			FNR_Jalo_Kohonen = { set_nationality = FNR }
-			FNR_Lauri_Letonmaki = { set_nationality = FNR }
-			FNR_Adolf_Taimi = { set_nationality = FNR }
-			FNR_Eero_Haapalainen = { set_nationality = FNR }
-			FNR_Evert_Eloranta = { set_nationality = FNR }
-			FNR_Eino_Rahja = { set_nationality = FNR }
-			FNR_Ali_Aaltonen = { set_nationality = FNR }
-			FNR_Verner_Lehtimaki = { set_nationality = FNR }
-			FNR_August_Wesley = { set_nationality = FNR }
-			FNR_Ernst_Hausen = { set_nationality = FNR }
+			FIN_Antti_Kiviranta = { set_nationality = FNR }
+			FIN_Otto_Wille_Kuusinen = { set_nationality = FNR }
+			FIN_Emil_Elo = { set_nationality = FNR }
+			FIN_Johan_Erik_Lumivuokko = { set_nationality = FNR }
+			FIN_Konstantin_Lindqvist = { set_nationality = FNR }
+			FIN_Mattia_Turkia = { set_nationality = FNR }
+			FIN_Edvard_Gylling = { set_nationality = FNR }
+			FIN_Oskari_Tokoi = { set_nationality = FNR }
+			FIN_Yrjo_Sirola = { set_nationality = FNR }
+			FIN_Kullervo_Manner = { set_nationality = FNR }
+			FIN_Jalo_Kohonen = { set_nationality = FNR }
+			FIN_Lauri_Letonmaki = { set_nationality = FNR }
+			FIN_Adolf_Taimi = { set_nationality = FNR }
+			FIN_Eero_Haapalainen = { set_nationality = FNR }
+			FIN_Evert_Eloranta = { set_nationality = FNR }
+			FIN_Eino_Rahja = { set_nationality = FNR }
+			FIN_Ali_Aaltonen = { set_nationality = FNR }
+			FIN_Verner_Lehtimaki = { set_nationality = FNR }
+			FIN_August_Wesley = { set_nationality = FNR }
+			FIN_Ernst_Hausen = { set_nationality = FNR }
 		}
 		FNR = {
 			
@@ -1737,26 +1737,26 @@ country_event = {
 			set_province_controller = 13107
 			set_province_controller = 13106
 			set_province_controller = 13103
-			FNR_Antti_Kiviranta = { set_nationality = FNR }
-			FNR_Otto_Wille_Kuusinen = { set_nationality = FNR }
-			FNR_Emil_Elo = { set_nationality = FNR }
-			FNR_Johan_Erik_Lumivuokko = { set_nationality = FNR }
-			FNR_Konstantin_Lindqvist = { set_nationality = FNR }
-			FNR_Mattia_Turkia = { set_nationality = FNR }
-			FNR_Edvard_Gylling = { set_nationality = FNR }
-			FNR_Oskari_Tokoi = { set_nationality = FNR }
-			FNR_Yrjo_Sirola = { set_nationality = FNR }
-			FNR_Kullervo_Manner = { set_nationality = FNR }
-			FNR_Jalo_Kohonen = { set_nationality = FNR }
-			FNR_Lauri_Letonmaki = { set_nationality = FNR }
-			FNR_Adolf_Taimi = { set_nationality = FNR }
-			FNR_Eero_Haapalainen = { set_nationality = FNR }
-			FNR_Evert_Eloranta = { set_nationality = FNR }
-			FNR_Eino_Rahja = { set_nationality = FNR }
-			FNR_Ali_Aaltonen = { set_nationality = FNR }
-			FNR_Verner_Lehtimaki = { set_nationality = FNR }
-			FNR_August_Wesley = { set_nationality = FNR }
-			FNR_Ernst_Hausen = { set_nationality = FNR }
+			FIN_Antti_Kiviranta = { set_nationality = FNR }
+			FIN_Otto_Wille_Kuusinen = { set_nationality = FNR }
+			FIN_Emil_Elo = { set_nationality = FNR }
+			FIN_Johan_Erik_Lumivuokko = { set_nationality = FNR }
+			FIN_Konstantin_Lindqvist = { set_nationality = FNR }
+			FIN_Mattia_Turkia = { set_nationality = FNR }
+			FIN_Edvard_Gylling = { set_nationality = FNR }
+			FIN_Oskari_Tokoi = { set_nationality = FNR }
+			FIN_Yrjo_Sirola = { set_nationality = FNR }
+			FIN_Kullervo_Manner = { set_nationality = FNR }
+			FIN_Jalo_Kohonen = { set_nationality = FNR }
+			FIN_Lauri_Letonmaki = { set_nationality = FNR }
+			FIN_Adolf_Taimi = { set_nationality = FNR }
+			FIN_Eero_Haapalainen = { set_nationality = FNR }
+			FIN_Evert_Eloranta = { set_nationality = FNR }
+			FIN_Eino_Rahja = { set_nationality = FNR }
+			FIN_Ali_Aaltonen = { set_nationality = FNR }
+			FIN_Verner_Lehtimaki = { set_nationality = FNR }
+			FIN_August_Wesley = { set_nationality = FNR }
+			FIN_Ernst_Hausen = { set_nationality = FNR }
 		}
 		FNR = {
 			change_tag_from = FIN

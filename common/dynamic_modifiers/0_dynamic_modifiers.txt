@@ -883,6 +883,7 @@ SOV_the_red_fleet_dynamic_modifier = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -903,6 +904,7 @@ SOV_the_red_fleet_surface_1_dynamic_modifier = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -923,6 +925,7 @@ SOV_the_red_fleet_surface_2_dynamic_modifier = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -943,6 +946,7 @@ SOV_the_red_fleet_submarine_1_dynamic_modifier = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -963,6 +967,7 @@ SOV_the_red_fleet_submarine_2_dynamic_modifier = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -981,6 +986,7 @@ SOV_the_red_fleet_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -1001,6 +1007,7 @@ SOV_the_red_fleet_surface_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -1021,6 +1028,7 @@ SOV_the_red_fleet_surface_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -1041,6 +1049,7 @@ SOV_the_red_fleet_submarine_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }
@@ -1061,6 +1070,7 @@ SOV_the_red_fleet_submarine_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	navy_visibility = SOV_red_fleet_navy_visibility #-0.05 -> Advanced Manevuers
 	positioning = SOV_red_fleet_positioning #0.1 -> Advanced Manevuers
 	screening_efficiency = SOV_red_fleet_screening_efficiency #0.1 -> Advanced Manevuers
+	naval_invasion_capacity = SOV_red_fleet_naval_invasion_capacity #10 -> Marines
 	invasion_preparation = SOV_red_fleet_invasion_preparation #-0.1 -> Marines
 	special_forces_cap = SOV_red_fleet_special_forces_cap #0.1 -> Marines
 }

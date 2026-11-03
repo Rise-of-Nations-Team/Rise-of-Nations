@@ -1,7 +1,7 @@
 characters={
 
 	VEN_cipriano_castro={ #Was already a Dictator since 1899, dies in exile in 1924.
-		name="Cipriano Castro"
+		name=VEN_cipriano_castro
 		portraits={
 			civilian={
 				large="gfx/leaders/VEN/DNC/VEN_Cipriano_Castro.dds"
@@ -16,7 +16,7 @@ characters={
 	}
 
 	VEN_juan_vicente_gomez={ #Dictator after Cipriano, dies by 1935.
-		name="Juan Vicente Gomez"
+		name=VEN_juan_vicente_gomez
 		portraits={
 			army={
 				large="gfx/leaders/VEN/WW1/Portrait_Venezuela_Juan_Vicente_Gomez.dds"
@@ -56,7 +56,7 @@ characters={
 	}	
 
 	VEN_victorino_marquez={ #President while Juan Vicente Gomez was away focused on the Military from 1914-1922.
-		name="Victorino Marquez"
+		name=VEN_victorino_marquez
 		portraits={
 			civilian={
 				large="gfx/leaders/VEN/WW1/Venezuela_Victorino_Marquez_Bustillos.dds"

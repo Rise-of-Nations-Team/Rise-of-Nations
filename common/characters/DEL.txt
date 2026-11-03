@@ -1,0 +1,78 @@
+characters={
+
+	DEL_foreign_legations={
+		name="Peking Foreign Legation Quarter"
+		portraits={
+			civilian={
+				large="gfx/leaders/DEL/Portrait_DEL_Foreign_Legations.dds"
+			}
+		}
+		country_leader={
+			ideology=market_liberalism
+			traits = {  }			
+			id=-1
+		}
+		country_leader={
+			ideology=nonaligned_liberalism
+			traits = {  }			
+			id=-1
+		}		
+	}
+
+	DEL_triads_organization={
+		name="Transnational Organization of the Triad Societies"
+		portraits={
+			civilian={
+				large="gfx/leaders/DEL/Portrait_DEL_Crime_Bosses.dds"
+			}
+		}
+		country_leader={
+			ideology=stratocracy
+			traits = {  }			
+			id=-1
+		}	
+	}
+
+	DEL_lu_xun={
+		name="Lu Xun"
+		portraits={
+			civilian={
+				large="gfx/leaders/DEL/Portrait_DEL_Lu_Xun.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }		
+			expire = 1937.1.1	
+			id=-1
+		}	
+	}	
+	
+	DEL_claude_macdonald={
+		name="Claude Maxwell MacDonald"
+		portraits={
+			civilian={
+				large="gfx/leaders/DEL/Portrait_DEL_Crime_Bosses.dds"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine organisational_leader }			
+			skill = 4
+			attack_skill = 3
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				date < 1916.1.1
+				OR = {
+					NOT = {
+						has_government = fascism
+					}
+					NOT = {
+						has_government = communism
+					}					
+				}
+			}
+		}
+	}	
+}	

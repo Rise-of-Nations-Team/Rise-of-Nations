@@ -18,33 +18,33 @@ add_ideas = {
 	education_budget5
 	health_budget5
 	foreign_warmonger
-	debt_of_ottomans2
-	OTT_unprofitable_companies
 	foreign_volunteers
-	disjointed_railways1
-	OTT_badly_paid_soldiers
+
+	OTT_the_hamidian_regime_ns
+	OTT_the_osman_caliphate_ns
+	OTT_persecution_of_intelectuals_ns
+	OTT_outdated_military_ns
+	OTT_purged_naval_forces_ns
+	OTT_the_public_debt_administration_ns
+	OTT_mass_illiteracy_ns
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	add_ideas = OTT_rule_thourgh_intrigue_ns
+	else = {
+		add_ideas = OTT_rule_thourgh_intrigue_nolar_ns
+	}
 }
 
 if = {
 	limit = {
 		has_start_date < 1910.01.01
 	}
-	add_ideas = {
-		mutiny_1
-		OTT_outdated_military
-	}
 	give_guarantee = BUL # De Jure Vasal of Ottomans
 	give_military_access = BUL # De Jure Vasal of Ottomans
-}
-
-if = {
-	limit = {
-		has_start_date < 1918.01.01
-	}
-	add_ideas = {
-		sick_man_europe
-		ww1_Scramble_for_Africa
-	}
 }
 
 set_convoys = 20
@@ -65,61 +65,58 @@ set_popularities = {
 
 recruit_character = OTT_abdul_hamid_ii
 recruit_character = OTT_mehmed_v
-recruit_character = OTT_mehmed_vi
 recruit_character = OTT_ismail_enver_pasha
 recruit_character = OTT_halil_rifat
-promote_character = OTT_halil_rifat
 recruit_character = OTT_kucuk_mehmed_said
 recruit_character = OTT_ibrahim_hakki
 recruit_character = OTT_behaeddin_shakir
 recruit_character = OTT_hasan_rami_pasha
 recruit_character = OTT_huseyin_husnu_pasha
 recruit_character = OTT_refik_nevzat
-recruit_character = OTT_mustafa_kemal_pasha	
-recruit_character = OTT_huseyin_hilmi_pasha
+recruit_character = OTT_mustafa_kemal_pasha
+
+recruit_character = OTT_ahmed_djemal_pasha
+recruit_character = OTT_ali_ihsan_sabis
+recruit_character = OTT_ali_fuat_cebesoy
+recruit_character = OTT_cemal_mersinli
+recruit_character = OTT_cevat_cobanli
+recruit_character = OTT_hafiz_hakki_pasha
+recruit_character = OTT_halil_kut
+recruit_character = OTT_ismet_pasha
+recruit_character = OTT_nureddin_ibrahim
+recruit_character = OTT_wehib_pasha
+recruit_character = OTT_mehmed_talat_pasha
+recruit_character = OTT_said_halim_pasha
+recruit_character = OTT_Fevzi_Cakmak
+recruit_character = OTT_mehmet_esat_bulkat
+
+##INTERNATIONALS##
+
+recruit_character = OTT_friedrich_freiherr_kress_von_kressenstein
+recruit_character = OTT_fritz_bronsart_von_schellendorf
+recruit_character = OTT_otto_liman_von_sanders
+recruit_character = OTT_henry_felix_woods
+
+### ADDED BY EVENT
+
+#	create_navy_leader = {
+#		name = "Wilhelm Souchon"
+#		picture = "gfx/leaders/TUR/WW1/Admiral_Wilhelm_Souchon.dds"
+#		traits = {
+#			imperial_ottoman_navy
+#		}
+#		skill = 1
+#	}
+
+recruit_character = OTT_ahmed_ramiz_bey
 
 1908.8.6 = {
-  promote_character = OTT_ibrahim_hakki
+	promote_character = OTT_ibrahim_hakki
 }
 
-if = {
-	limit = {
-		has_start_date < 1930.01.01
-	}
-	recruit_character = OTT_ahmed_djemal_pasha
-	recruit_character = OTT_ali_ihsan_sabis
-	recruit_character = OTT_ali_fuat_cebesoy
-	recruit_character = OTT_cemal_mersinli
-	recruit_character = OTT_cevat_cobanli					
-	recruit_character = OTT_hafiz_hakki_pasha
-	recruit_character = OTT_halil_kut
-	recruit_character = OTT_ismet_pasha
-	recruit_character = OTT_nureddin_ibrahim
-	recruit_character = OTT_wehib_pasha
-	recruit_character = OTT_mehmed_talat_pasha
-	recruit_character = OTT_said_halim_pasha
-	recruit_character = OTT_Fevzi_Cakmak
-	recruit_character = OTT_mehmet_esat_bulkat
-
-	##INTERNATIONALS##
-
-	recruit_character = OTT_friedrich_freiherr_kress_von_kressenstein
-	recruit_character = OTT_fritz_bronsart_von_schellendorf
-	recruit_character = OTT_otto_liman_von_sanders
-	recruit_character = OTT_henry_felix_woods
-
-	### ADDED BY EVENT
-
-	#	create_navy_leader = {
-	#		name = "Wilhelm Souchon"
-	#		picture = "gfx/leaders/OTT/WW1/Admiral_Wilhelm_Souchon.dds"
-	#		traits = {
-	#			imperial_ottoman_navy
-	#		}
-	#		skill = 1
-	#	}
-
-    recruit_character = OTT_ahmed_ramiz_bey
+1909.4.27 = {
+	promote_character = OTT_mehmed_v
+	retire_character = OTT_abdul_hamid_ii
 }
 
 ### WW1 Start Date
@@ -132,15 +129,6 @@ if = {
 			has_start_date > 1909.1.1
 			has_start_date < 1911.1.1
 		}
-		country_event = { id = ww1_turkey.42 days = 1304 }
-		country_event = { id = ww1_turkey.50 days = 645 }
-		country_event = { id = ww1_turkey.51 days = 824 }
-		country_event = { id = ww1_turkey.52 days = 928 }
-		country_event = { id = ww1_turkey.54 days = 124 } #Albanian revolts
-		country_event = { id = ww1_turkey.55 days = 378 }
-		country_event = { id = ww1_turkey.53 days = 446 } #
-		country_event = { id = ww1_turkey.56 days = 336 }
-		country_event = { id = ww1_turkey.57 days = 238 }
 	}
 
 	set_politics = {
@@ -155,30 +143,12 @@ if = {
 		democratic = 22
 		islamism = 30
 	}
-	retire_character = OTT_abdul_hamid_ii
-	add_country_leader_role = {
-		character = OTT_mehmed_v 
-		promote_leader = yes
-		country_leader = {
-			desc="POLITICS_MEHMED_V_DESC"
-			traits={ cornered_fox }
-			ideology=despotism
-			expire="1919.1.1.1"
-		}
-	}
-	add_country_leader_role = {
-		character = OTT_mehmed_v 
-		promote_leader = yes
-		country_leader = {
-			desc="POLITICS_MEHMED_V_DESC"
-			traits={ cornered_fox }
-			ideology=emiratism
-			expire="1919.1.1.1"
-		}
-	}	
+
  
-    promote_character = OTT_huseyin_hilmi_pasha	
-    recruit_character = OTT_mustafa_suphi		
+	recruit_character = OTT_mehmed_vi
+	recruit_character = OTT_huseyin_hilmi_pasha
+	promote_character = OTT_huseyin_hilmi_pasha	
+	recruit_character = OTT_mustafa_suphi		
 
 	set_technology = {
 		tech_support = 1
@@ -223,63 +193,32 @@ if = {
 }
 
 1910.1.12 = {
-  promote_character = OTT_kucuk_mehmed_said
-  retire_character = OTT_huseyin_hilmi_pasha
+	promote_character = OTT_kucuk_mehmed_said
+	retire_character = OTT_huseyin_hilmi_pasha
 }
 
 
 1911.9.30 = {
-  promote_character = OTT_kucuk_mehmed_said
-  retire_character = OTT_ibrahim_hakki
+	promote_character = OTT_kucuk_mehmed_said
+	retire_character = OTT_ibrahim_hakki
 }
 
 1912.7.22 = {
-  recruit_character = OTT_ahmed_muhtar
-  promote_character = OTT_ahmed_muhtar  
-  retire_character = OTT_kucuk_mehmed_said
+	recruit_character = OTT_ahmed_muhtar
+	promote_character = OTT_ahmed_muhtar  
+	retire_character = OTT_kucuk_mehmed_said
 }
 
 1913.6.12 = {
-  promote_character = OTT_said_halim_pasha
+	promote_character = OTT_said_halim_pasha
 }
 
 1914.1.1 = {
 	oob = "OTT_1914"
-  recruit_character = OTT_damat_ferid_pasha
+	recruit_character = OTT_damat_ferid_pasha
 }
 
 1919.1.1 = {
 	oob = "OTT_1919"
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1918.11.11"
-		election_frequency = 60
-		elections_allowed = no
-	}
-	set_popularities = {
-		neutrality = 40
-		democratic = 40
-		islamism = 20
-	}
-	add_country_leader_role = {
-		character = OTT_mehmed_vi 
-		promote_leader = yes
-		country_leader = {
-			desc="POLITICS_MEHMED_VI_DESC"
-			traits={ OTT_pragmatist_sultan }
-			ideology=despotism
-			expire="1927.1.1.1"
-		}
-	}
-	add_country_leader_role = {
-		character = OTT_mehmed_vi 
-		promote_leader = yes
-		country_leader = {
-			desc="POLITICS_MEHMED_VI_DESC"
-			traits={ OTT_pragmatist_sultan }
-			ideology=emiratism
-			expire="1927.1.1.1"
-		}
-	}
-  	promote_character = OTT_damat_ferid_pasha
+	promote_character = OTT_damat_ferid_pasha
 }

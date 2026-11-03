@@ -4,77 +4,136 @@ capital = 629
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1893.1.17"
+	ruling_party = democratic
+	last_election = "1898.8.12"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 30
-	communism = 10
-	neutrality = 60
+	democratic = 60
+	neutrality = 40
 }
 
-create_country_leader = {
-	name = "Lili'uokalani"
-	picture = "gfx/leaders/HAW/DNC/Queen_Liliuokalani.dds"
-	expire = "1917.11.11"
-	ideology = despotism
+recruit_character = HAW_sanford_b_dole
+recruit_character = HAW_george_r_carter
+recruit_character = HAW_walter_f_frear
+recruit_character = HAW_lucius_e_pinkham
+recruit_character = HAW_charles_j_mccarthy
+recruit_character = HAW_liliuokalani
+recruit_character = HAW_elizabeth_kekaaniau
+recruit_character = HAW_anarchists
+recruit_character = HAW_james_d_dole
+
+1905.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1903.11.23"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	promote_character = HAW_george_r_carter
 }
 
-create_country_leader = {
-	name = "Elizabeth Keka'ani'au"
-	picture = "gfx/leaders/HAW/DNC/Queen_Liliuokalani.dds" #Temporary Portrait
-	expire = "1928.12.20"
-	ideology = despotism
+1910.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1907.8.15"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	promote_character = HAW_walter_f_frear
+	retire_character = HAW_sanford_b_dole	
+	recruit_character = HAW_lawrence_m_judd
 }
 
-create_country_leader = {
-	name = "David Kalakaua Kawananakoa"
-	picture = "gfx/leaders/HAW/Portrait_HAW_David_Kalakaua_Kawananakoa.dds"
-	expire = "1953.5.20"
-	ideology = despotism
+1914.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1914.11.30"
+		election_frequency = 60
+		elections_allowed = yes
+	}	
+	promote_character = HAW_lucius_e_pinkham
+	recruit_character = HAW_joseph_poindexter	
 }
 
-create_country_leader = {
-	name = "Lydia Liliuokalani Kawananakoa"
-	picture = "gfx/leaders/HAW/CW/Portrait_HAW_Lydia_Liliuokalani.dds"
-	expire = "1969.5.19"
-	ideology = despotism
+1919.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1918.4.18"
+		election_frequency = 60
+		elections_allowed = yes
+	}		
+	promote_character = HAW_charles_j_mccarthy
+	retire_character = HAW_lucius_e_pinkham
+	retire_character = HAW_liliuokalani
+	recruit_character = HAW_ingram_stainback
 }
 
-create_country_leader = {
-	name = "Lawrence Judd"
-	picture = "gfx/leaders/HAW/INT/Portrait_HAW_Lawrence_Judd.dds"
-	expire = "1934.1.1"
-	ideology = liberalism
+1925.1.1 = {
+	recruit_character = HAW_david_kalakaua_kawananakoa
 }
 
-create_country_leader = {
-	name = "Joseph Poindexter"
-	picture = "gfx/leaders/HAW/Portrait_HAW_Joseph_Poindexter.dds"
-	expire = "1943.1.1"
-	ideology = liberalism
+1930.1.1 = {
+	retire_character = HAW_charles_j_mccarthy
+	retire_character = HAW_elizabeth_kekaaniau
+	recruit_character = HAW_lydia_liliuokalani_kawananakoa
 }
 
-create_country_leader = {
-	name = "Ingram Stainback"
-	picture = "gfx/leaders/HAW/Portrait_HAW_Joseph_Poindexter.dds" #Temporary Portrait
-	expire = "1951.1.1"
-	ideology = liberalism
+1933.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1929.7.6"
+		election_frequency = 60
+		elections_allowed = yes
+	}	
+	retire_character = HAW_george_r_carter
+	promote_character = HAW_lawrence_m_judd	
+	recruit_character = HAW_jack_w_hall
 }
 
-create_country_leader = {
-	name = "Samuel Wilder King"
-	picture = "gfx/leaders/HAW/CW/Portrait_HAW_Samuel_King.dds"
-	expire = "1957.1.1"
-	ideology = liberalism
+1936.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1934.3.2"
+		election_frequency = 60
+		elections_allowed = yes
+	}	
+	promote_character = HAW_joseph_poindexter	
+	promote_character = HAW_jack_w_hall
+	recruit_character = HAW_samuel_king		
+	recruit_character = HAW_charles_fujimoto
 }
 
-create_country_leader = {
-	name = "Charles Fujimoto"
-	picture = "gfx/leaders/HAW/Portrait_HAW_Charles_Fujimoto.dds" 
-	expire = "1960.1.1"
-	ideology = marxism
+1943.7.11 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1942.8.24"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	promote_character = HAW_ingram_stainback		
+}
+
+1949.1.1 = {
+	retire_character = HAW_walter_f_frear	
+	promote_character = HAW_charles_fujimoto
+}
+
+1955.1.1 = {
+	retire_character = HAW_joseph_poindexter
+	retire_character = HAW_david_kalakaua_kawananakoa	
+}
+
+1960.1.1 = {
+	retire_character = HAW_ingram_stainback
+	retire_character = HAW_james_d_dole
+}
+
+1970.1.1 = {
+	retire_character = HAW_lawrence_m_judd	
+	retire_character = HAW_samuel_king
+	retire_character = HAW_lydia_liliuokalani_kawananakoa
+	retire_character = HAW_jack_w_hall
 }

@@ -1,0 +1,47 @@
+characters={
+
+	SMR_grand_council={
+		name = "Consiglio Grande e Generale di San Marino"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SMR/Portrait_San_Marino_Grand_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			id = -1
+		}
+		country_leader = {
+			ideology = independent
+			id = -1
+		}        
+    }    
+
+    SMR_giuliano_gozi = {
+ 		name = "Giuliano Gozi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SMR/Portrait_San_Marino_Giuliano_Gozi.dds"
+			}
+		} 
+		country_leader = {
+			ideology = fascism_ideology
+            expire = 1955.1.1
+			id = -1
+		}              
+    }
+
+    SMR_gino_giacomini = {
+ 		name = "Gino Giacomini"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ron_placeholder_portrait.dds" #TEMPORARY
+			}
+		} 
+		country_leader = {
+			ideology = lw_socialism
+            expire = 1963.1.1
+			id = -1
+		}              
+    }    
+}

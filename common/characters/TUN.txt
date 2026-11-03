@@ -1,0 +1,732 @@
+characters={
+
+	###BEYS OF TUNISIA###
+
+	TUN_ali_iii_ibn_alh_usayn={
+		name="Ali III"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/ron_placeholder_portrait.dds" #TEMPORARY
+			}
+		}
+		country_leader={
+			ideology=monarchism 
+			expire="1903.1.1"
+			id=-1
+		}
+	}	
+
+	TUN_hedi_bey={
+		name="Muhammad IV"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/ron_placeholder_portrait.dds" #TEMPORARY
+			}
+		}
+		country_leader={
+			ideology=monarchism 
+			expire="1907.1.1"
+			id=-1
+		}
+	}
+	
+	TUN_naceur_bey={
+		name="Muhammad V"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/WW1/TUN_Muhammad_V_of_Tunis.dds" 
+			}
+		}
+		country_leader={
+			ideology=monarchism 
+			expire="1907.1.1"
+			id=-1
+		}
+	}	
+
+	TUN_habib_bey={
+		name="Muhammad VI"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/ron_placeholder_portrait.dds" #TEMPORARY
+			}
+		}
+		country_leader={
+			ideology=monarchism 
+			expire="1930.1.1"
+			id=-1
+		}
+	}	
+
+	TUN_ahmad_bey={
+		name="Ahmad II"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/DNC/TUN_Ahmed_Pasha_Bey.dds" 
+			}
+		}
+		country_leader={
+			ideology=monarchism 
+			expire="1943.1.1"
+			id=-1
+		}
+	}	
+	
+	TUN_moncef_bey={
+		name="Muhammad VII"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/TUN_Muhammad_VII_of_Tunis.dds" 
+			}
+		}
+		country_leader={
+			ideology=monarchism 
+			expire="1949.1.1"
+			id=-1
+		}
+	}	
+
+	TUN_lamine_bey={
+		name="Muhammad VIII"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/DNC/TUN_Lamine_Bey.dds" 
+			}
+		}
+		country_leader={
+			ideology=monarchism 
+			expire="1963.1.1"
+			id=-1
+		}
+	}	
+
+	### COUNTRY LEADERS ###
+
+	TUN_abdelaziz_thaalbi={
+		name="Abdelaziz Thâalbi"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/DNC/TUN_Abdelaziz_Thaalbi_DNC.dds"
+			}
+		}
+		country_leader={
+			ideology=democratic_oligarchism #according to Wiki, he advocated for 1861 constitution, which made a const.monarchy with shared powers, making it oligarchy - Fantom/Illya
+			expire="1946.1.1"
+			id=-1
+		}
+	}
+	
+	TUN_habib_bourguiba={
+		name="Habib Bourguiba"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/TUN_Habib_Bourguiba.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1"
+			id=-1
+		}
+	}
+
+	TUN_ben_ali={
+		name="Zine El Abidine Ben Ali"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/CW/TUN_Zine_El_Abidine_Ben_Ali_CW.dds"
+			}
+		}
+		country_leader={
+			ideology=nationalism
+			expire="2020.1.1"
+			id=-1
+		}
+	}	
+
+	TUN_moncef_marzouki={
+		name="Mohamed Moncef Marzouki"
+		portraits={
+			civilian={
+				large="gfx/leaders/ron_placeholder_portrait.dds" #TEMPORARY
+			}
+		}
+		country_leader={
+			ideology=democratic_socialism
+			expire="2050.1.1"
+			id=-1
+		}
+	}	
+
+	TUN_beji_caid_essebsi={
+		name="Beji Caid Essebsi"
+		portraits={
+			civilian={
+				large="gfx/leaders/MD/TUN_Beji_Caid_Essebsi.dds" 
+			}
+		}
+		country_leader={
+			ideology=market_liberalism
+			expire="2020.1.1"
+			id=-1
+		}
+	}	
+	
+	TUN_kais_saied={
+		name="Kais Saied"
+		portraits={
+			civilian={
+				large="gfx/leaders/MD/TUN_Kais_Saied.dds" 
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="2060.1.1"
+			id=-1
+		}
+	}		
+
+	TUN_anarchists={
+		name="Anarchists"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic_anarchist_commune.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			id=-1
+		}
+	}	
+	
+	TUN_mohamed_ali_elhammi={
+		name="Mohamed Ali Elhammi"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/WW1/TUN_Mohamed_Ali_Elhammi.dds"
+			}
+		}
+		country_leader={
+			ideology=syndicalism
+			expire="1929.1.1"
+			id=-1
+		}
+	}	
+
+	TUN_tahar_haddad={
+		name="Tahar Haddad"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/INT/TUN_Tahar_Haddad.dds"
+			}
+		}
+		country_leader={
+			ideology=lw_socialism
+			expire="1936.1.1"
+			id=-1
+		}
+	}	
+
+	TUN_elie_cohen_hadria={
+		name="Élie Cohen-Hadria"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUN/TUN_Elie_Cohen_Hadria.dds"
+			}
+		}
+		country_leader={
+			ideology=lw_socialism
+			expire="1988.1.1"
+			id=-1
+		}
+	}	
+
+	### GENERICS ###
+
+	#THEORISTS
+
+	TUN_mt={
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}		
+		advisor={
+			slot = theorist
+			idea_token = TUN_mt
+			ledger  = army 
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				military_theorist 
+			}
+		}
+	}	
+
+	TUN_awt={
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}		
+		advisor={
+			slot = theorist
+			idea_token = TUN_awt
+			ledger  = air 
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				air_warfare_theorist 
+			}
+		}
+	}
+
+	TUN_nt={
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}		
+		advisor={
+			slot = theorist
+			idea_token = TUN_nt
+			ledger  = navy 
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				naval_theorist 
+			}
+		}
+	}	
+
+	#AIR COMMANDERS
+
+	TUN_acas={
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = TUN_acas
+			ledger  = air 
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				air_close_air_support_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+	TUN_acgs={
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}		
+		advisor={
+			slot = air_chief
+			idea_token = TUN_acgs
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				air_chief_ground_support_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+	TUN_acr={
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}		
+		advisor={
+			slot = air_chief
+			idea_token = TUN_acr
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				air_chief_reform_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}	
+
+	#NAVY COMMANDERS
+
+	TUN_nccr={
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}		
+		advisor={
+			slot = navy_chief
+			idea_token = TUN_nccr
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				navy_chief_commerce_raiding_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+	TUN_ncs={
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = TUN_ncs
+			ledger  = navy 
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				navy_capital_ship_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}	
+
+	TUN_ncm={
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}		
+		advisor={
+			slot = navy_chief
+			idea_token = TUN_ncm
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				navy_chief_maneuver_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}	
+
+	#ARMY COMMAND
+	
+	TUN_ai2={
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = TUN_ai2
+			ledger  = army 
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				army_infantry_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+	TUN_aa2={
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = TUN_aa2
+			ledger  = army 
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				army_armored_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}	
+
+	TUN_aco2={
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}		
+		advisor={
+			slot = army_chief
+			idea_token = TUN_aco2
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				army_chief_organizational_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}	
+
+	TUN_acd2={
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}		
+		advisor={
+			slot = army_chief
+			idea_token = TUN_acd2
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				army_chief_defensive_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}	
+
+	TUN_ar={
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}		
+		advisor={
+			slot = high_command
+			idea_token = TUN_ar
+			ledger  = army 
+			allowed = {
+				original_tag  = TUN
+			}
+			traits = {
+				army_regrouping_2 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}	
+
+	#POLITICAL ADVISORS
+
+	TUN_fascist_guy={
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = TUN_fascist_guy
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				not  = {
+					has_government  = fascism 
+				}
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+	TUN_communist_guy={
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = TUN_communist_guy
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				not  = {
+					has_government  = communism 
+				}
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+	TUN_democratic_guy={
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = TUN_democratic_guy
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				democratic_reformer 
+			}
+			do_effect = {
+				not  = {
+					has_government  = democratic 
+				}
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}	
+
+	TUN_monarchist_guy={
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_4"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = TUN_monarchist_guy
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				staunch_monarchist 
+			}
+			do_effect = {
+				not  = {
+					has_government  = neutrality 
+				}
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}	
+	
+	TUN_islamist_guy={
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_4"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = TUN_islamist_guy
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				islamism_supporter 
+			}
+			do_effect = {
+				not  = {
+					has_government  = islamism 
+				}
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}		
+
+	TUN_pot={
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = TUN_pot
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				prince_of_terror 
+			}
+		}
+	}	
+
+	TUN_stc={
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = TUN_stc
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				smooth_talking_charmer 
+			}
+		}
+	}
+	
+	TUN_coi={
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = TUN_coi
+			allowed = {
+				original_tag  = TUN
+			}
+			traits  = {
+				captain_of_industry 
+			}
+		}
+	}	
+}

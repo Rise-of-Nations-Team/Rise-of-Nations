@@ -4,7 +4,7 @@ capital = 458
 set_convoys = 20
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "1900.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -13,92 +13,227 @@ set_popularities = {
 	neutrality = 100
 }
 
-create_country_leader = {
-	name = "Habib Bourguiba"
-	picture = "gfx/leaders/TUN/CW/Tunisia_Habib_Bourguiba.dds"
-	
-	ideology = nationalism
+recruit_character = TUN_ali_iii_ibn_alh_usayn
+recruit_character = TUN_hedi_bey
+recruit_character = TUN_naceur_bey
+recruit_character = TUN_habib_bey
+recruit_character = TUN_ahmad_bey
+recruit_character = TUN_moncef_bey
+recruit_character = TUN_lamine_bey
+
+recruit_character = TUN_abdelaziz_thaalbi
+recruit_character = TUN_anarchists
+
+#generics#
+recruit_character = TUN_mt
+recruit_character = TUN_nt
+recruit_character = TUN_nccr
+recruit_character = TUN_ncs
+recruit_character = TUN_ncm
+recruit_character = TUN_ai2
+recruit_character = TUN_aa2
+recruit_character = TUN_aco2
+recruit_character = TUN_acd2
+recruit_character = TUN_ar
+
+recruit_character = TUN_fascist_guy
+recruit_character = TUN_communist_guy
+recruit_character = TUN_democratic_guy
+recruit_character = TUN_monarchist_guy
+recruit_character = TUN_islamist_guy
+
+set_cosmetic_tag = TUN_protectorate
+
+1905.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1902.6.11"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	retire_character = TUN_ali_iii_ibn_alh_usayn	
 }
 
-create_country_leader = {
-	name = "Beji Caid Essebsi"
-	picture = "gfx/leaders/TUN/MD/Tunisia_BejiCaidEssebsi.dds"
+1910.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1906.5.11"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	retire_character = TUN_hedi_bey	
+	recruit_character = TUN_mohamed_ali_elhammi
+	promote_character = TUN_mohamed_ali_elhammi
+}
+
+1919.1.1 = {
+	set_portraits = {
+		character = TUN_ahmad_bey
+		civilian={ 
+			large = "gfx/leaders/TUN/TUN_Ahmad_II_of_Tunis.dds"			
+		}
+	}	
+	recruit_character = TUN_tahar_haddad	
+}
+
+1925.1.1 = {
+	retire_character = TUN_naceur_bey
+	recruit_character = TUN_habib_bourguiba	
+	recruit_character = TUN_elie_cohen_hadria		
+}
+
+1930.1.1 = {
+	retire_character = TUN_habib_bey	
+	retire_character = TUN_mohamed_ali_elhammi	
+	set_portraits = {
+		character = TUN_lamine_bey
+		civilian={ 
+			large = "gfx/leaders/TUN/TUN_Muhammad_VIII_of_Tunis.dds"			
+		}
+	}
 	
-	ideology = market_liberalism
+	set_portraits = {
+		character = TUN_abdelaziz_thaalbi
+		civilian={ 
+			large = "gfx/leaders/TUN/TUN_Abdelaziz_Thaalbi.dds"			
+		}
+	}		
+}
+
+1933.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1929.2.13"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	retire_character = TUN_naceur_bey	
+}
+
+1936.1.1 = {
+	retire_character = TUN_tahar_haddad	
+}
+
+1942.7.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1942.6.19"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	retire_character = TUN_ahmad_bey
+}
+
+1943.7.11 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1943.5.13"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	retire_character = TUN_moncef_bey	
+}
+
+1945.3.20 = {
+	retire_character = TUN_abdelaziz_thaalbi	
 }
 
 1960.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
-		last_election = "1960.1.1"
+		last_election = "1957.11.7"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	set_popularities = {
 		neutrality = 100
 	}
+	drop_cosmetic_tag = yes
+	remove_country_leader_role = {
+    	character = TUN_habib_bourguiba
+    	ideology = conservatism
+	}	
+	add_country_leader_role = {
+		character = TUN_habib_bourguiba 
+		promote_leader = yes
+		country_leader = {
+			ideology=nationalism
+			expire="2000.1.1.1"
+		}
+	}	
+	retire_character = TUN_lamine_bey
+	retire_character = TUN_monarchist_guy
+	recruit_character = TUN_ben_ali
+}
+
+1970.1.1 = {
+	retire_character = TUN_elie_cohen_hadria
+	recruit_character = TUN_moncef_marzouki
 }
 
 1990.1.1 = {
-	create_country_leader = {
-		name = "Zine El Abidine Ben Ali"
-		picture = "gfx/leaders/TUN/CW/Tunisia_Zine_El_Abidine_Ben_Ali.dds"
-		
-		ideology = nationalism
-	}
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1987.11.7"
+		election_frequency = 48
+		elections_allowed = no
+	}	
+	retire_character = TUN_habib_bourguiba
+	promote_character = TUN_ben_ali
+	recruit_character = TUN_beji_caid_essebsi
 }
 
 2000.1.1 = {
 	oob = "TUN_2000"
-	create_country_leader = {
-		name = "Zine El Abidine Ben Ali"
-		picture = "gfx/leaders/TUN/MD/Tunisia_Zine_El_Abidine_Ben_Ali.dds"
-		
-		ideology = nationalism
-	}
+	set_portraits = {
+		character = TUN_ben_ali
+		civilian={ 
+			large = "gfx/leaders/TUN/MD/TUN_Zine_El_Abidine_Ben_Ali_MD.dds"			
+		}
+	}	
+	recruit_character = TUN_kais_saied
 }
-2008.1.1 = {
+
+2013.1.1 = {
 	set_politics = {
 		ruling_party = democratic
+		last_election = "2011.12.13"
+		election_frequency = 48
 		elections_allowed = yes
 	}
 	set_popularities = {
-		democratic = 100
-	}
-	create_country_leader = {
-		name = "Zine El Abidine Ben Ali"
-		picture = "gfx/leaders/TUN/MD/Tunisia_Zine_El_Abidine_Ben_Ali.dds"
-		
-		ideology = democratic_socialism
-	}
+		democratic = 80
+		neutrality = 20
+	}	
+	promote_character = TUN_moncef_marzouki
 }
+
 2016.1.1 = {
 	oob = "TUN_2016"
 	set_politics = {
 		ruling_party = democratic
-		last_election = "2016.1.1"
+		last_election = "2014.12.31"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 	set_popularities = {
 		democratic = 100
 	}
+	promote_character = TUN_beji_caid_essebsi	
 }
 
 2020.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
-		last_election = "2020.1.1"
+		last_election = "2019.10.23"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	set_popularities = {
-		neutrality = 100
+		neutrality = 60
+		democratic = 40		
 	}
-	create_country_leader = {
-		name = "Kais Saied"
-		picture = "gfx/leaders/TUN/MD/TUN_Kais_Saied_Independent.dds"
-		
-		ideology = independent
-	}
+	promote_character = TUN_kais_saied	
+	retire_character = TUN_ben_ali
+	retire_character = TUN_beji_caid_essebsi	
 }

@@ -1,7 +1,7 @@
 
 characters={
 	FRI_rene_robin={
-		name=characters
+		name=FRI_rene_robin
 		portraits={
 			civilian={
 				large="gfx/leaders/FRI/Portrait_Indochina_Rene_Robin.dds"
@@ -15,7 +15,7 @@ characters={
 	}
 
 	FRI_jules_brevie={
-		name=country_leader
+		name=FRI_jules_brevie
 		portraits={
 			civilian={
 				large="gfx/leaders/FRI/Portrait_Indochina_Jules_Brevie.dds"

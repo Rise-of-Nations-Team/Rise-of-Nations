@@ -1,6 +1,6 @@
 characters={
 	SPR_Alfonso_XIII = {
-		name = "Alfonso XIII"
+		name = SPR_Alfonso_XIII
 		portraits= {
 			civilian = {
 				large = "gfx/leaders/SPR/DNC/SPR_Alfonso_XIII.dds"
@@ -121,7 +121,7 @@ characters={
 		country_leader = {
 			ideology = catholic_monarchism
 		}
-	}	
+	}
 
 	SPR_niceto_alcala_zamora = { # 1933-1936
 		name = "Niceto Alcalá-Zamora"
@@ -1161,7 +1161,7 @@ characters={
 				factor = 3
 			}
 		}
-	}	
+	}
 
 	SPR_salvador_bermudez_de_castro = {
 		name = "Salvador Bermudez de Castro O'Lawlor"
@@ -1477,13 +1477,13 @@ characters={
 			allowed = {
 				original_tag = SPR
 			}
-			visible = { 
-				date < 1926.1.1 
-			}
-			available = { 
-				date < 1926.1.1 
-			}
+
+			visible = { date < 1926.1.1 }
+
+			available = { date < 1926.1.1 }
+
 			traits = { liberal_journalist }
+
 			ai_will_do = {
 				factor = 3
 			}

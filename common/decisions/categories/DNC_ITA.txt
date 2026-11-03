@@ -1,0 +1,125 @@
+ITA_dnc_consulta_cat = {
+	icon = border_conflicts
+	priority = 45
+	allowed = { original_tag = ITA }
+	visible = { has_country_flag = ITA_dnc_systems_open }
+	visible_when_empty = no
+}
+
+ITA_dnc_wars_cat = {
+	icon = generic_arms_trade
+	priority = 30
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		OR = {
+			has_war = yes
+			has_completed_focus = ITADNC_arm_the_war_hypotheses
+			has_completed_focus = ITADNC_arm_the_great_manoeuvres
+		}
+	}
+	visible_when_empty = no
+}
+
+ITA_h_colonial_levies = {
+	icon = generic_foreign_policy
+	priority = 26
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_country_flag = ITA_dnc_systems_open
+		has_completed_focus = ITADNC_h_the_ascari_are_enrolled
+	}
+	visible_when_empty = no
+}
+
+ITA_o_the_iberian_union = {
+	icon = generic_formable_nations
+	priority = 20
+	allowed = {
+		OR = {
+			original_tag = SPR
+			original_tag = POR
+		}
+	}
+	visible = {
+		has_global_flag = ITA_o_the_iberian_union_is_open
+		NOT = { has_global_flag = ITA_o_the_iberian_union_is_made }
+		ITA = {
+			has_completed_focus = ITADNC_o_rekindle_the_iberian_union
+			has_government = neutrality
+		}
+		SPR = {
+			exists = yes
+		}
+		POR = {
+			exists = yes
+		}
+	}
+	visible_when_empty = no
+}
+
+ITA_u_the_duchies_cat = {
+	icon = generic_formable_nations
+	priority = 17
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITADNC_u_the_adriatic_duchies
+		OR = {
+			owns_state = 44
+			owns_state = 103
+			owns_state = 102
+			owns_state = 43
+		}
+	}
+	visible_when_empty = no
+}
+
+ITA_u_the_hundred_days = {
+	icon = generic_crisis
+	priority = 40
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		OR = {
+			has_completed_focus = ITADNC_u_the_army_will_not_fire
+			has_global_flag = ITA_cw_civil_war_end
+		}
+		NOT = { has_country_flag = ITA_u_the_regime_is_settled }
+	}
+	visible_when_empty = no
+}
+ITA_cw_the_war_of_the_two_italies = {
+	icon = generic_crisis
+	priority = 150
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		OR = {
+			has_global_flag = ITA_cw_has_started
+			has_country_flag = ITA_cw_entrance_crown
+			has_country_flag = ITA_cw_entrance_comando
+		}
+		NOT = { has_global_flag = ITA_cw_civil_war_end }
+		NOT = { has_completed_focus = ITADNC_h_the_works_on_the_frontier }
+	}
+	visible_when_empty = yes
+}
+ITA_cw_the_debt_to_the_admirals = {
+	icon = generic_naval
+	priority = 100
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_global_flag = ITA_cw_has_started
+		has_country_flag = ITA_cw_promised_the_fleet
+	}
+	visible_when_empty = no
+}

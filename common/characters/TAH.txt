@@ -1,4 +1,41 @@
 characters={
+	TAH_teri_nui_tahiti={
+		name = "Teri'i-nui-o-Tahiti a Pomare"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TAH/Portrait_TAH_Terii_Nui_O_Tahiti_Pomare.dds"
+			}
+		}
+		gender = female
+		country_leader = {
+			ideology = constitutional_monarchy
+			traits = { popular_figurehead2 }
+			expire = "1962.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = monarchism
+			traits = { popular_figurehead2 }
+			expire = "1962.1.1"
+			id = -1
+		}		
+	}
+
+	TAH_pouvanaa_oopa={
+		name="Pouvanna a Oopa"
+		portraits={
+			civilian={
+				large="gfx/leaders/TAH/Portrait_TAH_Pouvanna_a_Oopa.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits = { headstrong }
+			expire="1965.1.1"
+			id=-1
+		}
+	}
+
 	TAH_pot={
 		advisor={
 			slot = political_advisor

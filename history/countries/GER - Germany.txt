@@ -6,26 +6,9 @@ capital = 1105
 oob = "GER_1900"
 
 set_fuel_ratio = 0.8
-
-if = {
-	limit = {
-		has_start_date < 1919.01.01
-	}
-	add_ideas = {
-		military_tradition2
-		GER_ww1_North_German_Confederation
-		ww1_Scramble_for_Africa
-		DNC_naval_arms_race
-		#GER_bloated_naval_budget1
-		#GER_failed_kultur_kampf
-		#WW1_general_staff
-		#GER_german_colonies
-		#GER_colony_cost1
-		GER_Prussian_Dominance
-		GER_Well_Connected_Railways
-		GER_Small_Empire
-	}
-}
+set_research_slots = 4
+set_stability = 0.6
+set_war_support = 0.6
 
 if = {
 	limit = {
@@ -35,26 +18,77 @@ if = {
 }
 
 add_ideas = {
-	foreign_warmonger
-	partial_economic_mobilisation
-	limited_exports
-	limited_conscription
-	press_state
-	tax_high
-	education_budget5
-	health_budget5
-	age_18
-	age_35
-	train_high
-	officer_train_elite
-	tariffs_high
-	army_budget4
-	airforce_budget3
-	navy_budget5
-	police_budget5
-	industry_budget4
-	engineering_budget4
-	infrastructure_budget4
+	ww1_Scramble_for_Africa
+	DNC_naval_arms_race
+	GER_bloated_naval_budget1
+	GER_failed_kultur_kampf
+	GER_german_colonies
+	GER_colony_cost1
+	GER_Prussian_Dominance
+	GER_Well_Connected_Railways
+	GER_Small_Empire
+}
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	early_infantry_weapons_1900 = 1
+	RON_Support_Innovations = 1	
+	marines = 1
+	jungletroops = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	WW1_tech_engineers = 1
+	sniper_1900 = 1
+	basic_train = 1
+	steam_train_1 = 1
+	armored_train_0 = 1
+	rail_infrastructure_0 = 1
+	horses = 1
+	ww1_motorised_infantry = 1
+	RON_Trained_Horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+	RON_Early_Machine_Tools = 1
+	RON_Early_Production = 1
+	RON_Early_Construction = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_torpedo = 1
+			mtg_ww1_destroyer1 = 1
+			early_ship_hull_dreadnought = 1
+			early_ship_hull_submarine_ww1 = 1
+			mtg_transport = 1
+		}
+	else = {
+		set_technology = {
+			ww1_battleship0 = 1
+			ww1_battleship1 = 1
+			ww1_heavy_cruiser0 = 1
+			ww1_light_cruiser0 = 1
+			ww1_destroyer0 = 1
+			ww1_destroyer1 = 1
+			ww1_submarine0 = 1
+			ww1_moduleMTG_mines = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_military_balloons = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
 }
 
 set_politics = {
@@ -69,27 +103,14 @@ set_popularities = {
 	communism = 9
 	neutrality = 64
 }
+
 recruit_character = GER_wilhelm_ii
+recruit_character = GER_wilhelm_iii 
+recruit_character = GER_wilhelm_ernst
 
 recruit_character = GER_august_bebel #democratic 
-GER_august_bebel = {
-	promote_character = {
-		Ideology = socialism
-	}
-}
 recruit_character = GER_karl_liebknecht #communism
-GER_karl_liebknecht = {
-	promote_character = {
-		Ideology = marxism
-	}
-}
-
 recruit_character = GER_erich_ludendorff #fascism
-GER_erich_ludendorff = {
-	promote_character = {
-		Ideology = ultranationalism
-	}
-}
 
 1900.1.1 = {
 	#set_naval_oob = "GER_1900_naval"
@@ -97,7 +118,6 @@ GER_erich_ludendorff = {
 	recruit_character = GER_general_council #democratic
 	recruit_character = GER_ernst_thalmann
 	recruit_character = GER_wolfgang_kapp #fascism
-	recruit_character = GER_wilhelm_iii 
 	recruit_character = GER_paul_von_hindenburg #democracy
 	recruit_character = GER_adolf_hitler #fascism
 	recruit_character = GER_otto_strasser_win #strasserism
@@ -107,329 +127,90 @@ GER_erich_ludendorff = {
 	recruit_character = GER_theobald_von_bethmann_hollweg
 	recruit_character = GER_chlodwig_zu_hohenlohe_schillingsfurst
 	recruit_character = GER_bernhard_von_bulow
-	recruit_character = GER_ludwig_beck
-	recruit_character = GER_wilhelm_keitel
-	recruit_character = GER_ritter_von_greim
-	recruit_character = GER_walther_wever
-	recruit_character = GER_ernst_udet
-	recruit_character = GER_erich_bey
-	recruit_character = GER_viktor_schutze
-	recruit_character = GER_fritz_todt
-	recruit_character = GER_albert_speer
 	recruit_character = GER_hjalmar_schacht
-	recruit_character = GER_rudolf_hess
-	recruit_character = GER_walther_funk
-	recruit_character = GER_kurt_schumacher
-	recruit_character = GER_joachim_von_ribbentrop
 	recruit_character = GER_konstantin_von_neurath
-	recruit_character = GER_wilhelm_frick
-	recruit_character = GER_heinrich_bruning
-	recruit_character = GER_hans_oster
 	recruit_character = GER_alfred_hugenberg
-	recruit_character = GER_carl_friedrich_goerdeler
-	recruit_character = GER_wilhelm_canaris
-	recruit_character = GER_julius_leber
-	recruit_character = GER_theodor_heuss
-	recruit_character = GER_alfred_rosenberg
-	recruit_character = GER_ludwig_boelkow
-	recruit_character = GER_wolfram_von_richthofen
-	recruit_character = GER_otto_ciliax
-	recruit_character = GER_hugo_schmeisser
+	recruit_character = GER_arthur_zimmermann
+	recruit_character = GER_friedrich_von_moltke
+	recruit_character = GER_richard_von_kuhlmann
+	recruit_character = GER_karl_von_luxburg
+	recruit_character = GER_paul_wolff_metternich
+	recruit_character = GER_clemens_von_delbruck
+	recruit_character = GER_franz_von_reichenau
+	recruit_character = GER_gottlieb_von_jagow
+	recruit_character = GER_karl_helfferich
+	recruit_character = GER_max_wallraf
+	recruit_character = GER_friedrich_von_moltke
+	recruit_character = GER_johann_von_dallwitz
+	recruit_character = GER_friedrich_wilhelm_von_loebell
+	recruit_character = GER_wilhelm_arnold_drews
+	recruit_character = GER_tilo_von_wilmowsky	
+	recruit_character = GER_rudolf_havenstein
+	recruit_character = GER_hermann_kuhn
+	recruit_character = GER_hermann_muller
+	recruit_character = GER_josias_von_heeringen
 
 	#Generals
-	recruit_character = GER_gerd_von_rundstedt
-	recruit_character = GER_gunther_von_kluge
-	recruit_character = GER_friedrich_paulus
-	recruit_character = GER_erwin_rommel
-	recruit_character = GER_erich_von_manstein
-	recruit_character = GER_heinz_guderian
-	recruit_character = GER_wilhelm_list
-	recruit_character = GER_ewald_von_kleist
-	recruit_character = GER_fedor_von_bock
-	recruit_character = GER_walter_model
-	recruit_character = GER_maximilian_von_weichs
-	recruit_character = GER_wilhelm_ritter_von_leeb
-	recruit_character = GER_georghans_reinhardt
-	recruit_character = GER_walter_krüger
-	recruit_character = GER_kurt_student
-	recruit_character = GER_erwin_von_witzleben
-	recruit_character = GER_hermann_hoth
-	recruit_character = GER_johannes_blaskowitz
-	recruit_character = GER_paul_hausser
-	recruit_character = GER_friedrich_schulz
-	recruit_character = GER_georg_von_kuchler
-	recruit_character = GER_alfred_jodl
-	recruit_character = GER_sepp_dietrich
-	recruit_character = GER_hasso_von_manteuffel
-	recruit_character = GER_albert_kesselring
-	recruit_character = GER_gotthard_heinrici
-	recruit_character = GER_ernsteberhard_hell
-	recruit_character = GER_felix_steiner
-	recruit_character = GER_karl_donitz
-	recruit_character = GER_erich_raeder
-	recruit_character = GER_alfred_saalwächter
-	recruit_character = GER_hermann_boehm
-	recruit_character = GER_wilhelm_marschall
-	recruit_character = GER_gunther_lutjens
-	recruit_character = GER_erich_hoepner
-	recruit_character = GER_wilhelm_ritter_von_thoma
-	recruit_character = GER_franz_halder
-	recruit_character = GER_hans_von_obstfelder
-	recruit_character = GER_josef_harpe
-	recruit_character = GER_georg_keppler
-	recruit_character = GER_wilhelm_bittrich
-	recruit_character = GER_walther_von_brauchitsch
-	recruit_character = GER_rudolf_schmidt
-	recruit_character = GER_friedrich_dollmann
-	recruit_character = GER_leo_geyr_von_schweppenburg
-	recruit_character = GER_nikolaus_von_falkenhorst
-	recruit_character = GER_hansvalentin_hube
-	recruit_character = GER_erhard_raus
-	recruit_character = GER_adolf_strauß
-	recruit_character = GER_eduard_dietl
-	recruit_character = GER_artur_martin_phleps
-	recruit_character = GER_alfred_bernhard_wünnenberg
-	recruit_character = GER_helmuth_weidling
-	recruit_character = GER_walther_nehring
-	recruit_character = GER_walther_lucht
-	recruit_character = GER_curt_haase
-	recruit_character = GER_hermannbernhard_ramcke
-	recruit_character = GER_willi_reschke
-	recruit_character = GER_wolfram_freiherr_von_richthofen
-	recruit_character = GER_erhard_milch
-	recruit_character = GER_ferdinand_schorner
-	recruit_character = GER_franz_böhme
-	recruit_character = GER_walther_wenck
-	recruit_character = GER_hermann_balck
-	recruit_character = GER_johannes_frießner
-	recruit_character = GER_ernst_wilhelm_busch
-	recruit_character = GER_georg_lindemann
-	recruit_character = GER_erich_straube
-	recruit_character = GER_theodor_eicke
-	recruit_character = GER_hans_hermann_fegelein
-	recruit_character = GER_kurt_meyer
-	recruit_character = GER_herbert_otto_gille
-	recruit_character = GER_rudolf_lehmann
-	recruit_character = GER_hansjürgen_von_arnim
-	recruit_character = GER_fritz_bayerlein
-	recruit_character = GER_hans_von_funck
-	recruit_character = GER_kurt_von_tippelskirch
-	recruit_character = GER_erich_buschenhagen
-	recruit_character = GER_hermann_recknagel
-	recruit_character = GER_hans_eberhard_von_salmuth
-	recruit_character = GER_erich_fellgiebel
-	recruit_character = GER_hans_krebs
-	recruit_character = GER_reinhard_heydrich
-	recruit_character = GER_karl_friedrich_wolff
-	recruit_character = GER_werner_kempf
-	recruit_character = GER_carl_hilpert
-	recruit_character = GER_kurtjürgen_von_lützow
-	recruit_character = GER_otto_wöhler
-	recruit_character = GER_theodor_busse
-	recruit_character = GER_wilhelm_adam
-	recruit_character = GER_kurt_von_hammersteinequord
-	recruit_character = GER_dietrich_von_saucken
-	recruit_character = GER_lothar_rendulic
-	recruit_character = GER_karl_jakob_brenner
-	recruit_character = GER_otto_kumm
-	recruit_character = GER_werner_ostendorff
-	recruit_character = GER_karl_maria_demelhuber
-	recruit_character = GER_theodor_wisch
-	recruit_character = GER_gustav_lombard
-	recruit_character = GER_heinz_harmel
-	recruit_character = GER_hyazinth_von_strachwitz
-	recruit_character = GER_wilhelm_stemmermann
-	recruit_character = GER_wolfgang_von_kluge
-	recruit_character = GER_wolfgünther_trierenberg
-	recruit_character = GER_curt_liebmann
-	recruit_character = GER_johannes_block
-	recruit_character = GER_gustav_höhne
-	recruit_character = GER_hans_jordan
-	recruit_character = GER_walterotto_weiß
-	recruit_character = GER_hans_gustav_felber
-	recruit_character = GER_walter_heitz
-	recruit_character = GER_eberhard_von_mackensen
-	recruit_character = GER_friedrich_kirchner
-	recruit_character = GER_willibald_von_erlencamp
-	recruit_character = GER_joachim_lemelsen
-	recruit_character = GER_adolffiedrich_kuntzen
-	recruit_character = GER_rudolf_veiel
-	recruit_character = GER_hermann_albert_breith
-	recruit_character = GER_hermann_geyer
-	recruit_character = GER_walther_schroth
-	recruit_character = GER_eduard_von_böhmermolli
-	recruit_character = GER_werner_von_fritsch
-	recruit_character = GER_werner_von_blomberg
-	recruit_character = GER_friedrich_fromm
-	recruit_character = GER_oswald_lutz
-	recruit_character = GER_richard_ruoff
-	recruit_character = GER_walther_von_seydlitzkurzbach
-	recruit_character = GER_friedrichaugust_schack
-	recruit_character = GER_hanswolfgang_reinhard
-	recruit_character = GER_friedrichkarl_cranz
-	recruit_character = GER_ludwig_crüwell
-	recruit_character = GER_friedrich_gollwitzer
-	recruit_character = GER_rudolf_kaempfe
-	recruit_character = GER_curt_von_gienanth
-	recruit_character = GER_rudolf_konrad
-	recruit_character = GER_anton_grasser
-	recruit_character = GER_friedrich_mieth
-	recruit_character = GER_walter_von_brockdorffahlefeldt
-	recruit_character = GER_karl_von_tiedemann
-	recruit_character = GER_walter_von_unruh
-	recruit_character = GER_wilhelm_ulex
-	recruit_character = GER_lothar_debes
-	recruit_character = GER_johannes_mühlenkamp
-	recruit_character = GER_herberternst_vahl
-	recruit_character = GER_max_simon
-	recruit_character = GER_richard_jungclaus
-	recruit_character = GER_fritz_schmedes
-	recruit_character = GER_otto_baum
-	recruit_character = GER_fritz_witt
-	recruit_character = GER_jürgen_wagner
-	recruit_character = GER_matthias_kleinheisterkamp
-	recruit_character = GER_karl_kreutz
-	recruit_character = GER_sylvester_stadler
-	recruit_character = GER_joseph_goebbels
-	recruit_character = GER_martin_bormann
-	recruit_character = GER_wilhelm_burgdorf
-	recruit_character = GER_eugen_ott
-	recruit_character = GER_curt_siewert
-	recruit_character = GER_walter_denkert
-	recruit_character = GER_georg_stumme
-	recruit_character = GER_karl_allmendinger
-	recruit_character = GER_karl_von_beeren
-	recruit_character = GER_edgar_feuchtinger
-	recruit_character = GER_gustav_anton_von_wietersheim
-	recruit_character = GER_helmuth_von_pannwitz
-	recruit_character = GER_friedrich_wiese
-	recruit_character = GER_walter_von_reichenau
-	recruit_character = GER_erich_brandenberger
-	recruit_character = GER_heinrich_von_vietinghoff
-	recruit_character = GER_hugo_sperrle
-	recruit_character = GER_hermann_goering
-	recruit_character = GER_heinrich_himmler
-	recruit_character = GER_kurt_daluege
-	recruit_character = GER_viktor_lutze
-	recruit_character = GER_wilhelm_schepmann
+	recruit_character = GER_friedrich_wilhelm
 	recruit_character = GER_franz_ritter_von_epp	
+	recruit_character = GER_moritz_von_bissing
+	recruit_character = GER_hans_von_seeckt
+	recruit_character = GER_gottlieb_graf_von_haeseler
+	recruit_character = GER_gunther_von_kirchbach
+	recruit_character = GER_max_hoffmann
+	recruit_character = GER_wilhelm_groener
+	recruit_character = GER_august_von_mackensen
+	recruit_character = GER_karl_von_bulow
+	recruit_character = GER_remus_von_woyrsch
+	recruit_character = GER_albrecht_duke_of_wurttemberg
+	recruit_character = GER_erich_von_falkenhayn
+	recruit_character = GER_felix_graf_von_bothmer
+	recruit_character = GER_helmuth_von_moltke
+	recruit_character = GER_hermann_von_eichorn
+	recruit_character = GER_alexander_von_kluck
+	recruit_character = GER_friedrich_sixt_von_armin
+	recruit_character = GER_ferdinand_von_quast
+	recruit_character = GER_hermann_von_francois
+	recruit_character = GER_paul_von_lettow_vorbeck
+	recruit_character = GER_karl_von_einem
+	recruit_character = GER_prince_leopold_of_bavaria
+	recruit_character = GER_prince_rupprecht_of_bavaria
+	recruit_character = GER_fritz_von_below	
+	recruit_character = GER_alfred_von_schlieffen
+	recruit_character = GER_walther_von_luttwitz
+	recruit_character = GER_erich_von_gundell
+	recruit_character = GER_philipp_von_wurttemberg		
+	recruit_character = GER_colmar_von_der_goltz
+	recruit_character = GER_friedrich_von_bernhardi
+	recruit_character = GER_bruno_von_mudra
+	recruit_character = GER_alfred_von_kuhne
+	recruit_character = GER_walter_von_eberhardt
+	recruit_character = GER_georg_von_der_marwitz	
+	recruit_character = GER_karl_ludwig_delsa	
+	recruit_character = GER_kurt_von_dem_borne
+	recruit_character = GER_maximilian_von_prittwitz
+	recruit_character = GER_max_von_gallwitz
+	recruit_character = GER_arnold_lequis	
+	recruit_character = GER_carl_eduard_von_sachsen_coburg_und_gotha
 
-	recruit_character = GER_adolf_heusinger
-	recruit_character = GER_max_josef_pemsel
-	recruit_character = GER_hans_speidel
-	recruit_character = GER_johann_von_kielmansegg
-	recruit_character = GER_friedrich_foertsch
-	recruit_character = GER_hanswerner_wiermann
-	recruit_character = GER_heinrich_trettner
-	recruit_character = GER_klaus_naumann
-	recruit_character = GER_rainer_glatz
-	recruit_character = GER_ulrich_de_maiziere
-	recruit_character = GER_volker_wieker
-	recruit_character = GER_wolfgang_altenburg
-	recruit_character = GER_wolfgang_schneiderhan
-	recruit_character = GER_armin_zimmermann
-	recruit_character = GER_dieter_wellershoff
-	#recruit_character = GER_marvin_saller
 
-	recruit_character = GER_hanspeter_von_kirchbach
-	recruit_character = GER_bruno_kasdorf
-	recruit_character = GER_jörg_vollmer
-	recruit_character = GER_martin_schelleis
-	recruit_character = GER_richard_roßmanith
-	recruit_character = GER_hanserich_antoni
-	recruit_character = GER_joachim_wundrak
-	recruit_character = GER_peter_bohrer
-	recruit_character = GER_helmut_schütz
-	recruit_character = GER_eberhard_zorn
-	recruit_character = GER_ansgar_rieks
-	recruit_character = GER_dieter_warnecke
-	recruit_character = GER_josef_blotz
-	recruit_character = GER_dieter_naskrent
-	recruit_character = GER_karl_müllner
-	recruit_character = GER_klaus_reinhardt
-	recruit_character = GER_karlheinz_lather
-	recruit_character = GER_joachim_spiering
-	recruit_character = GER_rainer_schuwirth
-	recruit_character = GER_dieter_stöckmann
-	recruit_character = GER_hanslothar_domröse
-	recruit_character = GER_werner_freers
-	recruit_character = GER_egon_ramms
-	recruit_character = GER_wolfdieter_langheld
-	recruit_character = GER_ludwig_leinhos
-	recruit_character = GER_franz_xaver_pfrengle
-	recruit_character = GER_stephan_thomas
-	recruit_character = GER_walter_huhn
-	recruit_character = GER_gert_gawellek
-	recruit_character = GER_carsten_jahnel
-	recruit_character = GER_volker_thomas
-	recruit_character = GER_christof_munzlinger
-	recruit_character = GER_bernd_schuett
-	recruit_character = GER_jürgen_weigt
-	recruit_character = GER_dirk_backen
-	recruit_character = GER_andreas_marlow
-	recruit_character = GER_jürgen_setzer
-	recruit_character = GER_thorsten_poschwatta
-	recruit_character = GER_udo_schnittker
-	recruit_character = GER_alexander_sollfrank
-	recruit_character = GER_dirk_faust
-	recruit_character = GER_markus_laubenthal
-	recruit_character = GER_ruprecht_von_butler
-	recruit_character = GER_heico_hübner
-	recruit_character = GER_frank_leidenberger
-	recruit_character = GER_gert_hagemann
-	recruit_character = GER_walter_spindler
-	recruit_character = GER_manfred_hofmann
-	recruit_character = GER_dag_baehr
-	recruit_character = GER_carsten_jacobson
-	recruit_character = GER_erich_pfeffer
-	recruit_character = GER_erhard_bühler
-	recruit_character = GER_gunter_schneider
-	recruit_character = GER_jörg_see
-	recruit_character = GER_markus_kneip
-	recruit_character = GER_werner_albl
-	recruit_character = GER_oliver_kohl
-	recruit_character = GER_kai_rohrschneider
-	recruit_character = GER_wilhelm_grün
-	recruit_character = GER_manfred_nielson
-	recruit_character = GER_rainer_feist
-	recruit_character = GER_axel_meissel
-	recruit_character = GER_henrik_riechert
-	recruit_character = GER_axel_schimpf
-	recruit_character = GER_andreas_krause
-	recruit_character = GER_joachim_rühle
-	recruit_character = GER_rainer_brinkmann
-	recruit_character = GER_carsten_stawitzki
-	recruit_character = GER_thomas_jugel
-	recruit_character = GER_jan_christian_kaack
-	recruit_character = GER_christoph_müllermeinhard
-	recruit_character = GER_jean_martens
-	recruit_character = GER_axel_deertz
-	recruit_character = GER_jens_nemeyer
-	recruit_character = GER_kayachim_schönbach
-	recruit_character = GER_rainer_endres
-
+	#Admirals
+	recruit_character = GER_maximilian_von_spee
+	recruit_character = GER_adolf_von_trotha
+	recruit_character = GER_hugo_von_pohl
+	recruit_character = GER_alfred_von_tirpitz	
+	recruit_character = GER_franz_von_hipper
+	recruit_character = GER_wilhelm_souchon		
+	recruit_character = GER_ludwig_von_reuter		
+	recruit_character = GER_reinhard_scheer
+	recruit_character = GER_friedrich_von_baudissin	
+	recruit_character = GER_albert_wilhelm_heinrich
+	recruit_character = GER_guido_von_usedom
+	recruit_character = GER_eduard_von_capelle
+	recruit_character = GER_peter_strasser			
 
 	#Scientists
-	recruit_character = GER_hermann_burkhardt
-	recruit_character = GER_werner_heisenberg
-	recruit_character = GER_peter_adolf_thiessen
-	recruit_character = GER_gustav_ludwig_hertz
-	recruit_character = GER_eduard_grote
-	recruit_character = GER_karl_heinrich_emil_becker
 	recruit_character = GER_ferdinand_porsche
-	recruit_character = GER_erwin_aders
-	recruit_character = GER_ulrich_gabler
-	recruit_character = GER_helmuth_walter
-	recruit_character = GER_wernher_von_braun
-	recruit_character = GER_hans_von_ohain
-	recruit_character = GER_max_kramer
-	recruit_character = GER_kurt_tank
-	recruit_character = GER_henrich_focke
-	recruit_character = GER_manfred_von_ardenne
-	recruit_character = GER_konrad_zuse
-	recruit_character = GER_eva_braun
-	recruit_character = GER_leni_riefenstahl
-	recruit_character = GER_walter_dornberger
 	recruit_character = GER_ferdinand_von_zeppelin
 	recruit_character = GER_fritz_rausenberger	
 	recruit_character = GER_joseph_vollmer
@@ -509,49 +290,7 @@ GER_erich_ludendorff = {
 
 		}
 	}
-
-	set_portraits = {
-		character = GER_august_von_mackensen
-		civilian = {
-			large = "gfx/leaders/GER/WW1/FM-August_von_Mackensen.dds"
-		}
-		army = {
-			large = "gfx/leaders/GER/WW1/FM-August_von_Mackensen.dds"
-		}		
-	} 		
 }
-
-if = {
-	limit = {
-		has_start_date < 1930.01.01
-	}
-	recruit_character = GER_august_von_mackensen
-	recruit_character = GER_karl_von_bulow
-	recruit_character = GER_remus_von_woyrsch
-	recruit_character = GER_albrecht_duke_of_wurttemberg
-	recruit_character = GER_erich_von_falkenhayn
-	recruit_character = GER_felix_graf_von_bothmer
-	recruit_character = GER_helmuth_von_moltke
-	recruit_character = GER_hermann_von_eichorn
-	recruit_character = GER_alexander_von_kluck
-	recruit_character = GER_friedrich_sixt_von_armin
-	recruit_character = GER_ferdinand_von_quast
-	recruit_character = GER_hermann_von_francois
-	recruit_character = GER_paul_von_lettow_vorbeck
-	recruit_character = GER_karl_von_einem
-	recruit_character = GER_prince_leopold_of_bavaria
-	recruit_character = GER_prince_rupprecht_of_bavaria
-	recruit_character = GER_fritz_von_below
-	recruit_character = GER_alfred_von_tirpitz
-	recruit_character = GER_franz_von_hipper
-	recruit_character = GER_hugo_von_pohl
-	recruit_character = GER_wilhelm_souchon
-	recruit_character = GER_maximilian_von_spee
-	recruit_character = GER_adolf_von_trotha
-	recruit_character = GER_ludwig_von_reuter
-}
-
-
 
 1905.1.1 = {
 	if = {
@@ -559,21 +298,33 @@ if = {
 			has_start_date > 1904.01.01
 			has_start_date < 1919.01.01
 		}
-					create_faction_from_template = faction_template_central_powers
-
+		create_faction_from_template = faction_template_central_powers
 		add_to_faction = GER
 		add_to_faction = AUH
 		set_global_flag = DNC_Create_CP
 	}
 	if = {
 		limit = {
-			has_start_date < 1914.01.01
-
+			has_start_date < 1910.01.01
 		}
 		add_ideas = {
 			GER_dreadnought_race
 		}
 	}
+
+	#Throne Candidates
+	recruit_character = GER_eitel_friedrich
+	recruit_character = GER_adalbert_von_preussen
+
+	#Advisors
+	recruit_character = GER_theodor_heuss
+
+	#Scientists
+	recruit_character = GER_hermann_burkhardt	
+	recruit_character = GER_erwin_aders	
+
+	#Generals
+	recruit_character = GER_rudiger_von_der_goltz		
 }
 
 1910.1.1 = {
@@ -635,6 +386,24 @@ if = {
 		ww1_electronic_mechanical_engineering = 1
 	}
 
+	#Throne Candidates
+	recruit_character = GER_august_wilhelm_von_preussen
+	recruit_character = GER_oskar_von_preussen
+	recruit_character = GER_joachim_von_preussen
+	recruit_character = GER_victoria_louise
+
+	if = {
+		limit = {
+			has_start_date < 1919.01.01
+		}
+		add_ideas = {
+			GER_idea_norddeutscher_bund_legacy
+			GER_idea_OHL
+			limited_conscription
+			GER_idea_naval_arms_race
+			GER_strategiestreit
+		}
+	}
 }
 
 1914.1.1 = {
@@ -643,27 +412,19 @@ if = {
 			has_start_date > 1913.01.01
 			has_start_date < 1919.01.01
 		}
-		unlock_national_focus = GER1_the_central_powers
-		unlock_national_focus = GER1_disreguard_the_reichstag
-		unlock_national_focus = GER1_reinforce_the_monarchy
-		unlock_national_focus = GER1_invite_italy_to_the_alliance
-		unlock_national_focus = GER1_leverage_royal_ties
-		unlock_national_focus = GER1_alliance_wargaming
-		unlock_national_focus = GER1_heed_the_warnings
-		unlock_national_focus = GER1_prepare_for_the_next_war
-		unlock_national_focus = GER1_an_industrial_war
-		unlock_national_focus = GER1_at_sea
-		unlock_national_focus = GER1_on_land
-		unlock_national_focus = GER1_under_the_sea
-		unlock_national_focus = GER1_above_the_sea
-		unlock_national_focus = GER1_the_science_of_war
-		unlock_national_focus = GER1_the_old_battlefield
-		unlock_national_focus = GER1_the_grand_battlefield
-		unlock_national_focus = GER1_extend_the_militaryindustrial_complex
-		unlock_national_focus = GER1_steel_rain
-		unlock_national_focus = GER1_the_homefront
-		unlock_national_focus = GER1_fortification_studies
 	}
+
+	#Advisors
+	recruit_character = GER_heinrich_bruning
+	recruit_character = GER_ernst_udet	
+	recruit_character = GER_wilhelm_frick
+	recruit_character = GER_carl_friedrich_goerdeler
+	recruit_character = GER_wilhelm_canaris			
+
+	#Admirals
+	recruit_character = GER_erich_raeder	
+	recruit_character = GER_gunther_lutjens	
+
 }
 
 ### END OF WW1 Start Date
@@ -740,6 +501,58 @@ if = {
 		country_event = { id = ww2_germany.32 days = 92 }
 	}
 
+	#Advisors
+	recruit_character = GER_leni_riefenstahl
+	recruit_character = GER_fritz_todt
+	recruit_character = GER_julius_leber
+	recruit_character = GER_otto_ciliax				
+
+	#Generals
+	recruit_character = GER_gerd_von_rundstedt
+	recruit_character = GER_friedrich_paulus	
+	recruit_character = GER_ewald_von_kleist
+	recruit_character = GER_fedor_von_bock	
+	recruit_character = GER_wilhelm_ritter_von_leeb
+	recruit_character = GER_paul_hausser
+	recruit_character = GER_friedrich_schulz	
+	recruit_character = GER_hasso_von_manteuffel
+	recruit_character = GER_alfred_saalwächter
+	recruit_character = GER_wilhelm_ritter_von_thoma
+	recruit_character = GER_franz_halder		
+	recruit_character = GER_friedrich_dollmann	
+	recruit_character = GER_nikolaus_von_falkenhorst	
+	recruit_character = GER_hansvalentin_hube	
+	recruit_character = GER_adolf_strauß
+	recruit_character = GER_eduard_dietl
+	recruit_character = GER_alfred_bernhard_wünnenberg		
+	recruit_character = GER_curt_haase	
+	recruit_character = GER_erhard_milch	
+	recruit_character = GER_ferdinand_schorner
+	recruit_character = GER_herbert_otto_gille	
+	recruit_character = GER_kurt_von_tippelskirch	
+	recruit_character = GER_hans_krebs	
+	recruit_character = GER_wilhelm_adam	
+	recruit_character = GER_kurt_von_hammersteinequord
+	recruit_character = GER_curt_liebmann
+	recruit_character = GER_werner_von_fritsch	
+	recruit_character = GER_werner_von_blomberg	
+	recruit_character = GER_oswald_lutz		
+	recruit_character = GER_walter_von_unruh	
+	recruit_character = GER_joseph_goebbels		
+	recruit_character = GER_gustav_anton_von_wietersheim
+	recruit_character = GER_walter_von_reichenau	
+	recruit_character = GER_hugo_sperrle
+	recruit_character = GER_hermann_goering	
+	recruit_character = GER_ludwig_beck		
+	recruit_character = GER_wilhelm_keitel				
+	
+	#Admirals
+	recruit_character = GER_karl_donitz
+	recruit_character = GER_hermann_boehm	
+
+	#Scientists
+	recruit_character = GER_henrich_focke	
+	recruit_character = GER_manfred_von_ardenne	
 }
 
 1925.1.1 = {
@@ -772,6 +585,69 @@ if = {
 			large = "gfx/leaders/GER/portrait_ger_wilhelm_ii.dds"
 		}		
 	}	
+
+	retire_character = GER_gottlieb_graf_von_haeseler
+
+	#Advisors
+	recruit_character = GER_ritter_von_greim
+	recruit_character = GER_walther_wever
+	recruit_character = GER_albert_speer
+	recruit_character = GER_wolfram_von_richthofen
+	recruit_character = GER_erich_bey	
+	recruit_character = GER_walther_funk	
+	recruit_character = GER_kurt_schumacher	
+
+	#Generals
+	recruit_character = GER_gunther_von_kluge
+	recruit_character = GER_wilhelm_list	
+	recruit_character = GER_maximilian_von_weichs
+	recruit_character = GER_erwin_von_witzleben		
+	recruit_character = GER_hermann_hoth	
+	recruit_character = GER_johannes_blaskowitz	
+	recruit_character = GER_georg_von_kuchler	
+	recruit_character = GER_alfred_jodl	
+	recruit_character = GER_albert_kesselring
+	recruit_character = GER_gotthard_heinrici		
+	recruit_character = GER_erich_hoepner
+	recruit_character = GER_hans_von_obstfelder	
+	recruit_character = GER_josef_harpe
+	recruit_character = GER_walther_von_brauchitsch	
+	recruit_character = GER_rudolf_schmidt
+	recruit_character = GER_walther_lucht	
+	recruit_character = GER_walther_wenck	
+	recruit_character = GER_hermann_balck	
+	recruit_character = GER_ernst_wilhelm_busch	
+	recruit_character = GER_georg_lindemann	
+	recruit_character = GER_erich_straube	
+	recruit_character = GER_hansjürgen_von_arnim
+	recruit_character = GER_hans_von_funck		
+	recruit_character = GER_erich_buschenhagen	
+	recruit_character = GER_walter_heitz	
+	recruit_character = GER_hermann_albert_breith
+	recruit_character = GER_hermann_geyer
+	recruit_character = GER_walther_schroth	
+	recruit_character = GER_hanswolfgang_reinhard
+	recruit_character = GER_ludwig_crüwell	
+	recruit_character = GER_rudolf_kaempfe	
+	recruit_character = GER_curt_von_gienanth	
+	recruit_character = GER_karl_von_tiedemann	
+	recruit_character = GER_wilhelm_ulex
+	recruit_character = GER_martin_bormann		
+	recruit_character = GER_wilhelm_burgdorf	
+	recruit_character = GER_curt_siewert	
+	recruit_character = GER_georg_stumme	
+	recruit_character = GER_heinrich_von_vietinghoff	
+	recruit_character = GER_heinrich_himmler
+	recruit_character = GER_kurt_daluege	
+	recruit_character = GER_viktor_lutze		
+	
+	#Scientists
+	recruit_character = GER_werner_heisenberg	
+	recruit_character = GER_gustav_ludwig_hertz	
+	recruit_character = GER_eduard_grote	
+	recruit_character = GER_karl_heinrich_emil_becker	
+	recruit_character = GER_helmuth_walter	
+	recruit_character = GER_wernher_von_braun	
 }
 
 1930.1.1 = {
@@ -781,6 +657,88 @@ if = {
 			large = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
 		}	
 	} 
+
+	set_portraits = {
+		character = GER_wilhelm_ritter_von_leeb
+		army={
+			small="gfx/interface/ideas/idea_GER_wilhelm_ritter_von_leeb.dds"
+			large="gfx/leaders/GER/Portrait_Germany_Wilhelm_Ritter_von_Leeb.dds"
+		}	
+	} 	
+	
+	set_portraits = {
+		character = GER_erich_raeder
+		army={
+			small="gfx/interface/ideas/idea_GER_erich_raeder.dds"
+			large="gfx/leaders/GER/Portrait_Germany_Erich_Raeder.dds"
+		}	
+	} 	
+
+	retire_character = GER_gunther_von_kirchbach
+	retire_character = GER_max_hoffmann
+
+	#Leaders
+	recruit_character = GER_eva_braun	
+
+	#Advisors
+	recruit_character = GER_viktor_schutze
+	recruit_character = GER_rudolf_hess	
+	recruit_character = GER_joachim_von_ribbentrop
+	recruit_character = GER_hans_oster
+	recruit_character = GER_alfred_rosenberg
+	recruit_character = GER_ludwig_boelkow		
+	recruit_character = GER_hugo_schmeisser			
+
+	#Generals
+	recruit_character = GER_erwin_rommel
+	recruit_character = GER_erich_von_manstein	
+	recruit_character = GER_heinz_guderian	
+	recruit_character = GER_georghans_reinhardt	
+	recruit_character = GER_ernsteberhard_hell	
+	recruit_character = GER_leo_geyr_von_schweppenburg
+	recruit_character = GER_erhard_raus	
+	recruit_character = GER_artur_martin_phleps	
+	recruit_character = GER_walther_nehring	
+	recruit_character = GER_wolfram_freiherr_von_richthofen	
+	recruit_character = GER_franz_böhme	
+	recruit_character = GER_hermann_recknagel	
+	recruit_character = GER_hans_eberhard_von_salmuth
+	recruit_character = GER_erich_fellgiebel	
+	recruit_character = GER_reinhard_heydrich	
+	recruit_character = GER_werner_kempf
+	recruit_character = GER_carl_hilpert	
+	recruit_character = GER_lothar_rendulic		
+	recruit_character = GER_karl_jakob_brenner	
+	recruit_character = GER_otto_kumm	
+	recruit_character = GER_wolfgünther_trierenberg	
+	recruit_character = GER_eberhard_von_mackensen	
+	recruit_character = GER_joachim_lemelsen
+	recruit_character = GER_adolffiedrich_kuntzen	
+	recruit_character = GER_rudolf_veiel	
+	recruit_character = GER_eduard_von_böhmermolli	
+	recruit_character = GER_friedrich_fromm		
+	recruit_character = GER_richard_ruoff	
+	recruit_character = GER_friedrich_gollwitzer
+	recruit_character = GER_friedrich_mieth	
+	recruit_character = GER_walter_von_brockdorffahlefeldt
+	recruit_character = GER_herberternst_vahl
+	recruit_character = GER_max_simon	
+	recruit_character = GER_fritz_schmedes	
+	recruit_character = GER_fritz_witt	
+	recruit_character = GER_jürgen_wagner
+	recruit_character = GER_matthias_kleinheisterkamp	
+	recruit_character = GER_eugen_ott	
+	recruit_character = GER_karl_allmendinger	
+	recruit_character = GER_karl_von_beeren	
+	recruit_character = GER_friedrich_wiese	
+	recruit_character = GER_erich_brandenberger		
+	recruit_character = GER_wilhelm_schepmann	
+	recruit_character = GER_heinrich_trettner		
+	
+	#Scientists
+	recruit_character = GER_peter_adolf_thiessen	
+	recruit_character = GER_max_kramer	
+	recruit_character = GER_kurt_tank	
 }
 
 1933.1.1 = {
@@ -823,9 +781,6 @@ if = {
 	
 	retire_character = GER_general_council #democracy
 	retire_character = GER_wolfgang_kapp #fascism
-
-
-	
 	GER_paul_von_hindenburg = {
 		promote_character = {
 			Ideology = democratic_independent
@@ -844,15 +799,115 @@ if = {
 			large = "gfx/leaders/GER/Portrait_Germany_Franz_Ritter_von_Epp_WW2.dds"
 		}	
 	}	
-}
 
-1933.1.30 = {
-	set_politics = {
-		ruling_party = fascism
-		last_election = "1933.1.30"
-		election_frequency = 48
-		elections_allowed = no
-	}
+	set_portraits = {
+		character = GER_gerd_von_rundstedt
+		army={
+			small="gfx/interface/ideas/idea_GER_gerd_von_rundstedt.dds"
+			large="gfx/leaders/GER/Portrait_Germany_Gerd_von_Rundstedt.dds"
+		}
+	} 	
+
+	set_portraits = {
+		character = GER_fedor_von_bock
+		army = {
+			large="gfx/leaders/GER/Portrait_Germany_Fedor_von_Bock.dds"
+			small="GER_fedor_von_bock"
+		}		
+	} 	
+
+	set_portraits = {
+		character = GER_paul_hausser
+		army={
+			small="gfx/interface/ideas/idea_GER_paul_hausser.dds"
+			large="gfx/leaders/GER/Portrait_Germany_Paul_Hausser.dds"
+		}	
+	} 
+	
+	set_portraits = {
+		character = GER_karl_donitz
+		civilian={
+			large="gfx/leaders/GER/Portrait_Germany_Karl_Donitz.dds"
+		}
+		army={
+			large="gfx/leaders/GER/Portrait_Germany_Karl_Donitz.dds"
+			small="gfx/interface/ideas/idea_GER_karl_donitz.dds"
+		}
+	} 		
+
+	set_portraits = {
+		character = GER_ferdinand_schorner
+		army={
+			large = "gfx/leaders/GER/Portrait_Germany_Ferdinand_Schorner.dds"
+			small = "GFX_idea_ferdinand_schorner"
+		}	
+	}	
+
+	set_portraits = {
+		character = GER_hermann_goering
+		civilian= {
+			large="gfx/leaders/GER/Portrait_Germany_Hermann_Goring.dds"
+			small="gfx/interface/ideas/portrait_GER_hermann_goring_civilian_small.dds"				
+		}
+		army={
+			large="gfx/leaders/GER/Portrait_Germany_Hermann_Goring_army.dds"
+			small="gfx/interface/ideas/idea_GER_hermann_goring.dds"
+		}	
+	}	
+
+	#Advisors
+	recruit_character = GER_walter_dornberger
+
+	#Generals
+	recruit_character = GER_walter_model	
+	recruit_character = GER_walter_krüger	
+	recruit_character = GER_kurt_student	
+	recruit_character = GER_sepp_dietrich	
+	recruit_character = GER_felix_steiner	
+	recruit_character = GER_georg_keppler
+	recruit_character = GER_wilhelm_bittrich	
+	recruit_character = GER_helmuth_weidling	
+	recruit_character = GER_hermannbernhard_ramcke	
+	recruit_character = GER_johannes_frießner	
+	recruit_character = GER_theodor_eicke	
+	recruit_character = GER_hans_hermann_fegelein	
+	recruit_character = GER_kurt_meyer	
+	recruit_character = GER_rudolf_lehmann	
+	recruit_character = GER_karl_friedrich_wolff	
+	recruit_character = GER_kurtjürgen_von_lützow	
+	recruit_character = GER_otto_wöhler	
+	recruit_character = GER_theodor_busse	
+	recruit_character = GER_werner_ostendorff	
+	recruit_character = GER_karl_maria_demelhuber
+	recruit_character = GER_gustav_lombard	
+	recruit_character = GER_heinz_harmel	
+	recruit_character = GER_wilhelm_stemmermann		
+	recruit_character = GER_wolfgang_von_kluge
+	recruit_character = GER_walterotto_weiß	
+	recruit_character = GER_hans_gustav_felber	
+	recruit_character = GER_friedrich_kirchner	
+	recruit_character = GER_willibald_von_erlencamp	
+	recruit_character = GER_walther_von_seydlitzkurzbach	
+	recruit_character = GER_friedrichkarl_cranz		
+	recruit_character = GER_rudolf_konrad	
+	recruit_character = GER_johannes_mühlenkamp	
+	recruit_character = GER_richard_jungclaus	
+	recruit_character = GER_otto_baum	
+	recruit_character = GER_karl_kreutz	
+	recruit_character = GER_sylvester_stadler
+	recruit_character = GER_walter_denkert	
+	recruit_character = GER_edgar_feuchtinger	
+	recruit_character = GER_helmuth_von_pannwitz	
+	recruit_character = GER_adolf_heusinger	
+	recruit_character = GER_max_josef_pemsel
+	recruit_character = GER_hans_speidel			
+
+	#Admirals
+	recruit_character = GER_wilhelm_marschall	
+
+	#Scientists
+	recruit_character = GER_hans_von_ohain	
+	recruit_character = GER_konrad_zuse	
 }
 
 1934.1.1 = {
@@ -1244,6 +1299,22 @@ set_war_support = 0.3
 		}
 	}
 
+	#Advisors
+
+	#Generals
+	recruit_character = GER_fritz_bayerlein	
+	recruit_character = GER_theodor_wisch	
+	recruit_character = GER_hyazinth_von_strachwitz	
+	recruit_character = GER_johannes_block	
+	recruit_character = GER_gustav_höhne
+	recruit_character = GER_hans_jordan		
+	recruit_character = GER_friedrichaugust_schack	
+	recruit_character = GER_anton_grasser	
+	recruit_character = GER_lothar_debes	
+
+	#Scientists
+	recruit_character = GER_ulrich_gabler	
+
 	# Starting tech
 	set_technology = {
 		infantry_weapons = 1
@@ -1458,6 +1529,10 @@ set_war_support = 0.3
 		}
 		#Soviet treaty end
 	}
+
+	#Generals
+	recruit_character = GER_willi_reschke	
+	recruit_character = GER_dietrich_von_saucken	
 
 }
 
@@ -1710,6 +1785,10 @@ set_war_support = 0.3
 			age_45
 		}
 	}
+
+	#Generals
+	recruit_character = GER_johann_von_kielmansegg	
+
 }
 
 1944.1.1 = {
@@ -1802,6 +1881,7 @@ set_war_support = 0.3
 	} 	
 
 	retire_character = GER_erwin_rommel # Forced suicide
+	retire_character = GER_gunther_von_kluge
 }
 
 1946.1.1 = {
@@ -2064,7 +2144,8 @@ set_war_support = 0.3
 		}
 	}
 	
-	# Generals Defined In Scripted Effects
+	#Generals
+	recruit_character = GER_friedrich_foertsch	
 
 }
 
@@ -2106,8 +2187,13 @@ set_war_support = 0.3
 			large = "gfx/leaders/GER/NV/Adolf_Hitler.dds"
 		}	
 	} 
-	
+	#Generals
+	retire_character = GER_gerd_von_rundstedt
 	retire_character = GER_franz_ritter_von_epp	
+	recruit_character = GER_ulrich_de_maiziere	
+
+	#Admirals
+	recruit_character = GER_armin_zimmermann
 }
 
 1960.1.1 = {
@@ -2119,6 +2205,10 @@ set_war_support = 0.3
 	}
 	add_ideas = RON_European_Union
 	retire_character = GER_wilhelm_iii #neutral	
+
+	#Generals
+	recruit_character = GER_wolfgang_altenburg	
+	recruit_character = GER_wolfgang_schneiderhan		
 }
 
 1970.1.1 = {
@@ -2154,6 +2244,13 @@ set_war_support = 0.3
 			Ideology = despotism
 		}
 	}
+
+	#Generals
+	recruit_character = GER_hanswerner_wiermann	
+	recruit_character = GER_klaus_naumann	
+
+	#Admirals
+	recruit_character = GER_dieter_wellershoff	
 }
 
 1980.1.1 = {
@@ -2164,6 +2261,85 @@ set_war_support = 0.3
 			Ideology = christian_democracy
 		}
 	}
+	#Generals
+	recruit_character = GER_rainer_glatz	
+
+	recruit_character = GER_hanspeter_von_kirchbach
+	recruit_character = GER_bruno_kasdorf
+	recruit_character = GER_jörg_vollmer
+	recruit_character = GER_martin_schelleis
+	recruit_character = GER_richard_roßmanith
+	recruit_character = GER_hanserich_antoni
+	recruit_character = GER_joachim_wundrak
+	recruit_character = GER_peter_bohrer
+	recruit_character = GER_helmut_schütz
+	recruit_character = GER_eberhard_zorn
+	recruit_character = GER_ansgar_rieks
+	recruit_character = GER_dieter_warnecke
+	recruit_character = GER_josef_blotz
+	recruit_character = GER_dieter_naskrent
+	recruit_character = GER_karl_müllner
+	recruit_character = GER_klaus_reinhardt
+	recruit_character = GER_karlheinz_lather
+	recruit_character = GER_joachim_spiering
+	recruit_character = GER_rainer_schuwirth
+	recruit_character = GER_dieter_stöckmann
+	recruit_character = GER_hanslothar_domröse
+	recruit_character = GER_werner_freers
+	recruit_character = GER_egon_ramms
+	recruit_character = GER_wolfdieter_langheld
+	recruit_character = GER_ludwig_leinhos
+	recruit_character = GER_franz_xaver_pfrengle
+	recruit_character = GER_stephan_thomas
+	recruit_character = GER_walter_huhn
+	recruit_character = GER_gert_gawellek
+	recruit_character = GER_carsten_jahnel
+	recruit_character = GER_volker_thomas
+	recruit_character = GER_christof_munzlinger
+	recruit_character = GER_bernd_schuett
+	recruit_character = GER_jürgen_weigt
+	recruit_character = GER_dirk_backen
+	recruit_character = GER_andreas_marlow
+	recruit_character = GER_jürgen_setzer
+	recruit_character = GER_thorsten_poschwatta
+	recruit_character = GER_udo_schnittker
+	recruit_character = GER_alexander_sollfrank
+	recruit_character = GER_dirk_faust
+	recruit_character = GER_markus_laubenthal
+	recruit_character = GER_ruprecht_von_butler
+	recruit_character = GER_heico_hübner
+	recruit_character = GER_frank_leidenberger
+	recruit_character = GER_gert_hagemann
+	recruit_character = GER_walter_spindler
+	recruit_character = GER_manfred_hofmann
+	recruit_character = GER_dag_baehr
+	recruit_character = GER_carsten_jacobson
+	recruit_character = GER_erich_pfeffer
+	recruit_character = GER_erhard_bühler
+	recruit_character = GER_gunter_schneider
+	recruit_character = GER_jörg_see
+	recruit_character = GER_markus_kneip
+	recruit_character = GER_werner_albl
+	recruit_character = GER_oliver_kohl
+	recruit_character = GER_kai_rohrschneider
+	recruit_character = GER_wilhelm_grün
+	recruit_character = GER_manfred_nielson
+	recruit_character = GER_rainer_feist
+	recruit_character = GER_axel_meissel
+	recruit_character = GER_henrik_riechert
+	recruit_character = GER_axel_schimpf
+	recruit_character = GER_andreas_krause
+	recruit_character = GER_joachim_rühle
+	recruit_character = GER_rainer_brinkmann
+	recruit_character = GER_carsten_stawitzki
+	recruit_character = GER_thomas_jugel
+	recruit_character = GER_jan_christian_kaack
+	recruit_character = GER_christoph_müllermeinhard
+	recruit_character = GER_jean_martens
+	recruit_character = GER_axel_deertz
+	recruit_character = GER_jens_nemeyer
+	recruit_character = GER_kayachim_schönbach
+	recruit_character = GER_rainer_endres	
 }
 
 1990.1.1 = {
@@ -2176,6 +2352,8 @@ set_war_support = 0.3
 			Ideology = christian_democracy
 		}
 	}
+	#Generals
+	recruit_character = GER_volker_wieker	
 }
 
 

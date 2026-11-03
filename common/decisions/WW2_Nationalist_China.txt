@@ -5375,7 +5375,7 @@ foreign_support = {
 		icon = generic_construction
 		available = {
 			any_country = {
-				has_completed_focus = KMT_yunnan_bahn
+				#has_completed_focus = KMT_yunnan_bahn
 			}
 			OR = {
 				controls_state = 640
@@ -5407,7 +5407,7 @@ foreign_support = {
 		}
 		visible = {
 			OR = {
-				has_completed_focus = KMT_yunnan_bahn
+				#has_completed_focus = KMT_yunnan_bahn
 				controls_state = 640
 				640 = {
 					CONTROLLER = {
@@ -5419,7 +5419,7 @@ foreign_support = {
 				has_global_flag = CHI_ledo_3
 			}
 			any_country = {
-				has_completed_focus = KMT_yunnan_bahn
+				#has_completed_focus = KMT_yunnan_bahn
 			}
 		}
 		days_re_enable = 360
@@ -5673,7 +5673,7 @@ prestigious_projects = {
 		fire_only_once = yes
 		is_good = no
 		activation = {
-			has_completed_focus = KMT_pacific_fleet
+			#has_completed_focus = KMT_pacific_fleet
 		}
 		
 		complete_effect = {
@@ -10123,7 +10123,7 @@ KMT_dcat_support_china = {
 		visible = {
 			tag = FRA
 			CHI = {
-				has_completed_focus = KMT_defense_of_indo_china
+				#has_completed_focus = KMT_defense_of_indo_china
 			}
 			has_global_flag = KMT_FRA_transferred_indochina_to_CHI
 			has_war = no
@@ -13187,7 +13187,7 @@ prospect_for_resources = {
 				NOT = {
 					overlord = {
 						OR = {
-							has_completed_focus = KMT_national_resources_commission
+							#has_completed_focus = KMT_national_resources_commission
 							has_completed_focus = PRC_resources_prospection
 							has_country_flag = KMT_mck_xuantong_res_minerals
 							#has_completed_focus = JAP_develop_chinese_resources
@@ -13201,7 +13201,7 @@ prospect_for_resources = {
 				}
 			}
 			OR = {
-				has_completed_focus = KMT_national_resources_commission
+				#has_completed_focus = KMT_national_resources_commission
 				has_completed_focus = PRC_resources_prospection
 				#has_completed_focus = JAP_develop_chinese_resources
 				has_country_flag = KMT_mck_xuantong_res_minerals
@@ -13648,7 +13648,7 @@ prospect_for_resources = {
 				NOT = {
 					overlord = {
 						OR = {
-							has_completed_focus = KMT_excavation_NE
+							#has_completed_focus = KMT_excavation_NE
 							has_completed_focus = PRC_resources_prospection
 							has_completed_focus = MCK_prospect_for_resources
 							#has_completed_focus = JAP_develop_chinese_resources
@@ -13663,7 +13663,7 @@ prospect_for_resources = {
 				}
 			}
 			OR = {
-				has_completed_focus = KMT_excavation_NE
+				#has_completed_focus = KMT_excavation_NE
 				has_completed_focus = PRC_resources_prospection
 				has_completed_focus = MCK_prospect_for_resources
 				has_country_flag = KMT_mck_xuantong_res_minerals
@@ -20436,7 +20436,7 @@ KMT_dcat_spread_revolution = {
 		icon = generic_air
 		visible = { 
 			tag = CHI
-			has_completed_focus = KMT_allow_commie
+			#has_completed_focus = KMT_allow_commie
 			PRC = {
 				is_subject_of = ROOT
 			}
@@ -20746,7 +20746,7 @@ operations = {
 #		fire_only_once = yes
 #		is_good = no
 #		activation = {
-#			has_completed_focus = KMT_pacific_fleet
+#			#has_completed_focus = KMT_pacific_fleet
 #		}
 #		
 #		complete_effect = {

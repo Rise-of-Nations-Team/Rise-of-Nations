@@ -4,7 +4,6 @@ capital = 827
 set_research_slots = 3
 set_stability = 0.75
 
-
 add_ideas = {
 	neutrality_idea
 	limited_conscription
@@ -12,7 +11,7 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1907.1.1"
+	last_election = "1899.10.1"
 	election_frequency = 50
 	elections_allowed = yes
 }
@@ -24,29 +23,42 @@ set_popularities = {
 	neutrality = 0
 }
 
-create_country_leader = {
-	name = "Grand and General Council"
-	picture = "Portrait_San Marino_Grand_council.dds"
-	
-	ideology = conservatism
+recruit_character = SMR_grand_council
+recruit_character = SMR_gino_giacomini
+
+1914.1.1 = {
+	recruit_character = SMR_giuliano_gozi
 }
 
-create_country_leader = {
-	name = "Grand and General Council"
-	picture = "Portrait_San Marino_Grand_council.dds"
-	
-	ideology = independent
-}
+1933.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.10.1"
+		election_frequency = 50
+		elections_allowed = yes
+	}
 
-create_country_leader = {
-	name = "Giuliano Gozi"
-	picture = "Portrait_San Marino_Giuliano_Gozi.dds"
-	expire = "1960.1.1"
-	ideology = fascism_ideology
+	set_popularities = {
+		democratic = 75
+		fascism = 15
+		neutrality = 10
+	}	
 }
 
 1936.1.1 = {
 	set_air_oob = "SMR_1936_air_bba"
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1935.10.1"
+		election_frequency = 50
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		democratic = 40
+		fascism = 50
+		neutrality = 10
+	}	
 
 	# Starting tech
 	set_technology = {
@@ -57,18 +69,43 @@ create_country_leader = {
 		tech_engineers = 1
 		tech_recon = 1
 	}
+}
 
+1946.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1945.10.1"
+		election_frequency = 50
+		elections_allowed = yes
+	}
 
+	set_popularities = {
+		democratic = 90
+		fascism = 10
+	}		
+}
+
+1949.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1948.10.1"
+		election_frequency = 50
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		democratic = 100
+	}	
+}
+
+1955.1.1 = { 
+	retire_character = SMR_giuliano_gozi
+}
+
+1970.1.1 = {
+	retire_character = SMR_gino_giacomini	
 }
 
 2000.1.1 = {
 	oob = "SMR_2000"
-}
-2008.1.1 = {
-	create_country_leader = {
-		name = "Rosa Zafferani"
-		picture = "gfx/leaders/SMR/MD/San _Marino_Rosa_Zafferani_Captains_Regent_of_San_Marino.dds"
-		
-		ideology = democratic_socialism
-	}
 }

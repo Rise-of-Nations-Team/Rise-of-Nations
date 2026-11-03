@@ -1,16 +1,567 @@
-characters = {
-    MOR_Paul_von_Lettow_Vorbeck = {
-        name = MOR_Paul_von_Lettow_Vorbeck
-        portraits = {
-            civilian = {
-                large = "gfx/leaders/GER/WW1/Portrait_Germany_Paul_von_Lettow_Vorbeck.dds"
-            }
-        }
-        country_leader={
-			
-			ideology=militarism
-			expire="1964.1.1.1"
-			id=-1
+characters={
+	MOR_mulay_abdalaziz = {
+		name="Abd al-Aziz bin Hassan"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/DNC/Abdelaziz_of_Morocco.dds"
+			}
 		}
-    }
+		country_leader={
+			ideology=monarchism
+			traits = {
+				AFG_popular_figurehead silent_workhorse
+			}
+		}
+		corps_commander={
+			traits={ trait_royal }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			visible = {
+				is_country_leader = yes
+				date < 1909.1.1
+			}
+		}
+	}
+
+	MOR_mulay_abdelhafid={
+		name="Abd al-Hafid ibn al-Hasan"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/DNC/Abd_al_Hafid_of_Morocco.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			traits = {
+				unpopular_sultan
+				shadow_of_abdelaziz
+			}
+		}
+		corps_commander={
+			traits={ trait_royal }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			visible = {
+				is_country_leader = yes
+				date < 1938.1.1
+			}
+		}
+	}
+
+	MOR_muhammad_bin_yusef={
+		name="Mohammed V"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/portrait_MOR_Mohammed_V.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+		}
+	}
+
+	MOR_yusef_bin_hassan={
+		name="Yusef ben Hassan"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/WW1/MOR_moulay_youssef.dds"
+			}
+			army={
+				small="gfx/interface/ideas/MOR/idea_MOR_moulay_youssef.png"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			traits = {
+				lackluster_sultan
+			}
+		}
+		corps_commander={
+			traits={ trait_royal }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			visible = {
+				has_government = neutrality
+				date < 1928.1.1
+			}
+		}
+	}
+
+	MOR_maal_al_aynayn={
+		name="Ma al-Aynayn"		
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/WW1/MOR_maal_al_aynayn.dds"
+			}
+		}
+		country_leader={
+			ideology=islamic_authoritarian
+		}
+		corps_commander={
+			traits={ irregulars_officer desert_fox trickster guerilla_fighter old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			visible = {
+				is_subject = no
+				date < 1910.10.23
+			}
+		}
+	}
+
+	MOR_ahmed_al_hiba={
+		name="Ahmed al-Hiba"			
+		portraits={
+			army={
+				large="gfx/leaders/MOR/WW1/MOR_ahmed_al_hiba.dds"
+				small="gfx/interface/ideas/MOR/idea_MOR_ahmed_al_hiba.png"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			traits = {
+				blue_sultan
+			}
+		}
+		country_leader={
+			ideology=reactionary
+			traits = {
+				blue_sultan
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = MOR_ahmed_al_hiba
+			allowed = {
+				original_tag = MOR
+			}
+			available = {
+				has_country_leader = {
+					character = MOR_maal_al_aynayn
+				}
+				is_country_leader = yes
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader trickster }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			visible = {
+				has_country_leader = {
+					character = MOR_maal_al_aynayn
+				}
+				is_country_leader = yes
+				date < 1920.1.1
+			}
+		}
+	}
+
+	#Thami El Glaoui pacha de Marrakech
+	MOR_thami_el_glaoui = {
+		name = "Thami El Glaoui"
+		portraits = {
+			civilian = {
+				large="gfx/leaders/MOR/WW1/MOR_thami_el_glaoui.dds"
+				small="gfx/interface/ideas/MOR/idea_MOR_thami_el_glaoui.png"		
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MOR_thami_el_glaoui_pasha
+			traits  = {
+				marrakech_pasha 
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}		
+		advisor={
+			slot = political_advisor
+			idea_token = MOR_thami_el_glaoui_vizier
+			traits  = {
+				puppet_grand_vizier
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	#Mohammed El Mokri grand vizir (former economy minister) - will be kicked by Hafid in 1911 (amateur)
+	MOR_mohammed_el_mokri = {
+		name = MOR_mohammed_el_mokri
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_democratic_reformer_middle_eastern_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MOR_mohammed_el_mokri
+			available = {
+					
+			}
+			traits  = {
+				economy_reformer 
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+
+
+	#Madani El Glaoui grand vizir - will be kicked by Hafid in 1911 (french pressures)
+	MOR_madani_el_glaoui = {
+		name = MOR_madani_el_glaoui
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_fascist_demagogue_middle_eastern_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MOR_madani_el_glaoui
+			available = {
+					
+			}
+			traits  = {
+				grand_vizier 
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+
+	#Taïeb el Goundafi, can be recruited with high sous arbitrage
+	MOR_taieb_el_goundafi = {
+		name = MOR_taieb_el_goundafi
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_fascist_demagogue_middle_eastern_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MOR_taieb_el_goundafi
+			available = {
+				has_country_flag = MOR_taieb_el_goundafi_pasha
+			}
+			traits  = {
+				marrakech_pasha2 
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+
+	#Si Abou Bakr Ben Bouazza minister of war - will be kicked by Hafid in 1911 (french pressures)
+	MOR_abou_bakr_ben_bouazza = {
+		name = MOR_abou_bakr_ben_bouazza
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MOR_abou_bakr_ben_bouazza
+			available = {
+					
+			}
+			traits  = {
+				SWE_minister_of_defense 
+			}
+			ai_will_do  = {
+				factor  = 1
+			}
+		}
+	}
+
+
+	#Caids : 
+	#Sidi Mohamed du Tazeroualt - not loyal
+	MOR_sidi_mohamed_of_tazeroualt = {
+		name = MOR_sidi_mohamed_of_tazeroualt
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MOR_sidi_mohamed_of_tazeroualt
+			available = {
+				has_country_flag = MOR_meet_sidi_mohamed_tazeroualt	
+			}
+			traits  = {
+				warlord_caid 
+			}
+			ai_will_do  = {
+				factor  = 100
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			traits = {
+			}
+		}
+	}
+
+	#El Habib Baqqa - loyal (at tiznit, above agadir)
+	#Tayeb Outgountaft - not loyal (at high atlas moutains)
+
+	MOR_el_habib_baqqa = {
+		name = MOR_el_habib_baqqa
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MOR_el_habib_baqqa
+			traits  = {
+				loyal_caid 
+			}
+			ai_will_do  = {
+				factor  = 100
+			}
+		}
+	}
+
+	#Ibn Zaydan military advisor of military school of Dâr al-Bayda in Meknes
+
+	MOR_ibn_zaydan = {
+		name = MOR_ibn_zaydan
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+		advisor={
+			available = {
+				has_country_flag = MOR_concilliation_with_hostiles_caids
+			}
+			slot = high_command
+			idea_token = MOR_ibn_zaydan
+			allowed  = {
+				original_tag  = MOR
+			}
+			traits  = {
+				army_logistics_2 
+			}
+			cost = 100
+			visible = {
+				
+			}	
+			ai_will_do  = {
+				factor  = 2
+			}
+		}
+	}
+
+	#Sir Harry Aubrey de Vere Maclean commander in chief
+	MOR_harry_aubrey_de_vere_maclean = {
+		name = MOR_harry_aubrey_de_vere_maclean
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+		advisor={
+			available = {
+				NOT = {
+					has_war_with = ENG
+				}
+			}
+			slot = army_chief
+			idea_token = MOR_harry_aubrey_de_vere_maclean
+			ledger  = army 
+			traits  = {
+				army_chief_offensive_1 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+	MOR_andrew_belton = {
+		name = MOR_andrew_belton
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MOR_andrew_belton
+			allowed  = {
+				original_tag  = MOR
+			}
+			traits  = {
+				army_infantry_1
+			}
+			cost = 100
+			visible = {
+				
+			}	
+			ai_will_do  = {
+				factor  = 2
+			}
+		}
+	}
+
+	#minor tribes leader 
+
+	#Mulai Ahmed er Raisuni only available when uniting tribes peacefully
+	MOR_mulai_ahmed_er_raisuni= {
+		name = MOR_mulai_ahmed_er_raisuni
+		portraits = {
+			army = {
+				large="gfx/leaders/MOR/WW1/MOR_Mulai_Ahmed_er_Raisuni.dds"				
+				small="GFX_idea_generic_air_air_combat_trainer_african_2d"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_country_flag = MOR_concilliation_with_hostiles_caids
+			}
+			traits={ trait_royal }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	#Abdellah Zakour only available when uniting tribes peacefully
+	MOR_abdellah_zakour= {
+		name = "Abdellah Zakour"
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_air_air_combat_trainer_african_2d"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_country_flag = MOR_concilliation_with_hostiles_caids
+			}
+			traits={ inspirational_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+	#Mhand n'Ifrutant only available when uniting tribes peacefully
+	#rash and reckless
+	MOR_mhand_n_ifrutant= {
+		name = "Mhand n'Ifrutant"
+		portraits = {
+			civilian = {
+				small="GFX_idea_generic_air_air_combat_trainer_african_2d"
+			}
+		}
+		corps_commander={
+			visible = {
+				has_country_flag = MOR_concilliation_with_hostiles_caids
+			}
+			traits={ trait_reckless }
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	#Mouha ou Hammou Zayani unlock when calling izayen troops
+	MOR_mouha_ou_hammou_zayani= {
+		name = "Mouha ou Hammou Zayani"
+		portraits = {
+			army = {
+				large="gfx/leaders/MOR/WW1/MOR_mouha_ou_hammou_zayani.dds"
+				small="gfx/interface/ideas/MOR/idea_MOR_mouha_ou_hammou_zayani.png"		
+			}
+		}
+		corps_commander={
+			traits={ irregulars_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	#Mohammed Ameziane only available when uniting tribes peacefully
+	#leader of rif war against spain
+	MOR_mohammed_ameziane= {
+		name = "Mohammed ben al-Hajj Amezian"
+		portraits = {
+			army = {
+				large="gfx/leaders/MOR/WW1/MOR_Mohammed_Ameziane.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#Spanish Morocco
+	MOR_mohammed_mehedi_uld_ben_ismael={
+		name = "Mohammed Mehedi Uld Ben Ismael"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/WW1/MOR_Mohammed_Mehedi_Uld_Ben_Ismael.dds"
+				small="gfx/interface/ideas/MOR/idea_MOR_Mohammed_Mehedi_Uld_Ben_Ismael.png"
+			}
+		}
+		#country_leader={
+		#	ideology=absolute_monarchy
+		#	traits = {
+		#		puppet_jalifa
+		#	}
+		#}
+	}
 }

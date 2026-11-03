@@ -2,8 +2,206 @@ RON_universal_setup = yes
 enable_propaganda_campaigns = yes  
 capital = 2
 
+set_cosmetic_tag = ITA_KINGDOM
+
+set_technology = {
+	early_infantry_weapons_1890 = 1
+	RON_Support_Innovations = 1	
+	marines = 1
+	jungletroops = 1
+	RON_Basic_Light_Field_Gun = 1
+	tech_support = 1
+	WW1_tech_engineers = 1
+	sniper_1900 = 1
+	basic_train = 1
+	horses = 1
+	ww1_motorised_infantry = 1
+	RON_Trained_Horses = 1
+	RON_19th_Century_Industrial_Techniques = 1
+	RON_Early_Machine_Tools = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_torpedo = 1
+			mtg_ww1_destroyer1 = 1
+			early_ship_hull_dreadnought = 1
+			early_ship_hull_submarine_ww1 = 1
+			mtg_transport = 1
+			ww1_battleship0 = 1
+			ww1_heavy_cruiser0 = 1
+			ww1_light_cruiser0 = 1
+			ww1_destroyer0 = 1
+			ww1_submarine0 = 1
+			ww1_moduleMTG_mines = 1
+		}
+	else = {
+		set_technology = {
+			ww1_battleship0 = 1
+			ww1_heavy_cruiser0 = 1
+			ww1_light_cruiser0 = 1
+			ww1_destroyer0 = 1
+			ww1_submarine0 = 1
+			ww1_moduleMTG_mines = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			bba_RON_Fighter_1490 = 1
+			bba_RON_Fighter_1890 = 1
+		}
+	else = {
+		set_technology = {
+			RON_Fighter_1490 = 1
+			RON_Fighter_1890 = 1
+		}
+	}
+}
+
+
 1900.1.1 = {
 	oob = "ITA_1900"
+	set_technology = {
+		early_infantry_weapons_1890 = 1
+		tech_support = 1
+		field_hospital_1900 = 1
+		horses = 1
+		light_field_gun1 = 1
+		logistics_company_1900 = 1
+		tech_mountaineers = 1
+		ww1_motorised_infantry = 1
+		early_infantry_weapons_1900 = 1
+		WW1_tech_recon = 1
+		RON_Observation_Balloon_1890 = 1
+		rail_infrastructure_0 = 1
+		RON_Electrical_Engineering = 1
+		ww1_electronic_mechanical_engineering = 1
+		RON_Submarine_Blueprint = 1
+	}
+	add_ideas = { ITA_h_the_open_frontier }
+	set_variable = { ITA_h_crown_blunders = 0 }
+	set_variable = { ITA_h_council_months = 0 }
+	set_variable = { ITA_h_council_days_short = 140 }
+	set_variable = { ITA_h_council_days_long = 280 }
+	set_variable = { ITA_h_war_office_anger = 0 }
+	set_variable = { ITA_h_consulta_anger = 0 }
+	set_variable = { ITA_h_colonial_consumer_goods_factor = 0 }
+	set_variable = { ITA_h_colonial_production_speed_arms_factory_factor = 0 }
+	set_variable = { ITA_h_colonial_industrial_capacity_factory = 0 }
+	set_variable = { ITA_h_colonial_subjects_autonomy_gain = 0 }
+	set_variable = { ITA_l_plate_pressure = 0 }
+	set_variable = { ITA_arm_org = 0 }
+	set_variable = { ITA_arm_morale = 0 }
+	set_variable = { ITA_arm_speed = 0 }
+	set_variable = { ITA_arm_planning = 0 }
+	set_variable = { ITA_arm_initiative = 0 }
+	set_variable = { ITA_arm_infantry_attack = 0 }
+	set_variable = { ITA_arm_infantry_defence = 0 }
+	set_variable = { ITA_arm_artillery_attack = 0 }
+	set_variable = { ITA_arm_cavalry = 0 }
+	set_variable = { ITA_arm_core_defence = 0 }
+	set_variable = { ITA_arm_dig_in = 0 }
+	set_variable = { ITA_arm_reinforce = 0 }
+	set_variable = { ITA_arm_supply = 0 }
+	set_variable = { ITA_arm_experience = 0 }
+	set_variable = { ITA_arm_command = 0 }
+	set_variable = { ITA_arm_special_forces = 0 }
+	set_variable = { ITA_arm_mobilization = 0 }
+	set_variable = { ITA_air_range = 0 }
+	set_variable = { ITA_air_accidents = 0 }
+	set_variable = { ITA_air_efficiency = 0 }
+	set_variable = { ITA_air_experience = 0 }
+	set_variable = { ITA_air_aces = 0 }
+	set_variable = { ITA_air_weather = 0 }
+	set_variable = { ITA_air_night = 0 }
+	set_variable = { ITA_air_aiming = 0 }
+	set_variable = { ITA_n_morale = 0 }
+	set_variable = { ITA_n_range = 0 }
+	set_variable = { ITA_n_experience = 0 }
+	set_variable = { ITA_n_speed = 0 }
+	set_variable = { ITA_n_coordination = 0 }
+	set_variable = { ITA_n_retreat = 0 }
+	set_variable = { ITA_n_detection = 0 }
+	set_variable = { ITA_n_hunting = 0 }
+	set_variable = { ITA_e_rendita = 0.1 }
+	set_variable = { ITA_e_rendita_cg = 0.05 }
+	set_variable = { ITA_e_monthly_rendita_start = 0.015 }
+	set_variable = { ITA_e_monthly_rendita_increase = ITA_e_monthly_rendita_start }
+	set_variable = { ITA_e_conversion_crash = 0.75 }
+	set_variable = { ITA_e_expected_consumer_goods_penalty = 0.1 }
+	set_variable = { ITA_e_factory_output_penalty = 0.2 }
+	set_variable = { ITA_e_dockyard_output_penalty = 0.2 }
+	set_variable = { ITA_e_arrears_counter = 0 }
+	set_variable = { ITA_e_intel_to_others = 0 }
+	set_variable = { ITA_e_industrial_capacity_factory = 0 }
+	set_variable = { ITA_e_industrial_capacity_dockyard = 0 }
+	set_variable = { ITA_e_local_resources_factor = 0 }
+	set_variable = { ITA_e_resource_trade_cost_bonus_per_factory = 0 }
+	set_variable = { ITA_e_production_speed_arms_factory_factor = 0 }
+	set_variable = { ITA_e_production_speed_dockyard_factor = 0 }
+	set_variable = { ITA_e_production_speed_buildings_factor = 0 }
+	set_variable = { ITA_e_production_lack_of_resource_penalty_factor = 0 }
+	set_variable = { ITA_e_conversion_cost_civ_to_mil_factor = 0 }
+	set_variable = { ITA_e_research_speed_factor = 0 }
+	set_variable = { ITA_e_production_factory_max_efficiency_factor = 0 }
+	set_variable = { ITA_e_production_factory_efficiency_gain_factor = 0 }
+	set_variable = { ITA_e_production_factory_start_efficiency_factor = 0 }
+	set_variable = { ITA_e_line_change_production_efficiency_factor = 0 }
+	add_dynamic_modifier = { modifier = ITA_e_the_consolidated_five_per_cent }
+	set_variable = { ITA_h_seat_1 = 0 }
+	set_variable = { ITA_h_seat_2 = 0 }
+	set_variable = { ITA_h_seat_3 = 0 }
+	set_variable = { ITA_h_rising_minister = 0 }
+	set_variable = { ITA_h_departing = 0 }
+	set_variable = { ITA_h_promoting = 0 }
+	set_variable = { ITA_h_treasury_prevailed = 0 }
+	set_variable = { ITA_h_new_industries_focus_minister = 0 }
+	set_variable = { ITA_h_council_days_to_start_focus = 75 }
+	set_variable = { ITA_h_council_random_days = 45 }
+	set_variable = { ITA_l_max_states_for_dockyards = 4 }
+	set_variable = { ITA_l_states_getting_dockyards = 0 }
+	set_variable = { ITA_l_valona_civs = 0 }
+	set_variable = { ITA_l_valona_shipments = 0 }
+	set_variable = { ITA_u_army_artillery_attack = 0 }
+	set_variable = { ITA_u_army_artillery_defence = 0 }
+	set_variable = { ITA_u_army_mobilization = 0 }
+	set_variable = { ITA_u_credit = 0 }
+	set_variable = { ITA_piazza = 35 }
+	set_variable = { ITA_piazza_floor = 5 }
+	set_variable = { ITA_piazza_lock = 0 }
+	set_variable = { ITA_piazza_high_months = 0 }
+	set_variable = { ITA_c_pp = 0 }
+	set_variable = { ITA_c_stab = 0 }
+	set_variable = { ITA_p_bayonet_drift = 0 }
+	set_variable = { ITA_p_bayonet_pp = 0 }
+	set_variable = { ITA_p_bayonet_stab = 0 }
+	set_variable = { ITA_p_pp = 0 }
+	set_variable = { ITA_p_prod = 0 }
+	set_variable = { ITA_p_stab = 0 }
+	set_variable = { ITA_p_ws = 0 }
+	set_variable = { ITA_majority = 58 }
+	set_variable = { ITA_majority_bought = 0 }
+	set_variable = { ITA_crown = 50 }
+	set_variable = { ITA_vienna_trust = 40 }
+	set_variable = { ITA_c_crown_pp = 0 }
+	set_variable = { ITA_c_crown_stab = 0 }
+	set_variable = { ITA_prefects = 25 }
+	set_variable = { ITA_machine_now = 25 }
+	set_variable = { ITA_pledges = 0 }
+	set_variable = { ITA_pledge_clock = 0 }
+	set_variable = { ITA_dnc_months = 0 }
+	set_variable = { ITA_camera_low_months = 0 }
+	set_variable = { ITA_ch_messina_clock = 0 }
+	set_variable = { ITA_libya_months = 0 }
+	set_variable = { ITA_v_curia_steps = 0 }
+	set_variable = { ITA_election_result = 0 }
+	set_variable = { ITA_circular_clock = 18 }
+	set_variable = { ITA_bayonets = 0 }
 
 	set_research_slots = 4
 	set_stability = 0.6
@@ -39,10 +237,10 @@ capital = 2
 			has_start_date < 1918.01.01
 		}
 		add_ideas = {
-			ITA_ww1_Risorgimento
 			limited_conscription
 			italian_shit_military
-			ww1_Scramble_for_Africa
+			ITA_the_non_expedit
+			ITA_t_a_great_power_on_paper
 		}
 	}
 
@@ -70,11 +268,11 @@ capital = 2
 		democratic = 55
 	}
 
- 	recruit_character = ITA_umberto_i
- 	recruit_character = ITA_vittorio_emanuele_iii
- 	recruit_character = ITA_enrico_corradini
- 	recruit_character = ITA_antonio_gramsci
- 	recruit_character = ITA_luigi_pelloux
+	recruit_character = ITA_umberto_i
+	recruit_character = ITA_vittorio_emanuele_iii
+	recruit_character = ITA_enrico_corradini
+	recruit_character = ITA_antonio_gramsci
+	recruit_character = ITA_luigi_pelloux
 	recruit_character = ITA_giovanni_giolitti
 	recruit_character = ITA_sidney_sonnino
 	recruit_character = ITA_luigi_luzzatti
@@ -82,38 +280,38 @@ capital = 2
 	recruit_character = ITA_paolo_boselli
 	recruit_character = ITA_vittorio_emanuele_orlando
 	recruit_character = ITA_francesco_saverio_nitti
- 	recruit_character = ITA_ivanoe_bonomi
+	recruit_character = ITA_ivanoe_bonomi
 	recruit_character = ITA_luigi_facta
- 	recruit_character = ITA_constantino_lazzari
- 	recruit_character = ITA_emanuele_filiberto
- 	recruit_character = ITA_armando_diaz
- 	recruit_character = ITA_alberto_pollio
- 	recruit_character = ITA_pietro_frugoni
- 	recruit_character = ITA_gaetano_ettore_giardino
- 	recruit_character = ITA_luigi_cadorna
- 	recruit_character = ITA_roberto_brusati
- 	recruit_character = ITA_mario_di_robilant
- 	recruit_character = ITA_guglielmo_pecori_giraldi
- 	recruit_character = ITA_pietro_badoglio_wwi
- 	recruit_character = ITA_giuseppe_garibaldi_ii
- 	recruit_character = ITA_alfredo_acton
- 	recruit_character = ITA_prince_ferdinando_adalberto
- 	recruit_character = ITA_prince_luigi_amedeo
- 	recruit_character = ITA_prince_vittorio_emmanuele_of_savoy
- 	recruit_character = ITA_umberto_cagni 
- 	recruit_character = ITA_luigi_nava
- 	recruit_character = ITA_luigi_capello
- 	recruit_character = ITA_osvaldo_paladini
- 	recruit_character = ITA_paolo_thaon_di_revel
- 	recruit_character = ITA_alberico_albricci
- 	recruit_character = ITA_enrico_fermi
- 	recruit_character = ITA_gaetano_crocco
- 	recruit_character = ITA_robert_longhi
- 	recruit_character = ITA_mario_castoldi
- 	recruit_character = ITA_giovanni_giorgi
- 	recruit_character = ITA_filippo_bonfiglietti
- 	recruit_character = ITA_curio_bernardis
- 	recruit_character = ITA_benito_mussolini
+	recruit_character = ITA_constantino_lazzari
+	recruit_character = ITA_emanuele_filiberto
+	recruit_character = ITA_armando_diaz
+	recruit_character = ITA_alberto_pollio
+	recruit_character = ITA_pietro_frugoni
+	recruit_character = ITA_gaetano_ettore_giardino
+	recruit_character = ITA_luigi_cadorna
+	recruit_character = ITA_roberto_brusati
+	recruit_character = ITA_mario_di_robilant
+	recruit_character = ITA_guglielmo_pecori_giraldi
+	recruit_character = ITA_pietro_badoglio_wwi
+	recruit_character = ITA_giuseppe_garibaldi_ii
+	recruit_character = ITA_alfredo_acton
+	recruit_character = ITA_prince_ferdinando_adalberto
+	recruit_character = ITA_prince_luigi_amedeo
+	recruit_character = ITA_prince_vittorio_emmanuele_of_savoy
+	recruit_character = ITA_umberto_cagni
+	recruit_character = ITA_luigi_nava
+	recruit_character = ITA_luigi_capello
+	recruit_character = ITA_osvaldo_paladini
+	recruit_character = ITA_paolo_thaon_di_revel
+	recruit_character = ITA_alberico_albricci
+	recruit_character = ITA_enrico_fermi
+	recruit_character = ITA_gaetano_crocco
+	recruit_character = ITA_robert_longhi
+	recruit_character = ITA_mario_castoldi
+	recruit_character = ITA_giovanni_giorgi
+	recruit_character = ITA_filippo_bonfiglietti
+	recruit_character = ITA_curio_bernardis
+	recruit_character = ITA_benito_mussolini
 	recruit_character = ITA_mario_calderara
 	recruit_character = ITA_tommaso_tittoni
 	recruit_character = ITA_edoardo_daneo
@@ -124,8 +322,111 @@ capital = 2
 	recruit_character = ITA_paolo_spingardi
 	recruit_character = ITA_giulio_douhet
 	recruit_character = ITA_maurizio_moris
- 	recruit_character = ITA_leone_viale
- 	recruit_character = ITA_giulio_douhet	
+	recruit_character = ITA_leone_viale
+	recruit_character = ITA_giuseppe_zanardelli
+	recruit_character = ITA_giuseppe_saracco
+	recruit_character = ITA_ettore_sacchi
+	recruit_character = ITA_filippo_turati
+	recruit_character = ITA_leonida_bissolati
+	recruit_character = ITA_rinaldo_rigola
+	recruit_character = ITA_arturo_labriola
+	recruit_character = ITA_errico_malatesta
+	recruit_character = ITA_napoleone_colajanni
+	recruit_character = ITA_filippo_meda
+	recruit_character = ITA_bonaldo_stringher
+	recruit_character = ITA_giulio_prinetti
+	recruit_character = ITA_emilio_visconti_venosta
+	recruit_character = ITA_antonino_di_san_giuliano
+	recruit_character = ITA_luigi_federzoni
+	recruit_character = ITA_gabriele_dannunzio
+	recruit_character = ITA_cesare_battisti
+	recruit_character = ITA_alceste_de_ambris
+	recruit_character = ITA_ferdinando_martini
+	recruit_character = ITA_ernesto_teodoro_moneta
+	recruit_character = ITA_salvatore_barzilai
+	recruit_character = ITA_luigi_albertini
+	recruit_character = ITA_tancredi_saletta
+	recruit_character = ITA_ettore_pedotti
+	recruit_character = ITA_carlo_mirabello
+	recruit_character = ITA_giovanni_bettolo
+	recruit_character = ITA_anna_kuliscioff
+	recruit_character = ITA_nullo_baldini
+	recruit_character = ITA_giuseppe_ottolenghi
+	recruit_character = ITA_vincenzo_garioni
+	recruit_character = ITA_emilio_de_giorgis
+	recruit_character = ITA_giuseppe_ettore_vigano
+	recruit_character = ITA_vittorio_cuniberti
+	recruit_character = ITA_edoardo_masdea
+	recruit_character = ITA_giacinto_pullino
+	recruit_character = ITA_cesare_laurenti
+	recruit_character = ITA_ottorino_gentiloni
+	recruit_character = ITA_giuseppe_toniolo
+	recruit_character = ITA_romolo_murri
+	recruit_character = ITA_ernesto_pacelli
+	recruit_character = ITA_antonio_baldissera
+	recruit_character = ITA_coriolano_ponza_di_san_martino
+	recruit_character = ITA_fiorenzo_bava_beccaris
+	recruit_character = ITA_nicola_heusch
+	recruit_character = ITA_vittorio_asinari_di_bernezzo
+	recruit_character = ITA_luigi_majnoni_d_intignano
+	recruit_character = ITA_carlo_caneva
+	recruit_character = ITA_tommaso_salsa
+	recruit_character = ITA_giovanni_ameglio
+	recruit_character = ITA_enrico_costantino_morin
+	recruit_character = ITA_camillo_candiani
+	recruit_character = ITA_francesco_grenet
+	recruit_character = ITA_augusto_aubry
+	recruit_character = ITA_gaetano_chierchia
+	recruit_character = ITA_francesco_guicciardini
+	recruit_character = ITA_severino_casana
+	recruit_character = ITA_pietro_carmine
+	recruit_character = ITA_giulio_rubini
+	recruit_character = ITA_ernesto_di_broglio
+	recruit_character = ITA_angelo_majorana_calatabiano
+	recruit_character = ITA_pietro_lacava
+	recruit_character = ITA_nicola_balenzano
+	recruit_character = ITA_francesco_tedesco
+	recruit_character = ITA_emanuele_gianturco
+	recruit_character = ITA_pietro_bertolini
+	recruit_character = ITA_guido_baccelli
+	recruit_character = ITA_nunzio_nasi
+	recruit_character = ITA_luigi_rava
+	recruit_character = ITA_giuseppe_marcora
+	recruit_character = ITA_antonio_starabba_di_rudini
+	recruit_character = ITA_edoardo_pantano
+	recruit_character = ITA_enrico_ferri
+	recruit_character = ITA_andrea_costa
+	recruit_character = ITA_claudio_treves
+	recruit_character = ITA_giovanni_grosoli
+	recruit_character = ITA_luigi_sturzo
+	recruit_character = ITA_domenico_bonamico
+	recruit_character = ITA_enrico_barone
+	recruit_character = ITA_giuseppe_salvago_raggi
+	recruit_character = ITA_tommaso_of_savoy_genoa
+	recruit_character = ITA_guglielmo_marconi
+	recruit_character = ITA_francesco_cocco_ortu
+	recruit_character = ITA_giuseppe_palumbo
+	recruit_character = ITA_enrico_gualterio
+	recruit_character = ITA_giovanni_sechi
+	recruit_character = ITA_ottavio_ricaldoni
+	recruit_character = ITA_almerico_da_schio
+	recruit_character = ITA_francesco_siacci
+	recruit_character = ITA_giuseppe_perrucchetti
+	recruit_character = ITA_ottavio_ragni
+	recruit_character = ITA_ottavio_briccola
+	recruit_character = ITA_abiel_bethel_revelli
+	recruit_character = ITA_federico_caprilli
+	recruit_character = ITA_enrico_rocchi
+	recruit_character = ITA_alessandro_artom
+
+	promote_character = { character = ITA_umberto_i ideology = monarchism }
+	promote_character = { character = ITA_luigi_pelloux ideology = democratic_militarism }
+	ITA_luigi_pelloux = {
+		add_country_leader_trait = {
+			trait = ITA_the_presidency
+			ideology = democratic_militarism
+		}
+	}
 }
 
 1905.1.1 = {
@@ -147,6 +448,17 @@ capital = 2
 	}	
 
 	promote_character = ITA_giovanni_giolitti	
+	ITA_giovanni_giolitti = { add_country_leader_trait = ITA_the_presidency }
+	remove_country_leader_role = {
+		character = ITA_umberto_i
+		ideology = monarchism
+	}
+	retire_character = ITA_giuseppe_zanardelli
+	retire_character = ITA_giuseppe_ottolenghi
+	retire_character = ITA_giacinto_pullino
+	retire_character = ITA_fiorenzo_bava_beccaris
+	retire_character = ITA_nicola_heusch
+	set_country_flag = ITA_start_1905
 }
 
 ### WW1 Start Date
@@ -211,6 +523,19 @@ capital = 2
 	recruit_character = ITA_prince_umberto_maria
 	recruit_character = ITA_enrico_caviglia	
 	retire_character = ITA_umberto_i	
+	retire_character = ITA_giuseppe_saracco
+	retire_character = ITA_giulio_prinetti
+	retire_character = ITA_tancredi_saletta
+	retire_character = ITA_emilio_de_giorgis
+	retire_character = ITA_coriolano_ponza_di_san_martino
+	retire_character = ITA_vittorio_asinari_di_bernezzo
+	retire_character = ITA_enrico_costantino_morin
+	retire_character = ITA_emanuele_gianturco
+	retire_character = ITA_antonio_starabba_di_rudini
+	retire_character = ITA_giuseppe_palumbo
+	retire_character = ITA_francesco_siacci
+	retire_character = ITA_federico_caprilli
+	set_country_flag = ITA_start_1910
 }
 
 1914.1.1 = {
@@ -222,11 +547,39 @@ capital = 2
 		elections_allowed = yes
 	}	
 	promote_character = ITA_giovanni_giolitti
+	retire_character = ITA_carlo_mirabello
+	retire_character = ITA_giovanni_bettolo
+	retire_character = ITA_vittorio_cuniberti
+	retire_character = ITA_edoardo_masdea
+	retire_character = ITA_antonio_baldissera
+	retire_character = ITA_tommaso_salsa
+	retire_character = ITA_camillo_candiani
+	retire_character = ITA_francesco_grenet
+	retire_character = ITA_augusto_aubry
+	retire_character = ITA_gaetano_chierchia
+	retire_character = ITA_severino_casana
+	retire_character = ITA_pietro_carmine
+	retire_character = ITA_angelo_majorana_calatabiano
+	retire_character = ITA_pietro_lacava
+	retire_character = ITA_andrea_costa
+	set_country_flag = ITA_start_1914
 }
 
 1918.1.1 = {
     retire_character = ITA_prince_umberto_maria
     retire_character = ITA_leone_viale	
+	retire_character = ITA_emilio_visconti_venosta
+	retire_character = ITA_antonino_di_san_giuliano
+	retire_character = ITA_cesare_battisti
+	retire_character = ITA_ettore_pedotti
+	retire_character = ITA_ottorino_gentiloni
+	retire_character = ITA_ernesto_pacelli
+	retire_character = ITA_luigi_majnoni_d_intignano
+	retire_character = ITA_carlo_caneva
+	retire_character = ITA_francesco_guicciardini
+	retire_character = ITA_giulio_rubini
+	retire_character = ITA_guido_baccelli
+	retire_character = ITA_giuseppe_perrucchetti
 }
 
 1919.1.1 = {
@@ -275,6 +628,13 @@ capital = 2
     retire_character = ITA_osvaldo_paladini
 	retire_character = ITA_paolo_carcano
 	retire_character = ITA_paolo_spingardi
+	retire_character = ITA_ernesto_teodoro_moneta
+	retire_character = ITA_giuseppe_toniolo
+	retire_character = ITA_ernesto_di_broglio
+	retire_character = ITA_enrico_gualterio
+	clr_country_flag = ITA_start_1905
+	clr_country_flag = ITA_start_1910
+	clr_country_flag = ITA_start_1914
 }
 
 1921.1.1 = {
@@ -282,6 +642,12 @@ capital = 2
     set_rule = {
         can_join_factions = yes
     }	
+	retire_character = ITA_leonida_bissolati
+	retire_character = ITA_vincenzo_garioni
+	retire_character = ITA_nicola_balenzano
+	retire_character = ITA_pietro_bertolini
+	retire_character = ITA_ottavio_ricaldoni
+	retire_character = ITA_ottavio_ragni
 }
 
 1925.1.1 = {
@@ -290,6 +656,14 @@ capital = 2
 	retire_character = ITA_alberico_albricci
 	retire_character = ITA_sidney_sonnino	
 	retire_character = ITA_edoardo_daneo
+	retire_character = ITA_ettore_sacchi
+	retire_character = ITA_napoleone_colajanni
+	retire_character = ITA_filippo_meda
+	retire_character = ITA_cesare_laurenti
+	retire_character = ITA_giovanni_ameglio
+	retire_character = ITA_francesco_tedesco
+	retire_character = ITA_enrico_barone
+	retire_character = ITA_ottavio_briccola
 }
 
 1930.1.1 = {
@@ -307,7 +681,7 @@ capital = 2
 
 	swap_ideas = {
     	remove_idea = ITA_victor_emmanuel_ww1
-    	add_idea = victor_emmanuel
+    	add_idea = ITA_victor_emmanuel_iii_int
 	}	
 
 	set_portraits = {
@@ -323,6 +697,17 @@ capital = 2
 	retire_character = ITA_giulio_douhet	
 	retire_character = ITA_maurizio_moris	
  	retire_character = ITA_giulio_douhet	
+	retire_character = ITA_luigi_cadorna
+	retire_character = ITA_roberto_brusati
+	retire_character = ITA_alfredo_acton
+	retire_character = ITA_ferdinando_martini
+	retire_character = ITA_anna_kuliscioff
+	retire_character = ITA_giuseppe_marcora
+	retire_character = ITA_enrico_ferri
+	retire_character = ITA_domenico_bonamico
+	retire_character = ITA_francesco_cocco_ortu
+	retire_character = ITA_alessandro_artom
+	retire_character = ITA_abiel_bethel_revelli
 }
 
 1933.1.1 = {
@@ -583,6 +968,12 @@ capital = 2
  	recruit_character = ITA_abba_jofir_doppleganger
  	recruit_character = ITA_hailu_tekle_haymanot_doppleganger
  	recruit_character = ITA_seyoum_mengesha_doppleganger
+	retire_character = ITA_filippo_turati
+	retire_character = ITA_errico_malatesta
+	retire_character = ITA_bonaldo_stringher
+	retire_character = ITA_edoardo_pantano
+	retire_character = ITA_tommaso_of_savoy_genoa
+	retire_character = ITA_almerico_da_schio
 }
 
 ### END OF WW1 Start Date
@@ -782,6 +1173,11 @@ capital = 2
     recruit_character = ITA_alessandro_michelagnoli
 	recruit_character = ITA_angelo_parona
 	retire_character = ITA_domenico_grandi
+	retire_character = ITA_alceste_de_ambris
+	retire_character = ITA_giuseppe_ettore_vigano
+	retire_character = ITA_nunzio_nasi
+	retire_character = ITA_claudio_treves
+	retire_character = ITA_enrico_rocchi
 }
 
 1939.1.1 = {
@@ -801,12 +1197,21 @@ capital = 2
 		set_stability = 0.8
 	}
 
+	remove_country_leader_role = {
+		character = ITA_antonio_gramsci
+		ideology = marxism
+	}
+	retire_character = ITA_gabriele_dannunzio
+	retire_character = ITA_luigi_rava
+	retire_character = ITA_giovanni_grosoli
+	retire_character = ITA_guglielmo_marconi
 }
 
 1940.1.1 = {
 	oob = "ITA_1940"
 	set_naval_oob = "ITA_1940_naval_legacy"
     retire_character = ITA_papa_pio_xi
+	retire_character = ITA_salvatore_barzilai
 }
 
 1941.1.1 = {
@@ -845,6 +1250,9 @@ capital = 2
     retire_character = ITA_domenico_cavagnari
     retire_character = ITA_annibale_bergonzoli
 
+	retire_character = ITA_guglielmo_pecori_giraldi
+	retire_character = ITA_curio_bernardis
+	retire_character = ITA_luigi_albertini
 }
 
 1943.1.1 = {
@@ -965,6 +1373,7 @@ capital = 2
     retire_character = ITA_carlo_rossi	
 	retire_character = ITA_mario_calderara	
 
+	retire_character = ITA_romolo_murri
 }
 
 1946.1.1 = {
@@ -994,6 +1403,7 @@ capital = 2
     retire_character = ITA_prince_adalberto
 	retire_character = ITA_vittorio_italico_zupelli	
 
+	retire_character = ITA_nullo_baldini
 }
 
 1949.1.1 = {
@@ -1022,7 +1432,7 @@ capital = 2
 	}
 
 	remove_ideas = {
-    	remove_idea = victor_emmanuel
+		ITA_victor_emmanuel_iii_int
 	}	
 
 	oob = "ITA_1949"
@@ -1069,10 +1479,17 @@ capital = 2
 	retire_character = ITA_angelo_parona
 	retire_character = ITA_romeo_oliva		
 	retire_character = ITA_francesco_saverio_nitti
+	retire_character = ITA_prince_vittorio_emmanuele_of_savoy
+	retire_character = ITA_robert_longhi
+	retire_character = ITA_giuseppe_salvago_raggi
+	retire_character = ITA_giovanni_sechi
 }
 
 1955.1.1 = {
 	retire_character = ITA_ivanoe_bonomi
+	retire_character = ITA_giuseppe_garibaldi_ii
+	retire_character = ITA_giovanni_giorgi
+	retire_character = ITA_rinaldo_rigola
 }
 
 1960.1.1 = {
@@ -1111,6 +1528,8 @@ capital = 2
     recruit_character = ITA_carlo_alberto_chiesa
 
 
+	retire_character = ITA_arturo_labriola
+	retire_character = ITA_luigi_sturzo
 }
 
 1970.1.1 = {
@@ -1136,6 +1555,9 @@ capital = 2
     recruit_character = ITA_giovanni_leone
     recruit_character = ITA_sandro_pertini
 
+	retire_character = ITA_prince_ferdinando_adalberto
+	retire_character = ITA_mario_castoldi
+	retire_character = ITA_luigi_federzoni
 }
 
 1980.1.1 = {

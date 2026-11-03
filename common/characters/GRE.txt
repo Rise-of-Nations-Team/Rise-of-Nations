@@ -1,7 +1,7 @@
 characters={
     #DNC-1919
 	GRE_george_i={
-		name="Georgios"
+		name=GRE_george_i
 		portraits={
 			civilian={
 				large="gfx/leaders/GRE/DNC/GRE_George_I.dds"

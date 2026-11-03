@@ -1,6 +1,6 @@
 characters={
 	HAI_tiresias_simon_sam={ #1900
-		name="Tiresias Simon Sam"
+		name=HAI_tiresias_simon_sam
 		portraits={
 			civilian={
 				large="gfx/leaders/HAI/DNC/Paul_Tiresias_Augustin_Simon.dds"

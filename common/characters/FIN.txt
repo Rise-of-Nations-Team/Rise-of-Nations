@@ -1,5 +1,45 @@
 characters={
 
+	#Governor Generals#
+	FIN_nikolay_bobrikov={
+		name="Nikolay Ivanovich Bobrikov"
+		portraits={
+			civilian={
+				large="gfx/leaders/FIN/DNC/Portrait_FIN_Nikolay_Bobrikov.dds"	
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1910.1.1.1"			
+		}
+	}	
+
+	FIN_ivan_obolensky={
+		name="Ivan Mikhailovich Obolensky"
+		portraits={
+			civilian={
+				large="gfx/leaders/FIN/DNC/Portrait_FIN_Ivan_Obolensky.dds"	
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1911.1.1.1"			
+		}
+	}		
+
+	FIN_franz_albert_seyn={
+		name="Franz Albert Seyn"
+		portraits={
+			civilian={
+				large="gfx/leaders/FIN/WW1/Portrait_FIN_Franz_Albert_Seyn.dds"	
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1919.1.1.1"			
+		}
+	}
+
 	#WW1
 
 	FIN_kaarlo_juho_stahlberg={
@@ -101,6 +141,7 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
+				date > 1915.1.1
 				date < 1951.1.1
 			}			
 		}
@@ -285,8 +326,8 @@ characters={
 		}		
 	}		
 	
-	FIN_friedrich_kaarle={
-		name=FIN_friedrich_kaarle
+	FIN_fredrik_kaarle_i={
+		name=FIN_fredrik_kaarle_i
 		portraits={
 			civilian={
 				large="gfx/leaders/FIN/WW1/Portrait_Finland_Friedrich_Karl_I.dds"
@@ -390,6 +431,10 @@ characters={
 			traits = {
 				military_theorist
 			}
+			visible = {
+				date > 1923.1.1
+				date < 1945.1.1				
+			}				
 		}		
 		corps_commander={
 			traits={ finland_army_trait hill_fighter winter_specialist career_officer ranger jaeger }
@@ -400,6 +445,7 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
+				date > 1923.1.1
 				date < 1945.1.1				
 			}						
 		}
@@ -428,6 +474,7 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+				date > 1918.1.1				
 				date < 1951.1.1				
 			}			
 		}		
@@ -440,6 +487,7 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
+				date > 1918.1.1
 				date < 1951.1.1				
 			}			
 		}
@@ -464,7 +512,13 @@ characters={
 				army_artillery_3
 			}
 			cost = 200			
-			visible = { date < 1947.1.1 }
+			visible = { 
+				date > 1915.1.1
+				date < 1947.1.1 
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}
+			}
 			ai_will_do = { base = 1.000 }			
 		}		
 		corps_commander={
@@ -476,7 +530,11 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
-				date < 1947.1.1				
+				date > 1915.1.1				
+				date < 1947.1.1	
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}							
 			}			
 		}
 	}
@@ -497,7 +555,11 @@ characters={
 			logistics_skill=4
 			legacy_id=-1
 			visible = {
-				date < 1945.1.1				
+				date > 1920.1.1
+				date < 1945.1.1	
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}							
 			}			
 		}
 	}	
@@ -524,7 +586,11 @@ characters={
 				factor = 1.000
 			}
 			visible = {
-				date < 1946.1.1				
+				date > 1920.1.1
+				date < 1946.1.1		
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}						
 			}			
 		}		
 		corps_commander={
@@ -536,7 +602,11 @@ characters={
 			logistics_skill=3
 			legacy_id=-1
 			visible = {
-				date < 1946.1.1				
+				date > 1920.1.1				
+				date < 1946.1.1	
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}							
 			}			
 		}
 	}
@@ -548,18 +618,6 @@ characters={
 				large="gfx/leaders/FIN/Portrait_FIN_Lennart_Oesch.dds"
 				small="gfx/interface/ideas/FIN/FIN_idea_karl_lennart_oesch.dds"				
 			}
-		}		
-		corps_commander={
-			traits={ finland_army_trait trait_cautious inflexible_strategist hill_fighter trait_mountaineer infantry_expert }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=-1
-			visible = {
-				date < 1945.1.1				
-			}			
 		}
 		advisor={
 			slot = high_command
@@ -576,7 +634,21 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+				date > 1923.1.1				
 				date < 1945.1.1
+			}			
+		}				
+		corps_commander={
+			traits={ finland_army_trait trait_cautious inflexible_strategist hill_fighter trait_mountaineer infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+			visible = {
+				date > 1923.1.1
+				date < 1945.1.1				
 			}			
 		}			
 	}		
@@ -598,6 +670,7 @@ characters={
 			logistics_skill=4
 			legacy_id=-1
 			visible = {
+				date > 1924.1.1
 				date < 1947.1.1				
 			}			
 		}
@@ -620,6 +693,7 @@ characters={
 			logistics_skill=4
 			legacy_id=-1
 			visible = {
+				date > 1930.1.1
 				date < 1949.10.14				
 			}			
 		}
@@ -641,6 +715,7 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
+				date > 1919.1.1
 				date < 1952.1.1				
 			}			
 		}
@@ -662,6 +737,7 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
+				date > 1927.1.1
 				date < 1944.8.5				
 			}			
 		}
@@ -683,6 +759,7 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
+				date > 1925.1.1
 				date < 1945.1.1				
 			}			
 		}
@@ -704,7 +781,11 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
-				date < 1953.1.1				
+				date > 1917.1.1
+				date < 1953.1.1	
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}			
 			}			
 		}
 	}	
@@ -726,6 +807,7 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 			visible = {
+				date > 1926.1.1
 				date < 1947.1.11			
 			}			
 		}
@@ -749,6 +831,7 @@ characters={
 			coordination_skill=1
 			legacy_id=-1
 			visible = {
+				date > 1928.1.1
 				date < 1966.1.1
 			}				
 		}
@@ -770,12 +853,13 @@ characters={
 			coordination_skill=1
 			legacy_id=-1
 			visible = {
+				date > 1933.1.1
 				date < 1970.1.1
 			}				
 		}
 	}
 
-	FIN_vaino_valve={ #Appears by 1933
+	FIN_vaino_valve={ 
 		name=FIN_vaino_valve
 		portraits={
 			navy={
@@ -793,6 +877,13 @@ characters={
 			traits = {
 				naval_theorist
 			}
+			visible = {
+				date > 1919.1.1
+				date < 1946.1.1
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}
+			}				
 		}		
 		navy_leader={
 			traits={ finland_navy_trait blockade_runner }
@@ -803,7 +894,11 @@ characters={
 			coordination_skill=3
 			legacy_id=-1
 			visible = {
+				date > 1919.1.1
 				date < 1946.1.1
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}				
 			}				
 		}
 	}	
@@ -828,6 +923,10 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
+			visible = {
+				date > 1924.1.1
+				date < 1945.1.1
+			}			
 		}		
 		navy_leader={
 			traits={ finland_navy_trait spotter }
@@ -838,6 +937,7 @@ characters={
 			coordination_skill=2
 			legacy_id=-1
 			visible = {
+				date > 1924.1.1
 				date < 1945.1.1
 			}				
 		}
@@ -859,6 +959,7 @@ characters={
 			coordination_skill=1
 			legacy_id=-1
 			visible = {
+				date > 1929.1.1
 				date < 1965.1.1
 			}				
 		}
@@ -885,7 +986,14 @@ characters={
 				military_theorist
 			}
 			visible = {
+				date > 1918.1.1
 				date < 1945.1.1
+				OR = {
+					has_government = communism
+					NOT = {
+						has_cosmetic_tag = FIN_duchy
+					}
+				}
 			}			
 		}		
 	}
@@ -903,29 +1011,26 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = FIN_lauri_malmberg
+			idea_token = FIN_lauri_malmberg_advisor
 			allowed  = {
 				original_tag = FIN
 			}
 			traits  = {
 				fortification_engineer
 			}
-			visible = { date < 1948.3.14 }
-		}
-		#advisor={
-		#	slot = army_chief
-		#	idea_token = FIN_lauri_malmberg
-		#	allowed  = {
-		#		original_tag = FIN
-		#	}
-		#	traits  = {
-		#		army_chief_defensive_2
-		#	}
-		#	visible = { date < 1948.3.14 }
-		#}		
+			visible = { 
+				date > 1925.1.1
+				date < 1948.3.14 
+			}
+			available = {
+				NOT = {
+					has_idea = FIN_lauri_malmberg_advisor
+				}
+			}
+		}		
 		advisor={	
 			slot = army_chief
-			idea_token = FIN_lauri_malmberg
+			idea_token = FIN_lauri_malmberg_chief
 			allowed = {
 				original_tag = FIN
 			}
@@ -937,8 +1042,14 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+				date > 1925.1.1				
 				date < 1948.3.14
-			}			
+			}	
+			available = {
+				NOT = {
+					has_idea = FIN_lauri_malmberg_chief
+				}
+			}					
 		}		
 	}
 
@@ -965,6 +1076,7 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+				date > 1927.1.1
 				date < 1950.4.1
 			}			
 		}		
@@ -993,6 +1105,7 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+				date > 1921.1.1
 				date < 1946.1.1
 			}			
 		}		
@@ -1019,6 +1132,7 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+				date > 1930.1.1
 				date < 1952.1.1
 			}			
 		}		
@@ -1049,7 +1163,8 @@ characters={
 				factor = 1.000
 			}
 			visible = {
-				date < 1947.1.1
+				date > 1936.1.1
+				date < 1949.1.1
 			}			
 		}		
 	}
@@ -1076,7 +1191,11 @@ characters={
 				factor = 1.000
 			}
 			visible = {
+				date > 1910.1.1
 				date < 1945.1.1
+				NOT = {
+					has_cosmetic_tag = FIN_duchy
+				}
 			}			
 		}		
 	}
@@ -1100,6 +1219,7 @@ characters={
 				ideological_crusader 
 			}
 			visible = {
+				date > 1922.1.1
 				date < 1961.5.16
 			}			
 		}		
@@ -1122,6 +1242,7 @@ characters={
 				captain_of_industry 
 			}
 			visible = {
+				date > 1914.1.1
 				date < 1955.1.1
 			}			
 		}		
@@ -1144,6 +1265,7 @@ characters={
 				silent_workhorse 
 			}
 			visible = {
+				date > 1910.1.1
 				date < 1955.1.1
 			}			
 		}		
@@ -1174,7 +1296,9 @@ characters={
 			traits  = {
 				compassionate_gentleman
 			}
-			visible = { date < 1945.1.1 }
+			visible = { 
+				date < 1945.1.1 
+			}
 		}		
 		country_leader={
 			ideology=liberalism
