@@ -1,6 +1,7 @@
 ﻿l_english:
  BM_HISTORY_TITLE: "Brief History"
- COUNTRY_SELECTION_CHARACTER_DESC: "$NAME|Y$ \n$TRAITS_DESC|$"
+ COUNTRY_SELECTION_CHARACTER_DESC_NAME: "$NAME|Y$" 
+ COUNTRY_SELECTION_CHARACTER_DESC: "$NAME|Y$ $DESC|$\n$TRAITS_DESC|$"
 
  1940_bookmark_threat: "German Agression"
  1941_bookmark_threat: "German Agression"
