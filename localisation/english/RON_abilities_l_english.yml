@@ -1,0 +1,4 @@
+﻿l_english:
+ ABILITY_GAS_ATTACK: "Gas Attack"
+ ABILITY_GAS_ATTACK_DESC: "Gas attacks will provide temporary holes in the ennemy defense."
+ ABILITY_GAS_ATTACK_TOOLTIP: "Gas Attack ($LEADER$)"

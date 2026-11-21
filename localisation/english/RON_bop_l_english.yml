@@ -1,0 +1,6 @@
+﻿l_english:
+ BOP_RANGE_DESC: "$NAME|Y$\nRange: $MIN|%Y$ - $MAX|%Y$\n$MODIFIER$\n$RULE$\n$ACTIVATION_EFFECT$\n$DEACTIVATION_EFFECT$"
+ BOP_RANGE_MODIFIER: "§YModifiers:§!\n$DESC$"
+ BOP_RANGE_RULE: "§YRules:§!\n$DESC$"
+ BOP_RANGE_ACTIVATION_EFFECT: "\n§YActivation effect:§!\n$DESC$"
+ BOP_RANGE_DEACTIVATION_EFFECT: "\n§YDeactivation effect:§!\n$DESC$"
